@@ -1,0 +1,507 @@
+{
+  "disclaimer": "These are ppo-plus-v2 simulator results for ASU-inspired reconstructions; they do not reproduce or estimate either cited paper's reported win rates.",
+  "elapsed_seconds": 5264.030047099999,
+  "frozen_spec_hash": "9ab1907e0de1af4b253ce36ffa107c4fdb5e2b913858ef87c362423e61a6fd74",
+  "games": [
+    {
+      "active_players_at_end": 1,
+      "decisions": 1025,
+      "elapsed_seconds": 338.94960490000085,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        0.0,
+        0.0,
+        35763.0,
+        0.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 39,
+      "seed": 162,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 965,
+      "elapsed_seconds": 229.95003899999938,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        0.0,
+        0.0,
+        30220.0,
+        0.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 35,
+      "seed": 163,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 1096,
+      "elapsed_seconds": 304.4582610999987,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        32920.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 55,
+      "seed": 164,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 1226,
+      "elapsed_seconds": 506.6533958,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        29304.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 58,
+      "seed": 165,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 648,
+      "elapsed_seconds": 210.78064019999874,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        0.0,
+        34787.0,
+        0.0,
+        0.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 30,
+      "seed": 166,
+      "truncated": false,
+      "winner": 1,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 765,
+      "elapsed_seconds": 219.65748510000049,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        32835.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 29,
+      "seed": 167,
+      "truncated": false,
+      "winner": 0,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 515,
+      "elapsed_seconds": 112.36820609999995,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        26391.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 27,
+      "seed": 168,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 674,
+      "elapsed_seconds": 96.08822099999998,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        27035.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 31,
+      "seed": 169,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 993,
+      "elapsed_seconds": 262.51375480000206,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        0.0,
+        0.0,
+        29370.0,
+        0.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 52,
+      "seed": 170,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 1377,
+      "elapsed_seconds": 411.07403749999867,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        0.0,
+        0.0,
+        36929.0,
+        0.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 53,
+      "seed": 171,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 764,
+      "elapsed_seconds": 252.41695729999992,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        30492.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 38,
+      "seed": 172,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 644,
+      "elapsed_seconds": 230.59704799999963,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        0.0,
+        0.0,
+        28059.0,
+        0.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 26,
+      "seed": 173,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 1117,
+      "elapsed_seconds": 366.0505660000017,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        35656.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 38,
+      "seed": 174,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 957,
+      "elapsed_seconds": 252.19715759999963,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        0.0,
+        33953.0,
+        0.0,
+        0.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 56,
+      "seed": 175,
+      "truncated": false,
+      "winner": 1,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 958,
+      "elapsed_seconds": 277.43509059999997,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        0.0,
+        0.0,
+        31755.0,
+        0.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 56,
+      "seed": 176,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 1305,
+      "elapsed_seconds": 364.1048043999981,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        35599.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 72,
+      "seed": 177,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 1025,
+      "elapsed_seconds": 255.9995631999991,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        37301.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 34,
+      "seed": 178,
+      "truncated": false,
+      "winner": 0,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 1087,
+      "elapsed_seconds": 256.1685710999991,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        0.0,
+        32161.0,
+        0.0,
+        0.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 49,
+      "seed": 179,
+      "truncated": false,
+      "winner": 1,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 1074,
+      "elapsed_seconds": 209.20283429999836,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        38970.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 48,
+      "seed": 180,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "active_players_at_end": 1,
+      "decisions": 607,
+      "elapsed_seconds": 107.3352092999994,
+      "ended_by": "elimination",
+      "final_net_worth": [
+        0.0,
+        0.0,
+        35398.0,
+        0.0
+      ],
+      "policies": [
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1",
+        "asu-value-v1"
+      ],
+      "rounds": 23,
+      "seed": 181,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-value-v1"
+    }
+  ],
+  "mode": "self-play",
+  "opponents": null,
+  "seeds": [
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181
+  ],
+  "summary": {
+    "ended_by_counts": {
+      "decision_cap": 0,
+      "elimination": 20,
+      "round_cap": 0
+    },
+    "ended_by_rate": {
+      "decision_cap": 0.0,
+      "elimination": 1.0,
+      "round_cap": 0.0
+    },
+    "games": 20,
+    "max_rounds": 72,
+    "mean_rounds": 42.45,
+    "min_rounds": 23
+  }
+}
