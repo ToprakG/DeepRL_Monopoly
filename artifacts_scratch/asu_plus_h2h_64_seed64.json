@@ -1,0 +1,2001 @@
+{
+  "asu_plus_vs_asu": {
+    "asu_plus_wilson_95": [
+      0.3663355166543264,
+      0.6041839852141988
+    ],
+    "asu_plus_wilson_lower": 0.3663355166543264,
+    "asu_plus_win_rate": 0.484375,
+    "asu_wilson_95": [
+      0.18593372333727837,
+      0.40133930282207403
+    ],
+    "asu_win_rate": 0.28125,
+    "beats_asu": true,
+    "rate_gap": 0.203125
+  },
+  "disclaimer": "These are ppo-plus-v2 simulator results for ASU-inspired reconstructions; they do not reproduce or estimate either cited paper's reported win rates.",
+  "frozen_spec_hash": "9ab1907e0de1af4b253ce36ffa107c4fdb5e2b913858ef87c362423e61a6fd74",
+  "game_records": [
+    {
+      "decisions": 7240,
+      "elapsed_seconds": 2092.6961336,
+      "final_net_worth": [
+        5704.0,
+        13482.0,
+        1191.0,
+        16319.5
+      ],
+      "focus_seat": 0,
+      "focus_won": false,
+      "policies": [
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b"
+      ],
+      "provisional_leader": 3,
+      "rounds": 200,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "seed": 64,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "fixed-b"
+    },
+    {
+      "decisions": 6377,
+      "elapsed_seconds": 1135.1978942,
+      "final_net_worth": [
+        7213.0,
+        21193.0,
+        6263.0,
+        0.0
+      ],
+      "focus_seat": 1,
+      "focus_won": true,
+      "policies": [
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a"
+      ],
+      "provisional_leader": 1,
+      "rounds": 200,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "seed": 65,
+      "truncated": false,
+      "winner": 1,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 937,
+      "elapsed_seconds": 126.69968560000007,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        34958.0
+      ],
+      "focus_seat": 2,
+      "focus_won": false,
+      "policies": [
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1"
+      ],
+      "provisional_leader": 3,
+      "rounds": 27,
+      "scripted_compatibility_fallbacks": [
+        1,
+        3,
+        0,
+        0
+      ],
+      "seed": 66,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "decisions": 2991,
+      "elapsed_seconds": 261.5712128,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        40669.0
+      ],
+      "focus_seat": 3,
+      "focus_won": true,
+      "policies": [
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1"
+      ],
+      "provisional_leader": 3,
+      "rounds": 78,
+      "scripted_compatibility_fallbacks": [
+        0,
+        1,
+        31,
+        0
+      ],
+      "seed": 67,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 2069,
+      "elapsed_seconds": 391.3711724000001,
+      "final_net_worth": [
+        0.0,
+        41550.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 0,
+      "focus_won": false,
+      "policies": [
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b"
+      ],
+      "provisional_leader": 1,
+      "rounds": 63,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        1,
+        7
+      ],
+      "seed": 68,
+      "truncated": false,
+      "winner": 1,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "decisions": 2230,
+      "elapsed_seconds": 349.6775914,
+      "final_net_worth": [
+        0.0,
+        43777.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 1,
+      "focus_won": true,
+      "policies": [
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a"
+      ],
+      "provisional_leader": 1,
+      "rounds": 68,
+      "scripted_compatibility_fallbacks": [
+        20,
+        0,
+        0,
+        1
+      ],
+      "seed": 69,
+      "truncated": false,
+      "winner": 1,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 9078,
+      "elapsed_seconds": 2293.8330011,
+      "final_net_worth": [
+        793.0,
+        9346.5,
+        20897.0,
+        7058.0
+      ],
+      "focus_seat": 2,
+      "focus_won": true,
+      "policies": [
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1"
+      ],
+      "provisional_leader": 2,
+      "rounds": 200,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "seed": 70,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 1303,
+      "elapsed_seconds": 201.78323049999995,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        40530.0
+      ],
+      "focus_seat": 3,
+      "focus_won": true,
+      "policies": [
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1"
+      ],
+      "provisional_leader": 3,
+      "rounds": 42,
+      "scripted_compatibility_fallbacks": [
+        0,
+        1,
+        5,
+        0
+      ],
+      "seed": 71,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 2593,
+      "elapsed_seconds": 264.83905559999994,
+      "final_net_worth": [
+        50227.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 0,
+      "focus_won": true,
+      "policies": [
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b"
+      ],
+      "provisional_leader": 0,
+      "rounds": 68,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        1,
+        12
+      ],
+      "seed": 72,
+      "truncated": false,
+      "winner": 0,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 1214,
+      "elapsed_seconds": 139.25080160000005,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        35793.0,
+        0.0
+      ],
+      "focus_seat": 1,
+      "focus_won": false,
+      "policies": [
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a"
+      ],
+      "provisional_leader": 2,
+      "rounds": 37,
+      "scripted_compatibility_fallbacks": [
+        8,
+        0,
+        0,
+        1
+      ],
+      "seed": 73,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "decisions": 1875,
+      "elapsed_seconds": 355.04305250000016,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        30892.0,
+        0.0
+      ],
+      "focus_seat": 2,
+      "focus_won": true,
+      "policies": [
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1"
+      ],
+      "provisional_leader": 2,
+      "rounds": 58,
+      "scripted_compatibility_fallbacks": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "seed": 74,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 2338,
+      "elapsed_seconds": 289.867033,
+      "final_net_worth": [
+        33588.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 3,
+      "focus_won": false,
+      "policies": [
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1"
+      ],
+      "provisional_leader": 0,
+      "rounds": 74,
+      "scripted_compatibility_fallbacks": [
+        0,
+        1,
+        6,
+        0
+      ],
+      "seed": 75,
+      "truncated": false,
+      "winner": 0,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "decisions": 1113,
+      "elapsed_seconds": 105.79473439999992,
+      "final_net_worth": [
+        40083.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 0,
+      "focus_won": true,
+      "policies": [
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b"
+      ],
+      "provisional_leader": 0,
+      "rounds": 34,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "seed": 76,
+      "truncated": false,
+      "winner": 0,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 7697,
+      "elapsed_seconds": 1152.7483513000002,
+      "final_net_worth": [
+        11294.5,
+        6720.0,
+        8569.0,
+        6247.0
+      ],
+      "focus_seat": 1,
+      "focus_won": false,
+      "policies": [
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a"
+      ],
+      "provisional_leader": 0,
+      "rounds": 200,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "seed": 77,
+      "truncated": false,
+      "winner": 0,
+      "winner_policy": "fixed-b"
+    },
+    {
+      "decisions": 1540,
+      "elapsed_seconds": 236.93475449999983,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        38479.0,
+        0.0
+      ],
+      "focus_seat": 2,
+      "focus_won": true,
+      "policies": [
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1"
+      ],
+      "provisional_leader": 2,
+      "rounds": 57,
+      "scripted_compatibility_fallbacks": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "seed": 78,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 3373,
+      "elapsed_seconds": 413.6033954000002,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        33673.0,
+        0.0
+      ],
+      "focus_seat": 3,
+      "focus_won": false,
+      "policies": [
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1"
+      ],
+      "provisional_leader": 2,
+      "rounds": 127,
+      "scripted_compatibility_fallbacks": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "seed": 79,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "fixed-b"
+    },
+    {
+      "decisions": 7443,
+      "elapsed_seconds": 1181.1986068999997,
+      "final_net_worth": [
+        15894.0,
+        0.0,
+        0.0,
+        25697.0
+      ],
+      "focus_seat": 0,
+      "focus_won": false,
+      "policies": [
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b"
+      ],
+      "provisional_leader": 3,
+      "rounds": 200,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "seed": 80,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "fixed-b"
+    },
+    {
+      "decisions": 2074,
+      "elapsed_seconds": 317.9957105000001,
+      "final_net_worth": [
+        0.0,
+        43909.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 1,
+      "focus_won": true,
+      "policies": [
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a"
+      ],
+      "provisional_leader": 1,
+      "rounds": 51,
+      "scripted_compatibility_fallbacks": [
+        3,
+        0,
+        0,
+        1
+      ],
+      "seed": 81,
+      "truncated": false,
+      "winner": 1,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 3514,
+      "elapsed_seconds": 662.4624926000001,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        42181.0
+      ],
+      "focus_seat": 2,
+      "focus_won": false,
+      "policies": [
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1"
+      ],
+      "provisional_leader": 3,
+      "rounds": 162,
+      "scripted_compatibility_fallbacks": [
+        1,
+        5,
+        0,
+        0
+      ],
+      "seed": 82,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "decisions": 8116,
+      "elapsed_seconds": 1238.9652884,
+      "final_net_worth": [
+        20816.0,
+        1358.0,
+        8091.0,
+        7194.0
+      ],
+      "focus_seat": 3,
+      "focus_won": false,
+      "policies": [
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1"
+      ],
+      "provisional_leader": 0,
+      "rounds": 200,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "seed": 83,
+      "truncated": false,
+      "winner": 0,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "decisions": 1269,
+      "elapsed_seconds": 98.74093280000011,
+      "final_net_worth": [
+        0.0,
+        40538.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 0,
+      "focus_won": false,
+      "policies": [
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b"
+      ],
+      "provisional_leader": 1,
+      "rounds": 33,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        1,
+        4
+      ],
+      "seed": 84,
+      "truncated": false,
+      "winner": 1,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "decisions": 5689,
+      "elapsed_seconds": 629.9306110000002,
+      "final_net_worth": [
+        21304.5,
+        0.0,
+        22767.0,
+        0.0
+      ],
+      "focus_seat": 1,
+      "focus_won": false,
+      "policies": [
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a"
+      ],
+      "provisional_leader": 2,
+      "rounds": 200,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "seed": 85,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "decisions": 9059,
+      "elapsed_seconds": 1919.4093255999999,
+      "final_net_worth": [
+        4504.0,
+        11836.0,
+        12152.0,
+        6799.0
+      ],
+      "focus_seat": 2,
+      "focus_won": true,
+      "policies": [
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1"
+      ],
+      "provisional_leader": 2,
+      "rounds": 200,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "seed": 86,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 8661,
+      "elapsed_seconds": 2465.2283810999998,
+      "final_net_worth": [
+        6782.0,
+        2814.0,
+        15974.0,
+        9802.0
+      ],
+      "focus_seat": 3,
+      "focus_won": false,
+      "policies": [
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1"
+      ],
+      "provisional_leader": 2,
+      "rounds": 200,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "seed": 87,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "fixed-b"
+    },
+    {
+      "decisions": 2376,
+      "elapsed_seconds": 361.24389189999965,
+      "final_net_worth": [
+        37287.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 0,
+      "focus_won": true,
+      "policies": [
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b"
+      ],
+      "provisional_leader": 0,
+      "rounds": 76,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        1,
+        3
+      ],
+      "seed": 88,
+      "truncated": false,
+      "winner": 0,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 1712,
+      "elapsed_seconds": 166.14348269999982,
+      "final_net_worth": [
+        0.0,
+        46780.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 1,
+      "focus_won": true,
+      "policies": [
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a"
+      ],
+      "provisional_leader": 1,
+      "rounds": 59,
+      "scripted_compatibility_fallbacks": [
+        2,
+        0,
+        0,
+        1
+      ],
+      "seed": 89,
+      "truncated": false,
+      "winner": 1,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 1320,
+      "elapsed_seconds": 144.2564486000001,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        34086.5
+      ],
+      "focus_seat": 2,
+      "focus_won": false,
+      "policies": [
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1"
+      ],
+      "provisional_leader": 3,
+      "rounds": 37,
+      "scripted_compatibility_fallbacks": [
+        1,
+        4,
+        0,
+        0
+      ],
+      "seed": 90,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "decisions": 7929,
+      "elapsed_seconds": 1773.6315595000005,
+      "final_net_worth": [
+        7153.0,
+        7119.0,
+        12047.0,
+        9364.0
+      ],
+      "focus_seat": 3,
+      "focus_won": false,
+      "policies": [
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1"
+      ],
+      "provisional_leader": 2,
+      "rounds": 200,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "seed": 91,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "fixed-b"
+    },
+    {
+      "decisions": 1111,
+      "elapsed_seconds": 163.61084739999978,
+      "final_net_worth": [
+        0.0,
+        36563.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 0,
+      "focus_won": false,
+      "policies": [
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b"
+      ],
+      "provisional_leader": 1,
+      "rounds": 31,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "seed": 92,
+      "truncated": false,
+      "winner": 1,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "decisions": 5740,
+      "elapsed_seconds": 613.7049982999997,
+      "final_net_worth": [
+        37170.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 1,
+      "focus_won": false,
+      "policies": [
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a"
+      ],
+      "provisional_leader": 0,
+      "rounds": 166,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "seed": 93,
+      "truncated": false,
+      "winner": 0,
+      "winner_policy": "fixed-b"
+    },
+    {
+      "decisions": 1874,
+      "elapsed_seconds": 250.74147380000022,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        36947.0,
+        0.0
+      ],
+      "focus_seat": 2,
+      "focus_won": true,
+      "policies": [
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1"
+      ],
+      "provisional_leader": 2,
+      "rounds": 65,
+      "scripted_compatibility_fallbacks": [
+        1,
+        6,
+        0,
+        0
+      ],
+      "seed": 94,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 1393,
+      "elapsed_seconds": 135.25835400000005,
+      "final_net_worth": [
+        33941.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 3,
+      "focus_won": false,
+      "policies": [
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1"
+      ],
+      "provisional_leader": 0,
+      "rounds": 32,
+      "scripted_compatibility_fallbacks": [
+        0,
+        1,
+        10,
+        0
+      ],
+      "seed": 95,
+      "truncated": false,
+      "winner": 0,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "decisions": 1252,
+      "elapsed_seconds": 103.05157959999997,
+      "final_net_worth": [
+        34758.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 0,
+      "focus_won": true,
+      "policies": [
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b"
+      ],
+      "provisional_leader": 0,
+      "rounds": 36,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        1,
+        6
+      ],
+      "seed": 96,
+      "truncated": false,
+      "winner": 0,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 5034,
+      "elapsed_seconds": 394.54094429999986,
+      "final_net_worth": [
+        31071.0,
+        0.0,
+        0.0,
+        3625.0
+      ],
+      "focus_seat": 1,
+      "focus_won": false,
+      "policies": [
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a"
+      ],
+      "provisional_leader": 0,
+      "rounds": 200,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "seed": 97,
+      "truncated": false,
+      "winner": 0,
+      "winner_policy": "fixed-b"
+    },
+    {
+      "decisions": 1297,
+      "elapsed_seconds": 106.3285065,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        40050.0,
+        0.0
+      ],
+      "focus_seat": 2,
+      "focus_won": true,
+      "policies": [
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1"
+      ],
+      "provisional_leader": 2,
+      "rounds": 38,
+      "scripted_compatibility_fallbacks": [
+        1,
+        4,
+        0,
+        0
+      ],
+      "seed": 98,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 2007,
+      "elapsed_seconds": 216.23413819999996,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        41498.0
+      ],
+      "focus_seat": 3,
+      "focus_won": true,
+      "policies": [
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1"
+      ],
+      "provisional_leader": 3,
+      "rounds": 67,
+      "scripted_compatibility_fallbacks": [
+        0,
+        1,
+        5,
+        0
+      ],
+      "seed": 99,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 5001,
+      "elapsed_seconds": 484.4463860000001,
+      "final_net_worth": [
+        37681.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 0,
+      "focus_won": true,
+      "policies": [
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b"
+      ],
+      "provisional_leader": 0,
+      "rounds": 168,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        1,
+        6
+      ],
+      "seed": 100,
+      "truncated": false,
+      "winner": 0,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 3566,
+      "elapsed_seconds": 352.72476030000007,
+      "final_net_worth": [
+        35255.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 1,
+      "focus_won": false,
+      "policies": [
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a"
+      ],
+      "provisional_leader": 0,
+      "rounds": 105,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "seed": 101,
+      "truncated": false,
+      "winner": 0,
+      "winner_policy": "fixed-b"
+    },
+    {
+      "decisions": 1189,
+      "elapsed_seconds": 127.83792050000011,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        39857.0,
+        0.0
+      ],
+      "focus_seat": 2,
+      "focus_won": true,
+      "policies": [
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1"
+      ],
+      "provisional_leader": 2,
+      "rounds": 37,
+      "scripted_compatibility_fallbacks": [
+        1,
+        6,
+        0,
+        0
+      ],
+      "seed": 102,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 1593,
+      "elapsed_seconds": 187.9464509000004,
+      "final_net_worth": [
+        40528.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 3,
+      "focus_won": false,
+      "policies": [
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1"
+      ],
+      "provisional_leader": 0,
+      "rounds": 53,
+      "scripted_compatibility_fallbacks": [
+        0,
+        1,
+        3,
+        0
+      ],
+      "seed": 103,
+      "truncated": false,
+      "winner": 0,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "decisions": 2617,
+      "elapsed_seconds": 250.25163109999994,
+      "final_net_worth": [
+        48378.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 0,
+      "focus_won": true,
+      "policies": [
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b"
+      ],
+      "provisional_leader": 0,
+      "rounds": 71,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        1,
+        5
+      ],
+      "seed": 104,
+      "truncated": false,
+      "winner": 0,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 1896,
+      "elapsed_seconds": 110.09324610000021,
+      "final_net_worth": [
+        0.0,
+        31928.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 1,
+      "focus_won": true,
+      "policies": [
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a"
+      ],
+      "provisional_leader": 1,
+      "rounds": 48,
+      "scripted_compatibility_fallbacks": [
+        6,
+        0,
+        0,
+        1
+      ],
+      "seed": 105,
+      "truncated": false,
+      "winner": 1,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 1628,
+      "elapsed_seconds": 168.02234399999998,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        39767.0
+      ],
+      "focus_seat": 2,
+      "focus_won": false,
+      "policies": [
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1"
+      ],
+      "provisional_leader": 3,
+      "rounds": 38,
+      "scripted_compatibility_fallbacks": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "seed": 106,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "decisions": 2124,
+      "elapsed_seconds": 404.6402644,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        36711.0
+      ],
+      "focus_seat": 3,
+      "focus_won": true,
+      "policies": [
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1"
+      ],
+      "provisional_leader": 3,
+      "rounds": 54,
+      "scripted_compatibility_fallbacks": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "seed": 107,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 1491,
+      "elapsed_seconds": 153.06662310000002,
+      "final_net_worth": [
+        0.0,
+        38769.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 0,
+      "focus_won": false,
+      "policies": [
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b"
+      ],
+      "provisional_leader": 1,
+      "rounds": 41,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        1,
+        3
+      ],
+      "seed": 108,
+      "truncated": false,
+      "winner": 1,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "decisions": 2136,
+      "elapsed_seconds": 220.60245829999985,
+      "final_net_worth": [
+        0.0,
+        45916.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 1,
+      "focus_won": true,
+      "policies": [
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a"
+      ],
+      "provisional_leader": 1,
+      "rounds": 75,
+      "scripted_compatibility_fallbacks": [
+        7,
+        0,
+        0,
+        1
+      ],
+      "seed": 109,
+      "truncated": false,
+      "winner": 1,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 2134,
+      "elapsed_seconds": 186.15282500000012,
+      "final_net_worth": [
+        0.0,
+        30838.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 2,
+      "focus_won": false,
+      "policies": [
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1"
+      ],
+      "provisional_leader": 1,
+      "rounds": 61,
+      "scripted_compatibility_fallbacks": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "seed": 110,
+      "truncated": false,
+      "winner": 1,
+      "winner_policy": "fixed-b"
+    },
+    {
+      "decisions": 2371,
+      "elapsed_seconds": 370.7666403999997,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        29664.0
+      ],
+      "focus_seat": 3,
+      "focus_won": true,
+      "policies": [
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1"
+      ],
+      "provisional_leader": 3,
+      "rounds": 109,
+      "scripted_compatibility_fallbacks": [
+        0,
+        1,
+        5,
+        0
+      ],
+      "seed": 111,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 2005,
+      "elapsed_seconds": 304.63872979999996,
+      "final_net_worth": [
+        46343.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 0,
+      "focus_won": true,
+      "policies": [
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b"
+      ],
+      "provisional_leader": 0,
+      "rounds": 60,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "seed": 112,
+      "truncated": false,
+      "winner": 0,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 2496,
+      "elapsed_seconds": 327.54383910000024,
+      "final_net_worth": [
+        43463.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 1,
+      "focus_won": false,
+      "policies": [
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a"
+      ],
+      "provisional_leader": 0,
+      "rounds": 87,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "seed": 113,
+      "truncated": false,
+      "winner": 0,
+      "winner_policy": "fixed-b"
+    },
+    {
+      "decisions": 3681,
+      "elapsed_seconds": 519.7248406000003,
+      "final_net_worth": [
+        0.0,
+        44084.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 2,
+      "focus_won": false,
+      "policies": [
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1"
+      ],
+      "provisional_leader": 1,
+      "rounds": 113,
+      "scripted_compatibility_fallbacks": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "seed": 114,
+      "truncated": false,
+      "winner": 1,
+      "winner_policy": "fixed-b"
+    },
+    {
+      "decisions": 1282,
+      "elapsed_seconds": 121.23275539999986,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        36234.0,
+        0.0
+      ],
+      "focus_seat": 3,
+      "focus_won": false,
+      "policies": [
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1"
+      ],
+      "provisional_leader": 2,
+      "rounds": 40,
+      "scripted_compatibility_fallbacks": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "seed": 115,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "fixed-b"
+    },
+    {
+      "decisions": 2740,
+      "elapsed_seconds": 307.1814211999995,
+      "final_net_worth": [
+        0.0,
+        37396.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 0,
+      "focus_won": false,
+      "policies": [
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b"
+      ],
+      "provisional_leader": 1,
+      "rounds": 83,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        1,
+        9
+      ],
+      "seed": 116,
+      "truncated": false,
+      "winner": 1,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "decisions": 2177,
+      "elapsed_seconds": 226.6355335999997,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        51761.0,
+        0.0
+      ],
+      "focus_seat": 1,
+      "focus_won": false,
+      "policies": [
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a"
+      ],
+      "provisional_leader": 2,
+      "rounds": 72,
+      "scripted_compatibility_fallbacks": [
+        3,
+        0,
+        0,
+        1
+      ],
+      "seed": 117,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "decisions": 2695,
+      "elapsed_seconds": 409.57997659999955,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        43868.0,
+        0.0
+      ],
+      "focus_seat": 2,
+      "focus_won": true,
+      "policies": [
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1"
+      ],
+      "provisional_leader": 2,
+      "rounds": 73,
+      "scripted_compatibility_fallbacks": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "seed": 118,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 1168,
+      "elapsed_seconds": 120.40418590000036,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        39037.0
+      ],
+      "focus_seat": 3,
+      "focus_won": true,
+      "policies": [
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1"
+      ],
+      "provisional_leader": 3,
+      "rounds": 43,
+      "scripted_compatibility_fallbacks": [
+        0,
+        1,
+        4,
+        0
+      ],
+      "seed": 119,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 1781,
+      "elapsed_seconds": 225.55230310000024,
+      "final_net_worth": [
+        0.0,
+        41404.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 0,
+      "focus_won": false,
+      "policies": [
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b"
+      ],
+      "provisional_leader": 1,
+      "rounds": 67,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "seed": 120,
+      "truncated": false,
+      "winner": 1,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "decisions": 1178,
+      "elapsed_seconds": 147.93131689999973,
+      "final_net_worth": [
+        0.0,
+        41792.0,
+        0.0,
+        0.0
+      ],
+      "focus_seat": 1,
+      "focus_won": true,
+      "policies": [
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a"
+      ],
+      "provisional_leader": 1,
+      "rounds": 47,
+      "scripted_compatibility_fallbacks": [
+        6,
+        0,
+        0,
+        1
+      ],
+      "seed": 121,
+      "truncated": false,
+      "winner": 1,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 2313,
+      "elapsed_seconds": 377.7605211,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        52100.0,
+        0.0
+      ],
+      "focus_seat": 2,
+      "focus_won": true,
+      "policies": [
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1"
+      ],
+      "provisional_leader": 2,
+      "rounds": 72,
+      "scripted_compatibility_fallbacks": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "seed": 122,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 5794,
+      "elapsed_seconds": 438.07523889999993,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        41873.0,
+        0.0
+      ],
+      "focus_seat": 3,
+      "focus_won": false,
+      "policies": [
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1"
+      ],
+      "provisional_leader": 2,
+      "rounds": 176,
+      "scripted_compatibility_fallbacks": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "seed": 123,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "fixed-b"
+    },
+    {
+      "decisions": 3398,
+      "elapsed_seconds": 437.1091964999996,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        37558.0
+      ],
+      "focus_seat": 0,
+      "focus_won": false,
+      "policies": [
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b"
+      ],
+      "provisional_leader": 3,
+      "rounds": 92,
+      "scripted_compatibility_fallbacks": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "seed": 124,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "fixed-b"
+    },
+    {
+      "decisions": 1561,
+      "elapsed_seconds": 136.49645129999953,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        28887.0,
+        0.0
+      ],
+      "focus_seat": 1,
+      "focus_won": false,
+      "policies": [
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1",
+        "fixed-a"
+      ],
+      "provisional_leader": 2,
+      "rounds": 47,
+      "scripted_compatibility_fallbacks": [
+        4,
+        0,
+        0,
+        1
+      ],
+      "seed": 125,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-value-v1"
+    },
+    {
+      "decisions": 1251,
+      "elapsed_seconds": 118.10130800000024,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        33509.0,
+        0.0
+      ],
+      "focus_seat": 2,
+      "focus_won": true,
+      "policies": [
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1",
+        "asu-value-v1"
+      ],
+      "provisional_leader": 2,
+      "rounds": 35,
+      "scripted_compatibility_fallbacks": [
+        1,
+        3,
+        0,
+        0
+      ],
+      "seed": 126,
+      "truncated": false,
+      "winner": 2,
+      "winner_policy": "asu-plus-v1"
+    },
+    {
+      "decisions": 1604,
+      "elapsed_seconds": 164.9612778999999,
+      "final_net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        36664.0
+      ],
+      "focus_seat": 3,
+      "focus_won": true,
+      "policies": [
+        "asu-value-v1",
+        "fixed-a",
+        "fixed-b",
+        "asu-plus-v1"
+      ],
+      "provisional_leader": 3,
+      "rounds": 59,
+      "scripted_compatibility_fallbacks": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "seed": 127,
+      "truncated": false,
+      "winner": 3,
+      "winner_policy": "asu-plus-v1"
+    }
+  ],
+  "games": 64,
+  "lineup": [
+    "asu-plus-v1",
+    "asu-value-v1",
+    "fixed-a",
+    "fixed-b"
+  ],
+  "ruleset": "ppo-plus-v2",
+  "seed": 64,
+  "truncations": 0,
+  "weights": {
+    "endgame_start_round": 120,
+    "w_block": 0.25,
+    "w_cash": 1.0,
+    "w_endgame": 1.0,
+    "w_liq": 0.5
+  },
+  "win_rates": {
+    "asu-plus-v1": {
+      "games": 64,
+      "wilson_95": [
+        0.3663355166543264,
+        0.6041839852141988
+      ],
+      "win_rate": 0.484375,
+      "win_rate_percent": 48.4375,
+      "wins": 31
+    },
+    "asu-value-v1": {
+      "games": 64,
+      "wilson_95": [
+        0.18593372333727837,
+        0.40133930282207403
+      ],
+      "win_rate": 0.28125,
+      "win_rate_percent": 28.125,
+      "wins": 18
+    },
+    "fixed-a": {
+      "games": 64,
+      "wilson_95": [
+        0.0,
+        0.05662405979280534
+      ],
+      "win_rate": 0.0,
+      "win_rate_percent": 0.0,
+      "wins": 0
+    },
+    "fixed-b": {
+      "games": 64,
+      "wilson_95": [
+        0.1474989559392414,
+        0.35133257582568644
+      ],
+      "win_rate": 0.234375,
+      "win_rate_percent": 23.4375,
+      "wins": 15
+    }
+  },
+  "workers": 8
+}
