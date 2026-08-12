@@ -85,7 +85,7 @@ def train_hybrid_clone(
     examples_path: Path,
     run_dir: Path,
     bootstrap_ppo: Path = DEFAULT_PPO,
-    updates: int = 2_000,
+    updates: int = 20_000,
     batch_size: int = 256,
     gradient_clip: float = 1.0,
     lr: float = 3e-4,
@@ -231,7 +231,7 @@ def main(argv: list[str] | None = None) -> int:
         default=Path("monopoly_bench/runs/oracle_hybrid_bc"),
     )
     parser.add_argument("--bootstrap-ppo", type=Path, default=DEFAULT_PPO)
-    parser.add_argument("--updates", type=int, default=2_000)
+    parser.add_argument("--updates", type=int, default=20_000)
     parser.add_argument("--batch-size", type=int, default=256)
     parser.add_argument("--device", default="auto")
     parser.add_argument("--seed", type=int, default=0)
