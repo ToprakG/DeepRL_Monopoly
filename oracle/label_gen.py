@@ -12,6 +12,7 @@ from typing import Any
 
 import numpy as np
 
+from ASU_FROZEN_TEACHER import core as asu_core
 from ASU_FROZEN_TEACHER.core import ASUValueV1, preserve_global_rng
 from monopoly_bench.engine import (
     ACTION_SPACE_SIZE,
@@ -33,6 +34,22 @@ from .hybrid_config import (
 from .rollout_policy import greedy_rollout_action
 
 DEFAULT_WORKERS = max(1, os.cpu_count() or 1)
+
+
+class FastASUValueV1(ASUValueV1):
+    """Pool-play ASUValue: same decide logic, 1-sample dice instead of 36-outcome EV.
+
+    Labeling cost is dominated by ASU's full dice expectation on every ROLL_DICE
+    candidate. Oracle Max-N labeling stays at HybridLabelConfig sims (128).
+    """
+
+    def _roll_outcome(self, env, action: int):
+        items = sorted(asu_core._dice_seeds().items())
+        pair, seed = items[len(items) // 2]
+        rolled = self._step_copy(env, action, seed)
+        if tuple(rolled.last_dice) != pair:
+            raise AssertionError("dice seed no longer produces its frozen outcome")
+        return self.value(rolled), self.safety(rolled)
 
 
 class _Scripted:
@@ -95,8 +112,8 @@ def _build_hybrid_players(
         return players, tuple(range(NUM_PLAYERS))
     if kind == "pool":
         focus = seed % NUM_PLAYERS
-        # One hybrid label seat + ASU + two frozen scripted bots (same mix as H2H).
-        pool_factories = [ASUValueV1, FPAgentA, FPAgentB]
+        # One hybrid label seat + fast ASUValue + two frozen scripted bots.
+        pool_factories = [FastASUValueV1, FPAgentA, FPAgentB]
         players: list[Any] = []
         pool_idx = 0
         for seat in range(NUM_PLAYERS):
@@ -106,7 +123,7 @@ def _build_hybrid_players(
             factory = pool_factories[pool_idx]
             pool_idx += 1
             raw = factory(seat)
-            players.append(raw if factory is ASUValueV1 else _Scripted(raw))
+            players.append(raw if factory is FastASUValueV1 else _Scripted(raw))
         return players, (focus,)
     raise ValueError(f"Unknown hybrid lineup kind {kind!r}")
 
