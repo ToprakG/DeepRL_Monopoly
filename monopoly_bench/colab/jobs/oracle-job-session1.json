@@ -1,9 +1,9 @@
 {
   "commit": "396cc70d376b622062704bdf64162d13471d4490",
   "repo": "ToprakG/DeepRL_Monopoly",
-  "games": 460,
+  "games": 467,
   "seed_base": 20000,
   "max_rounds": 200,
-  "drive_folder": "MyDrive/monopoly_labels",
+  "drive_folder": "MyDrive/REPLACE_WITH_SHARED_LABELS_FOLDER",
   "mount_drive": true
 }
