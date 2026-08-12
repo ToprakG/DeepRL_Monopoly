@@ -30,6 +30,7 @@ from .hybrid_config import (
     checkpoint_kind,
     is_event_checkpoint,
     lineup_kind_for_game,
+    should_label_routine,
 )
 from .rollout_policy import greedy_rollout_action
 
@@ -150,9 +151,14 @@ def _record_label(
     env,
     legal: tuple[int, ...],
     result,
+    kind: str | None = None,
 ) -> dict[str, Any]:
     visits = {int(k): int(v) for k, v in result.visits.items()}
     total = float(sum(visits.values())) or 1.0
+    # Soft visit mass is required for distillation (never emit empty / one-hot stubs).
+    if not visits:
+        raise RuntimeError("oracle label missing visit counts; refuse one-hot fallback")
+    event = kind is not None and kind != "routine"
     return {
         "game_id": game_id,
         "seed": seed,
@@ -165,7 +171,8 @@ def _record_label(
         "backed_up_value_vector": list(result.root_value),
         "selected_action": int(result.chosen_action),
         "simulations": result.simulations,
-        "checkpoint": True,
+        "checkpoint": event,
+        "checkpoint_kind": kind or ("event" if event else "routine"),
     }
 
 
@@ -226,13 +233,19 @@ def _collect_game(payload: dict[str, Any]) -> dict[str, Any]:
                         already_labeled_build_menu=build_key in build_menu_labeled,
                         already_labeled_trade_round=trade_key in trade_round_labeled,
                     )
-                    if checkpoint:
-                        checkpoints_seen += 1
-                    if (
-                        checkpoint
-                        and actor in label_seat_set
-                        and hybrid_cfg.label_checkpoints_only
+                    label_kind: str | None = None
+                    if checkpoint and actor in label_seat_set:
+                        label_kind = kind or "event"
+                    elif actor in label_seat_set and should_label_routine(
+                        seed=seed,
+                        step=step,
+                        actor=actor,
+                        prob=hybrid_cfg.routine_label_prob,
                     ):
+                        label_kind = "routine"
+                    if label_kind is not None:
+                        if checkpoint:
+                            checkpoints_seen += 1
                         result = search.choose_action(game.env, actor, decision_seed + step)
                         records.append(
                             _record_label(
@@ -243,6 +256,7 @@ def _collect_game(payload: dict[str, Any]) -> dict[str, Any]:
                                 env=game.env,
                                 legal=legal,
                                 result=result,
+                                kind=label_kind,
                             )
                         )
                         labeled += 1

@@ -14,6 +14,7 @@ from torch import nn
 
 from monopoly_bench.model import MonopolyZeroNet
 from monopoly_bench.training import _relative_outcomes
+from oracle.resample_hybrid_labels import sampling_probabilities
 
 DEFAULT_PPO = Path("artifacts/ppo_plus/ppo_hybrid_2000_v2.pt")
 
@@ -91,6 +92,7 @@ def train_hybrid_clone(
     lr: float = 3e-4,
     seed: int = 0,
     device: str = "auto",
+    weighted_sample: bool = True,
 ) -> dict:
     examples = load_hybrid_examples(examples_path)
     n = len(examples["states"])
@@ -108,20 +110,35 @@ def train_hybrid_clone(
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
     scaler = torch.amp.GradScaler(enabled=device_t.type == "cuda")
     rng = np.random.default_rng(seed)
+    sample_p = (
+        sampling_probabilities(examples["selected_actions"])
+        if weighted_sample
+        else None
+    )
 
     model.freeze_trunk()
     head_updates = max(1, updates // 4)
     history = []
     t0 = time.time()
     last = {}
+    take = min(batch_size, n)
     for update in range(updates):
         if update == head_updates:
             model.unfreeze_all()
-        indices = rng.choice(n, size=min(batch_size, n), replace=False)
+        # Weighted path allows replacement so rare decline/build rows can recur.
+        if sample_p is not None:
+            indices = rng.choice(n, size=take, replace=True, p=sample_p)
+        else:
+            indices = rng.choice(n, size=take, replace=False)
         batch = {name: values[indices] for name, values in examples.items()}
         last = hybrid_expert_train_step(model, optimizer, scaler, batch, gradient_clip)
         if update % 50 == 0 or update + 1 == updates:
-            row = {"update": update, **last, "wall_s": time.time() - t0}
+            row = {
+                "update": update,
+                **last,
+                "wall_s": time.time() - t0,
+                "weighted_sample": weighted_sample,
+            }
             history.append(row)
             print(
                 f"update={update}/{updates} loss={last['loss']:.4f} "
@@ -142,6 +159,7 @@ def train_hybrid_clone(
             "n_labels": n,
             "updates": updates,
             "examples": str(examples_path),
+            "weighted_sample": weighted_sample,
         },
     )
     report = {
@@ -149,6 +167,7 @@ def train_hybrid_clone(
         "n_labels": n,
         "updates": updates,
         "device": str(device_t),
+        "weighted_sample": weighted_sample,
         "final": last,
         "history_tail": history[-10:],
         "wall_seconds": time.time() - t0,
@@ -237,6 +256,12 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--eval-games", type=int, default=48)
     parser.add_argument("--skip-eval", action="store_true")
+    parser.add_argument(
+        "--weighted-sample",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Family-balanced batch sampling (default on)",
+    )
     args = parser.parse_args(argv)
     report = train_hybrid_clone(
         examples_path=args.examples,
@@ -246,6 +271,7 @@ def main(argv: list[str] | None = None) -> int:
         batch_size=args.batch_size,
         seed=args.seed,
         device=args.device,
+        weighted_sample=args.weighted_sample,
     )
     examples = load_hybrid_examples(args.examples)
     model = MonopolyZeroNet.load_inference(report["checkpoint"])

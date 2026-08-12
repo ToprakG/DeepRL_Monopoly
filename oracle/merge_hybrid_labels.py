@@ -237,6 +237,9 @@ def sanity_check(examples: dict[str, np.ndarray], inventory: list[dict[str, Any]
             "not_pathological_end_turn": end_turn_frac < 0.20,
             "has_buy_build_trade_auction_mass": (buy_frac + build_frac + accept_frac + decline_frac + auction_frac)
             >= 0.50,
+            # New coverage labeling always emits soft visits; reject friend one-hot dumps.
+            "soft_coverage_ok": (soft_rows / n if n else 0.0) >= 0.90,
+            "decline_present": decline_frac >= 0.01 or accept_frac < 0.10,
         },
         "warnings": {
             "accept_trade_heavy": accept_frac >= 0.15,
@@ -245,10 +248,11 @@ def sanity_check(examples: dict[str, np.ndarray], inventory: list[dict[str, Any]
                 if (accept_frac + decline_frac) > 0
                 else None
             ),
+            "one_hot_rows": one_hot_rows,
             "note": (
-                "Trade labels are checkpoint-filtered to monopoly-relevant offers; "
-                "a high ACCEPT share can be expected if DECLINE rarely fires that filter. "
-                "Still inspect accept/decline ratio before trusting trade behavior."
+                "Coverage labeling records all incoming accept/decline once per round "
+                "plus a routine subsample. Soft visit distributions are required "
+                "(keep paired .jsonl / refuse one-hot-only shards)."
             ),
         },
         "ruleset": RULESET_VERSION,
