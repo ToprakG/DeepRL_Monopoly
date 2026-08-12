@@ -1,4 +1,4 @@
-"""ASU+ — ASU value teacher with cash, endgame, blocking, and liquidity terms."""
+"""ASU+ — ASU value teacher with endgame, blocking, and liquidity terms."""
 
 from .agent import ASUPlusV1
 from .value import ASUPlusWeights, evaluate_value_plus

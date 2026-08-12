@@ -1,4 +1,4 @@
-"""ASU+ value: ASU base total plus cheap cash / endgame / block / liquidity terms."""
+"""ASU+ value: ASU base total plus endgame / block / liquidity terms."""
 
 from __future__ import annotations
 
@@ -17,26 +17,16 @@ from monopoly_game_engine.constants import COLOR_GROUPS, MAX_HOUSES, NUM_PLAYERS
 class ASUPlusWeights:
     """Tunable additives folded into ASU's ``ValueBreakdown.total``."""
 
-    w_cash: float = 1.0
-    w_endgame: float = 1.0
-    endgame_start_round: int = 120
-    w_block: float = 0.25
+    w_endgame: float = 0.15
+    endgame_start_round: int = 150
+    w_block: float = 0.05
     w_liq: float = 0.5
 
     def ablate(self, term: str) -> "ASUPlusWeights":
-        """Return weights with one new term zeroed (``cash`` / ``endgame`` / ``block`` / ``liq``)."""
+        """Return weights with one term zeroed (``endgame`` / ``block`` / ``liq``)."""
 
-        if term == "cash":
-            return ASUPlusWeights(
-                w_cash=0.0,
-                w_endgame=self.w_endgame,
-                endgame_start_round=self.endgame_start_round,
-                w_block=self.w_block,
-                w_liq=self.w_liq,
-            )
         if term == "endgame":
             return ASUPlusWeights(
-                w_cash=self.w_cash,
                 w_endgame=0.0,
                 endgame_start_round=self.endgame_start_round,
                 w_block=self.w_block,
@@ -44,7 +34,6 @@ class ASUPlusWeights:
             )
         if term == "block":
             return ASUPlusWeights(
-                w_cash=self.w_cash,
                 w_endgame=self.w_endgame,
                 endgame_start_round=self.endgame_start_round,
                 w_block=0.0,
@@ -52,7 +41,6 @@ class ASUPlusWeights:
             )
         if term == "liq":
             return ASUPlusWeights(
-                w_cash=self.w_cash,
                 w_endgame=self.w_endgame,
                 endgame_start_round=self.endgame_start_round,
                 w_block=self.w_block,
@@ -107,10 +95,6 @@ def blocking_bonus(env, player_id: int) -> float:
     return bonus
 
 
-def cash_term(env, player_id: int, weights: ASUPlusWeights) -> float:
-    return weights.w_cash * float(env.players[player_id].cash)
-
-
 def endgame_margin_term(env, player_id: int, weights: ASUPlusWeights) -> float:
     own = float(env.players[player_id].net_worth())
     best_opp = max(
@@ -150,7 +134,6 @@ def evaluate_value_plus(
     if player.bankrupt or env.done:
         return base
 
-    cash = cash_term(env, player_id, weights)
     endgame = endgame_margin_term(env, player_id, weights)
     block = weights.w_block * blocking_bonus(env, player_id)
     liq = liquidity_term(env, player_id, weights)
@@ -160,14 +143,13 @@ def evaluate_value_plus(
         base.r_long,
         base.m_monopoly,
         base.terminal_utility,
-        base.total + cash + endgame + block + liq,
+        base.total + endgame + block + liq,
     )
 
 
 __all__ = [
     "ASUPlusWeights",
     "blocking_bonus",
-    "cash_term",
     "endgame_margin_term",
     "evaluate_value_plus",
     "liquidity_term",

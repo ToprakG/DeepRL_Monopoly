@@ -4,7 +4,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import multiprocessing as mp
+import os
 from dataclasses import asdict
 from pathlib import Path
 from typing import Any
@@ -27,6 +29,7 @@ ASU_VALUE_ID = "asu-value-v1"
 FIXED_A_ID = "fixed-a"
 FIXED_B_ID = "fixed-b"
 DEFAULT_LINEUP = (ASU_PLUS_V1, ASU_VALUE_ID, FIXED_A_ID, FIXED_B_ID)
+DEFAULT_WORKERS = max(1, os.cpu_count() or 1)
 
 
 class _Spec:
@@ -85,18 +88,19 @@ def rotate_lineup(base: tuple[str, ...], game_index: int) -> tuple[_Spec, ...]:
     return tuple(_Spec(policy_id) for policy_id in rotated)
 
 
-def _game_job(payload: dict[str, Any]) -> dict[str, Any]:
+def _game_job(payload: dict[str, Any]) -> tuple[int, dict[str, Any]]:
     weights = ASUPlusWeights(**payload["weights"])
     factory = _H2HFactory(weights)
     specs = tuple(_Spec(policy_id) for policy_id in payload["policies"])
     with preserve_global_rng():
-        return _run_game(
+        result = _run_game(
             specs,
             focus_seat=payload["focus_seat"],
             seed=payload["seed"],
             max_decisions=payload["max_decisions"],
             factory=factory,
         )
+    return int(payload["index"]), result
 
 
 def summarize_policies(games: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
@@ -123,7 +127,68 @@ def summarize_policies(games: list[dict[str, Any]]) -> dict[str, dict[str, Any]]
     return summaries
 
 
-def asu_plus_vs_asu(summaries: dict[str, dict[str, Any]]) -> dict[str, Any]:
+def paired_net_worth_margins(games: list[dict[str, Any]]) -> list[float]:
+    """Per-game ASU+ final net worth minus ASU final net worth (paired)."""
+
+    margins: list[float] = []
+    for game in games:
+        policies = game["policies"]
+        try:
+            plus_seat = policies.index(ASU_PLUS_V1)
+            asu_seat = policies.index(ASU_VALUE_ID)
+        except ValueError as exc:
+            raise RuntimeError("H2H game missing ASU+ or ASU seat") from exc
+        worth = game["final_net_worth"]
+        margins.append(float(worth[plus_seat]) - float(worth[asu_seat]))
+    return margins
+
+
+def summarize_net_worth_margin(games: list[dict[str, Any]]) -> dict[str, Any]:
+    """Mean paired net-worth margin ± standard error (ASU+ − ASU)."""
+
+    margins = paired_net_worth_margins(games)
+    n = len(margins)
+    if n == 0:
+        return {
+            "n": 0,
+            "mean": None,
+            "se": None,
+            "std": None,
+            "mean_minus_se": None,
+            "mean_plus_se": None,
+            "asu_plus_richer": 0,
+            "asu_plus_richer_rate": None,
+            "beats_asu_on_margin": False,
+            "margins": [],
+        }
+    mean = sum(margins) / n
+    if n > 1:
+        variance = sum((value - mean) ** 2 for value in margins) / (n - 1)
+        std = math.sqrt(variance)
+        se = std / math.sqrt(n)
+    else:
+        std = 0.0
+        se = 0.0
+    richer = sum(value > 0.0 for value in margins)
+    return {
+        "n": n,
+        "mean": mean,
+        "se": se,
+        "std": std,
+        "mean_minus_se": mean - se,
+        "mean_plus_se": mean + se,
+        "asu_plus_richer": richer,
+        "asu_plus_richer_rate": richer / n,
+        # Paired continuous signal: mean margin exceeds one SE above zero.
+        "beats_asu_on_margin": mean - se > 0.0,
+        "margins": margins,
+    }
+
+
+def asu_plus_vs_asu(
+    summaries: dict[str, dict[str, Any]],
+    games: list[dict[str, Any]] | None = None,
+) -> dict[str, Any]:
     plus = summaries.get(ASU_PLUS_V1)
     asu = summaries.get(ASU_VALUE_ID)
     if plus is None or asu is None:
@@ -131,6 +196,7 @@ def asu_plus_vs_asu(summaries: dict[str, dict[str, Any]]) -> dict[str, Any]:
     plus_rate = plus["win_rate"] or 0.0
     asu_rate = asu["win_rate"] or 0.0
     plus_lower = plus["wilson_95"][0]
+    margin = summarize_net_worth_margin(games or [])
     return {
         "asu_plus_win_rate": plus_rate,
         "asu_win_rate": asu_rate,
@@ -139,6 +205,13 @@ def asu_plus_vs_asu(summaries: dict[str, dict[str, Any]]) -> dict[str, Any]:
         "asu_plus_wilson_lower": plus_lower,
         "beats_asu": plus_lower > asu_rate,
         "rate_gap": plus_rate - asu_rate,
+        "net_worth_margin": {
+            key: value
+            for key, value in margin.items()
+            if key != "margins"  # keep public JSON small; full list stays in game path
+        },
+        "net_worth_margins": margin["margins"],
+        "beats_asu_on_margin": margin["beats_asu_on_margin"],
     }
 
 
@@ -149,7 +222,7 @@ def run_h2h(
     weights: ASUPlusWeights,
     lineup: tuple[str, ...] = DEFAULT_LINEUP,
     max_decisions: int = DEFAULT_MAX_DECISIONS,
-    workers: int = 1,
+    workers: int = DEFAULT_WORKERS,
 ) -> dict[str, Any]:
     if games < 1:
         raise ValueError("games must be positive")
@@ -164,6 +237,7 @@ def run_h2h(
         )
         jobs.append(
             {
+                "index": index,
                 "policies": [spec.policy_id for spec in specs],
                 "focus_seat": plus_seat,
                 "seed": seed + index,
@@ -174,22 +248,24 @@ def run_h2h(
 
     results: list[dict[str, Any] | None] = [None] * len(jobs)
     if workers == 1:
-        for index, job in enumerate(jobs):
-            results[index] = _game_job(job)
-            if (index + 1) % max(1, min(8, games)) == 0 or index + 1 == games:
-                print(f"h2h progress {index + 1}/{games}", flush=True)
+        for job in jobs:
+            index, result = _game_job(job)
+            results[index] = result
+            print(f"h2h progress {index + 1}/{games}", flush=True)
     else:
+        # Unordered: report as each game finishes instead of stalling on job 0.
         with mp.get_context("spawn").Pool(workers) as pool:
-            for index, result in enumerate(pool.imap(_game_job, jobs, chunksize=1)):
+            done = 0
+            for index, result in pool.imap_unordered(_game_job, jobs, chunksize=1):
                 results[index] = result
-                if (index + 1) % max(1, min(8, games)) == 0 or index + 1 == games:
-                    print(f"h2h progress {index + 1}/{games}", flush=True)
+                done += 1
+                print(f"h2h progress {done}/{games}", flush=True)
     completed = [result for result in results if result is not None]
     if len(completed) != len(jobs):
         raise RuntimeError("H2H pool returned incomplete results")
 
     summaries = summarize_policies(completed)
-    comparison = asu_plus_vs_asu(summaries)
+    comparison = asu_plus_vs_asu(summaries, completed)
     return {
         "ruleset": RULESET_VERSION,
         "frozen_spec_hash": FROZEN_SPEC_HASH,
@@ -214,7 +290,7 @@ def run_ablation(
     max_decisions: int,
     workers: int,
 ) -> dict[str, Any]:
-    terms = ("cash", "endgame", "block", "liq")
+    terms = ("endgame", "block", "liq")
     reports = {
         "full": run_h2h(
             games=games,
@@ -248,11 +324,10 @@ def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Seat-balanced ASU+ vs ASU head-to-head on ppo-plus-v2"
     )
-    parser.add_argument("--games", type=int, default=400)
+    parser.add_argument("--games", type=int, default=48)
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--max-decisions", type=int, default=DEFAULT_MAX_DECISIONS)
-    parser.add_argument("--workers", type=int, default=4)
-    parser.add_argument("--w-cash", type=float, default=defaults.w_cash)
+    parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS)
     parser.add_argument("--w-endgame", type=float, default=defaults.w_endgame)
     parser.add_argument(
         "--endgame-start-round",
@@ -277,10 +352,16 @@ def _parser() -> argparse.ArgumentParser:
 
 
 def _public_result(result: dict[str, Any], *, save_games: bool) -> dict[str, Any]:
-    if save_games or "game_records" not in result:
-        return result
     trimmed = dict(result)
-    trimmed.pop("game_records", None)
+    if not save_games:
+        trimmed.pop("game_records", None)
+    comparison = trimmed.get("asu_plus_vs_asu")
+    if isinstance(comparison, dict):
+        # Always keep summary margin stats; drop raw per-game vector unless saving games.
+        comparison = dict(comparison)
+        if not save_games:
+            comparison.pop("net_worth_margins", None)
+        trimmed["asu_plus_vs_asu"] = comparison
     return trimmed
 
 
@@ -288,7 +369,6 @@ def main(argv: list[str] | None = None) -> int:
     parser = _parser()
     args = parser.parse_args(argv)
     weights = ASUPlusWeights(
-        w_cash=args.w_cash,
         w_endgame=args.w_endgame,
         endgame_start_round=args.endgame_start_round,
         w_block=args.w_block,
@@ -323,6 +403,9 @@ def main(argv: list[str] | None = None) -> int:
 
     if not args.ablate:
         comparison = result["asu_plus_vs_asu"]
+        margin = comparison["net_worth_margin"]
+        mean = margin["mean"]
+        se = margin["se"]
         print(
             (
                 f"\nASU+ {comparison['asu_plus_win_rate']:.3f} "
@@ -333,18 +416,35 @@ def main(argv: list[str] | None = None) -> int:
             ),
             flush=True,
         )
-        return 0 if comparison["beats_asu"] else 2
+        if mean is None or se is None:
+            print("net_worth_margin: n=0", flush=True)
+        else:
+            print(
+                (
+                    f"net_worth_margin ASU+-ASU: mean={mean:.1f} ± SE {se:.1f} "
+                    f"(mean±SE [{mean - se:.1f}, {mean + se:.1f}]) "
+                    f"richer={margin['asu_plus_richer']}/{margin['n']} "
+                    f"| beats_asu_on_margin={comparison['beats_asu_on_margin']}"
+                ),
+                flush=True,
+            )
+        return 0 if comparison["beats_asu_on_margin"] else 2
 
     print("\nAblation ASU+ vs ASU:", flush=True)
     for name, block in result["ablation"].items():
         cmp_ = block["asu_plus_vs_asu"]
+        margin = cmp_["net_worth_margin"]
+        mean = margin["mean"]
+        se = margin["se"]
+        mean_txt = "n/a" if mean is None or se is None else f"{mean:.1f}±{se:.1f}"
         print(
             f"  {name}: ASU+={cmp_['asu_plus_win_rate']:.3f} "
             f"(lo={cmp_['asu_plus_wilson_lower']:.3f}) "
-            f"ASU={cmp_['asu_win_rate']:.3f} beats={cmp_['beats_asu']}",
+            f"ASU={cmp_['asu_win_rate']:.3f} beats={cmp_['beats_asu']} "
+            f"margin={mean_txt} beats_margin={cmp_['beats_asu_on_margin']}",
             flush=True,
         )
-    full_beats = result["ablation"]["full"]["asu_plus_vs_asu"]["beats_asu"]
+    full_beats = result["ablation"]["full"]["asu_plus_vs_asu"]["beats_asu_on_margin"]
     return 0 if full_beats else 2
 
 

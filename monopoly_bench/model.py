@@ -81,7 +81,9 @@ class MonopolyZeroNet(nn.Module):
         state: np.ndarray,
         legal_actions: Iterable[int],
         actor_id: int,
+        env=None,
     ) -> tuple[dict[int, float], np.ndarray]:
+        del env
         legal = tuple(int(action) for action in legal_actions)
         if not legal:
             raise ValueError("Cannot predict without a legal action")

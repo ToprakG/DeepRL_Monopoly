@@ -5,7 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 import math
 import time
-from typing import Mapping
+from typing import Callable, Mapping, Protocol
 
 import numpy as np
 
@@ -23,7 +23,20 @@ from .engine import (
     terminal_value,
     transition,
 )
-from .model import MonopolyZeroNet
+
+
+class PriorValueModel(Protocol):
+    def predict(
+        self,
+        state: np.ndarray,
+        legal_actions,
+        actor_id: int,
+        env: MonopolyEnv | None = None,
+    ) -> tuple[dict[int, float], np.ndarray]:
+        """Return legal priors and a physical 4-vector value."""
+
+
+LeafFn = Callable[[MonopolyEnv], np.ndarray]
 
 
 def _vector(value: np.ndarray) -> Vector:
@@ -127,20 +140,22 @@ class MaxNPUCT:
 
     def __init__(
         self,
-        model: MonopolyZeroNet,
+        model: PriorValueModel,
         config: SearchConfig | None = None,
         *,
         self_play: bool = False,
+        leaf_fn: LeafFn | None = None,
     ):
         self.model = model
         self.config = config or SearchConfig()
         self.self_play = self_play
+        self.leaf_fn = leaf_fn
         self.last_root: DecisionNode | None = None
 
     def _evaluate(self, env: MonopolyEnv) -> DecisionNode:
         actor = env.whose_turn()
         legal = tuple(env.get_allowed_actions(actor))
-        priors, value = self.model.predict(env._get_state(actor), legal, actor)
+        priors, value = self.model.predict(env._get_state(actor), legal, actor, env=env)
         probabilities = np.asarray(tuple(priors.values()), dtype=np.float64)
         if not np.isfinite(probabilities).all() or (probabilities < 0).any():
             raise RuntimeError("Policy produced invalid legal priors")
@@ -148,6 +163,14 @@ class MaxNPUCT:
         if total <= 0:
             raise RuntimeError("Policy assigned no probability to legal actions")
         priors = {action: probability / total for action, probability in priors.items()}
+        if self.leaf_fn is not None:
+            value = np.asarray(self.leaf_fn(env), dtype=np.float64)
+            if value.shape != (NUM_PLAYERS,):
+                raise RuntimeError(
+                    f"leaf_fn must return shape ({NUM_PLAYERS},), got {value.shape}"
+                )
+            if not np.isfinite(value).all():
+                raise RuntimeError("leaf_fn produced non-finite values")
         return DecisionNode(env, actor, legal, priors, value.astype(np.float64))
 
     def _widen(self, node: DecisionNode) -> None:
