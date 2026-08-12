@@ -594,6 +594,87 @@ def _save(report: dict[str, Any], path: Path) -> None:
                 handle.write(json.dumps(row, sort_keys=True) + "\n")
 
 
+def merge_checkpoint_dir(checkpoint_dir: Path, output: Path) -> dict[str, Any]:
+    """Merge every part_*.json/.npz/.jsonl under ``checkpoint_dir`` into ``output``.
+
+    ``run_label_gen``'s final report only covers the games *this* process
+    ran (see the "resumed games' counts only" note above) -- after a kill +
+    ``--resume``, the rest live in earlier checkpoint parts. This folds every
+    part back together (by seed, no overlap expected since manifest-driven
+    resume never reruns a completed seed) so ``output`` ends up covering every
+    game ever checkpointed, not just the last invocation's.
+    """
+
+    parts = sorted(checkpoint_dir.glob("part_*.json"))
+    if not parts:
+        return {}
+
+    seen_seeds: set[int] = set()
+    game_summaries: list[dict[str, Any]] = []
+    meta_template: dict[str, Any] | None = None
+    total_wall = 0.0
+    npz_arrays: dict[str, list[np.ndarray]] = {
+        "states": [], "legal_masks": [], "actors": [],
+        "selected_actions": [], "values": [], "outcomes": [],
+    }
+    jsonl_chunks: list[str] = []
+
+    for part_json in parts:
+        meta = json.loads(part_json.read_text(encoding="utf-8"))
+        if meta_template is None:
+            meta_template = meta
+        total_wall += meta["throughput"]["wall_seconds"]
+
+        seeds_here = [g["seed"] for g in meta["game_summaries"]]
+        dupes = seen_seeds.intersection(seeds_here)
+        if dupes:
+            raise ValueError(
+                f"duplicate seeds across checkpoint parts under {checkpoint_dir}: "
+                f"{sorted(dupes)[:5]}"
+            )
+        seen_seeds.update(seeds_here)
+        game_summaries.extend(meta["game_summaries"])
+
+        part_npz = part_json.with_suffix(".npz")
+        if part_npz.exists():
+            with np.load(part_npz) as data:
+                for key in npz_arrays:
+                    if key in data:
+                        npz_arrays[key].append(data[key])
+        part_jsonl = part_json.with_suffix(".jsonl")
+        if part_jsonl.exists():
+            jsonl_chunks.append(part_jsonl.read_text(encoding="utf-8"))
+
+    assert meta_template is not None
+    n_games = len(game_summaries)
+    n_labels = sum(len(arr) for arr in npz_arrays["states"])
+    merged_meta = {k: v for k, v in meta_template.items() if k != "game_summaries"}
+    merged_meta["game_summaries"] = sorted(game_summaries, key=lambda g: g["seed"])
+    merged_meta["games_completed"] = n_games
+    merged_meta["n_labels"] = n_labels
+    merged_meta["throughput"] = dict(meta_template["throughput"])
+    merged_meta["throughput"]["wall_seconds"] = total_wall
+    merged_meta["throughput"]["games_per_hour"] = (
+        (n_games / total_wall) * 3600.0 if total_wall > 0 else 0.0
+    )
+    merged_meta["throughput"]["labels_per_hour"] = (
+        (n_labels / total_wall) * 3600.0 if total_wall > 0 else 0.0
+    )
+    merged_meta["throughput"]["mean_labels_per_game"] = n_labels / n_games if n_games else 0.0
+
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(merged_meta, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    if n_labels:
+        np.savez_compressed(
+            output.with_suffix(".npz"),
+            **{key: np.concatenate(arrs, axis=0) for key, arrs in npz_arrays.items() if arrs},
+        )
+        with output.with_suffix(".jsonl").open("w", encoding="utf-8") as handle:
+            for chunk in jsonl_chunks:
+                handle.write(chunk)
+    return merged_meta
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Generate oracle MCTS teacher labels")
     parser.add_argument("--games", type=int, default=8)
@@ -672,6 +753,15 @@ def main(argv: list[str] | None = None) -> int:
         resume=bool(args.resume),
     )
     _save(report, args.output)
+    if checkpoint_dir is not None and checkpoint_dir.exists():
+        merged = merge_checkpoint_dir(checkpoint_dir, args.output)
+        if merged:
+            report = merged
+            print(
+                f"merged checkpoint parts -> {report['games_completed']} games, "
+                f"{report['n_labels']} labels -> {args.output}",
+                flush=True,
+            )
     thr = report["throughput"]
     print(
         f"wrote {report['n_labels']} labels from {report.get('games_completed', args.games)} "
