@@ -1,9 +1,9 @@
 ---
-name: oracle-label-batch
-description: Use when generating oracle MCTS teacher labels locally in this repo (DeepRL_Monopoly) via oracle.label_gen, babysitting a long-running background label-gen batch to completion, resuming one that got killed, or producing a chart+decoded-action report for a finished label batch.
+name: oracle-label-batch-local
+description: Use when generating oracle MCTS teacher labels on the LOCAL machine (not Colab) in this repo (DeepRL_Monopoly) via oracle.label_gen, babysitting a long-running local background label-gen batch to completion, resuming one that got killed, or producing a chart+decoded-action report for a finished local label batch. For generating labels on Colab instead, see the oracle-label-batch-colab skill.
 ---
 
-# Oracle Label Batch
+# Oracle Label Batch (Local)
 
 ## Overview
 
