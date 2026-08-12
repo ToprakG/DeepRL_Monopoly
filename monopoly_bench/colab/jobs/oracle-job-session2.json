@@ -4,6 +4,6 @@
   "games": 467,
   "seed_base": 20467,
   "max_rounds": 200,
-  "drive_folder": "MyDrive/REPLACE_WITH_SHARED_LABELS_FOLDER",
+  "drive_folder": "MyDrive/labels",
   "mount_drive": true
 }
