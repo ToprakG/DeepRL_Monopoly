@@ -297,73 +297,55 @@ def _collect_game(payload: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def run_label_gen(
-    *,
-    games: int,
-    seed: int,
-    config: OracleConfig,
-    mode: str = "vs_asu",
-    workers: int = DEFAULT_WORKERS,
-    max_rounds: int = 200,
-    subsample: int = 1,
-    hybrid: HybridLabelConfig | None = None,
-) -> dict[str, Any]:
-    jobs = []
-    for index in range(games):
-        if hybrid is not None:
-            kind = lineup_kind_for_game(index, hybrid)
-            job_mode = f"hybrid_{kind}"
-            hybrid_dict = hybrid.as_dict()
-        else:
-            kind = None
-            job_mode = mode
-            hybrid_dict = None
-        jobs.append(
-            {
-                "game_id": index,
-                "seed": seed + index,
-                "config": _oracle_config_dict(config),
-                "mode": job_mode,
-                "lineup_kind": kind,
-                "hybrid": hybrid_dict,
-                "max_rounds": max_rounds,
-                "subsample": subsample,
-            }
-        )
+DEFAULT_CHECKPOINT_EVERY = 25
 
-    wall_started = time.perf_counter()
-    results: list[dict[str, Any] | None] = [None] * games
-    if workers == 1:
-        for job in jobs:
-            result = _collect_game(job)
-            results[result["game_id"]] = result
-            print(
-                f"label progress {result['game_id'] + 1}/{games} "
-                f"labels={result['n_labels']} kind={result.get('lineup_kind')}",
-                flush=True,
-            )
-    else:
-        with mp.get_context("spawn").Pool(workers) as pool:
-            done = 0
-            for result in pool.imap_unordered(_collect_game, jobs, chunksize=1):
-                results[result["game_id"]] = result
-                done += 1
-                print(
-                    f"label progress {done}/{games} "
-                    f"labels={result['n_labels']} kind={result.get('lineup_kind')}",
-                    flush=True,
-                )
-    wall_elapsed = time.perf_counter() - wall_started
-    completed = [result for result in results if result is not None]
+
+def _manifest_path(checkpoint_dir: Path) -> Path:
+    return checkpoint_dir / "manifest.json"
+
+
+def _load_manifest(checkpoint_dir: Path) -> dict[str, Any]:
+    path = _manifest_path(checkpoint_dir)
+    if not path.exists():
+        return {"completed_seeds": [], "parts": []}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {"completed_seeds": [], "parts": []}
+    data.setdefault("completed_seeds", [])
+    data.setdefault("parts", [])
+    return data
+
+
+def _write_manifest(checkpoint_dir: Path, manifest: dict[str, Any]) -> None:
+    checkpoint_dir.mkdir(parents=True, exist_ok=True)
+    tmp = _manifest_path(checkpoint_dir).with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    tmp.replace(_manifest_path(checkpoint_dir))
+
+
+def _report_from_games(
+    *,
+    games_requested: int,
+    seed: int,
+    mode: str,
+    config: OracleConfig,
+    hybrid: HybridLabelConfig | None,
+    completed: list[dict[str, Any]],
+    wall_elapsed: float,
+    workers: int,
+) -> dict[str, Any]:
     labels = [record for game in completed for record in game["records"]]
     labels_per_game = [game["n_labels"] for game in completed]
     mean_labels = float(sum(labels_per_game) / len(labels_per_game)) if labels_per_game else 0.0
-    games_per_hour = (len(completed) / wall_elapsed) * 3600.0 if wall_elapsed > 0 else 0.0
+    games_done = len(completed)
+    games_per_hour = (games_done / wall_elapsed) * 3600.0 if wall_elapsed > 0 else 0.0
     return {
         "ruleset": RULESET_VERSION,
         "teacher": ORACLE_V1,
         "action_dim": ACTION_SPACE_SIZE,
-        "games": games,
+        "games": games_requested,
+        "games_completed": games_done,
         "seed": seed,
         "mode": mode if hybrid is None else "hybrid",
         "hybrid_config": None if hybrid is None else hybrid.as_dict(),
@@ -391,6 +373,187 @@ def run_label_gen(
         ],
         "labels": labels,
     }
+
+
+def _flush_checkpoint_part(
+    *,
+    checkpoint_dir: Path,
+    batch: list[dict[str, Any]],
+    games_requested: int,
+    seed: int,
+    mode: str,
+    config: OracleConfig,
+    hybrid: HybridLabelConfig | None,
+    wall_elapsed: float,
+    workers: int,
+    manifest: dict[str, Any],
+) -> Path:
+    """Write one part npz/json for a finished batch and update the manifest."""
+
+    checkpoint_dir.mkdir(parents=True, exist_ok=True)
+    seeds = sorted(int(game["seed"]) for game in batch)
+    part_stem = f"part_seed{seeds[0]}_{seeds[-1]}_n{len(batch)}"
+    part_path = checkpoint_dir / f"{part_stem}.json"
+    report = _report_from_games(
+        games_requested=games_requested,
+        seed=seed,
+        mode=mode,
+        config=config,
+        hybrid=hybrid,
+        completed=batch,
+        wall_elapsed=wall_elapsed,
+        workers=workers,
+    )
+    _save(report, part_path)
+    for game in batch:
+        seed_i = int(game["seed"])
+        if seed_i not in manifest["completed_seeds"]:
+            manifest["completed_seeds"].append(seed_i)
+    manifest["completed_seeds"] = sorted(set(int(s) for s in manifest["completed_seeds"]))
+    if part_stem not in manifest["parts"]:
+        manifest["parts"].append(part_stem)
+    _write_manifest(checkpoint_dir, manifest)
+    print(
+        f"checkpoint wrote {report['n_labels']} labels "
+        f"from {len(batch)} games -> {part_path.with_suffix('.npz')}",
+        flush=True,
+    )
+    return part_path
+
+
+def run_label_gen(
+    *,
+    games: int,
+    seed: int,
+    config: OracleConfig,
+    mode: str = "vs_asu",
+    workers: int = DEFAULT_WORKERS,
+    max_rounds: int = 200,
+    subsample: int = 1,
+    hybrid: HybridLabelConfig | None = None,
+    checkpoint_every: int = 0,
+    checkpoint_dir: Path | None = None,
+    resume: bool = False,
+) -> dict[str, Any]:
+    """Generate labels. If ``checkpoint_every`` > 0, flush a part every N finished games.
+
+    Resume skips seeds listed in ``checkpoint_dir/manifest.json`` so a killed Colab
+    VM can continue without redoing finished games.
+    """
+
+    ckpt_dir = Path(checkpoint_dir) if checkpoint_dir is not None else None
+    if checkpoint_every < 0:
+        raise ValueError("checkpoint_every must be >= 0")
+    if checkpoint_every > 0 and ckpt_dir is None:
+        raise ValueError("checkpoint_dir is required when checkpoint_every > 0")
+
+    manifest: dict[str, Any] = {"completed_seeds": [], "parts": []}
+    done_seeds: set[int] = set()
+    if ckpt_dir is not None and resume:
+        manifest = _load_manifest(ckpt_dir)
+        done_seeds = {int(s) for s in manifest.get("completed_seeds", [])}
+        print(
+            f"resume: skipping {len(done_seeds)} completed seeds from {ckpt_dir}",
+            flush=True,
+        )
+
+    jobs = []
+    for index in range(games):
+        game_seed = seed + index
+        if game_seed in done_seeds:
+            continue
+        if hybrid is not None:
+            kind = lineup_kind_for_game(index, hybrid)
+            job_mode = f"hybrid_{kind}"
+            hybrid_dict = hybrid.as_dict()
+        else:
+            kind = None
+            job_mode = mode
+            hybrid_dict = None
+        jobs.append(
+            {
+                "game_id": index,
+                "seed": game_seed,
+                "config": _oracle_config_dict(config),
+                "mode": job_mode,
+                "lineup_kind": kind,
+                "hybrid": hybrid_dict,
+                "max_rounds": max_rounds,
+                "subsample": subsample,
+            }
+        )
+
+    wall_started = time.perf_counter()
+    results: list[dict[str, Any] | None] = [None] * games
+    pending_batch: list[dict[str, Any]] = []
+    newly_done = 0
+    total_jobs = len(jobs)
+
+    def _on_result(result: dict[str, Any]) -> None:
+        nonlocal newly_done
+        results[result["game_id"]] = result
+        newly_done += 1
+        print(
+            f"label progress {newly_done}/{total_jobs} "
+            f"(game_id={result['game_id'] + 1}/{games}) "
+            f"labels={result['n_labels']} kind={result.get('lineup_kind')}",
+            flush=True,
+        )
+        if checkpoint_every > 0 and ckpt_dir is not None:
+            pending_batch.append(result)
+            if len(pending_batch) >= checkpoint_every:
+                batch = pending_batch[:]
+                pending_batch.clear()
+                _flush_checkpoint_part(
+                    checkpoint_dir=ckpt_dir,
+                    batch=batch,
+                    games_requested=games,
+                    seed=seed,
+                    mode=mode,
+                    config=config,
+                    hybrid=hybrid,
+                    wall_elapsed=time.perf_counter() - wall_started,
+                    workers=workers,
+                    manifest=manifest,
+                )
+
+    if total_jobs == 0:
+        print("resume: nothing left to run", flush=True)
+    elif workers == 1 or total_jobs == 1:
+        for job in jobs:
+            _on_result(_collect_game(job))
+    else:
+        with mp.get_context("spawn").Pool(workers) as pool:
+            for result in pool.imap_unordered(_collect_game, jobs, chunksize=1):
+                _on_result(result)
+
+    if pending_batch and checkpoint_every > 0 and ckpt_dir is not None:
+        _flush_checkpoint_part(
+            checkpoint_dir=ckpt_dir,
+            batch=pending_batch,
+            games_requested=games,
+            seed=seed,
+            mode=mode,
+            config=config,
+            hybrid=hybrid,
+            wall_elapsed=time.perf_counter() - wall_started,
+            workers=workers,
+            manifest=manifest,
+        )
+
+    wall_elapsed = time.perf_counter() - wall_started
+    completed = [result for result in results if result is not None]
+    # Include resumed games' counts only for this run's completed set.
+    return _report_from_games(
+        games_requested=games,
+        seed=seed,
+        mode=mode,
+        config=config,
+        hybrid=hybrid,
+        completed=completed,
+        wall_elapsed=wall_elapsed,
+        workers=workers,
+    )
 
 
 def _save(report: dict[str, Any], path: Path) -> None:
@@ -453,6 +616,23 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("--subsample", type=int, default=1)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument(
+        "--checkpoint-every",
+        type=int,
+        default=DEFAULT_CHECKPOINT_EVERY,
+        help="Flush a part npz every N finished games (0 disables). Default: 25.",
+    )
+    parser.add_argument(
+        "--checkpoint-dir",
+        type=Path,
+        default=None,
+        help="Directory for part_*.npz + manifest.json (defaults to <output>.ckpt)",
+    )
+    parser.add_argument(
+        "--resume",
+        action="store_true",
+        help="Skip seeds already listed in checkpoint-dir/manifest.json",
+    )
     args = parser.parse_args(argv)
 
     hybrid_cfg: HybridLabelConfig | None = None
@@ -472,6 +652,13 @@ def main(argv: list[str] | None = None) -> int:
         config = oracle_config_from_args(args)
         mode = args.mode
 
+    checkpoint_every = int(args.checkpoint_every)
+    checkpoint_dir = args.checkpoint_dir
+    if checkpoint_every > 0 and checkpoint_dir is None:
+        checkpoint_dir = args.output.with_suffix(args.output.suffix + ".ckpt")
+        if args.output.suffix == ".json":
+            checkpoint_dir = args.output.with_name(args.output.stem + ".ckpt")
+
     report = run_label_gen(
         games=args.games,
         seed=args.seed,
@@ -480,11 +667,15 @@ def main(argv: list[str] | None = None) -> int:
         workers=args.workers,
         subsample=args.subsample,
         hybrid=hybrid_cfg,
+        checkpoint_every=checkpoint_every,
+        checkpoint_dir=checkpoint_dir,
+        resume=bool(args.resume),
     )
     _save(report, args.output)
     thr = report["throughput"]
     print(
-        f"wrote {report['n_labels']} labels from {args.games} games -> {args.output}",
+        f"wrote {report['n_labels']} labels from {report.get('games_completed', args.games)} "
+        f"games -> {args.output}",
         flush=True,
     )
     print(
