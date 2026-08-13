@@ -19,7 +19,7 @@ from ASU_FROZEN_TEACHER.evaluate import (
     wilson_interval,
 )
 from ASU_FROZEN_TEACHER.spec import FROZEN_SPEC_HASH
-from monopoly_game_engine.agents_fixed import FPAgentA, FPAgentB
+from monopoly_game_engine.agents_fixed import FPAgentA, FPAgentB, FPAgentC
 from monopoly_game_engine.constants import NUM_PLAYERS, RULESET_VERSION
 
 from .agent import ORACLE_V1, OracleAgent, OracleConfig
@@ -27,7 +27,9 @@ from .agent import ORACLE_V1, OracleAgent, OracleConfig
 ASU_VALUE_ID = "asu-value-v1"
 FIXED_A_ID = "fixed-a"
 FIXED_B_ID = "fixed-b"
+FIXED_C_ID = "fixed-c"
 DEFAULT_LINEUP = (ORACLE_V1, ASU_VALUE_ID, FIXED_A_ID, FIXED_B_ID)
+FIXED_LINEUP = (ORACLE_V1, FIXED_A_ID, FIXED_B_ID, FIXED_C_ID)
 DEFAULT_WORKERS = max(1, os.cpu_count() or 1)
 
 
@@ -71,6 +73,8 @@ class _H2HFactory:
             return _ScriptedAdapter(FPAgentA(player_id), player_id)
         if spec.policy_id == FIXED_B_ID:
             return _ScriptedAdapter(FPAgentB(player_id), player_id)
+        if spec.policy_id == FIXED_C_ID:
+            return _ScriptedAdapter(FPAgentC(player_id), player_id)
         raise ValueError(f"Unsupported H2H policy {spec.policy_id!r}")
 
 
@@ -240,8 +244,7 @@ def run_h2h(
         raise RuntimeError("H2H pool returned incomplete results")
 
     summaries = summarize_policies(completed)
-    comparison = oracle_vs_asu(summaries, completed)
-    return {
+    payload: dict[str, Any] = {
         "ruleset": RULESET_VERSION,
         "frozen_spec_hash": FROZEN_SPEC_HASH,
         "lineup": list(lineup),
@@ -251,10 +254,19 @@ def run_h2h(
         "workers": workers,
         "truncations": sum(game["truncated"] for game in completed),
         "win_rates": summaries,
-        "oracle_vs_asu": comparison,
         "game_records": completed,
         "disclaimer": RESULTS_DISCLAIMER,
     }
+    if ASU_VALUE_ID in lineup:
+        payload["oracle_vs_asu"] = oracle_vs_asu(summaries, completed)
+    oracle = summaries.get(ORACLE_V1, {})
+    payload["oracle_focus"] = {
+        "wins": oracle.get("wins"),
+        "games": oracle.get("games"),
+        "win_rate": oracle.get("win_rate"),
+        "wilson_95": oracle.get("wilson_95"),
+    }
+    return payload
 
 
 def run_sims_sweep(
@@ -344,6 +356,15 @@ def _parser() -> argparse.ArgumentParser:
     parser.add_argument("--margin-temperature", type=float, default=2000.0)
     parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS)
     parser.add_argument("--max-decisions", type=int, default=DEFAULT_MAX_DECISIONS)
+    parser.add_argument(
+        "--lineup",
+        type=str,
+        default=",".join(DEFAULT_LINEUP),
+        help=(
+            "Comma-separated 4-seat lineup. Use "
+            f"{','.join(FIXED_LINEUP)} for oracle vs three fixed agents."
+        ),
+    )
     parser.add_argument("--output", type=Path)
     parser.add_argument("--pretty", action="store_true")
     parser.add_argument(
@@ -354,11 +375,25 @@ def _parser() -> argparse.ArgumentParser:
     return parser
 
 
+def _parse_lineup(text: str) -> tuple[str, ...]:
+    lineup = tuple(part.strip() for part in text.split(",") if part.strip())
+    if len(lineup) != NUM_PLAYERS:
+        raise ValueError(f"lineup must have {NUM_PLAYERS} policies, got {len(lineup)}")
+    if ORACLE_V1 not in lineup:
+        raise ValueError(f"lineup must include {ORACLE_V1}")
+    return lineup
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = _parser()
     args = parser.parse_args(argv)
     try:
         sims_list = _parse_sims(args.sims)
+    except ValueError as exc:
+        parser.error(str(exc))
+
+    try:
+        lineup = _parse_lineup(args.lineup)
     except ValueError as exc:
         parser.error(str(exc))
 
@@ -373,6 +408,7 @@ def main(argv: list[str] | None = None) -> int:
             games=args.games,
             seed=args.seed,
             config=config,
+            lineup=lineup,
             workers=args.workers,
             max_decisions=args.max_decisions,
         )
@@ -384,28 +420,39 @@ def main(argv: list[str] | None = None) -> int:
             args.output.parent.mkdir(parents=True, exist_ok=True)
             args.output.write_text(payload + "\n", encoding="utf-8")
         print(payload, flush=True)
-        cmp_ = result["oracle_vs_asu"]
-        margin = cmp_["net_worth_margin"]
+        focus = result["oracle_focus"]
         print(
             (
-                f"\noracle {cmp_['oracle_win_rate']:.3f} "
-                f"(Wilson [{cmp_['oracle_wilson_95'][0]:.3f}, "
-                f"{cmp_['oracle_wilson_95'][1]:.3f}]) "
-                f"vs ASU {cmp_['asu_win_rate']:.3f} "
-                f"| beats_asu={cmp_['beats_asu']}"
+                f"\noracle focus WR={focus['win_rate']:.3f} "
+                f"({focus['wins']}/{focus['games']}) "
+                f"Wilson {focus['wilson_95']} lineup={list(lineup)}"
             ),
             flush=True,
         )
-        print(
-            (
-                f"net_worth_margin oracle-ASU: mean={margin['mean']:.1f} "
-                f"± SE {margin['se']:.1f} "
-                f"richer={margin['oracle_richer']}/{margin['n']} "
-                f"| beats_asu_on_margin={cmp_['beats_asu_on_margin']}"
-            ),
-            flush=True,
-        )
-        return 0 if cmp_["beats_asu_on_margin"] else 2
+        if "oracle_vs_asu" in result:
+            cmp_ = result["oracle_vs_asu"]
+            margin = cmp_["net_worth_margin"]
+            print(
+                (
+                    f"oracle {cmp_['oracle_win_rate']:.3f} "
+                    f"(Wilson [{cmp_['oracle_wilson_95'][0]:.3f}, "
+                    f"{cmp_['oracle_wilson_95'][1]:.3f}]) "
+                    f"vs ASU {cmp_['asu_win_rate']:.3f} "
+                    f"| beats_asu={cmp_['beats_asu']}"
+                ),
+                flush=True,
+            )
+            print(
+                (
+                    f"net_worth_margin oracle-ASU: mean={margin['mean']:.1f} "
+                    f"± SE {margin['se']:.1f} "
+                    f"richer={margin['oracle_richer']}/{margin['n']} "
+                    f"| beats_asu_on_margin={cmp_['beats_asu_on_margin']}"
+                ),
+                flush=True,
+            )
+            return 0 if cmp_["beats_asu_on_margin"] else 2
+        return 0
 
     sweep = run_sims_sweep(
         games=args.games,

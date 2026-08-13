@@ -12,6 +12,7 @@ from typing import Any
 
 import numpy as np
 
+from ASU_FROZEN_TEACHER import core as asu_core
 from ASU_FROZEN_TEACHER.core import ASUValueV1, preserve_global_rng
 from monopoly_bench.engine import (
     ACTION_SPACE_SIZE,
@@ -29,10 +30,27 @@ from .hybrid_config import (
     checkpoint_kind,
     is_event_checkpoint,
     lineup_kind_for_game,
+    should_label_routine,
 )
 from .rollout_policy import greedy_rollout_action
 
 DEFAULT_WORKERS = max(1, os.cpu_count() or 1)
+
+
+class FastASUValueV1(ASUValueV1):
+    """Pool-play ASUValue: same decide logic, 1-sample dice instead of 36-outcome EV.
+
+    Labeling cost is dominated by ASU's full dice expectation on every ROLL_DICE
+    candidate. Oracle Max-N labeling stays at HybridLabelConfig sims (128).
+    """
+
+    def _roll_outcome(self, env, action: int):
+        items = sorted(asu_core._dice_seeds().items())
+        pair, seed = items[len(items) // 2]
+        rolled = self._step_copy(env, action, seed)
+        if tuple(rolled.last_dice) != pair:
+            raise AssertionError("dice seed no longer produces its frozen outcome")
+        return self.value(rolled), self.safety(rolled)
 
 
 class _Scripted:
@@ -95,8 +113,8 @@ def _build_hybrid_players(
         return players, tuple(range(NUM_PLAYERS))
     if kind == "pool":
         focus = seed % NUM_PLAYERS
-        # One hybrid label seat + ASU + two frozen scripted bots (same mix as H2H).
-        pool_factories = [ASUValueV1, FPAgentA, FPAgentB]
+        # One hybrid label seat + fast ASUValue + two frozen scripted bots.
+        pool_factories = [FastASUValueV1, FPAgentA, FPAgentB]
         players: list[Any] = []
         pool_idx = 0
         for seat in range(NUM_PLAYERS):
@@ -106,7 +124,7 @@ def _build_hybrid_players(
             factory = pool_factories[pool_idx]
             pool_idx += 1
             raw = factory(seat)
-            players.append(raw if factory is ASUValueV1 else _Scripted(raw))
+            players.append(raw if factory is FastASUValueV1 else _Scripted(raw))
         return players, (focus,)
     raise ValueError(f"Unknown hybrid lineup kind {kind!r}")
 
@@ -133,9 +151,14 @@ def _record_label(
     env,
     legal: tuple[int, ...],
     result,
+    kind: str | None = None,
 ) -> dict[str, Any]:
     visits = {int(k): int(v) for k, v in result.visits.items()}
     total = float(sum(visits.values())) or 1.0
+    # Soft visit mass is required for distillation (never emit empty / one-hot stubs).
+    if not visits:
+        raise RuntimeError("oracle label missing visit counts; refuse one-hot fallback")
+    event = kind is not None and kind != "routine"
     return {
         "game_id": game_id,
         "seed": seed,
@@ -148,7 +171,8 @@ def _record_label(
         "backed_up_value_vector": list(result.root_value),
         "selected_action": int(result.chosen_action),
         "simulations": result.simulations,
-        "checkpoint": True,
+        "checkpoint": event,
+        "checkpoint_kind": kind or ("event" if event else "routine"),
     }
 
 
@@ -209,13 +233,19 @@ def _collect_game(payload: dict[str, Any]) -> dict[str, Any]:
                         already_labeled_build_menu=build_key in build_menu_labeled,
                         already_labeled_trade_round=trade_key in trade_round_labeled,
                     )
-                    if checkpoint:
-                        checkpoints_seen += 1
-                    if (
-                        checkpoint
-                        and actor in label_seat_set
-                        and hybrid_cfg.label_checkpoints_only
+                    label_kind: str | None = None
+                    if checkpoint and actor in label_seat_set:
+                        label_kind = kind or "event"
+                    elif actor in label_seat_set and should_label_routine(
+                        seed=seed,
+                        step=step,
+                        actor=actor,
+                        prob=hybrid_cfg.routine_label_prob,
                     ):
+                        label_kind = "routine"
+                    if label_kind is not None:
+                        if checkpoint:
+                            checkpoints_seen += 1
                         result = search.choose_action(game.env, actor, decision_seed + step)
                         records.append(
                             _record_label(
@@ -226,6 +256,7 @@ def _collect_game(payload: dict[str, Any]) -> dict[str, Any]:
                                 env=game.env,
                                 legal=legal,
                                 result=result,
+                                kind=label_kind,
                             )
                         )
                         labeled += 1

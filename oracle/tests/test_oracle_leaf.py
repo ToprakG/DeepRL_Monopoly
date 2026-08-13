@@ -151,10 +151,11 @@ def test_event_checkpoint_buy_trade_not_end_turn():
     assert is_event_checkpoint(trade, legal_trade)
 
     plain = SharedGame.new(3, max_rounds=50).env
-    # Fresh pre-roll with no owned props: END_TURN (+ maybe trades). Not a buy/build/accept checkpoint
-    # unless only END_TURN — trade-offer spam alone is intentionally excluded.
+    # Fresh pre-roll with no owned props: END_TURN (+ maybe outgoing offers).
+    # Incoming accept/decline is an event; bare END_TURN is routine-only.
     legal_plain = plain.get_allowed_actions(plain.whose_turn())
     if int(ActionType.BUY_PROPERTY) not in legal_plain and not (
         int(ActionType.ACCEPT_TRADE) in legal_plain
+        or int(ActionType.DECLINE_TRADE) in legal_plain
     ):
         assert not is_event_checkpoint(plain, legal_plain) or plain.phase == "auction"
