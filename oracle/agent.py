@@ -37,6 +37,7 @@ STRUCTURAL_BOOST = {
     "buy_trade": 2.0,
     "exch_trade": 1.5,
     "auction": 1.5,
+    "sell_trade": 0.8,
 }
 STRUCTURAL_PENALTY = {
     "mortgage": 0.25,
@@ -44,7 +45,6 @@ STRUCTURAL_PENALTY = {
     "sell_house": 0.2,
     "sell_hotel": 0.2,
     "sell_prop": 0.15,
-    "sell_trade": 0.3,
 }
 
 
