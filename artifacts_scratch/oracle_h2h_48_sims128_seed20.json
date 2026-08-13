@@ -1,0 +1,94 @@
+{
+  "disclaimer": "These are ppo-plus-v2 simulator results for ASU-inspired reconstructions; they do not reproduce or estimate either cited paper's reported win rates.",
+  "frozen_spec_hash": "9ab1907e0de1af4b253ce36ffa107c4fdb5e2b913858ef87c362423e61a6fd74",
+  "games": 48,
+  "lineup": [
+    "oracle-rollout-v1",
+    "asu-value-v1",
+    "fixed-a",
+    "fixed-b"
+  ],
+  "oracle_config": {
+    "c_puct": 1.5,
+    "margin_temperature": 2000.0,
+    "max_depth": 64,
+    "max_width": 16,
+    "prior_peak": 0.55,
+    "rollout_horizon": 16,
+    "rollouts_per_leaf": 1,
+    "simulations": 128
+  },
+  "oracle_vs_asu": {
+    "asu_wilson_95": [
+      0.25215266760868205,
+      0.5163723648078473
+    ],
+    "asu_win_rate": 0.375,
+    "beats_asu": true,
+    "beats_asu_on_margin": false,
+    "net_worth_margin": {
+      "beats_asu_on_margin": false,
+      "mean": 2457.8125,
+      "mean_minus_se": -1922.4505274739022,
+      "mean_plus_se": 6838.075527473902,
+      "n": 48,
+      "oracle_richer": 28,
+      "oracle_richer_rate": 0.5833333333333334,
+      "se": 4380.263027473902,
+      "std": 30347.352456401066
+    },
+    "oracle_wilson_95": [
+      0.40291074545649797,
+      0.6742475770713254
+    ],
+    "oracle_wilson_lower": 0.40291074545649797,
+    "oracle_win_rate": 0.5416666666666666,
+    "rate_gap": 0.16666666666666663
+  },
+  "ruleset": "ppo-plus-v2",
+  "seed": 20,
+  "truncations": 0,
+  "win_rates": {
+    "asu-value-v1": {
+      "games": 48,
+      "wilson_95": [
+        0.25215266760868205,
+        0.5163723648078473
+      ],
+      "win_rate": 0.375,
+      "win_rate_percent": 37.5,
+      "wins": 18
+    },
+    "fixed-a": {
+      "games": 48,
+      "wilson_95": [
+        6.938893903907228e-18,
+        0.07410012966611748
+      ],
+      "win_rate": 0.0,
+      "win_rate_percent": 0.0,
+      "wins": 0
+    },
+    "fixed-b": {
+      "games": 48,
+      "wilson_95": [
+        0.032883756818091775,
+        0.1955330179036728
+      ],
+      "win_rate": 0.08333333333333333,
+      "win_rate_percent": 8.333333333333332,
+      "wins": 4
+    },
+    "oracle-rollout-v1": {
+      "games": 48,
+      "wilson_95": [
+        0.40291074545649797,
+        0.6742475770713254
+      ],
+      "win_rate": 0.5416666666666666,
+      "win_rate_percent": 54.166666666666664,
+      "wins": 26
+    }
+  },
+  "workers": 8
+}

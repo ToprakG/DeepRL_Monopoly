@@ -1,0 +1,87 @@
+/Users/toprakgundogdu/DeepRL_Monopoly/.venv/bin/python -u -m oracle.eval_h2h --games 24 --seed 9200000 --sims 32 --horizon 16 --rollouts 1 --workers 6 --deadline-s 0 --early-stop-lead 0 --game-timeout-s 0 --resume --pretty --checkpoint-dir /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/h2h_underdog_strong_ckpt --output /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/h2h_underdog_strong.json --lineup oracle-fast-v1,underdog-v1,slayer-v1,alinebidal-final --lineup oracle-fast-v1,underdog-v1,inncenta-heuristic,slayer-v1 --lineup oracle-fast-v1,underdog-v1,alinebidal-final,inncenta-heuristic
+
+=== field 1/3 ['oracle-fast-v1', 'underdog-v1', 'slayer-v1', 'alinebidal-final'] ===
+h2h progress 1/24
+h2h progress 2/24
+h2h progress 3/24
+h2h progress 4/24
+h2h progress 5/24
+h2h progress 6/24
+h2h progress 7/24
+h2h progress 8/24
+h2h progress 9/24
+h2h progress 10/24
+h2h progress 11/24
+h2h progress 12/24
+h2h progress 13/24
+h2h progress 14/24
+h2h progress 15/24
+h2h progress 16/24
+h2h progress 17/24
+h2h progress 18/24
+h2h progress 19/24
+h2h progress 20/24
+h2h progress 21/24
+h2h progress 22/24
+h2h progress 23/24
+h2h progress 24/24
+
+lineup=['oracle-fast-v1', 'underdog-v1', 'slayer-v1', 'alinebidal-final']
+  alinebidal-final: WR=0.208 (5/24) Wilson [0.09244825352851857, 0.40470453253188665]
+  oracle-fast-v1: WR=0.208 (5/24) Wilson [0.09244825352851857, 0.40470453253188665]
+  slayer-v1: WR=0.250 (6/24) Wilson [0.11999366228595004, 0.44899444005154004]
+  underdog-v1: WR=0.333 (8/24) Wilson [0.1797219032729775, 0.5329368316186824]
+oracle WR=0.208 Wilson [0.09244825352851857, 0.40470453253188665]
+  vs alinebidal-final: WR=0.208 (5/24) gap=+0.000 margin=-5702.1 ± SE 4117.5
+  vs slayer-v1: WR=0.250 (6/24) gap=-0.042 margin=-4298.6 ± SE 4109.3
+  vs underdog-v1: WR=0.333 (8/24) gap=-0.125 margin=-10137.4 ± SE 4965.0
+
+=== field 2/3 ['oracle-fast-v1', 'underdog-v1', 'inncenta-heuristic', 'slayer-v1'] ===
+h2h progress 1/24
+h2h progress 2/24
+h2h progress 3/24
+h2h progress 4/24
+h2h progress 5/24
+h2h progress 6/24
+h2h progress 7/24
+h2h progress 8/24
+h2h progress 9/24
+h2h progress 10/24
+h2h progress 11/24
+h2h progress 12/24
+h2h progress 13/24
+h2h progress 14/24
+h2h progress 15/24
+h2h progress 16/24
+h2h progress 17/24
+h2h progress 18/24
+h2h progress 19/24
+h2h progress 20/24
+h2h progress 21/24
+h2h progress 22/24
+h2h progress 23/24
+h2h progress 24/24
+
+lineup=['oracle-fast-v1', 'underdog-v1', 'inncenta-heuristic', 'slayer-v1']
+  inncenta-heuristic: WR=0.167 (4/24) Wilson [0.06678676328632951, 0.3585307064969906]
+  oracle-fast-v1: WR=0.167 (4/24) Wilson [0.06678676328632951, 0.3585307064969906]
+  slayer-v1: WR=0.458 (11/24) Wilson [0.2789133373121099, 0.6492513464108051]
+  underdog-v1: WR=0.208 (5/24) Wilson [0.09244825352851857, 0.40470453253188665]
+oracle WR=0.167 Wilson [0.06678676328632951, 0.3585307064969906]
+  vs inncenta-heuristic: WR=0.167 (4/24) gap=+0.000 margin=-264.5 ± SE 3569.2
+  vs slayer-v1: WR=0.458 (11/24) gap=-0.292 margin=-11662.7 ± SE 4832.2
+  vs underdog-v1: WR=0.208 (5/24) gap=-0.042 margin=-2070.6 ± SE 3952.5
+
+=== field 3/3 ['oracle-fast-v1', 'underdog-v1', 'alinebidal-final', 'inncenta-heuristic'] ===
+h2h progress 1/24
+h2h progress 2/24
+h2h progress 3/24
+h2h progress 4/24
+h2h progress 5/24
+h2h progress 6/24
+h2h progress 7/24
+h2h progress 8/24
+h2h progress 9/24
+h2h progress 10/24
+h2h progress 11/24
+h2h progress 12/24

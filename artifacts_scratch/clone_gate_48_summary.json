@@ -1,0 +1,27 @@
+{
+  "cells": [
+    {
+      "completed": 48,
+      "crashes": 0,
+      "games": 48,
+      "illegal_actions": 0,
+      "latency_mean_s": 0.3642423578612186,
+      "latency_p50_s": 0.3128102910122834,
+      "latency_p95_s": 0.7524244170053862,
+      "n_searches": 44161,
+      "ok": true,
+      "output": "/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/hybrid_clone_new25k_vs_fixed_48_sims32.json",
+      "sims": 32,
+      "vs": "fixed",
+      "wall_s": 2299.8297717499954,
+      "wilson_lower": 0.23433644125604852,
+      "win_rate": 0.3541666666666667,
+      "wins": 17
+    }
+  ],
+  "checkpoint": "/Users/toprakgundogdu/DeepRL_Monopoly/monopoly_bench/runs/oracle_hybrid_bc_new25k/snapshots/hybrid_clone_0000.pt",
+  "elapsed_s": 2301.9403077079915,
+  "games": 48,
+  "seed": 5300000,
+  "workers": 8
+}

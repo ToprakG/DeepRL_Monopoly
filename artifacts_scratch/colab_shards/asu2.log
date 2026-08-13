@@ -1,0 +1,7 @@
+[10:54:49] upload asu2
+[colab] Uploaded '/tmp/asu_plus_h2h_src.tgz' to '/content/asu_plus_h2h_src.tgz'
+[10:55:15] start background asu2 games=10 seed=22
+STARTED pid 13838 out /content/asu_plus_h2h_10_seed22.json
+/tmp/ipykernel_13006/3628834065.py:5: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.
+  t.extractall(".")
+[10:56:04] launched asu2

@@ -1,0 +1,81 @@
+{
+  "disclaimer": "These are ppo-plus-v2 simulator results for ASU-inspired reconstructions; they do not reproduce or estimate either cited paper's reported win rates.",
+  "frozen_spec_hash": "9ab1907e0de1af4b253ce36ffa107c4fdb5e2b913858ef87c362423e61a6fd74",
+  "games": 8,
+  "lineup": [
+    "oracle-fast-v1",
+    "fixed-a",
+    "fixed-b",
+    "fixed-c"
+  ],
+  "live": true,
+  "oracle_config": {
+    "c_puct": 1.5,
+    "deadline_s": null,
+    "early_stop_min_sims": 16,
+    "early_stop_visit_lead": null,
+    "margin_temperature": 2000.0,
+    "max_depth": 64,
+    "max_width": 16,
+    "prior_peak": 0.55,
+    "rollout_horizon": 16,
+    "rollouts_per_leaf": 1,
+    "simulations": 32
+  },
+  "oracle_focus": {
+    "games": 8,
+    "wilson_95": [
+      0.13684428582359742,
+      0.6942576053973727
+    ],
+    "win_rate": 0.375,
+    "wins": 3
+  },
+  "ruleset": "ppo-plus-v2",
+  "seed": 5300000,
+  "truncations": 0,
+  "turn_deadline_s": 4.0,
+  "win_rates": {
+    "fixed-a": {
+      "games": 8,
+      "wilson_95": [
+        0.0,
+        0.32440756488388023
+      ],
+      "win_rate": 0.0,
+      "win_rate_percent": 0.0,
+      "wins": 0
+    },
+    "fixed-b": {
+      "games": 8,
+      "wilson_95": [
+        0.071479212752109,
+        0.5907245696898311
+      ],
+      "win_rate": 0.25,
+      "win_rate_percent": 25.0,
+      "wins": 2
+    },
+    "fixed-c": {
+      "games": 8,
+      "wilson_95": [
+        0.13684428582359742,
+        0.6942576053973727
+      ],
+      "win_rate": 0.375,
+      "win_rate_percent": 37.5,
+      "wins": 3
+    },
+    "oracle-fast-v1": {
+      "games": 8,
+      "wilson_95": [
+        0.13684428582359742,
+        0.6942576053973727
+      ],
+      "win_rate": 0.375,
+      "win_rate_percent": 37.5,
+      "wins": 3
+    }
+  },
+  "workers": 8
+}

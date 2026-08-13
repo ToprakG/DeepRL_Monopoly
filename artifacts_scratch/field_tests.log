@@ -1,0 +1,778 @@
+
+=== field tests 2026-08-13 14:52:26 ===
+starting field_main_heavy96 games=96 field=oracle-plus-v1,alinebidal-final,slayer-v1,inncenta-heuristic target=OUR 50%
+
+=== field_main_heavy96 start 2026-08-13 14:52:26 ===
+/Users/toprakgundogdu/DeepRL_Monopoly/.venv/bin/python -u -m oracle.eval_h2h --games 96 --seed 8200300 --workers 6 --deadline-s 0 --early-stop-lead 0 --game-timeout-s 0 --resume --pretty --lineup oracle-plus-v1,alinebidal-final,slayer-v1,inncenta-heuristic --checkpoint-dir /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/beat50_plus_auction_heavy_strong_ckpt --output /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/field_main_heavy96.json --leaf asu --one-ply --denial --denial-weight 2.0 --no-solvency --completing-trade --auction --inncenta-trade
+resume: skipping 48 completed games
+h2h progress 49/96
+h2h progress 50/96
+h2h progress 51/96
+h2h progress 52/96
+h2h progress 53/96
+h2h progress 54/96
+h2h progress 55/96
+h2h progress 56/96
+h2h progress 57/96
+h2h progress 58/96
+h2h progress 59/96
+h2h progress 60/96
+h2h progress 61/96
+h2h progress 62/96
+h2h progress 63/96
+h2h progress 64/96
+h2h progress 65/96
+h2h progress 66/96
+h2h progress 67/96
+h2h progress 68/96
+h2h progress 69/96
+h2h progress 70/96
+h2h progress 71/96
+h2h progress 72/96
+h2h progress 73/96
+h2h progress 74/96
+h2h progress 75/96
+h2h progress 76/96
+h2h progress 77/96
+h2h progress 78/96
+h2h progress 79/96
+h2h progress 80/96
+h2h progress 81/96
+h2h progress 82/96
+h2h progress 83/96
+h2h progress 84/96
+h2h progress 85/96
+h2h progress 86/96
+h2h progress 87/96
+h2h progress 88/96
+h2h progress 89/96
+h2h progress 90/96
+h2h progress 91/96
+h2h progress 92/96
+h2h progress 93/96
+h2h progress 94/96
+h2h progress 95/96
+h2h progress 96/96
+
+lineup=['oracle-plus-v1', 'alinebidal-final', 'slayer-v1', 'inncenta-heuristic']
+  alinebidal-final: WR=0.281 (27/96) Wilson [0.20107410838369372, 0.3782589613040394]
+  inncenta-heuristic: WR=0.188 (18/96) Wilson [0.12202469989311636, 0.27702254251793096]
+  oracle-plus-v1: WR=0.198 (19/96) Wilson [0.13052733153747123, 0.28855166945987454]
+  slayer-v1: WR=0.333 (32/96) Wilson [0.2470569241521054, 0.43243493846711983]
+oracle WR=0.198 Wilson [0.13052733153747123, 0.28855166945987454]
+  vs alinebidal-final: WR=0.281 (27/96) gap=-0.083 margin=-1356.3 ± SE 2585.5
+  vs inncenta-heuristic: WR=0.188 (18/96) gap=+0.010 margin=1067.0 ± SE 2352.0
+  vs slayer-v1: WR=0.333 (32/96) gap=-0.135 margin=-4173.3 ± SE 2734.2
+{
+  "completed_games": 96,
+  "disclaimer": "These are ppo-plus-v2 simulator results for ASU-inspired reconstructions; they do not reproduce or estimate either cited paper's reported win rates.",
+  "frozen_spec_hash": "9ab1907e0de1af4b253ce36ffa107c4fdb5e2b913858ef87c362423e61a6fd74",
+  "game_timeout_s": null,
+  "games": 96,
+  "lineup": [
+    "oracle-plus-v1",
+    "alinebidal-final",
+    "slayer-v1",
+    "inncenta-heuristic"
+  ],
+  "live": false,
+  "oracle_config": {
+    "auction": true,
+    "c_puct": 1.5,
+    "completing_trade": true,
+    "deadline_s": null,
+    "denial": true,
+    "denial_weight": 2.0,
+    "early_stop_min_sims": 16,
+    "early_stop_visit_lead": null,
+    "inncenta_trade": true,
+    "leaf": "asu",
+    "leaf_checkpoint": null,
+    "margin_temperature": 2000.0,
+    "max_depth": 64,
+    "max_width": 16,
+    "networth_mix": 0.0,
+    "one_ply": true,
+    "prior_peak": 0.55,
+    "rollout_horizon": 30,
+    "rollouts_per_leaf": 2,
+    "simulations": 32,
+    "solvency": false
+  },
+  "oracle_focus": {
+    "games": 96,
+    "wilson_95": [
+      0.13052733153747123,
+      0.28855166945987454
+    ],
+    "win_rate": 0.19791666666666666,
+    "wins": 19
+  },
+  "oracle_vs_field": {
+    "opponents": {
+      "alinebidal-final": {
+        "games": 96,
+        "net_worth_margin": {
+          "beats_asu_on_margin": false,
+          "beats_other_on_margin": false,
+          "mean": -1356.34375,
+          "mean_minus_se": -3941.793978353979,
+          "mean_plus_se": 1229.1064783539791,
+          "n": 96,
+          "oracle_richer": 22,
+          "oracle_richer_rate": 0.22916666666666666,
+          "se": 2585.450228353979,
+          "std": 25332.135259317987
+        },
+        "oracle_wilson_lower_beats": false,
+        "rate_gap": -0.08333333333333334,
+        "wilson_95": [
+          0.20107410838369372,
+          0.3782589613040394
+        ],
+        "win_rate": 0.28125,
+        "wins": 27
+      },
+      "inncenta-heuristic": {
+        "games": 96,
+        "net_worth_margin": {
+          "beats_asu_on_margin": false,
+          "beats_other_on_margin": false,
+          "mean": 1066.984375,
+          "mean_minus_se": -1285.0279339029498,
+          "mean_plus_se": 3418.99668390295,
+          "n": 96,
+          "oracle_richer": 28,
+          "oracle_richer_rate": 0.2916666666666667,
+          "se": 2352.01230890295,
+          "std": 23044.92010223022
+        },
+        "oracle_wilson_lower_beats": false,
+        "rate_gap": 0.010416666666666657,
+        "wilson_95": [
+          0.12202469989311636,
+          0.27702254251793096
+        ],
+        "win_rate": 0.1875,
+        "wins": 18
+      },
+      "slayer-v1": {
+        "games": 96,
+        "net_worth_margin": {
+          "beats_asu_on_margin": false,
+          "beats_other_on_margin": false,
+          "mean": -4173.270833333333,
+          "mean_minus_se": -6907.4311357407805,
+          "mean_plus_se": -1439.1105309258855,
+          "n": 96,
+          "oracle_richer": 25,
+          "oracle_richer_rate": 0.2604166666666667,
+          "se": 2734.1603024074475,
+          "std": 26789.190463487976
+        },
+        "oracle_wilson_lower_beats": false,
+        "rate_gap": -0.13541666666666666,
+        "wilson_95": [
+          0.2470569241521054,
+          0.43243493846711983
+        ],
+        "win_rate": 0.3333333333333333,
+        "wins": 32
+      }
+    },
+    "oracle_id": "oracle-plus-v1",
+    "oracle_wilson_95": [
+      0.13052733153747123,
+      0.28855166945987454
+    ],
+    "oracle_win_rate": 0.19791666666666666
+  },
+  "ruleset": "ppo-plus-v2",
+  "seed": 8200300,
+  "timeouts": 0,
+  "truncations": 0,
+  "turn_deadline_s": null,
+  "win_rates": {
+    "alinebidal-final": {
+      "games": 96,
+      "wilson_95": [
+        0.20107410838369372,
+        0.3782589613040394
+      ],
+      "win_rate": 0.28125,
+      "win_rate_percent": 28.125,
+      "wins": 27
+    },
+    "inncenta-heuristic": {
+      "games": 96,
+      "wilson_95": [
+        0.12202469989311636,
+        0.27702254251793096
+      ],
+      "win_rate": 0.1875,
+      "win_rate_percent": 18.75,
+      "wins": 18
+    },
+    "oracle-plus-v1": {
+      "games": 96,
+      "wilson_95": [
+        0.13052733153747123,
+        0.28855166945987454
+      ],
+      "win_rate": 0.19791666666666666,
+      "win_rate_percent": 19.791666666666664,
+      "wins": 19
+    },
+    "slayer-v1": {
+      "games": 96,
+      "wilson_95": [
+        0.2470569241521054,
+        0.43243493846711983
+      ],
+      "win_rate": 0.3333333333333333,
+      "win_rate_percent": 33.33333333333333,
+      "wins": 32
+    }
+  },
+  "workers": 6
+}
+
+=== field_main_heavy96 exit=0 ===
+field_main_heavy96 ours=0.198 (19/96) winner=slayer-v1 pass50=False
+{"tag": "field_main_heavy96", "winner": "slayer-v1", "ours_wr": 0.19791666666666666, "ours_wins": 19, "passed_50": false, "ranked": [["slayer-v1", 32, 0.3333333333333333], ["alinebidal-final", 27, 0.28125], ["oracle-plus-v1", 19, 0.19791666666666666], ["inncenta-heuristic", 18, 0.1875]], "timeouts": 0, "games": 96, "lineup": ["oracle-plus-v1", "alinebidal-final", "slayer-v1", "inncenta-heuristic"]}
+starting field_main_denial games=48 field=oracle-plus-v1,alinebidal-final,slayer-v1,inncenta-heuristic target=OUR 50%
+
+=== field_main_denial start 2026-08-13 14:58:37 ===
+/Users/toprakgundogdu/DeepRL_Monopoly/.venv/bin/python -u -m oracle.eval_h2h --games 48 --seed 8300000 --workers 6 --deadline-s 0 --early-stop-lead 0 --game-timeout-s 0 --resume --pretty --lineup oracle-plus-v1,alinebidal-final,slayer-v1,inncenta-heuristic --checkpoint-dir /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/field_main_denial_ckpt --output /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/field_main_denial.json --leaf asu --one-ply --denial --no-solvency --completing-trade --auction --inncenta-trade
+h2h progress 1/48
+h2h progress 2/48
+h2h progress 3/48
+h2h progress 4/48
+h2h progress 5/48
+h2h progress 6/48
+h2h progress 7/48
+h2h progress 8/48
+h2h progress 9/48
+h2h progress 10/48
+h2h progress 11/48
+h2h progress 12/48
+h2h progress 13/48
+h2h progress 14/48
+h2h progress 15/48
+h2h progress 16/48
+h2h progress 17/48
+h2h progress 18/48
+h2h progress 19/48
+h2h progress 20/48
+h2h progress 21/48
+h2h progress 22/48
+h2h progress 23/48
+h2h progress 24/48
+h2h progress 25/48
+h2h progress 26/48
+h2h progress 27/48
+h2h progress 28/48
+h2h progress 29/48
+h2h progress 30/48
+h2h progress 31/48
+h2h progress 32/48
+h2h progress 33/48
+h2h progress 34/48
+h2h progress 35/48
+h2h progress 36/48
+h2h progress 37/48
+h2h progress 38/48
+h2h progress 39/48
+h2h progress 40/48
+h2h progress 41/48
+h2h progress 42/48
+h2h progress 43/48
+h2h progress 44/48
+h2h progress 45/48
+h2h progress 46/48
+h2h progress 47/48
+h2h progress 48/48
+
+lineup=['oracle-plus-v1', 'alinebidal-final', 'slayer-v1', 'inncenta-heuristic']
+  alinebidal-final: WR=0.312 (15/48) Wilson [0.19945683446587817, 0.4533307141589159]
+  inncenta-heuristic: WR=0.104 (5/48) Wilson [0.045321719041813105, 0.2216742169438633]
+  oracle-plus-v1: WR=0.229 (11/48) Wilson [0.13307826266911232, 0.3653926409000346]
+  slayer-v1: WR=0.354 (17/48) Wilson [0.23433644125604858, 0.4956094298965691]
+oracle WR=0.229 Wilson [0.13307826266911232, 0.3653926409000346]
+  vs alinebidal-final: WR=0.312 (15/48) gap=-0.083 margin=-3342.0 ± SE 3628.7
+  vs inncenta-heuristic: WR=0.104 (5/48) gap=+0.125 margin=3856.6 ± SE 2775.3
+  vs slayer-v1: WR=0.354 (17/48) gap=-0.125 margin=-4816.8 ± SE 3900.0
+{
+  "completed_games": 48,
+  "disclaimer": "These are ppo-plus-v2 simulator results for ASU-inspired reconstructions; they do not reproduce or estimate either cited paper's reported win rates.",
+  "frozen_spec_hash": "9ab1907e0de1af4b253ce36ffa107c4fdb5e2b913858ef87c362423e61a6fd74",
+  "game_timeout_s": null,
+  "games": 48,
+  "lineup": [
+    "oracle-plus-v1",
+    "alinebidal-final",
+    "slayer-v1",
+    "inncenta-heuristic"
+  ],
+  "live": false,
+  "oracle_config": {
+    "auction": true,
+    "c_puct": 1.5,
+    "completing_trade": true,
+    "deadline_s": null,
+    "denial": true,
+    "denial_weight": 1.0,
+    "early_stop_min_sims": 16,
+    "early_stop_visit_lead": null,
+    "inncenta_trade": true,
+    "leaf": "asu",
+    "leaf_checkpoint": null,
+    "margin_temperature": 2000.0,
+    "max_depth": 64,
+    "max_width": 16,
+    "networth_mix": 0.0,
+    "one_ply": true,
+    "prior_peak": 0.55,
+    "rollout_horizon": 30,
+    "rollouts_per_leaf": 2,
+    "simulations": 32,
+    "solvency": false
+  },
+  "oracle_focus": {
+    "games": 48,
+    "wilson_95": [
+      0.13307826266911232,
+      0.3653926409000346
+    ],
+    "win_rate": 0.22916666666666666,
+    "wins": 11
+  },
+  "oracle_vs_field": {
+    "opponents": {
+      "alinebidal-final": {
+        "games": 48,
+        "net_worth_margin": {
+          "beats_asu_on_margin": false,
+          "beats_other_on_margin": false,
+          "mean": -3341.96875,
+          "mean_minus_se": -6970.657932311931,
+          "mean_plus_se": 286.72043231193084,
+          "n": 48,
+          "oracle_richer": 14,
+          "oracle_richer_rate": 0.2916666666666667,
+          "se": 3628.689182311931,
+          "std": 25140.296114559314
+        },
+        "oracle_wilson_lower_beats": false,
+        "rate_gap": -0.08333333333333334,
+        "wilson_95": [
+          0.19945683446587817,
+          0.4533307141589159
+        ],
+        "win_rate": 0.3125,
+        "wins": 15
+      },
+      "inncenta-heuristic": {
+        "games": 48,
+        "net_worth_margin": {
+          "beats_asu_on_margin": true,
+          "beats_other_on_margin": true,
+          "mean": 3856.5833333333335,
+          "mean_minus_se": 1081.2786409634045,
+          "mean_plus_se": 6631.888025703262,
+          "n": 48,
+          "oracle_richer": 15,
+          "oracle_richer_rate": 0.3125,
+          "se": 2775.304692369929,
+          "std": 19227.874934676118
+        },
+        "oracle_wilson_lower_beats": true,
+        "rate_gap": 0.12499999999999999,
+        "wilson_95": [
+          0.045321719041813105,
+          0.2216742169438633
+        ],
+        "win_rate": 0.10416666666666667,
+        "wins": 5
+      },
+      "slayer-v1": {
+        "games": 48,
+        "net_worth_margin": {
+          "beats_asu_on_margin": false,
+          "beats_other_on_margin": false,
+          "mean": -4816.84375,
+          "mean_minus_se": -8716.794699584601,
+          "mean_plus_se": -916.8928004153981,
+          "n": 48,
+          "oracle_richer": 12,
+          "oracle_richer_rate": 0.25,
+          "se": 3899.950949584602,
+          "std": 27019.652766828076
+        },
+        "oracle_wilson_lower_beats": false,
+        "rate_gap": -0.12500000000000003,
+        "wilson_95": [
+          0.23433644125604858,
+          0.4956094298965691
+        ],
+        "win_rate": 0.3541666666666667,
+        "wins": 17
+      }
+    },
+    "oracle_id": "oracle-plus-v1",
+    "oracle_wilson_95": [
+      0.13307826266911232,
+      0.3653926409000346
+    ],
+    "oracle_win_rate": 0.22916666666666666
+  },
+  "ruleset": "ppo-plus-v2",
+  "seed": 8300000,
+  "timeouts": 0,
+  "truncations": 0,
+  "turn_deadline_s": null,
+  "win_rates": {
+    "alinebidal-final": {
+      "games": 48,
+      "wilson_95": [
+        0.19945683446587817,
+        0.4533307141589159
+      ],
+      "win_rate": 0.3125,
+      "win_rate_percent": 31.25,
+      "wins": 15
+    },
+    "inncenta-heuristic": {
+      "games": 48,
+      "wilson_95": [
+        0.045321719041813105,
+        0.2216742169438633
+      ],
+      "win_rate": 0.10416666666666667,
+      "win_rate_percent": 10.416666666666668,
+      "wins": 5
+    },
+    "oracle-plus-v1": {
+      "games": 48,
+      "wilson_95": [
+        0.13307826266911232,
+        0.3653926409000346
+      ],
+      "win_rate": 0.22916666666666666,
+      "win_rate_percent": 22.916666666666664,
+      "wins": 11
+    },
+    "slayer-v1": {
+      "games": 48,
+      "wilson_95": [
+        0.23433644125604858,
+        0.4956094298965691
+      ],
+      "win_rate": 0.3541666666666667,
+      "win_rate_percent": 35.41666666666667,
+      "wins": 17
+    }
+  },
+  "workers": 6
+}
+
+=== field_main_denial exit=0 ===
+field_main_denial ours=0.229 (11/48) winner=slayer-v1 pass50=False
+{"tag": "field_main_denial", "winner": "slayer-v1", "ours_wr": 0.22916666666666666, "ours_wins": 11, "passed_50": false, "ranked": [["slayer-v1", 17, 0.3541666666666667], ["alinebidal-final", 15, 0.3125], ["oracle-plus-v1", 11, 0.22916666666666666], ["inncenta-heuristic", 5, 0.10416666666666667]], "timeouts": 0, "games": 48, "lineup": ["oracle-plus-v1", "alinebidal-final", "slayer-v1", "inncenta-heuristic"]}
+starting field_main_plain games=48 field=oracle-plus-v1,alinebidal-final,slayer-v1,inncenta-heuristic target=OUR 50%
+
+=== field_main_plain start 2026-08-13 15:06:14 ===
+/Users/toprakgundogdu/DeepRL_Monopoly/.venv/bin/python -u -m oracle.eval_h2h --games 48 --seed 8300100 --workers 6 --deadline-s 0 --early-stop-lead 0 --game-timeout-s 0 --resume --pretty --lineup oracle-plus-v1,alinebidal-final,slayer-v1,inncenta-heuristic --checkpoint-dir /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/field_main_plain_ckpt --output /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/field_main_plain.json --leaf asu --one-ply --no-denial --no-solvency --completing-trade --auction --inncenta-trade
+h2h progress 1/48
+h2h progress 2/48
+h2h progress 3/48
+h2h progress 4/48
+h2h progress 5/48
+h2h progress 6/48
+h2h progress 7/48
+h2h progress 8/48
+h2h progress 9/48
+h2h progress 10/48
+h2h progress 11/48
+h2h progress 12/48
+h2h progress 13/48
+h2h progress 14/48
+h2h progress 15/48
+h2h progress 16/48
+h2h progress 17/48
+h2h progress 18/48
+h2h progress 19/48
+h2h progress 20/48
+h2h progress 21/48
+h2h progress 22/48
+h2h progress 23/48
+h2h progress 24/48
+h2h progress 25/48
+h2h progress 26/48
+h2h progress 27/48
+h2h progress 28/48
+h2h progress 29/48
+h2h progress 30/48
+h2h progress 31/48
+h2h progress 32/48
+h2h progress 33/48
+h2h progress 34/48
+h2h progress 35/48
+h2h progress 36/48
+h2h progress 37/48
+h2h progress 38/48
+h2h progress 39/48
+h2h progress 40/48
+h2h progress 41/48
+h2h progress 42/48
+h2h progress 43/48
+h2h progress 44/48
+h2h progress 45/48
+h2h progress 46/48
+h2h progress 47/48
+h2h progress 48/48
+
+lineup=['oracle-plus-v1', 'alinebidal-final', 'slayer-v1', 'inncenta-heuristic']
+  alinebidal-final: WR=0.312 (15/48) Wilson [0.19945683446587817, 0.4533307141589159]
+  inncenta-heuristic: WR=0.229 (11/48) Wilson [0.13307826266911232, 0.3653926409000346]
+  oracle-plus-v1: WR=0.104 (5/48) Wilson [0.045321719041813105, 0.2216742169438633]
+  slayer-v1: WR=0.354 (17/48) Wilson [0.23433644125604858, 0.4956094298965691]
+oracle WR=0.104 Wilson [0.045321719041813105, 0.2216742169438633]
+  vs alinebidal-final: WR=0.312 (15/48) gap=-0.208 margin=-5228.1 ± SE 3175.5
+  vs inncenta-heuristic: WR=0.229 (11/48) gap=-0.125 margin=-2311.7 ± SE 2798.9
+  vs slayer-v1: WR=0.354 (17/48) gap=-0.250 margin=-9136.8 ± SE 3464.3
+{
+  "completed_games": 48,
+  "disclaimer": "These are ppo-plus-v2 simulator results for ASU-inspired reconstructions; they do not reproduce or estimate either cited paper's reported win rates.",
+  "frozen_spec_hash": "9ab1907e0de1af4b253ce36ffa107c4fdb5e2b913858ef87c362423e61a6fd74",
+  "game_timeout_s": null,
+  "games": 48,
+  "lineup": [
+    "oracle-plus-v1",
+    "alinebidal-final",
+    "slayer-v1",
+    "inncenta-heuristic"
+  ],
+  "live": false,
+  "oracle_config": {
+    "auction": true,
+    "auction_kind": "inncenta",
+    "build_first": null,
+    "c_puct": 1.5,
+    "cash_gate": null,
+    "completing_trade": true,
+    "deadline_s": null,
+    "denial": false,
+    "denial_weight": 1.0,
+    "early_stop_min_sims": 16,
+    "early_stop_visit_lead": null,
+    "family_body": "one_ply",
+    "inncenta_trade": true,
+    "leaf": "asu",
+    "leaf_checkpoint": null,
+    "lethal_jail": null,
+    "margin_temperature": 2000.0,
+    "max_depth": 64,
+    "max_width": 16,
+    "networth_mix": 0.0,
+    "one_ply": true,
+    "one_ply_trades": null,
+    "phase_switch": null,
+    "prior_peak": 0.55,
+    "race_buy": null,
+    "rollout_horizon": 30,
+    "rollouts_per_leaf": 2,
+    "simulations": 32,
+    "solvency": false
+  },
+  "oracle_focus": {
+    "games": 48,
+    "wilson_95": [
+      0.045321719041813105,
+      0.2216742169438633
+    ],
+    "win_rate": 0.10416666666666667,
+    "wins": 5
+  },
+  "oracle_vs_field": {
+    "opponents": {
+      "alinebidal-final": {
+        "games": 48,
+        "net_worth_margin": {
+          "beats_asu_on_margin": false,
+          "beats_other_on_margin": false,
+          "mean": -5228.145833333333,
+          "mean_minus_se": -8403.617040337987,
+          "mean_plus_se": -2052.6746263286796,
+          "n": 48,
+          "oracle_richer": 5,
+          "oracle_richer_rate": 0.10416666666666667,
+          "se": 3175.4712070046535,
+          "std": 22000.309874016508
+        },
+        "oracle_wilson_lower_beats": false,
+        "rate_gap": -0.20833333333333331,
+        "wilson_95": [
+          0.19945683446587817,
+          0.4533307141589159
+        ],
+        "win_rate": 0.3125,
+        "wins": 15
+      },
+      "inncenta-heuristic": {
+        "games": 48,
+        "net_worth_margin": {
+          "beats_asu_on_margin": false,
+          "beats_other_on_margin": false,
+          "mean": -2311.6875,
+          "mean_minus_se": -5110.586112878641,
+          "mean_plus_se": 487.21111287864096,
+          "n": 48,
+          "oracle_richer": 6,
+          "oracle_richer_rate": 0.125,
+          "se": 2798.898612878641,
+          "std": 19391.33841095944
+        },
+        "oracle_wilson_lower_beats": false,
+        "rate_gap": -0.12499999999999999,
+        "wilson_95": [
+          0.13307826266911232,
+          0.3653926409000346
+        ],
+        "win_rate": 0.22916666666666666,
+        "wins": 11
+      },
+      "slayer-v1": {
+        "games": 48,
+        "net_worth_margin": {
+          "beats_asu_on_margin": false,
+          "beats_other_on_margin": false,
+          "mean": -9136.833333333334,
+          "mean_minus_se": -12601.150260075536,
+          "mean_plus_se": -5672.516406591132,
+          "n": 48,
+          "oracle_richer": 7,
+          "oracle_richer_rate": 0.14583333333333334,
+          "se": 3464.3169267422013,
+          "std": 24001.49172255344
+        },
+        "oracle_wilson_lower_beats": false,
+        "rate_gap": -0.25,
+        "wilson_95": [
+          0.23433644125604858,
+          0.4956094298965691
+        ],
+        "win_rate": 0.3541666666666667,
+        "wins": 17
+      }
+    },
+    "oracle_id": "oracle-plus-v1",
+    "oracle_wilson_95": [
+      0.045321719041813105,
+      0.2216742169438633
+    ],
+    "oracle_win_rate": 0.10416666666666667
+  },
+  "ruleset": "ppo-plus-v2",
+  "seed": 8300100,
+  "timeouts": 0,
+  "truncations": 0,
+  "turn_deadline_s": null,
+  "win_rates": {
+    "alinebidal-final": {
+      "games": 48,
+      "wilson_95": [
+        0.19945683446587817,
+        0.4533307141589159
+      ],
+      "win_rate": 0.3125,
+      "win_rate_percent": 31.25,
+      "wins": 15
+    },
+    "inncenta-heuristic": {
+      "games": 48,
+      "wilson_95": [
+        0.13307826266911232,
+        0.3653926409000346
+      ],
+      "win_rate": 0.22916666666666666,
+      "win_rate_percent": 22.916666666666664,
+      "wins": 11
+    },
+    "oracle-plus-v1": {
+      "games": 48,
+      "wilson_95": [
+        0.045321719041813105,
+        0.2216742169438633
+      ],
+      "win_rate": 0.10416666666666667,
+      "win_rate_percent": 10.416666666666668,
+      "wins": 5
+    },
+    "slayer-v1": {
+      "games": 48,
+      "wilson_95": [
+        0.23433644125604858,
+        0.4956094298965691
+      ],
+      "win_rate": 0.3541666666666667,
+      "win_rate_percent": 35.41666666666667,
+      "wins": 17
+    }
+  },
+  "workers": 6
+}
+
+=== field_main_plain exit=0 ===
+field_main_plain ours=0.104 (5/48) winner=slayer-v1 pass50=False
+{"tag": "field_main_plain", "winner": "slayer-v1", "ours_wr": 0.10416666666666667, "ours_wins": 5, "passed_50": false, "ranked": [["slayer-v1", 17, 0.3541666666666667], ["alinebidal-final", 15, 0.3125], ["inncenta-heuristic", 11, 0.22916666666666666], ["oracle-plus-v1", 5, 0.10416666666666667]], "timeouts": 0, "games": 48, "lineup": ["oracle-plus-v1", "alinebidal-final", "slayer-v1", "inncenta-heuristic"]}
+starting field_main_blend games=48 field=oracle-plus-v1,alinebidal-final,slayer-v1,inncenta-heuristic target=OUR 50%
+
+=== field_main_blend start 2026-08-13 15:14:19 ===
+/Users/toprakgundogdu/DeepRL_Monopoly/.venv/bin/python -u -m oracle.eval_h2h --games 48 --seed 8300200 --workers 6 --deadline-s 0 --early-stop-lead 0 --game-timeout-s 0 --resume --pretty --lineup oracle-plus-v1,alinebidal-final,slayer-v1,inncenta-heuristic --checkpoint-dir /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/field_main_blend_ckpt --output /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/field_main_blend.json --leaf asu --one-ply --denial --no-solvency --completing-trade --auction --inncenta-trade --networth-mix 0.5
+h2h progress 1/48
+h2h progress 2/48
+h2h progress 3/48
+h2h progress 4/48
+h2h progress 5/48
+h2h progress 6/48
+h2h progress 7/48
+h2h progress 8/48
+h2h progress 9/48
+h2h progress 10/48
+h2h progress 11/48
+h2h progress 12/48
+h2h progress 13/48
+h2h progress 14/48
+h2h progress 15/48
+h2h progress 16/48
+h2h progress 17/48
+h2h progress 18/48
+h2h progress 19/48
+h2h progress 20/48
+h2h progress 21/48
+h2h progress 22/48
+h2h progress 23/48
+h2h progress 24/48
+h2h progress 25/48
+h2h progress 26/48
+h2h progress 27/48
+h2h progress 28/48
+h2h progress 29/48
+h2h progress 30/48
+h2h progress 31/48
+h2h progress 32/48
+h2h progress 33/48
+h2h progress 34/48
+h2h progress 35/48
+h2h progress 36/48
+h2h progress 37/48
+h2h progress 38/48
+h2h progress 39/48
+h2h progress 40/48
+h2h progress 41/48
+h2h progress 42/48
+h2h progress 43/48
+h2h progress 44/48
+h2h progress 45/48
+h2h progress 46/48

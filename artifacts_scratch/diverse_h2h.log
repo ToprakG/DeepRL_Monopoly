@@ -1,0 +1,143 @@
+
+=== launcher 2026-08-13 15:11:45 ===
+
+=== diverse h2h 2026-08-13 15:11:45 games=68 workers=2 ===
+diverse h2h starting 68 games across 4 fields, workers=2
+starting div_fixed_s8 games=16 sims=8 lineup=oracle-fast-v1,fixed-a,fixed-b,fixed-c
+
+=== div_fixed_s8 start 2026-08-13 15:11:45 ===
+/Users/toprakgundogdu/DeepRL_Monopoly/.venv/bin/python -u -m oracle.eval_h2h --games 16 --seed 9100000 --sims 8 --workers 2 --deadline-s 0 --early-stop-lead 0 --game-timeout-s 0 --resume --pretty --lineup oracle-fast-v1,fixed-a,fixed-b,fixed-c --checkpoint-dir /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/div_fixed_s8_ckpt --output /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/div_fixed_s8.json --horizon 16 --rollouts 1
+h2h progress 1/16
+h2h progress 2/16
+h2h progress 3/16
+h2h progress 4/16
+h2h progress 5/16
+h2h progress 6/16
+h2h progress 7/16
+h2h progress 8/16
+h2h progress 9/16
+h2h progress 10/16
+h2h progress 11/16
+h2h progress 12/16
+h2h progress 13/16
+h2h progress 14/16
+h2h progress 15/16
+h2h progress 16/16
+
+lineup=['oracle-fast-v1', 'fixed-a', 'fixed-b', 'fixed-c']
+  fixed-a: WR=0.000 (0/16) Wilson [0.0, 0.1936076805344365]
+  fixed-b: WR=0.312 (5/16) Wilson [0.14164643854782039, 0.5559564416525933]
+  fixed-c: WR=0.000 (0/16) Wilson [0.0, 0.1936076805344365]
+  oracle-fast-v1: WR=0.688 (11/16) Wilson [0.44404355834740666, 0.8583535614521796]
+{
+  "completed_games": 16,
+  "disclaimer": "These are ppo-plus-v2 simulator results for ASU-inspired reconstructions; they do not reproduce or estimate either cited paper's reported win rates.",
+  "frozen_spec_hash": "9ab1907e0de1af4b253ce36ffa107c4fdb5e2b913858ef87c362423e61a6fd74",
+  "game_timeout_s": null,
+  "games": 16,
+  "lineup": [
+    "oracle-fast-v1",
+    "fixed-a",
+    "fixed-b",
+    "fixed-c"
+  ],
+  "live": false,
+  "oracle_config": {
+    "auction": null,
+    "auction_kind": "inncenta",
+    "build_first": null,
+    "c_puct": 1.5,
+    "cash_gate": null,
+    "completing_trade": null,
+    "deadline_s": null,
+    "denial": null,
+    "denial_weight": 1.0,
+    "early_stop_min_sims": 16,
+    "early_stop_visit_lead": null,
+    "family_body": "one_ply",
+    "inncenta_trade": null,
+    "leaf": "rollout",
+    "leaf_checkpoint": null,
+    "lethal_jail": null,
+    "margin_temperature": 2000.0,
+    "max_depth": 64,
+    "max_width": 16,
+    "networth_mix": 0.0,
+    "one_ply": null,
+    "one_ply_trades": null,
+    "phase_switch": null,
+    "prior_peak": 0.55,
+    "race_buy": null,
+    "rollout_horizon": 16,
+    "rollouts_per_leaf": 1,
+    "simulations": 8,
+    "solvency": null
+  },
+  "oracle_focus": {
+    "games": 16,
+    "wilson_95": [
+      0.44404355834740666,
+      0.8583535614521796
+    ],
+    "win_rate": 0.6875,
+    "wins": 11
+  },
+  "ruleset": "ppo-plus-v2",
+  "seed": 9100000,
+  "timeouts": 0,
+  "truncations": 0,
+  "turn_deadline_s": null,
+  "win_rates": {
+    "fixed-a": {
+      "games": 16,
+      "wilson_95": [
+        0.0,
+        0.1936076805344365
+      ],
+      "win_rate": 0.0,
+      "win_rate_percent": 0.0,
+      "wins": 0
+    },
+    "fixed-b": {
+      "games": 16,
+      "wilson_95": [
+        0.14164643854782039,
+        0.5559564416525933
+      ],
+      "win_rate": 0.3125,
+      "win_rate_percent": 31.25,
+      "wins": 5
+    },
+    "fixed-c": {
+      "games": 16,
+      "wilson_95": [
+        0.0,
+        0.1936076805344365
+      ],
+      "win_rate": 0.0,
+      "win_rate_percent": 0.0,
+      "wins": 0
+    },
+    "oracle-fast-v1": {
+      "games": 16,
+      "wilson_95": [
+        0.44404355834740666,
+        0.8583535614521796
+      ],
+      "win_rate": 0.6875,
+      "win_rate_percent": 68.75,
+      "wins": 11
+    }
+  },
+  "workers": 2
+}
+
+=== div_fixed_s8 exit=0 ===
+div_fixed_s8 ours=0.688 (11/16) winner=oracle-fast-v1
+{"tag": "div_fixed_s8", "winner": "oracle-fast-v1", "ours_wr": 0.6875, "ours_wins": 11, "ranked": [["oracle-fast-v1", 11, 0.6875], ["fixed-b", 5, 0.3125], ["fixed-a", 0, 0.0], ["fixed-c", 0, 0.0]], "timeouts": 0, "games": 16, "lineup": ["oracle-fast-v1", "fixed-a", "fixed-b", "fixed-c"], "sims": null}
+starting div_asu_s8 games=18 sims=8 lineup=oracle-fast-v1,asu-value-v1,fixed-a,fixed-b
+
+=== div_asu_s8 start 2026-08-13 15:20:46 ===
+/Users/toprakgundogdu/DeepRL_Monopoly/.venv/bin/python -u -m oracle.eval_h2h --games 18 --seed 9110000 --sims 8 --workers 2 --deadline-s 0 --early-stop-lead 0 --game-timeout-s 0 --resume --pretty --lineup oracle-fast-v1,asu-value-v1,fixed-a,fixed-b --checkpoint-dir /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/div_asu_s8_ckpt --output /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/div_asu_s8.json --horizon 16 --rollouts 1
+h2h progress 1/18
+h2h progress 2/18

@@ -1,0 +1,100 @@
+[14:42:59] packed /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz (4473266 bytes)
+[14:42:59] $ /Users/toprakgundogdu/.local/bin/colab stop -s ora0
+[colab] Session 'ora0' not found.
+[14:43:02] $ /Users/toprakgundogdu/.local/bin/colab stop -s ora1
+[colab] Session 'ora1' not found.
+[14:43:04] $ /Users/toprakgundogdu/.local/bin/colab stop -s ora2
+[colab] Session 'ora2' not found.
+[14:43:07] $ /Users/toprakgundogdu/.local/bin/colab new -s ora0 --high-mem
+[colab] Creating session 'ora0'...
+[colab] Session READY.
+[14:43:23] $ /Users/toprakgundogdu/.local/bin/colab new -s ora1 --high-mem
+[colab] Creating session 'ora1'...
+[colab] Session READY.
+[14:43:40] $ /Users/toprakgundogdu/.local/bin/colab new -s ora2 --high-mem
+[colab] Creating session 'ora2'...
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /Users/toprakgundogdu/.local/share/uv/tools/google-colab-cli/lib/python3.13/ │
+│ site-packages/colab_cli/client.py:271 in assign                              │
+│                                                                              │
+│   268 │   │   │   return assignment                                          │
+│   269 │   │                                                                  │
+│   270 │   │   try:                                                           │
+│ ❱ 271 │   │   │   res = self._post_assignment(                               │
+│   272 │   │   │   │   notebook_hash, assignment.token, variant, accelerator, │
+│       shape                                                                  │
+│   273 │   │   │   )                                                          │
+│   274 │   │   except ColabRequestError as e:                                 │
+│                                                                              │
+│ /Users/toprakgundogdu/.local/share/uv/tools/google-colab-cli/lib/python3.13/ │
+│ site-packages/colab_cli/client.py:321 in _post_assignment                    │
+│                                                                              │
+│   318 │   ) -> PostAssignmentResponse:                                       │
+│   319 │   │   url = self._build_assign_url(notebook_hash, variant,           │
+│       accelerator, shape)                                                    │
+│   320 │   │   headers = {COLAB_XSRF_TOKEN_HEADER["key"]: xsrf_token}         │
+│ ❱ 321 │   │   return self._issue_request(                                    │
+│   322 │   │   │   url, method="POST", headers=headers,                       │
+│       schema=PostAssignmentResponse                                          │
+│   323 │   │   )                                                              │
+│   324                                                                        │
+│                                                                              │
+│ /Users/toprakgundogdu/.local/share/uv/tools/google-colab-cli/lib/python3.13/ │
+│ site-packages/colab_cli/client.py:227 in _issue_request                      │
+│                                                                              │
+│   224 │   │   self.logger.debug(f"Response Headers: {response.headers}")     │
+│   225 │   │   self.logger.debug(f"Response Body: {response.text}")           │
+│   226 │   │   if not response.ok:                                            │
+│ ❱ 227 │   │   │   raise ColabRequestError(                                   │
+│   228 │   │   │   │   f"Failed to issue request {method} {endpoint}:         │
+│       {response.reason}",                                                    │
+│   229 │   │   │   │   request=response.request,                              │
+│   230 │   │   │   │   response=response,                                     │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ColabRequestError: Failed to issue request POST 
+https://colab.research.google.com/tun/m/assign?nbh=b5ec9bdc_05ce_4702_a460_b1da0
+7ab41e6........&variant=DEFAULT&accelerator=NONE&shape=hm: Precondition Failed
+
+During handling of the above exception, another exception occurred:
+
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /Users/toprakgundogdu/.local/share/uv/tools/google-colab-cli/lib/python3.13/ │
+│ site-packages/colab_cli/commands/session.py:196 in new                       │
+│                                                                              │
+│   193 │                                                                      │
+│   194 │   typer.echo(f"[colab] Creating session '{name}'...")                │
+│   195 │   try:                                                               │
+│ ❱ 196 │   │   res = state.client.assign(                                     │
+│   197 │   │   │   uuid.uuid4(), variant=variant, accelerator=accelerator,    │
+│       shape=shape                                                            │
+│   198 │   │   )                                                              │
+│   199 │   except ColabRequestError as e:                                     │
+│                                                                              │
+│ /Users/toprakgundogdu/.local/share/uv/tools/google-colab-cli/lib/python3.13/ │
+│ site-packages/colab_cli/client.py:276 in assign                              │
+│                                                                              │
+│   273 │   │   │   )                                                          │
+│   274 │   │   except ColabRequestError as e:                                 │
+│   275 │   │   │   if get_status_code(e) == 412:                              │
+│ ❱ 276 │   │   │   │   raise TooManyAssignmentsError(str(e))                  │
+│   277 │   │   │   raise e                                                    │
+│   278 │   │                                                                  │
+│   279 │   │   return res                                                     │
+╰──────────────────────────────────────────────────────────────────────────────╯
+TooManyAssignmentsError: Failed to issue request POST 
+https://colab.research.google.com/tun/m/assign?nbh=b5ec9bdc_05ce_4702_a460_b1da0
+7ab41e6........&variant=DEFAULT&accelerator=NONE&shape=hm: Precondition Failed
+Traceback (most recent call last):
+  File "/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/launch_oracle_hybrid.py", line 298, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/launch_oracle_hybrid.py", line 280, in main
+    ensure_session(name)
+  File "/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/launch_oracle_hybrid.py", line 77, in ensure_session
+    run([COLAB, "new", "-s", name, "--high-mem"], check=True)
+  File "/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/launch_oracle_hybrid.py", line 54, in run
+    return subprocess.run(
+           ^^^^^^^^^^^^^^^
+  File "/Users/toprakgundogdu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/toprakgundogdu/.local/bin/colab', 'new', '-s', 'ora2', '--high-mem']' returned non-zero exit status 1.

@@ -1,0 +1,117 @@
+{
+  "checkpoint": "monopoly_bench/runs/oracle_hybrid_bc_new25k/snapshots/hybrid_clone_0000.pt",
+  "clone_wins": 2,
+  "games": 8,
+  "lineup": [
+    "hybrid_clone",
+    "asu-value-v1",
+    "asu-value-v1",
+    "asu-value-v1"
+  ],
+  "per_game": [
+    {
+      "clone_seat": 0,
+      "completed": true,
+      "crashes": 0,
+      "decisions": 1092,
+      "error": null,
+      "game_id": 0,
+      "illegal_actions": 0,
+      "seed": 5300000,
+      "winner": 3
+    },
+    {
+      "clone_seat": 1,
+      "completed": true,
+      "crashes": 0,
+      "decisions": 1404,
+      "error": null,
+      "game_id": 1,
+      "illegal_actions": 0,
+      "seed": 5300001,
+      "winner": 2
+    },
+    {
+      "clone_seat": 2,
+      "completed": true,
+      "crashes": 0,
+      "decisions": 1036,
+      "error": null,
+      "game_id": 2,
+      "illegal_actions": 0,
+      "seed": 5300002,
+      "winner": 2
+    },
+    {
+      "clone_seat": 3,
+      "completed": true,
+      "crashes": 0,
+      "decisions": 1341,
+      "error": null,
+      "game_id": 3,
+      "illegal_actions": 0,
+      "seed": 5300003,
+      "winner": 1
+    },
+    {
+      "clone_seat": 0,
+      "completed": true,
+      "crashes": 0,
+      "decisions": 1103,
+      "error": null,
+      "game_id": 4,
+      "illegal_actions": 0,
+      "seed": 5300004,
+      "winner": 1
+    },
+    {
+      "clone_seat": 1,
+      "completed": true,
+      "crashes": 0,
+      "decisions": 1031,
+      "error": null,
+      "game_id": 5,
+      "illegal_actions": 0,
+      "seed": 5300005,
+      "winner": 2
+    },
+    {
+      "clone_seat": 2,
+      "completed": true,
+      "crashes": 0,
+      "decisions": 1631,
+      "error": null,
+      "game_id": 6,
+      "illegal_actions": 0,
+      "seed": 5300006,
+      "winner": 2
+    },
+    {
+      "clone_seat": 3,
+      "completed": true,
+      "crashes": 0,
+      "decisions": 937,
+      "error": null,
+      "game_id": 7,
+      "illegal_actions": 0,
+      "seed": 5300007,
+      "winner": 0
+    }
+  ],
+  "seed": 5300000,
+  "sims": 32,
+  "summary": {
+    "completed": 8,
+    "crashes": 0,
+    "fallbacks": 0,
+    "games": 8,
+    "illegal_actions": 0,
+    "latency_p95_s": 0.3892707419960061,
+    "losses": 6,
+    "wilson_lower": 0.07147921275210901,
+    "win_rate": 0.25,
+    "wins": 2
+  },
+  "wall_seconds": 335.6619318750163,
+  "workers": 8
+}

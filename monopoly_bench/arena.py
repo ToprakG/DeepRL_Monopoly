@@ -20,8 +20,11 @@ def play_game(
     policies: Mapping[int, object],
     max_rounds: int = 200,
     record_seats: set[int] | None = None,
+    outcome_kind: str = "winner",
 ) -> GameResult:
     """Run one game; illegal actions fail closed and are never substituted."""
+    if outcome_kind not in {"winner", "net_worth_margin"}:
+        raise ValueError(f"Unknown outcome_kind {outcome_kind!r}")
     game = SharedGame.new(seed, max_rounds)
     result = GameResult(game_id, seed, None, False, 0)
     max_decisions = max_rounds * NUM_PLAYERS * MAX_DECISIONS_PER_TURN
@@ -70,11 +73,21 @@ def play_game(
 
     result.completed = game.env.done
     result.winner = game.env.winner() if result.completed else None
-    if result.winner is not None:
-        outcome = [0.0] * NUM_PLAYERS
-        outcome[result.winner] = 1.0
-        for position in result.positions:
-            position.outcome = tuple(outcome)  # type: ignore[assignment]
+    result.final_net_worth = tuple(float(player.net_worth()) for player in game.env.players)
+    if result.positions:
+        if outcome_kind == "net_worth_margin":
+            from oracle.rollout_leaf import net_worth_margin_vector
+
+            vec = tuple(float(value) for value in net_worth_margin_vector(game.env))
+        elif result.winner is not None:
+            outcome = [0.0] * NUM_PLAYERS
+            outcome[result.winner] = 1.0
+            vec = tuple(outcome)
+        else:
+            vec = None
+        if vec is not None:
+            for position in result.positions:
+                position.outcome = vec
     return result
 
 

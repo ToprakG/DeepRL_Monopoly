@@ -1,0 +1,231 @@
+{
+  "diag1_greedy_h2h": {
+    "win_rates": {
+      "asu-value-v1": {
+        "wins": 12,
+        "games": 20,
+        "win_rate": 0.6,
+        "win_rate_percent": 60.0,
+        "wilson_95": [
+          0.3865815007622531,
+          0.781193467627183
+        ]
+      },
+      "fixed-a": {
+        "wins": 0,
+        "games": 20,
+        "win_rate": 0.0,
+        "win_rate_percent": 0.0,
+        "wilson_95": [
+          0.0,
+          0.16112515805281938
+        ]
+      },
+      "fixed-b": {
+        "wins": 7,
+        "games": 20,
+        "win_rate": 0.35,
+        "win_rate_percent": 35.0,
+        "wilson_95": [
+          0.18119182410108206,
+          0.5671457233147638
+        ]
+      },
+      "greedy-rollout": {
+        "wins": 1,
+        "games": 20,
+        "win_rate": 0.05,
+        "win_rate_percent": 5.0,
+        "wilson_95": [
+          0.008881448800795402,
+          0.23613119344674205
+        ]
+      }
+    },
+    "margin_mean": -23695.8,
+    "margin_se": 5231.67955752563,
+    "greedy_richer": 2,
+    "n": 20,
+    "action_counts": {
+      "auction_pass": 213,
+      "end_turn": 5962,
+      "roll": 1480,
+      "buy": 125,
+      "accept_trade": 725,
+      "other": 281,
+      "decline_trade": 66,
+      "build": 151
+    }
+  },
+  "diag2_visits": [
+    {
+      "label": "seed=7 round=0",
+      "legal": 3,
+      "entropy_ratio": 0.9993656466513686,
+      "top": [
+        {
+          "action": 12,
+          "visits": 70,
+          "frac": 0.35,
+          "name": "mortgage(sq=6)"
+        },
+        {
+          "action": 156,
+          "visits": 66,
+          "frac": 0.33,
+          "name": "sell_prop(sq=6)"
+        },
+        {
+          "action": 1,
+          "visits": 64,
+          "frac": 0.32,
+          "name": "END_TURN"
+        }
+      ],
+      "chosen": 12,
+      "root_value": [
+        0.2684988003449871,
+        0.2394250841234479,
+        0.24641026075448852,
+        0.2456658547770764
+      ]
+    },
+    {
+      "label": "seed=11 round=0",
+      "legal": 3,
+      "entropy_ratio": 0.9988897064347678,
+      "top": [
+        {
+          "action": 14,
+          "visits": 71,
+          "frac": 0.355,
+          "name": "mortgage(sq=9)"
+        },
+        {
+          "action": 158,
+          "visits": 66,
+          "frac": 0.33,
+          "name": "sell_prop(sq=9)"
+        },
+        {
+          "action": 1,
+          "visits": 63,
+          "frac": 0.315,
+          "name": "END_TURN"
+        }
+      ],
+      "chosen": 14,
+      "root_value": [
+        0.2418046844448274,
+        0.27230147537444915,
+        0.24929434693824443,
+        0.23659949324247864
+      ]
+    },
+    {
+      "label": "seed=19 round=0",
+      "legal": 3,
+      "entropy_ratio": 0.9997054522352719,
+      "top": [
+        {
+          "action": 13,
+          "visits": 69,
+          "frac": 0.345,
+          "name": "mortgage(sq=8)"
+        },
+        {
+          "action": 157,
+          "visits": 66,
+          "frac": 0.33,
+          "name": "sell_prop(sq=8)"
+        },
+        {
+          "action": 1,
+          "visits": 65,
+          "frac": 0.325,
+          "name": "END_TURN"
+        }
+      ],
+      "chosen": 13,
+      "root_value": [
+        0.2562009121303432,
+        0.2684683882737647,
+        0.23588744724642688,
+        0.23944325234946504
+      ]
+    }
+  ],
+  "diag3_leaf": [
+    {
+      "case": "good_buy",
+      "base": [
+        0.24199345910099715,
+        0.2475471237299063,
+        0.24486002502981108,
+        0.26559939213928546
+      ],
+      "after_buy": [
+        0.24199345910099715,
+        0.2475471237299063,
+        0.24486002502981108,
+        0.26559939213928546
+      ],
+      "after_skip": [
+        0.23501147385722798,
+        0.2520160340991444,
+        0.25175892675427225,
+        0.2612135652893553
+      ],
+      "prefers_buy": true
+    },
+    {
+      "case": "bad_trade",
+      "after_accept": [
+        0.16924056517596797,
+        0.36953633442031875,
+        0.24151098103481308,
+        0.21971211936890023
+      ],
+      "after_decline": [
+        0.42913410314838046,
+        0.2168566695212799,
+        0.18512108329290997,
+        0.16888814403742963
+      ],
+      "prefers_decline": true,
+      "nw_accept": [
+        951.0,
+        2149.0,
+        1500.0,
+        1500.0
+      ],
+      "nw_decline": [
+        1400.0,
+        2000.0,
+        1500.0,
+        1500.0
+      ],
+      "greedy_action": 7,
+      "greedy_accepts_bad_trade": true
+    },
+    {
+      "case": "build",
+      "n_build_actions": 3,
+      "base": [
+        0.9555327349886173,
+        0.014723862522904564,
+        0.014871701244239048,
+        0.014871701244239048
+      ],
+      "after_build": [
+        0.9547518982029275,
+        0.015131469507453145,
+        0.015058316144809677,
+        0.015058316144809677
+      ],
+      "prefers_build_vs_base": false,
+      "greedy_action": 67,
+      "greedy_builds": true
+    }
+  ]
+}

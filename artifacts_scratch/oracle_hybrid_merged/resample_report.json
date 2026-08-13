@@ -1,0 +1,41 @@
+{
+  "accept_keep_rate": 0.267866818378847,
+  "buckets_after": {
+    "accept": 0.20000809094219021,
+    "auction": 0.14539423115821837,
+    "build": 0.12002912739188479,
+    "buy": 0.4755451272300659,
+    "decline": 0.00473320118127756,
+    "other": 0.054290222096363125
+  },
+  "buckets_before": {
+    "accept": 0.48274960110904763,
+    "auction": 0.0940074808401559,
+    "build": 0.07760717742146425,
+    "buy": 0.30747299312076587,
+    "decline": 0.0030603437001386308,
+    "other": 0.03510240380842772
+  },
+  "counts_after": {
+    "accept": 4944,
+    "auction": 3594,
+    "build": 2967,
+    "buy": 11755,
+    "decline": 117,
+    "other": 1342
+  },
+  "counts_before": {
+    "accept": 18456,
+    "auction": 3594,
+    "build": 2967,
+    "buy": 11755,
+    "decline": 117,
+    "other": 1342
+  },
+  "input": "artifacts_scratch/oracle_hybrid_merged/labels_hybrid_merged.npz",
+  "n_after": 24719,
+  "n_before": 38231,
+  "output": "artifacts_scratch/oracle_hybrid_merged/labels_hybrid_resampled.npz",
+  "seed": 0,
+  "target_accept_frac": 0.2
+}

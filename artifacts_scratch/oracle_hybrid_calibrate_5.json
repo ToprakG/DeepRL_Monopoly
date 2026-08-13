@@ -1,0 +1,93 @@
+{
+  "action_dim": 2958,
+  "config": {
+    "c_puct": 1.5,
+    "margin_temperature": 2000.0,
+    "max_depth": 64,
+    "max_width": 16,
+    "prior_peak": 0.55,
+    "rollout_horizon": 16,
+    "rollouts_per_leaf": 1,
+    "simulations": 128
+  },
+  "game_summaries": [
+    {
+      "checkpoints_seen": 30,
+      "elapsed_seconds": 14.013636583986226,
+      "game_id": 0,
+      "lineup_kind": "self",
+      "n_labels": 9,
+      "seed": 0,
+      "truncated": false,
+      "winner": 2
+    },
+    {
+      "checkpoints_seen": 487,
+      "elapsed_seconds": 789.5801660830039,
+      "game_id": 1,
+      "lineup_kind": "pool",
+      "n_labels": 18,
+      "seed": 1,
+      "truncated": false,
+      "winner": 0
+    },
+    {
+      "checkpoints_seen": 28,
+      "elapsed_seconds": 15.914909583021654,
+      "game_id": 2,
+      "lineup_kind": "self",
+      "n_labels": 10,
+      "seed": 2,
+      "truncated": false,
+      "winner": 2
+    },
+    {
+      "checkpoints_seen": 78,
+      "elapsed_seconds": 103.82749762499589,
+      "game_id": 3,
+      "lineup_kind": "pool",
+      "n_labels": 26,
+      "seed": 3,
+      "truncated": false,
+      "winner": 3
+    },
+    {
+      "checkpoints_seen": 258,
+      "elapsed_seconds": 12.065933000005316,
+      "game_id": 4,
+      "lineup_kind": "self",
+      "n_labels": 8,
+      "seed": 4,
+      "truncated": false,
+      "winner": 3
+    }
+  ],
+  "games": 5,
+  "hybrid_config": {
+    "c_puct": 1.5,
+    "label_checkpoints_only": true,
+    "label_one_seat_only": true,
+    "margin_temperature": 2000.0,
+    "max_depth": 64,
+    "max_width": 16,
+    "mix_pool": true,
+    "mix_self_play": true,
+    "play_with_hybrid": true,
+    "prior_peak": 0.55,
+    "rollout_horizon": 16,
+    "rollouts_per_leaf": 1,
+    "simulations": 128
+  },
+  "mode": "hybrid",
+  "n_labels": 71,
+  "ruleset": "ppo-plus-v2",
+  "seed": 0,
+  "teacher": "oracle-rollout-v1",
+  "throughput": {
+    "games_per_hour": 22.762516226455197,
+    "labels_per_hour": 323.2277304156638,
+    "mean_labels_per_game": 14.2,
+    "wall_seconds": 790.7737361250038,
+    "workers": 5
+  }
+}

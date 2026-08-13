@@ -1,0 +1,47 @@
+waiting for wave01 pid 92352
+starting beat50_plus_asu_denial target=50%
+starting beat50_plus_asu_denial
+starting beat50_plus_asu_denial target=50%
+starting beat50_plus_asu_denial
+starting beat50_plus_asu_denial target=50%
+starting beat50_plus_asu_denial
+beat50_plus_asu_denial winner=inncenta-heuristic ours=0.292 pass50=False
+{"tag": "beat50_plus_asu_denial", "winner": "inncenta-heuristic", "ours_wr": 0.2916666666666667, "ours_wins": 14, "passed_50": false, "ranked": [["inncenta-heuristic", 21, 0.4375], ["oracle-plus-v1", 14, 0.2916666666666667], ["fixed-c", 8, 0.16666666666666666], ["fixed-b", 5, 0.10416666666666667]], "timeouts": 0, "games": 48}
+starting beat50_plus_asu_denial_heavy target=50%
+starting beat50_plus_asu_denial_heavy
+beat50_plus_asu_denial_heavy winner=inncenta-heuristic ours=0.354 pass50=False
+{"tag": "beat50_plus_asu_denial_heavy", "winner": "inncenta-heuristic", "ours_wr": 0.3541666666666667, "ours_wins": 17, "passed_50": false, "ranked": [["inncenta-heuristic", 24, 0.5], ["oracle-plus-v1", 17, 0.3541666666666667], ["fixed-b", 4, 0.08333333333333333], ["fixed-c", 3, 0.0625]], "timeouts": 0, "games": 48}
+starting beat50_plus_networth_denial target=50%
+starting beat50_plus_networth_denial
+beat50_plus_networth_denial winner=inncenta-heuristic ours=0.229 pass50=False
+{"tag": "beat50_plus_networth_denial", "winner": "inncenta-heuristic", "ours_wr": 0.22916666666666666, "ours_wins": 11, "passed_50": false, "ranked": [["inncenta-heuristic", 24, 0.5], ["oracle-plus-v1", 11, 0.22916666666666666], ["fixed-b", 9, 0.1875], ["fixed-c", 4, 0.08333333333333333]], "timeouts": 0, "games": 48}
+starting beat50_plus_asu_plain target=50%
+starting beat50_plus_asu_plain
+beat50_plus_asu_plain winner=inncenta-heuristic ours=0.312 pass50=False
+{"tag": "beat50_plus_asu_plain", "winner": "inncenta-heuristic", "ours_wr": 0.3125, "ours_wins": 15, "passed_50": false, "ranked": [["inncenta-heuristic", 20, 0.4166666666666667], ["oracle-plus-v1", 15, 0.3125], ["fixed-b", 8, 0.16666666666666666], ["fixed-c", 5, 0.10416666666666667]], "timeouts": 0, "games": 48}
+starting beat50_plus_asu_solvency target=50%
+starting beat50_plus_asu_solvency
+beat50_plus_asu_solvency winner=inncenta-heuristic ours=0.354 pass50=False
+{"tag": "beat50_plus_asu_solvency", "winner": "inncenta-heuristic", "ours_wr": 0.3541666666666667, "ours_wins": 17, "passed_50": false, "ranked": [["inncenta-heuristic", 25, 0.5208333333333334], ["oracle-plus-v1", 17, 0.3541666666666667], ["fixed-c", 5, 0.10416666666666667], ["fixed-b", 1, 0.020833333333333332]], "timeouts": 0, "games": 48}
+starting beat50_plus_full_clone target=50%
+starting beat50_plus_full_clone
+beat50_plus_full_clone winner=inncenta-heuristic ours=0.000 pass50=False
+{"tag": "beat50_plus_full_clone", "winner": "inncenta-heuristic", "ours_wr": 0.0, "ours_wins": 0, "passed_50": false, "ranked": [["inncenta-heuristic", 38, 0.7916666666666666], ["fixed-b", 7, 0.14583333333333334], ["fixed-c", 3, 0.0625], ["oracle-plus-v1", 0, 0.0]], "timeouts": 0, "games": 48}
+no recipe reached 50% vs Inncenta+fixed
+
+=== WAVE2 auction hunt Thu Aug 13 14:16:14 +03 2026 ===
+(eval):3: command not found: setsid
+starting beat50_plus_auction_denial target=50%
+starting beat50_plus_auction_denial
+beat50_plus_auction_denial winner=oracle-plus-v1 ours=0.438 pass50=False
+{"tag": "beat50_plus_auction_denial", "winner": "oracle-plus-v1", "ours_wr": 0.4375, "ours_wins": 21, "passed_50": false, "ranked": [["oracle-plus-v1", 21, 0.4375], ["inncenta-heuristic", 18, 0.375], ["fixed-c", 5, 0.10416666666666667], ["fixed-b", 4, 0.08333333333333333]], "timeouts": 0, "games": 48}
+starting beat50_plus_auction_plain target=50%
+starting beat50_plus_auction_plain
+beat50_plus_auction_plain winner=oracle-plus-v1 ours=0.438 pass50=False
+{"tag": "beat50_plus_auction_plain", "winner": "oracle-plus-v1", "ours_wr": 0.4375, "ours_wins": 21, "passed_50": false, "ranked": [["oracle-plus-v1", 21, 0.4375], ["inncenta-heuristic", 20, 0.4166666666666667], ["fixed-b", 5, 0.10416666666666667], ["fixed-c", 2, 0.041666666666666664]], "timeouts": 0, "games": 48}
+starting beat50_plus_auction_heavy target=50%
+starting beat50_plus_auction_heavy
+beat50_plus_auction_heavy winner=oracle-plus-v1 ours=0.542 pass50=True
+{"tag": "beat50_plus_auction_heavy", "winner": "oracle-plus-v1", "ours_wr": 0.5416666666666666, "ours_wins": 26, "passed_50": true, "ranked": [["oracle-plus-v1", 26, 0.5416666666666666], ["inncenta-heuristic", 16, 0.3333333333333333], ["fixed-c", 4, 0.08333333333333333], ["fixed-b", 2, 0.041666666666666664]], "timeouts": 0, "games": 48}
+starting beat50_plus_auction_heavy_strong (50% isolated already hit)
+PASSED 50% recipe=plus_auction_heavy isolated=0.542

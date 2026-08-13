@@ -1,0 +1,211 @@
+update=0/5000 loss=5.0820 policy=3.7007 value=1.3813
+update=50/5000 loss=4.6779 policy=3.3907 value=1.2872
+update=100/5000 loss=3.9299 policy=2.6751 value=1.2547
+update=150/5000 loss=3.7154 policy=2.4633 value=1.2522
+update=200/5000 loss=3.4380 policy=2.2287 value=1.2093
+update=250/5000 loss=3.2947 policy=2.0803 value=1.2144
+update=300/5000 loss=3.1660 policy=1.9806 value=1.1853
+update=350/5000 loss=2.8774 policy=1.6964 value=1.1810
+update=400/5000 loss=2.7764 policy=1.6298 value=1.1467
+update=450/5000 loss=2.7110 policy=1.5313 value=1.1797
+update=500/5000 loss=2.6995 policy=1.5096 value=1.1899
+update=550/5000 loss=2.5879 policy=1.3690 value=1.2189
+update=600/5000 loss=2.5224 policy=1.3464 value=1.1760
+update=650/5000 loss=2.5182 policy=1.3276 value=1.1906
+update=700/5000 loss=2.5046 policy=1.2900 value=1.2146
+update=750/5000 loss=2.3454 policy=1.1598 value=1.1857
+update=800/5000 loss=2.3756 policy=1.1616 value=1.2140
+update=850/5000 loss=2.2807 policy=1.1352 value=1.1456
+update=900/5000 loss=2.2797 policy=1.1093 value=1.1703
+update=950/5000 loss=2.2737 policy=1.1114 value=1.1623
+update=1000/5000 loss=2.2735 policy=1.1333 value=1.1402
+update=1050/5000 loss=2.4354 policy=1.2614 value=1.1740
+update=1100/5000 loss=2.3517 policy=1.1978 value=1.1539
+update=1150/5000 loss=2.2362 policy=1.0649 value=1.1713
+update=1200/5000 loss=2.2204 policy=1.0839 value=1.1365
+update=1250/5000 loss=2.3004 policy=1.1665 value=1.1339
+update=1300/5000 loss=2.1017 policy=1.0012 value=1.1005
+update=1350/5000 loss=2.0234 policy=0.9761 value=1.0473
+update=1400/5000 loss=1.9484 policy=0.8900 value=1.0585
+update=1450/5000 loss=1.8978 policy=0.8468 value=1.0510
+update=1500/5000 loss=1.8799 policy=0.8861 value=0.9938
+update=1550/5000 loss=1.7891 policy=0.8239 value=0.9652
+update=1600/5000 loss=1.6695 policy=0.7210 value=0.9485
+update=1650/5000 loss=1.7018 policy=0.7087 value=0.9931
+update=1700/5000 loss=1.5205 policy=0.6342 value=0.8863
+update=1750/5000 loss=1.5132 policy=0.6316 value=0.8816
+update=1800/5000 loss=1.6331 policy=0.6916 value=0.9416
+update=1850/5000 loss=1.6183 policy=0.6973 value=0.9209
+update=1900/5000 loss=1.4887 policy=0.6157 value=0.8730
+update=1950/5000 loss=1.4631 policy=0.5927 value=0.8704
+update=2000/5000 loss=1.5881 policy=0.6449 value=0.9432
+update=2050/5000 loss=1.4577 policy=0.5795 value=0.8781
+update=2100/5000 loss=1.5146 policy=0.6258 value=0.8888
+update=2150/5000 loss=1.4245 policy=0.5796 value=0.8449
+update=2200/5000 loss=1.4411 policy=0.6027 value=0.8384
+update=2250/5000 loss=1.4217 policy=0.5792 value=0.8426
+update=2300/5000 loss=1.3519 policy=0.5199 value=0.8320
+update=2350/5000 loss=1.5055 policy=0.5906 value=0.9150
+update=2400/5000 loss=1.4594 policy=0.5612 value=0.8982
+update=2450/5000 loss=1.4136 policy=0.5007 value=0.9129
+update=2500/5000 loss=1.4242 policy=0.5290 value=0.8952
+update=2550/5000 loss=1.4190 policy=0.5606 value=0.8584
+update=2600/5000 loss=1.3346 policy=0.5233 value=0.8113
+update=2650/5000 loss=1.4240 policy=0.5491 value=0.8749
+update=2700/5000 loss=1.4387 policy=0.5670 value=0.8717
+update=2750/5000 loss=1.4462 policy=0.5533 value=0.8929
+update=2800/5000 loss=1.3441 policy=0.5200 value=0.8241
+update=2850/5000 loss=1.4324 policy=0.5673 value=0.8651
+update=2900/5000 loss=1.4108 policy=0.5580 value=0.8528
+update=2950/5000 loss=1.4191 policy=0.5396 value=0.8794
+update=3000/5000 loss=1.3280 policy=0.5361 value=0.7919
+update=3050/5000 loss=1.4028 policy=0.5242 value=0.8786
+update=3100/5000 loss=1.4555 policy=0.5825 value=0.8729
+update=3150/5000 loss=1.2714 policy=0.4718 value=0.7996
+update=3200/5000 loss=1.3573 policy=0.5019 value=0.8554
+update=3250/5000 loss=1.3257 policy=0.4817 value=0.8440
+update=3300/5000 loss=1.3287 policy=0.5217 value=0.8070
+update=3350/5000 loss=1.3291 policy=0.4863 value=0.8428
+update=3400/5000 loss=1.3460 policy=0.4894 value=0.8567
+update=3450/5000 loss=1.3668 policy=0.4863 value=0.8805
+update=3500/5000 loss=1.3482 policy=0.4910 value=0.8572
+update=3550/5000 loss=1.2880 policy=0.4935 value=0.7945
+update=3600/5000 loss=1.3575 policy=0.4611 value=0.8964
+update=3650/5000 loss=1.3085 policy=0.4709 value=0.8376
+update=3700/5000 loss=1.4044 policy=0.5178 value=0.8866
+update=3750/5000 loss=1.3177 policy=0.4732 value=0.8445
+update=3800/5000 loss=1.3758 policy=0.4984 value=0.8774
+update=3850/5000 loss=1.2390 policy=0.4101 value=0.8289
+update=3900/5000 loss=1.2912 policy=0.4804 value=0.8109
+update=3950/5000 loss=1.3027 policy=0.4560 value=0.8466
+update=4000/5000 loss=1.3082 policy=0.4858 value=0.8224
+update=4050/5000 loss=1.3876 policy=0.4992 value=0.8884
+update=4100/5000 loss=1.2737 policy=0.4537 value=0.8200
+update=4150/5000 loss=1.3669 policy=0.4893 value=0.8776
+update=4200/5000 loss=1.2464 policy=0.4490 value=0.7974
+update=4250/5000 loss=1.3854 policy=0.5158 value=0.8695
+update=4300/5000 loss=1.3019 policy=0.4408 value=0.8611
+update=4350/5000 loss=1.2373 policy=0.3807 value=0.8566
+update=4400/5000 loss=1.2722 policy=0.4534 value=0.8189
+update=4450/5000 loss=1.2078 policy=0.4011 value=0.8067
+update=4500/5000 loss=1.2695 policy=0.4387 value=0.8307
+update=4550/5000 loss=1.3168 policy=0.4917 value=0.8251
+update=4600/5000 loss=1.3377 policy=0.4640 value=0.8736
+update=4650/5000 loss=1.4039 policy=0.5134 value=0.8904
+update=4700/5000 loss=1.2802 policy=0.4511 value=0.8291
+update=4750/5000 loss=1.3253 policy=0.4662 value=0.8591
+update=4800/5000 loss=1.2258 policy=0.4232 value=0.8026
+update=4850/5000 loss=1.3475 policy=0.4861 value=0.8615
+update=4900/5000 loss=1.2756 policy=0.4167 value=0.8589
+update=4950/5000 loss=1.3744 policy=0.4596 value=0.9148
+update=4999/5000 loss=1.2982 policy=0.4458 value=0.8524
+{
+  "checkpoint": "artifacts_scratch/oracle_hybrid_bc_resampled_5k/snapshots/hybrid_clone_0000.pt",
+  "device": "cpu",
+  "final": {
+    "gradient_norm": 0.28210097551345825,
+    "loss": 1.2981607913970947,
+    "policy_loss": 0.4457986056804657,
+    "value_loss": 0.8523621559143066
+  },
+  "history_tail": [
+    {
+      "gradient_norm": 0.9170689582824707,
+      "loss": 1.3167550563812256,
+      "policy_loss": 0.4916841387748718,
+      "update": 4550,
+      "value_loss": 0.825070858001709,
+      "wall_s": 112.43201518058777,
+      "weighted_sample": true
+    },
+    {
+      "gradient_norm": 0.5851656794548035,
+      "loss": 1.337660789489746,
+      "policy_loss": 0.46403124928474426,
+      "update": 4600,
+      "value_loss": 0.8736295700073242,
+      "wall_s": 113.62300109863281,
+      "weighted_sample": true
+    },
+    {
+      "gradient_norm": 0.39412954449653625,
+      "loss": 1.4038856029510498,
+      "policy_loss": 0.5134369730949402,
+      "update": 4650,
+      "value_loss": 0.8904486298561096,
+      "wall_s": 115.09478211402893,
+      "weighted_sample": true
+    },
+    {
+      "gradient_norm": 0.6085384488105774,
+      "loss": 1.2801977396011353,
+      "policy_loss": 0.45105263590812683,
+      "update": 4700,
+      "value_loss": 0.829145073890686,
+      "wall_s": 116.47612118721008,
+      "weighted_sample": true
+    },
+    {
+      "gradient_norm": 0.4956444203853607,
+      "loss": 1.325295090675354,
+      "policy_loss": 0.4662129580974579,
+      "update": 4750,
+      "value_loss": 0.8590821027755737,
+      "wall_s": 117.72065711021423,
+      "weighted_sample": true
+    },
+    {
+      "gradient_norm": 0.3893916606903076,
+      "loss": 1.225809097290039,
+      "policy_loss": 0.42320042848587036,
+      "update": 4800,
+      "value_loss": 0.8026086091995239,
+      "wall_s": 118.89793300628662,
+      "weighted_sample": true
+    },
+    {
+      "gradient_norm": 0.7429277300834656,
+      "loss": 1.3475465774536133,
+      "policy_loss": 0.4860774874687195,
+      "update": 4850,
+      "value_loss": 0.8614690899848938,
+      "wall_s": 120.05488324165344,
+      "weighted_sample": true
+    },
+    {
+      "gradient_norm": 0.4592815637588501,
+      "loss": 1.2755646705627441,
+      "policy_loss": 0.41666871309280396,
+      "update": 4900,
+      "value_loss": 0.8588958978652954,
+      "wall_s": 121.22699022293091,
+      "weighted_sample": true
+    },
+    {
+      "gradient_norm": 0.5070417523384094,
+      "loss": 1.3743770122528076,
+      "policy_loss": 0.45961278676986694,
+      "update": 4950,
+      "value_loss": 0.9147641658782959,
+      "wall_s": 122.61892199516296,
+      "weighted_sample": true
+    },
+    {
+      "gradient_norm": 0.28210097551345825,
+      "loss": 1.2981607913970947,
+      "policy_loss": 0.4457986056804657,
+      "update": 4999,
+      "value_loss": 0.8523621559143066,
+      "wall_s": 123.91372108459473,
+      "weighted_sample": true
+    }
+  ],
+  "n_labels": 24719,
+  "policy_match": {
+    "match_rate": 0.99267578125,
+    "rows": 4096.0
+  },
+  "updates": 5000,
+  "wall_seconds": 123.93590497970581,
+  "weighted_sample": true
+}

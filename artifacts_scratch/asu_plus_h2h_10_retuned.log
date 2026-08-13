@@ -1,0 +1,82 @@
+h2h progress 8/10
+h2h progress 10/10
+{
+  "asu_plus_vs_asu": {
+    "asu_plus_wilson_95": [
+      0.236593090512564,
+      0.7634069094874361
+    ],
+    "asu_plus_wilson_lower": 0.236593090512564,
+    "asu_plus_win_rate": 0.5,
+    "asu_wilson_95": [
+      0.10779126740630099,
+      0.6032218525388546
+    ],
+    "asu_win_rate": 0.3,
+    "beats_asu": false,
+    "rate_gap": 0.2
+  },
+  "disclaimer": "These are ppo-plus-v2 simulator results for ASU-inspired reconstructions; they do not reproduce or estimate either cited paper's reported win rates.",
+  "frozen_spec_hash": "9ab1907e0de1af4b253ce36ffa107c4fdb5e2b913858ef87c362423e61a6fd74",
+  "games": 10,
+  "lineup": [
+    "asu-plus-v1",
+    "asu-value-v1",
+    "fixed-a",
+    "fixed-b"
+  ],
+  "ruleset": "ppo-plus-v2",
+  "seed": 0,
+  "truncations": 0,
+  "weights": {
+    "endgame_start_round": 150,
+    "w_block": 0.05,
+    "w_endgame": 0.15,
+    "w_liq": 0.5
+  },
+  "win_rates": {
+    "asu-plus-v1": {
+      "games": 10,
+      "wilson_95": [
+        0.236593090512564,
+        0.7634069094874361
+      ],
+      "win_rate": 0.5,
+      "win_rate_percent": 50.0,
+      "wins": 5
+    },
+    "asu-value-v1": {
+      "games": 10,
+      "wilson_95": [
+        0.10779126740630099,
+        0.6032218525388546
+      ],
+      "win_rate": 0.3,
+      "win_rate_percent": 30.0,
+      "wins": 3
+    },
+    "fixed-a": {
+      "games": 10,
+      "wilson_95": [
+        0.0,
+        0.2775327998628892
+      ],
+      "win_rate": 0.0,
+      "win_rate_percent": 0.0,
+      "wins": 0
+    },
+    "fixed-b": {
+      "games": 10,
+      "wilson_95": [
+        0.05668215145437519,
+        0.5098375284633583
+      ],
+      "win_rate": 0.2,
+      "win_rate_percent": 20.0,
+      "wins": 2
+    }
+  },
+  "workers": 8
+}
+
+ASU+ 0.500 (Wilson [0.237, 0.763]) vs ASU 0.300 | beats_asu=False

@@ -1,0 +1,186 @@
+field_br probe --output /content/oracle-field-br-run/reports/probe.json --max-rounds 8
+{
+  "failed": [],
+  "ok": true,
+  "policy_ids": [
+    "alinebidal-final",
+    "slayer-v1",
+    "inncenta-heuristic",
+    "expo-heuristic-v1",
+    "asu-value-v1",
+    "fixed-a",
+    "fixed-b",
+    "fixed-c"
+  ],
+  "reports": [
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "alinebidal-final",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 285,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "slayer-v1",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 313,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "inncenta-heuristic",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 297,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "expo-heuristic-v1",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 419,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "asu-value-v1",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 307,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "fixed-a",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 292,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "fixed-b",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 320,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "fixed-c",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 282,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    }
+  ]
+}
+probe ok — every pool agent loaded and played
+field_br gap --clone /content/hybrid_clone_0000.pt --games 40 --expo-games 8 --sims 32 --workers 8 --checkpoint-dir /content/oracle-field-br-run/gap --resume --output /content/oracle-field-br-run/gap/gap.json
+field progress 1/40
+field progress 2/40
+field progress 3/40
+field progress 4/40
+field progress 5/40
+field progress 6/40
+field progress 7/40
+field progress 8/40
+field progress 9/40
+field progress 10/40
+field progress 11/40
+field progress 12/40
+field progress 13/40
+field progress 14/40
+field progress 15/40
+field progress 16/40
+field progress 17/40
+field progress 18/40
+field progress 19/40
+field progress 20/40
+field progress 21/40
+field progress 22/40
+field progress 23/40
+field progress 24/40
+field progress 25/40
+field progress 26/40
+field progress 27/40
+field progress 28/40
+field progress 29/40
+field progress 30/40
+field progress 31/40
+field progress 32/40
+field progress 33/40
+field progress 34/40
+field progress 35/40
+field progress 36/40
+field progress 37/40
+field progress 38/40
+field progress 39/40
+field progress 40/40
+
+=== gap vs tournament three @ 32 sims, n=40 ===
+clone WR=0.125 (5/40) Wilson [0.05459500250945403, 0.261121198388511] crashes=0 bankruptcies=25
+who won the table: slayer-v1 17, inncenta-heuristic 10, alinebidal-final 8, clone 5
+  vs alinebidal-final: their WR=0.200 (8/40) our_gap=-0.075 net-worth margin=-3700.3 ± SE 2199.4  <-- strong
+  vs inncenta-heuristic: their WR=0.250 (10/40) our_gap=-0.125 net-worth margin=-7239.8 ± SE 3259.1  <-- strong
+  vs slayer-v1: their WR=0.425 (17/40) our_gap=-0.300 net-worth margin=-11671.6 ± SE 3037.9  <-- strong

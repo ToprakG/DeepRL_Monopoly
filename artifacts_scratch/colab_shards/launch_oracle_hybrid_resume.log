@@ -1,0 +1,37 @@
+[19:08:07] packed /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz (4489004 bytes)
+[19:08:07] $ /Users/toprakgundogdu/.local/bin/colab new -s ora0 --high-mem
+[colab] Creating session 'ora0'...
+[colab] Session READY.
+[19:08:23] $ /Users/toprakgundogdu/.local/bin/colab new -s ora1 --high-mem
+[colab] Creating session 'ora1'...
+[colab] Session READY.
+[19:08:39] launch ora0 seed=10000 games=705 end=10704
+[19:08:39] $ /Users/toprakgundogdu/.local/bin/colab upload -s ora0 /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz /content/oracle_hybrid_src.tgz
+[colab] Uploaded '/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz' to '/content/oracle_hybrid_src.tgz'
+[19:08:42] $ /Users/toprakgundogdu/.local/bin/colab upload -s ora0 /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10000_10704.ckpt.tgz /content/labels_seed10000_10704.ckpt.tgz
+[colab] Uploaded '/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10000_10704.ckpt.tgz' to '/content/labels_seed10000_10704.ckpt.tgz'
+[19:08:43] ora0: uploaded resume ckpt (211290 bytes)
+[19:08:43] ora0: skipping CLI drivemount (bootstrap will try google.colab.drive)
+[19:08:43] $ /Users/toprakgundogdu/.local/bin/colab exec -s ora0 --timeout 300
+HOST cpu=8 ram_gib=51.0
+RESUME_EXTRACTED /content/labels_seed10000_10704.ckpt.tgz
+COLAB_DRIVE_MOUNT_FAIL ValueError: mount failed
+STARTED pid=1625 workers=7 seed=10000 games=705 out=/content/labels_seed10000_10704.json ckpt=/content/labels_seed10000_10704.ckpt drive_ok=False
+[19:10:50] launched ora0
+[19:10:50] launch ora1 seed=10705 games=705 end=11409
+[19:10:50] $ /Users/toprakgundogdu/.local/bin/colab upload -s ora1 /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz /content/oracle_hybrid_src.tgz
+[colab] Uploaded '/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz' to '/content/oracle_hybrid_src.tgz'
+[19:10:53] $ /Users/toprakgundogdu/.local/bin/colab upload -s ora1 /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10705_11409.ckpt.tgz /content/labels_seed10705_11409.ckpt.tgz
+[colab] Uploaded '/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10705_11409.ckpt.tgz' to '/content/labels_seed10705_11409.ckpt.tgz'
+[19:10:54] ora1: uploaded resume ckpt (50240 bytes)
+[19:10:54] ora1: skipping CLI drivemount (bootstrap will try google.colab.drive)
+[19:10:54] $ /Users/toprakgundogdu/.local/bin/colab exec -s ora1 --timeout 300
+HOST cpu=8 ram_gib=51.0
+RESUME_EXTRACTED /content/labels_seed10705_11409.ckpt.tgz
+COLAB_DRIVE_MOUNT_FAIL ValueError: mount failed
+STARTED pid=2155 workers=7 seed=10705 games=705 out=/content/labels_seed10705_11409.json ckpt=/content/labels_seed10705_11409.ckpt drive_ok=False
+[19:13:01] launched ora1
+[19:13:01] all Colab shards started; probing
+[19:13:03] ora0: pid=1625 alive=True local_npz=0 drive_npz=0 meta='pid=1625 | workers=7 | seed=10000 | games=705 | out=/content/labels_seed10000_10704.json | ckpt=/content/labels_seed10000_10704.ckpt | drive_ok=False |' last='resume: skipping 75 completed seeds from /content/labels_seed10000_10704.ckpt'
+[19:13:04] ora1: pid=2155 alive=True local_npz=0 drive_npz=0 meta='pid=2155 | workers=7 | seed=10705 | games=705 | out=/content/labels_seed10705_11409.json | ckpt=/content/labels_seed10705_11409.ckpt | drive_ok=False |' last='resume: skipping 25 completed seeds from /content/labels_seed10705_11409.ckpt'
+[19:13:04] Drive folder (if mounted): /content/drive/MyDrive/oracle_hybrid_labels/labels_seed{start}_{end}.npz

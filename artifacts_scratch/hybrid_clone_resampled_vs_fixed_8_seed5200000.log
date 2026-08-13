@@ -1,0 +1,127 @@
+hybrid_clone vs fixed-a/b/c | games=8 sims=32 workers=8 ckpt=artifacts_scratch/oracle_hybrid_bc_resampled_5k/snapshots/hybrid_clone_0000.pt
+h2h progress 1/8 game=0 winner=2 clone_seat=0 completed=True crashes=0
+h2h progress 2/8 game=1 winner=2 clone_seat=1 completed=True crashes=0
+h2h progress 3/8 game=3 winner=2 clone_seat=3 completed=True crashes=0
+h2h progress 4/8 game=6 winner=1 clone_seat=2 completed=True crashes=0
+h2h progress 5/8 game=7 winner=1 clone_seat=3 completed=True crashes=0
+h2h progress 6/8 game=2 winner=1 clone_seat=2 completed=True crashes=0
+h2h progress 7/8 game=4 winner=2 clone_seat=0 completed=True crashes=0
+h2h progress 8/8 game=5 winner=2 clone_seat=1 completed=True crashes=0
+{
+  "checkpoint": "artifacts_scratch/oracle_hybrid_bc_resampled_5k/snapshots/hybrid_clone_0000.pt",
+  "clone_wins": 0,
+  "games": 8,
+  "lineup": [
+    "hybrid_clone",
+    "fixed-a",
+    "fixed-b",
+    "fixed-c"
+  ],
+  "per_game": [
+    {
+      "clone_seat": 0,
+      "completed": true,
+      "crashes": 0,
+      "decisions": 2249,
+      "error": null,
+      "game_id": 0,
+      "illegal_actions": 0,
+      "seed": 5200000,
+      "winner": 2
+    },
+    {
+      "clone_seat": 1,
+      "completed": true,
+      "crashes": 0,
+      "decisions": 3913,
+      "error": null,
+      "game_id": 1,
+      "illegal_actions": 0,
+      "seed": 5200001,
+      "winner": 2
+    },
+    {
+      "clone_seat": 2,
+      "completed": true,
+      "crashes": 0,
+      "decisions": 2690,
+      "error": null,
+      "game_id": 2,
+      "illegal_actions": 0,
+      "seed": 5200002,
+      "winner": 1
+    },
+    {
+      "clone_seat": 3,
+      "completed": true,
+      "crashes": 0,
+      "decisions": 2059,
+      "error": null,
+      "game_id": 3,
+      "illegal_actions": 0,
+      "seed": 5200003,
+      "winner": 2
+    },
+    {
+      "clone_seat": 0,
+      "completed": true,
+      "crashes": 0,
+      "decisions": 2847,
+      "error": null,
+      "game_id": 4,
+      "illegal_actions": 0,
+      "seed": 5200004,
+      "winner": 2
+    },
+    {
+      "clone_seat": 1,
+      "completed": true,
+      "crashes": 0,
+      "decisions": 4251,
+      "error": null,
+      "game_id": 5,
+      "illegal_actions": 0,
+      "seed": 5200005,
+      "winner": 2
+    },
+    {
+      "clone_seat": 2,
+      "completed": true,
+      "crashes": 0,
+      "decisions": 2370,
+      "error": null,
+      "game_id": 6,
+      "illegal_actions": 0,
+      "seed": 5200006,
+      "winner": 1
+    },
+    {
+      "clone_seat": 3,
+      "completed": true,
+      "crashes": 0,
+      "decisions": 2561,
+      "error": null,
+      "game_id": 7,
+      "illegal_actions": 0,
+      "seed": 5200007,
+      "winner": 1
+    }
+  ],
+  "seed": 5200000,
+  "sims": 32,
+  "summary": {
+    "completed": 8,
+    "crashes": 0,
+    "fallbacks": 0,
+    "games": 8,
+    "illegal_actions": 0,
+    "latency_p95_s": 0.4461345294999772,
+    "losses": 8,
+    "wilson_lower": 0.0,
+    "win_rate": 0.0,
+    "wins": 0
+  },
+  "wall_seconds": 244.4131018749904,
+  "workers": 8
+}
+clone WR=0.000 (0/8) wilson_lo=0.000 wall=244.4s -> artifacts_scratch/hybrid_clone_resampled_vs_fixed_8_seed5200000.json

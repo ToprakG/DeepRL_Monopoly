@@ -1,0 +1,193 @@
+field_br probe --output /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/oracle_field_br_run/reports/probe.json --max-rounds 8
+{
+  "failed": [],
+  "ok": true,
+  "policy_ids": [
+    "alinebidal-final",
+    "slayer-v1",
+    "inncenta-heuristic",
+    "expo-heuristic-v1",
+    "asu-value-v1",
+    "fixed-a",
+    "fixed-b",
+    "fixed-c"
+  ],
+  "reports": [
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "alinebidal-final",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 285,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "slayer-v1",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 313,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "inncenta-heuristic",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 297,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "expo-heuristic-v1",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 419,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "asu-value-v1",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 307,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "fixed-a",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 292,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "fixed-b",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 320,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "fixed-c",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 282,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    }
+  ]
+}
+probe ok — every pool agent loaded and played
+field_br gap --clone /Users/toprakgundogdu/DeepRL_Monopoly/monopoly_bench/runs/oracle_hybrid_bc_new25k/snapshots/hybrid_clone_0000.pt --games 40 --expo-games 8 --sims 32 --workers 6 --checkpoint-dir /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/oracle_field_br_run/gap --resume --output /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/oracle_field_br_run/gap/gap.json
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/toprakgundogdu/DeepRL_Monopoly/oracle/run_field_br_job.py", line 84, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/toprakgundogdu/DeepRL_Monopoly/oracle/run_field_br_job.py", line 36, in main
+    code = _run(
+           ^^^^^
+  File "/Users/toprakgundogdu/DeepRL_Monopoly/oracle/run_field_br_job.py", line 22, in _run
+    return int(field_br_main(argv))
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/toprakgundogdu/DeepRL_Monopoly/oracle/field_br.py", line 945, in main
+    payload = measure_gap(
+              ^^^^^^^^^^^^
+  File "/Users/toprakgundogdu/DeepRL_Monopoly/oracle/field_br.py", line 608, in measure_gap
+    tournament = evaluate_vs_field(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/toprakgundogdu/DeepRL_Monopoly/oracle/field_br.py", line 573, in evaluate_vs_field
+    records, _ = _run_jobs(
+                 ^^^^^^^^^^
+  File "/Users/toprakgundogdu/DeepRL_Monopoly/oracle/field_br.py", line 528, in _run_jobs
+    for payload_out in pool.imap_unordered(_field_worker, payloads, chunksize=1):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/toprakgundogdu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/multiprocessing/pool.py", line 873, in next
+    raise value
+  File "/Users/toprakgundogdu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/multiprocessing/pool.py", line 540, in _handle_tasks
+    put(task)
+  File "/Users/toprakgundogdu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/toprakgundogdu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/multiprocessing/reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+  File "/Users/toprakgundogdu/DeepRL_Monopoly/.venv/lib/python3.12/site-packages/torch/multiprocessing/reductions.py", line 602, in reduce_storage
+    metadata = storage._share_filename_cpu_()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/toprakgundogdu/DeepRL_Monopoly/.venv/lib/python3.12/site-packages/torch/storage.py", line 449, in wrapper
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/toprakgundogdu/DeepRL_Monopoly/.venv/lib/python3.12/site-packages/torch/storage.py", line 531, in _share_filename_cpu_
+    return super()._share_filename_cpu_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: torch_shm_manager at "/Users/toprakgundogdu/DeepRL_Monopoly/.venv/lib/python3.12/site-packages/torch/bin/torch_shm_manager": Operation not permitted
+Exception raised from start_manager at /Users/runner/work/pytorch/pytorch/torch/lib/libshm/core.cpp:67 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>) + 52 (0x1030e8b10 in libc10.dylib)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&) + 120 (0x1030e5f44 in libc10.dylib)
+frame #2: THManagedMapAllocatorInit::THManagedMapAllocatorInit(char const*, char const*) + 2104 (0x10282bb14 in libshm.dylib)
+frame #3: THManagedMapAllocator::makeDataPtr(char const*, char const*, int, unsigned long) + 68 (0x10282c114 in libshm.dylib)
+frame #4: THPStorage_shareFilename(_object*, _object*) + 156 (0x10684e40c in libtorch_python.dylib)
+<omitting python frames>
+frame #26: _pthread_start + 136 (0x19c7bdf94 in libsystem_pthread.dylib)
+frame #27: thread_start + 8 (0x19c7b8d34 in libsystem_pthread.dylib)
+
+field_br probe --output /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/oracle_field_br_run/reports/probe.json --max-rounds 8

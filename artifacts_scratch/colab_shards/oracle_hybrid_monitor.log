@@ -1,0 +1,844 @@
+[14:53:05] oracle hybrid monitor start
+[14:53:05] polling every 60s → /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_monitor.log
+[14:53:08] ora0: pid=2517 alive=True done=6/705 last_labels=8 kind=self npz=0
+[14:53:12] ora1: pid=1292 alive=True done=2/705 last_labels=8 kind=self npz=0
+[14:53:12] local: alive=True done=240/391 labels=12 kind=pool npz=0
+[14:54:27] ora0: pid=2517 alive=True done=6/705 last_labels=8 kind=self npz=0
+[14:54:30] ora1: pid=1292 alive=True done=7/705 last_labels=10 kind=self npz=0
+[14:54:30] local: alive=True done=242/391 labels=3 kind=self npz=0
+[14:55:46] ora0: pid=2517 alive=True done=8/705 last_labels=29 kind=pool npz=0
+[14:56:00] ora1: pid=1292 alive=True done=10/705 last_labels=4 kind=self npz=0
+[14:56:00] local: alive=True done=242/391 labels=3 kind=self npz=0
+[14:57:02] ora0: pid=2517 alive=True done=13/705 last_labels=5 kind=self npz=0
+[14:57:04] ora1: pid=1292 alive=True done=13/705 last_labels=31 kind=self npz=0
+[14:57:04] local: alive=True done=244/391 labels=4 kind=self npz=0
+[14:58:07] ora0: pid=2517 alive=True done=13/705 last_labels=5 kind=self npz=0
+[14:58:20] ora1: pid=1292 alive=True done=15/705 last_labels=5 kind=self npz=0
+[14:58:20] local: alive=True done=245/391 labels=17 kind=pool npz=0
+[14:59:48] ora0: pid=2517 alive=True done=15/705 last_labels=3 kind=self npz=0
+[14:59:51] ora1: pid=1292 alive=True done=17/705 last_labels=10 kind=self npz=0
+[14:59:51] local: alive=True done=247/391 labels=58 kind=self npz=0
+[15:00:56] ora0: pid=2517 alive=True done=15/705 last_labels=3 kind=self npz=0
+[15:01:16] ora1: pid=1292 alive=True done=21/705 last_labels=9 kind=self npz=0
+[15:01:17] local: alive=True done=250/391 labels=6 kind=self npz=0
+[15:02:39] ora0: pid=2517 alive=True done=17/705 last_labels=7 kind=self npz=0
+[15:02:41] ora1: pid=1292 alive=True done=26/705 last_labels=8 kind=pool npz=0
+[15:02:42] local: alive=True done=251/391 labels=29 kind=pool npz=0
+[15:03:44] ora0: pid=2517 alive=True done=17/705 last_labels=7 kind=self npz=0
+[15:03:47] ora1: pid=1292 alive=True done=26/705 last_labels=8 kind=pool npz=0
+[15:03:47] local: alive=True done=254/391 labels=6 kind=self npz=0
+[15:04:50] ora0: pid=2517 alive=True done=19/705 last_labels=6 kind=self npz=0
+[15:04:54] ora1: pid=1292 alive=True done=26/705 last_labels=8 kind=pool npz=0
+[15:04:54] local: alive=True done=254/391 labels=6 kind=self npz=0
+[15:06:08] ora0: pid=2517 alive=True done=20/705 last_labels=15 kind=pool npz=0
+[15:06:11] ora1: pid=1292 alive=True done=27/705 last_labels=63 kind=self npz=0
+[15:06:11] local: alive=True done=259/391 labels=8 kind=self npz=0
+[15:07:16] ora0: pid=2517 alive=True done=22/705 last_labels=9 kind=pool npz=0
+[15:07:29] ora1: pid=1292 alive=True done=27/705 last_labels=63 kind=self npz=0
+[15:07:29] local: alive=True done=259/391 labels=8 kind=self npz=0
+[15:08:33] ora0: pid=2517 alive=True done=23/705 last_labels=11 kind=self npz=0
+[15:08:37] ora1: pid=1292 alive=True done=27/705 last_labels=63 kind=self npz=0
+[15:08:37] local: alive=True done=260/391 labels=30 kind=pool npz=0
+[15:09:49] ora0: pid=2517 alive=True done=23/705 last_labels=11 kind=self npz=0
+[15:09:53] ora1: pid=1292 alive=True done=27/705 last_labels=63 kind=self npz=0
+[15:09:53] local: alive=True done=265/391 labels=8 kind=self npz=0
+[15:10:56] ora0: pid=2517 alive=True done=27/705 last_labels=4 kind=pool npz=0
+[15:10:59] ora1: pid=1292 alive=True done=27/705 last_labels=63 kind=self npz=0
+[15:10:59] local: alive=True done=266/391 labels=12 kind=self npz=0
+[15:12:05] ora0: pid=2517 alive=True done=29/705 last_labels=7 kind=pool npz=0
+[15:12:08] ora1: pid=1292 alive=True done=28/705 last_labels=6 kind=pool npz=0
+[15:12:08] local: alive=True done=266/391 labels=12 kind=self npz=0
+[15:13:21] ora0: pid=2517 alive=True done=32/705 last_labels=96 kind=self npz=0
+[15:13:24] ora1: pid=1292 alive=True done=29/705 last_labels=4 kind=self npz=0
+[15:13:24] local: alive=True done=268/391 labels=7 kind=self npz=0
+[15:14:26] ora0: pid=2517 alive=True done=38/705 last_labels=13 kind=pool npz=0
+[15:14:28] ora1: pid=1292 alive=True done=29/705 last_labels=4 kind=self npz=0
+[15:14:28] local: alive=True done=270/391 labels=18 kind=pool npz=0
+[15:15:31] ora0: pid=2517 alive=True done=41/705 last_labels=4 kind=self npz=0
+[15:15:33] ora1: pid=1292 alive=True done=29/705 last_labels=4 kind=self npz=0
+[15:15:33] local: alive=True done=270/391 labels=18 kind=pool npz=0
+[15:16:35] ora0: pid=2517 alive=True done=43/705 last_labels=6 kind=self npz=0
+[15:16:37] ora1: pid=1292 alive=True done=30/705 last_labels=11 kind=pool npz=0
+[15:16:37] local: alive=True done=272/391 labels=14 kind=self npz=0
+[15:17:39] ora0: pid=2517 alive=True done=43/705 last_labels=6 kind=self npz=0
+[15:17:41] ora1: pid=1292 alive=True done=31/705 last_labels=9 kind=self npz=0
+[15:17:42] local: alive=True done=274/391 labels=8 kind=self npz=0
+[15:18:44] ora0: pid=2517 alive=True done=47/705 last_labels=8 kind=self npz=0
+[15:18:46] ora1: pid=1292 alive=True done=31/705 last_labels=9 kind=self npz=0
+[15:18:46] local: alive=True done=276/391 labels=9 kind=self npz=0
+[15:19:48] ora0: pid=2517 alive=True done=49/705 last_labels=4 kind=self npz=0
+[15:19:50] ora1: pid=1292 alive=True done=31/705 last_labels=9 kind=self npz=0
+[15:19:50] local: alive=True done=281/391 labels=12 kind=pool npz=0
+[15:20:52] ora0: pid=2517 alive=True done=49/705 last_labels=4 kind=self npz=0
+[15:20:58] ora1: pid=1292 alive=True done=31/705 last_labels=9 kind=self npz=0
+[15:20:58] local: alive=True done=282/391 labels=15 kind=self npz=0
+[15:22:11] ora0: pid=2517 alive=True done=55/705 last_labels=5 kind=self npz=0
+[15:22:14] ora1: pid=1292 alive=True done=31/705 last_labels=9 kind=self npz=0
+[15:22:14] local: alive=True done=283/391 labels=23 kind=pool npz=0
+[15:23:27] ora0: pid=2517 alive=True done=57/705 last_labels=5 kind=self npz=0
+[15:23:30] ora1: pid=1292 alive=True done=31/705 last_labels=9 kind=self npz=0
+[15:23:30] local: alive=True done=283/391 labels=23 kind=pool npz=0
+[15:24:35] ora0: pid=2517 alive=True done=60/705 last_labels=10 kind=self npz=0
+[15:24:37] ora1: pid=1292 alive=True done=33/705 last_labels=8 kind=pool npz=0
+[15:24:37] local: alive=True done=284/391 labels=15 kind=pool npz=0
+[15:25:40] ora0: pid=2517 alive=True done=64/705 last_labels=16 kind=pool npz=0
+[15:25:52] ora1: pid=1292 alive=True done=33/705 last_labels=8 kind=pool npz=0
+[15:25:52] local: alive=True done=284/391 labels=15 kind=pool npz=0
+[15:26:57] ora0: pid=2517 alive=True done=68/705 last_labels=27 kind=pool npz=0
+[15:26:59] ora1: pid=1292 alive=True done=33/705 last_labels=8 kind=pool npz=0
+[15:26:59] local: alive=True done=285/391 labels=204 kind=self npz=0
+[15:28:03] ora0: pid=2517 alive=True done=70/705 last_labels=18 kind=pool npz=0
+[15:28:06] ora1: pid=1292 alive=True done=33/705 last_labels=8 kind=pool npz=0
+[15:28:06] local: alive=True done=285/391 labels=204 kind=self npz=0
+[15:29:09] ora0: pid=2517 alive=True done=70/705 last_labels=18 kind=pool npz=0
+[15:29:23] ora1: pid=1292 alive=True done=33/705 last_labels=8 kind=pool npz=0
+[15:29:23] local: alive=True done=285/391 labels=204 kind=self npz=0
+[15:30:26] ora0: pid=2517 alive=True done=71/705 last_labels=22 kind=pool npz=0
+[15:30:28] ora1: pid=1292 alive=True done=33/705 last_labels=8 kind=pool npz=0
+[15:30:29] local: alive=True done=285/391 labels=204 kind=self npz=0
+[15:31:31] ora0: pid=2517 alive=True done=73/705 last_labels=10 kind=self npz=0
+[15:31:33] ora1: pid=1292 alive=True done=33/705 last_labels=8 kind=pool npz=0
+[15:31:33] local: alive=True done=285/391 labels=204 kind=self npz=0
+[15:32:36] ora0: pid=2517 alive=True done=75/705 last_labels=14 kind=self npz=0
+[15:32:38] ora1: pid=1292 alive=True done=34/705 last_labels=192 kind=self npz=0
+[15:32:38] local: alive=True done=288/391 labels=3 kind=self npz=0
+[15:33:42] ora0: pid=2517 alive=True done=79/705 last_labels=39 kind=pool npz=0
+[15:33:46] ora1: pid=1292 alive=True done=35/705 last_labels=10 kind=self npz=0
+[15:33:46] local: alive=True done=291/391 labels=5 kind=pool npz=0
+[15:34:58] ora0: pid=2517 alive=True done=82/705 last_labels=24 kind=pool npz=0
+[15:35:00] ora1: pid=1292 alive=True done=37/705 last_labels=4 kind=self npz=0
+[15:35:01] local: alive=True done=292/391 labels=11 kind=self npz=0
+[15:36:04] ora0: pid=2517 alive=True done=82/705 last_labels=24 kind=pool npz=0
+[15:36:06] ora1: pid=1292 alive=True done=37/705 last_labels=4 kind=self npz=0
+[15:36:06] local: alive=True done=294/391 labels=7 kind=self npz=0
+[15:37:13] ora0: pid=2517 alive=True done=85/705 last_labels=4 kind=self npz=0
+[15:37:16] ora1: pid=1292 alive=True done=38/705 last_labels=11 kind=pool npz=0
+[15:37:16] local: alive=True done=294/391 labels=7 kind=self npz=0
+[15:38:19] ora0: pid=2517 alive=True done=86/705 last_labels=19 kind=pool npz=0
+[15:38:21] ora1: pid=1292 alive=True done=39/705 last_labels=16 kind=self npz=0
+[15:38:21] local: alive=True done=296/391 labels=11 kind=self npz=0
+[15:39:23] ora0: pid=2517 alive=True done=87/705 last_labels=5 kind=self npz=0
+[15:39:36] ora1: pid=1292 alive=True done=40/705 last_labels=8 kind=pool npz=0
+[15:39:36] local: alive=True done=300/391 labels=6 kind=pool npz=0
+[15:40:48] ora0: pid=2517 alive=True done=92/705 last_labels=11 kind=self npz=0
+[15:40:53] ora1: pid=1292 alive=True done=44/705 last_labels=10 kind=self npz=0
+[15:40:53] local: alive=True done=300/391 labels=6 kind=pool npz=0
+[15:41:55] ora0: pid=2517 alive=True done=94/705 last_labels=17 kind=self npz=0
+[15:41:57] ora1: pid=1292 alive=True done=44/705 last_labels=10 kind=self npz=0
+[15:41:57] local: alive=True done=300/391 labels=6 kind=pool npz=0
+[15:43:00] ora0: pid=2517 alive=True done=95/705 last_labels=43 kind=pool npz=0
+[15:43:04] ora1: pid=1292 alive=True done=44/705 last_labels=10 kind=self npz=0
+[15:43:04] local: alive=True done=300/391 labels=6 kind=pool npz=0
+[15:44:08] ora0: pid=2517 alive=True done=97/705 last_labels=4 kind=self npz=0
+[15:44:11] ora1: pid=1292 alive=True done=44/705 last_labels=10 kind=self npz=0
+[15:44:11] local: alive=True done=300/391 labels=6 kind=pool npz=0
+[15:45:13] ora0: pid=2517 alive=True done=97/705 last_labels=4 kind=self npz=0
+[15:45:16] ora1: pid=1292 alive=True done=44/705 last_labels=10 kind=self npz=0
+[15:45:16] local: alive=True done=302/391 labels=203 kind=self npz=0
+[15:46:18] ora0: pid=2517 alive=True done=97/705 last_labels=4 kind=self npz=0
+[15:46:21] ora1: pid=1292 alive=True done=45/705 last_labels=13 kind=pool npz=0
+[15:46:21] local: alive=True done=304/391 labels=9 kind=self npz=0
+[15:47:23] ora0: pid=2517 alive=True done=99/705 last_labels=17 kind=self npz=0
+[15:47:25] ora1: pid=1292 alive=True done=46/705 last_labels=20 kind=pool npz=0
+[15:47:25] local: alive=True done=306/391 labels=8 kind=self npz=0
+[15:48:27] ora0: pid=2517 alive=True done=102/705 last_labels=19 kind=pool npz=0
+[15:48:30] ora1: pid=1292 alive=True done=50/705 last_labels=6 kind=self npz=0
+[15:48:30] local: alive=True done=306/391 labels=8 kind=self npz=0
+[15:49:32] ora0: pid=2517 alive=True done=103/705 last_labels=46 kind=self npz=0
+[15:49:44] ora1: pid=1292 alive=True done=51/705 last_labels=13 kind=pool npz=0
+[15:49:44] local: alive=True done=308/391 labels=6 kind=self npz=0
+[15:50:47] ora0: pid=2517 alive=True done=103/705 last_labels=46 kind=self npz=0
+[15:50:49] ora1: pid=1292 alive=True done=53/705 last_labels=194 kind=self npz=0
+[15:50:49] local: alive=True done=308/391 labels=6 kind=self npz=0
+[15:51:51] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' appears to be lost (404/401). Cleaning up.
+[15:51:53] ora1: pid=1292 alive=True done=55/705 last_labels=13 kind=self npz=0
+[15:51:53] local: alive=True done=310/391 labels=4 kind=self npz=0
+[15:52:54] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[15:52:55] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' appears to be lost (404/401). Cleaning up.
+[15:52:55] local: alive=True done=312/391 labels=7 kind=self npz=0
+[15:53:56] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[15:53:57] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[15:53:57] local: alive=True done=312/391 labels=7 kind=self npz=0
+[15:54:58] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[15:54:59] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[15:54:59] local: alive=True done=314/391 labels=8 kind=self npz=0
+[15:56:00] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[15:56:00] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[15:56:00] local: alive=True done=316/391 labels=9 kind=self npz=0
+[15:57:01] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[15:57:02] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[15:57:02] local: alive=True done=316/391 labels=9 kind=self npz=0
+[15:58:03] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[15:58:04] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[15:58:04] local: alive=True done=318/391 labels=182 kind=pool npz=0
+[15:59:05] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[15:59:05] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[15:59:06] local: alive=True done=320/391 labels=7 kind=self npz=0
+[16:00:06] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[16:00:07] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[16:00:07] local: alive=True done=322/391 labels=11 kind=self npz=0
+[16:01:08] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[16:01:09] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[16:01:09] local: alive=True done=328/391 labels=14 kind=self npz=0
+[16:02:10] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[16:02:11] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[16:02:11] local: alive=True done=330/391 labels=12 kind=self npz=0
+[16:03:12] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[16:03:15] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[16:03:15] local: alive=True done=332/391 labels=11 kind=self npz=0
+[16:04:16] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[16:04:17] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[16:04:17] local: alive=True done=332/391 labels=11 kind=self npz=0
+[16:05:18] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[16:05:20] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[16:05:20] local: alive=True done=334/391 labels=6 kind=self npz=0
+[16:06:22] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[16:06:23] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[16:06:23] local: alive=True done=336/391 labels=9 kind=self npz=0
+[16:07:24] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[16:07:25] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[16:07:25] local: alive=True done=336/391 labels=9 kind=self npz=0
+[16:08:30] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[16:08:32] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[16:08:32] local: alive=True done=340/391 labels=9 kind=self npz=0
+[16:09:47] ora0: pid=? alive=False done=0/705 last_labels= kind= npz=0
+[16:10:01] ora1: pid=? alive=False done=0/705 last_labels= kind= npz=0
+[16:10:01] local: alive=True done=342/391 labels=9 kind=self npz=0
+[16:12:56] ora0: pid=1672 alive=True done=0/705 last_labels= kind= npz=0
+[16:15:02] ora1: pid=4776 alive=True done=0/705 last_labels= kind= npz=0
+[16:15:02] local: alive=True done=344/391 labels=7 kind=self npz=0
+[19:05:05] ora0: PROBE_FAIL rc=1 s not None:                               │
+│   1076 │   │   │   │   │   timeout = max(0, deadline - time.monotonic())     │
+╰──────────────────────────────────────────────────────────────────────────────╯
+RuntimeError: Connection was lost.
+[19:05:06] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[19:05:06] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:06:06] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[19:06:07] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[19:06:07] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:07:07] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[19:07:08] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[19:07:08] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:08:08] ora0: PROBE_FAIL rc=1 [colab] Session 'ora0' not found.
+[19:08:09] ora1: PROBE_FAIL rc=1 [colab] Session 'ora1' not found.
+[19:08:09] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:10:51] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:10:52] ora1: pid=? alive=False done=0/705 last_labels= kind= npz=0
+[19:10:52] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:11:54] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:13:01] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:13:01] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:14:04] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:14:08] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:14:08] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:15:11] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:15:14] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:15:14] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:16:28] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:16:42] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:16:42] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:17:55] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:18:07] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:18:07] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:19:20] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:19:33] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:19:33] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:20:36] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:20:39] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:20:39] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:21:55] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:21:57] ora1: PROBE_FAIL rc=1 ────────────────────────────────────────────────────────────╯
+HTTPError: 503 Server Error: Service Unavailable for url: 
+https://8080-m-hm-kkb-use1d1-2vxd9jiqm0m6-d.us-east1-1.prod.colab.dev/api/kernel
+s/0ac1cc2b-c8c0-4bc3-9af0-b07b239734a0
+[19:21:57] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:23:01] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:23:04] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:23:04] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:24:07] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:24:10] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:24:10] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:25:22] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:25:25] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:25:25] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:26:30] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:26:43] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:26:43] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:27:46] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:27:58] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:27:59] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:29:02] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:29:04] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:29:05] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:30:17] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:30:30] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:30:30] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:31:33] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:31:36] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:31:36] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:32:38] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:32:41] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:32:41] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:33:43] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:33:46] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:33:46] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:34:48] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:34:52] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:34:52] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:35:55] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:35:59] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:35:59] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:37:11] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:37:15] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:37:15] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:38:17] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:38:19] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:38:19] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:39:32] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:39:34] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:39:34] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:40:36] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:40:48] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:40:48] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:41:51] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:41:54] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:41:54] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:43:07] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:43:10] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:43:10] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:44:23] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:44:27] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:44:27] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:45:29] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:45:32] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:45:32] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:46:44] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:46:46] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:46:47] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:47:49] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:47:51] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:47:51] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:49:04] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:49:08] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:49:08] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:50:10] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:50:13] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:50:13] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:51:16] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:51:18] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:51:18] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:52:31] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:52:34] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:52:34] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:53:36] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:53:39] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:53:39] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:54:42] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:54:56] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:54:56] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:56:08] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:56:20] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:56:20] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:57:24] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:57:27] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:57:27] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:58:39] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:58:43] ora1: pid=2155 alive=True done=0/705 last_labels= kind=checkpoint wrote 529 labels from 25 games -> /content/labels_seed10705_11409.ckpt/part_seed10708_10759_n25.npz npz=0
+[19:58:43] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:58:43] ALL SHARDS DONE
+ throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:29:57] ora0: sync pulled 0 file(s)
+[19:30:10] ora1: sync pulled 0 file(s)
+[19:30:17] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:30:30] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:30:30] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:31:12] ora0: sync pulled 0 file(s)
+[19:31:15] ora1: sync pulled 0 file(s)
+[19:31:33] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:31:36] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:31:36] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:32:18] ora0: sync pulled 0 file(s)
+[19:32:21] ora1: sync pulled 0 file(s)
+[19:32:38] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:32:41] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:32:41] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:33:24] ora0: sync pulled 0 file(s)
+[19:33:37] ora1: sync pulled 0 file(s)
+[19:33:43] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:33:46] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:33:46] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:34:48] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:34:49] ora0: sync pulled 0 file(s)
+[19:34:52] ora1: sync pulled 0 file(s)
+[19:34:52] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:34:52] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:35:54] ora0: sync pulled 0 file(s)
+[19:35:55] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:35:58] ora1: sync pulled 0 file(s)
+[19:35:59] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:35:59] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:37:10] ora0: sync pulled 0 file(s)
+[19:37:11] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:37:13] ora1: sync pulled 0 file(s)
+[19:37:15] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:37:15] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:38:17] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:38:19] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:38:19] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:38:26] ora0: sync pulled 0 file(s)
+[19:38:38] ora1: sync pulled 0 file(s)
+[19:39:19] ckpt syncer start -> artifacts_scratch/colab_shards/<stem>.ckpt/
+[19:39:22] ora0: sync pulled 0 file(s)
+[19:39:24] ora1: sync pulled 0 file(s)
+[19:39:32] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:39:34] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:39:34] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:39:40] ora0: sync pulled 0 file(s)
+[19:39:43] ora1: sync pulled 0 file(s)
+[19:40:36] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:40:48] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:40:48] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:40:58] ora0: sync pulled 0 file(s)
+[19:41:00] ora1: sync pulled 0 file(s)
+[19:41:51] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:41:54] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:41:54] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:42:13] ora0: sync pulled 0 file(s)
+[19:42:17] ora1: sync pulled 0 file(s)
+[19:43:07] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:43:10] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:43:10] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:43:19] ora0: sync pulled 0 file(s)
+[19:43:22] ora1: sync pulled 0 file(s)
+[19:44:23] ora0: pid=1625 alive=True done=0/705 last_labels= kind= npz=0
+[19:44:27] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:44:27] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:44:36] ora0: sync pulled 0 file(s)
+[19:44:39] ora1: sync pulled 0 file(s)
+[19:45:29] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:45:32] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:45:32] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:45:44] ora0: pulled ckpt manifest.json (1275 bytes) -> /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10000_10704.ckpt/manifest.json
+[19:45:46] ora0: pulled ckpt part_seed10069_10105_n25.json (6608 bytes) -> /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.json
+[19:45:48] ora0: pulled ckpt part_seed10069_10105_n25.jsonl (401854 bytes) -> /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.jsonl
+[19:45:51] ora0: pulled ckpt part_seed10069_10105_n25.npz (91221 bytes) -> /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz
+[19:45:51] ora0: sync pulled 4 file(s)
+[19:45:54] ora1: sync pulled 0 file(s)
+[19:45:59] ckpt syncer start -> artifacts_scratch/colab_shards/<stem>.ckpt/
+[19:46:02] ora0: sync pulled 0 file(s)
+[19:46:05] ora1: sync pulled 0 file(s)
+[19:46:05] ckpt syncer start -> artifacts_scratch/colab_shards/<stem>.ckpt/
+[19:46:18] ora0: sync pulled 0 file(s)
+[19:46:31] ora1: sync pulled 0 file(s)
+[19:46:44] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:46:46] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:46:47] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:47:06] ora0: sync pulled 0 file(s)
+[19:47:09] ora1: sync pulled 0 file(s)
+[19:47:49] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:47:51] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:47:51] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:48:11] ora0: sync pulled 0 file(s)
+[19:48:14] ora1: sync pulled 0 file(s)
+[19:49:04] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:49:08] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:49:08] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:49:17] ora0: sync pulled 0 file(s)
+[19:49:19] ora1: sync pulled 0 file(s)
+[19:50:10] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:50:13] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:50:13] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:50:22] ora0: sync pulled 0 file(s)
+[19:50:24] ora1: sync pulled 0 file(s)
+[19:51:16] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:51:18] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:51:18] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:51:27] ora0: sync pulled 0 file(s)
+[19:51:40] ora1: sync pulled 0 file(s)
+[19:52:31] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:52:34] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:52:34] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:52:42] ora0: sync pulled 0 file(s)
+[19:52:45] ora1: sync pulled 0 file(s)
+[19:53:36] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:53:39] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:53:39] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:53:57] ora0: sync pulled 0 file(s)
+[19:54:10] ora1: sync pulled 0 file(s)
+[19:54:42] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:54:56] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:54:56] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:55:13] ora0: sync pulled 0 file(s)
+[19:55:26] ora1: sync pulled 0 file(s)
+[19:56:08] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:56:20] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:56:20] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:56:32] ora0: sync pulled 0 file(s)
+[19:56:37] ora1: sync pulled 0 file(s)
+[19:57:24] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:57:27] ora1: pid=2155 alive=True done=0/705 last_labels= kind= npz=0
+[19:57:27] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:57:50] ora0: sync pulled 0 file(s)
+[19:57:55] ora1: pulled ckpt manifest.json (661 bytes) -> /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10705_11409.ckpt/manifest.json
+[19:57:58] ora1: pulled ckpt part_seed10708_10759_n25.json (6583 bytes) -> /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10705_11409.ckpt/part_seed10708_10759_n25.json
+[19:58:01] ora1: pulled ckpt part_seed10708_10759_n25.jsonl (186417 bytes) -> /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10705_11409.ckpt/part_seed10708_10759_n25.jsonl
+[19:58:04] ora1: pulled ckpt part_seed10708_10759_n25.npz (44850 bytes) -> /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10705_11409.ckpt/part_seed10708_10759_n25.npz
+[19:58:04] ora1: sync pulled 4 file(s)
+[19:58:39] ora0: pid=1625 alive=True done=0/705 last_labels= kind=checkpoint wrote 1104 labels from 25 games -> /content/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz npz=0
+[19:58:43] ora1: pid=2155 alive=True done=0/705 last_labels= kind=checkpoint wrote 529 labels from 25 games -> /content/labels_seed10705_11409.ckpt/part_seed10708_10759_n25.npz npz=0
+[19:58:43] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031
+[19:58:43] ALL SHARDS DONE
+[19:59:09] ora0: sync pulled 0 file(s)
+[19:59:22] ora1: sync pulled 0 file(s)
+[20:00:35] ora0: sync pulled 0 file(s)
+[20:00:38] ora1: sync pulled 0 file(s)
+[20:01:51] ora0: sync pulled 0 file(s)
+[20:01:54] ora1: sync pulled 0 file(s)
+[20:02:59] ora0: sync pulled 0 file(s)
+[20:03:02] ora1: sync pulled 0 file(s)
+[20:04:06] ora0: sync pulled 0 file(s)
+[20:04:11] ora1: sync pulled 0 file(s)
+[20:05:14] ora0: sync pulled 0 file(s)
+[20:05:17] ora1: sync pulled 0 file(s)
+[20:06:32] ora0: sync pulled 0 file(s)
+[20:06:40] ora1: sync pulled 0 file(s)
+[20:07:53] ora0: sync pulled 0 file(s)
+[20:08:07] ora1: sync pulled 0 file(s)
+[20:09:09] ora0: sync pulled 0 file(s)
+[20:09:12] ora1: sync pulled 0 file(s)
+[20:10:15] ora0: sync pulled 0 file(s)
+[20:10:17] ora1: sync pulled 0 file(s)
+[20:11:19] ora0: sync pulled 0 file(s)
+[20:11:21] ora1: sync pulled 0 file(s)
+[20:12:23] ora0: sync pulled 0 file(s)
+[20:12:25] ora1: sync pulled 0 file(s)
+[20:13:27] ora0: sync pulled 0 file(s)
+[20:13:28] ora1: sync pulled 0 file(s)
+[20:14:33] ora0: sync pulled 0 file(s)
+[20:14:36] ora1: sync pulled 0 file(s)
+[20:15:37] ora0: sync pulled 0 file(s)
+[20:15:38] ora1: sync pulled 0 file(s)
+[20:16:40] ora0: sync pulled 0 file(s)
+[20:16:42] ora1: sync pulled 0 file(s)
+[20:17:44] ora0: sync pulled 0 file(s)
+[20:17:46] ora1: sync pulled 0 file(s)
+[20:18:48] ora0: sync pulled 0 file(s)
+[20:18:49] ora1: sync pulled 0 file(s)
+[20:19:52] ora0: sync pulled 0 file(s)
+[20:19:56] ora1: sync pulled 0 file(s)
+[20:20:57] ora0: sync pulled 0 file(s)
+[20:20:59] ora1: sync pulled 0 file(s)
+[20:22:04] ora0: sync pulled 0 file(s)
+[20:22:06] ora1: sync pulled 0 file(s)
+[20:23:07] ora0: sync pulled 0 file(s)
+[20:23:08] ora1: sync pulled 0 file(s)
+[20:24:15] ora0: sync pulled 0 file(s)
+[20:24:16] ora1: sync pulled 0 file(s)
+[20:25:17] ora0: sync pulled 0 file(s)
+[20:25:18] ora1: sync pulled 0 file(s)
+[20:26:20] ora0: sync pulled 0 file(s)
+[20:26:22] ora1: sync pulled 0 file(s)
+[20:27:24] ora0: sync pulled 0 file(s)
+[20:27:26] ora1: sync pulled 0 file(s)
+[20:28:27] ora0: sync pulled 0 file(s)
+[20:28:28] ora1: sync pulled 0 file(s)
+[20:29:29] ora0: sync pulled 0 file(s)
+[20:29:30] ora1: sync pulled 0 file(s)
+[20:30:32] ora0: sync pulled 0 file(s)
+[20:30:34] ora1: sync pulled 0 file(s)
+[20:31:35] ora0: sync pulled 0 file(s)
+[20:31:38] ora1: sync pulled 0 file(s)
+[20:32:39] ora0: sync pulled 0 file(s)
+[20:32:41] ora1: sync pulled 0 file(s)
+[20:33:43] ora0: sync pulled 0 file(s)
+[20:33:44] ora1: sync pulled 0 file(s)
+[20:34:47] ora0: sync pulled 0 file(s)
+[20:34:51] ora1: sync pulled 0 file(s)
+[20:35:52] ora0: sync pulled 0 file(s)
+[20:35:54] ora1: sync pulled 0 file(s)
+[20:37:00] ora0: sync pulled 0 file(s)
+[20:37:02] ora1: sync pulled 0 file(s)
+[20:38:04] ora0: sync pulled 0 file(s)
+[20:38:05] ora1: sync pulled 0 file(s)
+[20:39:06] ora0: sync pulled 0 file(s)
+[20:39:08] ora1: sync pulled 0 file(s)
+[20:40:10] ora0: sync pulled 0 file(s)
+[20:40:11] ora1: sync pulled 0 file(s)
+[20:41:12] ora0: sync pulled 0 file(s)
+[20:41:14] ora1: sync pulled 0 file(s)
+[20:42:14] ora0: sync pulled 0 file(s)
+[20:42:15] ora1: sync pulled 0 file(s)
+[20:43:16] ora0: sync pulled 0 file(s)
+[20:43:17] ora1: sync pulled 0 file(s)
+[20:44:17] ora0: sync pulled 0 file(s)
+[20:44:18] ora1: sync pulled 0 file(s)
+[20:45:18] ora0: sync pulled 0 file(s)
+[20:45:19] ora1: sync pulled 0 file(s)
+[20:46:19] ora0: sync pulled 0 file(s)
+[20:46:20] ora1: sync pulled 0 file(s)
+[20:46:47] oracle hybrid SELF-HEALING monitor start
+[20:46:47] poll=60s probe_timeout=100s stall=2700s → /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_monitor.log
+[20:46:48] ora0: session missing → relaunch
+[20:46:48] ora0: RELAUNCHING high-mem shard seed=10000 games=705
+[20:47:20] ora0: sync pulled 0 file(s)
+[20:47:21] ora1: sync pulled 0 file(s)
+[20:48:21] ora0: sync pulled 0 file(s)
+[20:48:22] ora1: sync pulled 0 file(s)
+[20:49:22] ora0: sync pulled 0 file(s)
+[20:49:23] ora1: sync pulled 0 file(s)
+[20:50:23] ora0: sync pulled 0 file(s)
+[20:50:24] ora1: sync pulled 0 file(s)
+[20:51:25] ora0: sync pulled 0 file(s)
+[20:51:25] ora1: sync pulled 0 file(s)
+[20:54:05] ora0: ckpt list timeout
+[20:54:05] ora0: sync pulled 0 file(s)
+[20:54:09] ora1: sync pulled 0 file(s)
+[20:55:11] ora0: sync pulled 0 file(s)
+[20:56:40] ora1: sync pulled 0 file(s)
+[20:56:43] oracle hybrid SELF-HEALING monitor start
+[20:56:43] poll=60s probe_timeout=100s stall=2700s → /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_monitor.log
+[20:56:46] ora0: pid=5255 alive=True done=0/705 last_labels= kind= npz=0
+[20:56:51] ora1: pid=17528 alive=True done=0/705 last_labels= kind= npz=0
+[20:57:42] ora0: sync pulled 0 file(s)
+[20:57:44] ora1: sync pulled 0 file(s)
+[20:58:46] ora0: sync pulled 0 file(s)
+[20:58:48] ora1: sync pulled 0 file(s)
+[20:59:50] ora0: sync pulled 0 file(s)
+[20:59:52] ora1: sync pulled 0 file(s)
+[21:00:53] ora0: sync pulled 0 file(s)
+[21:00:58] ora1: sync pulled 0 file(s)
+[21:02:00] ora0: sync pulled 0 file(s)
+[21:02:02] ora1: sync pulled 0 file(s)
+[21:03:04] ora0: sync pulled 0 file(s)
+[21:03:06] ora1: sync pulled 0 file(s)
+[21:04:08] ora0: sync pulled 0 file(s)
+[21:04:10] ora1: sync pulled 0 file(s)
+[21:05:12] ora0: sync pulled 0 file(s)
+[21:05:13] ora1: sync pulled 0 file(s)
+[21:06:15] ora0: sync pulled 0 file(s)
+[21:06:17] ora1: sync pulled 0 file(s)
+[21:07:19] ora0: sync pulled 0 file(s)
+[21:07:21] ora1: sync pulled 0 file(s)
+[21:08:34] ora0: sync pulled 0 file(s)
+[21:08:39] ora1: sync pulled 0 file(s)
+[21:09:42] ora0: sync pulled 0 file(s)
+[21:09:56] ora1: sync pulled 0 file(s)
+[21:10:58] ora0: sync pulled 0 file(s)
+[21:11:00] ora1: sync pulled 0 file(s)
+[21:12:02] ora0: sync pulled 0 file(s)
+[21:12:05] ora1: sync pulled 0 file(s)
+[21:13:17] ora0: sync pulled 0 file(s)
+[21:13:20] ora1: sync pulled 0 file(s)
+[21:14:23] ora0: sync pulled 0 file(s)
+[21:14:35] ora1: sync pulled 0 file(s)
+[21:15:37] ora0: sync pulled 0 file(s)
+[21:15:40] ora1: sync pulled 0 file(s)
+[21:16:42] ora0: sync pulled 0 file(s)
+[21:16:45] ora1: sync pulled 0 file(s)
+[21:17:49] ora0: sync pulled 0 file(s)
+[21:17:52] ora1: sync pulled 0 file(s)
+[21:18:54] ora0: sync pulled 0 file(s)
+[21:18:56] ora1: sync pulled 0 file(s)
+[21:19:59] ora0: sync pulled 0 file(s)
+[21:20:01] ora1: sync pulled 0 file(s)
+[21:21:03] ora0: sync pulled 0 file(s)
+[21:21:05] ora1: sync pulled 0 file(s)
+[21:22:07] ora0: sync pulled 0 file(s)
+[21:22:09] ora1: sync pulled 0 file(s)
+[21:23:11] ora0: sync pulled 0 file(s)
+[21:23:14] ora1: sync pulled 0 file(s)
+[21:24:16] ora0: sync pulled 0 file(s)
+[21:24:18] ora1: sync pulled 0 file(s)
+[21:25:21] ora0: sync pulled 0 file(s)
+[21:25:23] ora1: sync pulled 0 file(s)
+[21:26:36] ora0: sync pulled 0 file(s)
+[21:26:48] ora1: sync pulled 0 file(s)
+[21:28:04] ora0: sync pulled 0 file(s)
+[21:28:08] ora1: sync pulled 0 file(s)
+[21:29:21] ora0: sync pulled 0 file(s)
+[21:29:23] ora1: sync pulled 0 file(s)
+[21:30:36] ora0: sync pulled 0 file(s)
+[21:30:39] ora1: sync pulled 0 file(s)
+[21:31:48] ora0: sync pulled 0 file(s)
+[21:31:56] ora1: sync pulled 0 file(s)
+[21:33:00] ora0: sync pulled 0 file(s)
+[21:33:14] ora1: sync pulled 0 file(s)
+[21:34:27] ora0: sync pulled 0 file(s)
+[21:34:39] ora1: sync pulled 0 file(s)
+[21:35:46] ora0: sync pulled 0 file(s)
+[21:36:02] ora1: sync pulled 0 file(s)
+[21:37:07] ora0: sync pulled 0 file(s)
+[21:37:23] ora1: sync pulled 0 file(s)
+[21:38:40] ora0: sync pulled 0 file(s)
+[21:39:02] ora1: sync pulled 0 file(s)
+[21:40:11] ora0: sync pulled 0 file(s)
+[21:40:30] ora1: sync pulled 0 file(s)
+[21:41:35] ora0: pulled ckpt manifest.json (1582 bytes) -> /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10000_10704.ckpt/manifest.json
+[21:41:37] ora0: pulled ckpt part_seed10083_10130_n25.json (6610 bytes) -> /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10000_10704.ckpt/part_seed10083_10130_n25.json
+[21:41:40] ora0: pulled ckpt part_seed10083_10130_n25.jsonl (220619 bytes) -> /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10000_10704.ckpt/part_seed10083_10130_n25.jsonl
+[21:41:44] ora0: pulled ckpt part_seed10083_10130_n25.npz (55812 bytes) -> /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10000_10704.ckpt/part_seed10083_10130_n25.npz
+[21:41:45] ora0: sync pulled 4 file(s)
+[21:41:54] ora1: sync pulled 0 file(s)
+[21:43:05] ora0: sync pulled 0 file(s)
+[21:43:26] ora1: sync pulled 0 file(s)
+[21:44:30] ora0: sync pulled 0 file(s)
+[21:44:45] ora1: sync pulled 0 file(s)
+[21:45:59] ora0: sync pulled 0 file(s)
+[21:46:03] ora1: sync pulled 0 file(s)
+[21:47:18] ora0: sync pulled 0 file(s)
+[21:47:23] ora1: sync pulled 0 file(s)
+[21:48:36] ora0: sync pulled 0 file(s)
+[21:48:53] ora1: sync pulled 0 file(s)
+[21:50:07] ora0: sync pulled 0 file(s)
+[21:50:16] ora1: sync pulled 0 file(s)
+[21:51:37] ora0: sync pulled 0 file(s)
+[21:51:46] ora1: sync pulled 0 file(s)
+[21:52:49] ora0: sync pulled 0 file(s)
+[21:52:52] ora1: sync pulled 0 file(s)
+[21:53:56] ora0: sync pulled 0 file(s)
+[21:53:58] ora1: sync pulled 0 file(s)
+[21:55:09] ora0: sync pulled 0 file(s)
+[21:55:28] ora1: sync pulled 0 file(s)
+[21:56:42] ora0: sync pulled 0 file(s)
+[21:56:59] ora1: sync pulled 0 file(s)
+[21:58:15] ora0: sync pulled 0 file(s)
+[21:58:24] ora1: sync pulled 0 file(s)
+[22:01:04] ora0: ckpt list timeout
+[22:01:04] ora0: sync pulled 0 file(s)
+[22:01:14] ora1: sync pulled 0 file(s)
+[22:02:28] ora0: sync pulled 0 file(s)
+[22:03:57] ora1: sync pulled 0 file(s)
+[22:04:17] oracle hybrid SELF-HEALING monitor start
+[22:04:17] poll=60s probe_timeout=100s stall=2700s → /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_monitor.log
+[22:05:12] ora0: sync pulled 0 file(s)
+[22:05:17] ora1: sync pulled 0 file(s)
+[22:06:38] ora0: sync pulled 0 file(s)
+[22:06:55] ora1: sync pulled 0 file(s)
+[22:08:11] ora0: sync pulled 0 file(s)
+[22:08:27] ora1: sync pulled 0 file(s)
+[22:09:33] ora0: sync pulled 0 file(s)
+[22:09:41] ora1: sync pulled 0 file(s)
+[22:10:59] ora0: sync pulled 0 file(s)
+[22:11:09] ora1: sync pulled 0 file(s)
+[22:12:17] ora0: sync pulled 0 file(s)
+[22:12:23] ora1: sync pulled 0 file(s)
+[22:13:26] ora0: sync pulled 0 file(s)
+[22:13:37] ora1: sync pulled 0 file(s)
+[22:14:42] ora0: sync pulled 0 file(s)
+[22:14:45] ora1: sync pulled 0 file(s)
+[22:15:56] ora0: sync pulled 0 file(s)
+[22:16:19] ora1: sync pulled 0 file(s)
+[22:17:22] ora0: sync pulled 0 file(s)
+[22:17:24] ora1: sync pulled 0 file(s)
+[22:18:30] ora0: sync pulled 0 file(s)
+[22:18:37] ora1: sync pulled 0 file(s)
+[22:20:01] ora0: sync pulled 0 file(s)
+[22:20:05] ora1: sync pulled 0 file(s)
+[22:21:19] ora0: sync pulled 0 file(s)
+[22:21:23] ora1: sync pulled 0 file(s)
+[22:22:37] ora0: sync pulled 0 file(s)
+[22:22:51] ora1: sync pulled 0 file(s)
+[22:24:05] ora0: sync pulled 0 file(s)
+[22:24:10] ora1: sync pulled 0 file(s)
+[22:25:31] ora0: sync pulled 0 file(s)
+[22:25:33] ora1: sync pulled 0 file(s)
+[22:26:37] ora0: sync pulled 0 file(s)
+[22:26:53] ora1: sync pulled 0 file(s)
+[22:27:58] ora0: sync pulled 0 file(s)
+[22:28:07] ora1: sync pulled 0 file(s)
+[22:29:25] ora0: sync pulled 0 file(s)
+[22:29:28] ora1: sync pulled 0 file(s)
+[22:30:35] ora0: sync pulled 0 file(s)
+[22:30:52] ora1: sync pulled 0 file(s)
+[22:32:13] ora0: sync pulled 0 file(s)
+[22:32:26] ora1: sync pulled 0 file(s)
+[22:33:29] ora0: sync pulled 0 file(s)
+[22:33:32] ora1: sync pulled 0 file(s)
+[22:34:46] ora0: sync pulled 0 file(s)
+[22:34:49] ora1: sync pulled 0 file(s)
+[22:35:51] ora0: sync pulled 0 file(s)
+[22:35:54] ora1: sync pulled 0 file(s)
+[22:37:07] ora0: sync pulled 0 file(s)
+[22:37:21] ora1: sync pulled 0 file(s)
+[22:38:34] ora0: sync pulled 0 file(s)
+[22:38:39] ora1: sync pulled 0 file(s)
+[22:39:42] ora0: sync pulled 0 file(s)
+[22:39:55] ora1: sync pulled 0 file(s)
+[22:40:58] ora0: sync pulled 0 file(s)
+[22:41:01] ora1: sync pulled 0 file(s)
+[22:42:14] ora0: sync pulled 0 file(s)
+[22:42:27] ora1: sync pulled 0 file(s)
+[22:43:30] ora0: sync pulled 0 file(s)
+[22:43:36] ora1: sync pulled 0 file(s)
+[22:44:51] ora0: sync pulled 0 file(s)
+[22:44:58] ora1: sync pulled 0 file(s)
+[22:46:15] ora0: sync pulled 0 file(s)
+[22:46:30] ora1: sync pulled 0 file(s)
+[22:47:45] ora0: sync pulled 0 file(s)
+[22:48:09] ora1: sync pulled 0 file(s)
+[22:49:12] ora0: sync pulled 0 file(s)
+[22:49:14] ora1: sync pulled 0 file(s)
+[22:50:17] ora0: sync pulled 0 file(s)
+[22:50:19] ora1: sync pulled 0 file(s)
+[22:51:23] ora0: sync pulled 0 file(s)
+[22:51:25] ora1: sync pulled 0 file(s)
+[22:52:40] ora0: sync pulled 0 file(s)
+[22:52:43] ora1: sync pulled 0 file(s)
+[22:53:45] ora0: sync pulled 0 file(s)
+[22:53:48] ora1: sync pulled 0 file(s)
+[22:54:54] ora0: sync pulled 0 file(s)
+[22:54:57] ora1: sync pulled 0 file(s)
+[22:56:10] ora0: sync pulled 0 file(s)
+[22:56:23] ora1: sync pulled 0 file(s)
+[22:57:30] ora0: sync pulled 0 file(s)
+[22:57:43] ora1: sync pulled 0 file(s)
+[22:58:54] ora0: sync pulled 0 file(s)
+[22:58:59] ora1: sync pulled 0 file(s)
+[23:00:01] ora0: sync pulled 0 file(s)
+[23:00:04] ora1: sync pulled 0 file(s)
+[23:01:09] ora0: sync pulled 0 file(s)
+[23:01:14] ora1: sync pulled 0 file(s)
+[23:02:24] ora0: sync pulled 0 file(s)
+[23:02:26] ora1: sync pulled 0 file(s)
+[23:03:28] ora0: sync pulled 0 file(s)
+[23:03:29] ora1: sync pulled 0 file(s)
+[23:04:33] ora0: sync pulled 0 file(s)
+[23:04:35] ora1: sync pulled 0 file(s)
+[23:05:39] ora0: sync pulled 0 file(s)
+[23:05:42] ora1: sync pulled 0 file(s)
+[23:06:45] ora0: sync pulled 0 file(s)
+[23:06:46] ora1: sync pulled 0 file(s)
+[23:07:48] ora0: sync pulled 0 file(s)
+[23:07:52] ora1: sync pulled 0 file(s)
+[23:08:53] ora0: sync pulled 0 file(s)
+[23:08:55] ora1: sync pulled 0 file(s)
+[23:09:57] ora0: sync pulled 0 file(s)
+[23:09:59] ora1: sync pulled 0 file(s)
+[23:11:00] ora0: sync pulled 0 file(s)
+[23:11:03] ora1: sync pulled 0 file(s)
+[23:12:05] ora0: sync pulled 0 file(s)
+[23:12:06] ora1: sync pulled 0 file(s)
+[23:13:09] ora0: sync pulled 0 file(s)
+[23:13:13] ora1: sync pulled 0 file(s)
+[23:14:24] ora0: sync pulled 0 file(s)
+[23:14:30] ora1: sync pulled 0 file(s)
+[23:15:33] ora0: sync pulled 0 file(s)
+[23:15:34] ora1: sync pulled 0 file(s)
+[23:16:37] ora0: sync pulled 0 file(s)
+[23:16:41] ora1: sync pulled 0 file(s)
+[23:17:43] ora0: sync pulled 0 file(s)
+[23:17:45] ora1: sync pulled 0 file(s)
+[23:18:55] ora0: sync pulled 0 file(s)
+[23:18:57] ora1: sync pulled 0 file(s)
+[23:20:05] ora0: sync pulled 0 file(s)
+[23:20:06] ora1: sync pulled 0 file(s)
+[23:21:09] ora0: sync pulled 0 file(s)
+[23:21:13] ora1: sync pulled 0 file(s)
+[23:27:30] oracle hybrid SELF-HEALING monitor start
+[23:27:30] poll=60s probe_timeout=100s stall=2700s → /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_monitor.log
+[23:27:30] ckpt syncer start -> artifacts_scratch/colab_shards/<stem>.ckpt/
+[23:27:34] ora0: sync pulled 0 file(s)
+[23:27:37] ora0: pid=3255 alive=True done=0/705 last_labels= kind= npz=0
+[23:27:38] ora1: sync pulled 0 file(s)
+[23:27:47] ora1: pid=4012 alive=True done=0/705 last_labels= kind= npz=0
+[23:28:01] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031

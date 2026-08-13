@@ -1,0 +1,522 @@
+update=0/20000 loss=4.8470 policy=3.4437 value=1.4033 mix=0.50
+update=50/20000 loss=4.5367 policy=3.2229 value=1.3138 mix=0.50
+update=100/20000 loss=4.1695 policy=2.9055 value=1.2640 mix=0.50
+update=150/20000 loss=3.6983 policy=2.4138 value=1.2845 mix=0.50
+update=200/20000 loss=3.6381 policy=2.3852 value=1.2529 mix=0.50
+update=250/20000 loss=3.2489 policy=2.0437 value=1.2052 mix=0.50
+update=300/20000 loss=3.4071 policy=2.1307 value=1.2764 mix=0.50
+update=350/20000 loss=3.0096 policy=1.7340 value=1.2756 mix=0.50
+update=400/20000 loss=2.7600 policy=1.5520 value=1.2080 mix=0.50
+update=450/20000 loss=2.6686 policy=1.4651 value=1.2034 mix=0.50
+update=500/20000 loss=2.6494 policy=1.4238 value=1.2256 mix=0.50
+update=550/20000 loss=2.5532 policy=1.3797 value=1.1735 mix=0.50
+update=600/20000 loss=2.5495 policy=1.3820 value=1.1674 mix=0.50
+update=650/20000 loss=2.5158 policy=1.3232 value=1.1926 mix=0.50
+update=700/20000 loss=2.4396 policy=1.2666 value=1.1730 mix=0.50
+update=750/20000 loss=2.5026 policy=1.2852 value=1.2174 mix=0.50
+update=800/20000 loss=2.4782 policy=1.2595 value=1.2186 mix=0.50
+update=850/20000 loss=2.4230 policy=1.1945 value=1.2285 mix=0.50
+update=900/20000 loss=2.2797 policy=1.1207 value=1.1590 mix=0.50
+update=950/20000 loss=2.3771 policy=1.1809 value=1.1962 mix=0.50
+update=1000/20000 loss=2.4217 policy=1.2657 value=1.1559 mix=0.50
+update=1050/20000 loss=2.4140 policy=1.1959 value=1.2181 mix=0.50
+update=1100/20000 loss=2.3376 policy=1.1805 value=1.1571 mix=0.50
+update=1150/20000 loss=2.3190 policy=1.1220 value=1.1970 mix=0.50
+update=1200/20000 loss=2.3451 policy=1.1454 value=1.1997 mix=0.50
+update=1250/20000 loss=2.2309 policy=1.0461 value=1.1848 mix=0.50
+update=1300/20000 loss=2.3094 policy=1.1469 value=1.1625 mix=0.50
+update=1350/20000 loss=2.3018 policy=1.0984 value=1.2034 mix=0.50
+update=1400/20000 loss=2.3511 policy=1.1689 value=1.1822 mix=0.50
+update=1450/20000 loss=2.3609 policy=1.1501 value=1.2108 mix=0.50
+update=1500/20000 loss=2.1629 policy=1.0263 value=1.1366 mix=0.50
+update=1550/20000 loss=2.1439 policy=1.0185 value=1.1254 mix=0.50
+update=1600/20000 loss=2.3260 policy=1.1277 value=1.1983 mix=0.50
+update=1650/20000 loss=2.2880 policy=1.1159 value=1.1721 mix=0.50
+update=1700/20000 loss=2.3079 policy=1.1085 value=1.1995 mix=0.50
+update=1750/20000 loss=2.2193 policy=1.0576 value=1.1618 mix=0.50
+update=1800/20000 loss=2.2496 policy=1.0724 value=1.1772 mix=0.50
+update=1850/20000 loss=2.2018 policy=1.0462 value=1.1556 mix=0.50
+update=1900/20000 loss=2.1827 policy=1.0492 value=1.1335 mix=0.50
+update=1950/20000 loss=2.1165 policy=0.9874 value=1.1291 mix=0.50
+update=2000/20000 loss=2.1587 policy=1.0284 value=1.1303 mix=0.50
+update=2050/20000 loss=2.2588 policy=1.0965 value=1.1623 mix=0.50
+update=2100/20000 loss=2.1605 policy=1.0127 value=1.1478 mix=0.50
+update=2150/20000 loss=2.2252 policy=1.0651 value=1.1601 mix=0.50
+update=2200/20000 loss=2.1419 policy=1.0021 value=1.1399 mix=0.50
+update=2250/20000 loss=2.1582 policy=1.0460 value=1.1122 mix=0.50
+update=2300/20000 loss=2.1298 policy=1.0020 value=1.1278 mix=0.50
+update=2350/20000 loss=2.1293 policy=0.9935 value=1.1358 mix=0.50
+update=2400/20000 loss=2.2218 policy=1.0861 value=1.1357 mix=0.50
+update=2450/20000 loss=2.1427 policy=1.0203 value=1.1225 mix=0.50
+update=2500/20000 loss=2.0773 policy=0.9458 value=1.1315 mix=0.50
+update=2550/20000 loss=2.1818 policy=1.0352 value=1.1466 mix=0.50
+update=2600/20000 loss=2.1340 policy=1.0264 value=1.1075 mix=0.50
+update=2650/20000 loss=2.1221 policy=0.9982 value=1.1240 mix=0.50
+update=2700/20000 loss=2.1086 policy=0.9557 value=1.1529 mix=0.50
+update=2750/20000 loss=2.1966 policy=1.0421 value=1.1545 mix=0.50
+update=2800/20000 loss=2.0708 policy=0.9512 value=1.1196 mix=0.50
+update=2850/20000 loss=2.1492 policy=1.0635 value=1.0857 mix=0.50
+update=2900/20000 loss=2.1801 policy=1.0317 value=1.1484 mix=0.50
+update=2950/20000 loss=2.1494 policy=1.0132 value=1.1362 mix=0.50
+update=3000/20000 loss=2.1704 policy=1.0364 value=1.1341 mix=0.50
+update=3050/20000 loss=2.0992 policy=0.9829 value=1.1163 mix=0.50
+update=3100/20000 loss=2.0820 policy=0.9597 value=1.1223 mix=0.50
+update=3150/20000 loss=2.1953 policy=1.0709 value=1.1244 mix=0.50
+update=3200/20000 loss=2.1756 policy=1.0560 value=1.1196 mix=0.50
+update=3250/20000 loss=2.1667 policy=1.0165 value=1.1502 mix=0.50
+update=3300/20000 loss=2.1015 policy=0.9529 value=1.1486 mix=0.50
+update=3350/20000 loss=2.1212 policy=0.9865 value=1.1347 mix=0.50
+update=3400/20000 loss=2.1141 policy=0.9649 value=1.1492 mix=0.50
+update=3450/20000 loss=2.1015 policy=0.9623 value=1.1392 mix=0.50
+update=3500/20000 loss=2.1663 policy=1.0311 value=1.1352 mix=0.50
+update=3550/20000 loss=2.1829 policy=1.0358 value=1.1471 mix=0.50
+update=3600/20000 loss=2.0964 policy=0.9708 value=1.1256 mix=0.50
+update=3650/20000 loss=2.0840 policy=0.9715 value=1.1125 mix=0.50
+update=3700/20000 loss=2.0995 policy=0.9873 value=1.1122 mix=0.50
+update=3750/20000 loss=2.0731 policy=0.9494 value=1.1238 mix=0.50
+update=3800/20000 loss=2.1612 policy=1.0077 value=1.1534 mix=0.50
+update=3850/20000 loss=2.0743 policy=0.9717 value=1.1025 mix=0.50
+update=3900/20000 loss=2.1142 policy=0.9710 value=1.1433 mix=0.50
+update=3950/20000 loss=2.0908 policy=0.9479 value=1.1429 mix=0.50
+update=4000/20000 loss=2.1220 policy=0.9962 value=1.1258 mix=0.50
+update=4050/20000 loss=2.0688 policy=0.9746 value=1.0941 mix=0.50
+update=4100/20000 loss=1.9514 policy=0.8915 value=1.0599 mix=0.50
+update=4150/20000 loss=2.1646 policy=1.0289 value=1.1357 mix=0.50
+update=4200/20000 loss=2.1009 policy=0.9928 value=1.1081 mix=0.50
+update=4250/20000 loss=2.1587 policy=1.0295 value=1.1292 mix=0.50
+update=4300/20000 loss=2.0916 policy=0.9869 value=1.1047 mix=0.50
+update=4350/20000 loss=2.0809 policy=0.9590 value=1.1219 mix=0.50
+update=4400/20000 loss=2.1044 policy=0.9849 value=1.1195 mix=0.50
+update=4450/20000 loss=2.0474 policy=0.9312 value=1.1161 mix=0.50
+update=4500/20000 loss=2.0305 policy=0.9658 value=1.0647 mix=0.50
+update=4550/20000 loss=2.0087 policy=0.9271 value=1.0816 mix=0.50
+update=4600/20000 loss=2.0719 policy=0.9418 value=1.1301 mix=0.50
+update=4650/20000 loss=2.0940 policy=0.9394 value=1.1546 mix=0.50
+update=4700/20000 loss=2.0243 policy=0.9378 value=1.0866 mix=0.50
+update=4750/20000 loss=2.0337 policy=0.9313 value=1.1024 mix=0.50
+update=4800/20000 loss=2.1708 policy=1.0081 value=1.1628 mix=0.50
+update=4850/20000 loss=2.0917 policy=0.9497 value=1.1420 mix=0.50
+update=4900/20000 loss=2.0810 policy=0.9726 value=1.1085 mix=0.50
+update=4950/20000 loss=2.1662 policy=1.0432 value=1.1230 mix=0.50
+update=5000/20000 loss=2.0388 policy=0.9683 value=1.0705 mix=0.50
+update=5050/20000 loss=1.7866 policy=0.8587 value=0.9279 mix=0.50
+update=5100/20000 loss=1.6738 policy=0.8545 value=0.8193 mix=0.50
+update=5150/20000 loss=1.4923 policy=0.7818 value=0.7105 mix=0.50
+update=5200/20000 loss=1.5855 policy=0.8080 value=0.7774 mix=0.50
+update=5250/20000 loss=1.5549 policy=0.8057 value=0.7492 mix=0.50
+update=5300/20000 loss=1.6107 policy=0.8367 value=0.7740 mix=0.50
+update=5350/20000 loss=1.5039 policy=0.8031 value=0.7008 mix=0.50
+update=5400/20000 loss=1.6375 policy=0.9024 value=0.7351 mix=0.50
+update=5450/20000 loss=1.4418 policy=0.7441 value=0.6977 mix=0.50
+update=5500/20000 loss=1.4760 policy=0.7541 value=0.7220 mix=0.50
+update=5550/20000 loss=1.4670 policy=0.7553 value=0.7117 mix=0.50
+update=5600/20000 loss=1.4774 policy=0.8074 value=0.6700 mix=0.50
+update=5650/20000 loss=1.5367 policy=0.8111 value=0.7256 mix=0.50
+update=5700/20000 loss=1.4253 policy=0.7495 value=0.6758 mix=0.50
+update=5750/20000 loss=1.5678 policy=0.8734 value=0.6944 mix=0.50
+update=5800/20000 loss=1.4562 policy=0.7937 value=0.6625 mix=0.50
+update=5850/20000 loss=1.4600 policy=0.7683 value=0.6917 mix=0.50
+update=5900/20000 loss=1.5447 policy=0.8566 value=0.6881 mix=0.50
+update=5950/20000 loss=1.3872 policy=0.7407 value=0.6464 mix=0.50
+update=6000/20000 loss=1.4580 policy=0.7856 value=0.6724 mix=0.50
+update=6050/20000 loss=1.4150 policy=0.7538 value=0.6613 mix=0.50
+update=6100/20000 loss=1.3866 policy=0.7387 value=0.6480 mix=0.50
+update=6150/20000 loss=1.4305 policy=0.7463 value=0.6843 mix=0.50
+update=6200/20000 loss=1.4461 policy=0.7752 value=0.6709 mix=0.50
+update=6250/20000 loss=1.5215 policy=0.8080 value=0.7134 mix=0.50
+update=6300/20000 loss=1.4585 policy=0.7562 value=0.7023 mix=0.50
+update=6350/20000 loss=1.4990 policy=0.8402 value=0.6588 mix=0.50
+update=6400/20000 loss=1.3963 policy=0.7328 value=0.6636 mix=0.50
+update=6450/20000 loss=1.3699 policy=0.6966 value=0.6733 mix=0.50
+update=6500/20000 loss=1.4647 policy=0.7986 value=0.6661 mix=0.50
+update=6550/20000 loss=1.4502 policy=0.7768 value=0.6734 mix=0.50
+update=6600/20000 loss=1.4633 policy=0.8110 value=0.6524 mix=0.50
+update=6650/20000 loss=1.4888 policy=0.7984 value=0.6903 mix=0.50
+update=6700/20000 loss=1.4103 policy=0.7590 value=0.6513 mix=0.50
+update=6750/20000 loss=1.3202 policy=0.6986 value=0.6216 mix=0.50
+update=6800/20000 loss=1.4869 policy=0.7680 value=0.7189 mix=0.50
+update=6850/20000 loss=1.4451 policy=0.7578 value=0.6873 mix=0.50
+update=6900/20000 loss=1.4465 policy=0.7820 value=0.6645 mix=0.50
+update=6950/20000 loss=1.4309 policy=0.7586 value=0.6723 mix=0.50
+update=7000/20000 loss=1.4895 policy=0.7927 value=0.6968 mix=0.50
+update=7050/20000 loss=1.4837 policy=0.7940 value=0.6897 mix=0.50
+update=7100/20000 loss=1.4055 policy=0.7651 value=0.6404 mix=0.50
+update=7150/20000 loss=1.4300 policy=0.7441 value=0.6858 mix=0.50
+update=7200/20000 loss=1.4720 policy=0.7845 value=0.6875 mix=0.50
+update=7250/20000 loss=1.4361 policy=0.7332 value=0.7029 mix=0.50
+update=7300/20000 loss=1.5419 policy=0.8498 value=0.6921 mix=0.50
+update=7350/20000 loss=1.4450 policy=0.7447 value=0.7003 mix=0.50
+update=7400/20000 loss=1.4297 policy=0.7358 value=0.6938 mix=0.50
+update=7450/20000 loss=1.4268 policy=0.7010 value=0.7258 mix=0.50
+update=7500/20000 loss=1.4386 policy=0.7589 value=0.6797 mix=0.50
+update=7550/20000 loss=1.4502 policy=0.7498 value=0.7003 mix=0.50
+update=7600/20000 loss=1.4518 policy=0.8164 value=0.6354 mix=0.50
+update=7650/20000 loss=1.4470 policy=0.8012 value=0.6458 mix=0.50
+update=7700/20000 loss=1.4476 policy=0.7485 value=0.6990 mix=0.50
+update=7750/20000 loss=1.4546 policy=0.7960 value=0.6586 mix=0.50
+update=7800/20000 loss=1.3867 policy=0.7251 value=0.6616 mix=0.50
+update=7850/20000 loss=1.4768 policy=0.7723 value=0.7044 mix=0.50
+update=7900/20000 loss=1.3426 policy=0.6708 value=0.6718 mix=0.50
+update=7950/20000 loss=1.4185 policy=0.7698 value=0.6487 mix=0.50
+update=8000/20000 loss=1.3914 policy=0.6987 value=0.6927 mix=0.50
+update=8050/20000 loss=1.3615 policy=0.6908 value=0.6707 mix=0.50
+update=8100/20000 loss=1.4150 policy=0.7717 value=0.6433 mix=0.50
+update=8150/20000 loss=1.3624 policy=0.6982 value=0.6642 mix=0.50
+update=8200/20000 loss=1.4286 policy=0.7246 value=0.7041 mix=0.50
+update=8250/20000 loss=1.4227 policy=0.7965 value=0.6262 mix=0.50
+update=8300/20000 loss=1.4259 policy=0.7450 value=0.6809 mix=0.50
+update=8350/20000 loss=1.4105 policy=0.7346 value=0.6759 mix=0.50
+update=8400/20000 loss=1.4022 policy=0.7290 value=0.6732 mix=0.50
+update=8450/20000 loss=1.3604 policy=0.6805 value=0.6799 mix=0.50
+update=8500/20000 loss=1.4342 policy=0.7381 value=0.6961 mix=0.50
+update=8550/20000 loss=1.3888 policy=0.7129 value=0.6759 mix=0.50
+update=8600/20000 loss=1.4070 policy=0.7525 value=0.6545 mix=0.50
+update=8650/20000 loss=1.4184 policy=0.7449 value=0.6735 mix=0.50
+update=8700/20000 loss=1.3690 policy=0.7446 value=0.6244 mix=0.50
+update=8750/20000 loss=1.3658 policy=0.7319 value=0.6339 mix=0.50
+update=8800/20000 loss=1.4737 policy=0.7833 value=0.6904 mix=0.50
+update=8850/20000 loss=1.3996 policy=0.7547 value=0.6450 mix=0.50
+update=8900/20000 loss=1.4637 policy=0.7686 value=0.6951 mix=0.50
+update=8950/20000 loss=1.3851 policy=0.7223 value=0.6627 mix=0.50
+update=9000/20000 loss=1.3821 policy=0.7064 value=0.6757 mix=0.50
+update=9050/20000 loss=1.3953 policy=0.7368 value=0.6585 mix=0.50
+update=9100/20000 loss=1.4640 policy=0.8092 value=0.6548 mix=0.50
+update=9150/20000 loss=1.4271 policy=0.7579 value=0.6693 mix=0.50
+update=9200/20000 loss=1.3617 policy=0.7224 value=0.6393 mix=0.50
+update=9250/20000 loss=1.4312 policy=0.7588 value=0.6724 mix=0.50
+update=9300/20000 loss=1.4335 policy=0.7307 value=0.7028 mix=0.50
+update=9350/20000 loss=1.4164 policy=0.7660 value=0.6504 mix=0.50
+update=9400/20000 loss=1.4245 policy=0.7510 value=0.6735 mix=0.50
+update=9450/20000 loss=1.2825 policy=0.6743 value=0.6082 mix=0.50
+update=9500/20000 loss=1.3808 policy=0.7342 value=0.6466 mix=0.50
+update=9550/20000 loss=1.4977 policy=0.8045 value=0.6932 mix=0.50
+update=9600/20000 loss=1.4274 policy=0.7644 value=0.6630 mix=0.50
+update=9650/20000 loss=1.4505 policy=0.7646 value=0.6859 mix=0.50
+update=9700/20000 loss=1.3890 policy=0.6926 value=0.6964 mix=0.50
+update=9750/20000 loss=1.4314 policy=0.7437 value=0.6878 mix=0.50
+update=9800/20000 loss=1.4213 policy=0.7639 value=0.6574 mix=0.50
+update=9850/20000 loss=1.3780 policy=0.7358 value=0.6422 mix=0.50
+update=9900/20000 loss=1.3938 policy=0.7350 value=0.6588 mix=0.50
+update=9950/20000 loss=1.3483 policy=0.7075 value=0.6408 mix=0.50
+update=10000/20000 loss=1.3737 policy=0.7215 value=0.6522 mix=0.50
+update=10050/20000 loss=1.4270 policy=0.7766 value=0.6504 mix=0.50
+update=10100/20000 loss=1.3711 policy=0.7122 value=0.6588 mix=0.50
+update=10150/20000 loss=1.3725 policy=0.7273 value=0.6452 mix=0.50
+update=10200/20000 loss=1.4318 policy=0.7927 value=0.6391 mix=0.50
+update=10250/20000 loss=1.5174 policy=0.7871 value=0.7303 mix=0.50
+update=10300/20000 loss=1.3428 policy=0.6853 value=0.6575 mix=0.50
+update=10350/20000 loss=1.4701 policy=0.8110 value=0.6591 mix=0.50
+update=10400/20000 loss=1.3782 policy=0.7305 value=0.6477 mix=0.50
+update=10450/20000 loss=1.4098 policy=0.7154 value=0.6944 mix=0.50
+update=10500/20000 loss=1.4264 policy=0.7415 value=0.6849 mix=0.50
+update=10550/20000 loss=1.4472 policy=0.7719 value=0.6753 mix=0.50
+update=10600/20000 loss=1.3208 policy=0.6472 value=0.6736 mix=0.50
+update=10650/20000 loss=1.3558 policy=0.7172 value=0.6386 mix=0.50
+update=10700/20000 loss=1.4504 policy=0.7785 value=0.6719 mix=0.50
+update=10750/20000 loss=1.4076 policy=0.7323 value=0.6753 mix=0.50
+update=10800/20000 loss=1.4561 policy=0.7884 value=0.6676 mix=0.50
+update=10850/20000 loss=1.4451 policy=0.7742 value=0.6709 mix=0.50
+update=10900/20000 loss=1.4231 policy=0.7554 value=0.6678 mix=0.50
+update=10950/20000 loss=1.3944 policy=0.7057 value=0.6888 mix=0.50
+update=11000/20000 loss=1.3272 policy=0.6756 value=0.6516 mix=0.50
+update=11050/20000 loss=1.3582 policy=0.7267 value=0.6316 mix=0.50
+update=11100/20000 loss=1.4026 policy=0.7301 value=0.6725 mix=0.50
+update=11150/20000 loss=1.4401 policy=0.7535 value=0.6866 mix=0.50
+update=11200/20000 loss=1.4362 policy=0.7804 value=0.6558 mix=0.50
+update=11250/20000 loss=1.3941 policy=0.7234 value=0.6707 mix=0.50
+update=11300/20000 loss=1.3394 policy=0.6823 value=0.6570 mix=0.50
+update=11350/20000 loss=1.3493 policy=0.7207 value=0.6286 mix=0.50
+update=11400/20000 loss=1.3389 policy=0.6745 value=0.6644 mix=0.50
+update=11450/20000 loss=1.3444 policy=0.7148 value=0.6296 mix=0.50
+update=11500/20000 loss=1.4228 policy=0.7505 value=0.6723 mix=0.50
+update=11550/20000 loss=1.3794 policy=0.7109 value=0.6685 mix=0.50
+update=11600/20000 loss=1.3309 policy=0.7097 value=0.6212 mix=0.50
+update=11650/20000 loss=1.3560 policy=0.7263 value=0.6297 mix=0.50
+update=11700/20000 loss=1.5035 policy=0.8151 value=0.6884 mix=0.50
+update=11750/20000 loss=1.4265 policy=0.7642 value=0.6623 mix=0.50
+update=11800/20000 loss=1.3493 policy=0.7043 value=0.6450 mix=0.50
+update=11850/20000 loss=1.4723 policy=0.7631 value=0.7092 mix=0.50
+update=11900/20000 loss=1.4030 policy=0.7132 value=0.6898 mix=0.50
+update=11950/20000 loss=1.3904 policy=0.7477 value=0.6426 mix=0.50
+update=12000/20000 loss=1.3508 policy=0.6920 value=0.6589 mix=0.50
+update=12050/20000 loss=1.3863 policy=0.7627 value=0.6237 mix=0.50
+update=12100/20000 loss=1.3062 policy=0.6610 value=0.6452 mix=0.50
+update=12150/20000 loss=1.3631 policy=0.7204 value=0.6427 mix=0.50
+update=12200/20000 loss=1.4880 policy=0.8283 value=0.6597 mix=0.50
+update=12250/20000 loss=1.4344 policy=0.7554 value=0.6791 mix=0.50
+update=12300/20000 loss=1.4187 policy=0.7485 value=0.6703 mix=0.50
+update=12350/20000 loss=1.3817 policy=0.7328 value=0.6489 mix=0.50
+update=12400/20000 loss=1.3218 policy=0.6955 value=0.6263 mix=0.50
+update=12450/20000 loss=1.3218 policy=0.7348 value=0.5870 mix=0.50
+update=12500/20000 loss=1.3684 policy=0.7032 value=0.6652 mix=0.50
+update=12550/20000 loss=1.2990 policy=0.6545 value=0.6445 mix=0.50
+update=12600/20000 loss=1.4652 policy=0.7835 value=0.6817 mix=0.50
+update=12650/20000 loss=1.3356 policy=0.7122 value=0.6234 mix=0.50
+update=12700/20000 loss=1.3855 policy=0.7232 value=0.6622 mix=0.50
+update=12750/20000 loss=1.4070 policy=0.7684 value=0.6386 mix=0.50
+update=12800/20000 loss=1.3383 policy=0.6873 value=0.6510 mix=0.50
+update=12850/20000 loss=1.3840 policy=0.7490 value=0.6350 mix=0.50
+update=12900/20000 loss=1.3704 policy=0.7197 value=0.6507 mix=0.50
+update=12950/20000 loss=1.4192 policy=0.7467 value=0.6725 mix=0.50
+update=13000/20000 loss=1.3617 policy=0.7245 value=0.6372 mix=0.50
+update=13050/20000 loss=1.3151 policy=0.6935 value=0.6216 mix=0.50
+update=13100/20000 loss=1.3748 policy=0.7104 value=0.6643 mix=0.50
+update=13150/20000 loss=1.3100 policy=0.6780 value=0.6321 mix=0.50
+update=13200/20000 loss=1.3622 policy=0.6870 value=0.6752 mix=0.50
+update=13250/20000 loss=1.4698 policy=0.7809 value=0.6889 mix=0.50
+update=13300/20000 loss=1.4148 policy=0.7291 value=0.6857 mix=0.50
+update=13350/20000 loss=1.3770 policy=0.6931 value=0.6839 mix=0.50
+update=13400/20000 loss=1.3281 policy=0.6893 value=0.6389 mix=0.50
+update=13450/20000 loss=1.4182 policy=0.7745 value=0.6437 mix=0.50
+update=13500/20000 loss=1.3361 policy=0.6722 value=0.6639 mix=0.50
+update=13550/20000 loss=1.3751 policy=0.7016 value=0.6735 mix=0.50
+update=13600/20000 loss=1.3382 policy=0.6847 value=0.6535 mix=0.50
+update=13650/20000 loss=1.3758 policy=0.7461 value=0.6297 mix=0.50
+update=13700/20000 loss=1.3942 policy=0.7411 value=0.6531 mix=0.50
+update=13750/20000 loss=1.4118 policy=0.7214 value=0.6904 mix=0.50
+update=13800/20000 loss=1.3242 policy=0.7222 value=0.6020 mix=0.50
+update=13850/20000 loss=1.3622 policy=0.7130 value=0.6492 mix=0.50
+update=13900/20000 loss=1.3858 policy=0.7283 value=0.6575 mix=0.50
+update=13950/20000 loss=1.3244 policy=0.6674 value=0.6569 mix=0.50
+update=14000/20000 loss=1.4022 policy=0.7062 value=0.6960 mix=0.50
+update=14050/20000 loss=1.3504 policy=0.7282 value=0.6222 mix=0.50
+update=14100/20000 loss=1.3478 policy=0.7010 value=0.6467 mix=0.50
+update=14150/20000 loss=1.3561 policy=0.6993 value=0.6567 mix=0.50
+update=14200/20000 loss=1.4964 policy=0.8043 value=0.6921 mix=0.50
+update=14250/20000 loss=1.3570 policy=0.7291 value=0.6279 mix=0.50
+update=14300/20000 loss=1.3715 policy=0.7218 value=0.6498 mix=0.50
+update=14350/20000 loss=1.2931 policy=0.6485 value=0.6446 mix=0.50
+update=14400/20000 loss=1.4197 policy=0.7579 value=0.6618 mix=0.50
+update=14450/20000 loss=1.3672 policy=0.7194 value=0.6478 mix=0.50
+update=14500/20000 loss=1.4310 policy=0.7538 value=0.6772 mix=0.50
+update=14550/20000 loss=1.4027 policy=0.7233 value=0.6794 mix=0.50
+update=14600/20000 loss=1.3437 policy=0.7076 value=0.6362 mix=0.50
+update=14650/20000 loss=1.4467 policy=0.7681 value=0.6787 mix=0.50
+update=14700/20000 loss=1.3347 policy=0.7064 value=0.6283 mix=0.50
+update=14750/20000 loss=1.4127 policy=0.7362 value=0.6765 mix=0.50
+update=14800/20000 loss=1.3612 policy=0.7333 value=0.6280 mix=0.50
+update=14850/20000 loss=1.3938 policy=0.7636 value=0.6302 mix=0.50
+update=14900/20000 loss=1.3646 policy=0.7512 value=0.6134 mix=0.50
+update=14950/20000 loss=1.3961 policy=0.7204 value=0.6757 mix=0.50
+update=15000/20000 loss=1.3512 policy=0.7060 value=0.6452 mix=0.50
+update=15050/20000 loss=1.3943 policy=0.7466 value=0.6477 mix=0.50
+update=15100/20000 loss=1.4232 policy=0.7682 value=0.6550 mix=0.50
+update=15150/20000 loss=1.3870 policy=0.7378 value=0.6492 mix=0.50
+update=15200/20000 loss=1.3819 policy=0.7568 value=0.6251 mix=0.50
+update=15250/20000 loss=1.3000 policy=0.6530 value=0.6470 mix=0.50
+update=15300/20000 loss=1.4410 policy=0.7579 value=0.6831 mix=0.50
+update=15350/20000 loss=1.3506 policy=0.7182 value=0.6324 mix=0.50
+update=15400/20000 loss=1.4180 policy=0.7286 value=0.6894 mix=0.50
+update=15450/20000 loss=1.3827 policy=0.7208 value=0.6619 mix=0.50
+update=15500/20000 loss=1.3918 policy=0.7177 value=0.6741 mix=0.50
+update=15550/20000 loss=1.4318 policy=0.7520 value=0.6798 mix=0.50
+update=15600/20000 loss=1.3752 policy=0.7259 value=0.6493 mix=0.50
+update=15650/20000 loss=1.3501 policy=0.7200 value=0.6302 mix=0.50
+update=15700/20000 loss=1.4042 policy=0.7527 value=0.6514 mix=0.50
+update=15750/20000 loss=1.3220 policy=0.7198 value=0.6022 mix=0.50
+update=15800/20000 loss=1.4199 policy=0.7184 value=0.7015 mix=0.50
+update=15850/20000 loss=1.3644 policy=0.7205 value=0.6439 mix=0.50
+update=15900/20000 loss=1.3972 policy=0.7636 value=0.6336 mix=0.50
+update=15950/20000 loss=1.4464 policy=0.7842 value=0.6622 mix=0.50
+update=16000/20000 loss=1.3646 policy=0.6969 value=0.6677 mix=0.50
+update=16050/20000 loss=1.4092 policy=0.7188 value=0.6904 mix=0.50
+update=16100/20000 loss=1.4057 policy=0.7200 value=0.6857 mix=0.50
+update=16150/20000 loss=1.3058 policy=0.6805 value=0.6254 mix=0.50
+update=16200/20000 loss=1.4373 policy=0.7561 value=0.6812 mix=0.50
+update=16250/20000 loss=1.3822 policy=0.7225 value=0.6597 mix=0.50
+update=16300/20000 loss=1.4436 policy=0.7565 value=0.6871 mix=0.50
+update=16350/20000 loss=1.4421 policy=0.7487 value=0.6934 mix=0.50
+update=16400/20000 loss=1.4314 policy=0.7458 value=0.6856 mix=0.50
+update=16450/20000 loss=1.3998 policy=0.7634 value=0.6364 mix=0.50
+update=16500/20000 loss=1.3844 policy=0.7443 value=0.6400 mix=0.50
+update=16550/20000 loss=1.3897 policy=0.7383 value=0.6514 mix=0.50
+update=16600/20000 loss=1.3664 policy=0.6952 value=0.6713 mix=0.50
+update=16650/20000 loss=1.3670 policy=0.7145 value=0.6524 mix=0.50
+update=16700/20000 loss=1.4029 policy=0.7550 value=0.6479 mix=0.50
+update=16750/20000 loss=1.3667 policy=0.7058 value=0.6608 mix=0.50
+update=16800/20000 loss=1.3971 policy=0.7370 value=0.6600 mix=0.50
+update=16850/20000 loss=1.3804 policy=0.7419 value=0.6385 mix=0.50
+update=16900/20000 loss=1.4002 policy=0.7292 value=0.6709 mix=0.50
+update=16950/20000 loss=1.3992 policy=0.7511 value=0.6481 mix=0.50
+update=17000/20000 loss=1.3812 policy=0.7580 value=0.6232 mix=0.50
+update=17050/20000 loss=1.3671 policy=0.7014 value=0.6657 mix=0.50
+update=17100/20000 loss=1.4137 policy=0.7427 value=0.6711 mix=0.50
+update=17150/20000 loss=1.3772 policy=0.7297 value=0.6476 mix=0.50
+update=17200/20000 loss=1.4606 policy=0.7675 value=0.6932 mix=0.50
+update=17250/20000 loss=1.3606 policy=0.7127 value=0.6479 mix=0.50
+update=17300/20000 loss=1.3506 policy=0.7199 value=0.6307 mix=0.50
+update=17350/20000 loss=1.3187 policy=0.6861 value=0.6326 mix=0.50
+update=17400/20000 loss=1.3074 policy=0.6821 value=0.6253 mix=0.50
+update=17450/20000 loss=1.2922 policy=0.6626 value=0.6296 mix=0.50
+update=17500/20000 loss=1.4048 policy=0.7277 value=0.6771 mix=0.50
+update=17550/20000 loss=1.3418 policy=0.7149 value=0.6269 mix=0.50
+update=17600/20000 loss=1.2811 policy=0.6659 value=0.6152 mix=0.50
+update=17650/20000 loss=1.5071 policy=0.8485 value=0.6586 mix=0.50
+update=17700/20000 loss=1.3752 policy=0.7176 value=0.6576 mix=0.50
+update=17750/20000 loss=1.3382 policy=0.6931 value=0.6450 mix=0.50
+update=17800/20000 loss=1.4444 policy=0.7724 value=0.6721 mix=0.50
+update=17850/20000 loss=1.2907 policy=0.6526 value=0.6381 mix=0.50
+update=17900/20000 loss=1.3676 policy=0.7151 value=0.6525 mix=0.50
+update=17950/20000 loss=1.4313 policy=0.7573 value=0.6740 mix=0.50
+update=18000/20000 loss=1.3523 policy=0.7200 value=0.6323 mix=0.50
+update=18050/20000 loss=1.3616 policy=0.6918 value=0.6698 mix=0.50
+update=18100/20000 loss=1.3878 policy=0.7242 value=0.6636 mix=0.50
+update=18150/20000 loss=1.4216 policy=0.7523 value=0.6693 mix=0.50
+update=18200/20000 loss=1.3456 policy=0.7485 value=0.5971 mix=0.50
+update=18250/20000 loss=1.2829 policy=0.6835 value=0.5994 mix=0.50
+update=18300/20000 loss=1.4061 policy=0.7139 value=0.6921 mix=0.50
+update=18350/20000 loss=1.3625 policy=0.6972 value=0.6654 mix=0.50
+update=18400/20000 loss=1.3731 policy=0.7018 value=0.6713 mix=0.50
+update=18450/20000 loss=1.3557 policy=0.7379 value=0.6178 mix=0.50
+update=18500/20000 loss=1.3317 policy=0.6836 value=0.6481 mix=0.50
+update=18550/20000 loss=1.3333 policy=0.7031 value=0.6302 mix=0.50
+update=18600/20000 loss=1.4679 policy=0.7512 value=0.7166 mix=0.50
+update=18650/20000 loss=1.3371 policy=0.6879 value=0.6491 mix=0.50
+update=18700/20000 loss=1.3605 policy=0.7329 value=0.6276 mix=0.50
+update=18750/20000 loss=1.2808 policy=0.6515 value=0.6293 mix=0.50
+update=18800/20000 loss=1.4367 policy=0.7252 value=0.7115 mix=0.50
+update=18850/20000 loss=1.3790 policy=0.7251 value=0.6539 mix=0.50
+update=18900/20000 loss=1.3379 policy=0.6895 value=0.6484 mix=0.50
+update=18950/20000 loss=1.4734 policy=0.7873 value=0.6862 mix=0.50
+update=19000/20000 loss=1.3725 policy=0.7394 value=0.6330 mix=0.50
+update=19050/20000 loss=1.4578 policy=0.7640 value=0.6938 mix=0.50
+update=19100/20000 loss=1.2994 policy=0.6767 value=0.6227 mix=0.50
+update=19150/20000 loss=1.3166 policy=0.6759 value=0.6407 mix=0.50
+update=19200/20000 loss=1.3720 policy=0.6961 value=0.6759 mix=0.50
+update=19250/20000 loss=1.3544 policy=0.6975 value=0.6569 mix=0.50
+update=19300/20000 loss=1.4411 policy=0.7622 value=0.6790 mix=0.50
+update=19350/20000 loss=1.3901 policy=0.7308 value=0.6593 mix=0.50
+update=19400/20000 loss=1.2959 policy=0.6891 value=0.6067 mix=0.50
+update=19450/20000 loss=1.4015 policy=0.7276 value=0.6739 mix=0.50
+update=19500/20000 loss=1.2396 policy=0.6100 value=0.6296 mix=0.50
+update=19550/20000 loss=1.3955 policy=0.7486 value=0.6468 mix=0.50
+update=19600/20000 loss=1.4394 policy=0.7498 value=0.6896 mix=0.50
+update=19650/20000 loss=1.3569 policy=0.6926 value=0.6642 mix=0.50
+update=19700/20000 loss=1.3682 policy=0.7011 value=0.6671 mix=0.50
+update=19750/20000 loss=1.3474 policy=0.6912 value=0.6563 mix=0.50
+update=19800/20000 loss=1.4097 policy=0.7505 value=0.6592 mix=0.50
+update=19850/20000 loss=1.3355 policy=0.6733 value=0.6621 mix=0.50
+update=19900/20000 loss=1.4607 policy=0.7598 value=0.7010 mix=0.50
+update=19950/20000 loss=1.4012 policy=0.7342 value=0.6670 mix=0.50
+update=19999/20000 loss=1.3731 policy=0.7352 value=0.6379 mix=0.50
+{
+  "checkpoint": "monopoly_bench/runs/oracle_hybrid_bc_new25k_broad/snapshots/hybrid_clone_0000.pt",
+  "device": "cpu",
+  "final": {
+    "gradient_norm": 0.11229618638753891,
+    "loss": 1.3731412887573242,
+    "policy_loss": 0.7352480888366699,
+    "value_loss": 0.6378931999206543
+  },
+  "history_tail": [
+    {
+      "gradient_norm": 0.11460232734680176,
+      "loss": 1.395462989807129,
+      "policy_loss": 0.7486362457275391,
+      "update": 19550,
+      "value_loss": 0.6468266844749451,
+      "value_outcome_mix": 0.5,
+      "wall_s": 875.61985206604,
+      "weighted_sample": true
+    },
+    {
+      "gradient_norm": 0.10968976467847824,
+      "loss": 1.4394233226776123,
+      "policy_loss": 0.7498316764831543,
+      "update": 19600,
+      "value_loss": 0.6895915865898132,
+      "value_outcome_mix": 0.5,
+      "wall_s": 878.1463680267334,
+      "weighted_sample": true
+    },
+    {
+      "gradient_norm": 0.17256338894367218,
+      "loss": 1.3568518161773682,
+      "policy_loss": 0.692613959312439,
+      "update": 19650,
+      "value_loss": 0.6642378568649292,
+      "value_outcome_mix": 0.5,
+      "wall_s": 880.868241071701,
+      "weighted_sample": true
+    },
+    {
+      "gradient_norm": 0.15045399963855743,
+      "loss": 1.3682491779327393,
+      "policy_loss": 0.7011464834213257,
+      "update": 19700,
+      "value_loss": 0.6671026945114136,
+      "value_outcome_mix": 0.5,
+      "wall_s": 883.4062249660492,
+      "weighted_sample": true
+    },
+    {
+      "gradient_norm": 0.13835570216178894,
+      "loss": 1.3474440574645996,
+      "policy_loss": 0.6911770105361938,
+      "update": 19750,
+      "value_loss": 0.656266987323761,
+      "value_outcome_mix": 0.5,
+      "wall_s": 886.3367629051208,
+      "weighted_sample": true
+    },
+    {
+      "gradient_norm": 0.13406498730182648,
+      "loss": 1.4097329378128052,
+      "policy_loss": 0.7505416870117188,
+      "update": 19800,
+      "value_loss": 0.6591912508010864,
+      "value_outcome_mix": 0.5,
+      "wall_s": 888.7682740688324,
+      "weighted_sample": true
+    },
+    {
+      "gradient_norm": 0.13471515476703644,
+      "loss": 1.335458755493164,
+      "policy_loss": 0.6733319759368896,
+      "update": 19850,
+      "value_loss": 0.6621267795562744,
+      "value_outcome_mix": 0.5,
+      "wall_s": 891.2669949531555,
+      "weighted_sample": true
+    },
+    {
+      "gradient_norm": 0.1206928938627243,
+      "loss": 1.4607471227645874,
+      "policy_loss": 0.759788990020752,
+      "update": 19900,
+      "value_loss": 0.7009581327438354,
+      "value_outcome_mix": 0.5,
+      "wall_s": 893.9741508960724,
+      "weighted_sample": true
+    },
+    {
+      "gradient_norm": 0.08981876820325851,
+      "loss": 1.4012269973754883,
+      "policy_loss": 0.7342191338539124,
+      "update": 19950,
+      "value_loss": 0.6670078039169312,
+      "value_outcome_mix": 0.5,
+      "wall_s": 896.4151639938354,
+      "weighted_sample": true
+    },
+    {
+      "gradient_norm": 0.11229618638753891,
+      "loss": 1.3731412887573242,
+      "policy_loss": 0.7352480888366699,
+      "update": 19999,
+      "value_loss": 0.6378931999206543,
+      "value_outcome_mix": 0.5,
+      "wall_s": 899.0454440116882,
+      "weighted_sample": true
+    }
+  ],
+  "n_labels": 23749,
+  "policy_match": {
+    "match_rate": 0.997314453125,
+    "rows": 4096.0
+  },
+  "updates": 20000,
+  "value_outcome_mix": 0.5,
+  "wall_seconds": 899.1356508731842,
+  "weighted_sample": true
+}

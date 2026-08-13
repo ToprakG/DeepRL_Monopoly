@@ -1,0 +1,897 @@
+{
+  "clone": "/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/oracle_hybrid_bc_resampled_5k/snapshots/hybrid_clone_0000.pt",
+  "games": 8,
+  "greedy_clone_vs_fixed": {
+    "per_game": [
+      {
+        "clone_seat": 0,
+        "completed": true,
+        "crashes": 0,
+        "error": null,
+        "game_id": 0,
+        "illegal_actions": 0,
+        "winner": 3
+      },
+      {
+        "clone_seat": 1,
+        "completed": true,
+        "crashes": 0,
+        "error": null,
+        "game_id": 1,
+        "illegal_actions": 0,
+        "winner": 2
+      },
+      {
+        "clone_seat": 2,
+        "completed": true,
+        "crashes": 0,
+        "error": null,
+        "game_id": 2,
+        "illegal_actions": 0,
+        "winner": 1
+      },
+      {
+        "clone_seat": 3,
+        "completed": true,
+        "crashes": 0,
+        "error": null,
+        "game_id": 3,
+        "illegal_actions": 0,
+        "winner": 2
+      },
+      {
+        "clone_seat": 0,
+        "completed": true,
+        "crashes": 0,
+        "error": null,
+        "game_id": 4,
+        "illegal_actions": 0,
+        "winner": 2
+      },
+      {
+        "clone_seat": 1,
+        "completed": true,
+        "crashes": 0,
+        "error": null,
+        "game_id": 5,
+        "illegal_actions": 0,
+        "winner": 2
+      },
+      {
+        "clone_seat": 2,
+        "completed": true,
+        "crashes": 0,
+        "error": null,
+        "game_id": 6,
+        "illegal_actions": 0,
+        "winner": 1
+      },
+      {
+        "clone_seat": 3,
+        "completed": true,
+        "crashes": 0,
+        "error": null,
+        "game_id": 7,
+        "illegal_actions": 0,
+        "winner": 1
+      }
+    ],
+    "summary": {
+      "completed": 8,
+      "crashes": 0,
+      "fallbacks": 0,
+      "games": 8,
+      "illegal_actions": 0,
+      "latency_p95_s": 0.0,
+      "losses": 8,
+      "wilson_lower": 0.0,
+      "win_rate": 0.0,
+      "wins": 0
+    },
+    "wall_seconds": 7.354939000011655,
+    "wins": 0
+  },
+  "labels": "/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/oracle_hybrid_merged/labels_hybrid_resampled.npz",
+  "ppo": "/Users/toprakgundogdu/DeepRL_Monopoly/artifacts/ppo_plus/ppo_hybrid_2000_v2.pt",
+  "ppo_vs_fixed": {
+    "per_game": [
+      {
+        "clone_seat": 0,
+        "completed": true,
+        "crashes": 0,
+        "error": null,
+        "game_id": 0,
+        "illegal_actions": 0,
+        "winner": 2
+      },
+      {
+        "clone_seat": 1,
+        "completed": true,
+        "crashes": 0,
+        "error": null,
+        "game_id": 1,
+        "illegal_actions": 0,
+        "winner": 2
+      },
+      {
+        "clone_seat": 2,
+        "completed": true,
+        "crashes": 0,
+        "error": null,
+        "game_id": 2,
+        "illegal_actions": 0,
+        "winner": 1
+      },
+      {
+        "clone_seat": 3,
+        "completed": true,
+        "crashes": 0,
+        "error": null,
+        "game_id": 3,
+        "illegal_actions": 0,
+        "winner": 1
+      },
+      {
+        "clone_seat": 0,
+        "completed": true,
+        "crashes": 0,
+        "error": null,
+        "game_id": 4,
+        "illegal_actions": 0,
+        "winner": 2
+      },
+      {
+        "clone_seat": 1,
+        "completed": true,
+        "crashes": 0,
+        "error": null,
+        "game_id": 5,
+        "illegal_actions": 0,
+        "winner": 2
+      },
+      {
+        "clone_seat": 2,
+        "completed": true,
+        "crashes": 0,
+        "error": null,
+        "game_id": 6,
+        "illegal_actions": 0,
+        "winner": 1
+      },
+      {
+        "clone_seat": 3,
+        "completed": true,
+        "crashes": 0,
+        "error": null,
+        "game_id": 7,
+        "illegal_actions": 0,
+        "winner": 1
+      }
+    ],
+    "summary": {
+      "completed": 8,
+      "crashes": 0,
+      "fallbacks": 0,
+      "games": 8,
+      "illegal_actions": 0,
+      "latency_p95_s": 0.0,
+      "losses": 8,
+      "wilson_lower": 0.0,
+      "win_rate": 0.0,
+      "wins": 0
+    },
+    "wall_seconds": 9.69205279101152,
+    "wins": 0
+  },
+  "prior_search_clone_vs_fixed": {
+    "note": "resampled clone + sims=32 search, already measured",
+    "seed_5100000": {
+      "games": 8,
+      "wins": 0
+    },
+    "seed_5200000": {
+      "games": 8,
+      "wins": 0
+    }
+  },
+  "seed": 5300000,
+  "spot_check": {
+    "by_bucket": {
+      "accept": {
+        "match_rate": 0.875,
+        "n_available": 4944,
+        "n_checked": 8,
+        "samples": [
+          {
+            "match": true,
+            "p_pred": 0.9350711107254028,
+            "p_teacher": 0.9350711107254028,
+            "pred": "ACCEPT_TRADE",
+            "teacher": "ACCEPT_TRADE",
+            "top": [
+              {
+                "action": "ACCEPT_TRADE",
+                "p": 0.9350711107254028
+              },
+              {
+                "action": "exch_trade(player=0, offer=1, req=28)",
+                "p": 0.008965264074504375
+              },
+              {
+                "action": "exch_trade(player=0, offer=1, req=34)",
+                "p": 0.008171027526259422
+              }
+            ],
+            "value": [
+              0.013037207536399364,
+              0.9487919211387634,
+              0.010286807082593441,
+              0.02788408473134041
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.9994465708732605,
+            "p_teacher": 0.9994465708732605,
+            "pred": "ACCEPT_TRADE",
+            "teacher": "ACCEPT_TRADE",
+            "top": [
+              {
+                "action": "ACCEPT_TRADE",
+                "p": 0.9994465708732605
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.0003135531733278185
+              },
+              {
+                "action": "DECLINE_TRADE",
+                "p": 0.00023982013226486742
+              }
+            ],
+            "value": [
+              0.12474485486745834,
+              0.10639989376068115,
+              0.059770215302705765,
+              0.7090850472450256
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.8299251794815063,
+            "p_teacher": 0.8299251794815063,
+            "pred": "ACCEPT_TRADE",
+            "teacher": "ACCEPT_TRADE",
+            "top": [
+              {
+                "action": "ACCEPT_TRADE",
+                "p": 0.8299251794815063
+              },
+              {
+                "action": "DECLINE_TRADE",
+                "p": 0.11061975359916687
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.05945507436990738
+              }
+            ],
+            "value": [
+              0.9991287589073181,
+              0.00036219271714799106,
+              0.00018488340720068663,
+              0.0003242175735067576
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.9995664954185486,
+            "p_teacher": 0.9995664954185486,
+            "pred": "ACCEPT_TRADE",
+            "teacher": "ACCEPT_TRADE",
+            "top": [
+              {
+                "action": "ACCEPT_TRADE",
+                "p": 0.9995664954185486
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.0002769821439869702
+              },
+              {
+                "action": "DECLINE_TRADE",
+                "p": 0.00015650654677301645
+              }
+            ],
+            "value": [
+              0.018420327454805374,
+              0.9601287841796875,
+              0.015358682721853256,
+              0.006092206109315157
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.9979967474937439,
+            "p_teacher": 0.9979967474937439,
+            "pred": "ACCEPT_TRADE",
+            "teacher": "ACCEPT_TRADE",
+            "top": [
+              {
+                "action": "ACCEPT_TRADE",
+                "p": 0.9979967474937439
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.0012444800231605768
+              },
+              {
+                "action": "DECLINE_TRADE",
+                "p": 0.0003220061189495027
+              }
+            ],
+            "value": [
+              0.3239055275917053,
+              0.23405201733112335,
+              0.0788220688700676,
+              0.36322030425071716
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.5661940574645996,
+            "p_teacher": 0.5661940574645996,
+            "pred": "ACCEPT_TRADE",
+            "teacher": "ACCEPT_TRADE",
+            "top": [
+              {
+                "action": "ACCEPT_TRADE",
+                "p": 0.5661940574645996
+              },
+              {
+                "action": "DECLINE_TRADE",
+                "p": 0.3184281289577484
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.11537785083055496
+              }
+            ],
+            "value": [
+              0.004215957596898079,
+              0.9940608143806458,
+              0.0010282554430887103,
+              0.0006950468523427844
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.9987941980361938,
+            "p_teacher": 0.9987941980361938,
+            "pred": "ACCEPT_TRADE",
+            "teacher": "ACCEPT_TRADE",
+            "top": [
+              {
+                "action": "ACCEPT_TRADE",
+                "p": 0.9987941980361938
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.0009064861224032938
+              },
+              {
+                "action": "DECLINE_TRADE",
+                "p": 0.0002993259113281965
+              }
+            ],
+            "value": [
+              0.998310923576355,
+              0.0007227554451674223,
+              0.0007100615184754133,
+              0.00025619298685342073
+            ]
+          },
+          {
+            "match": false,
+            "p_pred": 0.4190772473812103,
+            "p_teacher": 0.3608474135398865,
+            "pred": "DECLINE_TRADE",
+            "teacher": "ACCEPT_TRADE",
+            "top": [
+              {
+                "action": "DECLINE_TRADE",
+                "p": 0.4190772473812103
+              },
+              {
+                "action": "ACCEPT_TRADE",
+                "p": 0.3608474135398865
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.220075324177742
+              }
+            ],
+            "value": [
+              0.19812504947185516,
+              0.04393622651696205,
+              0.05217670649290085,
+              0.7057619690895081
+            ]
+          }
+        ]
+      },
+      "buy": {
+        "match_rate": 1.0,
+        "n_available": 11755,
+        "n_checked": 8,
+        "samples": [
+          {
+            "match": true,
+            "p_pred": 0.8245575428009033,
+            "p_teacher": 0.8245575428009033,
+            "pred": "BUY_PROPERTY",
+            "teacher": "BUY_PROPERTY",
+            "top": [
+              {
+                "action": "BUY_PROPERTY",
+                "p": 0.8245575428009033
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.14639915525913239
+              },
+              {
+                "action": "mortgage(sq=16)",
+                "p": 0.02140740118920803
+              }
+            ],
+            "value": [
+              0.2795068621635437,
+              0.22794800996780396,
+              0.16366080939769745,
+              0.3288842737674713
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.9294726848602295,
+            "p_teacher": 0.9294726848602295,
+            "pred": "BUY_PROPERTY",
+            "teacher": "BUY_PROPERTY",
+            "top": [
+              {
+                "action": "BUY_PROPERTY",
+                "p": 0.9294726848602295
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.0417046882212162
+              },
+              {
+                "action": "mortgage(sq=24)",
+                "p": 0.013530919328331947
+              }
+            ],
+            "value": [
+              0.31363731622695923,
+              0.15251928567886353,
+              0.2912759482860565,
+              0.2425674945116043
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.7666535377502441,
+            "p_teacher": 0.7666535377502441,
+            "pred": "BUY_PROPERTY",
+            "teacher": "BUY_PROPERTY",
+            "top": [
+              {
+                "action": "BUY_PROPERTY",
+                "p": 0.7666535377502441
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.13719849288463593
+              },
+              {
+                "action": "mortgage(sq=21)",
+                "p": 0.018378209322690964
+              }
+            ],
+            "value": [
+              0.5427440404891968,
+              0.1408260464668274,
+              0.14348390698432922,
+              0.17294596135616302
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.9590708613395691,
+            "p_teacher": 0.9590708613395691,
+            "pred": "BUY_PROPERTY",
+            "teacher": "BUY_PROPERTY",
+            "top": [
+              {
+                "action": "BUY_PROPERTY",
+                "p": 0.9590708613395691
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.01893533207476139
+              },
+              {
+                "action": "unmortgage(sq=3)",
+                "p": 0.00653981463983655
+              }
+            ],
+            "value": [
+              0.48937559127807617,
+              0.25457140803337097,
+              0.06987911462783813,
+              0.1861739158630371
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.6395114064216614,
+            "p_teacher": 0.6395114064216614,
+            "pred": "BUY_PROPERTY",
+            "teacher": "BUY_PROPERTY",
+            "top": [
+              {
+                "action": "BUY_PROPERTY",
+                "p": 0.6395114064216614
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.21170499920845032
+              },
+              {
+                "action": "mortgage(sq=21)",
+                "p": 0.047083187848329544
+              }
+            ],
+            "value": [
+              0.1201738566160202,
+              0.802359402179718,
+              0.048558905720710754,
+              0.028907878324389458
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.8074788451194763,
+            "p_teacher": 0.8074788451194763,
+            "pred": "BUY_PROPERTY",
+            "teacher": "BUY_PROPERTY",
+            "top": [
+              {
+                "action": "BUY_PROPERTY",
+                "p": 0.8074788451194763
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.1925211399793625
+              }
+            ],
+            "value": [
+              0.2859742343425751,
+              0.2599155902862549,
+              0.21803051233291626,
+              0.236079603433609
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.7265033721923828,
+            "p_teacher": 0.7265033721923828,
+            "pred": "BUY_PROPERTY",
+            "teacher": "BUY_PROPERTY",
+            "top": [
+              {
+                "action": "BUY_PROPERTY",
+                "p": 0.7265033721923828
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.2227453887462616
+              },
+              {
+                "action": "mortgage(sq=18)",
+                "p": 0.015849869698286057
+              }
+            ],
+            "value": [
+              0.5240250825881958,
+              0.1760980784893036,
+              0.17248788475990295,
+              0.12738896906375885
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.7947280406951904,
+            "p_teacher": 0.7947280406951904,
+            "pred": "BUY_PROPERTY",
+            "teacher": "BUY_PROPERTY",
+            "top": [
+              {
+                "action": "BUY_PROPERTY",
+                "p": 0.7947280406951904
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.1741979867219925
+              },
+              {
+                "action": "unmortgage(sq=23)",
+                "p": 0.008384855464100838
+              }
+            ],
+            "value": [
+              0.5538286566734314,
+              0.11644545942544937,
+              0.08573555201292038,
+              0.24399028718471527
+            ]
+          }
+        ]
+      },
+      "decline": {
+        "match_rate": 0.875,
+        "n_available": 117,
+        "n_checked": 8,
+        "samples": [
+          {
+            "match": true,
+            "p_pred": 0.9788314700126648,
+            "p_teacher": 0.9788314700126648,
+            "pred": "DECLINE_TRADE",
+            "teacher": "DECLINE_TRADE",
+            "top": [
+              {
+                "action": "DECLINE_TRADE",
+                "p": 0.9788314700126648
+              },
+              {
+                "action": "ACCEPT_TRADE",
+                "p": 0.011979718692600727
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.009188874624669552
+              }
+            ],
+            "value": [
+              0.5233847498893738,
+              0.24188165366649628,
+              0.09739606827497482,
+              0.1373375505208969
+            ]
+          },
+          {
+            "match": false,
+            "p_pred": 0.4254593253135681,
+            "p_teacher": 0.3988434076309204,
+            "pred": "ACCEPT_TRADE",
+            "teacher": "DECLINE_TRADE",
+            "top": [
+              {
+                "action": "ACCEPT_TRADE",
+                "p": 0.4254593253135681
+              },
+              {
+                "action": "DECLINE_TRADE",
+                "p": 0.3988434076309204
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.17569732666015625
+              }
+            ],
+            "value": [
+              0.6237274408340454,
+              0.07900305837392807,
+              0.13057135045528412,
+              0.16669821739196777
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.5549868941307068,
+            "p_teacher": 0.5549868941307068,
+            "pred": "DECLINE_TRADE",
+            "teacher": "DECLINE_TRADE",
+            "top": [
+              {
+                "action": "DECLINE_TRADE",
+                "p": 0.5549868941307068
+              },
+              {
+                "action": "ACCEPT_TRADE",
+                "p": 0.26439371705055237
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.18061941862106323
+              }
+            ],
+            "value": [
+              0.9992387294769287,
+              0.00040583719965070486,
+              0.000174416127265431,
+              0.00018103884940501302
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.9990315437316895,
+            "p_teacher": 0.9990315437316895,
+            "pred": "DECLINE_TRADE",
+            "teacher": "DECLINE_TRADE",
+            "top": [
+              {
+                "action": "DECLINE_TRADE",
+                "p": 0.9990315437316895
+              },
+              {
+                "action": "ACCEPT_TRADE",
+                "p": 0.0005638402653858066
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.00040463145705871284
+              }
+            ],
+            "value": [
+              0.7569671869277954,
+              0.0843343660235405,
+              0.035286594182252884,
+              0.12341192364692688
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.4171738922595978,
+            "p_teacher": 0.4171738922595978,
+            "pred": "DECLINE_TRADE",
+            "teacher": "DECLINE_TRADE",
+            "top": [
+              {
+                "action": "DECLINE_TRADE",
+                "p": 0.4171738922595978
+              },
+              {
+                "action": "ACCEPT_TRADE",
+                "p": 0.3999743163585663
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.18285170197486877
+              }
+            ],
+            "value": [
+              0.5967450737953186,
+              0.08312845975160599,
+              0.14766447246074677,
+              0.17246194183826447
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.9982812404632568,
+            "p_teacher": 0.9982812404632568,
+            "pred": "DECLINE_TRADE",
+            "teacher": "DECLINE_TRADE",
+            "top": [
+              {
+                "action": "DECLINE_TRADE",
+                "p": 0.9982812404632568
+              },
+              {
+                "action": "ACCEPT_TRADE",
+                "p": 0.001227500499226153
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.0004913088632747531
+              }
+            ],
+            "value": [
+              0.08462018519639969,
+              0.06794268637895584,
+              0.029496852308511734,
+              0.8179402351379395
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.9928064346313477,
+            "p_teacher": 0.9928064346313477,
+            "pred": "DECLINE_TRADE",
+            "teacher": "DECLINE_TRADE",
+            "top": [
+              {
+                "action": "DECLINE_TRADE",
+                "p": 0.9928064346313477
+              },
+              {
+                "action": "ACCEPT_TRADE",
+                "p": 0.005308575928211212
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.0017987466417253017
+              }
+            ],
+            "value": [
+              0.3928062319755554,
+              0.26531729102134705,
+              0.126864492893219,
+              0.21501193940639496
+            ]
+          },
+          {
+            "match": true,
+            "p_pred": 0.5637258887290955,
+            "p_teacher": 0.5637258887290955,
+            "pred": "DECLINE_TRADE",
+            "teacher": "DECLINE_TRADE",
+            "top": [
+              {
+                "action": "DECLINE_TRADE",
+                "p": 0.5637258887290955
+              },
+              {
+                "action": "ACCEPT_TRADE",
+                "p": 0.2447272092103958
+              },
+              {
+                "action": "END_TURN",
+                "p": 0.19154682755470276
+              }
+            ],
+            "value": [
+              0.9992300271987915,
+              0.00028417049907147884,
+              0.0002078740217257291,
+              0.00027796122594736516
+            ]
+          }
+        ]
+      }
+    },
+    "overall_match": {
+      "by_family": {
+        "accept": {
+          "match_rate": 0.9901234567901235,
+          "n": 405
+        },
+        "auction": {
+          "match_rate": 0.9826388888888888,
+          "n": 288
+        },
+        "build": {
+          "match_rate": 0.9730769230769231,
+          "n": 260
+        },
+        "buy": {
+          "match_rate": 0.9989868287740629,
+          "n": 987
+        },
+        "decline": {
+          "match_rate": 1.0,
+          "n": 7
+        },
+        "other": {
+          "match_rate": 0.9801980198019802,
+          "n": 101
+        }
+      },
+      "match_rate": 0.99072265625,
+      "rows": 2048
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "completed_games": 30,
+  "disclaimer": "These are ppo-plus-v2 simulator results for ASU-inspired reconstructions; they do not reproduce or estimate either cited paper's reported win rates.",
+  "frozen_spec_hash": "9ab1907e0de1af4b253ce36ffa107c4fdb5e2b913858ef87c362423e61a6fd74",
+  "game_timeout_s": 600.0,
+  "games": 30,
+  "lineup": [
+    "slayer-v1",
+    "expo-heuristic-v1",
+    "boom-hybrid",
+    "alinebidal-final"
+  ],
+  "live": false,
+  "oracle_config": {
+    "c_puct": 1.5,
+    "deadline_s": null,
+    "early_stop_min_sims": 16,
+    "early_stop_visit_lead": null,
+    "leaf": "rollout",
+    "leaf_checkpoint": null,
+    "margin_temperature": 2000.0,
+    "max_depth": 64,
+    "max_width": 16,
+    "prior_peak": 0.55,
+    "rollout_horizon": 16,
+    "rollouts_per_leaf": 1,
+    "simulations": 32
+  },
+  "oracle_focus": {
+    "games": null,
+    "wilson_95": null,
+    "win_rate": null,
+    "wins": null
+  },
+  "ruleset": "ppo-plus-v2",
+  "seed": 100,
+  "timeouts": 0,
+  "truncations": 0,
+  "turn_deadline_s": null,
+  "win_rates": {
+    "alinebidal-final": {
+      "games": 30,
+      "wilson_95": [
+        0.11792388144489496,
+        0.40928326158122164
+      ],
+      "win_rate": 0.23333333333333334,
+      "win_rate_percent": 23.333333333333332,
+      "wins": 7
+    },
+    "boom-hybrid": {
+      "games": 30,
+      "wilson_95": [
+        0.018477023791270378,
+        0.2132345836261692
+      ],
+      "win_rate": 0.06666666666666667,
+      "win_rate_percent": 6.666666666666667,
+      "wins": 2
+    },
+    "expo-heuristic-v1": {
+      "games": 30,
+      "wilson_95": [
+        0.14182663319596317,
+        0.4444796169518888
+      ],
+      "win_rate": 0.26666666666666666,
+      "win_rate_percent": 26.666666666666668,
+      "wins": 8
+    },
+    "slayer-v1": {
+      "games": 30,
+      "wilson_95": [
+        0.2737748557646652,
+        0.6080269299918639
+      ],
+      "win_rate": 0.43333333333333335,
+      "win_rate_percent": 43.333333333333336,
+      "wins": 13
+    }
+  },
+  "workers": 1
+}

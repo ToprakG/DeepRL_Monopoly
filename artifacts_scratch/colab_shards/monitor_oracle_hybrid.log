@@ -1,0 +1,18 @@
+[20:46:47] oracle hybrid SELF-HEALING monitor start
+[20:46:47] poll=60s probe_timeout=100s stall=2700s → /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_monitor.log
+[20:46:48] ora0: session missing → relaunch
+[20:46:48] ora0: RELAUNCHING high-mem shard seed=10000 games=705
+[20:46:50] packed /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz (4489004 bytes)
+[20:46:50] $ /Users/toprakgundogdu/.local/bin/colab new -s ora0 --high-mem
+[colab] Creating session 'ora0'...
+[20:56:43] oracle hybrid SELF-HEALING monitor start
+[20:56:43] poll=60s probe_timeout=100s stall=2700s → /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_monitor.log
+[20:56:46] ora0: pid=5255 alive=True done=0/705 last_labels= kind= npz=0
+[20:56:51] ora1: pid=17528 alive=True done=0/705 last_labels= kind= npz=0
+[22:04:17] oracle hybrid SELF-HEALING monitor start
+[22:04:17] poll=60s probe_timeout=100s stall=2700s → /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_monitor.log
+[23:27:30] oracle hybrid SELF-HEALING monitor start
+[23:27:30] poll=60s probe_timeout=100s stall=2700s → /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_monitor.log
+[23:27:37] ora0: pid=3255 alive=True done=0/705 last_labels= kind= npz=0
+[23:27:47] ora1: pid=4012 alive=True done=0/705 last_labels= kind= npz=0
+[23:28:01] local: alive=False done=391/391 throughput: 76.11 games/hour | 21.0 labels/game | 1600.6 labels/hour | wall=18494.7s workers=6 npz=715031

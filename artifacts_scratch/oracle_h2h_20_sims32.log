@@ -1,0 +1,116 @@
+h2h progress 1/20
+h2h progress 2/20
+h2h progress 3/20
+h2h progress 4/20
+h2h progress 5/20
+h2h progress 6/20
+h2h progress 7/20
+h2h progress 8/20
+h2h progress 9/20
+h2h progress 10/20
+h2h progress 11/20
+h2h progress 12/20
+h2h progress 13/20
+h2h progress 14/20
+h2h progress 15/20
+h2h progress 16/20
+h2h progress 17/20
+h2h progress 18/20
+h2h progress 19/20
+h2h progress 20/20
+{
+  "disclaimer": "These are ppo-plus-v2 simulator results for ASU-inspired reconstructions; they do not reproduce or estimate either cited paper's reported win rates.",
+  "frozen_spec_hash": "9ab1907e0de1af4b253ce36ffa107c4fdb5e2b913858ef87c362423e61a6fd74",
+  "games": 20,
+  "lineup": [
+    "oracle-rollout-v1",
+    "asu-value-v1",
+    "fixed-a",
+    "fixed-b"
+  ],
+  "oracle_config": {
+    "c_puct": 1.5,
+    "margin_temperature": 2000.0,
+    "max_depth": 64,
+    "max_width": 64,
+    "rollout_horizon": 16,
+    "rollouts_per_leaf": 1,
+    "simulations": 32
+  },
+  "oracle_vs_asu": {
+    "asu_wilson_95": [
+      0.2581978582556243,
+      0.6579146575496577
+    ],
+    "asu_win_rate": 0.45,
+    "beats_asu": false,
+    "beats_asu_on_margin": false,
+    "net_worth_margin": {
+      "beats_asu_on_margin": false,
+      "mean": -13394.45,
+      "mean_minus_se": -17855.456920483903,
+      "mean_plus_se": -8933.443079516099,
+      "n": 20,
+      "oracle_richer": 5,
+      "oracle_richer_rate": 0.25,
+      "se": 4461.006920483902,
+      "std": 19950.229444598008
+    },
+    "oracle_wilson_95": [
+      0.052368745896216595,
+      0.36041886474075696
+    ],
+    "oracle_wilson_lower": 0.052368745896216595,
+    "oracle_win_rate": 0.15,
+    "rate_gap": -0.30000000000000004
+  },
+  "ruleset": "ppo-plus-v2",
+  "seed": 0,
+  "truncations": 0,
+  "win_rates": {
+    "asu-value-v1": {
+      "games": 20,
+      "wilson_95": [
+        0.2581978582556243,
+        0.6579146575496577
+      ],
+      "win_rate": 0.45,
+      "win_rate_percent": 45.0,
+      "wins": 9
+    },
+    "fixed-a": {
+      "games": 20,
+      "wilson_95": [
+        0.0,
+        0.16112515805281938
+      ],
+      "win_rate": 0.0,
+      "win_rate_percent": 0.0,
+      "wins": 0
+    },
+    "fixed-b": {
+      "games": 20,
+      "wilson_95": [
+        0.21880653237281705,
+        0.6134184992377469
+      ],
+      "win_rate": 0.4,
+      "win_rate_percent": 40.0,
+      "wins": 8
+    },
+    "oracle-rollout-v1": {
+      "games": 20,
+      "wilson_95": [
+        0.052368745896216595,
+        0.36041886474075696
+      ],
+      "win_rate": 0.15,
+      "win_rate_percent": 15.0,
+      "wins": 3
+    }
+  },
+  "workers": 8
+}
+
+oracle 0.150 (Wilson [0.052, 0.360]) vs ASU 0.450 | beats_asu=False
+net_worth_margin oracle-ASU: mean=-13394.5 ± SE 4461.0 richer=5/20 | beats_asu_on_margin=False

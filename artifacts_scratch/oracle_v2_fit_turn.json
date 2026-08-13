@@ -1,0 +1,22 @@
+{
+  "deadline_s": 4.0,
+  "games": 2,
+  "sims": 128,
+  "n_turns": 243,
+  "mean_turn_s": 0.7055545751561857,
+  "max_turn_s": 3.734812958020484,
+  "p95_turn_s": 2.0184570830024313,
+  "over_deadline": 0,
+  "searches": 112,
+  "greedies": 877,
+  "kinds": {
+    "greedy": 711,
+    "buy": 14,
+    "trade": 238,
+    "build": 26
+  },
+  "agreement_all_multi": 1.0,
+  "agreement_events": 1.0,
+  "n_overlap_all": 40,
+  "n_overlap_events": 15
+}

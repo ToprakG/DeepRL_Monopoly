@@ -1,0 +1,294 @@
+{
+  "action_dim": 2958,
+  "config": {
+    "c_puct": 1.5,
+    "margin_temperature": 2000.0,
+    "max_depth": 64,
+    "max_width": 16,
+    "prior_peak": 0.55,
+    "rollout_horizon": 16,
+    "rollouts_per_leaf": 1,
+    "simulations": 128
+  },
+  "game_summaries": [
+    {
+      "checkpoints_seen": 48,
+      "elapsed_seconds": 6.091930124995997,
+      "game_id": 230,
+      "lineup_kind": "self",
+      "n_labels": 5,
+      "seed": 19730,
+      "truncated": false,
+      "winner": 0
+    },
+    {
+      "checkpoints_seen": 199,
+      "elapsed_seconds": 449.5995363330003,
+      "game_id": 219,
+      "lineup_kind": "pool",
+      "n_labels": 35,
+      "seed": 19719,
+      "truncated": false,
+      "winner": 3
+    },
+    {
+      "checkpoints_seen": 262,
+      "elapsed_seconds": 473.46219325001584,
+      "game_id": 217,
+      "lineup_kind": "pool",
+      "n_labels": 16,
+      "seed": 19717,
+      "truncated": false,
+      "winner": 1
+    },
+    {
+      "checkpoints_seen": 344,
+      "elapsed_seconds": 81.1459800840239,
+      "game_id": 231,
+      "lineup_kind": "pool",
+      "n_labels": 43,
+      "seed": 19731,
+      "truncated": false,
+      "winner": 2
+    },
+    {
+      "checkpoints_seen": 210,
+      "elapsed_seconds": 9.858813792001456,
+      "game_id": 234,
+      "lineup_kind": "self",
+      "n_labels": 6,
+      "seed": 19734,
+      "truncated": false,
+      "winner": 1
+    },
+    {
+      "checkpoints_seen": 53,
+      "elapsed_seconds": 39.16312166702119,
+      "game_id": 232,
+      "lineup_kind": "self",
+      "n_labels": 20,
+      "seed": 19732,
+      "truncated": false,
+      "winner": 0
+    },
+    {
+      "checkpoints_seen": 615,
+      "elapsed_seconds": 15.679303500015521,
+      "game_id": 236,
+      "lineup_kind": "self",
+      "n_labels": 7,
+      "seed": 19736,
+      "truncated": false,
+      "winner": 0
+    },
+    {
+      "checkpoints_seen": 96,
+      "elapsed_seconds": 479.6222359170206,
+      "game_id": 223,
+      "lineup_kind": "pool",
+      "n_labels": 10,
+      "seed": 19723,
+      "truncated": false,
+      "winner": 0
+    },
+    {
+      "checkpoints_seen": 925,
+      "elapsed_seconds": 9.425125958980061,
+      "game_id": 238,
+      "lineup_kind": "self",
+      "n_labels": 4,
+      "seed": 19738,
+      "truncated": false,
+      "winner": 1
+    },
+    {
+      "checkpoints_seen": 118,
+      "elapsed_seconds": 112.87864174999413,
+      "game_id": 237,
+      "lineup_kind": "pool",
+      "n_labels": 16,
+      "seed": 19737,
+      "truncated": false,
+      "winner": 1
+    },
+    {
+      "checkpoints_seen": 39,
+      "elapsed_seconds": 6.387137374986196,
+      "game_id": 240,
+      "lineup_kind": "self",
+      "n_labels": 5,
+      "seed": 19740,
+      "truncated": false,
+      "winner": 1
+    },
+    {
+      "checkpoints_seen": 104,
+      "elapsed_seconds": 189.0689524160116,
+      "game_id": 235,
+      "lineup_kind": "pool",
+      "n_labels": 37,
+      "seed": 19735,
+      "truncated": false,
+      "winner": 2
+    },
+    {
+      "checkpoints_seen": 28,
+      "elapsed_seconds": 35.66363579098834,
+      "game_id": 242,
+      "lineup_kind": "self",
+      "n_labels": 10,
+      "seed": 19742,
+      "truncated": false,
+      "winner": 2
+    },
+    {
+      "checkpoints_seen": 45,
+      "elapsed_seconds": 1002.1706384160207,
+      "game_id": 213,
+      "lineup_kind": "pool",
+      "n_labels": 10,
+      "seed": 19713,
+      "truncated": false,
+      "winner": 1
+    },
+    {
+      "checkpoints_seen": 98,
+      "elapsed_seconds": 353.5903560409788,
+      "game_id": 233,
+      "lineup_kind": "pool",
+      "n_labels": 16,
+      "seed": 19733,
+      "truncated": false,
+      "winner": 1
+    },
+    {
+      "checkpoints_seen": 106,
+      "elapsed_seconds": 586.4286376659875,
+      "game_id": 239,
+      "lineup_kind": "pool",
+      "n_labels": 18,
+      "seed": 19739,
+      "truncated": false,
+      "winner": 3
+    },
+    {
+      "checkpoints_seen": 154,
+      "elapsed_seconds": 730.3881582919857,
+      "game_id": 241,
+      "lineup_kind": "pool",
+      "n_labels": 93,
+      "seed": 19741,
+      "truncated": false,
+      "winner": 1
+    },
+    {
+      "checkpoints_seen": 213,
+      "elapsed_seconds": 556.8623956660158,
+      "game_id": 244,
+      "lineup_kind": "self",
+      "n_labels": 197,
+      "seed": 19744,
+      "truncated": false,
+      "winner": 0
+    },
+    {
+      "checkpoints_seen": 270,
+      "elapsed_seconds": 16.96630383300362,
+      "game_id": 248,
+      "lineup_kind": "self",
+      "n_labels": 10,
+      "seed": 19748,
+      "truncated": false,
+      "winner": 2
+    },
+    {
+      "checkpoints_seen": 68,
+      "elapsed_seconds": 1270.6240901249985,
+      "game_id": 225,
+      "lineup_kind": "pool",
+      "n_labels": 16,
+      "seed": 19725,
+      "truncated": false,
+      "winner": 1
+    },
+    {
+      "checkpoints_seen": 52,
+      "elapsed_seconds": 80.3730101250112,
+      "game_id": 247,
+      "lineup_kind": "pool",
+      "n_labels": 14,
+      "seed": 19747,
+      "truncated": false,
+      "winner": 3
+    },
+    {
+      "checkpoints_seen": 61,
+      "elapsed_seconds": 16.08398016600404,
+      "game_id": 250,
+      "lineup_kind": "self",
+      "n_labels": 10,
+      "seed": 19750,
+      "truncated": false,
+      "winner": 0
+    },
+    {
+      "checkpoints_seen": 67,
+      "elapsed_seconds": 23.930769541999325,
+      "game_id": 252,
+      "lineup_kind": "self",
+      "n_labels": 9,
+      "seed": 19752,
+      "truncated": false,
+      "winner": 2
+    },
+    {
+      "checkpoints_seen": 373,
+      "elapsed_seconds": 113.1100814579986,
+      "game_id": 251,
+      "lineup_kind": "pool",
+      "n_labels": 20,
+      "seed": 19751,
+      "truncated": false,
+      "winner": 2
+    },
+    {
+      "checkpoints_seen": 70,
+      "elapsed_seconds": 10.840655958018033,
+      "game_id": 254,
+      "lineup_kind": "self",
+      "n_labels": 8,
+      "seed": 19754,
+      "truncated": false,
+      "winner": 1
+    }
+  ],
+  "games": 400,
+  "games_completed": 25,
+  "hybrid_config": {
+    "c_puct": 1.5,
+    "label_checkpoints_only": true,
+    "label_one_seat_only": true,
+    "margin_temperature": 2000.0,
+    "max_depth": 64,
+    "max_width": 16,
+    "mix_pool": true,
+    "mix_self_play": true,
+    "play_with_hybrid": true,
+    "prior_peak": 0.55,
+    "rollout_horizon": 16,
+    "rollouts_per_leaf": 1,
+    "simulations": 128
+  },
+  "mode": "hybrid",
+  "n_labels": 635,
+  "ruleset": "ppo-plus-v2",
+  "seed": 19500,
+  "teacher": "oracle-rollout-v1",
+  "throughput": {
+    "games_per_hour": 8.034131106528946,
+    "labels_per_hour": 204.06693010583527,
+    "mean_labels_per_game": 25.4,
+    "wall_seconds": 11202.207034792023,
+    "workers": 6
+  }
+}

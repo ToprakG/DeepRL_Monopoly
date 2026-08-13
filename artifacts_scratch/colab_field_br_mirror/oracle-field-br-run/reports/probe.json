@@ -1,0 +1,136 @@
+{
+  "failed": [],
+  "ok": true,
+  "policy_ids": [
+    "alinebidal-final",
+    "slayer-v1",
+    "inncenta-heuristic",
+    "expo-heuristic-v1",
+    "asu-value-v1",
+    "fixed-a",
+    "fixed-b",
+    "fixed-c"
+  ],
+  "reports": [
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "alinebidal-final",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 285,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "slayer-v1",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 313,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "inncenta-heuristic",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 297,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "expo-heuristic-v1",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 419,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "asu-value-v1",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 307,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "fixed-a",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 292,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "fixed-b",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 320,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    },
+    {
+      "error": null,
+      "ok": true,
+      "opening_action": 1,
+      "opening_ok": true,
+      "policy_id": "fixed-c",
+      "short_game": {
+        "completed": true,
+        "crashes": 0,
+        "decisions": 282,
+        "error": null,
+        "fallbacks": 0,
+        "illegal_actions": 0
+      }
+    }
+  ]
+}

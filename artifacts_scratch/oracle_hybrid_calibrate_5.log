@@ -1,0 +1,8 @@
+Failed to create PreventUserIdleSystemSleep assertion
+label progress 1/5 labels=8 kind=self
+label progress 2/5 labels=9 kind=self
+label progress 3/5 labels=10 kind=self
+label progress 4/5 labels=26 kind=pool
+label progress 5/5 labels=18 kind=pool
+wrote 71 labels from 5 games -> artifacts_scratch/oracle_hybrid_calibrate_5.json
+throughput: 22.76 games/hour | 14.2 labels/game | 323.2 labels/hour | wall=790.8s workers=5

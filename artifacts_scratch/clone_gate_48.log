@@ -1,0 +1,56 @@
+
+=== START vs=fixed sims=32 -> hybrid_clone_new25k_vs_fixed_48_sims32.json ===
+hybrid_clone vs fixed | games=48 sims=32 workers=8 ckpt=/Users/toprakgundogdu/DeepRL_Monopoly/monopoly_bench/runs/oracle_hybrid_bc_new25k/snapshots/hybrid_clone_0000.pt
+h2h progress 1/48 game=5 winner=2 clone_seat=1 completed=True crashes=0
+h2h progress 2/48 game=7 winner=3 clone_seat=3 completed=True crashes=0
+h2h progress 3/48 game=4 winner=2 clone_seat=0 completed=True crashes=0
+h2h progress 4/48 game=3 winner=1 clone_seat=3 completed=True crashes=0
+h2h progress 5/48 game=0 winner=0 clone_seat=0 completed=True crashes=0
+h2h progress 6/48 game=6 winner=2 clone_seat=2 completed=True crashes=0
+h2h progress 7/48 game=9 winner=2 clone_seat=1 completed=True crashes=0
+h2h progress 8/48 game=10 winner=1 clone_seat=2 completed=True crashes=0
+h2h progress 9/48 game=2 winner=1 clone_seat=2 completed=True crashes=0
+h2h progress 10/48 game=11 winner=3 clone_seat=3 completed=True crashes=0
+h2h progress 11/48 game=8 winner=2 clone_seat=0 completed=True crashes=0
+h2h progress 12/48 game=1 winner=2 clone_seat=1 completed=True crashes=0
+h2h progress 13/48 game=17 winner=1 clone_seat=1 completed=True crashes=0
+h2h progress 14/48 game=16 winner=0 clone_seat=0 completed=True crashes=0
+h2h progress 15/48 game=12 winner=3 clone_seat=0 completed=True crashes=0
+h2h progress 16/48 game=15 winner=1 clone_seat=3 completed=True crashes=0
+h2h progress 17/48 game=19 winner=1 clone_seat=3 completed=True crashes=0
+h2h progress 18/48 game=13 winner=2 clone_seat=1 completed=True crashes=0
+h2h progress 19/48 game=21 winner=2 clone_seat=1 completed=True crashes=0
+h2h progress 20/48 game=20 winner=0 clone_seat=0 completed=True crashes=0
+h2h progress 21/48 game=23 winner=3 clone_seat=3 completed=True crashes=0
+h2h progress 22/48 game=24 winner=2 clone_seat=0 completed=True crashes=0
+h2h progress 23/48 game=29 winner=2 clone_seat=1 completed=True crashes=0
+h2h progress 24/48 game=25 winner=2 clone_seat=1 completed=True crashes=0
+h2h progress 25/48 game=27 winner=1 clone_seat=3 completed=True crashes=0
+h2h progress 26/48 game=30 winner=1 clone_seat=2 completed=True crashes=0
+h2h progress 27/48 game=14 winner=2 clone_seat=2 completed=True crashes=0
+h2h progress 28/48 game=18 winner=2 clone_seat=2 completed=True crashes=0
+h2h progress 29/48 game=26 winner=3 clone_seat=2 completed=True crashes=0
+h2h progress 30/48 game=34 winner=1 clone_seat=2 completed=True crashes=0
+h2h progress 31/48 game=31 winner=1 clone_seat=3 completed=True crashes=0
+h2h progress 32/48 game=28 winner=0 clone_seat=0 completed=True crashes=0
+h2h progress 33/48 game=37 winner=1 clone_seat=1 completed=True crashes=0
+h2h progress 34/48 game=22 winner=1 clone_seat=2 completed=True crashes=0
+h2h progress 35/48 game=38 winner=2 clone_seat=2 completed=True crashes=0
+h2h progress 36/48 game=32 winner=0 clone_seat=0 completed=True crashes=0
+h2h progress 37/48 game=33 winner=1 clone_seat=1 completed=True crashes=0
+h2h progress 38/48 game=40 winner=2 clone_seat=0 completed=True crashes=0
+h2h progress 39/48 game=41 winner=2 clone_seat=1 completed=True crashes=0
+h2h progress 40/48 game=36 winner=3 clone_seat=0 completed=True crashes=0
+h2h progress 41/48 game=42 winner=1 clone_seat=2 completed=True crashes=0
+h2h progress 42/48 game=44 winner=2 clone_seat=0 completed=True crashes=0
+h2h progress 43/48 game=35 winner=2 clone_seat=3 completed=True crashes=0
+h2h progress 44/48 game=43 winner=1 clone_seat=3 completed=True crashes=0
+h2h progress 45/48 game=39 winner=1 clone_seat=3 completed=True crashes=0
+h2h progress 46/48 game=47 winner=3 clone_seat=3 completed=True crashes=0
+h2h progress 47/48 game=46 winner=2 clone_seat=2 completed=True crashes=0
+h2h progress 48/48 game=45 winner=2 clone_seat=1 completed=True crashes=0
+clone vs fixed sims=32 WR=0.354 (17/48) wilson_lo=0.234 p95=0.7524244170053862 wall=2299.8s -> /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/hybrid_clone_new25k_vs_fixed_48_sims32.json
+=== DONE vs=fixed sims=32 17/48 WR=0.354 wilson_lo=0.234 p95=0.752s ===
+
+=== START vs=asu sims=32 -> hybrid_clone_new25k_vs_asu_48_sims32.json ===
+hybrid_clone vs asu | games=48 sims=32 workers=8 ckpt=/Users/toprakgundogdu/DeepRL_Monopoly/monopoly_bench/runs/oracle_hybrid_bc_new25k/snapshots/hybrid_clone_0000.pt

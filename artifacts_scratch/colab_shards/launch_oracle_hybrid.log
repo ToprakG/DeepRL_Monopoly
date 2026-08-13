@@ -1,0 +1,51 @@
+[12:09:11] packed /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz (4473266 bytes)
+[12:09:11] $ /Users/toprakgundogdu/.local/bin/colab stop -s ora0
+[colab] Stopping session 'ora0'...
+[colab] Session terminated.
+[12:09:13] $ /Users/toprakgundogdu/.local/bin/colab stop -s ora1
+[colab] Stopping session 'ora1'...
+[colab] Session terminated.
+[12:09:16] $ /Users/toprakgundogdu/.local/bin/colab stop -s ora2
+[colab] Stopping session 'ora2'...
+[colab] Session terminated.
+[12:09:19] $ /Users/toprakgundogdu/.local/bin/colab new -s ora0 --high-mem
+[colab] Creating session 'ora0'...
+[colab] Session READY.
+[12:09:37] $ /Users/toprakgundogdu/.local/bin/colab new -s ora1 --high-mem
+[colab] Creating session 'ora1'...
+[colab] Session READY.
+[12:09:53] $ /Users/toprakgundogdu/.local/bin/colab new -s ora2 --high-mem
+[colab] Creating session 'ora2'...
+[colab] Session READY.
+[12:10:09] launch ora0 seed=10000 games=470 end=10469
+[12:10:09] $ /Users/toprakgundogdu/.local/bin/colab upload -s ora0 /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz /content/oracle_hybrid_src.tgz
+[colab] Uploaded '/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz' to '/content/oracle_hybrid_src.tgz'
+[12:10:13] ora0: skipping Drive mount (write /content; download later)
+[12:10:13] $ /Users/toprakgundogdu/.local/bin/colab exec -s ora0 --timeout 300
+HOST cpu=8 ram_gib=51.0
+STARTED pid=5972 workers=7 seed=10000 games=470 out=/content/labels_seed10000_10469.json drive_ok=True
+MIRROR pid=5973
+[12:10:19] launched ora0
+[12:10:19] launch ora1 seed=10470 games=470 end=10939
+[12:10:19] $ /Users/toprakgundogdu/.local/bin/colab upload -s ora1 /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz /content/oracle_hybrid_src.tgz
+[colab] Uploaded '/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz' to '/content/oracle_hybrid_src.tgz'
+[12:10:23] ora1: skipping Drive mount (write /content; download later)
+[12:10:23] $ /Users/toprakgundogdu/.local/bin/colab exec -s ora1 --timeout 300
+HOST cpu=8 ram_gib=51.0
+STARTED pid=8212 workers=7 seed=10470 games=470 out=/content/labels_seed10470_10939.json drive_ok=True
+MIRROR pid=8213
+[12:10:30] launched ora1
+[12:10:30] launch ora2 seed=10940 games=470 end=11409
+[12:10:30] $ /Users/toprakgundogdu/.local/bin/colab upload -s ora2 /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz /content/oracle_hybrid_src.tgz
+[colab] Uploaded '/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz' to '/content/oracle_hybrid_src.tgz'
+[12:10:32] ora2: skipping Drive mount (write /content; download later)
+[12:10:32] $ /Users/toprakgundogdu/.local/bin/colab exec -s ora2 --timeout 300
+HOST cpu=8 ram_gib=51.0
+STARTED pid=627 workers=7 seed=10940 games=470 out=/content/labels_seed10940_11409.json drive_ok=True
+MIRROR pid=628
+[12:10:39] launched ora2
+[12:10:39] all Colab shards started; probing
+[12:10:41] ora0: pid=5972 alive=True local_npz=0 drive_npz=0 meta='pid=5972 | workers=7 | seed=10000 | games=470 | out=/content/labels_seed10000_10469.json | drive_ok=True |' last=''
+[12:10:43] ora1: pid=8212 alive=True local_npz=0 drive_npz=0 meta='pid=8212 | workers=7 | seed=10470 | games=470 | out=/content/labels_seed10470_10939.json | drive_ok=True |' last=''
+[12:10:45] ora2: pid=627 alive=True local_npz=0 drive_npz=0 meta='pid=627 | workers=7 | seed=10940 | games=470 | out=/content/labels_seed10940_11409.json | drive_ok=True |' last=''
+[12:10:45] Drive folder (if mounted): /content/drive/MyDrive/oracle_hybrid_labels/labels_seed{start}_{end}.npz

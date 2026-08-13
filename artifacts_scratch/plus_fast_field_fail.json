@@ -1,0 +1,4631 @@
+[
+  {
+    "index": 0,
+    "policies": [
+      "oracle-plus-v1",
+      "underdog-v1",
+      "slayer-v1",
+      "alinebidal-final"
+    ],
+    "us": 0,
+    "winner": "slayer-v1",
+    "rounds": 200,
+    "nw": [
+      9986.0,
+      7346.0,
+      11614.0,
+      6807.0
+    ],
+    "first_set": {},
+    "first_hotel": {},
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": false,
+    "stats": {
+      "decisions": 2398,
+      "bought": 8,
+      "declined_trade": 198,
+      "auction_menu": 143,
+      "auction_headroom_zero": 2,
+      "auction_pass": 2,
+      "accepted_trade": 1,
+      "jail_menu": 18,
+      "jail_sit": 18,
+      "mean_floor": 65.99666388657214,
+      "mean_live": 64.7627189324437,
+      "mean_next": 56.2698081734779,
+      "mean_cash_minus_floor": 2143.043369474562
+    },
+    "end": {
+      "round": 200,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "oracle-plus-v1",
+          "cash": 5036.0,
+          "nw": 9986.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 10,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 5346.0,
+          "nw": 7346.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 3,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 6689.0,
+          "nw": 11614.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 3707.0,
+          "nw": 6807.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": null,
+    "first_opp_hotel": null,
+    "plus_set": null,
+    "plus_broke": null
+  },
+  {
+    "index": 1,
+    "policies": [
+      "alinebidal-final",
+      "oracle-plus-v1",
+      "underdog-v1",
+      "slayer-v1"
+    ],
+    "us": 1,
+    "winner": "underdog-v1",
+    "rounds": 200,
+    "nw": [
+      6915.0,
+      5654.5,
+      16638.0,
+      5994.0
+    ],
+    "first_set": {
+      "underdog-v1": 68
+    },
+    "first_hotel": {
+      "underdog-v1": 68
+    },
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": true,
+    "stats": {
+      "decisions": 2206,
+      "bought": 7,
+      "auction_menu": 83,
+      "auction_headroom_zero": 3,
+      "auction_pass": 3,
+      "jail_menu": 41,
+      "jail_sit": 41,
+      "buy_skipped_floor": 1,
+      "declined_trade": 657,
+      "complete_trade_blocked_floor": 4,
+      "complete_trade_only_cheap": 14,
+      "mean_floor": 311.10607434270173,
+      "mean_live": 309.37851314596554,
+      "mean_next": 109.79827742520399,
+      "mean_cash_minus_floor": 1070.7964641885767
+    },
+    "end": {
+      "round": 200,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "alinebidal-final",
+          "cash": 3440.0,
+          "nw": 6915.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 2067.0,
+          "nw": 5654.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 11,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 12738.0,
+          "nw": 16638.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 8,
+          "hotels": 2,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 3269.0,
+          "nw": 5994.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": {
+      "round": 68,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "alinebidal-final",
+          "cash": 955.0,
+          "nw": 4430.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 1499.0,
+          "nw": 5086.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 11,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 1952.0,
+          "nw": 4102.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 2758.0,
+          "nw": 5483.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_hotel": {
+      "round": 68,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "alinebidal-final",
+          "cash": 955.0,
+          "nw": 4430.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 1499.0,
+          "nw": 5086.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 11,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 1502.0,
+          "nw": 5127.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 8,
+          "hotels": 1,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 2758.0,
+          "nw": 5483.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        }
+      ]
+    },
+    "plus_set": null,
+    "plus_broke": null
+  },
+  {
+    "index": 2,
+    "policies": [
+      "slayer-v1",
+      "alinebidal-final",
+      "oracle-plus-v1",
+      "underdog-v1"
+    ],
+    "us": 2,
+    "winner": "underdog-v1",
+    "rounds": 125,
+    "nw": [
+      0.0,
+      0.0,
+      0.0,
+      44941.0
+    ],
+    "first_set": {
+      "slayer-v1": 35,
+      "underdog-v1": 35
+    },
+    "first_hotel": {
+      "slayer-v1": 35,
+      "underdog-v1": 39
+    },
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": true,
+    "stats": {
+      "decisions": 887,
+      "bought": 5,
+      "declined_trade": 29,
+      "jail_menu": 6,
+      "jail_sit": 6,
+      "auction_menu": 37,
+      "accepted_trade": 1,
+      "auction_headroom_zero": 3,
+      "auction_pass": 3,
+      "complete_trade_only_cheap": 37,
+      "complete_trade_blocked_floor": 1404,
+      "mean_floor": 364.3179255918827,
+      "mean_live": 360.4644870349493,
+      "mean_next": 196.9436302142052,
+      "mean_cash_minus_floor": 185.73055242390078
+    },
+    "end": {
+      "round": 125,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "slayer-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 4766.0,
+          "nw": 44941.0,
+          "bankrupt": false,
+          "sets": [
+            "brown",
+            "lightblue",
+            "pink",
+            "orange",
+            "red",
+            "yellow",
+            "green",
+            "darkblue"
+          ],
+          "houses": 40,
+          "hotels": 2,
+          "deeds": 28,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": {
+      "round": 35,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "slayer-v1",
+          "cash": 1302.0,
+          "nw": 4352.0,
+          "bankrupt": false,
+          "sets": [
+            "lightblue"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 773.0,
+          "nw": 4848.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 800.0,
+          "nw": 4575.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 1121.0,
+          "nw": 4896.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_hotel": {
+      "round": 35,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "slayer-v1",
+          "cash": 1052.0,
+          "nw": 4977.0,
+          "bankrupt": false,
+          "sets": [
+            "lightblue"
+          ],
+          "houses": 4,
+          "hotels": 1,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 773.0,
+          "nw": 4848.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 780.0,
+          "nw": 4555.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 1141.0,
+          "nw": 4916.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        }
+      ]
+    },
+    "plus_set": null,
+    "plus_broke": {
+      "round": 85,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "slayer-v1",
+          "cash": 6195.0,
+          "nw": 12095.0,
+          "bankrupt": false,
+          "sets": [
+            "lightblue"
+          ],
+          "houses": 12,
+          "hotels": 3,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 955.0,
+          "nw": 22455.0,
+          "bankrupt": false,
+          "sets": [
+            "brown",
+            "pink",
+            "orange",
+            "red",
+            "yellow",
+            "darkblue"
+          ],
+          "houses": 17,
+          "hotels": 2,
+          "deeds": 22,
+          "in_jail": false
+        }
+      ]
+    }
+  },
+  {
+    "index": 3,
+    "policies": [
+      "underdog-v1",
+      "slayer-v1",
+      "alinebidal-final",
+      "oracle-plus-v1"
+    ],
+    "us": 3,
+    "winner": "alinebidal-final",
+    "rounds": 53,
+    "nw": [
+      0.0,
+      0.0,
+      27717.0,
+      0.0
+    ],
+    "first_set": {
+      "oracle-plus-v1": 9,
+      "alinebidal-final": 17
+    },
+    "first_hotel": {
+      "oracle-plus-v1": 10,
+      "alinebidal-final": 42
+    },
+    "plus_had_set": true,
+    "plus_had_hotel": true,
+    "plus_set_first": true,
+    "opp_set_before_plus": false,
+    "stats": {
+      "decisions": 633,
+      "bought": 8,
+      "auction_menu": 33,
+      "auction_headroom_zero": 9,
+      "auction_pass": 9,
+      "built": 69,
+      "complete_trade_blocked_floor": 212,
+      "build_skipped_floor": 66,
+      "complete_trade_only_cheap": 95,
+      "declined_trade": 24,
+      "build_skipped_cash_below_floor": 62,
+      "jail_menu": 6,
+      "jail_sit": 6,
+      "mean_floor": 610.2922590837283,
+      "mean_live": 603.9320695102685,
+      "mean_next": 196.41864139020538,
+      "mean_cash_minus_floor": -242.09004739336493
+    },
+    "end": {
+      "round": 53,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 1217.0,
+          "nw": 27717.0,
+          "bankrupt": false,
+          "sets": [
+            "brown",
+            "lightblue",
+            "pink",
+            "orange",
+            "red",
+            "yellow",
+            "green",
+            "darkblue"
+          ],
+          "houses": 12,
+          "hotels": 3,
+          "deeds": 28,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": {
+      "round": 17,
+      "unowned": 1,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 71.0,
+          "nw": 1708.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 5,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 580.0,
+          "nw": 6480.0,
+          "bankrupt": false,
+          "sets": [
+            "yellow"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 233.0,
+          "nw": 13583.0,
+          "bankrupt": false,
+          "sets": [
+            "brown",
+            "orange"
+          ],
+          "houses": 20,
+          "hotels": 5,
+          "deeds": 15,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_hotel": {
+      "round": 42,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 1240.0,
+          "nw": 10090.0,
+          "bankrupt": false,
+          "sets": [
+            "yellow"
+          ],
+          "houses": 4,
+          "hotels": 1,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 19.0,
+          "nw": 20144.0,
+          "bankrupt": false,
+          "sets": [
+            "brown",
+            "lightblue",
+            "orange",
+            "green",
+            "darkblue"
+          ],
+          "houses": 29,
+          "hotels": 7,
+          "deeds": 20,
+          "in_jail": false
+        }
+      ]
+    },
+    "plus_set": {
+      "round": 9,
+      "unowned": 8,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 539.0,
+          "nw": 2364.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 835.0,
+          "nw": 3010.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 732.0,
+          "nw": 3032.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 263.0,
+          "nw": 4738.0,
+          "bankrupt": false,
+          "sets": [
+            "orange"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        }
+      ]
+    },
+    "plus_broke": {
+      "round": 53,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 1217.0,
+          "nw": 27717.0,
+          "bankrupt": false,
+          "sets": [
+            "brown",
+            "lightblue",
+            "pink",
+            "orange",
+            "red",
+            "yellow",
+            "green",
+            "darkblue"
+          ],
+          "houses": 12,
+          "hotels": 3,
+          "deeds": 28,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        }
+      ]
+    }
+  },
+  {
+    "index": 4,
+    "policies": [
+      "oracle-plus-v1",
+      "underdog-v1",
+      "slayer-v1",
+      "alinebidal-final"
+    ],
+    "us": 0,
+    "winner": "slayer-v1",
+    "rounds": 66,
+    "nw": [
+      0.0,
+      0.0,
+      44523.0,
+      0.0
+    ],
+    "first_set": {
+      "slayer-v1": 23,
+      "alinebidal-final": 64
+    },
+    "first_hotel": {
+      "slayer-v1": 32
+    },
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": true,
+    "stats": {
+      "decisions": 750,
+      "bought": 6,
+      "declined_trade": 179,
+      "auction_menu": 12,
+      "complete_trade_blocked_floor": 429,
+      "complete_trade_only_cheap": 38,
+      "auction_headroom_zero": 2,
+      "auction_pass": 2,
+      "jail_menu": 14,
+      "jail_sit": 14,
+      "mean_floor": 941.3333333333334,
+      "mean_live": 940.744,
+      "mean_next": 288.712,
+      "mean_cash_minus_floor": -171.504
+    },
+    "end": {
+      "round": 66,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 1498.0,
+          "nw": 44523.0,
+          "bankrupt": false,
+          "sets": [
+            "brown",
+            "lightblue",
+            "pink",
+            "orange",
+            "red",
+            "yellow",
+            "green",
+            "darkblue"
+          ],
+          "houses": 21,
+          "hotels": 5,
+          "deeds": 28,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": {
+      "round": 23,
+      "unowned": 2,
+      "players": [
+        {
+          "id": "oracle-plus-v1",
+          "cash": 610.0,
+          "nw": 3660.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 1561.0,
+          "nw": 3186.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 340.0,
+          "nw": 7240.0,
+          "bankrupt": false,
+          "sets": [
+            "darkblue"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 400.0,
+          "nw": 3150.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_hotel": {
+      "round": 32,
+      "unowned": 1,
+      "players": [
+        {
+          "id": "oracle-plus-v1",
+          "cash": 846.0,
+          "nw": 3096.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 1537.0,
+          "nw": 3237.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 146.0,
+          "nw": 10471.0,
+          "bankrupt": false,
+          "sets": [
+            "darkblue"
+          ],
+          "houses": 4,
+          "hotels": 1,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 402.0,
+          "nw": 3527.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        }
+      ]
+    },
+    "plus_set": null,
+    "plus_broke": {
+      "round": 55,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 640.0,
+          "nw": 3040.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 5,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 2877.0,
+          "nw": 20827.0,
+          "bankrupt": false,
+          "sets": [
+            "darkblue"
+          ],
+          "houses": 8,
+          "hotels": 2,
+          "deeds": 15,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 696.0,
+          "nw": 3821.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        }
+      ]
+    }
+  },
+  {
+    "index": 5,
+    "policies": [
+      "alinebidal-final",
+      "oracle-plus-v1",
+      "underdog-v1",
+      "slayer-v1"
+    ],
+    "us": 1,
+    "winner": "slayer-v1",
+    "rounds": 46,
+    "nw": [
+      0.0,
+      0.0,
+      0.0,
+      33964.0
+    ],
+    "first_set": {
+      "slayer-v1": 14,
+      "alinebidal-final": 19
+    },
+    "first_hotel": {
+      "slayer-v1": 17,
+      "alinebidal-final": 20
+    },
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": true,
+    "stats": {
+      "decisions": 278,
+      "auction_menu": 19,
+      "auction_headroom_zero": 3,
+      "auction_pass": 3,
+      "bought": 4,
+      "declined_trade": 32,
+      "complete_trade_blocked_floor": 146,
+      "mean_floor": 397.19424460431657,
+      "mean_live": 391.6654676258993,
+      "mean_next": 185.67625899280574,
+      "mean_cash_minus_floor": 241.38489208633092
+    },
+    "end": {
+      "round": 46,
+      "unowned": 1,
+      "players": [
+        {
+          "id": "alinebidal-final",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 614.0,
+          "nw": 33964.0,
+          "bankrupt": false,
+          "sets": [
+            "lightblue",
+            "pink",
+            "orange",
+            "red",
+            "yellow",
+            "green",
+            "darkblue"
+          ],
+          "houses": 21,
+          "hotels": 4,
+          "deeds": 27,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": {
+      "round": 14,
+      "unowned": 5,
+      "players": [
+        {
+          "id": "alinebidal-final",
+          "cash": 832.0,
+          "nw": 3082.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 5,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 325.0,
+          "nw": 2550.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 650.0,
+          "nw": 3750.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 184.0,
+          "nw": 4634.0,
+          "bankrupt": false,
+          "sets": [
+            "lightblue"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_hotel": {
+      "round": 17,
+      "unowned": 3,
+      "players": [
+        {
+          "id": "alinebidal-final",
+          "cash": 702.0,
+          "nw": 3327.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 552.0,
+          "nw": 2339.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 5,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 604.0,
+          "nw": 3704.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 108.0,
+          "nw": 5433.0,
+          "bankrupt": false,
+          "sets": [
+            "lightblue"
+          ],
+          "houses": 4,
+          "hotels": 1,
+          "deeds": 8,
+          "in_jail": false
+        }
+      ]
+    },
+    "plus_set": null,
+    "plus_broke": {
+      "round": 30,
+      "unowned": 1,
+      "players": [
+        {
+          "id": "alinebidal-final",
+          "cash": 741.0,
+          "nw": 10116.0,
+          "bankrupt": false,
+          "sets": [
+            "pink"
+          ],
+          "houses": 12,
+          "hotels": 3,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 135.0,
+          "nw": 2735.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 1231.0,
+          "nw": 11343.5,
+          "bankrupt": false,
+          "sets": [
+            "lightblue",
+            "darkblue"
+          ],
+          "houses": 12,
+          "hotels": 3,
+          "deeds": 13,
+          "in_jail": false
+        }
+      ]
+    }
+  },
+  {
+    "index": 6,
+    "policies": [
+      "slayer-v1",
+      "alinebidal-final",
+      "oracle-plus-v1",
+      "underdog-v1"
+    ],
+    "us": 2,
+    "winner": "oracle-plus-v1",
+    "rounds": 200,
+    "nw": [
+      10734.0,
+      8422.0,
+      11288.0,
+      5564.0
+    ],
+    "first_set": {},
+    "first_hotel": {},
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": false,
+    "stats": {
+      "decisions": 2173,
+      "bought": 6,
+      "auction_menu": 33,
+      "auction_headroom_zero": 1,
+      "auction_pass": 1,
+      "declined_trade": 294,
+      "complete_trade_only_cheap": 72,
+      "complete_trade_blocked_floor": 20,
+      "jail_menu": 33,
+      "jail_sit": 33,
+      "mean_floor": 50.0,
+      "mean_live": 34.69489185457892,
+      "mean_next": 26.333640128854118,
+      "mean_cash_minus_floor": 3655.444086516337
+    },
+    "end": {
+      "round": 200,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "slayer-v1",
+          "cash": 6834.0,
+          "nw": 10734.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 4872.0,
+          "nw": 8422.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 6913.0,
+          "nw": 11288.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 9,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 3814.0,
+          "nw": 5564.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 3,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": null,
+    "first_opp_hotel": null,
+    "plus_set": null,
+    "plus_broke": null
+  },
+  {
+    "index": 7,
+    "policies": [
+      "underdog-v1",
+      "slayer-v1",
+      "alinebidal-final",
+      "oracle-plus-v1"
+    ],
+    "us": 3,
+    "winner": "oracle-plus-v1",
+    "rounds": 200,
+    "nw": [
+      7829.0,
+      8733.0,
+      4618.0,
+      12683.5
+    ],
+    "first_set": {},
+    "first_hotel": {},
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": false,
+    "stats": {
+      "decisions": 2326,
+      "bought": 11,
+      "auction_menu": 34,
+      "auction_headroom_zero": 2,
+      "auction_pass": 2,
+      "declined_trade": 800,
+      "complete_trade_blocked_floor": 59,
+      "complete_trade_only_cheap": 40,
+      "jail_menu": 38,
+      "jail_sit": 38,
+      "mean_floor": 50.0,
+      "mean_live": 48.929492691315566,
+      "mean_next": 36.84737747205503,
+      "mean_cash_minus_floor": 3542.372312983663
+    },
+    "end": {
+      "round": 200,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 4979.0,
+          "nw": 7829.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 5,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 4983.0,
+          "nw": 8733.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 3268.0,
+          "nw": 4618.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 3,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 7921.0,
+          "nw": 12683.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 13,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": null,
+    "first_opp_hotel": null,
+    "plus_set": null,
+    "plus_broke": null
+  },
+  {
+    "index": 8,
+    "policies": [
+      "oracle-plus-v1",
+      "underdog-v1",
+      "slayer-v1",
+      "alinebidal-final"
+    ],
+    "us": 0,
+    "winner": "alinebidal-final",
+    "rounds": 200,
+    "nw": [
+      9860.5,
+      0.0,
+      3888.0,
+      22398.0
+    ],
+    "first_set": {
+      "alinebidal-final": 28
+    },
+    "first_hotel": {
+      "alinebidal-final": 28
+    },
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": true,
+    "stats": {
+      "decisions": 2023,
+      "bought": 10,
+      "auction_menu": 22,
+      "auction_headroom_zero": 2,
+      "auction_pass": 2,
+      "complete_trade_only_cheap": 455,
+      "complete_trade_blocked_floor": 433,
+      "declined_trade": 184,
+      "jail_menu": 18,
+      "jail_sit": 18,
+      "mean_floor": 383.04003954522983,
+      "mean_live": 379.43104300543746,
+      "mean_next": 134.63173504695996,
+      "mean_cash_minus_floor": 1583.125556104795
+    },
+    "end": {
+      "round": 200,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "oracle-plus-v1",
+          "cash": 4573.0,
+          "nw": 9860.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 12,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 1238.0,
+          "nw": 3888.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 5,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 14798.0,
+          "nw": 22398.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 8,
+          "hotels": 2,
+          "deeds": 11,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": {
+      "round": 28,
+      "unowned": 2,
+      "players": [
+        {
+          "id": "oracle-plus-v1",
+          "cash": 325.0,
+          "nw": 5862.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 11,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 751.0,
+          "nw": 2451.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 1236.0,
+          "nw": 3786.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 826.0,
+          "nw": 4076.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_hotel": {
+      "round": 28,
+      "unowned": 2,
+      "players": [
+        {
+          "id": "oracle-plus-v1",
+          "cash": 525.0,
+          "nw": 6062.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 11,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 729.0,
+          "nw": 2429.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 1236.0,
+          "nw": 3786.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 598.0,
+          "nw": 4723.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 4,
+          "hotels": 1,
+          "deeds": 7,
+          "in_jail": false
+        }
+      ]
+    },
+    "plus_set": null,
+    "plus_broke": null
+  },
+  {
+    "index": 9,
+    "policies": [
+      "alinebidal-final",
+      "oracle-plus-v1",
+      "underdog-v1",
+      "slayer-v1"
+    ],
+    "us": 1,
+    "winner": "slayer-v1",
+    "rounds": 43,
+    "nw": [
+      0.0,
+      0.0,
+      0.0,
+      37891.0
+    ],
+    "first_set": {
+      "slayer-v1": 11,
+      "oracle-plus-v1": 21
+    },
+    "first_hotel": {
+      "slayer-v1": 12,
+      "oracle-plus-v1": 26
+    },
+    "plus_had_set": true,
+    "plus_had_hotel": true,
+    "plus_set_first": false,
+    "opp_set_before_plus": true,
+    "stats": {
+      "decisions": 382,
+      "bought": 4,
+      "auction_menu": 23,
+      "jail_menu": 10,
+      "jail_sit": 10,
+      "declined_trade": 42,
+      "buy_skipped_floor": 2,
+      "complete_trade_blocked_floor": 153,
+      "auction_headroom_zero": 1,
+      "auction_pass": 1,
+      "accepted_trade": 1,
+      "build_skipped_floor": 14,
+      "build_skipped_cash_below_floor": 14,
+      "built": 5,
+      "mean_floor": 402.22513089005236,
+      "mean_live": 396.63350785340316,
+      "mean_next": 214.44240837696336,
+      "mean_cash_minus_floor": 5.887434554973822
+    },
+    "end": {
+      "round": 43,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "alinebidal-final",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 891.0,
+          "nw": 37891.0,
+          "bankrupt": false,
+          "sets": [
+            "brown",
+            "lightblue",
+            "pink",
+            "orange",
+            "red",
+            "yellow",
+            "green",
+            "darkblue"
+          ],
+          "houses": 38,
+          "hotels": 9,
+          "deeds": 28,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": {
+      "round": 11,
+      "unowned": 8,
+      "players": [
+        {
+          "id": "alinebidal-final",
+          "cash": 530.0,
+          "nw": 4205.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 519.0,
+          "nw": 1294.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 3,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 1031.0,
+          "nw": 2531.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 3,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 657.0,
+          "nw": 5207.0,
+          "bankrupt": false,
+          "sets": [
+            "lightblue"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_hotel": {
+      "round": 12,
+      "unowned": 6,
+      "players": [
+        {
+          "id": "alinebidal-final",
+          "cash": 530.0,
+          "nw": 4205.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 319.0,
+          "nw": 1594.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 631.0,
+          "nw": 3131.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 407.0,
+          "nw": 5832.0,
+          "bankrupt": false,
+          "sets": [
+            "lightblue"
+          ],
+          "houses": 4,
+          "hotels": 1,
+          "deeds": 8,
+          "in_jail": false
+        }
+      ]
+    },
+    "plus_set": {
+      "round": 21,
+      "unowned": 2,
+      "players": [
+        {
+          "id": "alinebidal-final",
+          "cash": 204.0,
+          "nw": 3879.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 74.0,
+          "nw": 1649.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 391.0,
+          "nw": 3516.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 1879.0,
+          "nw": 9154.0,
+          "bankrupt": false,
+          "sets": [
+            "lightblue"
+          ],
+          "houses": 12,
+          "hotels": 3,
+          "deeds": 8,
+          "in_jail": false
+        }
+      ]
+    },
+    "plus_broke": {
+      "round": 32,
+      "unowned": 1,
+      "players": [
+        {
+          "id": "alinebidal-final",
+          "cash": 352.0,
+          "nw": 2214.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 2.0,
+          "nw": 2627.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 3784.0,
+          "nw": 13784.0,
+          "bankrupt": false,
+          "sets": [
+            "brown",
+            "lightblue",
+            "pink"
+          ],
+          "houses": 12,
+          "hotels": 3,
+          "deeds": 15,
+          "in_jail": false
+        }
+      ]
+    }
+  },
+  {
+    "index": 10,
+    "policies": [
+      "slayer-v1",
+      "alinebidal-final",
+      "oracle-plus-v1",
+      "underdog-v1"
+    ],
+    "us": 2,
+    "winner": "slayer-v1",
+    "rounds": 120,
+    "nw": [
+      54658.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "first_set": {
+      "slayer-v1": 10
+    },
+    "first_hotel": {
+      "slayer-v1": 11
+    },
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": true,
+    "stats": {
+      "decisions": 1386,
+      "bought": 8,
+      "auction_menu": 193,
+      "auction_headroom_zero": 3,
+      "auction_pass": 3,
+      "jail_menu": 22,
+      "jail_sit": 22,
+      "complete_trade_blocked_floor": 2786,
+      "complete_trade_only_cheap": 154,
+      "declined_trade": 112,
+      "buy_skipped_floor": 1,
+      "mean_floor": 365.02164502164504,
+      "mean_live": 363.984126984127,
+      "mean_next": 139.33044733044733,
+      "mean_cash_minus_floor": 123.47258297258297
+    },
+    "end": {
+      "round": 120,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "slayer-v1",
+          "cash": 4683.0,
+          "nw": 54658.0,
+          "bankrupt": false,
+          "sets": [
+            "brown",
+            "lightblue",
+            "pink",
+            "orange",
+            "red",
+            "yellow",
+            "green",
+            "darkblue"
+          ],
+          "houses": 56,
+          "hotels": 12,
+          "deeds": 28,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": {
+      "round": 10,
+      "unowned": 8,
+      "players": [
+        {
+          "id": "slayer-v1",
+          "cash": 486.0,
+          "nw": 4136.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 281.0,
+          "nw": 2031.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 309.0,
+          "nw": 3471.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 592.0,
+          "nw": 2892.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 3,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_hotel": {
+      "round": 11,
+      "unowned": 8,
+      "players": [
+        {
+          "id": "slayer-v1",
+          "cash": 244.0,
+          "nw": 4769.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 4,
+          "hotels": 1,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 281.0,
+          "nw": 2031.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 509.0,
+          "nw": 3671.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 784.0,
+          "nw": 3084.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 3,
+          "in_jail": false
+        }
+      ]
+    },
+    "plus_set": null,
+    "plus_broke": {
+      "round": 116,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "slayer-v1",
+          "cash": 9963.0,
+          "nw": 25075.5,
+          "bankrupt": false,
+          "sets": [
+            "brown",
+            "lightblue",
+            "pink",
+            "orange",
+            "green"
+          ],
+          "houses": 8,
+          "hotels": 2,
+          "deeds": 23,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 1591.0,
+          "nw": 4891.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 5,
+          "in_jail": false
+        }
+      ]
+    }
+  },
+  {
+    "index": 11,
+    "policies": [
+      "underdog-v1",
+      "slayer-v1",
+      "alinebidal-final",
+      "oracle-plus-v1"
+    ],
+    "us": 3,
+    "winner": "slayer-v1",
+    "rounds": 54,
+    "nw": [
+      0.0,
+      38643.0,
+      0.0,
+      0.0
+    ],
+    "first_set": {
+      "slayer-v1": 5,
+      "underdog-v1": 12
+    },
+    "first_hotel": {
+      "slayer-v1": 26,
+      "underdog-v1": 29
+    },
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": true,
+    "stats": {
+      "decisions": 498,
+      "bought": 5,
+      "declined_trade": 96,
+      "auction_menu": 23,
+      "auction_headroom_zero": 4,
+      "auction_pass": 4,
+      "complete_trade_blocked_floor": 297,
+      "complete_trade_only_cheap": 1,
+      "buy_skipped_floor": 1,
+      "mean_floor": 1052.9116465863453,
+      "mean_live": 1050.0240963855422,
+      "mean_next": 334.5160642570281,
+      "mean_cash_minus_floor": -464.59437751004015
+    },
+    "end": {
+      "round": 54,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 2568.0,
+          "nw": 38643.0,
+          "bankrupt": false,
+          "sets": [
+            "brown",
+            "lightblue",
+            "pink",
+            "orange",
+            "red",
+            "yellow",
+            "green",
+            "darkblue"
+          ],
+          "houses": 28,
+          "hotels": 7,
+          "deeds": 28,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": {
+      "round": 5,
+      "unowned": 14,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 875.0,
+          "nw": 1750.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 2,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 215.0,
+          "nw": 5365.0,
+          "bankrupt": false,
+          "sets": [
+            "darkblue"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 5,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 626.0,
+          "nw": 2726.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 569.0,
+          "nw": 1994.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 3,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_hotel": {
+      "round": 26,
+      "unowned": 2,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 933.0,
+          "nw": 4408.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 6,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 1189.0,
+          "nw": 10089.0,
+          "bankrupt": false,
+          "sets": [
+            "darkblue"
+          ],
+          "houses": 4,
+          "hotels": 1,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 48.0,
+          "nw": 1798.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 565.0,
+          "nw": 2590.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        }
+      ]
+    },
+    "plus_set": null,
+    "plus_broke": {
+      "round": 41,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 365.0,
+          "nw": 2652.5,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 6,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 2850.0,
+          "nw": 21612.5,
+          "bankrupt": false,
+          "sets": [
+            "lightblue",
+            "darkblue"
+          ],
+          "houses": 20,
+          "hotels": 5,
+          "deeds": 15,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 279.0,
+          "nw": 2154.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        }
+      ]
+    }
+  },
+  {
+    "index": 12,
+    "policies": [
+      "oracle-plus-v1",
+      "underdog-v1",
+      "slayer-v1",
+      "alinebidal-final"
+    ],
+    "us": 0,
+    "winner": "oracle-plus-v1",
+    "rounds": 200,
+    "nw": [
+      19442.0,
+      3039.0,
+      5157.0,
+      7876.0
+    ],
+    "first_set": {
+      "oracle-plus-v1": 13
+    },
+    "first_hotel": {
+      "oracle-plus-v1": 14
+    },
+    "plus_had_set": true,
+    "plus_had_hotel": true,
+    "plus_set_first": true,
+    "opp_set_before_plus": false,
+    "stats": {
+      "decisions": 2169,
+      "bought": 6,
+      "jail_menu": 45,
+      "jail_sit": 45,
+      "declined_trade": 18,
+      "auction_menu": 87,
+      "built": 10,
+      "complete_trade_only_cheap": 2,
+      "complete_trade_blocked_floor": 8,
+      "mean_floor": 50.0,
+      "mean_live": 48.8944213923467,
+      "mean_next": 36.91194098662978,
+      "mean_cash_minus_floor": 7027.045643153527
+    },
+    "end": {
+      "round": 200,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "oracle-plus-v1",
+          "cash": 14067.0,
+          "nw": 19442.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 8,
+          "hotels": 2,
+          "deeds": 10,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 1039.0,
+          "nw": 3039.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 2182.0,
+          "nw": 5157.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 3601.0,
+          "nw": 7876.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": null,
+    "first_opp_hotel": null,
+    "plus_set": {
+      "round": 13,
+      "unowned": 5,
+      "players": [
+        {
+          "id": "oracle-plus-v1",
+          "cash": 616.0,
+          "nw": 3616.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 1174.0,
+          "nw": 3174.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 386.0,
+          "nw": 2861.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 5,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 448.0,
+          "nw": 4273.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        }
+      ]
+    },
+    "plus_broke": null
+  },
+  {
+    "index": 13,
+    "policies": [
+      "alinebidal-final",
+      "oracle-plus-v1",
+      "underdog-v1",
+      "slayer-v1"
+    ],
+    "us": 1,
+    "winner": "alinebidal-final",
+    "rounds": 200,
+    "nw": [
+      10109.0,
+      10001.5,
+      9676.0,
+      7118.0
+    ],
+    "first_set": {},
+    "first_hotel": {},
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": false,
+    "stats": {
+      "decisions": 2683,
+      "bought": 8,
+      "auction_menu": 20,
+      "declined_trade": 796,
+      "complete_trade_blocked_floor": 4,
+      "complete_trade_only_cheap": 19,
+      "jail_menu": 18,
+      "jail_sit": 18,
+      "mean_floor": 50.0,
+      "mean_live": 49.524412970555346,
+      "mean_next": 39.323145732389115,
+      "mean_cash_minus_floor": 3482.8762579202385
+    },
+    "end": {
+      "round": 200,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "alinebidal-final",
+          "cash": 5784.0,
+          "nw": 10109.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 6739.0,
+          "nw": 10001.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 10,
+          "in_jail": true
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 7001.0,
+          "nw": 9676.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 4968.0,
+          "nw": 7118.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": null,
+    "first_opp_hotel": null,
+    "plus_set": null,
+    "plus_broke": null
+  },
+  {
+    "index": 14,
+    "policies": [
+      "slayer-v1",
+      "alinebidal-final",
+      "oracle-plus-v1",
+      "underdog-v1"
+    ],
+    "us": 2,
+    "winner": "underdog-v1",
+    "rounds": 78,
+    "nw": [
+      0.0,
+      0.0,
+      0.0,
+      47115.0
+    ],
+    "first_set": {
+      "underdog-v1": 16
+    },
+    "first_hotel": {
+      "underdog-v1": 46
+    },
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": true,
+    "stats": {
+      "decisions": 895,
+      "bought": 7,
+      "complete_trade_only_cheap": 142,
+      "complete_trade_blocked_floor": 1317,
+      "declined_trade": 267,
+      "auction_menu": 7,
+      "auction_headroom_zero": 1,
+      "auction_pass": 1,
+      "jail_menu": 16,
+      "jail_sit": 16,
+      "mean_floor": 756.8715083798883,
+      "mean_live": 756.2078212290503,
+      "mean_next": 279.9608938547486,
+      "mean_cash_minus_floor": -41.254748603351956
+    },
+    "end": {
+      "round": 78,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "slayer-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 2990.0,
+          "nw": 47115.0,
+          "bankrupt": false,
+          "sets": [
+            "brown",
+            "lightblue",
+            "pink",
+            "orange",
+            "red",
+            "yellow",
+            "green",
+            "darkblue"
+          ],
+          "houses": 44,
+          "hotels": 11,
+          "deeds": 28,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": {
+      "round": 16,
+      "unowned": 3,
+      "players": [
+        {
+          "id": "slayer-v1",
+          "cash": 922.0,
+          "nw": 6122.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 889.0,
+          "nw": 3089.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 5,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 617.0,
+          "nw": 4092.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 742.0,
+          "nw": 5742.0,
+          "bankrupt": false,
+          "sets": [
+            "green"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 5,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_hotel": {
+      "round": 46,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "slayer-v1",
+          "cash": 1125.0,
+          "nw": 6325.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 96.0,
+          "nw": 2946.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 583.0,
+          "nw": 3383.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 1867.0,
+          "nw": 15667.0,
+          "bankrupt": false,
+          "sets": [
+            "green"
+          ],
+          "houses": 12,
+          "hotels": 1,
+          "deeds": 6,
+          "in_jail": false
+        }
+      ]
+    },
+    "plus_set": null,
+    "plus_broke": {
+      "round": 71,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "slayer-v1",
+          "cash": 48.0,
+          "nw": 4623.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 5671.0,
+          "nw": 28233.5,
+          "bankrupt": false,
+          "sets": [
+            "brown",
+            "lightblue",
+            "orange",
+            "green"
+          ],
+          "houses": 12,
+          "hotels": 3,
+          "deeds": 20,
+          "in_jail": false
+        }
+      ]
+    }
+  },
+  {
+    "index": 15,
+    "policies": [
+      "underdog-v1",
+      "slayer-v1",
+      "alinebidal-final",
+      "oracle-plus-v1"
+    ],
+    "us": 3,
+    "winner": "underdog-v1",
+    "rounds": 69,
+    "nw": [
+      42144.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "first_set": {
+      "underdog-v1": 30
+    },
+    "first_hotel": {
+      "underdog-v1": 47
+    },
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": true,
+    "stats": {
+      "decisions": 733,
+      "bought": 3,
+      "auction_menu": 69,
+      "auction_headroom_zero": 4,
+      "auction_pass": 4,
+      "jail_menu": 25,
+      "jail_sit": 25,
+      "complete_trade_blocked_floor": 951,
+      "buy_skipped_floor": 1,
+      "declined_trade": 197,
+      "complete_trade_only_cheap": 29,
+      "mean_floor": 776.3301500682128,
+      "mean_live": 774.3819918144611,
+      "mean_next": 268.92496589358797,
+      "mean_cash_minus_floor": -359.3819918144611
+    },
+    "end": {
+      "round": 69,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 1169.0,
+          "nw": 42144.0,
+          "bankrupt": false,
+          "sets": [
+            "brown",
+            "lightblue",
+            "pink",
+            "orange",
+            "red",
+            "yellow",
+            "green",
+            "darkblue"
+          ],
+          "houses": 46,
+          "hotels": 7,
+          "deeds": 28,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": {
+      "round": 30,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 720.0,
+          "nw": 5270.0,
+          "bankrupt": false,
+          "sets": [
+            "darkblue"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 1145.0,
+          "nw": 5345.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 384.0,
+          "nw": 3759.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 52.0,
+          "nw": 2039.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_hotel": {
+      "round": 47,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 2246.0,
+          "nw": 12696.0,
+          "bankrupt": false,
+          "sets": [
+            "darkblue"
+          ],
+          "houses": 8,
+          "hotels": 1,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 53.0,
+          "nw": 3528.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 582.0,
+          "nw": 3957.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 742.0,
+          "nw": 2729.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": true
+        }
+      ]
+    },
+    "plus_set": null,
+    "plus_broke": {
+      "round": 63,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 3109.0,
+          "nw": 24934.0,
+          "bankrupt": false,
+          "sets": [
+            "brown",
+            "orange",
+            "red",
+            "darkblue"
+          ],
+          "houses": 16,
+          "hotels": 4,
+          "deeds": 20,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 678.0,
+          "nw": 4878.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        }
+      ]
+    }
+  },
+  {
+    "index": 16,
+    "policies": [
+      "oracle-plus-v1",
+      "underdog-v1",
+      "slayer-v1",
+      "alinebidal-final"
+    ],
+    "us": 0,
+    "winner": "slayer-v1",
+    "rounds": 67,
+    "nw": [
+      0.0,
+      0.0,
+      42311.0,
+      0.0
+    ],
+    "first_set": {
+      "alinebidal-final": 13,
+      "slayer-v1": 14
+    },
+    "first_hotel": {
+      "alinebidal-final": 15,
+      "slayer-v1": 31
+    },
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": true,
+    "stats": {
+      "decisions": 657,
+      "bought": 6,
+      "auction_menu": 144,
+      "auction_headroom_zero": 2,
+      "auction_pass": 2,
+      "declined_trade": 71,
+      "complete_trade_blocked_floor": 311,
+      "complete_trade_only_cheap": 40,
+      "jail_menu": 8,
+      "jail_sit": 8,
+      "mean_floor": 765.4033485540335,
+      "mean_live": 764.2374429223744,
+      "mean_next": 287.5144596651446,
+      "mean_cash_minus_floor": -78.9771689497717
+    },
+    "end": {
+      "round": 67,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 1436.0,
+          "nw": 42311.0,
+          "bankrupt": false,
+          "sets": [
+            "brown",
+            "lightblue",
+            "pink",
+            "orange",
+            "red",
+            "yellow",
+            "green",
+            "darkblue"
+          ],
+          "houses": 24,
+          "hotels": 5,
+          "deeds": 28,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": {
+      "round": 13,
+      "unowned": 6,
+      "players": [
+        {
+          "id": "oracle-plus-v1",
+          "cash": 600.0,
+          "nw": 2275.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 3,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 1189.0,
+          "nw": 2239.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 2,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 114.0,
+          "nw": 4564.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 367.0,
+          "nw": 4442.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 9,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_hotel": {
+      "round": 15,
+      "unowned": 6,
+      "players": [
+        {
+          "id": "oracle-plus-v1",
+          "cash": 524.0,
+          "nw": 2199.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 3,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 1105.0,
+          "nw": 2155.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 2,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 190.0,
+          "nw": 6690.0,
+          "bankrupt": false,
+          "sets": [
+            "green"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 201.0,
+          "nw": 5401.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 4,
+          "hotels": 1,
+          "deeds": 9,
+          "in_jail": false
+        }
+      ]
+    },
+    "plus_set": null,
+    "plus_broke": {
+      "round": 62,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 2345.0,
+          "nw": 25907.5,
+          "bankrupt": false,
+          "sets": [
+            "lightblue",
+            "yellow",
+            "green"
+          ],
+          "houses": 12,
+          "hotels": 3,
+          "deeds": 19,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 349.0,
+          "nw": 6424.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 8,
+          "hotels": 2,
+          "deeds": 9,
+          "in_jail": false
+        }
+      ]
+    }
+  },
+  {
+    "index": 17,
+    "policies": [
+      "alinebidal-final",
+      "oracle-plus-v1",
+      "underdog-v1",
+      "slayer-v1"
+    ],
+    "us": 1,
+    "winner": "slayer-v1",
+    "rounds": 200,
+    "nw": [
+      9583.0,
+      6824.0,
+      7375.0,
+      10650.0
+    ],
+    "first_set": {},
+    "first_hotel": {},
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": false,
+    "stats": {
+      "decisions": 2583,
+      "bought": 5,
+      "declined_trade": 706,
+      "auction_menu": 6,
+      "complete_trade_blocked_floor": 9,
+      "complete_trade_only_cheap": 12,
+      "jail_menu": 24,
+      "jail_sit": 24,
+      "mean_floor": 50.0,
+      "mean_live": 49.62020905923345,
+      "mean_next": 32.84475416182733,
+      "mean_cash_minus_floor": 2373.760743321719
+    },
+    "end": {
+      "round": 200,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "alinebidal-final",
+          "cash": 5758.0,
+          "nw": 9583.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 4299.0,
+          "nw": 6824.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 4950.0,
+          "nw": 7375.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 5,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 5925.0,
+          "nw": 10650.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 9,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": null,
+    "first_opp_hotel": null,
+    "plus_set": null,
+    "plus_broke": null
+  },
+  {
+    "index": 18,
+    "policies": [
+      "slayer-v1",
+      "alinebidal-final",
+      "oracle-plus-v1",
+      "underdog-v1"
+    ],
+    "us": 2,
+    "winner": "slayer-v1",
+    "rounds": 200,
+    "nw": [
+      13749.0,
+      6783.0,
+      6188.5,
+      7400.0
+    ],
+    "first_set": {},
+    "first_hotel": {},
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": false,
+    "stats": {
+      "decisions": 2442,
+      "bought": 5,
+      "declined_trade": 582,
+      "auction_menu": 34,
+      "auction_headroom_zero": 1,
+      "auction_pass": 1,
+      "complete_trade_only_cheap": 74,
+      "complete_trade_blocked_floor": 40,
+      "jail_menu": 18,
+      "jail_sit": 18,
+      "mean_floor": 94.67649467649467,
+      "mean_live": 94.04013104013104,
+      "mean_next": 77.51638001638001,
+      "mean_cash_minus_floor": 1800.7330057330057
+    },
+    "end": {
+      "round": 200,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "slayer-v1",
+          "cash": 9849.0,
+          "nw": 13749.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 4083.0,
+          "nw": 6783.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 5,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 3676.0,
+          "nw": 6188.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 9,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 4300.0,
+          "nw": 7400.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": null,
+    "first_opp_hotel": null,
+    "plus_set": null,
+    "plus_broke": null
+  },
+  {
+    "index": 19,
+    "policies": [
+      "underdog-v1",
+      "slayer-v1",
+      "alinebidal-final",
+      "oracle-plus-v1"
+    ],
+    "us": 3,
+    "winner": "alinebidal-final",
+    "rounds": 200,
+    "nw": [
+      8754.0,
+      9354.0,
+      11707.0,
+      5210.5
+    ],
+    "first_set": {},
+    "first_hotel": {},
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": false,
+    "stats": {
+      "decisions": 2814,
+      "bought": 8,
+      "declined_trade": 976,
+      "auction_menu": 11,
+      "complete_trade_blocked_floor": 9,
+      "complete_trade_only_cheap": 20,
+      "jail_menu": 46,
+      "jail_sit": 46,
+      "mean_floor": 50.0,
+      "mean_live": 49.63539445628998,
+      "mean_next": 41.511727078891255,
+      "mean_cash_minus_floor": 1625.0291400142146
+    },
+    "end": {
+      "round": 200,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 5704.0,
+          "nw": 8754.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 6104.0,
+          "nw": 9354.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 8357.0,
+          "nw": 11707.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 2673.0,
+          "nw": 5210.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 9,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": null,
+    "first_opp_hotel": null,
+    "plus_set": null,
+    "plus_broke": null
+  },
+  {
+    "index": 20,
+    "policies": [
+      "oracle-plus-v1",
+      "underdog-v1",
+      "slayer-v1",
+      "alinebidal-final"
+    ],
+    "us": 0,
+    "winner": "underdog-v1",
+    "rounds": 200,
+    "nw": [
+      5117.5,
+      13511.0,
+      6577.0,
+      7150.0
+    ],
+    "first_set": {},
+    "first_hotel": {},
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": false,
+    "stats": {
+      "decisions": 2210,
+      "bought": 10,
+      "declined_trade": 119,
+      "auction_menu": 8,
+      "auction_headroom_zero": 2,
+      "auction_pass": 2,
+      "complete_trade_blocked_floor": 84,
+      "complete_trade_only_cheap": 196,
+      "jail_menu": 12,
+      "jail_sit": 12,
+      "mean_floor": 89.45701357466064,
+      "mean_live": 88.92986425339366,
+      "mean_next": 76.07918552036199,
+      "mean_cash_minus_floor": 1265.131674208145
+    },
+    "end": {
+      "round": 200,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "oracle-plus-v1",
+          "cash": 2330.0,
+          "nw": 5117.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 10,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 9861.0,
+          "nw": 13511.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 4702.0,
+          "nw": 6577.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 5,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 4025.0,
+          "nw": 7150.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": null,
+    "first_opp_hotel": null,
+    "plus_set": null,
+    "plus_broke": null
+  },
+  {
+    "index": 21,
+    "policies": [
+      "alinebidal-final",
+      "oracle-plus-v1",
+      "underdog-v1",
+      "slayer-v1"
+    ],
+    "us": 1,
+    "winner": "slayer-v1",
+    "rounds": 200,
+    "nw": [
+      7218.0,
+      9206.0,
+      7284.0,
+      10136.0
+    ],
+    "first_set": {},
+    "first_hotel": {},
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": false,
+    "stats": {
+      "decisions": 2468,
+      "bought": 8,
+      "auction_menu": 52,
+      "auction_headroom_zero": 2,
+      "auction_pass": 2,
+      "declined_trade": 950,
+      "jail_menu": 34,
+      "jail_sit": 34,
+      "mean_floor": 50.0,
+      "mean_live": 49.28849270664506,
+      "mean_next": 44.260534846029174,
+      "mean_cash_minus_floor": 2457.364262560778
+    },
+    "end": {
+      "round": 200,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "alinebidal-final",
+          "cash": 4468.0,
+          "nw": 7218.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 4481.0,
+          "nw": 9206.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 9,
+          "in_jail": true
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 4659.0,
+          "nw": 7284.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 4,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 6011.0,
+          "nw": 10136.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 9,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": null,
+    "first_opp_hotel": null,
+    "plus_set": null,
+    "plus_broke": null
+  },
+  {
+    "index": 22,
+    "policies": [
+      "slayer-v1",
+      "alinebidal-final",
+      "oracle-plus-v1",
+      "underdog-v1"
+    ],
+    "us": 2,
+    "winner": "underdog-v1",
+    "rounds": 200,
+    "nw": [
+      8685.0,
+      6999.0,
+      2293.5,
+      19280.0
+    ],
+    "first_set": {
+      "underdog-v1": 9
+    },
+    "first_hotel": {
+      "underdog-v1": 9
+    },
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": true,
+    "stats": {
+      "decisions": 2190,
+      "bought": 6,
+      "jail_menu": 39,
+      "jail_sit": 39,
+      "complete_trade_only_cheap": 559,
+      "complete_trade_blocked_floor": 1487,
+      "auction_menu": 132,
+      "auction_headroom_zero": 3,
+      "auction_pass": 3,
+      "mean_floor": 431.36986301369865,
+      "mean_live": 430.3205479452055,
+      "mean_next": 138.8365296803653,
+      "mean_cash_minus_floor": 363.0159817351598
+    },
+    "end": {
+      "round": 200,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "slayer-v1",
+          "cash": 4210.0,
+          "nw": 8685.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 1874.0,
+          "nw": 6999.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 10,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 331.0,
+          "nw": 2293.5,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": true
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 16280.0,
+          "nw": 19280.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 8,
+          "hotels": 2,
+          "deeds": 3,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": {
+      "round": 9,
+      "unowned": 9,
+      "players": [
+        {
+          "id": "slayer-v1",
+          "cash": 450.0,
+          "nw": 4425.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 7,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 904.0,
+          "nw": 3329.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 5,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 604.0,
+          "nw": 3229.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 5,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 1412.0,
+          "nw": 2012.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 2,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_hotel": {
+      "round": 9,
+      "unowned": 8,
+      "players": [
+        {
+          "id": "slayer-v1",
+          "cash": 250.0,
+          "nw": 4725.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": true
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 904.0,
+          "nw": 3329.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 5,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 604.0,
+          "nw": 3229.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 5,
+          "in_jail": false
+        },
+        {
+          "id": "underdog-v1",
+          "cash": 962.0,
+          "nw": 3037.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 8,
+          "hotels": 1,
+          "deeds": 2,
+          "in_jail": false
+        }
+      ]
+    },
+    "plus_set": null,
+    "plus_broke": null
+  },
+  {
+    "index": 23,
+    "policies": [
+      "underdog-v1",
+      "slayer-v1",
+      "alinebidal-final",
+      "oracle-plus-v1"
+    ],
+    "us": 3,
+    "winner": "underdog-v1",
+    "rounds": 144,
+    "nw": [
+      54526.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "first_set": {
+      "alinebidal-final": 28,
+      "underdog-v1": 55
+    },
+    "first_hotel": {
+      "alinebidal-final": 28,
+      "underdog-v1": 115
+    },
+    "plus_had_set": false,
+    "plus_had_hotel": false,
+    "plus_set_first": false,
+    "opp_set_before_plus": true,
+    "stats": {
+      "decisions": 714,
+      "bought": 8,
+      "auction_menu": 45,
+      "buy_skipped_floor": 2,
+      "auction_headroom_zero": 3,
+      "auction_pass": 3,
+      "complete_trade_blocked_floor": 1672,
+      "complete_trade_only_cheap": 16,
+      "jail_menu": 14,
+      "jail_sit": 14,
+      "declined_trade": 102,
+      "mean_floor": 259.5238095238095,
+      "mean_live": 256.1106442577031,
+      "mean_next": 112.69327731092437,
+      "mean_cash_minus_floor": 151.3235294117647
+    },
+    "end": {
+      "round": 144,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 5726.0,
+          "nw": 54526.0,
+          "bankrupt": false,
+          "sets": [
+            "brown",
+            "lightblue",
+            "pink",
+            "orange",
+            "red",
+            "yellow",
+            "green",
+            "darkblue"
+          ],
+          "houses": 32,
+          "hotels": 8,
+          "deeds": 28,
+          "in_jail": true
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_set": {
+      "round": 28,
+      "unowned": 1,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 1173.0,
+          "nw": 2423.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 2,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 259.0,
+          "nw": 4384.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 1066.0,
+          "nw": 3766.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 509.0,
+          "nw": 3859.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 11,
+          "in_jail": false
+        }
+      ]
+    },
+    "first_opp_hotel": {
+      "round": 28,
+      "unowned": 1,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 1173.0,
+          "nw": 2423.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 2,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 259.0,
+          "nw": 4384.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 816.0,
+          "nw": 4391.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 4,
+          "hotels": 1,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 509.0,
+          "nw": 3859.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 11,
+          "in_jail": false
+        }
+      ]
+    },
+    "plus_set": null,
+    "plus_broke": {
+      "round": 55,
+      "unowned": 0,
+      "players": [
+        {
+          "id": "underdog-v1",
+          "cash": 914.0,
+          "nw": 6764.0,
+          "bankrupt": false,
+          "sets": [
+            "darkblue"
+          ],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 14,
+          "in_jail": false
+        },
+        {
+          "id": "slayer-v1",
+          "cash": 1020.0,
+          "nw": 5145.0,
+          "bankrupt": false,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 8,
+          "in_jail": false
+        },
+        {
+          "id": "alinebidal-final",
+          "cash": 3823.0,
+          "nw": 8273.0,
+          "bankrupt": false,
+          "sets": [
+            "brown"
+          ],
+          "houses": 8,
+          "hotels": 2,
+          "deeds": 6,
+          "in_jail": false
+        },
+        {
+          "id": "oracle-plus-v1",
+          "cash": 0.0,
+          "nw": 0.0,
+          "bankrupt": true,
+          "sets": [],
+          "houses": 0,
+          "hotels": 0,
+          "deeds": 0,
+          "in_jail": false
+        }
+      ]
+    }
+  }
+]

@@ -57,6 +57,7 @@ class GameResult:
     crashes: int = 0
     search_latencies: list[float] = field(default_factory=list)
     error: str | None = None
+    final_net_worth: tuple[float, ...] | None = None
 
 
 @dataclass(frozen=True, slots=True)

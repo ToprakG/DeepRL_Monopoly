@@ -1,0 +1,81 @@
+
+============================================================
+DIAG 3: leaf values on hand-picked states
+============================================================
+
+[3a] Good buy available (Mediterranean Avenue)
+  base V0=0.2420  after_BUY V0=0.2420  after_SKIP V0=0.2350
+  prefers BUY? True  (delta=+0.0070)
+  vectors base=[0.242, 0.2475, 0.2449, 0.2656] buy=[0.242, 0.2475, 0.2449, 0.2656] skip=[0.235, 0.252, 0.2518  game 7/20 winner=asu-value-v1 rounds=55
+  game 8/20 winner=asu-value-v1 rounds=51
+  game 9/20 winner=asu-value-v1 rounds=53
+  game 10/20 winner=fixed-b rounds=200
+  game 11/20 winner=fixed-b rounds=200
+  game 12/20 winner=fixed-b rounds=21
+  game 13/20 winner=greedy-rollout rounds=53
+  game 14/20 winner=asu-value-v1 rounds=41
+  game 15/20 winner=asu-value-v1 rounds=47
+  game 16/20 winner=asu-value-v1 rounds=40
+  game 17/20 winner=asu-value-v1 rounds=108
+  game 18/20 winner=fixed-b rounds=73
+  game 19/20 winner=asu-value-v1 rounds=36
+  game 20/20 winner=fixed-b rounds=200
+
+WIN RATES:
+  asu-value-v1: 12/20 (0.600) wilson=[0.387, 0.781]
+  fixed-a: 0/20 (0.000) wilson=[0.0, 0.161]
+  fixed-b: 7/20 (0.350) wilson=[0.181, 0.567]
+  greedy-rollout: 1/20 (0.050) wilson=[0.009, 0.236]
+MARGIN greedy-ASU: mean=-23695.8 ± SE 5231.7 richer=2/20
+ACTION COUNTS (all greedy seats): {'auction_pass': 213, 'end_turn': 5962, 'roll': 1480, 'buy': 125, 'accept_trade': 725, 'other': 281, 'decline_trade': 66, 'build': 151}
+
+============================================================
+DIAG 2: search visit discrimination at N=200
+============================================================
+
+[seed=7 round=0] actor=1 legal=3 sims=200 chosen=12
+  root_value=[np.float64(0.2685), np.float64(0.2394), np.float64(0.2464), np.float64(0.2457)]
+  action=   12 visits=  70 (35.0%)  mortgage(sq=6)
+  action=  156 visits=  66 (33.0%)  sell_prop(sq=6)
+  action=    1 visits=  64 (32.0%)  END_TURN
+  entropy=1.098 / max=1.099 ratio=0.999 (1.0=uniform)
+
+[seed=11 round=0] actor=0 legal=3 sims=200 chosen=14
+  root_value=[np.float64(0.2418), np.float64(0.2723), np.float64(0.2493), np.float64(0.2366)]
+  action=   14 visits=  71 (35.5%)  mortgage(sq=9)
+  action=  158 visits=  66 (33.0%)  sell_prop(sq=9)
+  action=    1 visits=  63 (31.5%)  END_TURN
+  entropy=1.097 / max=1.099 ratio=0.999 (1.0=uniform)
+
+[seed=19 round=0] actor=2 legal=3 sims=200 chosen=13
+  root_value=[np.float64(0.2562), np.float64(0.2685), np.float64(0.2359), np.float64(0.2394)]
+  action=   13 visits=  69 (34.5%)  mortgage(sq=8)
+  action=  157 visits=  66 (33.0%)  sell_prop(sq=8)
+  action=    1 visits=  65 (32.5%)  END_TURN
+  entropy=1.098 / max=1.099 ratio=1.000 (1.0=uniform)
+
+============================================================
+DIAG 3: leaf values on hand-picked states
+============================================================
+
+[3a] Good buy available (Mediterranean Avenue)
+  base V0=0.2420  after_BUY V0=0.2420  after_SKIP V0=0.2350
+  prefers BUY? True  (delta=+0.0070)
+  vectors base=[0.242, 0.2475, 0.2449, 0.2656] buy=[0.242, 0.2475, 0.2449, 0.2656] skip=[0.235, 0.252, 0.2518, 0.2612]
+
+[3b] Bad trade offered (give monopoly deed for $1)
+  ACCEPT V0=0.1692  DECLINE V0=0.4291
+  prefers DECLINE? True  (delta=+0.2599)
+  immediate NW after ACCEPT=[951.0, 2149.0, 1500.0, 1500.0] DECLINE=[1400.0, 2000.0, 1500.0, 1500.0]
+  greedy_rollout_action chooses ACCEPT (action=7)
+
+[3c] Build available on light-blue monopoly
+  legal builds=[67, 68, 69] (n=3)
+  base V0=0.9555  after_BUILD V0=0.9548  prefers_build_vs_base? False
+  greedy chooses action=67 is_build=True
+
+[3d] Static margin sign: rich seat should dominate softmax
+  cash=[5000, 100, 100, 100] V=[0.9781, 0.0073, 0.0073, 0.0073] V0_largest? True
+
+Wrote artifacts_scratch/oracle_diagnose.json
+ch/oracle_diagnose.json

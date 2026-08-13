@@ -234,3 +234,42 @@ def available_baselines(
     if cfr_path.exists():
         baselines["cfr_v2"] = CFRAdapter(cfr_path)
     return baselines
+
+
+class CompetitorAdapter:
+    """Bind a cloned competitor policy to the arena ``choose_action`` contract."""
+
+    def __init__(self, policy_id: str):
+        from competitors.factory import COMPETITOR_IDS
+
+        if policy_id not in COMPETITOR_IDS:
+            raise ValueError(f"Unknown competitor policy {policy_id!r}")
+        self.policy_id = policy_id
+        self.name = policy_id
+        self._agents: dict[int, object] = {}
+        self.compatibility_fallbacks = 0
+
+    def choose_action(self, game, player_id: int, decision_seed: int) -> ActionDecision:
+        from competitors.factory import build_competitor
+
+        started = time.perf_counter()
+        env = unwrap(game)
+        agent = self._agents.setdefault(player_id, build_competitor(self.policy_id, player_id))
+        outer = random.getstate()
+        try:
+            random.seed(decision_seed)
+            action = int(agent.choose_action(env))
+        finally:
+            random.setstate(outer)
+        legal = tuple(env.get_allowed_actions(player_id))
+        if action not in legal:
+            self.compatibility_fallbacks += 1
+            action = (
+                int(ActionType.END_TURN)
+                if int(ActionType.END_TURN) in legal
+                else legal[0]
+            )
+            return ActionDecision(
+                action, time.perf_counter() - started, fallback=True
+            )
+        return ActionDecision(action, time.perf_counter() - started)

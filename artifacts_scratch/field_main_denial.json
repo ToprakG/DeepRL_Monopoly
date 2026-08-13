@@ -1,0 +1,173 @@
+{
+  "completed_games": 48,
+  "disclaimer": "These are ppo-plus-v2 simulator results for ASU-inspired reconstructions; they do not reproduce or estimate either cited paper's reported win rates.",
+  "frozen_spec_hash": "9ab1907e0de1af4b253ce36ffa107c4fdb5e2b913858ef87c362423e61a6fd74",
+  "game_timeout_s": null,
+  "games": 48,
+  "lineup": [
+    "oracle-plus-v1",
+    "alinebidal-final",
+    "slayer-v1",
+    "inncenta-heuristic"
+  ],
+  "live": false,
+  "oracle_config": {
+    "auction": true,
+    "c_puct": 1.5,
+    "completing_trade": true,
+    "deadline_s": null,
+    "denial": true,
+    "denial_weight": 1.0,
+    "early_stop_min_sims": 16,
+    "early_stop_visit_lead": null,
+    "inncenta_trade": true,
+    "leaf": "asu",
+    "leaf_checkpoint": null,
+    "margin_temperature": 2000.0,
+    "max_depth": 64,
+    "max_width": 16,
+    "networth_mix": 0.0,
+    "one_ply": true,
+    "prior_peak": 0.55,
+    "rollout_horizon": 30,
+    "rollouts_per_leaf": 2,
+    "simulations": 32,
+    "solvency": false
+  },
+  "oracle_focus": {
+    "games": 48,
+    "wilson_95": [
+      0.13307826266911232,
+      0.3653926409000346
+    ],
+    "win_rate": 0.22916666666666666,
+    "wins": 11
+  },
+  "oracle_vs_field": {
+    "opponents": {
+      "alinebidal-final": {
+        "games": 48,
+        "net_worth_margin": {
+          "beats_asu_on_margin": false,
+          "beats_other_on_margin": false,
+          "mean": -3341.96875,
+          "mean_minus_se": -6970.657932311931,
+          "mean_plus_se": 286.72043231193084,
+          "n": 48,
+          "oracle_richer": 14,
+          "oracle_richer_rate": 0.2916666666666667,
+          "se": 3628.689182311931,
+          "std": 25140.296114559314
+        },
+        "oracle_wilson_lower_beats": false,
+        "rate_gap": -0.08333333333333334,
+        "wilson_95": [
+          0.19945683446587817,
+          0.4533307141589159
+        ],
+        "win_rate": 0.3125,
+        "wins": 15
+      },
+      "inncenta-heuristic": {
+        "games": 48,
+        "net_worth_margin": {
+          "beats_asu_on_margin": true,
+          "beats_other_on_margin": true,
+          "mean": 3856.5833333333335,
+          "mean_minus_se": 1081.2786409634045,
+          "mean_plus_se": 6631.888025703262,
+          "n": 48,
+          "oracle_richer": 15,
+          "oracle_richer_rate": 0.3125,
+          "se": 2775.304692369929,
+          "std": 19227.874934676118
+        },
+        "oracle_wilson_lower_beats": true,
+        "rate_gap": 0.12499999999999999,
+        "wilson_95": [
+          0.045321719041813105,
+          0.2216742169438633
+        ],
+        "win_rate": 0.10416666666666667,
+        "wins": 5
+      },
+      "slayer-v1": {
+        "games": 48,
+        "net_worth_margin": {
+          "beats_asu_on_margin": false,
+          "beats_other_on_margin": false,
+          "mean": -4816.84375,
+          "mean_minus_se": -8716.794699584601,
+          "mean_plus_se": -916.8928004153981,
+          "n": 48,
+          "oracle_richer": 12,
+          "oracle_richer_rate": 0.25,
+          "se": 3899.950949584602,
+          "std": 27019.652766828076
+        },
+        "oracle_wilson_lower_beats": false,
+        "rate_gap": -0.12500000000000003,
+        "wilson_95": [
+          0.23433644125604858,
+          0.4956094298965691
+        ],
+        "win_rate": 0.3541666666666667,
+        "wins": 17
+      }
+    },
+    "oracle_id": "oracle-plus-v1",
+    "oracle_wilson_95": [
+      0.13307826266911232,
+      0.3653926409000346
+    ],
+    "oracle_win_rate": 0.22916666666666666
+  },
+  "ruleset": "ppo-plus-v2",
+  "seed": 8300000,
+  "timeouts": 0,
+  "truncations": 0,
+  "turn_deadline_s": null,
+  "win_rates": {
+    "alinebidal-final": {
+      "games": 48,
+      "wilson_95": [
+        0.19945683446587817,
+        0.4533307141589159
+      ],
+      "win_rate": 0.3125,
+      "win_rate_percent": 31.25,
+      "wins": 15
+    },
+    "inncenta-heuristic": {
+      "games": 48,
+      "wilson_95": [
+        0.045321719041813105,
+        0.2216742169438633
+      ],
+      "win_rate": 0.10416666666666667,
+      "win_rate_percent": 10.416666666666668,
+      "wins": 5
+    },
+    "oracle-plus-v1": {
+      "games": 48,
+      "wilson_95": [
+        0.13307826266911232,
+        0.3653926409000346
+      ],
+      "win_rate": 0.22916666666666666,
+      "win_rate_percent": 22.916666666666664,
+      "wins": 11
+    },
+    "slayer-v1": {
+      "games": 48,
+      "wilson_95": [
+        0.23433644125604858,
+        0.4956094298965691
+      ],
+      "win_rate": 0.3541666666666667,
+      "win_rate_percent": 35.41666666666667,
+      "wins": 17
+    }
+  },
+  "workers": 6
+}

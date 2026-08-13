@@ -1,0 +1,124 @@
+{
+  "binary_action_ids": {
+    "ACCEPT_TRADE": 7,
+    "BUY_PROPERTY": 3,
+    "DECLINE_TRADE": 8,
+    "END_TURN": 1
+  },
+  "checkpoint_mix": {
+    "ACCEPT_TRADE": 0.031074992631268686,
+    "BUY_PROPERTY": 0.041222788327929596,
+    "DECLINE_TRADE": 0.6084466714387974,
+    "END_TURN": 0.12994231336056256,
+    "auction_*": 0.018527095877721167,
+    "improve_*": 0.014905890774348394
+  },
+  "family_fraction": {
+    "ACCEPT_TRADE": 0.031074992631268686,
+    "BUY_PROPERTY": 0.041222788327929596,
+    "DECLINE_TRADE": 0.6084466714387974,
+    "END_TURN": 0.12994231336056256,
+    "ROLL_DICE": 0.0037475262116299633,
+    "auction": 0.006863446881973978,
+    "auction_bid": 0.01166364899574719,
+    "buy_trade": 0.08674049433660365,
+    "exch_trade": 0.061013095288222664,
+    "improve_hotel": 0.0029474925260010946,
+    "improve_house": 0.0119583982483473,
+    "mortgage": 0.003368562886858394,
+    "sell_hotel": 0.0001684281443429197,
+    "sell_house": 0.00042107036085729923,
+    "unmortgage": 0.00042107036085729923
+  },
+  "finite_outcomes": true,
+  "finite_states": true,
+  "finite_values": true,
+  "gates": {
+    "all_pass": true,
+    "decline_present": true,
+    "has_buy_build_trade_auction_mass": true,
+    "not_pathological_end_turn": true,
+    "schema_matches_expert_core": true,
+    "soft_coverage_ok": true
+  },
+  "illegal_selected_actions": 0,
+  "inventory": [
+    {
+      "n_labels": 3076,
+      "path": "labels_seed20000_20466.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/new25k_shards/labels_seed20000_20466.jsonl",
+        "max_width": 16,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 3076
+      }
+    },
+    {
+      "n_labels": 3588,
+      "path": "labels_seed20467_20933.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/new25k_shards/labels_seed20467_20933.jsonl",
+        "max_width": 16,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 3588
+      }
+    },
+    {
+      "n_labels": 17085,
+      "path": "labels_seed22000_22399.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/new25k_shards/labels_seed22000_22399.jsonl",
+        "max_width": 16,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 17085
+      }
+    }
+  ],
+  "n_labels": 23749,
+  "n_shards": 3,
+  "offsets": {
+    "auction": 2953,
+    "binary": 0,
+    "buy_trade": 181,
+    "exch_trade": 685,
+    "improve_hotel": 87,
+    "improve_house": 65,
+    "mortgage": 9,
+    "sell_hotel": 131,
+    "sell_house": 109,
+    "sell_prop": 153,
+    "sell_trade": 433,
+    "unmortgage": 37
+  },
+  "outcome_row_sum": {
+    "max": 1.0,
+    "mean": 1.0,
+    "min": 1.0
+  },
+  "outputs": {
+    "asu_compat": "artifacts_scratch/new25k_merged/labels_new25k_asu_compat.npz",
+    "merged": "artifacts_scratch/new25k_merged/labels_new25k_merged.npz"
+  },
+  "ruleset": "ppo-plus-v2",
+  "schema_ok": true,
+  "soft_policy": {
+    "mode_vs_selected_mismatch": 0,
+    "one_hot_rows": 0,
+    "soft_coverage": 1.0,
+    "soft_rows": 23749
+  },
+  "value_row_sum": {
+    "max": 1.0000000521540642,
+    "mean": 1.0000000001603888,
+    "min": 0.9999999552965164
+  },
+  "warnings": {
+    "accept_among_trade_decisions": 0.048590992889123,
+    "accept_trade_heavy": false,
+    "note": "Coverage labeling records all incoming accept/decline once per round plus a routine subsample. Soft visit distributions are required (keep paired .jsonl / refuse one-hot-only shards).",
+    "one_hot_rows": 0
+  }
+}

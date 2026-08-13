@@ -1,0 +1,39 @@
+[23:21:43] packed /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz (4489481 bytes)
+[23:21:43] $ /Users/toprakgundogdu/.local/bin/colab new -s ora0 --high-mem
+[colab] Creating session 'ora0'...
+[colab] Session READY.
+[23:22:01] $ /Users/toprakgundogdu/.local/bin/colab new -s ora1 --high-mem
+[colab] Creating session 'ora1'...
+[colab] Session READY.
+[23:22:21] launch ora0 seed=10000 games=705 end=10704
+[23:22:21] $ /Users/toprakgundogdu/.local/bin/colab upload -s ora0 /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz /content/oracle_hybrid_src.tgz
+[colab] Uploaded '/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz' to '/content/oracle_hybrid_src.tgz'
+[23:22:30] $ /Users/toprakgundogdu/.local/bin/colab upload -s ora0 /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10000_10704.ckpt.tgz /content/labels_seed10000_10704.ckpt.tgz
+[colab] Uploaded '/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10000_10704.ckpt.tgz' to '/content/labels_seed10000_10704.ckpt.tgz'
+[23:22:37] ora0: uploaded resume ckpt (428050 bytes)
+[23:22:37] ora0: skipping CLI drivemount (bootstrap will try google.colab.drive)
+[23:22:37] $ /Users/toprakgundogdu/.local/bin/colab exec -s ora0 --timeout 300
+HOST cpu=8 ram_gib=51.0
+RESUME_EXTRACTED /content/labels_seed10000_10704.ckpt.tgz
+COLAB_DRIVE_MOUNT_FAIL ValueError: mount failed
+STARTED pid=3255 workers=7 seed=10000 games=705 out=/content/labels_seed10000_10704.json ckpt=/content/labels_seed10000_10704.ckpt drive_ok=False
+[23:24:50] launched ora0
+[23:24:50] launch ora1 seed=10705 games=705 end=11409
+[23:24:50] $ /Users/toprakgundogdu/.local/bin/colab upload -s ora1 /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz /content/oracle_hybrid_src.tgz
+[colab] Uploaded '/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz' to '/content/oracle_hybrid_src.tgz'
+[23:24:59] $ /Users/toprakgundogdu/.local/bin/colab upload -s ora1 /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10705_11409.ckpt.tgz /content/labels_seed10705_11409.ckpt.tgz
+[colab] Uploaded '/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/labels_seed10705_11409.ckpt.tgz' to '/content/labels_seed10705_11409.ckpt.tgz'
+[23:25:02] ora1: uploaded resume ckpt (125679 bytes)
+[23:25:02] ora1: skipping CLI drivemount (bootstrap will try google.colab.drive)
+[23:25:02] $ /Users/toprakgundogdu/.local/bin/colab exec -s ora1 --timeout 300
+HOST cpu=8 ram_gib=51.0
+RESUME_EXTRACTED /content/labels_seed10705_11409.ckpt.tgz
+COLAB_DRIVE_MOUNT_FAIL ValueError: mount failed
+STARTED pid=4012 workers=7 seed=10705 games=705 out=/content/labels_seed10705_11409.json ckpt=/content/labels_seed10705_11409.ckpt drive_ok=False
+[23:27:11] launched ora1
+[23:27:11] all Colab shards started; probing
+[23:27:25] ora0: pid=3255 alive=True local_npz=0 drive_npz=0 meta='pid=3255 | workers=7 | seed=10000 | games=705 | out=/content/labels_seed10000_10704.json | ckpt=/content/labels_seed10000_10704.ckpt | drive_ok=False |' last='resume: skipping 125 completed seeds from /content/labels_seed10000_10704.ckpt'
+[23:27:29] ora1: pid=4012 alive=True local_npz=0 drive_npz=0 meta='pid=4012 | workers=7 | seed=10705 | games=705 | out=/content/labels_seed10705_11409.json | ckpt=/content/labels_seed10705_11409.ckpt | drive_ok=False |' last='resume: skipping 50 completed seeds from /content/labels_seed10705_11409.ckpt'
+[23:27:29] Drive folder (if mounted): /content/drive/MyDrive/oracle_hybrid_labels/labels_seed{start}_{end}.npz
+[23:27:43] ora0: pid=3255 alive=True local_npz=0 drive_npz=0 meta='pid=3255 | workers=7 | seed=10000 | games=705 | out=/content/labels_seed10000_10704.json | ckpt=/content/labels_seed10000_10704.ckpt | drive_ok=False |' last='resume: skipping 125 completed seeds from /content/labels_seed10000_10704.ckpt'
+[23:27:56] ora1: pid=4012 alive=True local_npz=0 drive_npz=0 meta='pid=4012 | workers=7 | seed=10705 | games=705 | out=/content/labels_seed10705_11409.json | ckpt=/content/labels_seed10705_11409.ckpt | drive_ok=False |' last='resume: skipping 50 completed seeds from /content/labels_seed10705_11409.ckpt'

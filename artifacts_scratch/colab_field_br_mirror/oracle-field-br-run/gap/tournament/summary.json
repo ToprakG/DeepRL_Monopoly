@@ -1,0 +1,95 @@
+{
+  "bankruptcies": 25,
+  "completed": 40,
+  "crashes": 0,
+  "games_scheduled": 40,
+  "learner_win_rate": 0.125,
+  "learner_wins": 5,
+  "opponents": {
+    "alinebidal-final": {
+      "games": 40,
+      "net_worth_margin_mean": -3700.275,
+      "net_worth_margin_se": 2199.384430193786,
+      "rate_gap": -0.07500000000000001,
+      "wilson_95": [
+        0.10499989725437703,
+        0.34757306346399497
+      ],
+      "win_rate": 0.2,
+      "wins": 8
+    },
+    "inncenta-heuristic": {
+      "games": 40,
+      "net_worth_margin_mean": -7239.8,
+      "net_worth_margin_se": 3259.11381855677,
+      "rate_gap": -0.125,
+      "wilson_95": [
+        0.14187118639096302,
+        0.40193961420768026
+      ],
+      "win_rate": 0.25,
+      "wins": 10
+    },
+    "slayer-v1": {
+      "games": 40,
+      "net_worth_margin_mean": -11671.6125,
+      "net_worth_margin_se": 3037.8753383425883,
+      "rate_gap": -0.3,
+      "wilson_95": [
+        0.28509392559950375,
+        0.5780493145800892
+      ],
+      "win_rate": 0.425,
+      "wins": 17
+    }
+  },
+  "strong_opponents": {
+    "alinebidal-final": {
+      "games": 40,
+      "net_worth_margin_mean": -3700.275,
+      "net_worth_margin_se": 2199.384430193786,
+      "rate_gap": -0.07500000000000001,
+      "wilson_95": [
+        0.10499989725437703,
+        0.34757306346399497
+      ],
+      "win_rate": 0.2,
+      "wins": 8
+    },
+    "inncenta-heuristic": {
+      "games": 40,
+      "net_worth_margin_mean": -7239.8,
+      "net_worth_margin_se": 3259.11381855677,
+      "rate_gap": -0.125,
+      "wilson_95": [
+        0.14187118639096302,
+        0.40193961420768026
+      ],
+      "win_rate": 0.25,
+      "wins": 10
+    },
+    "slayer-v1": {
+      "games": 40,
+      "net_worth_margin_mean": -11671.6125,
+      "net_worth_margin_se": 3037.8753383425883,
+      "rate_gap": -0.3,
+      "wilson_95": [
+        0.28509392559950375,
+        0.5780493145800892
+      ],
+      "win_rate": 0.425,
+      "wins": 17
+    }
+  },
+  "wilson_95": [
+    0.05459500250945403,
+    0.261121198388511
+  ],
+  "wilson_lower": 0.05459500250945403,
+  "winner_counts": {
+    "alinebidal-final": 8,
+    "clone": 5,
+    "inncenta-heuristic": 10,
+    "slayer-v1": 17
+  }
+}

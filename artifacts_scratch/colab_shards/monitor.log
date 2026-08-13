@@ -1,0 +1,37 @@
+[10:57:07] monitor start
+[10:57:11] asu0: pid=12024 alive=True out_bytes=0 last=''
+[10:57:18] asu1: pid=14033 alive=True out_bytes=0 last=''
+[10:57:35] asu2: pid=13838 alive=True out_bytes=0 last=''
+[10:57:35] local_json=0/3
+[10:59:39] asu0: pid=12024 alive=True out_bytes=0 last=''
+[10:59:44] asu1: pid=14033 alive=True out_bytes=0 last=''
+[10:59:56] asu2: pid=13838 alive=True out_bytes=0 last=''
+[10:59:56] local_json=0/3
+[11:02:12] asu0: pid=12024 alive=True out_bytes=0 last=''
+[11:02:27] asu1: pid=14033 alive=True out_bytes=0 last=''
+[11:02:48] asu2: pid=13838 alive=True out_bytes=0 last=''
+[11:02:48] local_json=0/3
+[11:05:08] asu0: pid=12024 alive=True out_bytes=0 last=''
+[11:05:17] asu1: pid=14033 alive=True out_bytes=0 last='h2h progress 1/11'
+[11:05:37] asu2: pid=13838 alive=True out_bytes=0 last=''
+[11:05:37] local_json=0/3
+[11:07:44] asu0: pid=12024 alive=True out_bytes=0 last=''
+[11:08:03] asu1: pid=14033 alive=True out_bytes=0 last='h2h progress 2/11'
+[11:08:09] asu2: pid=13838 alive=True out_bytes=0 last=''
+[11:08:09] local_json=0/3
+[11:10:27] asu0: PROBE_FAIL rc=1 [colab] Session 'asu0' appears to be lost (404/401). Cleaning up.
+[11:10:44] asu1: PROBE_FAIL rc=1 [colab] Session 'asu1' appears to be lost (404/401). Cleaning up.
+[11:11:15] asu2: PROBE_FAIL rc=1 [colab] Session 'asu2' appears to be lost (404/401). Cleaning up.
+[11:11:15] local_json=0/3
+[11:13:23] asu0: PROBE_FAIL rc=1 [colab] Session 'asu0' not found.
+[11:13:31] asu1: PROBE_FAIL rc=1 [colab] Session 'asu1' not found.
+[11:13:34] asu2: PROBE_FAIL rc=1 [colab] Session 'asu2' not found.
+[11:13:34] local_json=0/3
+[11:15:45] asu0: PROBE_FAIL rc=1 [colab] Session 'asu0' not found.
+[11:15:51] asu1: PROBE_FAIL rc=1 [colab] Session 'asu1' not found.
+[11:15:59] asu2: PROBE_FAIL rc=1 [colab] Session 'asu2' not found.
+[11:15:59] local_json=0/3
+[11:18:11] asu0: PROBE_FAIL rc=1 [colab] Session 'asu0' not found.
+[11:18:22] asu1: PROBE_FAIL rc=1 [colab] Session 'asu1' not found.
+[11:18:30] asu2: PROBE_FAIL rc=1 [colab] Session 'asu2' not found.
+[11:18:30] local_json=0/3

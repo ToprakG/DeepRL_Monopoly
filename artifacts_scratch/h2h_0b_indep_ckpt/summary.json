@@ -1,0 +1,83 @@
+{
+  "completed_games": 48,
+  "disclaimer": "These are ppo-plus-v2 simulator results for ASU-inspired reconstructions; they do not reproduce or estimate either cited paper's reported win rates.",
+  "frozen_spec_hash": "9ab1907e0de1af4b253ce36ffa107c4fdb5e2b913858ef87c362423e61a6fd74",
+  "game_timeout_s": null,
+  "games": 48,
+  "lineup": [
+    "inncenta-heuristic",
+    "alinebidal-final",
+    "expo-heuristic-v1",
+    "slayer-v1"
+  ],
+  "live": false,
+  "oracle_config": {
+    "c_puct": 1.5,
+    "deadline_s": 5.0,
+    "early_stop_min_sims": 16,
+    "early_stop_visit_lead": 8,
+    "leaf": "rollout",
+    "leaf_checkpoint": null,
+    "margin_temperature": 2000.0,
+    "max_depth": 64,
+    "max_width": 16,
+    "prior_peak": 0.55,
+    "rollout_horizon": 30,
+    "rollouts_per_leaf": 2,
+    "simulations": 32
+  },
+  "oracle_focus": {
+    "games": null,
+    "wilson_95": null,
+    "win_rate": null,
+    "wins": null
+  },
+  "ruleset": "ppo-plus-v2",
+  "seed": 7001000,
+  "timeouts": 0,
+  "truncations": 0,
+  "turn_deadline_s": null,
+  "win_rates": {
+    "alinebidal-final": {
+      "games": 48,
+      "wilson_95": [
+        0.23433644125604858,
+        0.4956094298965691
+      ],
+      "win_rate": 0.3541666666666667,
+      "win_rate_percent": 35.41666666666667,
+      "wins": 17
+    },
+    "expo-heuristic-v1": {
+      "games": 48,
+      "wilson_95": [
+        0.058570514385719794,
+        0.24700458286386834
+      ],
+      "win_rate": 0.125,
+      "win_rate_percent": 12.5,
+      "wins": 6
+    },
+    "inncenta-heuristic": {
+      "games": 48,
+      "wilson_95": [
+        0.13307826266911232,
+        0.3653926409000346
+      ],
+      "win_rate": 0.22916666666666666,
+      "win_rate_percent": 22.916666666666664,
+      "wins": 11
+    },
+    "slayer-v1": {
+      "games": 48,
+      "wilson_95": [
+        0.18241578926516536,
+        0.431792598095717
+      ],
+      "win_rate": 0.2916666666666667,
+      "win_rate_percent": 29.166666666666668,
+      "wins": 14
+    }
+  },
+  "workers": 4
+}

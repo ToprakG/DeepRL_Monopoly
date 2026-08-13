@@ -1,0 +1,52 @@
+=== A) PPO hybrid bootstrap vs fixed-a/b/c ===
+  progress 1/8 game=2 winner=1 crashes=0
+  progress 2/8 game=6 winner=1 crashes=0
+  progress 3/8 game=5 winner=2 crashes=0
+  progress 4/8 game=3 winner=1 crashes=0
+  progress 5/8 game=4 winner=2 crashes=0
+  progress 6/8 game=7 winner=1 crashes=0
+  progress 7/8 game=1 winner=2 crashes=0
+  progress 8/8 game=0 winner=2 crashes=0
+PPO wins 0/8 WR=0.000
+=== B) Greedy BC clone vs fixed-a/b/c ===
+  progress 1/8 game=3 winner=2 crashes=0
+  progress 2/8 game=6 winner=1 crashes=0
+  progress 3/8 game=7 winner=1 crashes=0
+  progress 4/8 game=5 winner=2 crashes=0
+  progress 5/8 game=2 winner=1 crashes=0
+  progress 6/8 game=0 winner=3 crashes=0
+  progress 7/8 game=1 winner=2 crashes=0
+  progress 8/8 game=4 winner=2 crashes=0
+Greedy clone wins 0/8 WR=0.000
+=== C) Label spot-check (clone greedy vs teacher) ===
+{
+  "rows": 2048,
+  "match_rate": 0.99072265625,
+  "by_family": {
+    "accept": {
+      "n": 405,
+      "match_rate": 0.9901234567901235
+    },
+    "auction": {
+      "n": 288,
+      "match_rate": 0.9826388888888888
+    },
+    "build": {
+      "n": 260,
+      "match_rate": 0.9730769230769231
+    },
+    "buy": {
+      "n": 987,
+      "match_rate": 0.9989868287740629
+    },
+    "decline": {
+      "n": 7,
+      "match_rate": 1.0
+    },
+    "other": {
+      "n": 101,
+      "match_rate": 0.9801980198019802
+    }
+  }
+}
+wrote /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/diagnose_bc_step1.json

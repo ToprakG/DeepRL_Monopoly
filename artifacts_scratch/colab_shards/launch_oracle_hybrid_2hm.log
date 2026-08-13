@@ -1,0 +1,29 @@
+[14:51:31] packed /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz (4473266 bytes)
+[14:51:31] $ /Users/toprakgundogdu/.local/bin/colab new -s ora0 --high-mem
+[colab] Creating session 'ora0'...
+[colab] Session READY.
+[14:51:48] $ /Users/toprakgundogdu/.local/bin/colab new -s ora1 --high-mem
+[colab] Creating session 'ora1'...
+[colab] Session READY.
+[14:52:05] launch ora0 seed=10000 games=705 end=10704
+[14:52:05] $ /Users/toprakgundogdu/.local/bin/colab upload -s ora0 /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz /content/oracle_hybrid_src.tgz
+[colab] Uploaded '/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz' to '/content/oracle_hybrid_src.tgz'
+[14:52:10] ora0: skipping Drive mount (write /content; download later)
+[14:52:10] $ /Users/toprakgundogdu/.local/bin/colab exec -s ora0 --timeout 300
+HOST cpu=8 ram_gib=51.0
+STARTED pid=2517 workers=7 seed=10000 games=705 out=/content/labels_seed10000_10704.json drive_ok=True
+MIRROR pid=2518
+[14:52:26] launched ora0
+[14:52:26] launch ora1 seed=10705 games=705 end=11409
+[14:52:26] $ /Users/toprakgundogdu/.local/bin/colab upload -s ora1 /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz /content/oracle_hybrid_src.tgz
+[colab] Uploaded '/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz' to '/content/oracle_hybrid_src.tgz'
+[14:52:30] ora1: skipping Drive mount (write /content; download later)
+[14:52:30] $ /Users/toprakgundogdu/.local/bin/colab exec -s ora1 --timeout 300
+HOST cpu=8 ram_gib=51.0
+STARTED pid=1292 workers=7 seed=10705 games=705 out=/content/labels_seed10705_11409.json drive_ok=True
+MIRROR pid=1293
+[14:52:38] launched ora1
+[14:52:38] all Colab shards started; probing
+[14:52:42] ora0: pid=2517 alive=True local_npz=0 drive_npz=0 meta='pid=2517 | workers=7 | seed=10000 | games=705 | out=/content/labels_seed10000_10704.json | drive_ok=True |' last='label progress 2/705 labels=6 kind=self'
+[14:52:56] ora1: pid=1292 alive=True local_npz=0 drive_npz=0 meta='pid=1292 | workers=7 | seed=10705 | games=705 | out=/content/labels_seed10705_11409.json | drive_ok=True |' last=''
+[14:52:56] Drive folder (if mounted): /content/drive/MyDrive/oracle_hybrid_labels/labels_seed{start}_{end}.npz

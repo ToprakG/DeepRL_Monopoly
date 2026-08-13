@@ -1,0 +1,359 @@
+{
+  "binary_action_ids": {
+    "ACCEPT_TRADE": 7,
+    "BUY_PROPERTY": 3,
+    "DECLINE_TRADE": 8,
+    "END_TURN": 1
+  },
+  "checkpoint_mix": {
+    "ACCEPT_TRADE": 0.48274960110904763,
+    "BUY_PROPERTY": 0.30747299312076587,
+    "DECLINE_TRADE": 0.0030603437001386308,
+    "END_TURN": 0.00693154769689519,
+    "auction_*": 0.0940074808401559,
+    "improve_*": 0.07760717742146427
+  },
+  "family_fraction": {
+    "ACCEPT_TRADE": 0.48274960110904763,
+    "BUY_PROPERTY": 0.30747299312076587,
+    "DECLINE_TRADE": 0.0030603437001386308,
+    "END_TURN": 0.00693154769689519,
+    "auction": 0.033532996782715596,
+    "auction_bid": 0.0604744840574403,
+    "buy_trade": 0.009861107478224478,
+    "exch_trade": 0.017472731552928254,
+    "improve_hotel": 0.012005963746697707,
+    "improve_house": 0.06560121367476655,
+    "mortgage": 0.0008370170803797965
+  },
+  "finite_outcomes": true,
+  "finite_states": true,
+  "finite_values": true,
+  "gates": {
+    "all_pass": true,
+    "has_buy_build_trade_auction_mass": true,
+    "not_pathological_end_turn": true,
+    "schema_matches_expert_core": true
+  },
+  "illegal_selected_actions": 0,
+  "inventory": [
+    {
+      "n_labels": 8223,
+      "path": "labels_seed19000_19390.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed19000_19390.jsonl",
+        "max_width": 16,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 8223
+      }
+    },
+    {
+      "n_labels": 1786,
+      "path": "labels_seed19400_19499.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed19400_19499.jsonl",
+        "max_width": 15,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 1786
+      }
+    },
+    {
+      "n_labels": 4683,
+      "path": "labels_seed30000_30199.npz",
+      "soft": {
+        "jsonl": null,
+        "max_width": 1,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 4683,
+        "soft_rows": 0
+      }
+    },
+    {
+      "n_labels": 3891,
+      "path": "labels_seed30200_30399.npz",
+      "soft": {
+        "jsonl": null,
+        "max_width": 1,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 3891,
+        "soft_rows": 0
+      }
+    },
+    {
+      "n_labels": 8344,
+      "path": "labels_seed30400_30799.npz",
+      "soft": {
+        "jsonl": null,
+        "max_width": 1,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 8344,
+        "soft_rows": 0
+      }
+    },
+    {
+      "n_labels": 338,
+      "path": "labels_seed10000_10704.ckpt/part_seed10000_10030_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed10000_10704.ckpt/part_seed10000_10030_n25.jsonl",
+        "max_width": 15,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 338
+      }
+    },
+    {
+      "n_labels": 420,
+      "path": "labels_seed10000_10704.ckpt/part_seed10005_10055_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed10000_10704.ckpt/part_seed10005_10055_n25.jsonl",
+        "max_width": 16,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 420
+      }
+    },
+    {
+      "n_labels": 616,
+      "path": "labels_seed10000_10704.ckpt/part_seed10035_10080_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed10000_10704.ckpt/part_seed10035_10080_n25.jsonl",
+        "max_width": 16,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 616
+      }
+    },
+    {
+      "n_labels": 1104,
+      "path": "labels_seed10000_10704.ckpt/part_seed10069_10105_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed10000_10704.ckpt/part_seed10069_10105_n25.jsonl",
+        "max_width": 16,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 1104
+      }
+    },
+    {
+      "n_labels": 542,
+      "path": "labels_seed10000_10704.ckpt/part_seed10083_10130_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed10000_10704.ckpt/part_seed10083_10130_n25.jsonl",
+        "max_width": 15,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 542
+      }
+    },
+    {
+      "n_labels": 286,
+      "path": "labels_seed10705_11409.ckpt/part_seed10705_10735_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed10705_11409.ckpt/part_seed10705_10735_n25.jsonl",
+        "max_width": 15,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 286
+      }
+    },
+    {
+      "n_labels": 529,
+      "path": "labels_seed10705_11409.ckpt/part_seed10708_10759_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed10705_11409.ckpt/part_seed10708_10759_n25.jsonl",
+        "max_width": 16,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 529
+      }
+    },
+    {
+      "n_labels": 377,
+      "path": "labels_seed19500_19899.ckpt/part_seed19500_19526_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed19500_19899.ckpt/part_seed19500_19526_n25.jsonl",
+        "max_width": 16,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 377
+      }
+    },
+    {
+      "n_labels": 331,
+      "path": "labels_seed19500_19899.ckpt/part_seed19507_19554_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed19500_19899.ckpt/part_seed19507_19554_n25.jsonl",
+        "max_width": 16,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 331
+      }
+    },
+    {
+      "n_labels": 719,
+      "path": "labels_seed19500_19899.ckpt/part_seed19539_19578_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed19500_19899.ckpt/part_seed19539_19578_n25.jsonl",
+        "max_width": 15,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 719
+      }
+    },
+    {
+      "n_labels": 707,
+      "path": "labels_seed19500_19899.ckpt/part_seed19549_19602_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed19500_19899.ckpt/part_seed19549_19602_n25.jsonl",
+        "max_width": 16,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 707
+      }
+    },
+    {
+      "n_labels": 514,
+      "path": "labels_seed19500_19899.ckpt/part_seed19583_19628_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed19500_19899.ckpt/part_seed19583_19628_n25.jsonl",
+        "max_width": 16,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 514
+      }
+    },
+    {
+      "n_labels": 642,
+      "path": "labels_seed19500_19899.ckpt/part_seed19599_19678_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed19500_19899.ckpt/part_seed19599_19678_n25.jsonl",
+        "max_width": 16,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 642
+      }
+    },
+    {
+      "n_labels": 384,
+      "path": "labels_seed19500_19899.ckpt/part_seed19609_19652_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed19500_19899.ckpt/part_seed19609_19652_n25.jsonl",
+        "max_width": 16,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 384
+      }
+    },
+    {
+      "n_labels": 504,
+      "path": "labels_seed19500_19899.ckpt/part_seed19665_19704_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed19500_19899.ckpt/part_seed19665_19704_n25.jsonl",
+        "max_width": 16,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 504
+      }
+    },
+    {
+      "n_labels": 302,
+      "path": "labels_seed19500_19899.ckpt/part_seed19681_19729_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed19500_19899.ckpt/part_seed19681_19729_n25.jsonl",
+        "max_width": 14,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 302
+      }
+    },
+    {
+      "n_labels": 635,
+      "path": "labels_seed19500_19899.ckpt/part_seed19713_19754_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed19500_19899.ckpt/part_seed19713_19754_n25.jsonl",
+        "max_width": 16,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 635
+      }
+    },
+    {
+      "n_labels": 843,
+      "path": "labels_seed19500_19899.ckpt/part_seed19743_19778_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed19500_19899.ckpt/part_seed19743_19778_n25.jsonl",
+        "max_width": 15,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 843
+      }
+    },
+    {
+      "n_labels": 604,
+      "path": "labels_seed19500_19899.ckpt/part_seed19745_19804_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed19500_19899.ckpt/part_seed19745_19804_n25.jsonl",
+        "max_width": 16,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 604
+      }
+    },
+    {
+      "n_labels": 907,
+      "path": "labels_seed19500_19899.ckpt/part_seed19771_19828_n25.npz",
+      "soft": {
+        "jsonl": "artifacts_scratch/colab_shards/labels_seed19500_19899.ckpt/part_seed19771_19828_n25.jsonl",
+        "max_width": 15,
+        "mode_vs_selected_mismatch": 0,
+        "one_hot_rows": 0,
+        "soft_rows": 907
+      }
+    }
+  ],
+  "n_labels": 38231,
+  "n_shards": 25,
+  "offsets": {
+    "auction": 2953,
+    "binary": 0,
+    "buy_trade": 181,
+    "exch_trade": 685,
+    "improve_hotel": 87,
+    "improve_house": 65,
+    "mortgage": 9,
+    "sell_hotel": 131,
+    "sell_house": 109,
+    "sell_prop": 153,
+    "sell_trade": 433,
+    "unmortgage": 37
+  },
+  "outcome_row_sum": {
+    "max": 1.0,
+    "mean": 1.0,
+    "min": 1.0
+  },
+  "outputs": {
+    "asu_compat": "artifacts_scratch/oracle_hybrid_merged/labels_hybrid_asu_compat.npz",
+    "merged": "artifacts_scratch/oracle_hybrid_merged/labels_hybrid_merged.npz"
+  },
+  "ruleset": "ppo-plus-v2",
+  "schema_ok": true,
+  "soft_policy": {
+    "mode_vs_selected_mismatch": 0,
+    "one_hot_rows": 16918,
+    "soft_coverage": 0.5574795323167063,
+    "soft_rows": 21313
+  },
+  "value_row_sum": {
+    "max": 1.0000000447034836,
+    "mean": 1.0000000000070877,
+    "min": 0.9999999552965164
+  },
+  "warnings": {
+    "accept_among_trade_decisions": 0.9937005330318204,
+    "accept_trade_heavy": true,
+    "note": "Trade labels are checkpoint-filtered to monopoly-relevant offers; a high ACCEPT share can be expected if DECLINE rarely fires that filter. Still inspect accept/decline ratio before trusting trade behavior."
+  }
+}

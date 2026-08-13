@@ -1,0 +1,33 @@
+[16:08:55] packed /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz (4489004 bytes)
+[16:08:55] $ /Users/toprakgundogdu/.local/bin/colab new -s ora0 --high-mem
+[colab] Creating session 'ora0'...
+[colab] Session READY.
+[16:09:14] $ /Users/toprakgundogdu/.local/bin/colab new -s ora1 --high-mem
+[colab] Creating session 'ora1'...
+[colab] Session READY.
+[16:09:31] launch ora0 seed=10000 games=705 end=10704
+[16:09:31] $ /Users/toprakgundogdu/.local/bin/colab upload -s ora0 /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz /content/oracle_hybrid_src.tgz
+[colab] Uploaded '/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz' to '/content/oracle_hybrid_src.tgz'
+[16:09:39] ora0: skipping CLI drivemount (bootstrap will try google.colab.drive)
+[16:09:39] $ /Users/toprakgundogdu/.local/bin/colab exec -s ora0 --timeout 300
+[0;36m  File [0;32m"/tmp/ipykernel_837/2633655620.py"[0;36m, line [0;32m59[0m
+[0;31m    f'pid={proc.pid}[0m
+[0m    ^[0m
+[0;31mSyntaxError[0m[0;31m:[0m unterminated f-string literal (detected at line 59)
+
+[16:09:46] launched ora0
+[16:09:46] launch ora1 seed=10705 games=705 end=11409
+[16:09:46] $ /Users/toprakgundogdu/.local/bin/colab upload -s ora1 /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz /content/oracle_hybrid_src.tgz
+[colab] Uploaded '/Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/colab_shards/oracle_hybrid_src.tgz' to '/content/oracle_hybrid_src.tgz'
+[16:09:52] ora1: skipping CLI drivemount (bootstrap will try google.colab.drive)
+[16:09:52] $ /Users/toprakgundogdu/.local/bin/colab exec -s ora1 --timeout 300
+[0;36m  File [0;32m"/tmp/ipykernel_3454/291773541.py"[0;36m, line [0;32m59[0m
+[0;31m    f'pid={proc.pid}[0m
+[0m    ^[0m
+[0;31mSyntaxError[0m[0;31m:[0m unterminated f-string literal (detected at line 59)
+
+[16:09:56] launched ora1
+[16:09:56] all Colab shards started; probing
+[16:10:02] ora0: pid=? alive=False local_npz=0 drive_npz=0 meta='' last=''
+[16:10:05] ora1: pid=? alive=False local_npz=0 drive_npz=0 meta='' last=''
+[16:10:05] Drive folder (if mounted): /content/drive/MyDrive/oracle_hybrid_labels/labels_seed{start}_{end}.npz
