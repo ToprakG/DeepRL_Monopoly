@@ -1,12 +1,10 @@
-"""One-weapon plan loop for ``oracle-plus-v1``.
+"""Closed-form loop for ``oracle-plus-v1``.
 
-Not a net-worth argmax over every legal action, and not a stack of stolen
-priority rules. Each decision answers: which colour can we still finish, and
-does this action serve that colour?
-
-The ranking is board geometry we already use elsewhere (jail-exit corridor
-11–19, 3-house rent vs remaining cash to get there). Dead colours are fuel.
-Completing auctions spend down to the next-roll floor — no fraction cap.
+No colour is the plan. Each spend is one engine-book step: a deed is 2.5×
+list, a completed group reprices every deed in it to 5×, a house books at
+``houses * house_price * (1 + 0.5 * houses)``. Buy / auction / build / trade
+if that delta beats the cash spent. Blocked groups are discounted because we
+cannot build there. This is not deepcopy 1-ply and not a colour ranking.
 """
 
 from __future__ import annotations
@@ -17,7 +15,17 @@ from monopoly_game_engine.actions import (
     ActionType,
     AuctionAction,
 )
-from monopoly_game_engine.constants import COLOR_GROUPS, PROPERTIES, PROPERTY_IDS, REAL_ESTATE_IDS
+from monopoly_game_engine.agents_fixed import (
+    _buy_trade_action,
+    _exchange_action,
+)
+from monopoly_game_engine.constants import (
+    COLOR_GROUPS,
+    PROPERTIES,
+    PROPERTY_IDS,
+    REAL_ESTATE_IDS,
+    TRADE_CASH_LEVELS,
+)
 from monopoly_game_engine.env import PHASE_AUCTION, MonopolyEnv
 
 from oracle.plus_steals import (
@@ -28,16 +36,21 @@ from oracle.plus_steals import (
     SELL_PROP_LO,
     UNMORTGAGE_LO,
     REAL_COLOURS,
-    cap_weight,
     complete_floor,
     spend_floor,
-    unowned_count,
     would_complete,
 )
 
-# Squares a player leaving jail actually rolls onto (6–9 from square 10).
+# Kept for jail-v1, which still ranks a colour. Plus does not use it.
 _JAIL_CORRIDOR = frozenset(range(11, 20))
 _RAIL = "railroad"
+OPENING_RACE = frozenset(("brown", "lightblue", "pink"))
+SOLO_BOOK = 2.5
+MONO_BOOK = 5.0
+BLOCKED_WEIGHT = 0.25
+DENY_FRAC = 0.22
+AUCTION_FRAC = 0.62
+BUILD_RESERVE = 0.25
 
 
 def _group(color: str) -> list[int]:
@@ -75,7 +88,7 @@ def _owned_count(env: MonopolyEnv, pid: int, color: str) -> int:
 
 
 def colour_score(env: MonopolyEnv, pid: int, color: str) -> float:
-    """Higher = better single weapon. One-away and jail-exit beat empty dark blue."""
+    """Jail-v1 ranking only. Plus ignores this."""
 
     if not colour_is_open(env, pid, color):
         return 0.0
@@ -94,11 +107,15 @@ def colour_score(env: MonopolyEnv, pid: int, color: str) -> float:
         score *= 2.0
     if any(sq in _JAIL_CORRIDOR for sq in group):
         score *= 1.6
+    if color in OPENING_RACE:
+        score *= 2.5
+        if len(group) == 2:
+            score *= 2.0
     return score
 
 
 def active_colour(env: MonopolyEnv, pid: int) -> str | None:
-    """The one real-estate colour we are trying to finish. None if all blocked."""
+    """Jail-v1's one colour. Plus does not call this."""
 
     best: tuple[float, str] | None = None
     for color in REAL_COLOURS:
@@ -110,60 +127,176 @@ def active_colour(env: MonopolyEnv, pid: int) -> str | None:
     return None if best is None else best[1]
 
 
-def _opponent_one_away(env: MonopolyEnv, pid: int, square: int) -> bool:
-    for opp in env.players:
-        if opp.player_id == pid or opp.bankrupt:
+def _squares(square: int) -> list[int]:
+    data = PROPERTIES.get(square)
+    if data is None:
+        return []
+    return _group(data["color"])
+
+
+def _is_real(square: int) -> bool:
+    data = PROPERTIES.get(square)
+    return bool(data) and data["color"] not in (_RAIL, "utility")
+
+
+def _deed_book(square: int, houses: int, mortgaged: bool, monopoly: bool) -> float:
+    data = PROPERTIES[square]
+    price = float(data["price"])
+    mort = float(data["mortgage"]) if mortgaged else 0.0
+    base = (price - mort) * (MONO_BOOK if monopoly else SOLO_BOOK)
+    if not _is_real(square) or houses <= 0:
+        return base
+    hp = float(data["house_price"])
+    count = 5 if houses >= 5 else houses
+    return base + count * hp * (1.0 + 0.5 * houses)
+
+
+def _group_book(env: MonopolyEnv, owner: int, squares: list[int]) -> float:
+    monopoly = bool(squares) and all(env.properties[s].owner == owner for s in squares)
+    total = 0.0
+    for square in squares:
+        prop = env.properties[square]
+        if prop.owner != owner:
             continue
-        if would_complete(env, opp.player_id, square):
+        total += _deed_book(square, int(prop.houses), bool(prop.mortgaged), monopoly)
+    return total
+
+
+def acquire_gain(env: MonopolyEnv, pid: int, square: int) -> float:
+    """Engine book added by holding ``square``, ignoring the price paid."""
+
+    squares = _squares(square)
+    if not squares:
+        return 0.0
+    before = _group_book(env, pid, squares)
+    completes = all(
+        item == square or env.properties[item].owner == pid for item in squares
+    )
+    after = 0.0
+    for item in squares:
+        prop = env.properties[item]
+        if item != square and prop.owner != pid:
+            continue
+        houses = 0 if item == square else int(prop.houses)
+        mortgaged = False if item == square else bool(prop.mortgaged)
+        after += _deed_book(item, houses, mortgaged, completes)
+    return after - before
+
+
+def disposal_loss(env: MonopolyEnv, pid: int, square: int) -> float:
+    """Engine book lost by giving ``square`` away, including a broken group."""
+
+    squares = _squares(square)
+    if not squares:
+        return 0.0
+    without = 0.0
+    for item in squares:
+        if item == square:
+            continue
+        prop = env.properties[item]
+        if prop.owner != pid:
+            continue
+        without += _deed_book(item, int(prop.houses), bool(prop.mortgaged), False)
+    return _group_book(env, pid, squares) - without
+
+
+def _blocked(env: MonopolyEnv, pid: int, square: int) -> bool:
+    if not _is_real(square):
+        return False
+    for item in _squares(square):
+        if item == square:
+            continue
+        owner = env.properties[item].owner
+        if owner not in (pid, None):
             return True
     return False
 
 
-def _rails_owned(env: MonopolyEnv, pid: int) -> int:
-    return sum(
-        env.properties[sq].owner == pid for sq in (COLOR_GROUPS.get(_RAIL) or ())
+def acquire_value(env: MonopolyEnv, pid: int, square: int, *, deny: bool = True) -> float:
+    """Book gain we keep, plus a slice of the best opponent's gain."""
+
+    own = acquire_gain(env, pid, square)
+    if _blocked(env, pid, square):
+        own *= BLOCKED_WEIGHT
+    if not deny:
+        return own
+    rival = 0.0
+    for opp in env.players:
+        if opp.player_id == pid or opp.bankrupt:
+            continue
+        rival = max(rival, acquire_gain(env, opp.player_id, square))
+    return own + DENY_FRAC * rival
+
+
+def house_gain(env: MonopolyEnv, square: int, *, hotel: bool) -> float:
+    """Book added by one build step, excluding cash spent."""
+
+    prop = env.properties[square]
+    current = int(prop.houses)
+    following = 5 if hotel else current + 1
+    monopoly = _is_our_monopoly(env, int(prop.owner), square) if prop.owner is not None else False
+    return _deed_book(square, following, bool(prop.mortgaged), monopoly) - _deed_book(
+        square, current, bool(prop.mortgaged), monopoly
     )
 
 
-def _deed_role(
-    env: MonopolyEnv, pid: int, square: int, plan: str | None, *, deny: bool = True
-) -> str:
-    data = PROPERTIES.get(square)
-    if data is None:
-        return "junk"
-    color = data["color"]
-    if would_complete(env, pid, square):
-        return "finish"
-    if plan is not None and color == plan:
-        return "plan"
-    if color == _RAIL and _rails_owned(env, pid) >= 1:
-        return "rail"
-    if deny and _opponent_one_away(env, pid, square):
-        return "deny"
-    return "junk"
+def _is_our_monopoly(env: MonopolyEnv, pid: int, square: int) -> bool:
+    squares = _squares(square)
+    return bool(squares) and all(env.properties[s].owner == pid for s in squares)
+
+
+def wanted_deed(env: MonopolyEnv, pid: int, square: int, plan: str | None = None) -> bool:
+    """True if holding ``square`` raises our book after the blocked-group haircut."""
+
+    del plan
+    return acquire_value(env, pid, square, deny=False) > 0.0
+
+
+def giveable_deed(
+    env: MonopolyEnv,
+    pid: int,
+    square: int,
+    plan: str | None = None,
+    *,
+    request_score: float = 0.0,
+) -> bool:
+    """True if we can swap ``square`` without breaking a monopoly."""
+
+    del plan
+    prop = env.properties.get(square)
+    if prop is None or prop.owner != pid or int(getattr(prop, "houses", 0) or 0):
+        return False
+    if _is_our_monopoly(env, pid, square):
+        return False
+    loss = disposal_loss(env, pid, square)
+    return request_score + 1e-9 >= loss
 
 
 def plan_buy_action(
     env: MonopolyEnv,
     pid: int,
     legal: list[int],
-    plan: str | None,
+    plan: str | None = None,
     *,
     deny: bool = True,
 ) -> int | None:
-    """Buy the landed deed only if it is the weapon, a finish, a rail, or a deny."""
+    """Buy if the book step is positive after the next-roll cash floor."""
 
+    del plan
     if int(ActionType.BUY_PROPERTY) not in legal:
         return None
     square = int(env.players[pid].position)
     prop = env.properties.get(square)
     if prop is None or prop.owner is not None:
         return None
-    role = _deed_role(env, pid, square, plan, deny=deny)
-    if role == "junk":
-        return None
     price = float(prop.price)
-    floor = complete_floor(env, pid) if role in ("finish", "plan") else spend_floor(env, pid)
+    if acquire_value(env, pid, square, deny=deny) - price <= 0.0:
+        return None
+    floor = (
+        complete_floor(env, pid)
+        if would_complete(env, pid, square) or not _blocked(env, pid, square)
+        else spend_floor(env, pid)
+    )
     if float(env.players[pid].cash) - price < floor:
         return None
     return int(ActionType.BUY_PROPERTY)
@@ -173,34 +306,31 @@ def plan_auction_ceiling(
     env: MonopolyEnv,
     pid: int,
     square: int,
-    plan: str | None,
+    plan: str | None = None,
     *,
     deny: bool = True,
 ) -> float:
-    """Cash we will spend. Finish/plan go to the next-roll floor (no 0.62 cap)."""
+    """Bid up to 0.62 of book value, never through the next-roll floor."""
 
-    data = PROPERTIES.get(square)
-    if data is None:
+    del plan
+    if PROPERTIES.get(square) is None:
         return 0.0
-    price = float(data["price"])
-    cash = float(env.players[pid].cash)
-    role = _deed_role(env, pid, square, plan, deny=deny)
-    if role in ("finish", "plan"):
-        return max(0.0, cash - complete_floor(env, pid))
-    if role == "deny":
-        return max(0.0, min(1.15 * price, cash - spend_floor(env, pid)))
-    if role == "rail":
-        return max(0.0, min(price, cash - spend_floor(env, pid)))
-    if cap_weight(env) >= 0.5 or unowned_count(env) <= 2:
-        return max(0.0, min(1.25 * price, cash - spend_floor(env, pid)))
-    return 0.0
+    value = acquire_value(env, pid, square, deny=deny)
+    if value <= 0.0:
+        return 0.0
+    floor = (
+        complete_floor(env, pid)
+        if would_complete(env, pid, square) or not _blocked(env, pid, square)
+        else spend_floor(env, pid)
+    )
+    return max(0.0, min(AUCTION_FRAC * value, float(env.players[pid].cash) - floor))
 
 
 def plan_auction_action(
     env: MonopolyEnv,
     pid: int,
     legal: list[int],
-    plan: str | None,
+    plan: str | None = None,
     *,
     deny: bool = True,
 ) -> int | None:
@@ -225,45 +355,37 @@ def plan_auction_action(
 
 
 def plan_build_action(
-    env: MonopolyEnv, pid: int, legal: list[int], plan: str | None
+    env: MonopolyEnv, pid: int, legal: list[int], plan: str | None = None
 ) -> int | None:
-    """Even-build the weapon first (3-house rent / house price), else any set."""
+    """Build the step with the most book per dollar, down to 0.25 of next-roll."""
 
-    floor = spend_floor(env, pid)
+    del plan
+    floor = BUILD_RESERVE * spend_floor(env, pid)
     cash = float(env.players[pid].cash)
-    planned: list[tuple[int, float, int]] = []
-    other: list[tuple[int, float, int]] = []
+    best: tuple[float, float, int] | None = None
     for action in legal:
         if HOUSE_LO <= action < HOTEL_LO:
             square = REAL_ESTATE_IDS[action - HOUSE_LO]
             cost = float(PROPERTIES[square]["house_price"])
+            gain = house_gain(env, square, hotel=False) - cost
         elif HOTEL_LO <= action < SELL_HOUSE_LO:
             square = REAL_ESTATE_IDS[action - HOTEL_LO]
             cost = float(PROPERTIES[square]["house_price"])
+            gain = house_gain(env, square, hotel=True) - cost
         else:
             continue
-        if cash - cost < floor:
+        if gain <= 0.0 or cash - cost < floor:
             continue
-        prop = env.properties[square]
-        houses = int(prop.houses)
-        rents = PROPERTIES[square].get("rent") or [0]
-        three = float(rents[3] if len(rents) > 3 else rents[-1])
-        key = (houses, -(three / max(cost, 1.0)), action)
-        color = prop.color
-        if plan is not None and color == plan:
-            planned.append(key)
-        else:
-            other.append(key)
-    pool = planned or other
-    if not pool:
-        return None
-    pool.sort()
-    return int(pool[0][2])
+        key = (gain / max(cost, 1.0), -cost, action)
+        if best is None or key > (best[0], best[1], best[2]):
+            best = key
+    return None if best is None else int(best[2])
 
 
-def debt_action(env: MonopolyEnv, pid: int, legal: list[int], plan: str | None) -> int:
-    """Raise cash from dead colours first. Never break the weapon while junk remains."""
+def debt_action(env: MonopolyEnv, pid: int, legal: list[int], plan: str | None = None) -> int:
+    """Mortgage blocked colours first. Never break a set while junk remains."""
 
+    del plan
     if int(ActionType.DECLARE_BANKRUPT) in legal and len(legal) == 1:
         return int(ActionType.DECLARE_BANKRUPT)
 
@@ -274,15 +396,11 @@ def debt_action(env: MonopolyEnv, pid: int, legal: list[int], plan: str | None) 
         prop = env.properties[square]
         if prop.houses:
             return None
-        color = prop.color
-        if color not in REAL_COLOURS:
+        if _is_our_monopoly(env, pid, square):
+            return None
+        if not _is_real(square):
             return (2, -float(prop.mortgage_v))
-        if plan is not None and color == plan:
-            return (3, -float(prop.mortgage_v))
-        blocked = any(
-            env.properties[sq].owner not in (pid, None) for sq in _group(color)
-        )
-        if blocked:
+        if _blocked(env, pid, square):
             return (0, -float(prop.mortgage_v))
         return (1, -float(prop.mortgage_v))
 
@@ -305,7 +423,7 @@ def debt_action(env: MonopolyEnv, pid: int, legal: list[int], plan: str | None) 
 
 
 def needs_plan_cash(
-    env: MonopolyEnv, pid: int, legal: list[int], plan: str | None, *, deny: bool = True
+    env: MonopolyEnv, pid: int, legal: list[int], plan: str | None = None, *, deny: bool = True
 ) -> bool:
     cash = float(env.players[pid].cash)
     if cash < max(200.0, 1.5 * spend_floor(env, pid)):
@@ -316,9 +434,137 @@ def needs_plan_cash(
     prop = env.properties.get(square)
     if prop is None or prop.owner is not None:
         return False
-    if _deed_role(env, pid, square, plan, deny=deny) == "junk":
+    price = float(prop.price)
+    if acquire_value(env, pid, square, deny=deny) - price <= 0.0:
         return False
-    return cash - float(prop.price) < complete_floor(env, pid)
+    return cash - price < complete_floor(env, pid)
+
+
+def _trade_gain(
+    env: MonopolyEnv, pid: int, give_sq: int | None, take_sq: int | None, cash_delta: float
+) -> float:
+    gain = cash_delta
+    if take_sq is not None:
+        gain += acquire_value(env, pid, take_sq, deny=False)
+    if give_sq is not None:
+        gain -= disposal_loss(env, pid, give_sq)
+    return gain
+
+
+def plan_incoming_action(
+    env: MonopolyEnv, pid: int, legal: list[int], plan: str | None = None
+) -> int | None:
+    """Accept only if we gain book and we gain more than the proposer."""
+
+    del plan
+    accept = int(ActionType.ACCEPT_TRADE)
+    decline = int(ActionType.DECLINE_TRADE)
+    if accept not in legal and decline not in legal:
+        return None
+    offer = env._incoming_trade(pid)
+    if offer is None:
+        return None
+    requested = offer.requested_prop
+    offered = offer.offered_prop
+    req_sq = None if requested is None else int(requested.square_id)
+    off_sq = None if offered is None else int(offered.square_id)
+    cash_in = float(offer.cash_offered or 0) - float(offer.cash_requested or 0)
+    cost = float(offer.cash_requested or 0)
+
+    if req_sq is not None and would_complete(env, offer.from_player, req_sq):
+        return decline if decline in legal else None
+    if req_sq is not None and _is_our_monopoly(env, pid, req_sq):
+        return decline if decline in legal else None
+
+    mine = _trade_gain(env, pid, req_sq, off_sq, cash_in)
+    theirs = _trade_gain(
+        env,
+        offer.from_player,
+        off_sq,
+        req_sq,
+        -cash_in,
+    )
+    floor = complete_floor(env, pid) if off_sq is not None and would_complete(env, pid, off_sq) else spend_floor(env, pid)
+    if mine > 0.0 and mine > theirs and float(env.players[pid].cash) - cost >= floor:
+        return accept if accept in legal else None
+    return decline if decline in legal else None
+
+
+def plan_trade_action(
+    env: MonopolyEnv,
+    pid: int,
+    legal: list[int],
+    plan: str | None = None,
+    *,
+    pay_up: bool = True,
+) -> int | None:
+    """Swap when both sides gain book and we gain more. Cash-buy only a finish."""
+
+    del plan
+    del pay_up
+    if pid in getattr(env, "pending_trades", {}):
+        return None
+    me = env.players[pid]
+    ours = [
+        int(prop.square_id)
+        for prop in me.properties
+        if int(getattr(prop, "houses", 0) or 0) == 0
+    ]
+    best_exch: tuple[tuple[float, float], int] | None = None
+    for opp in env.players:
+        if opp.player_id == pid or opp.bankrupt:
+            continue
+        theirs = [
+            int(prop.square_id)
+            for prop in opp.properties
+            if int(getattr(prop, "houses", 0) or 0) == 0
+        ]
+        for req in theirs:
+            for offer_sq in ours:
+                if _is_our_monopoly(env, pid, offer_sq):
+                    continue
+                mine = _trade_gain(env, pid, offer_sq, req, 0.0)
+                theirs_gain = _trade_gain(env, opp.player_id, req, offer_sq, 0.0)
+                if mine <= 0.0 or theirs_gain <= 0.0 or mine <= theirs_gain:
+                    continue
+                action = _exchange_action(
+                    pid, opp.player_id, offer_sq, req, env, legal
+                )
+                if action is None:
+                    continue
+                key = (1.0 if would_complete(env, pid, req) else 0.0, mine)
+                if best_exch is None or key > best_exch[0]:
+                    best_exch = (key, int(action))
+    if best_exch is not None:
+        return best_exch[1]
+
+    best_buy: tuple[tuple[float, float], int] | None = None
+    price_idx = TRADE_CASH_LEVELS.index(1.0) if 1.0 in TRADE_CASH_LEVELS else 1
+    for opp in env.players:
+        if opp.player_id == pid or opp.bankrupt:
+            continue
+        for req in (
+            int(prop.square_id)
+            for prop in opp.properties
+            if int(getattr(prop, "houses", 0) or 0) == 0
+        ):
+            if not would_complete(env, pid, req):
+                continue
+            cost = float(PROPERTIES[req]["price"]) * TRADE_CASH_LEVELS[price_idx]
+            if float(me.cash) - cost < complete_floor(env, pid):
+                continue
+            mine = acquire_value(env, pid, req, deny=False) - cost
+            if mine <= 0.0:
+                continue
+            action = _buy_trade_action(pid, opp.player_id, req, price_idx, env, legal)
+            if action is None:
+                continue
+            key = (mine, -cost)
+            if best_buy is None or key > best_buy[0]:
+                best_buy = (key, int(action))
+    if best_buy is not None:
+        return best_buy[1]
+    return None
 
 
 def idle_action(legal: list[int]) -> int:
@@ -332,14 +578,22 @@ def idle_action(legal: list[int]) -> int:
 
 
 __all__ = [
+    "AUCTION_FRAC",
+    "OPENING_RACE",
+    "acquire_gain",
+    "acquire_value",
     "active_colour",
     "colour_is_open",
     "colour_score",
     "debt_action",
+    "giveable_deed",
     "idle_action",
     "needs_plan_cash",
     "plan_auction_action",
     "plan_auction_ceiling",
     "plan_build_action",
     "plan_buy_action",
+    "plan_incoming_action",
+    "plan_trade_action",
+    "wanted_deed",
 ]

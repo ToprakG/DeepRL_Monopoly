@@ -440,30 +440,44 @@ def test_complete_floor_empty_board_is_zero():
     assert complete_floor(game.env, 0) == 0.0
 
 
-def test_active_colour_is_orange_on_empty_board():
-    from oracle.plus_loop import active_colour
+def test_active_colour_is_opening_race_on_empty_board():
+    from oracle.plus_loop import OPENING_RACE, active_colour
 
     game = SharedGame.new(51, max_rounds=20)
-    assert active_colour(game.env, 0) == "orange"
+    plan = active_colour(game.env, 0)
+    assert plan in OPENING_RACE
+    assert plan != "orange"
+    assert plan != "darkblue"
 
 
-def test_plan_buy_takes_uncontested_orange():
+def test_active_colour_skips_darkblue_when_pink_blocked():
+    from oracle.plus_loop import active_colour
+
+    game = SharedGame.new(62, max_rounds=20)
+    env = game.env
+    pink = COLOR_GROUPS["pink"]
+    env.properties[pink[0]].owner = 1
+    if env.properties[pink[0]] not in env.players[1].properties:
+        env.players[1].properties.append(env.properties[pink[0]])
+    plan = active_colour(env, 0)
+    assert plan == "brown"
+
+
+def test_plan_buy_takes_uncontested_opening_colour():
     from monopoly_game_engine.actions import ActionType
-    from oracle.plus_loop import active_colour, plan_buy_action
+    from oracle.plus_loop import plan_buy_action
 
     game = SharedGame.new(52, max_rounds=20)
     env = game.env
-    env.players[0].position = COLOR_GROUPS["orange"][0]
+    env.players[0].position = COLOR_GROUPS["lightblue"][0]
     env.players[0].cash = 400
     legal = [int(ActionType.BUY_PROPERTY), int(ActionType.END_TURN)]
-    plan = active_colour(env, 0)
-    assert plan == "orange"
-    assert plan_buy_action(env, 0, legal, plan) == int(ActionType.BUY_PROPERTY)
+    assert plan_buy_action(env, 0, legal) == int(ActionType.BUY_PROPERTY)
 
 
-def test_plan_buy_skips_blocked_colour():
+def test_plan_buy_skips_blocked_colour_without_denial():
     from monopoly_game_engine.actions import ActionType
-    from oracle.plus_loop import active_colour, plan_buy_action
+    from oracle.plus_loop import plan_buy_action
 
     game = SharedGame.new(53, max_rounds=20)
     env = game.env
@@ -474,13 +488,11 @@ def test_plan_buy_skips_blocked_colour():
     env.players[0].position = orange[1]
     env.players[0].cash = 400
     legal = [int(ActionType.BUY_PROPERTY), int(ActionType.END_TURN)]
-    plan = active_colour(env, 0)
-    assert plan != "orange"
-    assert plan_buy_action(env, 0, legal, plan) is None
+    assert plan_buy_action(env, 0, legal, deny=False) is None
 
 
-def test_plan_auction_finish_has_no_fraction_cap():
-    from oracle.plus_loop import plan_auction_ceiling
+def test_plan_auction_finish_is_capped_at_book_fraction():
+    from oracle.plus_loop import AUCTION_FRAC, acquire_value, plan_auction_ceiling
 
     game = SharedGame.new(54, max_rounds=20)
     env = game.env
@@ -489,6 +501,121 @@ def test_plan_auction_finish_has_no_fraction_cap():
     if env.properties[brown[0]] not in env.players[0].properties:
         env.players[0].properties.append(env.properties[brown[0]])
     env.players[0].cash = 1500
-    ceiling = plan_auction_ceiling(env, 0, brown[1], "brown")
-    assert ceiling == 1500.0
+    ceiling = plan_auction_ceiling(env, 0, brown[1])
+    assert ceiling == AUCTION_FRAC * acquire_value(env, 0, brown[1])
+    assert ceiling < 1500.0
+
+
+def _give(env, pid: int, square: int) -> None:
+    prop = env.properties[square]
+    prop.owner = pid
+    if prop not in env.players[pid].properties:
+        env.players[pid].properties.append(prop)
+
+
+def test_plan_buy_takes_open_backup_before_first_set():
+    from monopoly_game_engine.actions import ActionType
+    from oracle.plus_loop import plan_buy_action
+
+    game = SharedGame.new(55, max_rounds=20)
+    env = game.env
+    env.players[0].position = COLOR_GROUPS["red"][0]
+    env.players[0].cash = 400
+    legal = [int(ActionType.BUY_PROPERTY), int(ActionType.END_TURN)]
+    assert plan_buy_action(env, 0, legal) == int(ActionType.BUY_PROPERTY)
+
+
+def test_plan_auction_backup_ceiling_is_positive_before_first_set():
+    from oracle.plus_loop import plan_auction_ceiling
+
+    game = SharedGame.new(56, max_rounds=20)
+    env = game.env
+    env.players[0].cash = 1500
+    red = COLOR_GROUPS["red"][0]
+    assert plan_auction_ceiling(env, 0, red) > 0.0
+
+
+def test_plan_buy_takes_other_open_colour():
+    from monopoly_game_engine.actions import ActionType
+    from oracle.plus_loop import plan_buy_action
+
+    game = SharedGame.new(61, max_rounds=20)
+    env = game.env
+    env.players[0].position = COLOR_GROUPS["orange"][0]
+    env.players[0].cash = 400
+    legal = [int(ActionType.BUY_PROPERTY), int(ActionType.END_TURN)]
+    assert plan_buy_action(env, 0, legal) == int(ActionType.BUY_PROPERTY)
+
+
+def test_plan_incoming_accepts_non_completing_weapon():
+    from monopoly_game_engine.actions import ActionType
+    from monopoly_game_engine.env import TradeOffer
+    from oracle.plus_loop import plan_incoming_action
+
+    game = SharedGame.new(57, max_rounds=20)
+    env = game.env
+    red = COLOR_GROUPS["red"]
+    _give(env, 0, red[0])
+    _give(env, 1, red[1])
+    env.pending_trades[1] = TradeOffer(1, 0, offered_prop=env.properties[red[1]])
+    legal = [int(ActionType.ACCEPT_TRADE), int(ActionType.DECLINE_TRADE)]
+    assert plan_incoming_action(env, 0, legal) == int(ActionType.ACCEPT_TRADE)
+
+
+def test_plan_incoming_declines_completing_opponent():
+    from monopoly_game_engine.actions import ActionType
+    from monopoly_game_engine.env import TradeOffer
+    from oracle.plus_loop import plan_incoming_action
+
+    game = SharedGame.new(58, max_rounds=20)
+    env = game.env
+    brown = COLOR_GROUPS["brown"]
+    _give(env, 1, brown[0])
+    _give(env, 0, brown[1])
+    env.pending_trades[1] = TradeOffer(
+        1, 0, requested_prop=env.properties[brown[1]]
+    )
+    legal = [int(ActionType.ACCEPT_TRADE), int(ActionType.DECLINE_TRADE)]
+    assert plan_incoming_action(env, 0, legal, "orange") == int(
+        ActionType.DECLINE_TRADE
+    )
+
+
+def test_plan_trade_takes_completing_orange():
+    from monopoly_game_engine.actions import OFFSETS
+    from oracle.plus_loop import plan_trade_action
+
+    game = SharedGame.new(59, max_rounds=20)
+    env = game.env
+    orange = COLOR_GROUPS["orange"]
+    brown = COLOR_GROUPS["brown"]
+    _give(env, 0, orange[0])
+    _give(env, 0, orange[1])
+    _give(env, 0, brown[0])
+    _give(env, 1, orange[2])
+    _give(env, 1, brown[1])
+    env.players[0].cash = 1500
+    env.current_turn_idx = env.turn_order.index(0)
+    legal = list(env.get_allowed_actions(0))
+    action = plan_trade_action(env, 0, legal)
+    assert action is not None
+    assert action in legal
+    assert OFFSETS["buy_trade"] <= action
+
+
+def test_plan_trade_cash_buys_completing():
+    from monopoly_game_engine.actions import OFFSETS
+    from oracle.plus_loop import plan_trade_action
+
+    game = SharedGame.new(60, max_rounds=20)
+    env = game.env
+    brown = COLOR_GROUPS["brown"]
+    _give(env, 0, brown[0])
+    _give(env, 1, brown[1])
+    env.players[0].cash = 1500
+    env.current_turn_idx = env.turn_order.index(0)
+    legal = list(env.get_allowed_actions(0))
+    action = plan_trade_action(env, 0, legal)
+    assert action is not None
+    assert OFFSETS["buy_trade"] <= action < OFFSETS["sell_trade"]
 

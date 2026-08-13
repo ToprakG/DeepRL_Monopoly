@@ -1,0 +1,49 @@
+{
+  "n": 100,
+  "wins": {
+    "slayer-v1": 33,
+    "oracle-plus-v1": 24,
+    "underdog-v1": 33,
+    "alinebidal-final": 10
+  },
+  "bust": {
+    "oracle-plus-v1": 64,
+    "underdog-v1": 60,
+    "alinebidal-final": 78,
+    "slayer-v1": 60
+  },
+  "mean_rounds": 87.9,
+  "median_rounds": 64.5,
+  "plus_seat_wins": {
+    "0": 5,
+    "1": 8,
+    "2": 5,
+    "3": 6
+  },
+  "plus_seat_games": {
+    "0": 25,
+    "1": 25,
+    "2": 25,
+    "3": 25
+  },
+  "plus_mean_rounds_win": 70.2,
+  "plus_mean_rounds_loss": 93.5,
+  "plus_bust": 64,
+  "plus_mean_nw": 8175.7,
+  "mean_nw": {
+    "oracle-plus-v1": 8175.7,
+    "underdog-v1": 11605.3,
+    "slayer-v1": 12105.2,
+    "alinebidal-final": 4770.7
+  },
+  "mean_rounds_by_winner": {
+    "slayer-v1": 93.5,
+    "oracle-plus-v1": 70.2,
+    "underdog-v1": 92.1,
+    "alinebidal-final": 98.3
+  },
+  "plus_mean_nw_loss": 651.3,
+  "plus_zero_on_loss": 64,
+  "truncated": 0,
+  "mean_elapsed_s": 3.6
+}

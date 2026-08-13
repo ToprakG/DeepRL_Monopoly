@@ -1,0 +1,1103 @@
+[
+  {
+    "index": 0,
+    "winner": "oracle-jail-v1",
+    "rounds": 48,
+    "first_set": {
+      "underdog-v1": {
+        "round": 4,
+        "colors": [
+          "pink"
+        ],
+        "houses": 0,
+        "cash": 947.0
+      },
+      "oracle-jail-v1": {
+        "round": 13,
+        "colors": [
+          "darkblue"
+        ],
+        "houses": 0,
+        "cash": 842.0
+      },
+      "slayer-v1": {
+        "round": 22,
+        "colors": [
+          "red"
+        ],
+        "houses": 0,
+        "cash": 193.0
+      },
+      "inncenta-heuristic": {
+        "round": 22,
+        "colors": [
+          "orange"
+        ],
+        "houses": 0,
+        "cash": 40.0
+      }
+    },
+    "first_three": {
+      "underdog-v1": {
+        "round": 5,
+        "houses": 7,
+        "sets": [
+          "pink"
+        ],
+        "cash": 287.0
+      },
+      "oracle-jail-v1": {
+        "round": 22,
+        "houses": 5,
+        "sets": [
+          "darkblue"
+        ],
+        "cash": 1214.0
+      }
+    },
+    "us_had_set": true,
+    "us_had_three": true,
+    "us_set_first": false,
+    "us_three_first": false,
+    "skipped_build_with_set": 45,
+    "trades": {
+      "accept": 1,
+      "offer": 18,
+      "decline": 5
+    }
+  },
+  {
+    "index": 1,
+    "winner": "inncenta-heuristic",
+    "rounds": 62,
+    "first_set": {
+      "oracle-jail-v1": {
+        "round": 20,
+        "colors": [
+          "brown"
+        ],
+        "houses": 0,
+        "cash": 1082.0
+      },
+      "inncenta-heuristic": {
+        "round": 20,
+        "colors": [
+          "darkblue"
+        ],
+        "houses": 0,
+        "cash": 291.0
+      },
+      "underdog-v1": {
+        "round": 21,
+        "colors": [
+          "red"
+        ],
+        "houses": 0,
+        "cash": 229.0
+      },
+      "slayer-v1": {
+        "round": 28,
+        "colors": [
+          "orange"
+        ],
+        "houses": 0,
+        "cash": 330.0
+      }
+    },
+    "first_three": {
+      "oracle-jail-v1": {
+        "round": 21,
+        "houses": 5,
+        "sets": [
+          "brown"
+        ],
+        "cash": 1269.0
+      },
+      "underdog-v1": {
+        "round": 29,
+        "houses": 7,
+        "sets": [
+          "red"
+        ],
+        "cash": 350.0
+      },
+      "inncenta-heuristic": {
+        "round": 33,
+        "houses": 5,
+        "sets": [
+          "darkblue"
+        ],
+        "cash": 435.0
+      },
+      "slayer-v1": {
+        "round": 33,
+        "houses": 7,
+        "sets": [
+          "orange"
+        ],
+        "cash": 173.0
+      }
+    },
+    "us_had_set": true,
+    "us_had_three": true,
+    "us_set_first": true,
+    "us_three_first": true,
+    "skipped_build_with_set": 18,
+    "trades": {
+      "decline": 36,
+      "accept": 23,
+      "offer": 2
+    }
+  },
+  {
+    "index": 2,
+    "winner": "underdog-v1",
+    "rounds": 41,
+    "first_set": {
+      "oracle-jail-v1": {
+        "round": 4,
+        "colors": [
+          "brown"
+        ],
+        "houses": 0,
+        "cash": 1331.0
+      },
+      "underdog-v1": {
+        "round": 21,
+        "colors": [
+          "red"
+        ],
+        "houses": 0,
+        "cash": 336.0
+      }
+    },
+    "first_three": {
+      "oracle-jail-v1": {
+        "round": 5,
+        "houses": 5,
+        "sets": [
+          "brown"
+        ],
+        "cash": 335.0
+      },
+      "underdog-v1": {
+        "round": 32,
+        "houses": 7,
+        "sets": [
+          "red"
+        ],
+        "cash": 441.0
+      }
+    },
+    "us_had_set": true,
+    "us_had_three": true,
+    "us_set_first": true,
+    "us_three_first": true,
+    "skipped_build_with_set": 32,
+    "trades": {
+      "decline": 12,
+      "offer": 1
+    }
+  },
+  {
+    "index": 3,
+    "winner": "underdog-v1",
+    "rounds": 47,
+    "first_set": {
+      "underdog-v1": {
+        "round": 8,
+        "colors": [
+          "orange"
+        ],
+        "houses": 0,
+        "cash": 256.0
+      }
+    },
+    "first_three": {
+      "underdog-v1": {
+        "round": 14,
+        "houses": 7,
+        "sets": [
+          "orange"
+        ],
+        "cash": 252.0
+      }
+    },
+    "us_had_set": false,
+    "us_had_three": false,
+    "us_set_first": false,
+    "us_three_first": false,
+    "skipped_build_with_set": 0,
+    "trades": {
+      "decline": 30
+    }
+  },
+  {
+    "index": 4,
+    "winner": "slayer-v1",
+    "rounds": 46,
+    "first_set": {
+      "slayer-v1": {
+        "round": 7,
+        "colors": [
+          "orange"
+        ],
+        "houses": 0,
+        "cash": 186.0
+      }
+    },
+    "first_three": {
+      "slayer-v1": {
+        "round": 21,
+        "houses": 7,
+        "sets": [
+          "orange"
+        ],
+        "cash": 220.0
+      }
+    },
+    "us_had_set": false,
+    "us_had_three": false,
+    "us_set_first": false,
+    "us_three_first": false,
+    "skipped_build_with_set": 0,
+    "trades": {
+      "decline": 30,
+      "offer": 22
+    }
+  },
+  {
+    "index": 5,
+    "winner": "slayer-v1",
+    "rounds": 56,
+    "first_set": {
+      "inncenta-heuristic": {
+        "round": 9,
+        "colors": [
+          "darkblue"
+        ],
+        "houses": 0,
+        "cash": 110.0
+      },
+      "oracle-jail-v1": {
+        "round": 12,
+        "colors": [
+          "brown"
+        ],
+        "houses": 0,
+        "cash": 1414.0
+      },
+      "slayer-v1": {
+        "round": 18,
+        "colors": [
+          "lightblue"
+        ],
+        "houses": 0,
+        "cash": 354.0
+      },
+      "underdog-v1": {
+        "round": 28,
+        "colors": [
+          "red"
+        ],
+        "houses": 0,
+        "cash": 536.0
+      }
+    },
+    "first_three": {
+      "oracle-jail-v1": {
+        "round": 13,
+        "houses": 5,
+        "sets": [
+          "brown"
+        ],
+        "cash": 1164.0
+      },
+      "slayer-v1": {
+        "round": 20,
+        "houses": 7,
+        "sets": [
+          "lightblue"
+        ],
+        "cash": 226.0
+      },
+      "inncenta-heuristic": {
+        "round": 40,
+        "houses": 5,
+        "sets": [
+          "darkblue"
+        ],
+        "cash": 881.0
+      }
+    },
+    "us_had_set": true,
+    "us_had_three": true,
+    "us_set_first": false,
+    "us_three_first": true,
+    "skipped_build_with_set": 40,
+    "trades": {
+      "offer": 1,
+      "accept": 4
+    }
+  },
+  {
+    "index": 6,
+    "winner": "oracle-jail-v1",
+    "rounds": 40,
+    "first_set": {
+      "slayer-v1": {
+        "round": 12,
+        "colors": [
+          "darkblue"
+        ],
+        "houses": 0,
+        "cash": 104.0
+      },
+      "oracle-jail-v1": {
+        "round": 13,
+        "colors": [
+          "pink"
+        ],
+        "houses": 0,
+        "cash": 1167.0
+      }
+    },
+    "first_three": {
+      "oracle-jail-v1": {
+        "round": 14,
+        "houses": 7,
+        "sets": [
+          "pink"
+        ],
+        "cash": 473.0
+      }
+    },
+    "us_had_set": true,
+    "us_had_three": true,
+    "us_set_first": false,
+    "us_three_first": true,
+    "skipped_build_with_set": 52,
+    "trades": {
+      "decline": 5,
+      "accept": 3,
+      "offer": 35
+    }
+  },
+  {
+    "index": 7,
+    "winner": "slayer-v1",
+    "rounds": 49,
+    "first_set": {
+      "slayer-v1": {
+        "round": 3,
+        "colors": [
+          "orange"
+        ],
+        "houses": 0,
+        "cash": 532.0
+      },
+      "inncenta-heuristic": {
+        "round": 29,
+        "colors": [
+          "darkblue"
+        ],
+        "houses": 0,
+        "cash": 51.0
+      }
+    },
+    "first_three": {
+      "slayer-v1": {
+        "round": 12,
+        "houses": 7,
+        "sets": [
+          "orange"
+        ],
+        "cash": 186.0
+      }
+    },
+    "us_had_set": false,
+    "us_had_three": false,
+    "us_set_first": false,
+    "us_three_first": false,
+    "skipped_build_with_set": 0,
+    "trades": {}
+  },
+  {
+    "index": 8,
+    "winner": "underdog-v1",
+    "rounds": 200,
+    "first_set": {},
+    "first_three": {},
+    "us_had_set": false,
+    "us_had_three": false,
+    "us_set_first": false,
+    "us_three_first": false,
+    "skipped_build_with_set": 0,
+    "trades": {}
+  },
+  {
+    "index": 9,
+    "winner": "slayer-v1",
+    "rounds": 53,
+    "first_set": {
+      "slayer-v1": {
+        "round": 2,
+        "colors": [
+          "pink"
+        ],
+        "houses": 0,
+        "cash": 697.0
+      }
+    },
+    "first_three": {
+      "slayer-v1": {
+        "round": 5,
+        "houses": 7,
+        "sets": [
+          "pink"
+        ],
+        "cash": 217.0
+      }
+    },
+    "us_had_set": false,
+    "us_had_three": false,
+    "us_set_first": false,
+    "us_three_first": false,
+    "skipped_build_with_set": 0,
+    "trades": {
+      "decline": 30
+    }
+  },
+  {
+    "index": 10,
+    "winner": "slayer-v1",
+    "rounds": 125,
+    "first_set": {
+      "oracle-jail-v1": {
+        "round": 21,
+        "colors": [
+          "pink"
+        ],
+        "houses": 0,
+        "cash": 731.0
+      },
+      "slayer-v1": {
+        "round": 21,
+        "colors": [
+          "yellow"
+        ],
+        "houses": 0,
+        "cash": 492.0
+      },
+      "underdog-v1": {
+        "round": 25,
+        "colors": [
+          "red"
+        ],
+        "houses": 0,
+        "cash": 350.0
+      },
+      "inncenta-heuristic": {
+        "round": 48,
+        "colors": [
+          "darkblue"
+        ],
+        "houses": 0,
+        "cash": 628.0
+      }
+    },
+    "first_three": {
+      "oracle-jail-v1": {
+        "round": 22,
+        "houses": 7,
+        "sets": [
+          "pink"
+        ],
+        "cash": 131.0
+      },
+      "slayer-v1": {
+        "round": 29,
+        "houses": 7,
+        "sets": [
+          "orange",
+          "yellow"
+        ],
+        "cash": 108.0
+      }
+    },
+    "us_had_set": true,
+    "us_had_three": true,
+    "us_set_first": true,
+    "us_three_first": true,
+    "skipped_build_with_set": 89,
+    "trades": {
+      "offer": 26,
+      "decline": 64,
+      "accept": 10
+    }
+  },
+  {
+    "index": 11,
+    "winner": "slayer-v1",
+    "rounds": 66,
+    "first_set": {
+      "slayer-v1": {
+        "round": 18,
+        "colors": [
+          "green"
+        ],
+        "houses": 0,
+        "cash": 61.0
+      },
+      "oracle-jail-v1": {
+        "round": 46,
+        "colors": [
+          "red"
+        ],
+        "houses": 0,
+        "cash": 622.0
+      },
+      "inncenta-heuristic": {
+        "round": 61,
+        "colors": [
+          "darkblue"
+        ],
+        "houses": 0,
+        "cash": 963.0
+      }
+    },
+    "first_three": {
+      "slayer-v1": {
+        "round": 38,
+        "houses": 9,
+        "sets": [
+          "lightblue",
+          "green"
+        ],
+        "cash": 68.0
+      },
+      "inncenta-heuristic": {
+        "round": 63,
+        "houses": 5,
+        "sets": [
+          "darkblue"
+        ],
+        "cash": 163.0
+      }
+    },
+    "us_had_set": true,
+    "us_had_three": false,
+    "us_set_first": false,
+    "us_three_first": false,
+    "skipped_build_with_set": 6,
+    "trades": {
+      "decline": 3
+    }
+  },
+  {
+    "index": 12,
+    "winner": "inncenta-heuristic",
+    "rounds": 90,
+    "first_set": {
+      "inncenta-heuristic": {
+        "round": 19,
+        "colors": [
+          "darkblue"
+        ],
+        "houses": 0,
+        "cash": 194.0
+      },
+      "oracle-jail-v1": {
+        "round": 24,
+        "colors": [
+          "lightblue"
+        ],
+        "houses": 0,
+        "cash": 1119.0
+      },
+      "slayer-v1": {
+        "round": 24,
+        "colors": [
+          "green"
+        ],
+        "houses": 0,
+        "cash": 818.0
+      }
+    },
+    "first_three": {
+      "oracle-jail-v1": {
+        "round": 25,
+        "houses": 7,
+        "sets": [
+          "lightblue"
+        ],
+        "cash": 781.0
+      },
+      "inncenta-heuristic": {
+        "round": 51,
+        "houses": 5,
+        "sets": [
+          "red",
+          "darkblue"
+        ],
+        "cash": 449.0
+      }
+    },
+    "us_had_set": true,
+    "us_had_three": true,
+    "us_set_first": false,
+    "us_three_first": true,
+    "skipped_build_with_set": 49,
+    "trades": {
+      "offer": 26,
+      "decline": 16,
+      "accept": 4
+    }
+  },
+  {
+    "index": 13,
+    "winner": "underdog-v1",
+    "rounds": 29,
+    "first_set": {
+      "underdog-v1": {
+        "round": 9,
+        "colors": [
+          "red"
+        ],
+        "houses": 0,
+        "cash": 433.0
+      }
+    },
+    "first_three": {
+      "underdog-v1": {
+        "round": 14,
+        "houses": 7,
+        "sets": [
+          "red"
+        ],
+        "cash": 314.0
+      }
+    },
+    "us_had_set": false,
+    "us_had_three": false,
+    "us_set_first": false,
+    "us_three_first": false,
+    "skipped_build_with_set": 0,
+    "trades": {
+      "offer": 20,
+      "decline": 18
+    }
+  },
+  {
+    "index": 14,
+    "winner": "inncenta-heuristic",
+    "rounds": 69,
+    "first_set": {
+      "inncenta-heuristic": {
+        "round": 22,
+        "colors": [
+          "green"
+        ],
+        "houses": 0,
+        "cash": 8.0
+      },
+      "slayer-v1": {
+        "round": 58,
+        "colors": [
+          "orange"
+        ],
+        "houses": 0,
+        "cash": 238.0
+      }
+    },
+    "first_three": {
+      "inncenta-heuristic": {
+        "round": 32,
+        "houses": 7,
+        "sets": [
+          "brown",
+          "green"
+        ],
+        "cash": 16.0
+      }
+    },
+    "us_had_set": false,
+    "us_had_three": false,
+    "us_set_first": false,
+    "us_three_first": false,
+    "skipped_build_with_set": 0,
+    "trades": {
+      "decline": 106
+    }
+  },
+  {
+    "index": 15,
+    "winner": "slayer-v1",
+    "rounds": 35,
+    "first_set": {
+      "slayer-v1": {
+        "round": 5,
+        "colors": [
+          "pink"
+        ],
+        "houses": 0,
+        "cash": 110.0
+      },
+      "underdog-v1": {
+        "round": 12,
+        "colors": [
+          "yellow"
+        ],
+        "houses": 0,
+        "cash": 520.0
+      }
+    },
+    "first_three": {
+      "slayer-v1": {
+        "round": 16,
+        "houses": 7,
+        "sets": [
+          "pink"
+        ],
+        "cash": 293.0
+      }
+    },
+    "us_had_set": false,
+    "us_had_three": false,
+    "us_set_first": false,
+    "us_three_first": false,
+    "skipped_build_with_set": 0,
+    "trades": {
+      "decline": 39
+    }
+  },
+  {
+    "index": 16,
+    "winner": "underdog-v1",
+    "rounds": 200,
+    "first_set": {},
+    "first_three": {},
+    "us_had_set": false,
+    "us_had_three": false,
+    "us_set_first": false,
+    "us_three_first": false,
+    "skipped_build_with_set": 0,
+    "trades": {
+      "decline": 1115,
+      "offer": 191
+    }
+  },
+  {
+    "index": 17,
+    "winner": "slayer-v1",
+    "rounds": 101,
+    "first_set": {
+      "slayer-v1": {
+        "round": 8,
+        "colors": [
+          "yellow"
+        ],
+        "houses": 0,
+        "cash": 203.0
+      },
+      "underdog-v1": {
+        "round": 14,
+        "colors": [
+          "brown"
+        ],
+        "houses": 0,
+        "cash": 1244.0
+      }
+    },
+    "first_three": {
+      "underdog-v1": {
+        "round": 15,
+        "houses": 5,
+        "sets": [
+          "brown"
+        ],
+        "cash": 1018.0
+      },
+      "slayer-v1": {
+        "round": 35,
+        "houses": 7,
+        "sets": [
+          "yellow"
+        ],
+        "cash": 183.0
+      }
+    },
+    "us_had_set": false,
+    "us_had_three": false,
+    "us_set_first": false,
+    "us_three_first": false,
+    "skipped_build_with_set": 0,
+    "trades": {
+      "decline": 137,
+      "offer": 52
+    }
+  },
+  {
+    "index": 18,
+    "winner": "inncenta-heuristic",
+    "rounds": 86,
+    "first_set": {
+      "inncenta-heuristic": {
+        "round": 29,
+        "colors": [
+          "lightblue"
+        ],
+        "houses": 0,
+        "cash": 728.0
+      },
+      "underdog-v1": {
+        "round": 55,
+        "colors": [
+          "red"
+        ],
+        "houses": 0,
+        "cash": 1569.0
+      }
+    },
+    "first_three": {
+      "inncenta-heuristic": {
+        "round": 30,
+        "houses": 7,
+        "sets": [
+          "lightblue"
+        ],
+        "cash": 403.0
+      },
+      "underdog-v1": {
+        "round": 55,
+        "houses": 7,
+        "sets": [
+          "red"
+        ],
+        "cash": 378.0
+      }
+    },
+    "us_had_set": false,
+    "us_had_three": false,
+    "us_set_first": false,
+    "us_three_first": false,
+    "skipped_build_with_set": 0,
+    "trades": {
+      "decline": 121,
+      "offer": 19
+    }
+  },
+  {
+    "index": 19,
+    "winner": "underdog-v1",
+    "rounds": 72,
+    "first_set": {
+      "underdog-v1": {
+        "round": 18,
+        "colors": [
+          "yellow"
+        ],
+        "houses": 0,
+        "cash": 438.0
+      },
+      "oracle-jail-v1": {
+        "round": 24,
+        "colors": [
+          "lightblue"
+        ],
+        "houses": 0,
+        "cash": 558.0
+      }
+    },
+    "first_three": {
+      "oracle-jail-v1": {
+        "round": 25,
+        "houses": 7,
+        "sets": [
+          "lightblue"
+        ],
+        "cash": 208.0
+      },
+      "underdog-v1": {
+        "round": 40,
+        "houses": 7,
+        "sets": [
+          "yellow"
+        ],
+        "cash": 463.0
+      }
+    },
+    "us_had_set": true,
+    "us_had_three": true,
+    "us_set_first": false,
+    "us_three_first": true,
+    "skipped_build_with_set": 65,
+    "trades": {
+      "decline": 65,
+      "accept": 1,
+      "offer": 54
+    }
+  },
+  {
+    "index": 20,
+    "winner": "slayer-v1",
+    "rounds": 56,
+    "first_set": {
+      "slayer-v1": {
+        "round": 6,
+        "colors": [
+          "red"
+        ],
+        "houses": 0,
+        "cash": 211.0
+      },
+      "inncenta-heuristic": {
+        "round": 8,
+        "colors": [
+          "yellow"
+        ],
+        "houses": 0,
+        "cash": 246.0
+      },
+      "underdog-v1": {
+        "round": 10,
+        "colors": [
+          "brown"
+        ],
+        "houses": 0,
+        "cash": 816.0
+      }
+    },
+    "first_three": {
+      "underdog-v1": {
+        "round": 11,
+        "houses": 5,
+        "sets": [
+          "brown"
+        ],
+        "cash": 580.0
+      },
+      "slayer-v1": {
+        "round": 21,
+        "houses": 7,
+        "sets": [
+          "red"
+        ],
+        "cash": 204.0
+      }
+    },
+    "us_had_set": false,
+    "us_had_three": false,
+    "us_set_first": false,
+    "us_three_first": false,
+    "skipped_build_with_set": 0,
+    "trades": {
+      "decline": 7
+    }
+  },
+  {
+    "index": 21,
+    "winner": "oracle-jail-v1",
+    "rounds": 144,
+    "first_set": {
+      "oracle-jail-v1": {
+        "round": 57,
+        "colors": [
+          "red"
+        ],
+        "houses": 0,
+        "cash": 861.0
+      },
+      "underdog-v1": {
+        "round": 119,
+        "colors": [
+          "darkblue"
+        ],
+        "houses": 0,
+        "cash": 257.0
+      }
+    },
+    "first_three": {
+      "oracle-jail-v1": {
+        "round": 64,
+        "houses": 7,
+        "sets": [
+          "red"
+        ],
+        "cash": 72.0
+      }
+    },
+    "us_had_set": true,
+    "us_had_three": true,
+    "us_set_first": true,
+    "us_three_first": true,
+    "skipped_build_with_set": 139,
+    "trades": {
+      "decline": 143,
+      "offer": 67,
+      "accept": 42
+    }
+  },
+  {
+    "index": 22,
+    "winner": "slayer-v1",
+    "rounds": 41,
+    "first_set": {
+      "slayer-v1": {
+        "round": 5,
+        "colors": [
+          "pink"
+        ],
+        "houses": 0,
+        "cash": 282.0
+      },
+      "underdog-v1": {
+        "round": 31,
+        "colors": [
+          "orange"
+        ],
+        "houses": 0,
+        "cash": 907.0
+      }
+    },
+    "first_three": {
+      "slayer-v1": {
+        "round": 19,
+        "houses": 7,
+        "sets": [
+          "pink"
+        ],
+        "cash": 70.0
+      },
+      "underdog-v1": {
+        "round": 32,
+        "houses": 7,
+        "sets": [
+          "orange"
+        ],
+        "cash": 268.0
+      }
+    },
+    "us_had_set": false,
+    "us_had_three": false,
+    "us_set_first": false,
+    "us_three_first": false,
+    "skipped_build_with_set": 0,
+    "trades": {
+      "decline": 1
+    }
+  },
+  {
+    "index": 23,
+    "winner": "inncenta-heuristic",
+    "rounds": 200,
+    "first_set": {},
+    "first_three": {},
+    "us_had_set": false,
+    "us_had_three": false,
+    "us_set_first": false,
+    "us_three_first": false,
+    "skipped_build_with_set": 0,
+    "trades": {}
+  }
+]

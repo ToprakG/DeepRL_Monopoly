@@ -1,18 +1,19 @@
-"""One-weapon plan policy. Optional 1-ply / trade toggles sit around the loop.
+"""Colour-agnostic book loop. Optional deepcopy 1-ply sits off by default.
 
-The body (``oracle.plus_loop``) picks the one colour we can still finish and
-serves it: buy/auction/build that colour, mortgage the rest, sit in jail once
-someone has three houses. DealBuilder is not the fallback.
+The body (``oracle.plus_loop``) scores each spend as one engine-book step
+(2.5× deed, 5× if the set completes) and takes it when the delta is positive.
+No colour is the plan. DealBuilder is not the fallback. deepcopy 1-ply is
+still a toggle, not the body.
 
 Flags (defaults for ``oracle-plus-v1``):
-- ``one_ply`` — deepcopy legal shortlist (off: closed-form plan loop)
+- ``one_ply`` — deepcopy legal shortlist (off: closed-form book loop)
 - ``solvency`` — prefer solvent 1-ply successors (default off)
-- ``denial`` — bid to block an opponent who is one away
-- ``completing_trade`` — cash-buy a finishing deed only after build/buy
-- ``auction`` — plan-role ceiling, smallest legal raise
+- ``denial`` — add a slice of the best opponent's book gain
+- ``completing_trade`` — swap when both gain book and we gain more
+- ``auction`` — 0.62 of book value, smallest legal raise
 - ``cash_gate`` / ``build_first`` / ``race_buy`` / ``lethal_jail`` — on
 - ``phase_switch`` — blend toward engine net worth as the cap approaches
-- ``inncenta_trade`` — pay 1.25× then 1.0× then 0.75× on completing trades
+- ``inncenta_trade`` — unused by the book loop (list-price completing cash-buy)
 - ``leaf`` — asu (default) / networth / asu_plus / clone / rollout
 """
 
@@ -22,30 +23,28 @@ import random
 from dataclasses import replace
 
 from monopoly_game_engine.actions import OFFSETS, ActionType
-from monopoly_game_engine.agents_fixed import _buy_trade_action
-from monopoly_game_engine.constants import COLOR_GROUPS, PROPERTIES, TRADE_CASH_LEVELS
+from monopoly_game_engine.constants import COLOR_GROUPS, PROPERTIES
 from monopoly_game_engine.env import PHASE_AUCTION, MonopolyEnv
 
 from oracle.agent import OracleConfig
 from oracle.plus_loop import (
-    active_colour,
     debt_action,
     idle_action,
     needs_plan_cash,
     plan_auction_action,
     plan_build_action,
     plan_buy_action,
+    plan_incoming_action,
+    plan_trade_action,
 )
 from oracle.plus_steals import (
     AUCTION_KINDS,
     FIRST_RACE_COLOURS,
     asu_delta_auction,
     cap_weight,
-    complete_floor,
     dead_mortgage_action,
     full_sets,
     has_trade_action,
-    incoming_trade_action,
     is_dominated_cash_action,
     lethal_jail_action,
     scrap_buy_action,
@@ -54,7 +53,6 @@ from oracle.plus_steals import (
     unowned_count,
     would_complete,
 )
-from oracle_v2.clone import fast_clone_env
 
 ORACLE_PLUS_ID = "oracle-plus-v1"
 TRADE_LO = OFFSETS["buy_trade"]
@@ -203,48 +201,9 @@ class OraclePlusAgent:
         return worth
 
     def _auction_action(self, env: MonopolyEnv, legal: list[int]) -> int | None:
-        plan = active_colour(env, self.player_id)
         return plan_auction_action(
-            env, self.player_id, legal, plan, deny=self.config.denial
+            env, self.player_id, legal, deny=self.config.denial
         )
-
-    def _completing_trade(self, env: MonopolyEnv, legal: list[int]) -> int | None:
-        pid = self.player_id
-        me = env.players[pid]
-        prices = (2, 1, 0) if self.config.inncenta_trade else (0, 1, 2)
-        best: tuple[float, int] | None = None
-        for color, group in COLOR_GROUPS.items():
-            if color in ("railroad", "utility"):
-                continue
-            owned = [sq for sq in group if env.properties[sq].owner == pid]
-            if len(owned) + 1 != len(group):
-                continue
-            need = [
-                sq
-                for sq in group
-                if env.properties[sq].owner not in (pid, None)
-                and not env.players[env.properties[sq].owner].bankrupt
-                and env.properties[sq].houses == 0
-            ]
-            if not need:
-                continue
-            sq = need[0]
-            target = env.properties[sq].owner
-            rents = PROPERTIES[sq].get("rent") or [0]
-            rank = float(rents[-1])
-            for price_idx in prices:
-                cost = float(PROPERTIES[sq]["price"]) * TRADE_CASH_LEVELS[price_idx]
-                if me.cash - cost < complete_floor(env, pid):
-                    continue
-                action = _buy_trade_action(pid, target, sq, price_idx, env, legal)
-                if action is None:
-                    continue
-                if not self.config.inncenta_trade:
-                    return int(action)
-                if best is None or rank > best[0]:
-                    best = (rank, int(action))
-                break
-        return None if best is None else best[1]
 
     def _survives(self, future: MonopolyEnv) -> bool:
         if not self.config.solvency:
@@ -284,6 +243,8 @@ class OraclePlusAgent:
         safe_action, safe_value = None, float("-inf")
         state = random.getstate()
         try:
+            from oracle_v2.clone import fast_clone_env
+
             for action in self._shortlist(legal):
                 try:
                     future = fast_clone_env(env)
@@ -308,18 +269,17 @@ class OraclePlusAgent:
             return int(ActionType.END_TURN)
         if len(legal) == 1:
             return int(legal[0])
-        incoming = incoming_trade_action(env, pid, legal)
+        deny = bool(self.config.denial)
+        incoming = plan_incoming_action(env, pid, legal)
         if incoming is not None:
             return incoming
-        deny = bool(self.config.denial)
-        plan = active_colour(env, pid)
 
         if getattr(env, "phase", None) == PHASE_AUCTION:
             if self.config.auction:
                 bid = (
                     asu_delta_auction(env, pid, legal)
                     if self.config.auction_kind == "asu_delta"
-                    else plan_auction_action(env, pid, legal, plan, deny=deny)
+                    else plan_auction_action(env, pid, legal, deny=deny)
                 )
                 if bid is not None:
                     return bid
@@ -329,7 +289,7 @@ class OraclePlusAgent:
             return idle_action(legal)
 
         if env.debt_player == pid:
-            return debt_action(env, pid, legal, plan)
+            return debt_action(env, pid, legal)
 
         if self.config.lethal_jail:
             jail = lethal_jail_action(env, pid, legal)
@@ -339,22 +299,24 @@ class OraclePlusAgent:
         if thawed is not None:
             return thawed
         if self.config.build_first:
-            built = plan_build_action(env, pid, legal, plan)
+            built = plan_build_action(env, pid, legal)
             if built is not None:
                 return built
-        force = needs_plan_cash(env, pid, legal, plan, deny=deny)
+        force = needs_plan_cash(env, pid, legal, deny=deny)
         parked = dead_mortgage_action(env, pid, legal, force=force)
         if parked is not None:
             return parked
         if self.config.race_buy:
-            buy = plan_buy_action(env, pid, legal, plan, deny=deny)
+            buy = plan_buy_action(env, pid, legal, deny=deny)
             if buy is not None:
                 return buy
         scrap = scrap_buy_action(env, pid, legal)
         if scrap is not None:
             return scrap
         if self.config.completing_trade:
-            trade = self._completing_trade(env, legal)
+            trade = plan_trade_action(
+                env, pid, legal, pay_up=self.config.inncenta_trade
+            )
             if trade is not None:
                 return trade
         if self.config.one_ply and (

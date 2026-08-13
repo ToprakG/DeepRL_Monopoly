@@ -1,0 +1,208 @@
+PLUS LOSS REPLAY  seed 9710000  n=24  plus vs slayer/underdog/inncenta
+
+wins 3/24  bust 71% (17/24)
+
+== LOSS n=21
+  first-set them 67% (14/21)  us 14% (3/21)  we ever complete a set 43% (9/21)  we ever 3-house 38% (8/21)
+  first-3h them 62% (13/21)  us 19% (4/21)
+  colour they completed first: orange=4, pink=4, lightblue=3, darkblue=2, red=1
+  our deeds of their first-set: 0=14
+  opening colours we already touched (brown/lb/pink) at their first set: 0=5, 1=8, 2=1
+  spread thin at their first set (>=2 opening colours, 0 sets): 7% (1/14)
+  our cash at their first set: mean $1460  min $971  max $1992
+  peak opening colours touched in the whole game: 0=1, 1=10, 2=9, 3=1
+  cash spent acquiring: opening-race mean $153  everything else mean $621
+  lethal colour: orange=4, lightblue=3, darkblue=3, green=2, yellow=2, pink=2, red=1
+  lethal houses (0=bare monopoly, 3=3h, 5=hotel): 2h=1, 3h=1, 4h=3, 5h=12
+
+== WIN n=3
+  first-set them 100% (3/3)  us 0% (0/3)  we ever complete a set 100% (3/3)  we ever 3-house 100% (3/3)
+  first-3h them 33% (1/3)  us 67% (2/3)
+  colour they completed first: pink=1, darkblue=1, red=1
+  our deeds of their first-set: 0=3
+  opening colours we already touched (brown/lb/pink) at their first set: 0=2, 1=1
+  spread thin at their first set (>=2 opening colours, 0 sets): 0% (0/3)
+  our cash at their first set: mean $1410  min $1211  max $1538
+  peak opening colours touched in the whole game: 3=3
+  cash spent acquiring: opening-race mean $261  everything else mean $849
+
+== each loss
+g01 r72  slayer-v1  plans=pink->brown->orange->brown  peak_open=1 colours=2
+  first set r19 inncenta-heuristic lightblue  our cash $1992 sets=0  held brown 1/2
+  first 3h r21 inncenta-heuristic lightblue  our cash $1782 houses=0 sets=1
+  we complete r20 brown cash $1782  3h r21 brown
+  opening acquires: b brown $60 (plan orange); b brown $60 (plan brown)
+  other acquires: b railroad $200; t orange $0; b red $240; b orange $180; b darkblue $350
+  spend opening $120  other $970
+  BUST r39 on New York Avenue (orange 5h)  rent $562.0 to slayer-v1  leftover (none)
+
+g02 r200  slayer-v1  plans=pink->brown->lightblue->green  peak_open=1 colours=3
+  we never complete a set
+  opening acquires: b brown $60 (plan green)
+  other acquires: b utility $150; b railroad $200; a green $751; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; b green $320; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; a orange $133; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0
+  spend opening $60  other $1554
+  survived to cap  our NW $6278
+
+g03 r48  underdog-v1  plans=pink->brown  peak_open=2 colours=3
+  first set r8 oracle-plus-v1 brown  our cash $1255 sets=1  held brown 2/2 set 0h
+  first 3h r9 US brown  our cash $1005 houses=5 sets=1
+  we complete r8 brown cash $1255  3h r9 brown
+  opening acquires: b pink $140 (plan pink); b brown $60 (plan pink); t brown $0 (plan None); b lightblue $100 (plan None)
+  other acquires: b railroad $200; t railroad $0; t railroad $0; t railroad $0; a green $146; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0
+  spend opening $300  other $346
+  BUST r48 on St. James Place (orange 5h)  rent $451.0 to underdog-v1  leftover (none)
+
+g04 r39  slayer-v1  plans=pink->lightblue->brown  peak_open=2 colours=3
+  first set r7 slayer-v1 orange  our cash $1827 sets=0  held brown 1/2
+  first 3h r19 US brown  our cash $1243 houses=5 sets=1
+  we complete r18 brown cash $1493  3h r19 brown
+  opening acquires: b lightblue $100 (plan pink); b brown $60 (plan lightblue); b brown $60 (plan brown)
+  other acquires: b darkblue $400; a green $231
+  spend opening $220  other $631
+  BUST r38 on New York Avenue (orange 5h)  rent $606.0 to slayer-v1  leftover (none)
+
+g05 r63  slayer-v1  plans=pink->brown  peak_open=2 colours=3
+  first set r12 oracle-plus-v1 brown  our cash $1404 sets=1  held brown 2/2 set 0h
+  first 3h r13 US brown  our cash $1154 houses=5 sets=1
+  we complete r12 brown cash $1404  3h r13 brown
+  opening acquires: b pink $140 (plan pink); t pink $0 (plan brown); t pink $0 (plan brown); t pink $0 (plan brown); t pink $0 (plan brown); t pink $0 (plan brown); t pink $0 (plan brown); t pink $0 (plan brown); t pink $0 (plan brown); t pink $0 (plan brown); t pink $0 (plan brown); t pink $0 (plan brown); t pink $0 (plan brown); t pink $0 (plan brown); t pink $0 (plan brown); t pink $0 (plan brown); t pink $0 (plan None); t pink $0 (plan None); t pink $0 (plan None); t pink $0 (plan None); t pink $0 (plan None); t pink $0 (plan None); t pink $0 (plan None); t pink $0 (plan None); t pink $0 (plan None); t pink $0 (plan None); t pink $0 (plan None); t pink $0 (plan None); t pink $0 (plan None); t pink $0 (plan None); t pink $0 (plan None); t pink $0 (plan None); b brown $60 (plan None); t pink $0 (plan None); t brown $0 (plan None); a pink $106 (plan None)
+  other acquires: b railroad $200; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; b red $220; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0
+  spend opening $306  other $420
+  BUST r60 on Oriental Avenue (lightblue 5h)  rent $211.0 to slayer-v1  leftover (none)
+
+g07 r82  slayer-v1  plans=pink->brown  peak_open=1 colours=2
+  first set r3 slayer-v1 orange  our cash $1452 sets=0  held (none)
+  first 3h r9 slayer-v1 orange  our cash $1349 houses=0 sets=0
+  we complete r17 brown cash $1830  3h r18 brown
+  opening acquires: b brown $60 (plan brown); a brown $1 (plan brown)
+  other acquires: a darkblue $143; b railroad $200; t railroad $0; t railroad $0; t railroad $0
+  spend opening $61  other $343
+  BUST r82 on North Carolina Ave (green 2h)  rent $11.0 to slayer-v1  leftover (none)
+
+g08 r70  underdog-v1  plans=pink->lightblue->brown  peak_open=1 colours=2
+  first set r15 inncenta-heuristic lightblue  our cash $1322 sets=0  held brown 1/2
+  first 3h r18 inncenta-heuristic lightblue  our cash $958 houses=0 sets=0
+  we never complete a set
+  opening acquires: b lightblue $120 (plan pink); t brown $0 (plan None)
+  other acquires: a green $151; a railroad $125
+  spend opening $120  other $276
+  BUST r51 on Vermont Avenue (lightblue 5h)  rent $212.0 to inncenta-heuristic  leftover (none)
+
+g09 r62  slayer-v1  plans=pink->lightblue->brown->lightblue  peak_open=2 colours=3
+  first set r2 slayer-v1 pink  our cash $1400 sets=0  held lightblue 1/3
+  first 3h r5 slayer-v1 pink  our cash $1449 houses=0 sets=0
+  we complete r14 brown cash $1145  3h r15 brown
+  opening acquires: b lightblue $100 (plan pink); t brown $0 (plan lightblue); t brown $0 (plan lightblue); t lightblue $0 (plan None)
+  other acquires: b darkblue $350; b utility $150; b railroad $200; b yellow $260
+  spend opening $100  other $960
+  BUST r62 on Park Place (darkblue 3h)  rent $14.0 to slayer-v1  leftover (none)
+
+g10 r44  inncenta-heuristic  plans=pink->brown->lightblue->brown  peak_open=2 colours=4
+  first set r4 inncenta-heuristic pink  our cash $1093 sets=0  held lightblue 1/3
+  first 3h r7 inncenta-heuristic pink  our cash $1118 houses=0 sets=0
+  we never complete a set
+  opening acquires: b pink $140 (plan pink); a pink $117 (plan pink); t lightblue $0 (plan brown); t lightblue $0 (plan brown); t lightblue $0 (plan brown); a brown $150 (plan brown)
+  other acquires: b railroad $200; b yellow $260; b orange $180; t railroad $0; a utility $32
+  spend opening $407  other $672
+  BUST r44 on North Carolina Ave (green 4h)  rent $166.0 to inncenta-heuristic  leftover (none)
+
+g11 r55  inncenta-heuristic  plans=pink->brown  peak_open=1 colours=2
+  first set r13 inncenta-heuristic darkblue  our cash $1670 sets=0  held (none)
+  first 3h r23 inncenta-heuristic darkblue  our cash $1805 houses=0 sets=0
+  we never complete a set
+  opening acquires: t brown $0 (plan None)
+  other acquires: b railroad $200; b red $240
+  spend opening $0  other $440
+  BUST r55 on Park Place (darkblue 5h)  rent $679.0 to inncenta-heuristic  leftover (none)
+
+g12 r97  inncenta-heuristic  plans=pink->lightblue->darkblue  peak_open=2 colours=2
+  first set r19 inncenta-heuristic darkblue  our cash $1780 sets=0  held lightblue 2/3
+  first 3h r35 inncenta-heuristic darkblue  our cash $2125 houses=0 sets=0
+  we never complete a set
+  opening acquires: b lightblue $100 (plan pink); b lightblue $120 (plan lightblue); b brown $60 (plan lightblue)
+  other acquires: b green $300
+  spend opening $280  other $300
+  BUST r86 on Illinois Avenue (red 5h)  rent $613.0 to inncenta-heuristic  leftover (none)
+
+g14 r57  inncenta-heuristic  plans=pink->orange->brown  peak_open=2 colours=3
+  first set r12 inncenta-heuristic pink  our cash $1157 sets=0  held brown 1/2 mort1, orange 2/3
+  first 3h r16 inncenta-heuristic pink  our cash $938 houses=0 sets=0
+  we never complete a set
+  opening acquires: t brown $45 (plan orange); a lightblue $62 (plan None)
+  other acquires: b railroad $200; t orange $0; b orange $200
+  spend opening $107  other $400
+  BUST r45 on Park Place (darkblue 5h)  rent $848.0 to inncenta-heuristic  leftover (none)
+
+g15 r200  slayer-v1  plans=pink->brown->darkblue->brown  peak_open=1 colours=1
+  we never complete a set
+  opening acquires: t brown $0 (plan darkblue)
+  other acquires: b railroad $200; b railroad $200; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0; t railroad $0
+  spend opening $0  other $400
+  survived to cap  our NW $4469
+
+g16 r200  underdog-v1  plans=pink->brown->lightblue->brown  peak_open=2 colours=2
+  we never complete a set
+  opening acquires: b lightblue $100 (plan brown); b brown $60 (plan lightblue)
+  other acquires: a darkblue $330; b railroad $200
+  spend opening $160  other $530
+  survived to cap  our NW $4988
+
+g17 r63  underdog-v1  plans=pink->lightblue->brown  peak_open=2 colours=2
+  first set r11 oracle-plus-v1 lightblue  our cash $938 sets=1  held lightblue 3/3 set 0h, darkblue 1/2
+  first 3h r12 US lightblue  our cash $612 houses=7 sets=1
+  we complete r11 lightblue cash $938  3h r12 lightblue
+  opening acquires: b lightblue $120 (plan pink); a lightblue $72 (plan lightblue); b lightblue $100 (plan lightblue); t brown $0 (plan None)
+  other acquires: b railroad $200; b darkblue $350
+  spend opening $292  other $550
+  BUST r63 on Ventnor Avenue (yellow 4h)  rent $1.0 to underdog-v1  leftover (none)
+
+g18 r82  inncenta-heuristic  plans=pink->brown->green  peak_open=0 colours=2
+  first set r29 inncenta-heuristic lightblue  our cash $1267 sets=0  held red 1/3, darkblue 1/2
+  first 3h r30 inncenta-heuristic lightblue  our cash $1117 houses=0 sets=0
+  we never complete a set
+  other acquires: b red $220; b railroad $200; b utility $150; b darkblue $400
+  spend opening $0  other $970
+  BUST r54 on Vermont Avenue (lightblue 5h)  rent $273.0 to inncenta-heuristic  leftover (none)
+
+g19 r47  slayer-v1  plans=pink->brown->pink->brown->lightblue->brown  peak_open=3 colours=4
+  first set r9 slayer-v1 orange  our cash $971 sets=0  held lightblue 1/3, pink 1/3
+  first 3h r16 slayer-v1 orange  our cash $287 houses=0 sets=0
+  we complete r24 lightblue cash $288  3h r26 lightblue
+  opening acquires: t pink $0 (plan brown); b lightblue $100 (plan brown); t pink $0 (plan lightblue); t pink $0 (plan lightblue); t pink $0 (plan lightblue); t pink $0 (plan lightblue); b brown $60 (plan lightblue); a lightblue $45 (plan brown); a lightblue $141 (plan brown)
+  other acquires: b orange $180; b railroad $200; b railroad $200; a darkblue $315; b railroad $200
+  spend opening $346  other $1095
+  BUST r34 on St. James Place (orange 5h)  rent $224.0 to slayer-v1  leftover (none)
+
+g20 r67  inncenta-heuristic  plans=pink->brown->darkblue  peak_open=1 colours=1
+  first set r6 slayer-v1 red  our cash $1457 sets=0  held (none)
+  first 3h r16 inncenta-heuristic pink  our cash $160 houses=0 sets=1
+  we complete r7 darkblue cash $106
+  opening acquires: b pink $140 (plan pink)
+  other acquires: a darkblue $1001; b darkblue $350
+  spend opening $140  other $1351
+  BUST r23 on States Avenue (pink 4h)  rent $194.0 to inncenta-heuristic  leftover (none)
+
+g21 r28  slayer-v1  plans=pink->lightblue  peak_open=1 colours=2
+  first set r3 slayer-v1 orange  our cash $1300 sets=0  held lightblue 1/3
+  first 3h r18 slayer-v1 pink  our cash $1300 houses=0 sets=0
+  we never complete a set
+  opening acquires: t lightblue $0 (plan pink); a lightblue $45 (plan lightblue)
+  other acquires: b railroad $200; b red $220
+  spend opening $45  other $420
+  BUST r28 on St. Charles Place (pink 5h)  rent $607.0 to slayer-v1  leftover (none)
+
+g22 r41  slayer-v1  plans=pink->brown  peak_open=1 colours=1
+  first set r5 slayer-v1 pink  our cash $1755 sets=0  held (none)
+  first 3h r15 slayer-v1 pink  our cash $1544 houses=0 sets=0
+  we never complete a set
+  opening acquires: b lightblue $100 (plan None)
+  other acquires: b red $220; b orange $200
+  spend opening $100  other $420
+  BUST r33 on Atlantic Avenue (yellow 5h)  rent $410.0 to slayer-v1  leftover (none)
+
+g23 r200  inncenta-heuristic  plans=pink->brown  peak_open=1 colours=1
+  we never complete a set
+  opening acquires: t brown $45 (plan None)
+  spend opening $45  other $0
+  survived to cap  our NW $4799
+

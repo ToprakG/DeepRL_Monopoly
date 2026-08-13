@@ -1,4 +1,4 @@
-"""Live scoreboard: plus vs Underdog / Slayer / Alinebidal."""
+"""Live scoreboard: plus vs Slayer / Underdog / Inncenta. Refresh every 5s."""
 
 from __future__ import annotations
 
@@ -14,6 +14,8 @@ CKPT = ROOT / "artifacts_scratch" / "plus_first_race_ckpt"
 PID = ROOT / "artifacts_scratch" / "plus_first_race.pid"
 ORDER = ("oracle-plus-v1", "slayer-v1", "underdog-v1", "inncenta-heuristic")
 GAMES = 24
+REFRESH_S = 5.0
+_LOG_KEEP = ("h2h progress", "lineup=", "oracle WR=", "  vs ", "started pid", "Error", "Traceback", "TypeError", "ModuleNotFound")
 
 
 def _alive() -> bool:
@@ -24,6 +26,19 @@ def _alive() -> bool:
         return True
     except (OSError, ValueError):
         return False
+
+
+def _log_tail() -> list[str]:
+    if not LOG.exists():
+        return []
+    kept = []
+    for ln in LOG.read_text().splitlines():
+        text = ln.strip()
+        if not text or text.startswith("{") or text.startswith("}") or text.startswith('"'):
+            continue
+        if any(text.startswith(prefix) or prefix in text for prefix in _LOG_KEEP):
+            kept.append(text[:110])
+    return kept[-6:]
 
 
 def _render() -> str:
@@ -59,17 +74,28 @@ def _render() -> str:
         pct = f"{100.0 * w / n:5.1f}%" if n else "  n/a"
         mark = " <-- us" if name == "oracle-plus-v1" else ""
         lines.append(f"  {name:<22} {w:2d}  {pct}  {'#' * w}{mark}")
-    if LOG.exists():
-        tail = [ln for ln in LOG.read_text().splitlines() if ln.strip()][-8:]
+    tail = _log_tail()
+    if tail:
         lines += ["", "log"]
-        lines.extend(f"  {ln[:110]}" for ln in tail)
+        lines.extend(f"  {ln}" for ln in tail)
     return "\n".join(lines)
 
 
 def main() -> int:
+    idle = 0
     while True:
         print("\033[2J\033[H" + _render(), flush=True)
-        time.sleep(0.25)
+        done = not _alive()
+        n = len(list(CKPT.glob("game_*.json")))
+        if done:
+            idle += 1
+            if n >= GAMES:
+                return 0
+            if idle >= 12:
+                return 1
+        else:
+            idle = 0
+        time.sleep(REFRESH_S)
 
 
 if __name__ == "__main__":

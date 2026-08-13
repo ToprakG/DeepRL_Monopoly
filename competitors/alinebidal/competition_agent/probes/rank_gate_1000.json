@@ -1,0 +1,9 @@
+{
+  "ckpt": "rank_head_1000.pt",
+  "gate": -20.254900783022542,
+  "mode": "accuracy",
+  "held_agreement": 0.675480090369952,
+  "held_propose_rate": 0.2931728325331827,
+  "held_top1": 0.35821820758058803,
+  "note": "Candidate D, trained on the 1,000-game corpus (39,081 proposals). Gate accuracy-max on the ranker own logit scale, matching the convention TRADE_GATE=3.92 follows. See DECISIONS D7.5-D7.7."
+}

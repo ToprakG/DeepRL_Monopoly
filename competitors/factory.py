@@ -12,6 +12,7 @@ SLAYER_ID = "slayer-v1"
 CODE_EXPOSURE_ID = "code-exposure"
 EXPO_HEURISTIC_ID = "expo-heuristic-v1"
 UNDERDOG_ID = "underdog-v1"
+SOYLEREMO_ID = "soyleremo-a96"
 
 # All registered competitor policies (opt-in via --lineup).
 COMPETITOR_IDS = (
@@ -22,6 +23,7 @@ COMPETITOR_IDS = (
     CODE_EXPOSURE_ID,
     EXPO_HEURISTIC_ID,
     UNDERDOG_ID,
+    SOYLEREMO_ID,
 )
 # Default oracle+3 field. Other competitors stay available via --lineup.
 FIELD_COMPETITOR_IDS = (INNCENTA_ID, ALINEBIDAL_ID, SLAYER_ID)
@@ -64,6 +66,10 @@ def build_competitor(policy_id: str, player_id: int):
         from competitors.underdog_agent import UnderdogAgent
 
         return UnderdogAgent(player_id)
+    if policy_id == SOYLEREMO_ID:
+        from competitors.soyleremo_agent import SoyleremoA96Agent
+
+        return SoyleremoA96Agent(player_id)
     raise ValueError(f"Unknown competitor policy {policy_id!r}")
 
 
@@ -76,6 +82,7 @@ __all__ = [
     "FIELD_COMPETITOR_IDS",
     "INNCENTA_ID",
     "SLAYER_ID",
+    "SOYLEREMO_ID",
     "UNDERDOG_ID",
     "build_competitor",
 ]

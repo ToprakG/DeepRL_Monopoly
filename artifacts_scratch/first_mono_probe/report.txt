@@ -1,0 +1,60 @@
+FIRST-MONOPOLY PROBE
+
+== strong  n=96  our WR  24.0% (23/96)  bust  58.3% (56/96)
+  LOSS n=73  first-set-us  12.3% (9/73)  first-3h-us  12.3% (9/73)  no-set  19.2% (14/73)
+    first-set owner: slayer-v1=27, underdog-v1=14, oracle-plus-v1=9, inncenta-heuristic=9
+    their first-set colour: pink=16, lightblue=15, orange=5, darkblue=5, red=3, brown=3
+    our pieces of that colour: 0 deeds=50
+  WIN n=23  first-set-us  56.5% (13/23)  first-3h-us  65.2% (15/23)  no-set   0.0% (0/23)
+    first-set owner: oracle-plus-v1=13, inncenta-heuristic=5, slayer-v1=4, underdog-v1=1
+    their first-set colour: lightblue=4, brown=2, pink=1, green=1, darkblue=1, yellow=1
+    our pieces of that colour: 0 deeds=10
+
+== vs_slayer  n=64  our WR  28.1% (18/64)  bust  62.5% (40/64)
+  LOSS n=46  first-set-us   8.7% (4/46)  first-3h-us  13.0% (6/46)  no-set   4.3% (2/46)
+    first-set owner: slayer-v1=21, fixed-b=11, fixed-c=8, oracle-plus-v1=4
+    their first-set colour: lightblue=15, brown=10, pink=5, orange=3, darkblue=3, yellow=2
+    our pieces of that colour: 0 deeds=40
+  WIN n=18  first-set-us  77.8% (14/18)  first-3h-us  88.9% (16/18)  no-set   0.0% (0/18)
+    first-set owner: oracle-plus-v1=14, slayer-v1=2, fixed-c=1, fixed-b=1
+    their first-set colour: red=1, lightblue=1, brown=1, green=1
+    our pieces of that colour: 0 deeds=4
+
+== vs_inncenta  n=64  our WR  39.1% (25/64)  bust  45.3% (29/64)
+  LOSS n=39  first-set-us   2.6% (1/39)  first-3h-us   7.7% (3/39)  no-set  17.9% (7/39)
+    first-set owner: inncenta-heuristic=26, fixed-c=3, fixed-b=2, oracle-plus-v1=1
+    their first-set colour: brown=12, lightblue=8, pink=4, red=3, darkblue=2, yellow=1
+    our pieces of that colour: 0 deeds=31
+  WIN n=25  first-set-us  56.0% (14/25)  first-3h-us  80.0% (20/25)  no-set   4.0% (1/25)
+    first-set owner: oracle-plus-v1=14, fixed-c=6, inncenta-heuristic=2, fixed-b=2
+    their first-set colour: brown=5, yellow=2, lightblue=2, darkblue=1
+    our pieces of that colour: 0 deeds=10
+
+== vs_underdog  n=64  our WR  45.3% (29/64)  bust  45.3% (29/64)
+  LOSS n=35  first-set-us   0.0% (0/35)  first-3h-us   8.6% (3/35)  no-set   5.7% (2/35)
+    first-set owner: fixed-b=16, underdog-v1=16, fixed-c=1
+    their first-set colour: pink=8, brown=7, lightblue=5, yellow=4, darkblue=4, orange=4
+    our pieces of that colour: 0 deeds=33
+  WIN n=29  first-set-us  72.4% (21/29)  first-3h-us  96.6% (28/29)  no-set   3.4% (1/29)
+    first-set owner: oracle-plus-v1=21, fixed-b=5, underdog-v1=2
+    their first-set colour: pink=2, lightblue=2, yellow=1, brown=1, darkblue=1
+    our pieces of that colour: 0 deeds=7
+
+== vs_alinebidal  n=64  our WR  46.9% (30/64)  bust  42.2% (27/64)
+  LOSS n=34  first-set-us  17.6% (6/34)  first-3h-us  32.4% (11/34)  no-set   5.9% (2/34)
+    first-set owner: alinebidal-final=16, oracle-plus-v1=6, fixed-b=5, fixed-c=5
+    their first-set colour: brown=10, lightblue=7, pink=7, darkblue=1, yellow=1
+    our pieces of that colour: 0 deeds=26
+  WIN n=30  first-set-us  63.3% (19/30)  first-3h-us  76.7% (23/30)  no-set   3.3% (1/30)
+    first-set owner: oracle-plus-v1=19, alinebidal-final=6, fixed-b=2, fixed-c=2
+    their first-set colour: brown=5, lightblue=4, red=1
+    our pieces of that colour: 0 deeds=10
+
+== SHARED (all losses with a first set)
+  they completed first:  90.0% (180/200)
+  we completed first and still lost:  10.0% (20/200)
+  they hit 3-houses first (on a loss):  82.0% (164/200)
+  colour they completed: lightblue=50, brown=42, pink=40, darkblue=15, orange=12, yellow=10, red=7, green=4
+  our pieces of their set: 0 deeds=180
+  never contested (0 deeds): 100.0% (180/180)  in the colour and lost the race:   0.0% (0/180)
+
