@@ -14,7 +14,6 @@ from monopoly_game_engine.agents_fixed import (
     FixedPolicyAgent,
     _buy_trade_action,
     _exchange_action,
-    _sell_trade_action,
 )
 from monopoly_game_engine.constants import (
     COLOR_GROUPS,
@@ -37,15 +36,34 @@ EARLY_GROUP_BUFFER = 20
 MORTGAGE_ROUND_SCALE = 15
 
 
+def _would_complete(env: MonopolyEnv, pid: int, square: int) -> bool:
+    prop = env.properties.get(square)
+    if prop is None:
+        return False
+    color = prop.color
+    group = COLOR_GROUPS.get(color) or ()
+    if not group:
+        return False
+    return all(env.properties[sq].owner == pid or sq == square for sq in group)
+
+
 class DealBuilderRollout(FixedPolicyAgent):
     """Competent non-search policy: acquire like DealMaker, develop like Builder."""
 
     def _should_accept_trade(self, offer, env) -> bool:
-        # Builder instinct, any colour: only complete a monopoly.
-        if offer.offered_prop is None:
-            return False
         pid = self.player_id
-        color = offer.offered_prop.color
+        requested = offer.requested_prop
+        if requested is not None:
+            requester = offer.from_player
+            if _would_complete(env, requester, requested.square_id):
+                return False
+            group = COLOR_GROUPS.get(requested.color, [])
+            if group and all(env.properties[sq].owner == pid for sq in group):
+                return False
+        offered = offer.offered_prop
+        if offered is None:
+            return False
+        color = offered.color
         if color in ("railroad", "utility"):
             return False
         group = COLOR_GROUPS.get(color, [])
@@ -117,28 +135,6 @@ class DealBuilderRollout(FixedPolicyAgent):
 
     def _make_trade_offer(self, allowed: List[int], env: MonopolyEnv) -> Optional[int]:
         pid = self.player_id
-
-        # Sell-to-completer: some opponents accept any trade that completes
-        # their color group regardless of price. If we own exactly one
-        # square in a group and a single non-bankrupt opponent owns every
-        # other square, offer it at the richest legal price tier.
-        for color, group in COLOR_GROUPS.items():
-            if color in ("railroad", "utility"):
-                continue
-            owned_by_me = [sq for sq in group if env.properties[sq].owner == pid]
-            if len(owned_by_me) != 1:
-                continue
-            sq = owned_by_me[0]
-            owners = {env.properties[other].owner for other in group if other != sq}
-            if len(owners) != 1:
-                continue
-            (target,) = owners
-            if target is None or target == pid or env.players[target].bankrupt:
-                continue
-            for price_idx in (2, 1, 0):
-                action = _sell_trade_action(pid, target, sq, price_idx, env, allowed)
-                if action is not None:
-                    return action
 
         # DealMaker monopoly tempo: bargain buy-offers, then colour exchanges.
         # Skip premium sell-spam — it is not monopoly-completing and dilutes search.
