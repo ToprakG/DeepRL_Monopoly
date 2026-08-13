@@ -43,3 +43,45 @@ def test_hybrid_config_default_routine_prob():
     cfg = HybridLabelConfig()
     assert cfg.routine_label_prob == 0.08
     assert "routine_label_prob" in cfg.as_dict()
+
+
+def test_broad_value_raises_routine_prob():
+    from argparse import Namespace
+
+    from oracle.hybrid_config import (
+        BROAD_ROUTINE_LABEL_PROB,
+        hybrid_label_config_from_args,
+    )
+
+    default = HybridLabelConfig()
+    broad = HybridLabelConfig.broad_value()
+    assert broad.routine_label_prob == BROAD_ROUTINE_LABEL_PROB
+    assert broad.routine_label_prob > default.routine_label_prob
+    assert broad.simulations == default.simulations
+
+    calibrated = hybrid_label_config_from_args(
+        Namespace(
+            calibrate=True,
+            broad_value=True,
+            routine_label_prob=None,
+            sims=200,
+            horizon=30,
+            rollouts=2,
+            margin_temperature=2000.0,
+        )
+    )
+    assert calibrated.routine_label_prob == BROAD_ROUTINE_LABEL_PROB
+    assert calibrated.simulations == default.simulations
+
+    explicit = hybrid_label_config_from_args(
+        Namespace(
+            calibrate=True,
+            broad_value=True,
+            routine_label_prob=0.4,
+            sims=200,
+            horizon=30,
+            rollouts=2,
+            margin_temperature=2000.0,
+        )
+    )
+    assert explicit.routine_label_prob == 0.4

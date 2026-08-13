@@ -159,7 +159,12 @@ def merge_shards(shard_dir: Path) -> tuple[dict[str, np.ndarray], list[dict[str,
     return merged, inventory
 
 
-def sanity_check(examples: dict[str, np.ndarray], inventory: list[dict[str, Any]]) -> dict[str, Any]:
+def sanity_check(
+    examples: dict[str, np.ndarray],
+    inventory: list[dict[str, Any]],
+    *,
+    broad_value: bool = False,
+) -> dict[str, Any]:
     n = int(examples["states"].shape[0])
     expected = {
         "states": (n, STATE_DIM),
@@ -187,6 +192,9 @@ def sanity_check(examples: dict[str, np.ndarray], inventory: list[dict[str, Any]
     build_frac = family_frac.get("improve_house", 0.0) + family_frac.get("improve_hotel", 0.0)
     auction_frac = sum(v for k, v in family_frac.items() if k.startswith("auction"))
 
+    event_mass = buy_frac + build_frac + accept_frac + decline_frac + auction_frac
+    end_turn_limit = 0.50 if broad_value else 0.20
+    event_mass_floor = 0.25 if broad_value else 0.50
     values = examples["values"].astype(np.float64, copy=False)
     outcomes = examples["outcomes"].astype(np.float64, copy=False)
     value_row_sums = values.sum(axis=1)
@@ -234,15 +242,16 @@ def sanity_check(examples: dict[str, np.ndarray], inventory: list[dict[str, Any]
             "schema_matches_expert_core": illegal == 0
             and bool(np.isfinite(examples["states"]).all())
             and bool(np.isfinite(values).all()),
-            "not_pathological_end_turn": end_turn_frac < 0.20,
-            "has_buy_build_trade_auction_mass": (buy_frac + build_frac + accept_frac + decline_frac + auction_frac)
-            >= 0.50,
+            "not_pathological_end_turn": end_turn_frac < end_turn_limit,
+            "has_buy_build_trade_auction_mass": event_mass >= event_mass_floor,
             # New coverage labeling always emits soft visits; reject friend one-hot dumps.
             "soft_coverage_ok": (soft_rows / n if n else 0.0) >= 0.90,
             "decline_present": decline_frac >= 0.01 or accept_frac < 0.10,
         },
         "warnings": {
             "accept_trade_heavy": accept_frac >= 0.15,
+            "end_turn_elevated": end_turn_frac >= 0.20,
+            "broad_value": broad_value,
             "accept_among_trade_decisions": (
                 accept_frac / (accept_frac + decline_frac)
                 if (accept_frac + decline_frac) > 0
@@ -312,10 +321,15 @@ def main(argv: Iterable[str] | None = None) -> int:
         type=Path,
         default=Path("artifacts_scratch/oracle_hybrid_merged/sanity_report.json"),
     )
+    parser.add_argument(
+        "--broad-value",
+        action="store_true",
+        help="Relax END_TURN / event-mass gates for denser routine-label shards.",
+    )
     args = parser.parse_args(list(argv) if argv is not None else None)
 
     examples, inventory = merge_shards(args.shard_dir)
-    report = sanity_check(examples, inventory)
+    report = sanity_check(examples, inventory, broad_value=args.broad_value)
     out = save_merged(args.output, examples)
     asu_out = save_asu_compat(args.asu_compat_output, examples)
     args.report.parent.mkdir(parents=True, exist_ok=True)

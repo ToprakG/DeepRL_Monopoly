@@ -28,6 +28,7 @@ from .agent import ORACLE_V1, OracleAgent, OracleConfig, build_oracle_search, or
 from .hybrid_config import (
     HybridLabelConfig,
     checkpoint_kind,
+    hybrid_label_config_from_args,
     is_event_checkpoint,
     lineup_kind_for_game,
     should_label_routine,
@@ -748,19 +749,22 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Skip seeds already listed in checkpoint-dir/manifest.json",
     )
+    parser.add_argument(
+        "--routine-label-prob",
+        type=float,
+        default=None,
+        help="Fraction of non-event multi-legal decisions to Max-N label (default 0.08)",
+    )
+    parser.add_argument(
+        "--broad-value",
+        action="store_true",
+        help="Denser routine labels (prob=0.25) for value coverage. Overridden by --routine-label-prob.",
+    )
     args = parser.parse_args(argv)
 
     hybrid_cfg: HybridLabelConfig | None = None
     if args.calibrate or args.mode == "hybrid":
-        hybrid_cfg = HybridLabelConfig()
-        if not args.calibrate:
-            # Allow CLI overrides when not forcing calibrate defaults.
-            hybrid_cfg = HybridLabelConfig(
-                simulations=int(args.sims),
-                rollout_horizon=int(args.horizon),
-                rollouts_per_leaf=int(args.rollouts),
-                margin_temperature=float(args.margin_temperature),
-            )
+        hybrid_cfg = hybrid_label_config_from_args(args)
         config = hybrid_cfg.oracle_config()
         mode = "hybrid"
     else:

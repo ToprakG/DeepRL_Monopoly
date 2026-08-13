@@ -318,12 +318,18 @@ def _run_game(
     seed: int,
     max_decisions: int,
     factory: AgentFactory,
+    *,
+    game_timeout_s: float | None = None,
 ) -> dict[str, Any]:
     started = time.perf_counter()
     game = _new_seeded_game(seed)
     agents = [factory.build(spec, seat) for seat, spec in enumerate(specs)]
     decisions = 0
+    timed_out = False
     while not game.env.done and decisions < max_decisions:
+        if game_timeout_s is not None and (time.perf_counter() - started) >= game_timeout_s:
+            timed_out = True
+            break
         actor = game.env.whose_turn()
         allowed = game.env.get_allowed_actions(actor)
         action = agents[actor].choose_action(game.env)
@@ -348,6 +354,7 @@ def _run_game(
         "rounds": game.env.round,
         "decisions": decisions,
         "truncated": not game.env.done,
+        "timed_out": timed_out,
         "scripted_compatibility_fallbacks": scripted_fallbacks,
         "final_net_worth": [float(player.net_worth()) for player in game.env.players],
         "elapsed_seconds": time.perf_counter() - started,

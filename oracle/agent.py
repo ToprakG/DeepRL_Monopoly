@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from functools import partial
 from typing import Any
 
 import numpy as np
@@ -19,7 +18,6 @@ from .rollout_leaf import (
     DEFAULT_HORIZON,
     DEFAULT_MARGIN_TEMPERATURE,
     DEFAULT_ROLLOUTS,
-    rollout_leaf_value,
 )
 from .rollout_policy import greedy_rollout_action
 
@@ -65,6 +63,10 @@ class OracleConfig:
     deadline_s: float | None = None
     early_stop_visit_lead: int | None = None
     early_stop_min_sims: int = 16
+    # Search leaf. ``rollout`` is the calibrated teacher; other kinds are H2H
+    # experiments (see oracle.leaves).
+    leaf: str = "rollout"
+    leaf_checkpoint: str | None = None
 
     def search_config(self) -> SearchConfig:
         return SearchConfig(
@@ -163,12 +165,9 @@ class HybridPriorModel:
 
 def build_oracle_search(config: OracleConfig | None = None) -> MaxNPUCT:
     cfg = config or OracleConfig()
-    leaf = partial(
-        rollout_leaf_value,
-        num_rollouts=cfg.rollouts_per_leaf,
-        horizon=cfg.rollout_horizon,
-        temperature=cfg.margin_temperature,
-    )
+    from oracle.leaves import build_leaf_fn
+
+    leaf = build_leaf_fn(cfg)
     return MaxNPUCT(
         HybridPriorModel(peak=cfg.prior_peak),
         cfg.search_config(),
@@ -226,6 +225,7 @@ class OracleAgent:
 def oracle_config_from_args(args: Any) -> OracleConfig:
     deadline = getattr(args, "deadline_s", None)
     lead = getattr(args, "early_stop_lead", None)
+    checkpoint = getattr(args, "leaf_checkpoint", None)
     return OracleConfig(
         simulations=int(args.sims),
         rollout_horizon=int(args.horizon),
@@ -234,6 +234,8 @@ def oracle_config_from_args(args: Any) -> OracleConfig:
         deadline_s=None if deadline in (None, 0) else float(deadline),
         early_stop_visit_lead=None if not lead else int(lead),
         early_stop_min_sims=int(getattr(args, "early_stop_min_sims", 16)),
+        leaf=str(getattr(args, "leaf", "rollout") or "rollout"),
+        leaf_checkpoint=None if checkpoint in (None, "") else str(checkpoint),
     )
 
 

@@ -19,22 +19,26 @@ from ASU_FROZEN_TEACHER.evaluate import (
     wilson_interval,
 )
 from ASU_FROZEN_TEACHER.spec import FROZEN_SPEC_HASH
+from competitors.factory import COMPETITOR_IDS, FIELD_COMPETITOR_IDS, build_competitor
 from monopoly_game_engine.agents_fixed import FPAgentA, FPAgentB, FPAgentC
 from monopoly_game_engine.constants import NUM_PLAYERS, RULESET_VERSION
 
 from .agent import ORACLE_V1, OracleAgent, OracleConfig
+from .leaves import LEAF_KINDS
 
 ASU_VALUE_ID = "asu-value-v1"
 FIXED_A_ID = "fixed-a"
 FIXED_B_ID = "fixed-b"
 FIXED_C_ID = "fixed-c"
+ORACLE_V2_ID = "oracle-fast-v1"
 DEFAULT_LINEUP = (ORACLE_V1, ASU_VALUE_ID, FIXED_A_ID, FIXED_B_ID)
 FIXED_LINEUP = (ORACLE_V1, FIXED_A_ID, FIXED_B_ID, FIXED_C_ID)
+COMPETITOR_LINEUP = (ORACLE_V2_ID, *FIELD_COMPETITOR_IDS)
 DEFAULT_WORKERS = max(1, os.cpu_count() or 1)
 
 
 def _is_oracle_policy(policy_id: str) -> bool:
-    return policy_id in {ORACLE_V1, "oracle-fast-v1"}
+    return policy_id in {ORACLE_V1, ORACLE_V2_ID}
 
 
 class _Spec:
@@ -80,7 +84,7 @@ class _H2HFactory:
     def build(self, spec: _Spec, player_id: int):
         if spec.policy_id == ORACLE_V1:
             return OracleAgent(player_id, self.config, seed=self.seed + player_id)
-        if spec.policy_id == "oracle-fast-v1":
+        if spec.policy_id == ORACLE_V2_ID:
             from oracle_v2.agent import OracleV2Agent
 
             return OracleV2Agent(
@@ -98,6 +102,8 @@ class _H2HFactory:
             return _ScriptedAdapter(FPAgentB(player_id), player_id)
         if spec.policy_id == FIXED_C_ID:
             return _ScriptedAdapter(FPAgentC(player_id), player_id)
+        if spec.policy_id in COMPETITOR_IDS:
+            return _ScriptedAdapter(build_competitor(spec.policy_id, player_id), player_id)
         raise ValueError(f"Unsupported H2H policy {spec.policy_id!r}")
 
 
@@ -109,6 +115,106 @@ def rotate_lineup(base: tuple[str, ...], game_index: int) -> tuple[_Spec, ...]:
     return tuple(_Spec(policy_id) for policy_id in rotated)
 
 
+def _focus_seat(specs: tuple[_Spec, ...]) -> int:
+    for seat, spec in enumerate(specs):
+        if _is_oracle_policy(spec.policy_id):
+            return seat
+    return 0
+
+
+def _lineup_slug(lineup: tuple[str, ...]) -> str:
+    return "_".join(lineup)
+
+
+def _checkpoint_game_path(checkpoint_dir: Path, index: int) -> Path:
+    return checkpoint_dir / f"game_{index:04d}.json"
+
+
+def _load_h2h_checkpoint(checkpoint_dir: Path) -> dict[int, dict[str, Any]]:
+    loaded: dict[int, dict[str, Any]] = {}
+    if not checkpoint_dir.is_dir():
+        return loaded
+    for path in sorted(checkpoint_dir.glob("game_*.json")):
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        loaded[int(payload["index"])] = payload["result"]
+    return loaded
+
+
+def _write_h2h_game(checkpoint_dir: Path, index: int, result: dict[str, Any]) -> None:
+    checkpoint_dir.mkdir(parents=True, exist_ok=True)
+    path = _checkpoint_game_path(checkpoint_dir, index)
+    temporary = path.with_suffix(".tmp")
+    temporary.write_text(
+        json.dumps({"index": index, "result": result}, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    temporary.replace(path)
+    completed = sorted(
+        int(p.stem.split("_")[1]) for p in checkpoint_dir.glob("game_*.json")
+    )
+    (checkpoint_dir / "manifest.json").write_text(
+        json.dumps({"completed": completed, "n": len(completed)}, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+
+def _write_h2h_summary(checkpoint_dir: Path, payload: dict[str, Any]) -> None:
+    checkpoint_dir.mkdir(parents=True, exist_ok=True)
+    public = dict(payload)
+    public.pop("game_records", None)
+    (checkpoint_dir / "summary.json").write_text(
+        json.dumps(public, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+
+def _assemble_report(
+    *,
+    lineup: tuple[str, ...],
+    games: int,
+    seed: int,
+    config: OracleConfig,
+    live: bool,
+    turn_deadline_s: float | None,
+    workers: int,
+    game_timeout_s: float | None,
+    completed: list[dict[str, Any]],
+) -> dict[str, Any]:
+    summaries = summarize_policies(completed)
+    payload: dict[str, Any] = {
+        "ruleset": RULESET_VERSION,
+        "frozen_spec_hash": FROZEN_SPEC_HASH,
+        "lineup": list(lineup),
+        "games": games,
+        "seed": seed,
+        "oracle_config": asdict(config),
+        "live": live,
+        "turn_deadline_s": turn_deadline_s,
+        "game_timeout_s": game_timeout_s,
+        "workers": workers,
+        "truncations": sum(game["truncated"] for game in completed),
+        "timeouts": sum(bool(game.get("timed_out")) for game in completed),
+        "completed_games": len(completed),
+        "win_rates": summaries,
+        "game_records": completed,
+        "disclaimer": RESULTS_DISCLAIMER,
+    }
+    if ASU_VALUE_ID in lineup and any(_is_oracle_policy(policy) for policy in lineup):
+        payload["oracle_vs_asu"] = oracle_vs_asu(summaries, completed)
+    if any(_is_oracle_policy(policy) for policy in lineup) and any(
+        policy in COMPETITOR_IDS for policy in lineup
+    ):
+        payload["oracle_vs_field"] = oracle_vs_field(summaries, completed)
+    oracle = summaries.get(ORACLE_V1) or summaries.get("oracle-fast-v1") or {}
+    payload["oracle_focus"] = {
+        "wins": oracle.get("wins"),
+        "games": oracle.get("games"),
+        "win_rate": oracle.get("win_rate"),
+        "wilson_95": oracle.get("wilson_95"),
+    }
+    return payload
+
+
 def _game_job(payload: dict[str, Any]) -> tuple[int, dict[str, Any]]:
     config = OracleConfig(**payload["config"])
     factory = _H2HFactory(
@@ -118,6 +224,7 @@ def _game_job(payload: dict[str, Any]) -> tuple[int, dict[str, Any]]:
         turn_deadline_s=payload.get("turn_deadline_s"),
     )
     specs = tuple(_Spec(policy_id) for policy_id in payload["policies"])
+    timeout = payload.get("game_timeout_s")
     with preserve_global_rng():
         result = _run_game(
             specs,
@@ -125,6 +232,7 @@ def _game_job(payload: dict[str, Any]) -> tuple[int, dict[str, Any]]:
             seed=payload["seed"],
             max_decisions=payload["max_decisions"],
             factory=factory,
+            game_timeout_s=None if timeout in (None, 0) else float(timeout),
         )
     return int(payload["index"]), result
 
@@ -153,19 +261,27 @@ def summarize_policies(games: list[dict[str, Any]]) -> dict[str, dict[str, Any]]
     return summaries
 
 
-def paired_net_worth_margins(games: list[dict[str, Any]]) -> list[float]:
+def paired_net_worth_margins(
+    games: list[dict[str, Any]],
+    other_id: str = ASU_VALUE_ID,
+) -> list[float]:
     margins: list[float] = []
     for game in games:
         policies = game["policies"]
+        if other_id not in policies:
+            continue
         oracle_seat = policies.index(next(p for p in policies if _is_oracle_policy(p)))
-        asu_seat = policies.index(ASU_VALUE_ID)
+        other_seat = policies.index(other_id)
         worth = game["final_net_worth"]
-        margins.append(float(worth[oracle_seat]) - float(worth[asu_seat]))
+        margins.append(float(worth[oracle_seat]) - float(worth[other_seat]))
     return margins
 
 
-def summarize_net_worth_margin(games: list[dict[str, Any]]) -> dict[str, Any]:
-    margins = paired_net_worth_margins(games)
+def summarize_net_worth_margin(
+    games: list[dict[str, Any]],
+    other_id: str = ASU_VALUE_ID,
+) -> dict[str, Any]:
+    margins = paired_net_worth_margins(games, other_id)
     n = len(margins)
     if n == 0:
         return {
@@ -175,6 +291,7 @@ def summarize_net_worth_margin(games: list[dict[str, Any]]) -> dict[str, Any]:
             "std": None,
             "oracle_richer": 0,
             "oracle_richer_rate": None,
+            "beats_other_on_margin": False,
             "beats_asu_on_margin": False,
         }
     mean = sum(margins) / n
@@ -195,6 +312,7 @@ def summarize_net_worth_margin(games: list[dict[str, Any]]) -> dict[str, Any]:
         "mean_plus_se": mean + se,
         "oracle_richer": richer,
         "oracle_richer_rate": richer / n,
+        "beats_other_on_margin": mean - se > 0.0,
         "beats_asu_on_margin": mean - se > 0.0,
         "margins": margins,
     }
@@ -222,6 +340,36 @@ def oracle_vs_asu(
     }
 
 
+def oracle_vs_field(
+    summaries: dict[str, dict[str, Any]],
+    games: list[dict[str, Any]],
+) -> dict[str, Any]:
+    oracle_name = next(name for name in summaries if _is_oracle_policy(name))
+    oracle = summaries[oracle_name]
+    others = {}
+    for identifier, summary in summaries.items():
+        if _is_oracle_policy(identifier):
+            continue
+        margin = summarize_net_worth_margin(games, identifier)
+        others[identifier] = {
+            "win_rate": summary["win_rate"] or 0.0,
+            "wins": summary["wins"],
+            "games": summary["games"],
+            "wilson_95": summary["wilson_95"],
+            "rate_gap": (oracle["win_rate"] or 0.0) - (summary["win_rate"] or 0.0),
+            "oracle_wilson_lower_beats": oracle["wilson_95"][0] > (summary["win_rate"] or 0.0),
+            "net_worth_margin": {
+                key: value for key, value in margin.items() if key != "margins"
+            },
+        }
+    return {
+        "oracle_id": oracle_name,
+        "oracle_win_rate": oracle["win_rate"] or 0.0,
+        "oracle_wilson_95": oracle["wilson_95"],
+        "opponents": others,
+    }
+
+
 def run_h2h(
     *,
     games: int,
@@ -232,74 +380,93 @@ def run_h2h(
     workers: int = DEFAULT_WORKERS,
     live: bool = False,
     turn_deadline_s: float | None = None,
+    game_timeout_s: float | None = None,
+    checkpoint_dir: Path | None = None,
+    resume: bool = False,
 ) -> dict[str, Any]:
     if games < 1:
         raise ValueError("games must be positive")
     if workers < 1:
         raise ValueError("workers must be positive")
 
+    cached = _load_h2h_checkpoint(checkpoint_dir) if resume and checkpoint_dir else {}
+    if cached:
+        print(f"resume: skipping {len(cached)} completed games", flush=True)
+
     jobs = []
     for index in range(games):
+        if index in cached:
+            continue
         specs = rotate_lineup(lineup, index)
-        oracle_seat = next(
-            seat for seat, spec in enumerate(specs) if _is_oracle_policy(spec.policy_id)
-        )
         jobs.append(
             {
                 "index": index,
                 "policies": [spec.policy_id for spec in specs],
-                "focus_seat": oracle_seat,
+                "focus_seat": _focus_seat(specs),
                 "seed": seed + index,
                 "max_decisions": max_decisions,
                 "config": asdict(config),
                 "live": live,
                 "turn_deadline_s": turn_deadline_s,
+                "game_timeout_s": game_timeout_s,
             }
         )
 
-    results: list[dict[str, Any] | None] = [None] * len(jobs)
-    if workers == 1:
+    results: list[dict[str, Any] | None] = [None] * games
+    for index, result in cached.items():
+        if 0 <= index < games:
+            results[index] = result
+
+    def _record(index: int, result: dict[str, Any], done: int) -> None:
+        results[index] = result
+        if checkpoint_dir is not None:
+            _write_h2h_game(checkpoint_dir, index, result)
+            finished = [game for game in results if game is not None]
+            _write_h2h_summary(
+                checkpoint_dir,
+                _assemble_report(
+                    lineup=lineup,
+                    games=games,
+                    seed=seed,
+                    config=config,
+                    live=live,
+                    turn_deadline_s=turn_deadline_s,
+                    workers=workers,
+                    game_timeout_s=game_timeout_s,
+                    completed=finished,
+                ),
+            )
+        print(f"h2h progress {done}/{games}", flush=True)
+
+    done = sum(game is not None for game in results)
+    if workers == 1 or not jobs:
         for job in jobs:
             index, result = _game_job(job)
-            results[index] = result
-            print(f"h2h progress {index + 1}/{games}", flush=True)
+            done += 1
+            _record(index, result, done)
     else:
         with mp.get_context("spawn").Pool(workers) as pool:
-            done = 0
             for index, result in pool.imap_unordered(_game_job, jobs, chunksize=1):
-                results[index] = result
                 done += 1
-                print(f"h2h progress {done}/{games}", flush=True)
+                _record(index, result, done)
 
     completed = [result for result in results if result is not None]
-    if len(completed) != len(jobs):
+    if len(completed) != games:
         raise RuntimeError("H2H pool returned incomplete results")
 
-    summaries = summarize_policies(completed)
-    payload: dict[str, Any] = {
-        "ruleset": RULESET_VERSION,
-        "frozen_spec_hash": FROZEN_SPEC_HASH,
-        "lineup": list(lineup),
-        "games": games,
-        "seed": seed,
-        "oracle_config": asdict(config),
-        "live": live,
-        "turn_deadline_s": turn_deadline_s,
-        "workers": workers,
-        "truncations": sum(game["truncated"] for game in completed),
-        "win_rates": summaries,
-        "game_records": completed,
-        "disclaimer": RESULTS_DISCLAIMER,
-    }
-    if ASU_VALUE_ID in lineup:
-        payload["oracle_vs_asu"] = oracle_vs_asu(summaries, completed)
-    oracle = summaries.get(ORACLE_V1) or summaries.get("oracle-fast-v1") or {}
-    payload["oracle_focus"] = {
-        "wins": oracle.get("wins"),
-        "games": oracle.get("games"),
-        "win_rate": oracle.get("win_rate"),
-        "wilson_95": oracle.get("wilson_95"),
-    }
+    payload = _assemble_report(
+        lineup=lineup,
+        games=games,
+        seed=seed,
+        config=config,
+        live=live,
+        turn_deadline_s=turn_deadline_s,
+        workers=workers,
+        game_timeout_s=game_timeout_s,
+        completed=completed,
+    )
+    if checkpoint_dir is not None:
+        _write_h2h_summary(checkpoint_dir, payload)
     return payload
 
 
@@ -407,15 +574,30 @@ def _parser() -> argparse.ArgumentParser:
         help="Stop when top action leads by this many visits. 0 disables.",
     )
     parser.add_argument("--early-stop-min-sims", type=int, default=16)
+    parser.add_argument(
+        "--leaf",
+        choices=LEAF_KINDS,
+        default="rollout",
+        help="Max-N leaf: rollout (default), networth, asu, asu_plus, clone.",
+    )
+    parser.add_argument(
+        "--leaf-checkpoint",
+        type=Path,
+        default=None,
+        help="Checkpoint for --leaf clone (default: new25k hybrid BC clone).",
+    )
     parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS)
     parser.add_argument("--max-decisions", type=int, default=DEFAULT_MAX_DECISIONS)
     parser.add_argument(
         "--lineup",
-        type=str,
-        default=",".join(DEFAULT_LINEUP),
+        action="append",
+        default=None,
         help=(
-            "Comma-separated 4-seat lineup. Use "
-            f"{','.join(FIXED_LINEUP)} for oracle vs three fixed agents."
+            "Comma-separated 4-team field. Repeat --lineup or separate fields "
+            "with ';' to run several 4-team matches. Oracle is optional. "
+            f"Examples: {','.join(FIXED_LINEUP)} or {','.join(COMPETITOR_LINEUP)}. "
+            "Registered competitors: "
+            f"{','.join(COMPETITOR_IDS)}."
         ),
     )
     parser.add_argument(
@@ -436,6 +618,22 @@ def _parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Include per-game records in --output JSON",
     )
+    parser.add_argument(
+        "--game-timeout-s",
+        type=float,
+        default=0.0,
+        help="Per-game wall (seconds). 0 disables. Timed-out games are truncated.",
+    )
+    parser.add_argument(
+        "--checkpoint-dir",
+        type=Path,
+        help="Write each finished game here so Colab/session death can resume.",
+    )
+    parser.add_argument(
+        "--resume",
+        action="store_true",
+        help="Skip games already recorded in --checkpoint-dir.",
+    )
     return parser
 
 
@@ -443,9 +641,87 @@ def _parse_lineup(text: str) -> tuple[str, ...]:
     lineup = tuple(part.strip() for part in text.split(",") if part.strip())
     if len(lineup) != NUM_PLAYERS:
         raise ValueError(f"lineup must have {NUM_PLAYERS} policies, got {len(lineup)}")
-    if not any(_is_oracle_policy(policy) for policy in lineup):
-        raise ValueError("lineup must include an oracle policy")
     return lineup
+
+
+def _parse_lineups(texts: list[str]) -> list[tuple[str, ...]]:
+    fields: list[tuple[str, ...]] = []
+    for text in texts:
+        for chunk in text.split(";"):
+            chunk = chunk.strip()
+            if not chunk:
+                continue
+            fields.append(_parse_lineup(chunk))
+    if not fields:
+        raise ValueError("at least one 4-team lineup is required")
+    return fields
+
+
+def _checkpoint_for_field(
+    checkpoint_dir: Path | None,
+    lineup: tuple[str, ...],
+    field_index: int,
+    n_fields: int,
+) -> Path | None:
+    if checkpoint_dir is None:
+        return None
+    if n_fields == 1:
+        return checkpoint_dir
+    return checkpoint_dir / f"field_{field_index:02d}_{_lineup_slug(lineup)}"
+
+
+def _print_h2h_result(result: dict[str, Any], lineup: tuple[str, ...]) -> None:
+    print(f"\nlineup={list(lineup)}", flush=True)
+    for name, row in (result.get("win_rates") or {}).items():
+        wr = row.get("win_rate")
+        wr_s = "n/a" if wr is None else f"{wr:.3f}"
+        print(
+            (
+                f"  {name}: WR={wr_s} ({row.get('wins')}/{row.get('games')}) "
+                f"Wilson {row.get('wilson_95')}"
+            ),
+            flush=True,
+        )
+    if "oracle_vs_asu" in result:
+        cmp_ = result["oracle_vs_asu"]
+        margin = cmp_["net_worth_margin"]
+        print(
+            (
+                f"oracle {cmp_['oracle_win_rate']:.3f} "
+                f"(Wilson [{cmp_['oracle_wilson_95'][0]:.3f}, "
+                f"{cmp_['oracle_wilson_95'][1]:.3f}]) "
+                f"vs ASU {cmp_['asu_win_rate']:.3f} "
+                f"| beats_asu={cmp_['beats_asu']}"
+            ),
+            flush=True,
+        )
+        print(
+            (
+                f"net_worth_margin oracle-ASU: mean={margin['mean']:.1f} "
+                f"± SE {margin['se']:.1f} "
+                f"richer={margin['oracle_richer']}/{margin['n']} "
+                f"| beats_asu_on_margin={cmp_['beats_asu_on_margin']}"
+            ),
+            flush=True,
+        )
+        return
+    if "oracle_vs_field" in result:
+        field = result["oracle_vs_field"]
+        print(
+            f"oracle WR={field['oracle_win_rate']:.3f} Wilson {field['oracle_wilson_95']}",
+            flush=True,
+        )
+        for name, row in field["opponents"].items():
+            margin = row["net_worth_margin"]
+            print(
+                (
+                    f"  vs {name}: WR={row['win_rate']:.3f} "
+                    f"({row['wins']}/{row['games']}) "
+                    f"gap={row['rate_gap']:+.3f} "
+                    f"margin={margin['mean']:.1f} ± SE {margin['se']:.1f}"
+                ),
+                flush=True,
+            )
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -457,9 +733,12 @@ def main(argv: list[str] | None = None) -> int:
         parser.error(str(exc))
 
     try:
-        lineup = _parse_lineup(args.lineup)
+        lineups = _parse_lineups(args.lineup or [",".join(DEFAULT_LINEUP)])
     except ValueError as exc:
         parser.error(str(exc))
+
+    if len(sims_list) > 1 and len(lineups) > 1:
+        parser.error("sims sweep cannot be combined with multiple --lineup fields")
 
     if len(sims_list) == 1:
         config = OracleConfig(
@@ -470,57 +749,53 @@ def main(argv: list[str] | None = None) -> int:
             deadline_s=None if args.deadline_s <= 0 else args.deadline_s,
             early_stop_visit_lead=None if args.early_stop_lead < 1 else args.early_stop_lead,
             early_stop_min_sims=args.early_stop_min_sims,
+            leaf=args.leaf,
+            leaf_checkpoint=None if args.leaf_checkpoint is None else str(args.leaf_checkpoint),
         )
-        result = run_h2h(
-            games=args.games,
-            seed=args.seed,
-            config=config,
-            lineup=lineup,
-            workers=args.workers,
-            max_decisions=args.max_decisions,
-            live=args.live,
-            turn_deadline_s=args.turn_deadline_s if args.live else None,
+        reports = []
+        for field_index, lineup in enumerate(lineups):
+            if len(lineups) > 1:
+                print(
+                    f"\n=== field {field_index + 1}/{len(lineups)} {list(lineup)} ===",
+                    flush=True,
+                )
+            result = run_h2h(
+                games=args.games,
+                seed=args.seed,
+                config=config,
+                lineup=lineup,
+                workers=args.workers,
+                max_decisions=args.max_decisions,
+                live=args.live,
+                turn_deadline_s=args.turn_deadline_s if args.live else None,
+                game_timeout_s=None if args.game_timeout_s <= 0 else args.game_timeout_s,
+                checkpoint_dir=_checkpoint_for_field(
+                    args.checkpoint_dir, lineup, field_index, len(lineups)
+                ),
+                resume=args.resume,
+            )
+            reports.append(result)
+            _print_h2h_result(result, lineup)
+        public_reports = []
+        for result in reports:
+            public = dict(result)
+            if not args.save_games:
+                public.pop("game_records", None)
+            public_reports.append(public)
+        payload_obj: dict[str, Any] | list[dict[str, Any]]
+        if len(public_reports) == 1:
+            payload_obj = public_reports[0]
+        else:
+            payload_obj = {"fields": public_reports}
+        payload = json.dumps(
+            payload_obj, indent=2 if args.pretty else None, sort_keys=True
         )
-        public = dict(result)
-        if not args.save_games:
-            public.pop("game_records", None)
-        payload = json.dumps(public, indent=2 if args.pretty else None, sort_keys=True)
         if args.output is not None:
             args.output.parent.mkdir(parents=True, exist_ok=True)
             args.output.write_text(payload + "\n", encoding="utf-8")
         print(payload, flush=True)
-        focus = result["oracle_focus"]
-        print(
-            (
-                f"\noracle focus WR={focus['win_rate']:.3f} "
-                f"({focus['wins']}/{focus['games']}) "
-                f"Wilson {focus['wilson_95']} lineup={list(lineup)}"
-            ),
-            flush=True,
-        )
-        if "oracle_vs_asu" in result:
-            cmp_ = result["oracle_vs_asu"]
-            margin = cmp_["net_worth_margin"]
-            print(
-                (
-                    f"oracle {cmp_['oracle_win_rate']:.3f} "
-                    f"(Wilson [{cmp_['oracle_wilson_95'][0]:.3f}, "
-                    f"{cmp_['oracle_wilson_95'][1]:.3f}]) "
-                    f"vs ASU {cmp_['asu_win_rate']:.3f} "
-                    f"| beats_asu={cmp_['beats_asu']}"
-                ),
-                flush=True,
-            )
-            print(
-                (
-                    f"net_worth_margin oracle-ASU: mean={margin['mean']:.1f} "
-                    f"± SE {margin['se']:.1f} "
-                    f"richer={margin['oracle_richer']}/{margin['n']} "
-                    f"| beats_asu_on_margin={cmp_['beats_asu_on_margin']}"
-                ),
-                flush=True,
-            )
-            return 0 if cmp_["beats_asu_on_margin"] else 2
+        if len(reports) == 1 and "oracle_vs_asu" in reports[0]:
+            return 0 if reports[0]["oracle_vs_asu"]["beats_asu_on_margin"] else 2
         return 0
 
     sweep = run_sims_sweep(

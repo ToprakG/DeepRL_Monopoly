@@ -10,7 +10,6 @@ DealBuilder greedy elsewhere, remaining wall shared across the seat's turn.
 from __future__ import annotations
 
 import time
-from functools import partial
 from typing import Any
 
 from monopoly_bench.contracts import SearchResult
@@ -19,10 +18,9 @@ from monopoly_game_engine.env import PHASE_AUCTION, PHASE_OUT_OF_TURN, MonopolyE
 
 from oracle.agent import HybridPriorModel, OracleConfig
 from oracle.hybrid_config import checkpoint_kind, is_event_checkpoint
-from oracle.rollout_leaf import rollout_leaf_value
+from oracle.leaves import build_leaf_fn
 from oracle.rollout_policy import greedy_rollout_action
 
-from .position import key_seed, position_key
 from .search import CachedMaxNPUCT
 
 ORACLE_V2 = "oracle-fast-v1"
@@ -45,24 +43,9 @@ def default_v2_config(**overrides: Any) -> OracleConfig:
     return OracleConfig(**payload)
 
 
-def _seeded_leaf(env: MonopolyEnv, *, num_rollouts: int, horizon: int, temperature: float):
-    return rollout_leaf_value(
-        env,
-        num_rollouts=num_rollouts,
-        horizon=horizon,
-        temperature=temperature,
-        seed=key_seed(position_key(env)),
-    )
-
-
 def build_oracle_v2_search(config: OracleConfig | None = None) -> CachedMaxNPUCT:
     cfg = config or default_v2_config()
-    leaf = partial(
-        _seeded_leaf,
-        num_rollouts=cfg.rollouts_per_leaf,
-        horizon=cfg.rollout_horizon,
-        temperature=cfg.margin_temperature,
-    )
+    leaf = build_leaf_fn(cfg)
     return CachedMaxNPUCT(
         HybridPriorModel(peak=cfg.prior_peak),
         cfg.search_config(),

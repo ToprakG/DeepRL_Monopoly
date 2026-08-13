@@ -1,4 +1,4 @@
-"""Behavioral clone from hybrid oracle labels (soft visits + backed-up values)."""
+"""Behavioral clone from hybrid oracle labels (soft visits + blended values)."""
 
 from __future__ import annotations
 
@@ -14,6 +14,7 @@ from torch import nn
 
 from monopoly_bench.model import MonopolyZeroNet
 from monopoly_bench.training import _relative_outcomes
+from oracle.hybrid_config import blend_value_vectors, resolve_value_outcome_mix
 from oracle.resample_hybrid_labels import sampling_probabilities
 
 DEFAULT_PPO = Path("artifacts/ppo_plus/ppo_hybrid_2000_v2.pt")
@@ -43,15 +44,18 @@ def hybrid_expert_train_step(
     scaler: torch.amp.GradScaler,
     batch: dict[str, np.ndarray],
     gradient_clip: float,
+    *,
+    value_outcome_mix: float = 0.0,
 ) -> dict[str, float]:
-    """Policy CE on visit weights; value CE on actor-relative backed-up vectors."""
+    """Policy CE on visit weights; value CE on backups blended with game winners."""
 
     model.train()
     device = next(model.parameters()).device
     states = torch.as_tensor(batch["states"], dtype=torch.float32, device=device)
     masks = torch.as_tensor(batch["legal_masks"], dtype=torch.bool, device=device)
     actors = torch.as_tensor(batch["actors"], dtype=torch.long, device=device)
-    values_t = torch.as_tensor(batch["values"], dtype=torch.float32, device=device)
+    blended = blend_value_vectors(batch["values"], batch["outcomes"], value_outcome_mix)
+    values_t = torch.as_tensor(blended, dtype=torch.float32, device=device)
     policy_actions = torch.as_tensor(batch["policy_actions"], dtype=torch.long, device=device)
     policy_weights = torch.as_tensor(batch["policy_weights"], dtype=torch.float32, device=device)
     value_targets = _relative_outcomes(values_t, actors)
@@ -93,6 +97,7 @@ def train_hybrid_clone(
     seed: int = 0,
     device: str = "auto",
     weighted_sample: bool = True,
+    value_outcome_mix: float = 0.0,
 ) -> dict:
     examples = load_hybrid_examples(examples_path)
     n = len(examples["states"])
@@ -131,18 +136,27 @@ def train_hybrid_clone(
         else:
             indices = rng.choice(n, size=take, replace=False)
         batch = {name: values[indices] for name, values in examples.items()}
-        last = hybrid_expert_train_step(model, optimizer, scaler, batch, gradient_clip)
+        last = hybrid_expert_train_step(
+            model,
+            optimizer,
+            scaler,
+            batch,
+            gradient_clip,
+            value_outcome_mix=value_outcome_mix,
+        )
         if update % 50 == 0 or update + 1 == updates:
             row = {
                 "update": update,
                 **last,
                 "wall_s": time.time() - t0,
                 "weighted_sample": weighted_sample,
+                "value_outcome_mix": value_outcome_mix,
             }
             history.append(row)
             print(
                 f"update={update}/{updates} loss={last['loss']:.4f} "
-                f"policy={last['policy_loss']:.4f} value={last['value_loss']:.4f}",
+                f"policy={last['policy_loss']:.4f} value={last['value_loss']:.4f} "
+                f"mix={value_outcome_mix:.2f}",
                 flush=True,
             )
             (run_dir / "reports" / "train_status.json").write_text(
@@ -160,6 +174,7 @@ def train_hybrid_clone(
             "updates": updates,
             "examples": str(examples_path),
             "weighted_sample": weighted_sample,
+            "value_outcome_mix": value_outcome_mix,
         },
     )
     report = {
@@ -168,6 +183,7 @@ def train_hybrid_clone(
         "updates": updates,
         "device": str(device_t),
         "weighted_sample": weighted_sample,
+        "value_outcome_mix": value_outcome_mix,
         "final": last,
         "history_tail": history[-10:],
         "wall_seconds": time.time() - t0,
@@ -262,7 +278,29 @@ def main(argv: list[str] | None = None) -> int:
         default=True,
         help="Family-balanced batch sampling (default on)",
     )
+    parser.add_argument(
+        "--blend-outcomes",
+        action=argparse.BooleanOptionalAction,
+        default=None,
+        help="Blend value toward actual winners (mix=0.5). --no-blend-outcomes keeps search backups.",
+    )
+    parser.add_argument(
+        "--broad-value",
+        action="store_true",
+        help="Same as --blend-outcomes (value mix 0.5 toward who won).",
+    )
+    parser.add_argument(
+        "--value-outcome-mix",
+        type=float,
+        default=None,
+        help="0=search backups only, 1=game-winner one-hot only. Overrides the blend toggles.",
+    )
     args = parser.parse_args(argv)
+    value_outcome_mix = resolve_value_outcome_mix(
+        mix=args.value_outcome_mix,
+        blend_outcomes=args.blend_outcomes,
+        broad_value=args.broad_value,
+    )
     report = train_hybrid_clone(
         examples_path=args.examples,
         run_dir=args.run_dir,
@@ -272,6 +310,7 @@ def main(argv: list[str] | None = None) -> int:
         seed=args.seed,
         device=args.device,
         weighted_sample=args.weighted_sample,
+        value_outcome_mix=value_outcome_mix,
     )
     examples = load_hybrid_examples(args.examples)
     model = MonopolyZeroNet.load_inference(report["checkpoint"])

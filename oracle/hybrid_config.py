@@ -14,12 +14,17 @@ Checkpoint policy:
 - build once per pre-roll menu (not every successive house)
 - auction once at opening bid (high_bid==0), not every bid tick
 - routine decisions at ``routine_label_prob`` (END_TURN menus, offers, etc.)
+- ``--broad-value`` raises routine_label_prob to 0.25 for denser value labels
+- Distill can blend Max-N backups with the game-winner one-hot (``--blend-outcomes``)
 """
 
 from __future__ import annotations
 
+from argparse import Namespace
 from dataclasses import asdict, dataclass
-from typing import Iterable
+from typing import Any, Iterable
+
+import numpy as np
 
 from monopoly_game_engine.actions import OFFSETS, ActionType
 from monopoly_game_engine.constants import COLOR_GROUPS
@@ -36,6 +41,11 @@ HYBRID_PRIOR_PEAK = 0.55
 # ~1/12 multi-legal non-event decisions → enough END_TURN/structure without
 # blowing up to 100+ labels/game.
 DEFAULT_ROUTINE_LABEL_PROB = 0.08
+# `--broad-value` labeling: denser routine subsample for value coverage.
+BROAD_ROUTINE_LABEL_PROB = 0.25
+# Distill value mix: 0 = Max-N backups only, 1 = game-winner one-hot only.
+DEFAULT_VALUE_OUTCOME_MIX = 0.0
+BROAD_VALUE_OUTCOME_MIX = 0.5
 
 
 @dataclass(frozen=True, slots=True)
@@ -81,6 +91,14 @@ class HybridLabelConfig:
 
     def as_dict(self) -> dict:
         return asdict(self)
+
+    @classmethod
+    def broad_value(cls, **overrides: Any) -> "HybridLabelConfig":
+        """Same hybrid recipe with denser routine labels for value coverage."""
+
+        payload = dict(overrides)
+        payload.setdefault("routine_label_prob", BROAD_ROUTINE_LABEL_PROB)
+        return cls(**payload)
 
 
 def is_buy_checkpoint(env: MonopolyEnv, legal_set: set[int]) -> bool:
@@ -191,6 +209,73 @@ def should_label_routine(
     return unit < float(prob)
 
 
+def hybrid_label_config_from_args(args: Namespace) -> HybridLabelConfig:
+    """Build hybrid config from label_gen CLI. Explicit routine prob wins over ``--broad-value``."""
+
+    overrides: dict[str, Any] = {}
+    routine = getattr(args, "routine_label_prob", None)
+    if routine is not None:
+        overrides["routine_label_prob"] = float(routine)
+    elif getattr(args, "broad_value", False):
+        overrides["routine_label_prob"] = BROAD_ROUTINE_LABEL_PROB
+    if getattr(args, "calibrate", False):
+        return HybridLabelConfig(**overrides)
+    return HybridLabelConfig(
+        simulations=int(args.sims),
+        rollout_horizon=int(args.horizon),
+        rollouts_per_leaf=int(args.rollouts),
+        margin_temperature=float(args.margin_temperature),
+        **overrides,
+    )
+
+
+def resolve_value_outcome_mix(
+    *,
+    mix: float | None = None,
+    blend_outcomes: bool | None = None,
+    broad_value: bool = False,
+) -> float:
+    """``--value-outcome-mix`` wins, then ``--blend-outcomes`` / ``--no-blend-outcomes``, then ``--broad-value``."""
+
+    if mix is not None:
+        mix_f = float(mix)
+        if not 0.0 <= mix_f <= 1.0:
+            raise ValueError("value_outcome_mix must be in [0, 1]")
+        return mix_f
+    if blend_outcomes is True:
+        return BROAD_VALUE_OUTCOME_MIX
+    if blend_outcomes is False:
+        return DEFAULT_VALUE_OUTCOME_MIX
+    if broad_value:
+        return BROAD_VALUE_OUTCOME_MIX
+    return DEFAULT_VALUE_OUTCOME_MIX
+
+
+def blend_value_vectors(
+    backups: np.ndarray,
+    outcomes: np.ndarray,
+    mix: float,
+) -> np.ndarray:
+    """Convex mix of search backups and winner one-hots. Truncated (all-zero) rows keep backups."""
+
+    mix_f = float(mix)
+    if not 0.0 <= mix_f <= 1.0:
+        raise ValueError("value_outcome_mix must be in [0, 1]")
+    backups_f = np.asarray(backups, dtype=np.float64)
+    outcomes_f = np.asarray(outcomes, dtype=np.float64)
+    if backups_f.shape != outcomes_f.shape:
+        raise ValueError(f"value/outcome shape mismatch: {backups_f.shape} vs {outcomes_f.shape}")
+    if mix_f <= 0.0:
+        return backups_f.astype(np.float32, copy=True)
+    valid = outcomes_f.sum(axis=-1, keepdims=True) > 0.5
+    if mix_f >= 1.0:
+        blended = np.where(valid, outcomes_f, backups_f)
+        return blended.astype(np.float32)
+    mixed = (1.0 - mix_f) * backups_f + mix_f * outcomes_f
+    blended = np.where(valid, mixed, backups_f)
+    return blended.astype(np.float32)
+
+
 def lineup_kind_for_game(game_index: int, config: HybridLabelConfig) -> str:
     """Alternate self / pool when both are enabled."""
 
@@ -202,13 +287,19 @@ def lineup_kind_for_game(game_index: int, config: HybridLabelConfig) -> str:
 
 
 __all__ = [
+    "BROAD_ROUTINE_LABEL_PROB",
+    "BROAD_VALUE_OUTCOME_MIX",
     "DEFAULT_ROUTINE_LABEL_PROB",
+    "DEFAULT_VALUE_OUTCOME_MIX",
     "HYBRID_SIMS",
     "HybridLabelConfig",
+    "blend_value_vectors",
     "checkpoint_kind",
+    "hybrid_label_config_from_args",
     "is_event_checkpoint",
     "is_monopoly_relevant_trade",
     "is_trade_checkpoint",
     "lineup_kind_for_game",
+    "resolve_value_outcome_mix",
     "should_label_routine",
 ]

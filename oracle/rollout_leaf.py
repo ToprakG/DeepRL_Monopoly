@@ -19,6 +19,37 @@ DEFAULT_ROLLOUTS = 2
 DEFAULT_MARGIN_TEMPERATURE = 2000.0
 
 
+def margin_vector_from_scores(
+    scores: np.ndarray,
+    env: MonopolyEnv,
+    *,
+    temperature: float = DEFAULT_MARGIN_TEMPERATURE,
+) -> np.ndarray:
+    """Softmax of (own score − best opponent score) / temperature."""
+
+    if env.done:
+        return terminal_value(env).astype(np.float64)
+
+    worth = np.asarray(scores, dtype=np.float64)
+    if worth.shape != (NUM_PLAYERS,):
+        raise ValueError(f"Expected {NUM_PLAYERS} scores, got {worth.shape}")
+    margins = np.empty(NUM_PLAYERS, dtype=np.float64)
+    for seat in range(NUM_PLAYERS):
+        others = [worth[j] for j in range(NUM_PLAYERS) if j != seat]
+        best_opp = max(others) if others else 0.0
+        margins[seat] = worth[seat] - best_opp
+    for seat, player in enumerate(env.players):
+        if player.bankrupt:
+            margins[seat] = -1.0e9
+    scale = max(float(temperature), 1.0)
+    shifted = margins - np.max(margins)
+    exp = np.exp(shifted / scale)
+    total = float(exp.sum())
+    if total <= 0 or not np.isfinite(total):
+        return np.full(NUM_PLAYERS, 1.0 / NUM_PLAYERS, dtype=np.float64)
+    return exp / total
+
+
 def net_worth_margin_vector(
     env: MonopolyEnv,
     *,
@@ -33,22 +64,7 @@ def net_worth_margin_vector(
         [float(player.net_worth()) for player in env.players],
         dtype=np.float64,
     )
-    margins = np.empty(NUM_PLAYERS, dtype=np.float64)
-    for seat in range(NUM_PLAYERS):
-        others = [worth[j] for j in range(NUM_PLAYERS) if j != seat]
-        best_opp = max(others) if others else 0.0
-        margins[seat] = worth[seat] - best_opp
-    # Bankrupt seats get a hard floor so Max-N does not chase them.
-    for seat, player in enumerate(env.players):
-        if player.bankrupt:
-            margins[seat] = -1.0e9
-    scale = max(float(temperature), 1.0)
-    shifted = margins - np.max(margins)
-    exp = np.exp(shifted / scale)
-    total = float(exp.sum())
-    if total <= 0 or not np.isfinite(total):
-        return np.full(NUM_PLAYERS, 1.0 / NUM_PLAYERS, dtype=np.float64)
-    return exp / total
+    return margin_vector_from_scores(worth, env, temperature=temperature)
 
 
 def _one_rollout(
@@ -107,6 +123,7 @@ __all__ = [
     "DEFAULT_HORIZON",
     "DEFAULT_MARGIN_TEMPERATURE",
     "DEFAULT_ROLLOUTS",
+    "margin_vector_from_scores",
     "net_worth_margin_vector",
     "rollout_leaf_value",
 ]
