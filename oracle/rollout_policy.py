@@ -12,12 +12,16 @@ from typing import List, Optional
 from monopoly_game_engine.actions import OFFSETS, ActionType
 from monopoly_game_engine.agents_fixed import (
     FixedPolicyAgent,
-    TheDealMaker,
     _buy_trade_action,
     _exchange_action,
     _sell_trade_action,
 )
-from monopoly_game_engine.constants import COLOR_GROUPS, PROPERTY_IDS, REAL_ESTATE_IDS
+from monopoly_game_engine.constants import (
+    COLOR_GROUPS,
+    PROPERTIES,
+    PROPERTY_IDS,
+    REAL_ESTATE_IDS,
+)
 from monopoly_game_engine.env import MonopolyEnv
 
 # DealMaker buy buffer; Builder-style development floor.
@@ -28,6 +32,9 @@ MORTGAGE_CASH_TRIGGER = 300
 # touched yet -- early-game land grab, targets opponents that don't
 # contest early group pieces.
 EARLY_GROUP_BUFFER = 20
+# Extra cash buffer required per elapsed round -- hold more reserve as the
+# game matures instead of a flat trigger.
+MORTGAGE_ROUND_SCALE = 15
 
 
 class DealBuilderRollout(FixedPolicyAgent):
@@ -177,10 +184,31 @@ class DealBuilderRollout(FixedPolicyAgent):
         return None
 
     def _maybe_mortgage(self, allowed: List[int], env: MonopolyEnv) -> Optional[int]:
+        # DealMaker-style selection (non-monopoly, non-railroad), but the
+        # gate to attempt a mortgage at all scales with elapsed rounds --
+        # hold a bigger cash buffer as the game matures instead of a flat
+        # trigger. TheDealMaker._maybe_mortgage hardcodes its own flat $300
+        # gate, so delegating to it wholesale would silently swallow any
+        # extra round-scaled buffer for cash in [300, trigger); the
+        # selection loop is reproduced here so the round-scaled gate is the
+        # only "should we mortgage at all" check.
         player = env.players[self.player_id]
-        if player.cash >= MORTGAGE_CASH_TRIGGER:
+        trigger = MORTGAGE_CASH_TRIGGER + MORTGAGE_ROUND_SCALE * env.round
+        if player.cash >= trigger:
             return None
-        return TheDealMaker._maybe_mortgage(self, allowed, env)
+        for sq in PROPERTY_IDS:
+            prop = env.properties.get(sq)
+            if (
+                prop is None
+                or prop.owner != self.player_id
+                or prop.is_monopoly
+                or PROPERTIES[sq]["color"] == "railroad"
+            ):
+                continue
+            action = OFFSETS["mortgage"] + PROPERTY_IDS.index(sq)
+            if action in allowed:
+                return action
+        return None
 
 
 _AGENTS: dict[int, DealBuilderRollout] = {}
