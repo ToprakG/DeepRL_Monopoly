@@ -24,6 +24,10 @@ from monopoly_game_engine.env import MonopolyEnv
 BUY_BUFFER = 100
 BUILD_CASH_FLOOR = 50
 MORTGAGE_CASH_TRIGGER = 300
+# Relaxed buffer for the 1st/2nd square of a color group no opponent has
+# touched yet -- early-game land grab, targets opponents that don't
+# contest early group pieces.
+EARLY_GROUP_BUFFER = 20
 
 
 class DealBuilderRollout(FixedPolicyAgent):
@@ -49,8 +53,25 @@ class DealBuilderRollout(FixedPolicyAgent):
         return None
 
     def _should_buy(self, player, prop, env) -> bool:
-        # DealMaker: buy anything affordable with a small buffer.
-        return player.can_afford(prop.price + BUY_BUFFER)
+        # DealMaker: buy anything affordable with a small buffer, relaxed
+        # further for the 1st/2nd piece of a group nobody else has touched.
+        buffer = BUY_BUFFER
+        color = prop.color
+        if color not in ("railroad", "utility"):
+            group = COLOR_GROUPS.get(color, [])
+            contested = any(
+                env.properties[sq].owner not in (None, self.player_id)
+                for sq in group
+                if sq != prop.square_id
+            )
+            mine_already = sum(
+                1
+                for sq in group
+                if sq != prop.square_id and env.properties[sq].owner == self.player_id
+            )
+            if not contested and mine_already <= 1:
+                buffer = EARLY_GROUP_BUFFER
+        return player.can_afford(prop.price + buffer)
 
     def _best_build_action(self, allowed: List[int], env: MonopolyEnv) -> Optional[int]:
         # Builder: develop any completed monopoly ASAP; mortgage junk to fund.
