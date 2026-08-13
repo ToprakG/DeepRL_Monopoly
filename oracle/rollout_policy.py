@@ -15,6 +15,7 @@ from monopoly_game_engine.agents_fixed import (
     TheDealMaker,
     _buy_trade_action,
     _exchange_action,
+    _sell_trade_action,
 )
 from monopoly_game_engine.constants import COLOR_GROUPS, PROPERTY_IDS, REAL_ESTATE_IDS
 from monopoly_game_engine.env import MonopolyEnv
@@ -87,9 +88,32 @@ class DealBuilderRollout(FixedPolicyAgent):
         return None
 
     def _make_trade_offer(self, allowed: List[int], env: MonopolyEnv) -> Optional[int]:
+        pid = self.player_id
+
+        # Sell-to-completer: some opponents accept any trade that completes
+        # their color group regardless of price. If we own exactly one
+        # square in a group and a single non-bankrupt opponent owns every
+        # other square, offer it at the richest legal price tier.
+        for color, group in COLOR_GROUPS.items():
+            if color in ("railroad", "utility"):
+                continue
+            owned_by_me = [sq for sq in group if env.properties[sq].owner == pid]
+            if len(owned_by_me) != 1:
+                continue
+            sq = owned_by_me[0]
+            owners = {env.properties[other].owner for other in group if other != sq}
+            if len(owners) != 1:
+                continue
+            (target,) = owners
+            if target is None or target == pid or env.players[target].bankrupt:
+                continue
+            for price_idx in (2, 1, 0):
+                action = _sell_trade_action(pid, target, sq, price_idx, env, allowed)
+                if action is not None:
+                    return action
+
         # DealMaker monopoly tempo: bargain buy-offers, then colour exchanges.
         # Skip premium sell-spam — it is not monopoly-completing and dilutes search.
-        pid = self.player_id
         for color, group in COLOR_GROUPS.items():
             if color in ("railroad", "utility"):
                 continue
