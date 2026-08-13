@@ -118,6 +118,35 @@ def test_puct_is_legal_sparse_and_non_mutating() -> None:
     assert random.getstate() == before
 
 
+def test_puct_deadline_stops_after_first_simulation() -> None:
+    game = SharedGame.new(11, max_rounds=2)
+    actor = game.env.whose_turn()
+    model = MonopolyZeroNet()
+    model.load_ppo_actor(PPO)
+    result = MaxNPUCT(
+        model,
+        SearchConfig(simulations=32, max_depth=16),
+        deadline_s=1e-9,
+    ).choose_action(game, actor, 99)
+    assert result.simulations == 1
+    assert result.chosen_action in game.env.get_allowed_actions(actor)
+
+
+def test_puct_visit_lead_early_stop_under_budget() -> None:
+    game = SharedGame.new(11, max_rounds=2)
+    actor = game.env.whose_turn()
+    model = MonopolyZeroNet()
+    model.load_ppo_actor(PPO)
+    result = MaxNPUCT(
+        model,
+        SearchConfig(simulations=64, max_depth=16),
+        early_stop_visit_lead=6,
+        early_stop_min_sims=8,
+    ).choose_action(game, actor, 7)
+    assert 8 <= result.simulations <= 64
+    assert result.chosen_action in game.env.get_allowed_actions(actor)
+
+
 def test_chance_node_materializes_every_ordered_outcome() -> None:
     chance = ChanceNode()
     assert tuple(chance.outcomes) == DICE_OUTCOMES

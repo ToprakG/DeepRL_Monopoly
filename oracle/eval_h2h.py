@@ -33,6 +33,10 @@ FIXED_LINEUP = (ORACLE_V1, FIXED_A_ID, FIXED_B_ID, FIXED_C_ID)
 DEFAULT_WORKERS = max(1, os.cpu_count() or 1)
 
 
+def _is_oracle_policy(policy_id: str) -> bool:
+    return policy_id in {ORACLE_V1, "oracle-fast-v1"}
+
+
 class _Spec:
     __slots__ = ("policy_id",)
 
@@ -60,13 +64,32 @@ class _ScriptedAdapter:
 
 
 class _H2HFactory:
-    def __init__(self, config: OracleConfig, seed: int):
+    def __init__(
+        self,
+        config: OracleConfig,
+        seed: int,
+        *,
+        live: bool = False,
+        turn_deadline_s: float | None = None,
+    ):
         self.config = config
         self.seed = seed
+        self.live = live
+        self.turn_deadline_s = turn_deadline_s
 
     def build(self, spec: _Spec, player_id: int):
         if spec.policy_id == ORACLE_V1:
             return OracleAgent(player_id, self.config, seed=self.seed + player_id)
+        if spec.policy_id == "oracle-fast-v1":
+            from oracle_v2.agent import OracleV2Agent
+
+            return OracleV2Agent(
+                player_id,
+                self.config,
+                seed=self.seed + player_id,
+                live=self.live,
+                turn_deadline_s=self.turn_deadline_s,
+            )
         if spec.policy_id == ASU_VALUE_ID:
             return ASUValueV1(player_id)
         if spec.policy_id == FIXED_A_ID:
@@ -88,7 +111,12 @@ def rotate_lineup(base: tuple[str, ...], game_index: int) -> tuple[_Spec, ...]:
 
 def _game_job(payload: dict[str, Any]) -> tuple[int, dict[str, Any]]:
     config = OracleConfig(**payload["config"])
-    factory = _H2HFactory(config, seed=payload["seed"])
+    factory = _H2HFactory(
+        config,
+        seed=payload["seed"],
+        live=bool(payload.get("live", False)),
+        turn_deadline_s=payload.get("turn_deadline_s"),
+    )
     specs = tuple(_Spec(policy_id) for policy_id in payload["policies"])
     with preserve_global_rng():
         result = _run_game(
@@ -129,7 +157,7 @@ def paired_net_worth_margins(games: list[dict[str, Any]]) -> list[float]:
     margins: list[float] = []
     for game in games:
         policies = game["policies"]
-        oracle_seat = policies.index(ORACLE_V1)
+        oracle_seat = policies.index(next(p for p in policies if _is_oracle_policy(p)))
         asu_seat = policies.index(ASU_VALUE_ID)
         worth = game["final_net_worth"]
         margins.append(float(worth[oracle_seat]) - float(worth[asu_seat]))
@@ -176,7 +204,7 @@ def oracle_vs_asu(
     summaries: dict[str, dict[str, Any]],
     games: list[dict[str, Any]],
 ) -> dict[str, Any]:
-    oracle = summaries[ORACLE_V1]
+    oracle = summaries[next(name for name in summaries if _is_oracle_policy(name))]
     asu = summaries[ASU_VALUE_ID]
     margin = summarize_net_worth_margin(games)
     return {
@@ -202,6 +230,8 @@ def run_h2h(
     lineup: tuple[str, ...] = DEFAULT_LINEUP,
     max_decisions: int = DEFAULT_MAX_DECISIONS,
     workers: int = DEFAULT_WORKERS,
+    live: bool = False,
+    turn_deadline_s: float | None = None,
 ) -> dict[str, Any]:
     if games < 1:
         raise ValueError("games must be positive")
@@ -212,7 +242,7 @@ def run_h2h(
     for index in range(games):
         specs = rotate_lineup(lineup, index)
         oracle_seat = next(
-            seat for seat, spec in enumerate(specs) if spec.policy_id == ORACLE_V1
+            seat for seat, spec in enumerate(specs) if _is_oracle_policy(spec.policy_id)
         )
         jobs.append(
             {
@@ -222,6 +252,8 @@ def run_h2h(
                 "seed": seed + index,
                 "max_decisions": max_decisions,
                 "config": asdict(config),
+                "live": live,
+                "turn_deadline_s": turn_deadline_s,
             }
         )
 
@@ -251,6 +283,8 @@ def run_h2h(
         "games": games,
         "seed": seed,
         "oracle_config": asdict(config),
+        "live": live,
+        "turn_deadline_s": turn_deadline_s,
         "workers": workers,
         "truncations": sum(game["truncated"] for game in completed),
         "win_rates": summaries,
@@ -259,7 +293,7 @@ def run_h2h(
     }
     if ASU_VALUE_ID in lineup:
         payload["oracle_vs_asu"] = oracle_vs_asu(summaries, completed)
-    oracle = summaries.get(ORACLE_V1, {})
+    oracle = summaries.get(ORACLE_V1) or summaries.get("oracle-fast-v1") or {}
     payload["oracle_focus"] = {
         "wins": oracle.get("wins"),
         "games": oracle.get("games"),
@@ -279,6 +313,9 @@ def run_sims_sweep(
     workers: int,
     max_decisions: int,
     checkpoint_dir: Path | None = None,
+    deadline_s: float | None = None,
+    early_stop_visit_lead: int | None = None,
+    early_stop_min_sims: int = 16,
 ) -> dict[str, Any]:
     rows = []
     for sims in sims_list:
@@ -287,6 +324,9 @@ def run_sims_sweep(
             simulations=sims,
             rollout_horizon=horizon,
             rollouts_per_leaf=rollouts,
+            deadline_s=deadline_s,
+            early_stop_visit_lead=early_stop_visit_lead,
+            early_stop_min_sims=early_stop_min_sims,
         )
         report = run_h2h(
             games=games,
@@ -354,6 +394,19 @@ def _parser() -> argparse.ArgumentParser:
     parser.add_argument("--horizon", type=int, default=30)
     parser.add_argument("--rollouts", type=int, default=2)
     parser.add_argument("--margin-temperature", type=float, default=2000.0)
+    parser.add_argument(
+        "--deadline-s",
+        type=float,
+        default=5.0,
+        help="Per-decision search wall (seconds). 0 disables. Labels stay unlimited.",
+    )
+    parser.add_argument(
+        "--early-stop-lead",
+        type=int,
+        default=8,
+        help="Stop when top action leads by this many visits. 0 disables.",
+    )
+    parser.add_argument("--early-stop-min-sims", type=int, default=16)
     parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS)
     parser.add_argument("--max-decisions", type=int, default=DEFAULT_MAX_DECISIONS)
     parser.add_argument(
@@ -364,6 +417,17 @@ def _parser() -> argparse.ArgumentParser:
             "Comma-separated 4-seat lineup. Use "
             f"{','.join(FIXED_LINEUP)} for oracle vs three fixed agents."
         ),
+    )
+    parser.add_argument(
+        "--live",
+        action="store_true",
+        help="oracle-fast-v1: 4s/turn clock, search only buy/build/trade/auction-open.",
+    )
+    parser.add_argument(
+        "--turn-deadline-s",
+        type=float,
+        default=4.0,
+        help="Per-turn wall for --live (seconds). Ignored unless --live.",
     )
     parser.add_argument("--output", type=Path)
     parser.add_argument("--pretty", action="store_true")
@@ -379,8 +443,8 @@ def _parse_lineup(text: str) -> tuple[str, ...]:
     lineup = tuple(part.strip() for part in text.split(",") if part.strip())
     if len(lineup) != NUM_PLAYERS:
         raise ValueError(f"lineup must have {NUM_PLAYERS} policies, got {len(lineup)}")
-    if ORACLE_V1 not in lineup:
-        raise ValueError(f"lineup must include {ORACLE_V1}")
+    if not any(_is_oracle_policy(policy) for policy in lineup):
+        raise ValueError("lineup must include an oracle policy")
     return lineup
 
 
@@ -403,6 +467,9 @@ def main(argv: list[str] | None = None) -> int:
             rollout_horizon=args.horizon,
             rollouts_per_leaf=args.rollouts,
             margin_temperature=args.margin_temperature,
+            deadline_s=None if args.deadline_s <= 0 else args.deadline_s,
+            early_stop_visit_lead=None if args.early_stop_lead < 1 else args.early_stop_lead,
+            early_stop_min_sims=args.early_stop_min_sims,
         )
         result = run_h2h(
             games=args.games,
@@ -411,6 +478,8 @@ def main(argv: list[str] | None = None) -> int:
             lineup=lineup,
             workers=args.workers,
             max_decisions=args.max_decisions,
+            live=args.live,
+            turn_deadline_s=args.turn_deadline_s if args.live else None,
         )
         public = dict(result)
         if not args.save_games:
@@ -463,6 +532,9 @@ def main(argv: list[str] | None = None) -> int:
         workers=args.workers,
         max_decisions=args.max_decisions,
         checkpoint_dir=args.output.parent if args.output is not None else None,
+        deadline_s=None if args.deadline_s <= 0 else args.deadline_s,
+        early_stop_visit_lead=None if args.early_stop_lead < 1 else args.early_stop_lead,
+        early_stop_min_sims=args.early_stop_min_sims,
     )
     payload = json.dumps(sweep, indent=2 if args.pretty else None, sort_keys=True)
     if args.output is not None:

@@ -60,6 +60,11 @@ class OracleConfig:
     rollouts_per_leaf: int = DEFAULT_ROLLOUTS
     margin_temperature: float = DEFAULT_MARGIN_TEMPERATURE
     prior_peak: float = PRIOR_PEAK
+    # Live play only. Labeling leaves these None so every checkpoint still spends
+    # the full sim budget (same teacher as oracle-rollout-v1).
+    deadline_s: float | None = None
+    early_stop_visit_lead: int | None = None
+    early_stop_min_sims: int = 16
 
     def search_config(self) -> SearchConfig:
         return SearchConfig(
@@ -169,6 +174,9 @@ def build_oracle_search(config: OracleConfig | None = None) -> MaxNPUCT:
         cfg.search_config(),
         self_play=False,
         leaf_fn=leaf,
+        deadline_s=cfg.deadline_s,
+        early_stop_visit_lead=cfg.early_stop_visit_lead,
+        early_stop_min_sims=cfg.early_stop_min_sims,
     )
 
 
@@ -216,11 +224,16 @@ class OracleAgent:
 
 
 def oracle_config_from_args(args: Any) -> OracleConfig:
+    deadline = getattr(args, "deadline_s", None)
+    lead = getattr(args, "early_stop_lead", None)
     return OracleConfig(
         simulations=int(args.sims),
         rollout_horizon=int(args.horizon),
         rollouts_per_leaf=int(args.rollouts),
         margin_temperature=float(args.margin_temperature),
+        deadline_s=None if deadline in (None, 0) else float(deadline),
+        early_stop_visit_lead=None if not lead else int(lead),
+        early_stop_min_sims=int(getattr(args, "early_stop_min_sims", 16)),
     )
 
 

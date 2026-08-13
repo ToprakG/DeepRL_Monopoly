@@ -145,12 +145,31 @@ class MaxNPUCT:
         *,
         self_play: bool = False,
         leaf_fn: LeafFn | None = None,
+        deadline_s: float | None = None,
+        early_stop_visit_lead: int | None = None,
+        early_stop_min_sims: int = 16,
     ):
         self.model = model
         self.config = config or SearchConfig()
         self.self_play = self_play
         self.leaf_fn = leaf_fn
+        self.deadline_s = None if deadline_s is None or deadline_s <= 0 else float(deadline_s)
+        self.early_stop_visit_lead = (
+            None
+            if early_stop_visit_lead is None or early_stop_visit_lead < 1
+            else int(early_stop_visit_lead)
+        )
+        if early_stop_min_sims < 1:
+            raise ValueError("early_stop_min_sims must be positive")
+        self.early_stop_min_sims = int(early_stop_min_sims)
         self.last_root: DecisionNode | None = None
+
+    def _visit_lead_stop(self, root: DecisionNode) -> bool:
+        if self.early_stop_visit_lead is None or not root.edges:
+            return False
+        ranked = sorted((edge.visits for edge in root.edges.values()), reverse=True)
+        second = ranked[1] if len(ranked) > 1 else 0
+        return ranked[0] - second >= self.early_stop_visit_lead
 
     def _evaluate(self, env: MonopolyEnv) -> DecisionNode:
         actor = env.whose_turn()
@@ -301,15 +320,25 @@ class MaxNPUCT:
 
         if self.self_play:
             self._add_root_noise(root, rng)
-        for _ in range(self.config.simulations):
+        sims_used = 0
+        for sim in range(self.config.simulations):
+            if (
+                sim > 0
+                and self.deadline_s is not None
+                and (time.perf_counter() - started) >= self.deadline_s
+            ):
+                break
+            if sim >= self.early_stop_min_sims and self._visit_lead_stop(root):
+                break
             self._simulate(root, 0, rng)
+            sims_used = sim + 1
         action = self._final_action(root, rng)
         return SearchResult(
             chosen_action=action,
             visits={candidate: edge.visits for candidate, edge in root.edges.items()},
             q_values={candidate: _vector(edge.q) for candidate, edge in root.edges.items()},
             root_value=_vector(root.mean_value),
-            simulations=self.config.simulations,
+            simulations=sims_used,
             latency_s=time.perf_counter() - started,
         )
 

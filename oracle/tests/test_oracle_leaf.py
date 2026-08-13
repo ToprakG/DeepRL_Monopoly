@@ -159,3 +159,55 @@ def test_event_checkpoint_buy_trade_not_end_turn():
         or int(ActionType.DECLINE_TRADE) in legal_plain
     ):
         assert not is_event_checkpoint(plain, legal_plain) or plain.phase == "auction"
+
+
+def test_deadline_spends_one_simulation():
+    game = SharedGame.new(11, max_rounds=20)
+    actor = game.env.whose_turn()
+    legal = game.env.get_allowed_actions(actor)
+    if len(legal) < 2:
+        return
+    search = MaxNPUCT(
+        UniformPriorModel(),
+        SearchConfig(simulations=32, max_depth=8, max_width=16),
+        deadline_s=1e-9,
+        leaf_fn=lambda _env: np.full(NUM_PLAYERS, 0.25),
+    )
+    result = search.choose_action(game, actor, 3)
+    assert result.simulations == 1
+
+
+def test_early_stop_does_not_spend_full_budget():
+    game = SharedGame.new(11, max_rounds=20)
+    actor = game.env.whose_turn()
+    if len(game.env.get_allowed_actions(actor)) < 2:
+        return
+
+    class PeakPrior:
+        def predict(self, state, legal_actions, actor_id, env=None):
+            del state, actor_id, env
+            legal = tuple(int(action) for action in legal_actions)
+            priors = {action: 0.02 for action in legal}
+            priors[legal[0]] = max(0.02, 1.0 - 0.02 * (len(legal) - 1))
+            total = sum(priors.values())
+            return {action: weight / total for action, weight in priors.items()}, np.full(
+                NUM_PLAYERS, 0.25
+            )
+
+    search = MaxNPUCT(
+        PeakPrior(),
+        SearchConfig(simulations=128, max_depth=8, max_width=16),
+        early_stop_visit_lead=8,
+        early_stop_min_sims=8,
+        leaf_fn=lambda _env: np.full(NUM_PLAYERS, 0.25),
+    )
+    result = search.choose_action(game, actor, 5)
+    assert 8 <= result.simulations < 128
+
+
+def test_label_oracle_config_has_no_deadline():
+    from oracle.hybrid_config import HybridLabelConfig
+
+    cfg = HybridLabelConfig().oracle_config()
+    assert cfg.deadline_s is None
+    assert cfg.early_stop_visit_lead is None

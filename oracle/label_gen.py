@@ -139,6 +139,9 @@ def _oracle_config_dict(config: OracleConfig) -> dict[str, Any]:
         "rollouts_per_leaf": config.rollouts_per_leaf,
         "margin_temperature": config.margin_temperature,
         "prior_peak": config.prior_peak,
+        "deadline_s": config.deadline_s,
+        "early_stop_visit_lead": config.early_stop_visit_lead,
+        "early_stop_min_sims": config.early_stop_min_sims,
     }
 
 

@@ -75,6 +75,8 @@ class HybridLabelConfig:
             rollouts_per_leaf=self.rollouts_per_leaf,
             margin_temperature=self.margin_temperature,
             prior_peak=self.prior_peak,
+            deadline_s=None,
+            early_stop_visit_lead=None,
         )
 
     def as_dict(self) -> dict:
