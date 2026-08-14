@@ -12,10 +12,17 @@ from functools import lru_cache
 from monopoly_game_engine.constants import (
     COLOR_GROUPS,
     GO_TO_JAIL_SQUARE,
+    INCOME_TAX_SQUARE,
     JAIL_SQUARE,
+    LUXURY_TAX_SQUARE,
     MAX_JAIL_TURNS,
     PROPERTIES,
 )
+
+# Tax payments the engine clamps to cash on hand. They cannot cause
+# bankruptcy, but they drain the reserve exactly like rent does, so the
+# ruin distribution prices them (SLAYER_REVIEW.md 4.8).
+_TAX_BY_SQUARE = {INCOME_TAX_SQUARE: 200.0, LUXURY_TAX_SQUARE: 100.0}
 
 
 _DIE_P = 1.0 / 36.0
@@ -167,11 +174,10 @@ def rent_quantile(env, player_id: int, quantile: float, turns: int = 1) -> float
     total = 0.0
     for (square, dice_total), probability in landings(env.players[player_id], turns):
         prop = env.properties.get(square)
-        rent = (
-            0.0
-            if prop is None or prop.owner is None or prop.owner == player_id
-            else float(rent_at(env, square, dice_total))
-        )
+        if prop is None or prop.owner is None or prop.owner == player_id:
+            rent = _TAX_BY_SQUARE.get(square, 0.0)
+        else:
+            rent = float(rent_at(env, square, dice_total))
         outcomes.append((rent, probability))
         total += probability
     if total <= 0.0:

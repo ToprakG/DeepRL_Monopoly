@@ -27,6 +27,7 @@ from .agent import ORACLE_V1, OracleAgent, OracleConfig
 from .leaves import LEAF_KINDS
 from .jail import JAIL_ID, JailAgent
 from .plus_agent import ORACLE_PLUS_ID, OraclePlusAgent
+from toprakthegoat import GOAT_ID, GoatAgent
 
 ASU_VALUE_ID = "asu-value-v1"
 FIXED_A_ID = "fixed-a"
@@ -37,13 +38,15 @@ DEFAULT_LINEUP = (ORACLE_V1, ASU_VALUE_ID, FIXED_A_ID, FIXED_B_ID)
 FIXED_LINEUP = (ORACLE_V1, FIXED_A_ID, FIXED_B_ID, FIXED_C_ID)
 COMPETITOR_LINEUP = (ORACLE_V2_ID, *FIELD_COMPETITOR_IDS)
 PLUS_FIELD_LINEUP = (ORACLE_PLUS_ID, "alinebidal-final", "slayer-v1", "inncenta-heuristic")
+PLUS_SOYLEREMO_LINEUP = (ORACLE_PLUS_ID, "slayer-v1", "underdog-v1", "soyleremo-a96")
 PLUS_EXPO_LINEUP = (ORACLE_PLUS_ID, "alinebidal-final", "slayer-v1", "expo-heuristic-v1")
 JAIL_FIELD_LINEUP = (JAIL_ID, "slayer-v1", "underdog-v1", "inncenta-heuristic")
+GOAT_FIELD_LINEUP = (GOAT_ID, "slayer-v1", "underdog-v1", "inncenta-heuristic")
 DEFAULT_WORKERS = max(1, os.cpu_count() or 1)
 
 
 def _is_oracle_policy(policy_id: str) -> bool:
-    return policy_id in {ORACLE_V1, ORACLE_V2_ID, ORACLE_PLUS_ID, JAIL_ID}
+    return policy_id in {ORACLE_V1, ORACLE_V2_ID, ORACLE_PLUS_ID, JAIL_ID, GOAT_ID}
 
 
 class _Spec:
@@ -105,6 +108,8 @@ class _H2HFactory:
             )
         if spec.policy_id == JAIL_ID:
             return JailAgent(player_id, self.config, seed=self.seed + player_id)
+        if spec.policy_id == GOAT_ID:
+            return GoatAgent(player_id, self.config, seed=self.seed + player_id)
         if spec.policy_id == ASU_VALUE_ID:
             return ASUValueV1(player_id)
         if spec.policy_id == FIXED_A_ID:

@@ -9,6 +9,7 @@ from .factory import (
     FIELD_COMPETITOR_IDS,
     INNCENTA_ID,
     SLAYER_ID,
+    SOYLEREMO_ID,
     UNDERDOG_ID,
     build_competitor,
 )
@@ -22,6 +23,7 @@ __all__ = [
     "FIELD_COMPETITOR_IDS",
     "INNCENTA_ID",
     "SLAYER_ID",
+    "SOYLEREMO_ID",
     "UNDERDOG_ID",
     "build_competitor",
 ]

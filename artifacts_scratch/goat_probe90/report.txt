@@ -1,0 +1,40 @@
+FIRST-MONOPOLY PROBE
+
+== sia  n=30  our WR  26.7% (8/30)  bust  66.7% (20/30)
+  LOSS n=22  first-set-us  40.9% (9/22)  first-3h-us  59.1% (13/22)  no-set   9.1% (2/22)
+    first-set owner: toprakthegoat-v1=9, inncenta-heuristic=5, alinebidal-final=4, slayer-v1=2
+    their first-set colour: brown=4, green=2, yellow=2, darkblue=2, red=1
+    our pieces of that colour: 0 deeds=11
+  WIN n=8  first-set-us  75.0% (6/8)  first-3h-us  87.5% (7/8)  no-set  12.5% (1/8)
+    first-set owner: toprakthegoat-v1=6, slayer-v1=1
+    their first-set colour: yellow=1
+    our pieces of that colour: 0 deeds=1
+
+== sua  n=30  our WR  23.3% (7/30)  bust  60.0% (18/30)
+  LOSS n=23  first-set-us  30.4% (7/23)  first-3h-us  30.4% (7/23)  no-set  17.4% (4/23)
+    first-set owner: toprakthegoat-v1=7, underdog-v1=6, slayer-v1=3, alinebidal-final=3
+    their first-set colour: brown=4, darkblue=3, pink=2, yellow=1, lightblue=1, red=1
+    our pieces of that colour: 0 deeds=12
+  WIN n=7  first-set-us  71.4% (5/7)  first-3h-us  71.4% (5/7)  no-set  14.3% (1/7)
+    first-set owner: toprakthegoat-v1=5, underdog-v1=1
+    their first-set colour: brown=1
+    our pieces of that colour: 0 deeds=1
+
+== sui  n=30  our WR  26.7% (8/30)  bust  60.0% (18/30)
+  LOSS n=22  first-set-us   9.1% (2/22)  first-3h-us   9.1% (2/22)  no-set  18.2% (4/22)
+    first-set owner: underdog-v1=9, slayer-v1=4, inncenta-heuristic=3, toprakthegoat-v1=2
+    their first-set colour: darkblue=4, lightblue=3, red=2, orange=2, green=2, brown=2
+    our pieces of that colour: 0 deeds=16
+  WIN n=8  first-set-us  75.0% (6/8)  first-3h-us 100.0% (8/8)  no-set   0.0% (0/8)
+    first-set owner: toprakthegoat-v1=6, underdog-v1=1, slayer-v1=1
+    their first-set colour: red=1, orange=1
+    our pieces of that colour: 0 deeds=1, 1 deeds=1
+
+== SHARED (all losses with a first set)
+  they completed first:  68.4% (39/57)
+  we completed first and still lost:  31.6% (18/57)
+  they hit 3-houses first (on a loss):  61.4% (35/57)
+  colour they completed: brown=10, darkblue=9, green=4, red=4, lightblue=4, yellow=3, pink=3, orange=2
+  our pieces of their set: 0 deeds=39
+  never contested (0 deeds): 100.0% (39/39)  in the colour and lost the race:   0.0% (0/39)
+

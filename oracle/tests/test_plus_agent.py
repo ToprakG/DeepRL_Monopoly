@@ -6,7 +6,7 @@ from monopoly_bench.engine import SharedGame, clone_env
 from monopoly_game_engine.constants import COLOR_GROUPS
 from oracle.agent import OracleConfig
 from oracle.eval_h2h import ORACLE_PLUS_ID, PLUS_FIELD_LINEUP, _is_oracle_policy, _parse_lineup
-from oracle.plus_agent import OraclePlusAgent, denial_value, resolve_plus_config
+from oracle.plus_agent import OraclePlusAgent, resolve_plus_config
 
 
 def test_plus_id_is_oracle_policy():
@@ -68,17 +68,18 @@ def test_greedy_toggle_still_legal():
     assert agent.choose_action(game.env) in game.env.get_allowed_actions(actor)
 
 
-def test_denial_zero_without_opponent_presence():
+def test_race_role_contests_opponent_presence():
+    from oracle.plus_loop import race_role
+
     game = SharedGame.new(11, max_rounds=20)
     env = game.env
-    # Fresh board: nobody owns brown. Denial of Mediterranean should be 0.
-    assert denial_value(env, 0, 1) == 0.0
-    # Give an opponent one brown deed.
+    assert race_role(env, 0, 1) == "start"
     brown = COLOR_GROUPS["brown"]
     env.properties[brown[0]].owner = 1
     if env.properties[brown[0]] not in env.players[1].properties:
         env.players[1].properties.append(env.properties[brown[0]])
-    assert denial_value(env, 0, brown[1]) > 0.0
+    assert race_role(env, 0, brown[1]) == "veto"
+    assert race_role(env, 0, brown[1], deny=False) == "skip"
 
 
 def test_auction_skips_when_not_in_auction():
@@ -426,11 +427,11 @@ def test_race_buy_skips_uncontested_orange():
     assert race_buy_action(env, 0, legal) is None
 
 
-def test_first_darkblue_auctions_at_five_times_list():
+def test_unowned_darkblue_books_at_solo_multiple():
     game = SharedGame.new(49, max_rounds=20)
     agent = OraclePlusAgent(0, OracleConfig(leaf="networth"), seed=0)
     boardwalk = COLOR_GROUPS["darkblue"][1]
-    assert agent._property_worth(game.env, boardwalk) == 5.0 * 400
+    assert agent._property_worth(game.env, boardwalk) == 2.5 * 400
 
 
 def test_complete_floor_empty_board_is_zero():
@@ -491,8 +492,25 @@ def test_plan_buy_skips_blocked_colour_without_denial():
     assert plan_buy_action(env, 0, legal, deny=False) is None
 
 
-def test_plan_auction_finish_is_capped_at_book_fraction():
-    from oracle.plus_loop import AUCTION_FRAC, acquire_value, plan_auction_ceiling
+def test_plan_buy_contests_blocked_colour_with_denial():
+    from monopoly_game_engine.actions import ActionType
+    from oracle.plus_loop import plan_buy_action
+
+    game = SharedGame.new(53, max_rounds=20)
+    env = game.env
+    orange = COLOR_GROUPS["orange"]
+    env.properties[orange[0]].owner = 1
+    if env.properties[orange[0]] not in env.players[1].properties:
+        env.players[1].properties.append(env.properties[orange[0]])
+    env.players[0].position = orange[1]
+    env.players[0].cash = 400
+    legal = [int(ActionType.BUY_PROPERTY), int(ActionType.END_TURN)]
+    assert plan_buy_action(env, 0, legal) == int(ActionType.BUY_PROPERTY)
+
+
+def test_plan_auction_finish_uses_cash_floor():
+    from oracle.plus_loop import plan_auction_ceiling
+    from oracle.plus_steals import complete_floor
 
     game = SharedGame.new(54, max_rounds=20)
     env = game.env
@@ -502,8 +520,8 @@ def test_plan_auction_finish_is_capped_at_book_fraction():
         env.players[0].properties.append(env.properties[brown[0]])
     env.players[0].cash = 1500
     ceiling = plan_auction_ceiling(env, 0, brown[1])
-    assert ceiling == AUCTION_FRAC * acquire_value(env, 0, brown[1])
-    assert ceiling < 1500.0
+    assert ceiling == 1500.0 - complete_floor(env, 0)
+    assert ceiling > 400.0
 
 
 def _give(env, pid: int, square: int) -> None:

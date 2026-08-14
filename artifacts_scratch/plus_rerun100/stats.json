@@ -1,0 +1,29 @@
+{
+  "n": 100,
+  "wins": {
+    "slayer-v1": 34,
+    "alinebidal-final": 23,
+    "oracle-plus-v1": 24,
+    "underdog-v1": 19
+  },
+  "bust": {
+    "oracle-plus-v1": 53,
+    "underdog-v1": 50,
+    "alinebidal-final": 54,
+    "slayer-v1": 40
+  },
+  "mean_rounds": 118.6,
+  "median_rounds": 95.5,
+  "plus_mean_rounds_win": 133.8,
+  "plus_mean_rounds_loss": 113.8,
+  "plus_bust": 53,
+  "mean_nw": {
+    "oracle-plus-v1": 9079.8,
+    "underdog-v1": 8606.8,
+    "slayer-v1": 13375.9,
+    "alinebidal-final": 8806.8
+  },
+  "plus_mean_nw_loss": 2404.8,
+  "plus_zero_on_loss": 53,
+  "truncated": 0
+}

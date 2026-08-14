@@ -1,16 +1,17 @@
-"""Colour-agnostic book loop. Optional deepcopy 1-ply sits off by default.
+"""First-monopoly race on engine book.
 
-The body (``oracle.plus_loop``) scores each spend as one engine-book step
-(2.5× deed, 5× if the set completes) and takes it when the delta is positive.
-No colour is the plan. DealBuilder is not the fallback. deepcopy 1-ply is
+The body (``oracle.plus_loop``) uses engine net-worth arithmetic (2.5× / 5×)
+only as the cap rule. Live buys, auctions, and builds follow the probe race:
+contest opponent presence, finish a colour we entered, veto one-away,
+even-build to three. DealBuilder is not the fallback. deepcopy 1-ply is
 still a toggle, not the body.
 
 Flags (defaults for ``oracle-plus-v1``):
 - ``one_ply`` — deepcopy legal shortlist (off: closed-form book loop)
 - ``solvency`` — prefer solvent 1-ply successors (default off)
-- ``denial`` — add a slice of the best opponent's book gain
-- ``completing_trade`` — swap when both gain book and we gain more
-- ``auction`` — 0.62 of book value, smallest legal raise
+- ``denial`` — contest / veto opponent presence (default on)
+- ``completing_trade`` — swap into a finish or contest
+- ``auction`` — race deeds to the cash floor, otherwise engine book
 - ``cash_gate`` / ``build_first`` / ``race_buy`` / ``lethal_jail`` — on
 - ``phase_switch`` — blend toward engine net worth as the cap approaches
 - ``inncenta_trade`` — unused by the book loop (list-price completing cash-buy)
@@ -23,7 +24,6 @@ import random
 from dataclasses import replace
 
 from monopoly_game_engine.actions import OFFSETS, ActionType
-from monopoly_game_engine.constants import COLOR_GROUPS, PROPERTIES
 from monopoly_game_engine.env import PHASE_AUCTION, MonopolyEnv
 
 from oracle.agent import OracleConfig
@@ -39,7 +39,6 @@ from oracle.plus_loop import (
 )
 from oracle.plus_steals import (
     AUCTION_KINDS,
-    FIRST_RACE_COLOURS,
     asu_delta_auction,
     cap_weight,
     dead_mortgage_action,
@@ -51,7 +50,6 @@ from oracle.plus_steals import (
     spend_floor,
     thaw_unmortgage_action,
     unowned_count,
-    would_complete,
 )
 
 ORACLE_PLUS_ID = "oracle-plus-v1"
@@ -91,42 +89,6 @@ def resolve_plus_config(config: OracleConfig) -> OracleConfig:
         race_buy=_flag(config.race_buy, True),
         lethal_jail=_flag(config.lethal_jail, True),
     )
-
-
-def denial_value(env: MonopolyEnv, pid: int, square: int) -> float:
-    """What holding ``square`` denies opponents (Alinebidal B5)."""
-
-    data = PROPERTIES.get(square)
-    if data is None:
-        return 0.0
-    group = COLOR_GROUPS.get(data["color"]) or ()
-    size = len(group)
-    if size < 2:
-        return 0.0
-    rents = data.get("rent") or [data.get("price", 0)]
-    hotel = float(rents[-1])
-    total = 0.0
-    for opp in env.players:
-        if opp.player_id == pid or opp.bankrupt:
-            continue
-        owned = sum(1 for sq in group if env.properties[sq].owner == opp.player_id)
-        if owned == 0:
-            continue
-        missing_after = size - (owned + 1)
-        if missing_after < 0:
-            continue
-        closeness = (owned + 1) / size
-        total += (hotel / (2 ** missing_after)) * closeness
-    return total
-
-
-def _acquired_square(env: MonopolyEnv, pid: int, action: int) -> int | None:
-    if action == int(ActionType.BUY_PROPERTY):
-        return int(env.players[pid].position)
-    if AUCTION_LO <= action < AUCTION_LO + 8:
-        square = getattr(env, "auction_property_id", None)
-        return None if square is None else int(square)
-    return None
 
 
 def _own_score(env: MonopolyEnv, pid: int, config: OracleConfig) -> float:
@@ -183,22 +145,9 @@ class OraclePlusAgent:
         return picked or pool[:MAX_CANDIDATES]
 
     def _property_worth(self, env: MonopolyEnv, square: int) -> float:
-        prop = env.properties.get(square)
-        if prop is None:
-            return 0.0
-        price = float(prop.price)
-        worth = 2.5 * price
-        group = COLOR_GROUPS.get(prop.color) or ()
-        mine = sum(1 for sq in group if env.properties[sq].owner == self.player_id)
-        if would_complete(env, self.player_id, int(square)) or mine == len(group) - 1:
-            worth = 5.0 * price
-        elif prop.color in FIRST_RACE_COLOURS:
-            worth = 5.0 * price
-        if self.config.denial:
-            worth += float(self.config.denial_weight) * denial_value(
-                env, self.player_id, int(square)
-            )
-        return worth
+        from oracle.plus_loop import acquire_gain
+
+        return acquire_gain(env, self.player_id, int(square))
 
     def _auction_action(self, env: MonopolyEnv, legal: list[int]) -> int | None:
         return plan_auction_action(
@@ -230,12 +179,6 @@ class OraclePlusAgent:
             cash = float(future.players[self.player_id].cash)
             if cash < spend_floor(future, self.player_id):
                 value -= 1.0e6
-        if self.config.denial:
-            square = _acquired_square(env, self.player_id, action)
-            if square is not None:
-                value += float(self.config.denial_weight) * denial_value(
-                    env, self.player_id, square
-                )
         return value
 
     def _one_ply(self, env: MonopolyEnv, legal: list[int]) -> int:
@@ -330,6 +273,5 @@ class OraclePlusAgent:
 __all__ = [
     "ORACLE_PLUS_ID",
     "OraclePlusAgent",
-    "denial_value",
     "resolve_plus_config",
 ]

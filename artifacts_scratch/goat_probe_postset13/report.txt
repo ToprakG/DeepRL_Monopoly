@@ -1,0 +1,21 @@
+FIRST-MONOPOLY PROBE
+
+== sia  n=7  our WR  42.9% (3/7)  bust  57.1% (4/7)
+  LOSS n=4  first-set-us 100.0% (4/4)  first-3h-us 100.0% (4/4)  no-set   0.0% (0/4)
+    first-set owner: toprakthegoat-v1=4
+  WIN n=3  first-set-us 100.0% (3/3)  first-3h-us 100.0% (3/3)  no-set   0.0% (0/3)
+    first-set owner: toprakthegoat-v1=3
+
+== sua  n=5  our WR   0.0% (0/5)  bust 100.0% (5/5)
+  LOSS n=5  first-set-us 100.0% (5/5)  first-3h-us 100.0% (5/5)  no-set   0.0% (0/5)
+    first-set owner: toprakthegoat-v1=5
+
+== sui  n=1  our WR 100.0% (1/1)  bust   0.0% (0/1)
+  WIN n=1  first-set-us 100.0% (1/1)  first-3h-us 100.0% (1/1)  no-set   0.0% (0/1)
+    first-set owner: toprakthegoat-v1=1
+
+== SHARED (all losses with a first set)
+  they completed first:   0.0% (0/9)
+  we completed first and still lost: 100.0% (9/9)
+  they hit 3-houses first (on a loss):   0.0% (0/9)
+

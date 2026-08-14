@@ -1,0 +1,46 @@
+{
+  "seed": 9960000,
+  "games_per_field": 300,
+  "total_games": 900,
+  "workers": 8,
+  "ours": "toprakthegoat-v1",
+  "fields": {
+    "sui": {
+      "lineup": ["toprakthegoat-v1", "slayer-v1", "underdog-v1", "inncenta-heuristic"],
+      "games": 300,
+      "wins": {
+        "slayer-v1": 97,
+        "toprakthegoat-v1": 94,
+        "underdog-v1": 64,
+        "inncenta-heuristic": 45
+      }
+    },
+    "sua": {
+      "lineup": ["toprakthegoat-v1", "slayer-v1", "underdog-v1", "alinebidal-final"],
+      "games": 300,
+      "wins": {
+        "slayer-v1": 99,
+        "toprakthegoat-v1": 83,
+        "underdog-v1": 79,
+        "alinebidal-final": 39
+      }
+    },
+    "sia": {
+      "lineup": ["toprakthegoat-v1", "slayer-v1", "inncenta-heuristic", "alinebidal-final"],
+      "games": 300,
+      "wins": {
+        "slayer-v1": 103,
+        "toprakthegoat-v1": 90,
+        "alinebidal-final": 58,
+        "inncenta-heuristic": 49
+      }
+    }
+  },
+  "pooled": {
+    "slayer-v1": {"wins": 299, "games": 900},
+    "toprakthegoat-v1": {"wins": 267, "games": 900},
+    "underdog-v1": {"wins": 143, "games": 600},
+    "alinebidal-final": {"wins": 97, "games": 600},
+    "inncenta-heuristic": {"wins": 94, "games": 600}
+  }
+}

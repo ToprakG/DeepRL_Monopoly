@@ -1,0 +1,36 @@
+FIRST-MONOPOLY PROBE
+
+== sia  n=30  our WR  20.0% (6/30)  bust  63.3% (19/30)
+  LOSS n=24  first-set-us   0.0% (0/24)  first-3h-us   0.0% (0/24)  no-set  16.7% (4/24)
+    first-set owner: slayer-v1=9, alinebidal-final=7, inncenta-heuristic=4
+    their first-set colour: yellow=5, brown=5, lightblue=2, darkblue=2, pink=2, orange=2
+    our pieces of that colour: 0 deeds=20
+  WIN n=6  first-set-us  83.3% (5/6)  first-3h-us  83.3% (5/6)  no-set  16.7% (1/6)
+    first-set owner: oracle-plus-v1=5
+
+== sua  n=30  our WR  26.7% (8/30)  bust  43.3% (13/30)
+  LOSS n=22  first-set-us   4.5% (1/22)  first-3h-us   4.5% (1/22)  no-set  31.8% (7/22)
+    first-set owner: underdog-v1=6, slayer-v1=4, alinebidal-final=4, oracle-plus-v1=1
+    their first-set colour: brown=4, darkblue=3, lightblue=3, orange=2, red=1, green=1
+    our pieces of that colour: 0 deeds=14
+  WIN n=8  first-set-us   0.0% (0/8)  first-3h-us  12.5% (1/8)  no-set  62.5% (5/8)
+    first-set owner: underdog-v1=2, alinebidal-final=1
+    their first-set colour: red=1, orange=1, brown=1
+    our pieces of that colour: 0 deeds=3
+
+== sui  n=30  our WR  33.3% (10/30)  bust  50.0% (15/30)
+  LOSS n=20  first-set-us  10.0% (2/20)  first-3h-us  15.0% (3/20)  no-set  15.0% (3/20)
+    first-set owner: slayer-v1=6, underdog-v1=5, inncenta-heuristic=4, oracle-plus-v1=2
+    their first-set colour: brown=4, darkblue=3, lightblue=3, pink=2, orange=2, yellow=1
+    our pieces of that colour: 0 deeds=15
+  WIN n=10  first-set-us 100.0% (10/10)  first-3h-us  90.0% (9/10)  no-set   0.0% (0/10)
+    first-set owner: oracle-plus-v1=10
+
+== SHARED (all losses with a first set)
+  they completed first:  94.2% (49/52)
+  we completed first and still lost:   5.8% (3/52)
+  they hit 3-houses first (on a loss):  92.3% (48/52)
+  colour they completed: brown=13, lightblue=8, darkblue=8, yellow=6, orange=6, pink=4, green=2, red=2
+  our pieces of their set: 0 deeds=49
+  never contested (0 deeds): 100.0% (49/49)  in the colour and lost the race:   0.0% (0/49)
+

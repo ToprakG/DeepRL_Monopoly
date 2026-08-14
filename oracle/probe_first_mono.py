@@ -1,4 +1,4 @@
-"""First-monopoly probe. How strong agents beat oracle-plus-v1.
+"""First-monopoly probe. How strong agents beat the focus policy.
 
 Not a search. After every H2H step we record who completed the first real-estate
 set and who first reached three houses. That is the race this field is decided by.
@@ -20,24 +20,27 @@ from ASU_FROZEN_TEACHER.evaluate import DEFAULT_MAX_DECISIONS, _new_seeded_game
 from monopoly_game_engine.constants import COLOR_GROUPS, NUM_PLAYERS
 
 from oracle.agent import OracleConfig
-from oracle.eval_h2h import ORACLE_PLUS_ID, _H2HFactory, _Spec, _focus_seat, rotate_lineup
+from oracle.eval_h2h import GOAT_ID, _H2HFactory, _Spec, _focus_seat, rotate_lineup
 from oracle.plus_steals import REAL_COLOURS
 
-OURS = ORACLE_PLUS_ID
+DEFAULT_OURS = GOAT_ID
 STRONG = ("slayer-v1", "underdog-v1", "inncenta-heuristic", "alinebidal-final")
-FIELDS: tuple[tuple[str, tuple[str, ...], int], ...] = (
-    ("strong", (OURS, "slayer-v1", "underdog-v1", "inncenta-heuristic"), 96),
-    ("vs_slayer", (OURS, "slayer-v1", "fixed-b", "fixed-c"), 64),
-    ("vs_inncenta", (OURS, "inncenta-heuristic", "fixed-b", "fixed-c"), 64),
-    ("vs_underdog", (OURS, "underdog-v1", "fixed-b", "fixed-c"), 64),
-    ("vs_alinebidal", (OURS, "alinebidal-final", "fixed-b", "fixed-c"), 64),
-)
-# 90 games, every strong competitor, no fixed fillers. Three tables of 30.
-STRONG_ONLY_FIELDS: tuple[tuple[str, tuple[str, ...], int], ...] = (
-    ("sui", (OURS, "slayer-v1", "underdog-v1", "inncenta-heuristic"), 30),
-    ("sua", (OURS, "slayer-v1", "underdog-v1", "alinebidal-final"), 30),
-    ("sia", (OURS, "slayer-v1", "inncenta-heuristic", "alinebidal-final"), 30),
-)
+
+
+def _fields(ours: str, *, strong_only: bool) -> tuple[tuple[str, tuple[str, ...], int], ...]:
+    if strong_only:
+        return (
+            ("sui", (ours, "slayer-v1", "underdog-v1", "inncenta-heuristic"), 30),
+            ("sua", (ours, "slayer-v1", "underdog-v1", "alinebidal-final"), 30),
+            ("sia", (ours, "slayer-v1", "inncenta-heuristic", "alinebidal-final"), 30),
+        )
+    return (
+        ("strong", (ours, "slayer-v1", "underdog-v1", "inncenta-heuristic"), 96),
+        ("vs_slayer", (ours, "slayer-v1", "fixed-b", "fixed-c"), 64),
+        ("vs_inncenta", (ours, "inncenta-heuristic", "fixed-b", "fixed-c"), 64),
+        ("vs_underdog", (ours, "underdog-v1", "fixed-b", "fixed-c"), 64),
+        ("vs_alinebidal", (ours, "alinebidal-final", "fixed-b", "fixed-c"), 64),
+    )
 
 
 def _mono_of(env, pid: int) -> str | None:
@@ -169,7 +172,7 @@ def _pct(n: int, d: int) -> str:
     return f"{100.0 * n / d:5.1f}% ({n}/{d})"
 
 
-def analyze(records: list[dict[str, Any]]) -> str:
+def analyze(records: list[dict[str, Any]], ours: str) -> str:
     by_field: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for rec in records:
         by_field[rec["field"]].append(rec)
@@ -195,23 +198,23 @@ def analyze(records: list[dict[str, Any]]) -> str:
             mono_us = sum(
                 1
                 for g in bucket
-                if g["first_mono"] and g["first_mono"]["policy"] == OURS
+                if g["first_mono"] and g["first_mono"]["policy"] == ours
             )
             mono_none = sum(1 for g in bucket if not g["first_mono"])
             three_us = sum(
                 1
                 for g in bucket
-                if g["first_three"] and g["first_three"]["policy"] == OURS
+                if g["first_three"] and g["first_three"]["policy"] == ours
             )
             colors = Counter(
                 g["first_mono"]["color"]
                 for g in bucket
-                if g["first_mono"] and g["first_mono"]["policy"] != OURS
+                if g["first_mono"] and g["first_mono"]["policy"] != ours
             )
             deeds = Counter(
                 g["our_deeds_on_first_mono"]
                 for g in bucket
-                if g["first_mono"] and g["first_mono"]["policy"] != OURS
+                if g["first_mono"] and g["first_mono"]["policy"] != ours
                 and g["our_deeds_on_first_mono"] is not None
             )
             who = Counter(
@@ -236,14 +239,14 @@ def analyze(records: list[dict[str, Any]]) -> str:
             if not g["first_mono"]:
                 continue
             loss_n += 1
-            if g["first_mono"]["policy"] == OURS:
+            if g["first_mono"]["policy"] == ours:
                 loss_first_us += 1
             else:
                 loss_first_them += 1
                 loss_colors[g["first_mono"]["color"]] += 1
                 if g["our_deeds_on_first_mono"] is not None:
                     loss_deeds[int(g["our_deeds_on_first_mono"])] += 1
-            if g["first_three"] and g["first_three"]["policy"] != OURS:
+            if g["first_three"] and g["first_three"]["policy"] != ours:
                 three_them_on_loss += 1
         lines.append("")
 
@@ -276,9 +279,19 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--seed", type=int, default=9_800_000)
     parser.add_argument("--workers", type=int, default=max(1, os.cpu_count() or 1))
     parser.add_argument(
+        "--ours",
+        default=DEFAULT_OURS,
+        help="Focus policy id (default: toprakthegoat-v1)",
+    )
+    parser.add_argument(
         "--strong-only",
         action="store_true",
         help="90 games vs slayer/underdog/inncenta/alinebidal; no fixed agents",
+    )
+    parser.add_argument(
+        "--only-seeds",
+        default="",
+        help="Comma-separated game seeds to run (from a prior probe jsonl)",
     )
     args = parser.parse_args(argv)
     out: Path = args.out
@@ -286,12 +299,18 @@ def main(argv: list[str] | None = None) -> int:
     jsonl = out / "games.jsonl"
     report_path = out / "report.txt"
     config = OracleConfig()
-    fields = STRONG_ONLY_FIELDS if args.strong_only else FIELDS
+    ours = str(args.ours)
+    fields = _fields(ours, strong_only=args.strong_only)
     jobs = _jobs(args.seed, config, fields)
+    if str(args.only_seeds).strip():
+        keep = {int(part) for part in str(args.only_seeds).split(",") if part.strip()}
+        jobs = [job for job in jobs if int(job["seed"]) in keep]
+        if not jobs:
+            raise SystemExit(f"no jobs matched --only-seeds {sorted(keep)}")
     total = len(jobs)
     done = 0
     records: list[dict[str, Any]] = []
-    print(f"probe start fields={len(fields)} games={total} workers={args.workers}", flush=True)
+    print(f"probe start ours={ours} fields={len(fields)} games={total} workers={args.workers}", flush=True)
     workers = int(args.workers)
     pool = None
     with jsonl.open("w", encoding="utf-8") as fh:
@@ -318,7 +337,7 @@ def main(argv: list[str] | None = None) -> int:
             if pool is not None:
                 pool.close()
                 pool.join()
-    text = analyze(records)
+    text = analyze(records, ours)
     report_path.write_text(text + "\n", encoding="utf-8")
     print(text, flush=True)
     print(f"wrote {jsonl} {report_path}", flush=True)

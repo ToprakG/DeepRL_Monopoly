@@ -29,7 +29,17 @@ CHECKPOINT_PATH_ENV_VAR = "A96_CHECKPOINT_PATH"
 _ROOT = Path(__file__).resolve().parents[1]
 _CANDIDATES = (
     _ROOT / "artifacts" / "soyleremo_a96" / "a96_champion.pt",
+    Path.home() / "Downloads" / "a96_champion.pt",
     _ROOT / "artifacts" / "soyleremo_a96" / A96_CHECKPOINT_FILENAME,
+    _ROOT / "Monoply" / "dist" / "a96_friend_match" / "a96_champion.pt",
+    _ROOT / "Monopoly" / "dist" / "a96_friend_match" / "a96_champion.pt",
+    _ROOT / "dist" / "a96_friend_match" / "a96_champion.pt",
+    _ROOT
+    / "artifacts_scratch"
+    / "soyleremo3_champion"
+    / "dist"
+    / "a96_friend_match"
+    / "a96_champion.pt",
     _ROOT
     / "artifacts_scratch"
     / "soyleremo3_champion"

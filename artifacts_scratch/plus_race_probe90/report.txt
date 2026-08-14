@@ -1,0 +1,38 @@
+FIRST-MONOPOLY PROBE
+
+== sia  n=30  our WR  30.0% (9/30)  bust  56.7% (17/30)
+  LOSS n=21  first-set-us  38.1% (8/21)  first-3h-us  47.6% (10/21)  no-set  14.3% (3/21)
+    first-set owner: oracle-plus-v1=8, alinebidal-final=5, slayer-v1=3, inncenta-heuristic=2
+    their first-set colour: lightblue=4, brown=3, pink=2, darkblue=1
+    our pieces of that colour: 0 deeds=10
+  WIN n=9  first-set-us  88.9% (8/9)  first-3h-us  88.9% (8/9)  no-set  11.1% (1/9)
+    first-set owner: oracle-plus-v1=8
+
+== sua  n=30  our WR  20.0% (6/30)  bust  66.7% (20/30)
+  LOSS n=24  first-set-us   8.3% (2/24)  first-3h-us   8.3% (2/24)  no-set  16.7% (4/24)
+    first-set owner: underdog-v1=9, slayer-v1=5, alinebidal-final=4, oracle-plus-v1=2
+    their first-set colour: brown=6, darkblue=4, lightblue=3, red=2, green=1, pink=1
+    our pieces of that colour: 0 deeds=18
+  WIN n=6  first-set-us  66.7% (4/6)  first-3h-us 100.0% (6/6)  no-set   0.0% (0/6)
+    first-set owner: oracle-plus-v1=4, alinebidal-final=2
+    their first-set colour: brown=2
+    our pieces of that colour: 0 deeds=2
+
+== sui  n=30  our WR  36.7% (11/30)  bust  40.0% (12/30)
+  LOSS n=19  first-set-us  15.8% (3/19)  first-3h-us  21.1% (4/19)  no-set  31.6% (6/19)
+    first-set owner: slayer-v1=4, underdog-v1=4, oracle-plus-v1=3, inncenta-heuristic=2
+    their first-set colour: brown=3, pink=3, darkblue=2, orange=1, lightblue=1
+    our pieces of that colour: 0 deeds=10
+  WIN n=11  first-set-us  72.7% (8/11)  first-3h-us  72.7% (8/11)  no-set   0.0% (0/11)
+    first-set owner: oracle-plus-v1=8, slayer-v1=2, underdog-v1=1
+    their first-set colour: lightblue=1, darkblue=1, brown=1
+    our pieces of that colour: 0 deeds=3
+
+== SHARED (all losses with a first set)
+  they completed first:  74.5% (38/51)
+  we completed first and still lost:  25.5% (13/51)
+  they hit 3-houses first (on a loss):  68.6% (35/51)
+  colour they completed: brown=12, lightblue=8, darkblue=7, pink=6, red=2, green=1, yellow=1, orange=1
+  our pieces of their set: 0 deeds=38
+  never contested (0 deeds): 100.0% (38/38)  in the colour and lost the race:   0.0% (0/38)
+

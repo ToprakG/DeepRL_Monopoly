@@ -1,0 +1,59 @@
+{
+  "seed": 9960000,
+  "games_per_field": 300,
+  "workers": 8,
+  "session": "goat-900",
+  "note": "Fields 1-2 completed on Colab before session prune. Field 3 was 83/300; rerun separately.",
+  "fields": [
+    {
+      "name": "sui",
+      "lineup": ["toprakthegoat-v1", "slayer-v1", "underdog-v1", "inncenta-heuristic"],
+      "games": 300,
+      "win_rates": {
+        "slayer-v1": {"wins": 97, "games": 300, "win_rate": 0.323},
+        "toprakthegoat-v1": {"wins": 94, "games": 300, "win_rate": 0.313},
+        "underdog-v1": {"wins": 64, "games": 300, "win_rate": 0.213},
+        "inncenta-heuristic": {"wins": 45, "games": 300, "win_rate": 0.150}
+      },
+      "wilson_95": {
+        "inncenta-heuristic": [0.11403246871185316, 0.194817611145329],
+        "slayer-v1": [0.2729253960837475, 0.37820845374892526],
+        "toprakthegoat-v1": [0.2634843975598553, 0.36790231169730847],
+        "underdog-v1": [0.1707525956382275, 0.2631627078638455]
+      },
+      "oracle_vs_field": {
+        "oracle_win_rate": 0.313,
+        "opponents": {
+          "inncenta-heuristic": {"win_rate": 0.150, "wins": 45, "games": 300, "rate_gap": 0.163, "margin_mean": 3149.2, "margin_se": 1212.1},
+          "slayer-v1": {"win_rate": 0.323, "wins": 97, "games": 300, "rate_gap": -0.010, "margin_mean": -3160.5, "margin_se": 1538.5},
+          "underdog-v1": {"win_rate": 0.213, "wins": 64, "games": 300, "rate_gap": 0.100, "margin_mean": 1311.1, "margin_se": 1303.7}
+        }
+      }
+    },
+    {
+      "name": "sua",
+      "lineup": ["toprakthegoat-v1", "slayer-v1", "underdog-v1", "alinebidal-final"],
+      "games": 300,
+      "win_rates": {
+        "slayer-v1": {"wins": 99, "games": 300, "win_rate": 0.330},
+        "toprakthegoat-v1": {"wins": 83, "games": 300, "win_rate": 0.277},
+        "underdog-v1": {"wins": 79, "games": 300, "win_rate": 0.263},
+        "alinebidal-final": {"wins": 39, "games": 300, "win_rate": 0.130}
+      },
+      "wilson_95": {
+        "alinebidal-final": [0.09657536941275233, 0.17278042929341172],
+        "slayer-v1": [0.2792344636154957, 0.3850641466008499],
+        "toprakthegoat-v1": [0.22911058318108624, 0.32986994396587765],
+        "underdog-v1": [0.21671150294236005, 0.3159395034372583]
+      },
+      "oracle_vs_field": {
+        "oracle_win_rate": 0.277,
+        "opponents": {
+          "alinebidal-final": {"win_rate": 0.130, "wins": 39, "games": 300, "rate_gap": 0.147, "margin_mean": 3321.4, "margin_se": 1065.5},
+          "slayer-v1": {"win_rate": 0.330, "wins": 99, "games": 300, "rate_gap": -0.053, "margin_mean": -3159.2, "margin_se": 1375.0},
+          "underdog-v1": {"win_rate": 0.263, "wins": 79, "games": 300, "rate_gap": 0.013, "margin_mean": -479.4, "margin_se": 1251.6}
+        }
+      }
+    }
+  ]
+}

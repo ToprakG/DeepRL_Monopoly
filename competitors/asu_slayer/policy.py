@@ -70,13 +70,16 @@ class SlayerConfig:
     expected_game_length: float = 45.0
     min_horizon: float = 4.0
     threat_multiple: float = 1.0
-    active_liquidation: bool = False
+    active_liquidation: bool = True
+    liquidation_trigger: float = 0.85
+    unmortgage_headroom: float = 1.25
     build_reserve_fraction: float = 0.25
     auction_value_fraction: float = 0.62
     denial_fraction: float = 0.22
     auction_step_fraction: float = 0.18
     jail_exposure_threshold: float = 95.0
     trade_margin: float = 1.0
+    proposal_cooldown_rounds: int = 10
 
     def __post_init__(self) -> None:
         if not 0.0 < self.target_survival < 1.0:
@@ -89,6 +92,24 @@ class SlayerConfig:
             raise ValueError("threat_multiple must not be negative")
         if not 0.0 <= self.build_reserve_fraction <= 1.0:
             raise ValueError("build_reserve_fraction must be within [0, 1]")
+        if not 0.0 <= self.auction_value_fraction <= 1.0:
+            raise ValueError("auction_value_fraction must be within [0, 1]")
+        if not 0.0 <= self.auction_step_fraction <= 1.0:
+            raise ValueError("auction_step_fraction must be within [0, 1]")
+        if self.denial_fraction < 0.0:
+            raise ValueError("denial_fraction must not be negative")
+        if self.reserve_floor < 0.0:
+            raise ValueError("reserve_floor must not be negative")
+        if self.jail_exposure_threshold < 0.0:
+            raise ValueError("jail_exposure_threshold must not be negative")
+        if self.trade_margin <= 0.0:
+            raise ValueError("trade_margin must be positive")
+        if self.proposal_cooldown_rounds < 0:
+            raise ValueError("proposal_cooldown_rounds must not be negative")
+        if not 0.0 < self.liquidation_trigger <= 1.0:
+            raise ValueError("liquidation_trigger must be within (0, 1]")
+        if self.unmortgage_headroom < 1.0:
+            raise ValueError("unmortgage_headroom must be at least 1.0")
 
     def evolve(self, **changes) -> "SlayerConfig":
         return replace(self, **changes)
@@ -107,6 +128,11 @@ class SlayerV1:
             raise ValueError(f"player_id must be in [0, {NUM_PLAYERS - 1}]")
         self.player_id = player_id
         self.config = config
+        # exch_trade action id -> round it was last proposed. 362 proposals
+        # per game with a 0.06% acceptance rate were measured against the
+        # scripted field (SLAYER_REVIEW.md 4.2); re-proposing the same swap
+        # every round buys nothing.
+        self._proposed: dict[int, int] = {}
 
     # ── Solvency ──────────────────────────────────────────────────────────
 
@@ -123,7 +149,17 @@ class SlayerV1:
         """
 
         config = self.config
-        horizon = max(config.min_horizon, config.expected_game_length - env.round)
+        # ``expected_game_length`` is the expected REMAINING length. The
+        # original ``expected_game_length - env.round`` modeled a 45-round
+        # game; natural-end games against the scripted field run 130-170+
+        # rounds, so from round 45 on the horizon pinned at ``min_horizon``
+        # and under-priced cumulative ruin risk for another 100+ rounds
+        # (46% of strong-field losses were bankruptcies, SLAYER_REVIEW.md 4.1).
+        # The engine's own hard cap bounds what can remain.
+        remaining_cap = max(1.0, 200.0 - float(env.round))
+        horizon = max(
+            config.min_horizon, min(config.expected_game_length, remaining_cap)
+        )
         quantile = config.target_survival ** (1.0 / horizon)
         # rent_quantile requires a value strictly inside (0, 1); a very long
         # horizon would otherwise round to 1.0.
@@ -144,6 +180,13 @@ class SlayerV1:
         return config.reserve_floor + config.threat_multiple * threat
 
     def _affordable(self, env, cost: float, reserve: float) -> bool:
+        # A zero-cost action (a deed-for-deed swap, an incoming offer with no
+        # cash leg) cannot reduce cash, so the reserve has nothing to protect.
+        # Gating these on ``cash >= reserve`` declined free monopoly-completing
+        # swaps at cash 0 and suppressed 641 positive-gain swap proposals in a
+        # 40-game count (SLAYER_REVIEW.md 3a).
+        if cost <= 0.0:
+            return True
         cash = float(env.players[self.player_id].cash)
         return cost <= cash and (cash - cost) >= reserve
 
@@ -192,9 +235,12 @@ class SlayerV1:
         share = self.config.build_reserve_fraction
         # Unmortgaging is the exact inverse of the recovery rule, so the two
         # must never both be relaxed: mortgage, unmortgage, mortgage is an
-        # infinite loop. Holding unmortgage to the full reserve keeps the
-        # guarantee that no investment can drop cash back under it.
-        unmortgage_share = 1.0 if self.config.active_liquidation else share
+        # infinite loop. With active liquidation the unmortgage side demands
+        # headroom ABOVE the full reserve (hysteresis, see _raise_cash_action).
+        unmortgage_share = (
+            self.config.unmortgage_headroom
+            if self.config.active_liquidation else share
+        )
         candidates: list[tuple[float, float, int, float]] = []
         for index, square in enumerate(PROPERTY_IDS):
             action = OFFSETS["unmortgage"] + index
@@ -246,8 +292,12 @@ class SlayerV1:
 
         proposals: list[tuple[float, float, int]] = []
         others = [pid for pid in range(NUM_PLAYERS) if pid != self.player_id]
+        cooldown = self.config.proposal_cooldown_rounds
         for action in legal:
             if not OFFSETS["exch_trade"] <= action < OFFSETS["auction"]:
+                continue
+            last = self._proposed.get(action)
+            if last is not None and env.round - last < cooldown:
                 continue
             local = action - OFFSETS["exch_trade"]
             target = others[local // _EXCHANGE_STRIDE]
@@ -266,6 +316,7 @@ class SlayerV1:
             ) - disposal_loss(env, target, requested)
             if counter <= 0 or gain <= counter:
                 continue
+            self._proposed[action] = int(env.round)
             proposals.append((gain * self.config.trade_margin, 0.0, action))
         return proposals
 
@@ -290,7 +341,12 @@ class SlayerV1:
             return None
         cash = float(env.players[self.player_id].cash)
         reserve = self._reserve(env)
-        if cash >= reserve:
+        # Hysteresis: raise cash only when clearly below the reserve, and
+        # unmortgage (in _investments) only with clear headroom above it, so
+        # the two rules cannot ping-pong a deed at the boundary. A game
+        # observed with the raw thresholds mortgaged 8 and unmortgaged 10
+        # times (SLAYER_REVIEW.md 3b).
+        if cash >= reserve * self.config.liquidation_trigger:
             return None
 
         earned = income_by_square(env, self.player_id, 1)

@@ -1,0 +1,132 @@
+probe start ours=toprakthegoat-v1 fields=3 games=90 workers=4
+probe 1/90 sui#2 L first=slayer-v1/lightblue rounds=34
+probe 2/90 sui#4 L first=slayer-v1/pink rounds=22
+probe 3/90 sui#3 W first=slayer-v1/darkblue rounds=58
+probe 4/90 sui#1 W first=underdog-v1/darkblue rounds=52
+probe 5/90 sui#7 L first=slayer-v1/orange rounds=86
+probe 6/90 sui#0 L first=slayer-v1/orange rounds=35
+probe 7/90 sui#9 W first=slayer-v1/brown rounds=50
+probe 8/90 sui#6 L first=inncenta-heuristic/darkblue rounds=50
+probe 9/90 sui#10 L first=toprakthegoat-v1/lightblue rounds=50
+probe 10/90 sui#11 L first=toprakthegoat-v1/brown rounds=61
+probe 11/90 sui#5 L first=inncenta-heuristic/pink rounds=106
+probe 12/90 sui#13 L first=toprakthegoat-v1/brown rounds=105
+probe 13/90 sui#12 L first=inncenta-heuristic/brown rounds=25
+probe 14/90 sui#15 W first=toprakthegoat-v1/brown rounds=34
+probe 15/90 sui#14 L first=toprakthegoat-v1/brown rounds=84
+probe 16/90 sui#16 W first=toprakthegoat-v1/lightblue rounds=73
+probe 17/90 sui#19 L first=slayer-v1/pink rounds=67
+probe 18/90 sui#17 L first=underdog-v1/green rounds=56
+probe 19/90 sui#18 L first=underdog-v1/yellow rounds=54
+probe 20/90 sui#22 L first=slayer-v1/red rounds=29
+probe 21/90 sui#8 L first=toprakthegoat-v1/lightblue rounds=133
+probe 22/90 sui#24 L first=slayer-v1/green rounds=78
+probe 23/90 sui#25 W first=toprakthegoat-v1/lightblue rounds=113
+probe 24/90 sui#26 L first=slayer-v1/pink rounds=46
+probe 25/90 sui#27 L first=slayer-v1/green rounds=36
+probe 26/90 sui#21 L first=-/- rounds=200
+probe 27/90 sui#29 L first=slayer-v1/pink rounds=32
+probe 28/90 sua#0 L first=slayer-v1/lightblue rounds=34
+probe 29/90 sua#1 L first=slayer-v1/brown rounds=57
+probe 30/90 sui#20 L first=-/- rounds=200
+probe 31/90 sua#2 W first=-/- rounds=200
+probe 32/90 sua#4 L first=underdog-v1/darkblue rounds=69
+probe 33/90 sui#28 L first=toprakthegoat-v1/brown rounds=123
+probe 34/90 sua#6 L first=underdog-v1/darkblue rounds=46
+probe 35/90 sua#3 L first=-/- rounds=200
+probe 36/90 sua#7 L first=underdog-v1/orange rounds=53
+probe 37/90 sua#9 L first=alinebidal-final/lightblue rounds=24
+probe 38/90 sua#5 L first=toprakthegoat-v1/brown rounds=200
+probe 39/90 sua#10 L first=toprakthegoat-v1/brown rounds=90
+probe 40/90 sua#11 W first=toprakthegoat-v1/darkblue rounds=54
+probe 41/90 sua#13 L first=alinebidal-final/lightblue rounds=56
+probe 42/90 sua#14 W first=toprakthegoat-v1/brown rounds=59
+probe 43/90 sua#12 W first=toprakthegoat-v1/brown rounds=124
+probe 44/90 sua#8 L first=-/- rounds=200
+probe 45/90 sua#16 L first=toprakthegoat-v1/brown rounds=65
+probe 46/90 sua#15 W first=alinebidal-final/brown rounds=60
+probe 47/90 sua#18 W first=toprakthegoat-v1/pink rounds=41
+probe 48/90 sua#19 L first=underdog-v1/yellow rounds=59
+probe 49/90 sua#21 W first=alinebidal-final/red rounds=45
+probe 50/90 sua#22 W first=toprakthegoat-v1/brown rounds=45
+probe 51/90 sua#23 L first=slayer-v1/pink rounds=92
+probe 52/90 sua#24 W first=toprakthegoat-v1/red rounds=46
+probe 53/90 sua#17 L first=-/- rounds=200
+probe 54/90 sua#25 W first=slayer-v1/darkblue rounds=77
+probe 55/90 sua#26 L first=slayer-v1/green rounds=42
+probe 56/90 sua#27 W first=toprakthegoat-v1/red rounds=36
+probe 57/90 sua#20 L first=-/- rounds=200
+probe 58/90 sua#28 W first=underdog-v1/red rounds=42
+probe 59/90 sui#23 W first=toprakthegoat-v1/brown rounds=200
+probe 60/90 sua#29 L first=-/- rounds=200
+probe 61/90 sia#2 L first=toprakthegoat-v1/brown rounds=59
+probe 62/90 sia#3 W first=slayer-v1/lightblue rounds=200
+probe 63/90 sia#5 L first=slayer-v1/red rounds=45
+probe 64/90 sia#4 L first=inncenta-heuristic/pink rounds=38
+probe 65/90 sia#7 L first=slayer-v1/lightblue rounds=33
+probe 66/90 sia#8 L first=slayer-v1/lightblue rounds=59
+probe 67/90 sia#0 L first=alinebidal-final/brown rounds=200
+probe 68/90 sia#9 L first=alinebidal-final/brown rounds=51
+probe 69/90 sia#10 L first=slayer-v1/green rounds=43
+probe 70/90 sia#1 L first=-/- rounds=200
+probe 71/90 sia#6 L first=-/- rounds=200
+probe 72/90 sia#13 L first=alinebidal-final/lightblue rounds=28
+probe 73/90 sia#14 W first=toprakthegoat-v1/darkblue rounds=73
+probe 74/90 sia#15 W first=toprakthegoat-v1/lightblue rounds=54
+probe 75/90 sia#16 W first=inncenta-heuristic/darkblue rounds=31
+probe 76/90 sia#17 L first=toprakthegoat-v1/brown rounds=54
+probe 77/90 sia#18 L first=slayer-v1/yellow rounds=43
+probe 78/90 sia#19 L first=alinebidal-final/pink rounds=61
+probe 79/90 sia#20 L first=alinebidal-final/lightblue rounds=39
+probe 80/90 sia#11 L first=-/- rounds=200
+probe 81/90 sia#23 L first=toprakthegoat-v1/brown rounds=35
+probe 82/90 sia#21 L first=inncenta-heuristic/brown rounds=25
+probe 83/90 sia#22 W first=toprakthegoat-v1/darkblue rounds=60
+probe 84/90 sia#25 W first=inncenta-heuristic/darkblue rounds=63
+probe 85/90 sia#24 L first=slayer-v1/red rounds=66
+probe 86/90 sia#27 L first=alinebidal-final/red rounds=67
+probe 87/90 sia#28 W first=toprakthegoat-v1/red rounds=72
+probe 88/90 sia#12 L first=-/- rounds=200
+probe 89/90 sia#26 L first=inncenta-heuristic/yellow rounds=78
+probe 90/90 sia#29 L first=toprakthegoat-v1/lightblue rounds=119
+FIRST-MONOPOLY PROBE
+
+== sia  n=30  our WR  23.3% (7/30)  bust  60.0% (18/30)
+  LOSS n=23  first-set-us  17.4% (4/23)  first-3h-us  26.1% (6/23)  no-set  17.4% (4/23)
+    first-set owner: slayer-v1=6, alinebidal-final=6, toprakthegoat-v1=4, inncenta-heuristic=3
+    their first-set colour: lightblue=4, red=3, brown=3, pink=2, yellow=2, green=1
+    our pieces of that colour: 0 deeds=15
+  WIN n=7  first-set-us  57.1% (4/7)  first-3h-us  71.4% (5/7)  no-set   0.0% (0/7)
+    first-set owner: toprakthegoat-v1=4, inncenta-heuristic=2, slayer-v1=1
+    their first-set colour: darkblue=2, lightblue=1
+    our pieces of that colour: 0 deeds=3
+
+== sua  n=30  our WR  40.0% (12/30)  bust  40.0% (12/30)
+  LOSS n=18  first-set-us  16.7% (3/18)  first-3h-us  16.7% (3/18)  no-set  27.8% (5/18)
+    first-set owner: slayer-v1=4, underdog-v1=4, toprakthegoat-v1=3, alinebidal-final=2
+    their first-set colour: lightblue=3, darkblue=2, brown=1, orange=1, yellow=1, pink=1
+    our pieces of that colour: 0 deeds=10
+  WIN n=12  first-set-us  58.3% (7/12)  first-3h-us  83.3% (10/12)  no-set   8.3% (1/12)
+    first-set owner: toprakthegoat-v1=7, alinebidal-final=2, slayer-v1=1, underdog-v1=1
+    their first-set colour: red=2, brown=1, darkblue=1
+    our pieces of that colour: 0 deeds=4
+
+== sui  n=30  our WR  23.3% (7/30)  bust  70.0% (21/30)
+  LOSS n=23  first-set-us  26.1% (6/23)  first-3h-us  39.1% (9/23)  no-set   8.7% (2/23)
+    first-set owner: slayer-v1=10, toprakthegoat-v1=6, inncenta-heuristic=3, underdog-v1=2
+    their first-set colour: pink=5, green=3, orange=2, lightblue=1, darkblue=1, brown=1
+    our pieces of that colour: 0 deeds=15
+  WIN n=7  first-set-us  57.1% (4/7)  first-3h-us  85.7% (6/7)  no-set   0.0% (0/7)
+    first-set owner: toprakthegoat-v1=4, slayer-v1=2, underdog-v1=1
+    their first-set colour: darkblue=2, brown=1
+    our pieces of that colour: 0 deeds=2, 1 deeds=1
+
+== SHARED (all losses with a first set)
+  they completed first:  75.5% (40/53)
+  we completed first and still lost:  24.5% (13/53)
+  they hit 3-houses first (on a loss):  66.0% (35/53)
+  colour they completed: pink=8, lightblue=8, brown=5, green=5, red=4, yellow=4, darkblue=3, orange=3
+  our pieces of their set: 0 deeds=40
+  never contested (0 deeds): 100.0% (40/40)  in the colour and lost the race:   0.0% (0/40)
+
+wrote /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/goat_remeasure/s992/games.jsonl /Users/toprakgundogdu/DeepRL_Monopoly/artifacts_scratch/goat_remeasure/s992/report.txt
