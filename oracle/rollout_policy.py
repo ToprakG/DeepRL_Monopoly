@@ -17,6 +17,7 @@ from monopoly_game_engine.agents_fixed import (
 )
 from monopoly_game_engine.constants import (
     COLOR_GROUPS,
+    JAIL_BAIL,
     PROPERTIES,
     PROPERTY_IDS,
     REAL_ESTATE_IDS,
@@ -34,6 +35,9 @@ EARLY_GROUP_BUFFER = 20
 # Extra cash buffer required per elapsed round -- hold more reserve as the
 # game matures instead of a flat trigger.
 MORTGAGE_ROUND_SCALE = 15
+# Colours that decide the first monopoly on the board -- race to buy these
+# on sight. Ported from origin/newthings:oracle/plus_steals.py.
+FIRST_RACE_COLOURS = ("brown", "lightblue", "darkblue")
 
 
 def _would_complete(env: MonopolyEnv, pid: int, square: int) -> bool:
@@ -45,6 +49,52 @@ def _would_complete(env: MonopolyEnv, pid: int, square: int) -> bool:
     if not group:
         return False
     return all(env.properties[sq].owner == pid or sq == square for sq in group)
+
+
+def _next_roll_threat(env: MonopolyEnv, pid: int) -> float:
+    """Worst published rent we can hit on a 2-12 walk from here."""
+
+    player = env.players[pid]
+    pos = int(player.position)
+    worst = 0.0
+    for total in range(2, 13):
+        square = (pos + total) % 40
+        prop = env.properties.get(square)
+        if prop is None or prop.owner in (None, pid) or prop.mortgaged:
+            continue
+        opp = env.players[prop.owner]
+        if opp.bankrupt:
+            continue
+        rails = sum(1 for p in opp.properties if p.color == "railroad" and not p.mortgaged)
+        utils = sum(1 for p in opp.properties if p.color == "utility" and not p.mortgaged)
+        rent = float(prop.get_rent(7, max(rails, 1), max(utils, 1)))
+        if rent > worst:
+            worst = rent
+    return worst
+
+
+def _spend_floor(env: MonopolyEnv, pid: int) -> float:
+    return max(float(JAIL_BAIL), _next_roll_threat(env, pid))
+
+
+def _complete_floor(env: MonopolyEnv, pid: int) -> float:
+    return float(_next_roll_threat(env, pid))
+
+
+def _is_race_square(env: MonopolyEnv, pid: int, square: int) -> bool:
+    prop = env.properties.get(square)
+    if prop is None:
+        return False
+    color = prop.color
+    if color in ("railroad", "utility"):
+        return False
+    if color in FIRST_RACE_COLOURS:
+        return True
+    group = COLOR_GROUPS.get(color) or ()
+    ours = sum(1 for sq in group if env.properties[sq].owner == pid)
+    if ours >= 1:
+        return True
+    return any(env.properties[sq].owner not in (pid, None) for sq in group)
 
 
 class DealBuilderRollout(FixedPolicyAgent):
@@ -78,10 +128,17 @@ class DealBuilderRollout(FixedPolicyAgent):
         return None
 
     def _should_buy(self, player, prop, env) -> bool:
+        pid = self.player_id
+        square = prop.square_id
+        color = prop.color
+        if color not in ("railroad", "utility") and _is_race_square(env, pid, square):
+            floor = _complete_floor(env, pid)
+            if color not in FIRST_RACE_COLOURS and not _would_complete(env, pid, square):
+                floor = _spend_floor(env, pid)
+            return float(player.cash) - float(prop.price) >= floor
         # DealMaker: buy anything affordable with a small buffer, relaxed
         # further for the 1st/2nd piece of a group nobody else has touched.
         buffer = BUY_BUFFER
-        color = prop.color
         if color not in ("railroad", "utility"):
             group = COLOR_GROUPS.get(color, [])
             contested = any(
