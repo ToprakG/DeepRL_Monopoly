@@ -1,0 +1,7 @@
+offered_sq,offered_desc,requested_sq,requested_desc,offered_price,requested_price,accept_from_cash,monotone,never_accepts,grid_points,rollout_states,rollout_agree,seed
+19,completes our orange group,25,our spare railroad,200,200,-400,False,False,33,9,4,20250811
+19,completes our orange group,16,our own orange piece,200,180,-175,False,False,33,9,0,20250811
+5,"a railroad, no group value",25,our spare railroad,200,200,-175,False,False,33,9,0,20250811
+5,"a railroad, no group value",16,our own orange piece,200,180,,True,True,33,9,0,20250811
+1,"cheap brown, near worthless",25,our spare railroad,60,200,,True,True,33,9,0,20250811
+1,"cheap brown, near worthless",16,our own orange piece,60,180,,True,True,33,9,0,20250811

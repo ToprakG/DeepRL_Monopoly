@@ -1,0 +1,42 @@
+{
+  "slayer-audit": {
+    "url": "https://github.com/emirkaanozdemr/monopoly.git",
+    "ref": "slayer/audit-and-hardening",
+    "sha": "749b6a876556f20ae793c9f26a356b9efd46e7f0"
+  },
+  "slayer-main": {
+    "url": "https://github.com/emirkaanozdemr/monopoly.git",
+    "ref": "main",
+    "sha": "72843f75f38f458b4819cb75def4835eec0fdea3"
+  },
+  "alinebidal": {
+    "url": "https://github.com/alinebidal10-afk/algorithm-trump.git",
+    "ref": "main",
+    "sha": "af0a1237e1b7d56adafe30c5ce55dfd560a1440a"
+  },
+  "boom": {
+    "url": "https://github.com/EnzeCbe/monopoly-boom.git",
+    "ref": "main",
+    "sha": "0efa6435070f9ce6845b297a060998092b001bda"
+  },
+  "inncenta": {
+    "url": "https://github.com/Inncenta/monopoly.git",
+    "ref": "master",
+    "sha": "1e4d316ac0fe3fa89160b4f007ac41d82be96075"
+  },
+  "code-exposure": {
+    "url": "https://github.com/6c0de/exposure-monopoly-agent.git",
+    "ref": "main",
+    "sha": "543a129ac431cf794aa6c51bd99e9f14eee34d3c"
+  },
+  "expo-heuristic": {
+    "url": "https://github.com/emingurbuz9483/exposure-monopoly-algorithm.git",
+    "ref": "main",
+    "sha": "1249decfcf019ba80cc374e6a1d57f014b510712"
+  },
+  "underdog": {
+    "url": "https://github.com/denizzmcr/DeepRL_Monopoly.git",
+    "ref": "main",
+    "sha": "4338220c153b6666b6c4bf2a503094e8402ce5ee"
+  }
+}

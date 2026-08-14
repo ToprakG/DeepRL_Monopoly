@@ -1,0 +1,44 @@
+=================== CERTIFICATION ===================
+old package: /private/tmp/claude-501/-Users-alinebidal/8e583afb-1582-4c4a-8681-06930b04d05d/scratchpad/asu_old/ASU_FROZEN_TEACHER
+new package: /Users/alinebidal/Projects/DeepRL_Monopoly/ASU_FROZEN_TEACHER
+decision points compared: 6314
+ordinary-play seeds: 20   synthetic scenarios: 10
+
+PASS — every compared decision is identical across versions.
+
+=================== DIVERGENCE SOURCE ===================
+scenario                        old_val  new_val  old_roll  new_roll  verdict
+--------------------------------------------------------------------------------------------
+jail_pay_bail                         1        1         1         1  value == rollout
+bankruptcy                            6        6         6         6  value == rollout
+jail_third_turn                       1        1         1         1  value == rollout
+jail_gooj_card                        1        1         4         4  intrinsic value/rollout split
+auction_multi_bidder               2957     2957      2954      2954  intrinsic value/rollout split
+trade_offer_unfavourable              8        8         8         8  value == rollout
+trade_offer_favourable                8        8         8         8  value == rollout
+build_unconstrained_control          95       95       117       117  intrinsic value/rollout split
+build_house_hotel_boundary           95       95         1         1  intrinsic value/rollout split
+debt_liquidation                    113      113        11        11  intrinsic value/rollout split
+
+jail_gooj_card:
+    value   old=1 (END_TURN)   new=1 (END_TURN)
+    rollout old=4 (USE_GOOJ_CARD)   new=4 (USE_GOOJ_CARD)
+    legal actions: 3
+auction_multi_bidder:
+    value   old=2957 (auction_bid(+$100))   new=2957 (auction_bid(+$100))
+    rollout old=2954 (auction_bid(+$1))   new=2954 (auction_bid(+$1))
+    legal actions: 5
+build_unconstrained_control:
+    value   old=95 (improve_hotel(sq=16))   new=95 (improve_hotel(sq=16))
+    rollout old=117 (sell_house(sq=16))   new=117 (sell_house(sq=16))
+    legal actions: 7
+build_house_hotel_boundary:
+    value   old=95 (improve_hotel(sq=16))   new=95 (improve_hotel(sq=16))
+    rollout old=1 (END_TURN)   new=1 (END_TURN)
+    legal actions: 7
+debt_liquidation:
+    value   old=113 (sell_house(sq=9))   new=113 (sell_house(sq=9))
+    rollout old=11 (mortgage(sq=5))   new=11 (mortgage(sq=5))
+    legal actions: 7
+
+All scenarios version-stable: every value/rollout disagreement is intrinsic to the frozen policy, not introduced by the optimisation.

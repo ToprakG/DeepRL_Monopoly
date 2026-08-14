@@ -1,0 +1,3602 @@
+[
+ {
+  "arm": "run",
+  "seed": 960000,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 108,
+  "accepted": 0,
+  "declined": 107,
+  "seconds": 101.10948029113933
+ },
+ {
+  "arm": "run",
+  "seed": 960001,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 193,
+  "accepted": 0,
+  "declined": 193,
+  "seconds": 115.21542575000785
+ },
+ {
+  "arm": "run",
+  "seed": 960002,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 63,
+  "accepted": 0,
+  "declined": 63,
+  "seconds": 78.0957959999796
+ },
+ {
+  "arm": "run",
+  "seed": 960003,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 110,
+  "accepted": 0,
+  "declined": 110,
+  "seconds": 101.1190625000745
+ },
+ {
+  "arm": "run",
+  "seed": 960010,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 1964,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 46,
+  "accepted": 0,
+  "declined": 46,
+  "seconds": 28.15708979195915
+ },
+ {
+  "arm": "run",
+  "seed": 960012,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 888,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 3,
+  "accepted": 0,
+  "declined": 3,
+  "seconds": 4.791190541815013
+ },
+ {
+  "arm": "run",
+  "seed": 960013,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 1372,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 26,
+  "accepted": 0,
+  "declined": 26,
+  "seconds": 9.145655833184719
+ },
+ {
+  "arm": "run",
+  "seed": 960005,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 113,
+  "accepted": 0,
+  "declined": 112,
+  "seconds": 44.509611333021894
+ },
+ {
+  "arm": "run",
+  "seed": 960008,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 21,
+  "accepted": 0,
+  "declined": 21,
+  "seconds": 50.45512204198167
+ },
+ {
+  "arm": "run",
+  "seed": 960004,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 2697,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 114,
+  "accepted": 0,
+  "declined": 114,
+  "seconds": 55.58554200013168
+ },
+ {
+  "arm": "run",
+  "seed": 960007,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 99,
+  "accepted": 0,
+  "declined": 99,
+  "seconds": 62.56776524987072
+ },
+ {
+  "arm": "run",
+  "seed": 960014,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 2372,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 53,
+  "accepted": 0,
+  "declined": 53,
+  "seconds": 22.117171083111316
+ },
+ {
+  "arm": "run",
+  "seed": 960011,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 258,
+  "accepted": 0,
+  "declined": 257,
+  "seconds": 73.90229137497954
+ },
+ {
+  "arm": "run",
+  "seed": 960006,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 220,
+  "accepted": 0,
+  "declined": 220,
+  "seconds": 74.03303116606548
+ },
+ {
+  "arm": "run",
+  "seed": 960009,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 166,
+  "accepted": 0,
+  "declined": 166,
+  "seconds": 77.8139590001665
+ },
+ {
+  "arm": "run",
+  "seed": 960019,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 1177,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 51,
+  "accepted": 0,
+  "declined": 51,
+  "seconds": 20.227035082876682
+ },
+ {
+  "arm": "run",
+  "seed": 960018,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 1189,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 75,
+  "accepted": 0,
+  "declined": 75,
+  "seconds": 23.064781374996528
+ },
+ {
+  "arm": "run",
+  "seed": 960020,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 1609,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 21,
+  "accepted": 0,
+  "declined": 21,
+  "seconds": 15.19005158287473
+ },
+ {
+  "arm": "run",
+  "seed": 960015,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 128,
+  "accepted": 0,
+  "declined": 128,
+  "seconds": 70.46593416598625
+ },
+ {
+  "arm": "run",
+  "seed": 960025,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 1755,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 21,
+  "accepted": 1,
+  "declined": 20,
+  "seconds": 31.276053042151034
+ },
+ {
+  "arm": "run",
+  "seed": 960017,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 230,
+  "accepted": 0,
+  "declined": 230,
+  "seconds": 81.89446958294138
+ },
+ {
+  "arm": "run",
+  "seed": 960016,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 215,
+  "accepted": 0,
+  "declined": 215,
+  "seconds": 88.46294733299874
+ },
+ {
+  "arm": "run",
+  "seed": 960022,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 29,
+  "accepted": 0,
+  "declined": 29,
+  "seconds": 61.85957795800641
+ },
+ {
+  "arm": "run",
+  "seed": 960029,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 1133,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 11,
+  "accepted": 0,
+  "declined": 11,
+  "seconds": 6.013925458071753
+ },
+ {
+  "arm": "run",
+  "seed": 960021,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 122,
+  "accepted": 0,
+  "declined": 122,
+  "seconds": 72.00887554208748
+ },
+ {
+  "arm": "run",
+  "seed": 960023,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 136,
+  "accepted": 0,
+  "declined": 136,
+  "seconds": 65.90929808304645
+ },
+ {
+  "arm": "run",
+  "seed": 960027,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 80,
+  "accepted": 0,
+  "declined": 80,
+  "seconds": 76.69174866680987
+ },
+ {
+  "arm": "run",
+  "seed": 960024,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 155,
+  "accepted": 0,
+  "declined": 154,
+  "seconds": 114.80349787510931
+ },
+ {
+  "arm": "run",
+  "seed": 960031,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 2683,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 53,
+  "accepted": 0,
+  "declined": 53,
+  "seconds": 61.00593745801598
+ },
+ {
+  "arm": "run",
+  "seed": 960028,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 77,
+  "accepted": 0,
+  "declined": 77,
+  "seconds": 85.27655600011349
+ },
+ {
+  "arm": "run",
+  "seed": 960033,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 1551,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 68,
+  "accepted": 0,
+  "declined": 68,
+  "seconds": 102.75386524992064
+ },
+ {
+  "arm": "run",
+  "seed": 960030,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 172,
+  "accepted": 0,
+  "declined": 172,
+  "seconds": 122.3784210421145
+ },
+ {
+  "arm": "run",
+  "seed": 960037,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 1596,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 32,
+  "accepted": 0,
+  "declined": 32,
+  "seconds": 56.69721437478438
+ },
+ {
+  "arm": "run",
+  "seed": 960026,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 207,
+  "accepted": 0,
+  "declined": 207,
+  "seconds": 168.48041637497954
+ },
+ {
+  "arm": "run",
+  "seed": 960036,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 70,
+  "accepted": 0,
+  "declined": 69,
+  "seconds": 93.54066583304666
+ },
+ {
+  "arm": "run",
+  "seed": 960035,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 75,
+  "accepted": 0,
+  "declined": 75,
+  "seconds": 107.61206562491134
+ },
+ {
+  "arm": "run",
+  "seed": 960032,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 300,
+  "accepted": 0,
+  "declined": 300,
+  "seconds": 186.11926370789297
+ },
+ {
+  "arm": "run",
+  "seed": 960034,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 162,
+  "accepted": 0,
+  "declined": 162,
+  "seconds": 139.41877079219557
+ },
+ {
+  "arm": "run",
+  "seed": 960042,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 1328,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 41,
+  "accepted": 2,
+  "declined": 39,
+  "seconds": 42.03671566606499
+ },
+ {
+  "arm": "run",
+  "seed": 960039,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 78,
+  "accepted": 0,
+  "declined": 78,
+  "seconds": 99.95001395908184
+ },
+ {
+  "arm": "run",
+  "seed": 960041,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 2617,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 91,
+  "accepted": 0,
+  "declined": 91,
+  "seconds": 95.6614749589935
+ },
+ {
+  "arm": "run",
+  "seed": 960038,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 116,
+  "accepted": 0,
+  "declined": 116,
+  "seconds": 130.2935576250311
+ },
+ {
+  "arm": "run",
+  "seed": 960043,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 1790,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 95,
+  "accepted": 0,
+  "declined": 95,
+  "seconds": 78.4541286251042
+ },
+ {
+  "arm": "run",
+  "seed": 960050,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 1312,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 76,
+  "accepted": 0,
+  "declined": 76,
+  "seconds": 38.695354791823775
+ },
+ {
+  "arm": "run",
+  "seed": 960044,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 73,
+  "accepted": 0,
+  "declined": 73,
+  "seconds": 101.51365983393043
+ },
+ {
+  "arm": "run",
+  "seed": 960048,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 1810,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 33,
+  "accepted": 0,
+  "declined": 33,
+  "seconds": 66.34977091709152
+ },
+ {
+  "arm": "run",
+  "seed": 960047,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 29,
+  "accepted": 0,
+  "declined": 29,
+  "seconds": 106.35852116602473
+ },
+ {
+  "arm": "run",
+  "seed": 960045,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 51,
+  "accepted": 0,
+  "declined": 51,
+  "seconds": 137.56294004200026
+ },
+ {
+  "arm": "run",
+  "seed": 960040,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 251,
+  "accepted": 0,
+  "declined": 250,
+  "seconds": 210.91326049994677
+ },
+ {
+  "arm": "run",
+  "seed": 960052,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 2492,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 20,
+  "accepted": 0,
+  "declined": 20,
+  "seconds": 67.62049899995327
+ },
+ {
+  "arm": "run",
+  "seed": 960051,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 2760,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 116,
+  "accepted": 0,
+  "declined": 116,
+  "seconds": 91.18873254209757
+ },
+ {
+  "arm": "run",
+  "seed": 960046,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 249,
+  "accepted": 0,
+  "declined": 248,
+  "seconds": 175.4276259590406
+ },
+ {
+  "arm": "run",
+  "seed": 960049,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 204,
+  "accepted": 0,
+  "declined": 204,
+  "seconds": 138.0956670830492
+ },
+ {
+  "arm": "run",
+  "seed": 960053,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 129,
+  "accepted": 0,
+  "declined": 129,
+  "seconds": 92.18082324997522
+ },
+ {
+  "arm": "run",
+  "seed": 960058,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 730,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 20,
+  "accepted": 0,
+  "declined": 20,
+  "seconds": 30.305045291781425
+ },
+ {
+  "arm": "run",
+  "seed": 960056,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 69,
+  "accepted": 0,
+  "declined": 69,
+  "seconds": 60.749952791957185
+ },
+ {
+  "arm": "run",
+  "seed": 960059,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 1835,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 43,
+  "accepted": 0,
+  "declined": 43,
+  "seconds": 35.5146222920157
+ },
+ {
+  "arm": "run",
+  "seed": 960055,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 91,
+  "accepted": 0,
+  "declined": 90,
+  "seconds": 151.32044874993153
+ },
+ {
+  "arm": "run",
+  "seed": 960061,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 1912,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 148,
+  "accepted": 0,
+  "declined": 148,
+  "seconds": 91.75386387505569
+ },
+ {
+  "arm": "run",
+  "seed": 960054,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 266,
+  "accepted": 0,
+  "declined": 266,
+  "seconds": 171.3761495000217
+ },
+ {
+  "arm": "run",
+  "seed": 960063,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 1587,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 84,
+  "accepted": 0,
+  "declined": 84,
+  "seconds": 90.28503016708419
+ },
+ {
+  "arm": "run",
+  "seed": 960057,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 131,
+  "accepted": 0,
+  "declined": 131,
+  "seconds": 148.1206547501497
+ },
+ {
+  "arm": "run",
+  "seed": 960064,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 106,
+  "accepted": 0,
+  "declined": 106,
+  "seconds": 127.64406495797448
+ },
+ {
+  "arm": "run",
+  "seed": 960065,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 2264,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 24,
+  "accepted": 0,
+  "declined": 24,
+  "seconds": 61.63770104199648
+ },
+ {
+  "arm": "run",
+  "seed": 960070,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 835,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 11,
+  "accepted": 0,
+  "declined": 11,
+  "seconds": 10.980990665964782
+ },
+ {
+  "arm": "run",
+  "seed": 960069,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 1413,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 75,
+  "accepted": 0,
+  "declined": 75,
+  "seconds": 51.76433620788157
+ },
+ {
+  "arm": "run",
+  "seed": 960060,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 50,
+  "accepted": 0,
+  "declined": 50,
+  "seconds": 184.234401084017
+ },
+ {
+  "arm": "run",
+  "seed": 960062,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 232,
+  "accepted": 0,
+  "declined": 231,
+  "seconds": 159.28888699994422
+ },
+ {
+  "arm": "run",
+  "seed": 960068,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 1768,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 35,
+  "accepted": 0,
+  "declined": 35,
+  "seconds": 87.77620354201645
+ },
+ {
+  "arm": "run",
+  "seed": 960071,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 2723,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 72,
+  "accepted": 0,
+  "declined": 72,
+  "seconds": 44.576896416954696
+ },
+ {
+  "arm": "run",
+  "seed": 960066,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 2170,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 62,
+  "accepted": 0,
+  "declined": 62,
+  "seconds": 119.81724637490697
+ },
+ {
+  "arm": "run",
+  "seed": 960067,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 79,
+  "accepted": 0,
+  "declined": 79,
+  "seconds": 120.7052887910977
+ },
+ {
+  "arm": "run",
+  "seed": 960074,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 2024,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 57,
+  "accepted": 0,
+  "declined": 57,
+  "seconds": 78.85322054196149
+ },
+ {
+  "arm": "run",
+  "seed": 960073,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 58,
+  "accepted": 0,
+  "declined": 58,
+  "seconds": 88.67635524994694
+ },
+ {
+  "arm": "run",
+  "seed": 960076,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 2653,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 55,
+  "accepted": 0,
+  "declined": 55,
+  "seconds": 63.09871004195884
+ },
+ {
+  "arm": "run",
+  "seed": 960075,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 2254,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 121,
+  "accepted": 0,
+  "declined": 121,
+  "seconds": 119.88133949995972
+ },
+ {
+  "arm": "run",
+  "seed": 960072,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 2889,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 130,
+  "accepted": 0,
+  "declined": 130,
+  "seconds": 149.09392808401026
+ },
+ {
+  "arm": "run",
+  "seed": 960083,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 992,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 35,
+  "accepted": 0,
+  "declined": 35,
+  "seconds": 59.919528665952384
+ },
+ {
+  "arm": "run",
+  "seed": 960077,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 83,
+  "accepted": 0,
+  "declined": 83,
+  "seconds": 155.0659152918961
+ },
+ {
+  "arm": "run",
+  "seed": 960078,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 98,
+  "accepted": 0,
+  "declined": 98,
+  "seconds": 152.99865008401684
+ },
+ {
+  "arm": "run",
+  "seed": 960086,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 1338,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 32,
+  "accepted": 0,
+  "declined": 32,
+  "seconds": 36.09651879197918
+ },
+ {
+  "arm": "run",
+  "seed": 960080,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 134,
+  "accepted": 0,
+  "declined": 134,
+  "seconds": 140.64999458310194
+ },
+ {
+  "arm": "run",
+  "seed": 960081,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 128,
+  "accepted": 0,
+  "declined": 128,
+  "seconds": 153.42902854201384
+ },
+ {
+  "arm": "run",
+  "seed": 960082,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 80,
+  "accepted": 0,
+  "declined": 80,
+  "seconds": 188.5532581671141
+ },
+ {
+  "arm": "run",
+  "seed": 960089,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 2537,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 46,
+  "accepted": 0,
+  "declined": 46,
+  "seconds": 63.38628387497738
+ },
+ {
+  "arm": "run",
+  "seed": 960079,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 258,
+  "accepted": 0,
+  "declined": 258,
+  "seconds": 229.0953434589319
+ },
+ {
+  "arm": "run",
+  "seed": 960088,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 56,
+  "accepted": 0,
+  "declined": 56,
+  "seconds": 162.30528737488203
+ },
+ {
+  "arm": "run",
+  "seed": 960090,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 53,
+  "accepted": 0,
+  "declined": 53,
+  "seconds": 145.89659954211675
+ },
+ {
+  "arm": "run",
+  "seed": 960084,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 166,
+  "accepted": 0,
+  "declined": 166,
+  "seconds": 264.5092422089074
+ },
+ {
+  "arm": "run",
+  "seed": 960087,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 202,
+  "accepted": 0,
+  "declined": 202,
+  "seconds": 216.71840712497942
+ },
+ {
+  "arm": "run",
+  "seed": 960085,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 283,
+  "accepted": 0,
+  "declined": 282,
+  "seconds": 248.2237390000373
+ },
+ {
+  "arm": "run",
+  "seed": 960092,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 97,
+  "accepted": 0,
+  "declined": 97,
+  "seconds": 145.8192711248994
+ },
+ {
+  "arm": "run",
+  "seed": 960091,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 200,
+  "accepted": 0,
+  "declined": 200,
+  "seconds": 218.01417629094794
+ },
+ {
+  "arm": "run",
+  "seed": 960093,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 218,
+  "accepted": 0,
+  "declined": 218,
+  "seconds": 214.32121325004846
+ },
+ {
+  "arm": "run",
+  "seed": 960095,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 2717,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 128,
+  "accepted": 0,
+  "declined": 128,
+  "seconds": 138.95815854193643
+ },
+ {
+  "arm": "run",
+  "seed": 960098,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 52,
+  "accepted": 0,
+  "declined": 52,
+  "seconds": 96.93899779091589
+ },
+ {
+  "arm": "run",
+  "seed": 960101,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 1977,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 46,
+  "accepted": 0,
+  "declined": 46,
+  "seconds": 47.51224441616796
+ },
+ {
+  "arm": "run",
+  "seed": 960097,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 75,
+  "accepted": 0,
+  "declined": 75,
+  "seconds": 138.31503941700794
+ },
+ {
+  "arm": "run",
+  "seed": 960094,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 210,
+  "accepted": 0,
+  "declined": 210,
+  "seconds": 198.18577362503856
+ },
+ {
+  "arm": "run",
+  "seed": 960096,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 261,
+  "accepted": 0,
+  "declined": 261,
+  "seconds": 203.04339716699906
+ },
+ {
+  "arm": "run",
+  "seed": 960102,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 2126,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 95,
+  "accepted": 1,
+  "declined": 94,
+  "seconds": 82.0162729579024
+ },
+ {
+  "arm": "run",
+  "seed": 960100,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 55,
+  "accepted": 0,
+  "declined": 55,
+  "seconds": 111.90250754216686
+ },
+ {
+  "arm": "run",
+  "seed": 960108,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 875,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 17,
+  "accepted": 0,
+  "declined": 17,
+  "seconds": 10.739463374949992
+ },
+ {
+  "arm": "run",
+  "seed": 960103,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 2263,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 107,
+  "accepted": 0,
+  "declined": 107,
+  "seconds": 101.48610062501393
+ },
+ {
+  "arm": "run",
+  "seed": 960099,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 139,
+  "accepted": 0,
+  "declined": 139,
+  "seconds": 198.1691412080545
+ },
+ {
+  "arm": "run",
+  "seed": 960106,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 49,
+  "accepted": 0,
+  "declined": 49,
+  "seconds": 86.1124521670863
+ },
+ {
+  "arm": "run",
+  "seed": 960104,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 192,
+  "accepted": 0,
+  "declined": 192,
+  "seconds": 124.57397233415395
+ },
+ {
+  "arm": "run",
+  "seed": 960112,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 2795,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 70,
+  "accepted": 0,
+  "declined": 70,
+  "seconds": 48.44475020794198
+ },
+ {
+  "arm": "run",
+  "seed": 960105,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 103,
+  "accepted": 0,
+  "declined": 103,
+  "seconds": 128.6943233748898
+ },
+ {
+  "arm": "run",
+  "seed": 960110,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 2198,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 21,
+  "accepted": 0,
+  "declined": 21,
+  "seconds": 76.65656983386725
+ },
+ {
+  "arm": "run",
+  "seed": 960115,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 2373,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 109,
+  "accepted": 0,
+  "declined": 109,
+  "seconds": 59.35448666708544
+ },
+ {
+  "arm": "run",
+  "seed": 960111,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 77,
+  "accepted": 0,
+  "declined": 77,
+  "seconds": 112.46728233410977
+ },
+ {
+  "arm": "run",
+  "seed": 960114,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 26,
+  "accepted": 0,
+  "declined": 26,
+  "seconds": 77.65663233399391
+ },
+ {
+  "arm": "run",
+  "seed": 960107,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 208,
+  "accepted": 0,
+  "declined": 208,
+  "seconds": 153.5252769170329
+ },
+ {
+  "arm": "run",
+  "seed": 960109,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 277,
+  "accepted": 0,
+  "declined": 277,
+  "seconds": 154.2973618749529
+ },
+ {
+  "arm": "run",
+  "seed": 960120,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 1845,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 23,
+  "accepted": 1,
+  "declined": 22,
+  "seconds": 38.36090233293362
+ },
+ {
+  "arm": "run",
+  "seed": 960113,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 131,
+  "accepted": 0,
+  "declined": 130,
+  "seconds": 149.69688566587865
+ },
+ {
+  "arm": "run",
+  "seed": 960117,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 77,
+  "accepted": 0,
+  "declined": 77,
+  "seconds": 128.72431120905094
+ },
+ {
+  "arm": "run",
+  "seed": 960122,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 77,
+  "accepted": 0,
+  "declined": 77,
+  "seconds": 69.07298716716468
+ },
+ {
+  "arm": "run",
+  "seed": 960116,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 233,
+  "accepted": 0,
+  "declined": 233,
+  "seconds": 167.677062332863
+ },
+ {
+  "arm": "run",
+  "seed": 960118,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 2160,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 50,
+  "accepted": 0,
+  "declined": 50,
+  "seconds": 131.6979604170192
+ },
+ {
+  "arm": "run",
+  "seed": 960123,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 42,
+  "accepted": 0,
+  "declined": 42,
+  "seconds": 96.07690991694108
+ },
+ {
+  "arm": "run",
+  "seed": 960126,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 1776,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 72,
+  "accepted": 0,
+  "declined": 72,
+  "seconds": 60.893140790984035
+ },
+ {
+  "arm": "run",
+  "seed": 960121,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 198,
+  "accepted": 0,
+  "declined": 197,
+  "seconds": 143.95954987499863
+ },
+ {
+  "arm": "run",
+  "seed": 960125,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 75,
+  "accepted": 0,
+  "declined": 75,
+  "seconds": 83.10429566702805
+ },
+ {
+  "arm": "run",
+  "seed": 960119,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 287,
+  "accepted": 0,
+  "declined": 287,
+  "seconds": 167.79416529182345
+ },
+ {
+  "arm": "run",
+  "seed": 960128,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 1585,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 26,
+  "accepted": 1,
+  "declined": 25,
+  "seconds": 48.70617058407515
+ },
+ {
+  "arm": "run",
+  "seed": 960124,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 231,
+  "accepted": 0,
+  "declined": 230,
+  "seconds": 159.55343700014055
+ },
+ {
+  "arm": "run",
+  "seed": 960127,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 2911,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 172,
+  "accepted": 1,
+  "declined": 171,
+  "seconds": 138.5293283748906
+ },
+ {
+  "arm": "run",
+  "seed": 960136,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 915,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 38,
+  "accepted": 0,
+  "declined": 38,
+  "seconds": 22.358366291038692
+ },
+ {
+  "arm": "run",
+  "seed": 960135,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 1844,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 34,
+  "accepted": 1,
+  "declined": 33,
+  "seconds": 68.69969708309509
+ },
+ {
+  "arm": "run",
+  "seed": 960132,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 210,
+  "accepted": 0,
+  "declined": 209,
+  "seconds": 141.67713733389974
+ },
+ {
+  "arm": "run",
+  "seed": 960131,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 152,
+  "accepted": 0,
+  "declined": 152,
+  "seconds": 153.14942016708665
+ },
+ {
+  "arm": "run",
+  "seed": 960133,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 173,
+  "accepted": 0,
+  "declined": 173,
+  "seconds": 148.3029924160801
+ },
+ {
+  "arm": "run",
+  "seed": 960134,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 99,
+  "accepted": 0,
+  "declined": 99,
+  "seconds": 142.13309212494642
+ },
+ {
+  "arm": "run",
+  "seed": 960129,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 254,
+  "accepted": 0,
+  "declined": 254,
+  "seconds": 188.3397000839468
+ },
+ {
+  "arm": "run",
+  "seed": 960130,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 207,
+  "accepted": 0,
+  "declined": 206,
+  "seconds": 184.40223058406264
+ },
+ {
+  "arm": "run",
+  "seed": 960144,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 686,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 9,
+  "accepted": 0,
+  "declined": 9,
+  "seconds": 6.876170584000647
+ },
+ {
+  "arm": "run",
+  "seed": 960139,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 1702,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 28,
+  "accepted": 0,
+  "declined": 28,
+  "seconds": 65.1430901249405
+ },
+ {
+  "arm": "run",
+  "seed": 960140,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 1462,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 74,
+  "accepted": 0,
+  "declined": 74,
+  "seconds": 76.24432891700417
+ },
+ {
+  "arm": "run",
+  "seed": 960137,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 209,
+  "accepted": 0,
+  "declined": 209,
+  "seconds": 127.81345779215917
+ },
+ {
+  "arm": "run",
+  "seed": 960141,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 117,
+  "accepted": 0,
+  "declined": 117,
+  "seconds": 102.6648097501602
+ },
+ {
+  "arm": "run",
+  "seed": 960142,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 1969,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 107,
+  "accepted": 0,
+  "declined": 107,
+  "seconds": 106.44481000001542
+ },
+ {
+  "arm": "run",
+  "seed": 960147,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 2975,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 46,
+  "accepted": 0,
+  "declined": 46,
+  "seconds": 63.27454787516035
+ },
+ {
+  "arm": "run",
+  "seed": 960143,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 213,
+  "accepted": 0,
+  "declined": 213,
+  "seconds": 130.7470869999379
+ },
+ {
+  "arm": "run",
+  "seed": 960145,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 59,
+  "accepted": 0,
+  "declined": 59,
+  "seconds": 132.64202250004746
+ },
+ {
+  "arm": "run",
+  "seed": 960138,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 87,
+  "accepted": 0,
+  "declined": 87,
+  "seconds": 178.7993925830815
+ },
+ {
+  "arm": "run",
+  "seed": 960149,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 2010,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 37,
+  "accepted": 0,
+  "declined": 37,
+  "seconds": 94.53216874995269
+ },
+ {
+  "arm": "run",
+  "seed": 960152,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 2074,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 26,
+  "accepted": 0,
+  "declined": 26,
+  "seconds": 68.21976045891643
+ },
+ {
+  "arm": "run",
+  "seed": 960148,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 47,
+  "accepted": 0,
+  "declined": 47,
+  "seconds": 147.25468174996786
+ },
+ {
+  "arm": "run",
+  "seed": 960150,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 204,
+  "accepted": 0,
+  "declined": 204,
+  "seconds": 134.1612581249792
+ },
+ {
+  "arm": "run",
+  "seed": 960146,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 239,
+  "accepted": 0,
+  "declined": 239,
+  "seconds": 199.08367304201238
+ },
+ {
+  "arm": "run",
+  "seed": 960154,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 77,
+  "accepted": 0,
+  "declined": 77,
+  "seconds": 107.97763474984095
+ },
+ {
+  "arm": "run",
+  "seed": 960153,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 1764,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 98,
+  "accepted": 0,
+  "declined": 98,
+  "seconds": 118.0965692079626
+ },
+ {
+  "arm": "run",
+  "seed": 960158,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 1617,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 19,
+  "accepted": 0,
+  "declined": 19,
+  "seconds": 37.53540399996564
+ },
+ {
+  "arm": "run",
+  "seed": 960151,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 120,
+  "accepted": 0,
+  "declined": 120,
+  "seconds": 162.59350854088552
+ },
+ {
+  "arm": "run",
+  "seed": 960155,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 195,
+  "accepted": 0,
+  "declined": 195,
+  "seconds": 113.59300358314067
+ },
+ {
+  "arm": "run",
+  "seed": 960160,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 1453,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 59,
+  "accepted": 0,
+  "declined": 59,
+  "seconds": 51.6123291249387
+ },
+ {
+  "arm": "run",
+  "seed": 960157,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 86,
+  "accepted": 0,
+  "declined": 85,
+  "seconds": 105.18149299989454
+ },
+ {
+  "arm": "run",
+  "seed": 960156,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 244,
+  "accepted": 0,
+  "declined": 244,
+  "seconds": 129.07208716589957
+ },
+ {
+  "arm": "run",
+  "seed": 960166,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 1125,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 50,
+  "accepted": 0,
+  "declined": 50,
+  "seconds": 36.180365124950185
+ },
+ {
+  "arm": "run",
+  "seed": 960159,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 97,
+  "accepted": 0,
+  "declined": 97,
+  "seconds": 125.56838266714476
+ },
+ {
+  "arm": "run",
+  "seed": 960161,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 238,
+  "accepted": 0,
+  "declined": 238,
+  "seconds": 111.4398395831231
+ },
+ {
+  "arm": "run",
+  "seed": 960163,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 160,
+  "accepted": 0,
+  "declined": 160,
+  "seconds": 107.14004054106772
+ },
+ {
+  "arm": "run",
+  "seed": 960162,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 83,
+  "accepted": 0,
+  "declined": 83,
+  "seconds": 145.02094979095273
+ },
+ {
+  "arm": "run",
+  "seed": 960165,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 103,
+  "accepted": 0,
+  "declined": 103,
+  "seconds": 119.6588480421342
+ },
+ {
+  "arm": "run",
+  "seed": 960167,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 131,
+  "accepted": 0,
+  "declined": 131,
+  "seconds": 102.89960116613656
+ },
+ {
+  "arm": "run",
+  "seed": 960171,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 75,
+  "accepted": 0,
+  "declined": 75,
+  "seconds": 93.28688616701402
+ },
+ {
+  "arm": "run",
+  "seed": 960170,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 170,
+  "accepted": 0,
+  "declined": 170,
+  "seconds": 112.93514170800336
+ },
+ {
+  "arm": "run",
+  "seed": 960164,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 239,
+  "accepted": 0,
+  "declined": 238,
+  "seconds": 193.40066983294673
+ },
+ {
+  "arm": "run",
+  "seed": 960176,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 1502,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 24,
+  "accepted": 0,
+  "declined": 24,
+  "seconds": 12.555437332950532
+ },
+ {
+  "arm": "run",
+  "seed": 960169,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 65,
+  "accepted": 0,
+  "declined": 65,
+  "seconds": 133.07550920918584
+ },
+ {
+  "arm": "run",
+  "seed": 960174,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 1775,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 56,
+  "accepted": 0,
+  "declined": 56,
+  "seconds": 78.44823266612366
+ },
+ {
+  "arm": "run",
+  "seed": 960168,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 214,
+  "accepted": 0,
+  "declined": 213,
+  "seconds": 168.37960116681643
+ },
+ {
+  "arm": "run",
+  "seed": 960173,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 149,
+  "accepted": 0,
+  "declined": 149,
+  "seconds": 94.65893941698596
+ },
+ {
+  "arm": "run",
+  "seed": 960172,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 121,
+  "accepted": 0,
+  "declined": 121,
+  "seconds": 123.86286162515171
+ },
+ {
+  "arm": "run",
+  "seed": 960177,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 1665,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 107,
+  "accepted": 0,
+  "declined": 107,
+  "seconds": 46.15783716714941
+ },
+ {
+  "arm": "run",
+  "seed": 960180,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 2590,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 86,
+  "accepted": 0,
+  "declined": 86,
+  "seconds": 51.38456391612999
+ },
+ {
+  "arm": "run",
+  "seed": 960185,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 21,
+  "accepted": 0,
+  "declined": 21,
+  "seconds": 19.782510875025764
+ },
+ {
+  "arm": "run",
+  "seed": 960181,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 1441,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 56,
+  "accepted": 0,
+  "declined": 56,
+  "seconds": 63.58148737507872
+ },
+ {
+  "arm": "run",
+  "seed": 960175,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 207,
+  "accepted": 0,
+  "declined": 207,
+  "seconds": 112.68439362500794
+ },
+ {
+  "arm": "run",
+  "seed": 960186,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 1564,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 21,
+  "accepted": 0,
+  "declined": 21,
+  "seconds": 21.233617292018607
+ },
+ {
+  "arm": "run",
+  "seed": 960183,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 2090,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 149,
+  "accepted": 0,
+  "declined": 149,
+  "seconds": 71.6102434170898
+ },
+ {
+  "arm": "run",
+  "seed": 960179,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 53,
+  "accepted": 0,
+  "declined": 53,
+  "seconds": 122.82726854179054
+ },
+ {
+  "arm": "run",
+  "seed": 960182,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 245,
+  "accepted": 0,
+  "declined": 245,
+  "seconds": 97.35061791702174
+ },
+ {
+  "arm": "run",
+  "seed": 960184,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 218,
+  "accepted": 0,
+  "declined": 218,
+  "seconds": 98.8196699579712
+ },
+ {
+  "arm": "run",
+  "seed": 960178,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 242,
+  "accepted": 0,
+  "declined": 242,
+  "seconds": 144.68716591689736
+ },
+ {
+  "arm": "run",
+  "seed": 960187,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 70,
+  "accepted": 0,
+  "declined": 70,
+  "seconds": 68.2452569170855
+ },
+ {
+  "arm": "run",
+  "seed": 960189,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 1915,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 84,
+  "accepted": 0,
+  "declined": 84,
+  "seconds": 53.01337983296253
+ },
+ {
+  "arm": "run",
+  "seed": 960190,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 70,
+  "accepted": 0,
+  "declined": 70,
+  "seconds": 55.11808983399533
+ },
+ {
+  "arm": "run",
+  "seed": 960196,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 2142,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 26,
+  "accepted": 0,
+  "declined": 26,
+  "seconds": 42.58326929109171
+ },
+ {
+  "arm": "run",
+  "seed": 960193,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 76,
+  "accepted": 0,
+  "declined": 76,
+  "seconds": 67.31658587488346
+ },
+ {
+  "arm": "run",
+  "seed": 960194,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 2081,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "proposed": 44,
+  "accepted": 0,
+  "declined": 44,
+  "seconds": 67.62065599998459
+ },
+ {
+  "arm": "run",
+  "seed": 960188,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 247,
+  "accepted": 0,
+  "declined": 247,
+  "seconds": 130.20851870905608
+ },
+ {
+  "arm": "run",
+  "seed": 960199,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 1032,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "proposed": 54,
+  "accepted": 0,
+  "declined": 54,
+  "seconds": 32.17465579113923
+ },
+ {
+  "arm": "run",
+  "seed": 960191,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 250,
+  "accepted": 0,
+  "declined": 249,
+  "seconds": 118.14212800003588
+ },
+ {
+  "arm": "run",
+  "seed": 960192,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   0
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 240,
+  "accepted": 0,
+  "declined": 240,
+  "seconds": 131.45439808396623
+ },
+ {
+  "arm": "run",
+  "seed": 960197,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   1
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 262,
+  "accepted": 0,
+  "declined": 262,
+  "seconds": 101.20497695798986
+ },
+ {
+  "arm": "run",
+  "seed": 960198,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 61,
+  "accepted": 0,
+  "declined": 61,
+  "seconds": 67.91560079203919
+ },
+ {
+  "arm": "run",
+  "seed": 960195,
+  "field": "strong",
+  "policy": "teacher",
+  "seats": [
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "proposed": 266,
+  "accepted": 0,
+  "declined": 266,
+  "seconds": 118.35783624998294
+ }
+]

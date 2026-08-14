@@ -1,0 +1,25 @@
+{
+  "weights": {
+    "d_rent": 0.18445032835006714,
+    "d_price": 5.5652399169048294e-05,
+    "completes": 5.905900001525879,
+    "d_ours": 7.925055503845215,
+    "off_mort": -18.839820861816406,
+    "d_houses": 0.15588124096393585,
+    "off_price": 0.0,
+    "off_rent": 0.0,
+    "off_breaks_ours": 0.0,
+    "req_theirs": 0.0,
+    "off_group_size": 0.0,
+    "mutual_swap": 0.0,
+    "req_price": 0.0,
+    "req_mort": 0.0,
+    "off_completes_theirs": 0.0,
+    "req_base_rent": 0.0
+  },
+  "gate": 13.161500930786133,
+  "source_fit": "A",
+  "mode": "accuracy",
+  "held_gate_agreement": 0.6287418808246258,
+  "held_propose_rate": 0.21847641909065235
+}

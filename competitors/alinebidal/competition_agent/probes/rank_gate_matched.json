@@ -1,0 +1,9 @@
+{
+  "ckpt": "/Users/alinebidal/Projects/DeepRL_Monopoly/competition_agent/rank_head_1000.pt",
+  "gate": -20.19,
+  "mode": "rate-matched-in-play",
+  "held_agreement": 0.675480090369952,
+  "held_propose_rate": 0.2931728325331827,
+  "held_top1": 0.35821820758058803,
+  "note": "gate set so the ranker proposes at the shipped agent isolated realised rate (39.3/game) on the ASU field; see probes/gate_probe.json"
+}

@@ -1,0 +1,3 @@
+# Match-time wheels. The tournament resolves these once and ships a lockfile;
+# there is no network during a match. Keep this list wheel-only and short.
+numpy>=1.24,<3

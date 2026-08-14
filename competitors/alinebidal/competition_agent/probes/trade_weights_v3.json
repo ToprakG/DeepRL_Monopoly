@@ -1,0 +1,71 @@
+{
+  "features": [
+    "d_rent",
+    "d_price",
+    "completes",
+    "d_ours",
+    "off_mort",
+    "d_houses",
+    "off_price",
+    "off_rent",
+    "off_breaks_ours",
+    "req_theirs",
+    "off_group_size",
+    "mutual_swap",
+    "req_price",
+    "req_mort",
+    "off_completes_theirs",
+    "req_base_rent"
+  ],
+  "weights_B": {
+    "d_rent": 0.23307113349437714,
+    "d_price": -2.0141007900238037,
+    "completes": 14.286617279052734,
+    "d_ours": 10.434358596801758,
+    "off_mort": -11.058920860290527,
+    "d_houses": -0.7080745100975037,
+    "off_price": -1.43708074092865,
+    "off_rent": -6.006186485290527,
+    "off_breaks_ours": 4.013782501220703,
+    "req_theirs": 0.8757972717285156,
+    "off_group_size": -0.2645050287246704,
+    "mutual_swap": -0.4052931070327759,
+    "req_price": -0.9039934277534485,
+    "req_mort": 4.999179840087891,
+    "off_completes_theirs": 0.1738266795873642,
+    "req_base_rent": 3.9254813194274902
+  },
+  "weights_A": {
+    "d_rent": 0.18445032835006714,
+    "d_price": 5.5652399169048294e-05,
+    "completes": 5.905900001525879,
+    "d_ours": 7.925055503845215,
+    "off_mort": -18.839820861816406,
+    "d_houses": 0.15588124096393585
+  },
+  "weights_L": {
+    "d_rent": 0.027432424947619438,
+    "d_price": 0.4789298474788666,
+    "completes": 1.3858745098114014,
+    "d_ours": 1.5658237934112549,
+    "off_mort": -0.9823798537254333,
+    "d_houses": 0.0
+  },
+  "held_top1": {
+    "shipped": 0.24902585901523203,
+    "L": 0.24371236273467942,
+    "A": 0.26478923131420473,
+    "B": 0.26558625575628764
+  },
+  "search": {
+    "A_train": 0.24831339390123236,
+    "A_val": 0.24878487848784878,
+    "B_train": 0.2609516956013313,
+    "B_val": 0.2565256525652565
+  },
+  "n_held": 11292,
+  "n_val": 5555,
+  "n_train": 22234,
+  "corpus_files": 1000,
+  "proposals": 39081
+}

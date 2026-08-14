@@ -1,0 +1,48 @@
+{
+  "experiment": "EXPO vs ASU-value-v1 + Fixed-B/C, seat-balanced, 11 paired seed blocks",
+  "ruleset": "ppo-plus-v2",
+  "expo_vs_asu": {
+    "games": 44,
+    "results": {
+      "fixed-c": {
+        "appearances": 44,
+        "wins": 4,
+        "win_rate": 0.0909
+      },
+      "expo": {
+        "appearances": 44,
+        "wins": 23,
+        "win_rate": 0.5227
+      },
+      "fixed-b": {
+        "appearances": 44,
+        "wins": 3,
+        "win_rate": 0.0682
+      },
+      "asu-value-v1": {
+        "appearances": 44,
+        "wins": 14,
+        "win_rate": 0.3182
+      }
+    }
+  },
+  "expo_vs_fixed_abc": {
+    "games": 40,
+    "win_rate": 0.8
+  },
+  "expo_vs_fixed_bde": {
+    "games": 1000,
+    "win_rate": 0.59
+  },
+  "student_vs_fixed_bde": {
+    "games": 120,
+    "win_rate": 0.625,
+    "bankrupt_rate": 0.1833
+  },
+  "student_vs_asu": {
+    "games": 44,
+    "win_rate": 0.3864,
+    "bankrupt_rate": 0.5455
+  },
+  "note": "Student overfits its training panel: matches EXPO on Fixed-B/D/E, collapses vs unseen ASU. Ship EXPO."
+}

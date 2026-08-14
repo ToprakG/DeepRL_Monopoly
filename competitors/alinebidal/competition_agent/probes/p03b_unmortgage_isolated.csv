@@ -1,0 +1,13 @@
+rival_houses,position,our_pos,unmortgage_cost,flip_cash,cushion_after_spend,monotone,build_action_available,action_at_flip,scan_points,seed
+0,near,25,110,335,225,True,False,unmortgage(sq=5),401,20250811
+0,far,1,110,310,200,True,False,unmortgage(sq=5),401,20250811
+1,near,25,110,370,260,True,False,unmortgage(sq=5),401,20250811
+1,far,1,110,310,200,True,False,unmortgage(sq=5),401,20250811
+2,near,25,110,490,380,True,False,unmortgage(sq=5),401,20250811
+2,far,1,110,360,250,True,False,unmortgage(sq=5),401,20250811
+3,near,25,110,910,800,True,False,unmortgage(sq=5),401,20250811
+3,far,1,110,910,800,True,False,unmortgage(sq=5),401,20250811
+4,near,25,110,1110,1000,True,False,unmortgage(sq=5),401,20250811
+4,far,1,110,1110,1000,True,False,unmortgage(sq=5),401,20250811
+5,near,25,110,1310,1200,True,False,unmortgage(sq=5),401,20250811
+5,far,1,110,1310,1200,True,False,unmortgage(sq=5),401,20250811

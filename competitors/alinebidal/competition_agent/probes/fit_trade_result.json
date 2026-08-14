@@ -1,0 +1,15 @@
+{
+  "weights": {
+    "price": 1.0,
+    "rent": 1.0,
+    "mono": 1.0,
+    "mortgaged": 0.0
+  },
+  "threshold": 1972.665,
+  "train_top1": 0.1267605633802817,
+  "held_top1": 0.0851063829787234,
+  "train_gate": 0.7041666666666667,
+  "held_gate": 0.70625,
+  "n_train": 240,
+  "n_held": 160
+}

@@ -1,3 +1,6 @@
+artifacts/
+artifacts_scratch/
+oracle_labels/
 __pycache__/
 *.py[cod]
 .pytest_cache/

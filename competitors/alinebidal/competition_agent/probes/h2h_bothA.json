@@ -1,0 +1,5697 @@
+{
+  "frozen_spec_hash": "9ab1907e0de1af4b253ce36ffa107c4fdb5e2b913858ef87c362423e61a6fd74",
+  "args": {
+    "games": 200,
+    "seed": 930000,
+    "max_steps": 3000,
+    "policies": "spec,teacher,spec,teacher",
+    "workers": 8,
+    "output": "competition_agent/probes/h2h_bothA.json",
+    "no_resume": false
+  },
+  "summary": {
+    "games": 200,
+    "decisive_games": 196,
+    "capped_games": 4,
+    "step_capped_games": 4,
+    "mean_steps": 1307.575,
+    "mean_rounds": 49.79,
+    "mean_seconds": 38.28619669646956,
+    "seats": [
+      {
+        "seat": 0,
+        "policy": "spec",
+        "leader_wins": 19,
+        "leader_rate": 0.095,
+        "leader_ci": [
+          0.06166261364986359,
+          0.14360265114397636
+        ],
+        "decisive_wins": 19,
+        "decisive_rate": 0.09693877551020408,
+        "decisive_ci": [
+          0.06293926032579855,
+          0.14643456374286382
+        ],
+        "mean_net_worth": 3501.41,
+        "bankrupt_rate": 0.89
+      },
+      {
+        "seat": 1,
+        "policy": "teacher",
+        "leader_wins": 75,
+        "leader_rate": 0.375,
+        "leader_ci": [
+          0.3108532530524515,
+          0.44385824842712884
+        ],
+        "decisive_wins": 75,
+        "decisive_rate": 0.3826530612244898,
+        "decisive_ci": [
+          0.3174834436813159,
+          0.45233425193361093
+        ],
+        "mean_net_worth": 13529.1475,
+        "bankrupt_rate": 0.605
+      },
+      {
+        "seat": 2,
+        "policy": "spec",
+        "leader_wins": 29,
+        "leader_rate": 0.145,
+        "leader_ci": [
+          0.1028928513530641,
+          0.20048781284894374
+        ],
+        "decisive_wins": 27,
+        "decisive_rate": 0.1377551020408163,
+        "decisive_ci": [
+          0.09642991326032697,
+          0.19300732102923035
+        ],
+        "mean_net_worth": 5068.475,
+        "bankrupt_rate": 0.845
+      },
+      {
+        "seat": 3,
+        "policy": "teacher",
+        "leader_wins": 77,
+        "leader_rate": 0.385,
+        "leader_ci": [
+          0.3203319691791383,
+          0.4540026121820756
+        ],
+        "decisive_wins": 75,
+        "decisive_rate": 0.3826530612244898,
+        "decisive_ci": [
+          0.3174834436813159,
+          0.45233425193361093
+        ],
+        "mean_net_worth": 13504.68,
+        "bankrupt_rate": 0.61
+      }
+    ]
+  },
+  "games": [
+    {
+      "seed": 930000,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1304,
+      "rounds": 41,
+      "seconds": 13.419325334019959,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        37921.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930001,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1610,
+      "rounds": 59,
+      "seconds": 40.61181191611104,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        33064.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930002,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1117,
+      "rounds": 52,
+      "seconds": 22.291323707904667,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        35168.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930003,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 2037,
+      "rounds": 106,
+      "seconds": 49.045891457935795,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        45175.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930004,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 971,
+      "rounds": 34,
+      "seconds": 20.823459833860397,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        32885.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930005,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1486,
+      "rounds": 60,
+      "seconds": 41.441834249999374,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        38394.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930006,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1075,
+      "rounds": 43,
+      "seconds": 21.773118417011574,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        37545.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930007,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1096,
+      "rounds": 36,
+      "seconds": 31.104892750037834,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        34633.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930008,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 850,
+      "rounds": 30,
+      "seconds": 25.15031679184176,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        33343.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930009,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1660,
+      "rounds": 50,
+      "seconds": 29.13470562500879,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        38507.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930010,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 937,
+      "rounds": 46,
+      "seconds": 14.733714665984735,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        32362.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930011,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1007,
+      "rounds": 47,
+      "seconds": 14.663025540998206,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        36648.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930012,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1445,
+      "rounds": 64,
+      "seconds": 40.82814900018275,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        37669.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930013,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1480,
+      "rounds": 57,
+      "seconds": 55.674872417002916,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        33916.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930014,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 852,
+      "rounds": 34,
+      "seconds": 26.388210874982178,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        33941.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930015,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 971,
+      "rounds": 34,
+      "seconds": 26.303545375121757,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        37089.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930016,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1735,
+      "rounds": 50,
+      "seconds": 45.88190287491307,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        37395.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930017,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1056,
+      "rounds": 36,
+      "seconds": 41.148161583114415,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        31835.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930018,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1595,
+      "rounds": 57,
+      "seconds": 37.36316199996509,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        32617.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930019,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1126,
+      "rounds": 37,
+      "seconds": 34.85309866606258,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        35035.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930020,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1116,
+      "rounds": 36,
+      "seconds": 40.707280833041295,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        31794.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930021,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 2147,
+      "rounds": 94,
+      "seconds": 53.31705645797774,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        46335.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930022,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1371,
+      "rounds": 54,
+      "seconds": 34.32120895804837,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        32046.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930023,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1919,
+      "rounds": 70,
+      "seconds": 82.59637337503955,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        46597.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930024,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1338,
+      "rounds": 57,
+      "seconds": 64.89828845812008,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        38576.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930025,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1319,
+      "rounds": 57,
+      "seconds": 35.92769162496552,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        33525.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930026,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1083,
+      "rounds": 36,
+      "seconds": 58.16496470896527,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        31733.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930027,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1413,
+      "rounds": 54,
+      "seconds": 63.70850370894186,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        41214.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930028,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 652,
+      "rounds": 27,
+      "seconds": 28.847544791875407,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        33549.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930029,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 573,
+      "rounds": 21,
+      "seconds": 10.288288374897093,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        28645.5,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930030,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1484,
+      "rounds": 72,
+      "seconds": 39.67351562506519,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        44414.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930031,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1250,
+      "rounds": 51,
+      "seconds": 35.97085754107684,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        31039.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930032,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1120,
+      "rounds": 38,
+      "seconds": 38.12473129108548,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        35326.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930033,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 713,
+      "rounds": 28,
+      "seconds": 25.14275316684507,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        33000.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930034,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1106,
+      "rounds": 38,
+      "seconds": 40.658240207936615,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        39204.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930035,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 966,
+      "rounds": 30,
+      "seconds": 30.836198874982074,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        28482.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930036,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1231,
+      "rounds": 48,
+      "seconds": 45.07007091701962,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        36481.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930037,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1286,
+      "rounds": 85,
+      "seconds": 25.698643625015393,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        42607.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930038,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1435,
+      "rounds": 58,
+      "seconds": 65.47167512518354,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        31206.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930039,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1118,
+      "rounds": 41,
+      "seconds": 21.71195854106918,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        38163.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930040,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1201,
+      "rounds": 58,
+      "seconds": 51.172954542096704,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        33799.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930041,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1918,
+      "rounds": 58,
+      "seconds": 32.691304666921496,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        33645.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930042,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1429,
+      "rounds": 52,
+      "seconds": 49.55770270805806,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        37627.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930043,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1185,
+      "rounds": 38,
+      "seconds": 56.195092499954626,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        37522.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930044,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1258,
+      "rounds": 62,
+      "seconds": 27.14991270797327,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        38727.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930045,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1170,
+      "rounds": 57,
+      "seconds": 20.39208387513645,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        36599.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930046,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 989,
+      "rounds": 47,
+      "seconds": 30.557402583071962,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        28580.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930047,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1092,
+      "rounds": 60,
+      "seconds": 19.282255333149806,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        39704.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930048,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 789,
+      "rounds": 25,
+      "seconds": 20.81781804189086,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        34421.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930049,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 2769,
+      "rounds": 106,
+      "seconds": 87.48696729191579,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        46258.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930050,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1331,
+      "rounds": 40,
+      "seconds": 58.23608725005761,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        29206.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930051,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 770,
+      "rounds": 26,
+      "seconds": 30.80849854205735,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        36515.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930052,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1268,
+      "rounds": 60,
+      "seconds": 60.69818175002001,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        39910.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930053,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1176,
+      "rounds": 46,
+      "seconds": 41.22288270806894,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        34465.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930054,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 891,
+      "rounds": 38,
+      "seconds": 32.10578079218976,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        35774.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930055,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 3000,
+      "rounds": 83,
+      "seconds": 158.6838577920571,
+      "decisive": false,
+      "step_capped": true,
+      "winner": null,
+      "leader": 3,
+      "net_worth": [
+        7166.0,
+        3863.0,
+        3965.0,
+        7527.0
+      ],
+      "bankrupt": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "seed": 930056,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1217,
+      "rounds": 45,
+      "seconds": 25.920336541952565,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        34235.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930057,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1539,
+      "rounds": 68,
+      "seconds": 88.93108895793557,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        33778.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930058,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 2424,
+      "rounds": 136,
+      "seconds": 114.26575358305126,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        37913.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930059,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 807,
+      "rounds": 28,
+      "seconds": 29.339673582930118,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        33153.5
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930060,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1220,
+      "rounds": 36,
+      "seconds": 36.60579041717574,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        34698.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930061,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 658,
+      "rounds": 21,
+      "seconds": 11.715977916959673,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        24254.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930062,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1095,
+      "rounds": 33,
+      "seconds": 45.67361579090357,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        34354.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930063,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 763,
+      "rounds": 30,
+      "seconds": 23.464114458998665,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        34109.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930064,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1351,
+      "rounds": 47,
+      "seconds": 56.08548324997537,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        29330.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930065,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 956,
+      "rounds": 36,
+      "seconds": 53.429067709017545,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        34475.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930066,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 643,
+      "rounds": 24,
+      "seconds": 29.409499083878472,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        33611.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930067,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1924,
+      "rounds": 74,
+      "seconds": 59.90725537505932,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        30697.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930068,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 2045,
+      "rounds": 63,
+      "seconds": 56.83106895792298,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        42248.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930069,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1628,
+      "rounds": 55,
+      "seconds": 60.6838162089698,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        46224.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930070,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1830,
+      "rounds": 68,
+      "seconds": 45.44691429217346,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        36632.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930071,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1095,
+      "rounds": 42,
+      "seconds": 37.99860516586341,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        39080.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930072,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1425,
+      "rounds": 56,
+      "seconds": 50.04980925004929,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        41584.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930073,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1478,
+      "rounds": 54,
+      "seconds": 39.44893958303146,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        33213.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930074,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1182,
+      "rounds": 52,
+      "seconds": 34.85657854191959,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        32716.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930075,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1253,
+      "rounds": 42,
+      "seconds": 48.73881054203957,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        39190.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930076,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1484,
+      "rounds": 46,
+      "seconds": 40.25883883307688,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        34321.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930077,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1098,
+      "rounds": 64,
+      "seconds": 24.225047833053395,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        37419.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930078,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1200,
+      "rounds": 41,
+      "seconds": 46.66630074987188,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        35820.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930079,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1994,
+      "rounds": 81,
+      "seconds": 84.93910799990408,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        41673.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930080,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1187,
+      "rounds": 40,
+      "seconds": 47.65960175008513,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        30860.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930081,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 946,
+      "rounds": 34,
+      "seconds": 22.810804292093962,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        39900.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930082,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1566,
+      "rounds": 59,
+      "seconds": 49.27624462498352,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        36114.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930083,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 3000,
+      "rounds": 128,
+      "seconds": 88.7925090000499,
+      "decisive": false,
+      "step_capped": true,
+      "winner": null,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        20755.0,
+        23286.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930084,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1127,
+      "rounds": 31,
+      "seconds": 26.50728449993767,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        31467.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930085,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1727,
+      "rounds": 63,
+      "seconds": 45.380236957920715,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        41765.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930086,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 848,
+      "rounds": 29,
+      "seconds": 25.071909666992724,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        30147.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930087,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1124,
+      "rounds": 40,
+      "seconds": 38.514440916944295,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        36281.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930088,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 769,
+      "rounds": 26,
+      "seconds": 19.933059999952093,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        29585.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930089,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1177,
+      "rounds": 45,
+      "seconds": 49.24587837490253,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        39262.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930090,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1176,
+      "rounds": 40,
+      "seconds": 31.994668875122443,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        38923.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930091,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 917,
+      "rounds": 30,
+      "seconds": 25.256778832990676,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        34736.5,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930092,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1588,
+      "rounds": 67,
+      "seconds": 41.797456541098654,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        41217.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930093,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 794,
+      "rounds": 23,
+      "seconds": 18.245843957876787,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        30226.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930094,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1094,
+      "rounds": 50,
+      "seconds": 36.85395612497814,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        33695.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930095,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1399,
+      "rounds": 76,
+      "seconds": 29.681174083147198,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        30166.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930096,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 791,
+      "rounds": 26,
+      "seconds": 23.699304499896243,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        29522.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930097,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1920,
+      "rounds": 60,
+      "seconds": 70.062742582988,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        36633.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930098,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 2071,
+      "rounds": 100,
+      "seconds": 81.11552429199219,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        38205.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930099,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 868,
+      "rounds": 34,
+      "seconds": 33.373638833872974,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        37688.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930100,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 855,
+      "rounds": 25,
+      "seconds": 14.094697291962802,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        32869.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930101,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1708,
+      "rounds": 52,
+      "seconds": 56.34543679188937,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        41406.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930102,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1178,
+      "rounds": 38,
+      "seconds": 36.90693037514575,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        33598.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930103,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 963,
+      "rounds": 45,
+      "seconds": 30.38242454198189,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        37798.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930104,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 890,
+      "rounds": 29,
+      "seconds": 12.240085792029276,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        28031.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930105,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1325,
+      "rounds": 46,
+      "seconds": 37.44388799997978,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        38590.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930106,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1257,
+      "rounds": 43,
+      "seconds": 34.38371204119176,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        32863.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930107,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1237,
+      "rounds": 47,
+      "seconds": 34.86881220783107,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        33155.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930108,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 907,
+      "rounds": 31,
+      "seconds": 31.18119033309631,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        35122.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930109,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1546,
+      "rounds": 61,
+      "seconds": 61.83300437498838,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        34117.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930110,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1832,
+      "rounds": 81,
+      "seconds": 51.903669374994934,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        37866.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930111,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1548,
+      "rounds": 53,
+      "seconds": 47.12813491700217,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        38493.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930112,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 949,
+      "rounds": 38,
+      "seconds": 33.253111749887466,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        34538.5
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930113,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 2023,
+      "rounds": 84,
+      "seconds": 40.73385316715576,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        38082.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930114,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 779,
+      "rounds": 27,
+      "seconds": 25.86036195815541,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        30176.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930115,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1452,
+      "rounds": 53,
+      "seconds": 29.557988750049844,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        34963.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930116,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1941,
+      "rounds": 66,
+      "seconds": 71.04575325013138,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        45377.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930117,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1044,
+      "rounds": 34,
+      "seconds": 36.29669808293693,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        40379.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930118,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1101,
+      "rounds": 38,
+      "seconds": 32.51671566697769,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        36968.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930119,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1544,
+      "rounds": 48,
+      "seconds": 65.84606750006787,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        41212.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930120,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1191,
+      "rounds": 49,
+      "seconds": 37.9872899169568,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        38693.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930121,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1250,
+      "rounds": 55,
+      "seconds": 31.19596316711977,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        35129.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930122,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1826,
+      "rounds": 70,
+      "seconds": 50.425770916976035,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        39611.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930123,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1415,
+      "rounds": 44,
+      "seconds": 39.30500412499532,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        34729.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930124,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 660,
+      "rounds": 22,
+      "seconds": 19.77752804197371,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        28252.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930125,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1483,
+      "rounds": 64,
+      "seconds": 30.157875125063583,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        41180.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930126,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1283,
+      "rounds": 64,
+      "seconds": 19.666995958192274,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        27396.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930127,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1043,
+      "rounds": 37,
+      "seconds": 33.02724820794538,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        35806.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930128,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1699,
+      "rounds": 55,
+      "seconds": 53.00811441708356,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        31567.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930129,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1970,
+      "rounds": 75,
+      "seconds": 72.64886116608977,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        44603.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930130,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 761,
+      "rounds": 36,
+      "seconds": 23.423626041971147,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        34280.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930131,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 839,
+      "rounds": 29,
+      "seconds": 15.539040875155479,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        31776.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930132,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1103,
+      "rounds": 41,
+      "seconds": 30.495558541966602,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        38438.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930133,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 2184,
+      "rounds": 111,
+      "seconds": 73.77655937499367,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        34784.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930134,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1729,
+      "rounds": 64,
+      "seconds": 38.92548487498425,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        34716.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930135,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1156,
+      "rounds": 42,
+      "seconds": 22.76528266700916,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        37029.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930136,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 798,
+      "rounds": 33,
+      "seconds": 12.265235916012898,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        33159.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930137,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1141,
+      "rounds": 37,
+      "seconds": 30.80392974987626,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        31402.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930138,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1268,
+      "rounds": 44,
+      "seconds": 31.970401958096772,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        39746.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930139,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1545,
+      "rounds": 60,
+      "seconds": 29.86568579217419,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        38275.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930140,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1413,
+      "rounds": 54,
+      "seconds": 41.773839415982366,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        35484.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930141,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1863,
+      "rounds": 65,
+      "seconds": 39.589089250192046,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        34403.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930142,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 974,
+      "rounds": 32,
+      "seconds": 30.225364583078772,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        36923.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930143,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1119,
+      "rounds": 40,
+      "seconds": 23.066611459013075,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        31132.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930144,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 2077,
+      "rounds": 70,
+      "seconds": 52.25296195806004,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        40515.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930145,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 784,
+      "rounds": 28,
+      "seconds": 12.10062720789574,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        26849.5,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930146,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 942,
+      "rounds": 46,
+      "seconds": 24.41917904210277,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        32527.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930147,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1296,
+      "rounds": 43,
+      "seconds": 19.584964042063802,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        38133.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930148,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 3000,
+      "rounds": 81,
+      "seconds": 92.2133366658818,
+      "decisive": false,
+      "step_capped": true,
+      "winner": null,
+      "leader": 2,
+      "net_worth": [
+        3800.0,
+        1827.0,
+        9794.0,
+        9187.0
+      ],
+      "bankrupt": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "seed": 930149,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 937,
+      "rounds": 43,
+      "seconds": 28.576609040843323,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        36964.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930150,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1264,
+      "rounds": 42,
+      "seconds": 29.481235541170463,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        37063.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930151,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1294,
+      "rounds": 47,
+      "seconds": 42.49685866688378,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        36948.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930152,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1811,
+      "rounds": 66,
+      "seconds": 29.3384884998668,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        35985.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930153,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1109,
+      "rounds": 47,
+      "seconds": 20.32795804180205,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        36416.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930154,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1229,
+      "rounds": 44,
+      "seconds": 28.697933667106554,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        36062.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930155,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1134,
+      "rounds": 44,
+      "seconds": 28.705002458998933,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        29376.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930156,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1451,
+      "rounds": 54,
+      "seconds": 48.721637333976105,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        41609.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930157,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1327,
+      "rounds": 65,
+      "seconds": 40.15895287506282,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        30410.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930158,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 934,
+      "rounds": 36,
+      "seconds": 16.058421041816473,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        35776.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930159,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1722,
+      "rounds": 50,
+      "seconds": 64.33078312501311,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        41953.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930160,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1419,
+      "rounds": 51,
+      "seconds": 33.625223790993914,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        35187.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930161,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1695,
+      "rounds": 82,
+      "seconds": 47.24177495809272,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        40585.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930162,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1610,
+      "rounds": 54,
+      "seconds": 42.419428209075704,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        36305.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930163,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1507,
+      "rounds": 53,
+      "seconds": 25.261539792176336,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        35549.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930164,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 965,
+      "rounds": 37,
+      "seconds": 18.091535541927442,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        33550.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930165,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1163,
+      "rounds": 47,
+      "seconds": 31.256328250048682,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        31978.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930166,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 648,
+      "rounds": 23,
+      "seconds": 13.910458459053189,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        27515.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930167,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1027,
+      "rounds": 32,
+      "seconds": 27.361383208073676,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        33381.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930168,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1059,
+      "rounds": 52,
+      "seconds": 36.48587525007315,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        34916.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930169,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1502,
+      "rounds": 53,
+      "seconds": 38.6341344169341,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        37484.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930170,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1402,
+      "rounds": 52,
+      "seconds": 29.528197625186294,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        37673.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930171,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1533,
+      "rounds": 53,
+      "seconds": 57.612751540960744,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        37115.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930172,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 3000,
+      "rounds": 84,
+      "seconds": 100.2509560000617,
+      "decisive": false,
+      "step_capped": true,
+      "winner": null,
+      "leader": 3,
+      "net_worth": [
+        6486.0,
+        6433.0,
+        4303.0,
+        7263.0
+      ],
+      "bankrupt": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "seed": 930173,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 987,
+      "rounds": 44,
+      "seconds": 37.63567841704935,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        44602.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930174,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1285,
+      "rounds": 48,
+      "seconds": 35.925964874913916,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        31166.5,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930175,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1321,
+      "rounds": 48,
+      "seconds": 34.30021395813674,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        40386.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930176,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 816,
+      "rounds": 31,
+      "seconds": 25.35858124983497,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        34736.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930177,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 996,
+      "rounds": 47,
+      "seconds": 13.294961042003706,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        35599.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930178,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 594,
+      "rounds": 22,
+      "seconds": 17.880198375089094,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        31957.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930179,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1190,
+      "rounds": 54,
+      "seconds": 31.193668707972392,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        38349.5,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930180,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1231,
+      "rounds": 45,
+      "seconds": 24.58077724999748,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 0,
+      "leader": 0,
+      "net_worth": [
+        32736.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930181,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 577,
+      "rounds": 19,
+      "seconds": 11.393412250094116,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        31211.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930182,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1191,
+      "rounds": 39,
+      "seconds": 34.198377958033234,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        31755.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930183,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1066,
+      "rounds": 35,
+      "seconds": 32.424395999871194,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        36767.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930184,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 955,
+      "rounds": 43,
+      "seconds": 18.913403916871175,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        30584.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930185,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1695,
+      "rounds": 55,
+      "seconds": 51.268363957991824,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        37582.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930186,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1214,
+      "rounds": 61,
+      "seconds": 17.635022291215137,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        36873.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930187,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1407,
+      "rounds": 65,
+      "seconds": 52.743867666926235,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        41875.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930188,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1280,
+      "rounds": 43,
+      "seconds": 34.57920533395372,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        33268.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930189,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1653,
+      "rounds": 67,
+      "seconds": 41.36631212499924,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        37793.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930190,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 2072,
+      "rounds": 91,
+      "seconds": 38.28236808301881,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 3,
+      "leader": 3,
+      "net_worth": [
+        0.0,
+        0.0,
+        0.0,
+        42192.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "seed": 930191,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 840,
+      "rounds": 32,
+      "seconds": 23.490911042084917,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        34329.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930192,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 952,
+      "rounds": 42,
+      "seconds": 14.923511374974623,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        32535.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930193,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1214,
+      "rounds": 39,
+      "seconds": 32.216741333017126,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        33184.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930194,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1765,
+      "rounds": 73,
+      "seconds": 34.732788166962564,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        31495.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930195,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1077,
+      "rounds": 42,
+      "seconds": 17.362136541865766,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        41153.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930196,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 638,
+      "rounds": 22,
+      "seconds": 17.804876709124073,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        31975.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930197,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1224,
+      "rounds": 46,
+      "seconds": 28.25004179100506,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 1,
+      "leader": 1,
+      "net_worth": [
+        0.0,
+        39645.0,
+        0.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "seed": 930198,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1503,
+      "rounds": 43,
+      "seconds": 24.540506624849513,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        35589.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "seed": 930199,
+      "policies": [
+        "spec",
+        "teacher",
+        "spec",
+        "teacher"
+      ],
+      "steps": 1455,
+      "rounds": 54,
+      "seconds": 15.295912583125755,
+      "decisive": true,
+      "step_capped": false,
+      "winner": 2,
+      "leader": 2,
+      "net_worth": [
+        0.0,
+        0.0,
+        40859.0,
+        0.0
+      ],
+      "bankrupt": [
+        true,
+        true,
+        false,
+        true
+      ]
+    }
+  ]
+}

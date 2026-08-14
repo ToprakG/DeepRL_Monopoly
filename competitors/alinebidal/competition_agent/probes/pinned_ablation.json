@@ -1,0 +1,882 @@
+[
+ {
+  "arm": "none",
+  "seed": 930000,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 542
+ },
+ {
+  "arm": "none",
+  "seed": 930002,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 479
+ },
+ {
+  "arm": "none",
+  "seed": 930000,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 638
+ },
+ {
+  "arm": "none",
+  "seed": 930001,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 452
+ },
+ {
+  "arm": "none",
+  "seed": 930001,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 677
+ },
+ {
+  "arm": "none",
+  "seed": 930002,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 583
+ },
+ {
+  "arm": "none",
+  "seed": 930003,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 653
+ },
+ {
+  "arm": "none",
+  "seed": 930003,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": true,
+  "fired": 0,
+  "total": 612
+ },
+ {
+  "arm": "none",
+  "seed": 930004,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 460
+ },
+ {
+  "arm": "none",
+  "seed": 930004,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 490
+ },
+ {
+  "arm": "none",
+  "seed": 930005,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 457
+ },
+ {
+  "arm": "none",
+  "seed": 930006,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 445
+ },
+ {
+  "arm": "none",
+  "seed": 930005,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 523
+ },
+ {
+  "arm": "none",
+  "seed": 930006,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 710
+ },
+ {
+  "arm": "none",
+  "seed": 930007,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 468
+ },
+ {
+  "arm": "none",
+  "seed": 930007,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": true,
+  "fired": 0,
+  "total": 716
+ },
+ {
+  "arm": "none",
+  "seed": 930010,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 301
+ },
+ {
+  "arm": "none",
+  "seed": 930010,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": true,
+  "fired": 0,
+  "total": 376
+ },
+ {
+  "arm": "none",
+  "seed": 930011,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 230
+ },
+ {
+  "arm": "none",
+  "seed": 930009,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 353
+ },
+ {
+  "arm": "none",
+  "seed": 930008,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 674
+ },
+ {
+  "arm": "none",
+  "seed": 930009,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 578
+ },
+ {
+  "arm": "none",
+  "seed": 930008,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 688
+ },
+ {
+  "arm": "none",
+  "seed": 930012,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 412
+ },
+ {
+  "arm": "none",
+  "seed": 930011,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 504
+ },
+ {
+  "arm": "none",
+  "seed": 930014,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 370
+ },
+ {
+  "arm": "none",
+  "seed": 930012,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 669
+ },
+ {
+  "arm": "none",
+  "seed": 930013,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": true,
+  "fired": 0,
+  "total": 625
+ },
+ {
+  "arm": "none",
+  "seed": 930014,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": true,
+  "fired": 0,
+  "total": 690
+ },
+ {
+  "arm": "none",
+  "seed": 930015,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 560
+ },
+ {
+  "arm": "none",
+  "seed": 930015,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 294
+ },
+ {
+  "arm": "none",
+  "seed": 930013,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 727
+ },
+ {
+  "arm": "none",
+  "seed": 930016,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 605
+ },
+ {
+  "arm": "none",
+  "seed": 930017,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 505
+ },
+ {
+  "arm": "none",
+  "seed": 930019,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 486
+ },
+ {
+  "arm": "none",
+  "seed": 930017,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": true,
+  "fired": 0,
+  "total": 619
+ },
+ {
+  "arm": "none",
+  "seed": 930016,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 722
+ },
+ {
+  "arm": "none",
+  "seed": 930018,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": true,
+  "fired": 0,
+  "total": 678
+ },
+ {
+  "arm": "none",
+  "seed": 930019,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 528
+ },
+ {
+  "arm": "none",
+  "seed": 930020,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 494
+ },
+ {
+  "arm": "none",
+  "seed": 930018,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 619
+ },
+ {
+  "arm": "none",
+  "seed": 930022,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": true,
+  "fired": 0,
+  "total": 597
+ },
+ {
+  "arm": "none",
+  "seed": 930020,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 602
+ },
+ {
+  "arm": "none",
+  "seed": 930021,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 483
+ },
+ {
+  "arm": "none",
+  "seed": 930021,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 643
+ },
+ {
+  "arm": "none",
+  "seed": 930024,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 463
+ },
+ {
+  "arm": "none",
+  "seed": 930023,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 509
+ },
+ {
+  "arm": "none",
+  "seed": 930025,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 477
+ },
+ {
+  "arm": "none",
+  "seed": 930024,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": true,
+  "fired": 0,
+  "total": 811
+ },
+ {
+  "arm": "none",
+  "seed": 930022,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 507
+ },
+ {
+  "arm": "none",
+  "seed": 930023,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 549
+ },
+ {
+  "arm": "none",
+  "seed": 930028,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 300
+ },
+ {
+  "arm": "none",
+  "seed": 930028,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 314
+ },
+ {
+  "arm": "none",
+  "seed": 930025,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 553
+ },
+ {
+  "arm": "none",
+  "seed": 930026,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 666
+ },
+ {
+  "arm": "none",
+  "seed": 930029,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 381
+ },
+ {
+  "arm": "none",
+  "seed": 930027,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 752
+ },
+ {
+  "arm": "none",
+  "seed": 930026,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 767
+ },
+ {
+  "arm": "none",
+  "seed": 930027,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": true,
+  "fired": 0,
+  "total": 740
+ },
+ {
+  "arm": "none",
+  "seed": 930031,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": true,
+  "fired": 0,
+  "total": 529
+ },
+ {
+  "arm": "none",
+  "seed": 930030,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": true,
+  "fired": 0,
+  "total": 693
+ },
+ {
+  "arm": "none",
+  "seed": 930029,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 768
+ },
+ {
+  "arm": "none",
+  "seed": 930030,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 617
+ },
+ {
+  "arm": "none",
+  "seed": 930032,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 602
+ },
+ {
+  "arm": "none",
+  "seed": 930033,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 493
+ },
+ {
+  "arm": "none",
+  "seed": 930032,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 659
+ },
+ {
+  "arm": "none",
+  "seed": 930031,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 597
+ },
+ {
+  "arm": "none",
+  "seed": 930033,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 313
+ },
+ {
+  "arm": "none",
+  "seed": 930034,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 436
+ },
+ {
+  "arm": "none",
+  "seed": 930035,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 424
+ },
+ {
+  "arm": "none",
+  "seed": 930035,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 369
+ },
+ {
+  "arm": "none",
+  "seed": 930034,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 494
+ },
+ {
+  "arm": "none",
+  "seed": 930036,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 636
+ },
+ {
+  "arm": "none",
+  "seed": 930037,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 500
+ },
+ {
+  "arm": "none",
+  "seed": 930037,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 492
+ },
+ {
+  "arm": "none",
+  "seed": 930036,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": true,
+  "fired": 0,
+  "total": 604
+ },
+ {
+  "arm": "none",
+  "seed": 930039,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": true,
+  "fired": 0,
+  "total": 525
+ },
+ {
+  "arm": "none",
+  "seed": 930038,
+  "seats": [
+   0,
+   2
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 686
+ },
+ {
+  "arm": "none",
+  "seed": 930039,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": false,
+  "fired": 0,
+  "total": 517
+ },
+ {
+  "arm": "none",
+  "seed": 930038,
+  "seats": [
+   1,
+   3
+  ],
+  "spec_win": true,
+  "fired": 0,
+  "total": 703
+ }
+]

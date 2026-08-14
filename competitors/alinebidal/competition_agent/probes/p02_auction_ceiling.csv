@@ -1,0 +1,83 @@
+square,name,color,price,group_size,n_owned_of_group,missing_after_win,ceiling,ceiling_over_price,ceiling_minus_price,opening_action,seed
+1,Mediterranean Avenue,brown,60,2,0,1,416,6.9333,356,auction_bid(+$100),20250811
+1,Mediterranean Avenue,brown,60,2,1,0,436,7.2667,376,auction_bid(+$100),20250811
+3,Baltic Avenue,brown,60,2,0,1,423,7.05,363,auction_bid(+$100),20250811
+3,Baltic Avenue,brown,60,2,1,0,443,7.3833,383,auction_bid(+$100),20250811
+5,Reading Railroad,railroad,200,4,0,3,388,1.94,188,auction_bid(+$100),20250811
+5,Reading Railroad,railroad,200,4,1,2,566,2.83,366,auction_bid(+$100),20250811
+5,Reading Railroad,railroad,200,4,2,1,1108,5.54,908,auction_bid(+$100),20250811
+5,Reading Railroad,railroad,200,4,3,0,2357,11.785,2157,auction_bid(+$100),20250811
+6,Oriental Avenue,lightblue,100,3,0,2,546,5.46,446,auction_bid(+$100),20250811
+6,Oriental Avenue,lightblue,100,3,1,1,546,5.46,446,auction_bid(+$100),20250811
+6,Oriental Avenue,lightblue,100,3,2,0,1044,10.44,944,auction_bid(+$100),20250811
+8,Vermont Avenue,lightblue,100,3,0,2,547,5.47,447,auction_bid(+$100),20250811
+8,Vermont Avenue,lightblue,100,3,1,1,547,5.47,447,auction_bid(+$100),20250811
+8,Vermont Avenue,lightblue,100,3,2,0,1044,10.44,944,auction_bid(+$100),20250811
+9,Connecticut Avenue,lightblue,120,3,0,2,574,4.7833,454,auction_bid(+$100),20250811
+9,Connecticut Avenue,lightblue,120,3,1,1,574,4.7833,454,auction_bid(+$100),20250811
+9,Connecticut Avenue,lightblue,120,3,2,0,1071,8.925,951,auction_bid(+$100),20250811
+11,St. Charles Place,pink,140,3,0,2,775,5.5357,635,auction_bid(+$100),20250811
+11,St. Charles Place,pink,140,3,1,1,775,5.5357,635,auction_bid(+$100),20250811
+11,St. Charles Place,pink,140,3,2,0,1488,10.6286,1348,auction_bid(+$100),20250811
+12,Electric Company,utility,150,2,0,1,319,2.1267,169,auction_bid(+$100),20250811
+12,Electric Company,utility,150,2,1,0,615,4.1,465,auction_bid(+$100),20250811
+13,States Avenue,pink,140,3,0,2,775,5.5357,635,auction_bid(+$100),20250811
+13,States Avenue,pink,140,3,1,1,775,5.5357,635,auction_bid(+$100),20250811
+13,States Avenue,pink,140,3,2,0,1488,10.6286,1348,auction_bid(+$100),20250811
+14,Virginia Avenue,pink,160,3,0,2,802,5.0125,642,auction_bid(+$100),20250811
+14,Virginia Avenue,pink,160,3,1,1,802,5.0125,642,auction_bid(+$100),20250811
+14,Virginia Avenue,pink,160,3,2,0,1515,9.4688,1355,auction_bid(+$100),20250811
+15,Pennsylvania Railroad,railroad,200,4,0,3,388,1.94,188,auction_bid(+$100),20250811
+15,Pennsylvania Railroad,railroad,200,4,1,2,566,2.83,366,auction_bid(+$100),20250811
+15,Pennsylvania Railroad,railroad,200,4,2,1,1108,5.54,908,auction_bid(+$100),20250811
+15,Pennsylvania Railroad,railroad,200,4,3,0,2356,11.78,2156,auction_bid(+$100),20250811
+16,St. James Place,orange,180,3,0,2,954,5.3,774,auction_bid(+$100),20250811
+16,St. James Place,orange,180,3,1,1,954,5.3,774,auction_bid(+$100),20250811
+16,St. James Place,orange,180,3,2,0,1835,10.1944,1655,auction_bid(+$100),20250811
+18,Tennessee Avenue,orange,180,3,0,2,954,5.3,774,auction_bid(+$100),20250811
+18,Tennessee Avenue,orange,180,3,1,1,954,5.3,774,auction_bid(+$100),20250811
+18,Tennessee Avenue,orange,180,3,2,0,1835,10.1944,1655,auction_bid(+$100),20250811
+19,New York Avenue,orange,200,3,0,2,981,4.905,781,auction_bid(+$100),20250811
+19,New York Avenue,orange,200,3,1,1,981,4.905,781,auction_bid(+$100),20250811
+19,New York Avenue,orange,200,3,2,0,1862,9.31,1662,auction_bid(+$100),20250811
+21,Kentucky Avenue,red,220,3,0,2,1083,4.9227,863,auction_bid(+$100),20250811
+21,Kentucky Avenue,red,220,3,1,1,1083,4.9227,863,auction_bid(+$100),20250811
+21,Kentucky Avenue,red,220,3,2,0,2079,9.45,1859,auction_bid(+$100),20250811
+23,Indiana Avenue,red,220,3,0,2,1083,4.9227,863,auction_bid(+$100),20250811
+23,Indiana Avenue,red,220,3,1,1,1083,4.9227,863,auction_bid(+$100),20250811
+23,Indiana Avenue,red,220,3,2,0,2079,9.45,1859,auction_bid(+$100),20250811
+24,Illinois Avenue,red,240,3,0,2,1110,4.625,870,auction_bid(+$100),20250811
+24,Illinois Avenue,red,240,3,1,1,1110,4.625,870,auction_bid(+$100),20250811
+24,Illinois Avenue,red,240,3,2,0,2106,8.775,1866,auction_bid(+$100),20250811
+25,B&O Railroad,railroad,200,4,0,3,387,1.935,187,auction_bid(+$100),20250811
+25,B&O Railroad,railroad,200,4,1,2,564,2.82,364,auction_bid(+$100),20250811
+25,B&O Railroad,railroad,200,4,2,1,1105,5.525,905,auction_bid(+$100),20250811
+25,B&O Railroad,railroad,200,4,3,0,2351,11.755,2151,auction_bid(+$100),20250811
+26,Atlantic Avenue,yellow,260,3,0,2,1212,4.6615,952,auction_bid(+$100),20250811
+26,Atlantic Avenue,yellow,260,3,1,1,1212,4.6615,952,auction_bid(+$100),20250811
+26,Atlantic Avenue,yellow,260,3,2,0,2324,8.9385,2064,auction_bid(+$100),20250811
+27,Ventnor Avenue,yellow,260,3,0,2,1211,4.6577,951,auction_bid(+$100),20250811
+27,Ventnor Avenue,yellow,260,3,1,1,1211,4.6577,951,auction_bid(+$100),20250811
+27,Ventnor Avenue,yellow,260,3,2,0,2324,8.9385,2064,auction_bid(+$100),20250811
+28,Water Works,utility,150,2,0,1,317,2.1133,167,auction_bid(+$100),20250811
+28,Water Works,utility,150,2,1,0,613,4.0867,463,auction_bid(+$100),20250811
+29,Marvin Gardens,yellow,280,3,0,2,1238,4.4214,958,auction_bid(+$100),20250811
+29,Marvin Gardens,yellow,280,3,1,1,1238,4.4214,958,auction_bid(+$100),20250811
+29,Marvin Gardens,yellow,280,3,2,0,2351,8.3964,2071,auction_bid(+$100),20250811
+31,Pacific Avenue,green,300,3,0,2,1377,4.59,1077,auction_bid(+$100),20250811
+31,Pacific Avenue,green,300,3,1,1,1377,4.59,1077,auction_bid(+$100),20250811
+31,Pacific Avenue,green,300,3,2,0,2641,8.8033,2341,auction_bid(+$100),20250811
+32,North Carolina Ave,green,300,3,0,2,1377,4.59,1077,auction_bid(+$100),20250811
+32,North Carolina Ave,green,300,3,1,1,1377,4.59,1077,auction_bid(+$100),20250811
+32,North Carolina Ave,green,300,3,2,0,2641,8.8033,2341,auction_bid(+$100),20250811
+34,Pennsylvania Avenue,green,320,3,0,2,1403,4.3844,1083,auction_bid(+$100),20250811
+34,Pennsylvania Avenue,green,320,3,1,1,1403,4.3844,1083,auction_bid(+$100),20250811
+34,Pennsylvania Avenue,green,320,3,2,0,2667,8.3344,2347,auction_bid(+$100),20250811
+35,Short Line Railroad,railroad,200,4,0,3,384,1.92,184,auction_bid(+$100),20250811
+35,Short Line Railroad,railroad,200,4,1,2,558,2.79,358,auction_bid(+$100),20250811
+35,Short Line Railroad,railroad,200,4,2,1,1095,5.475,895,auction_bid(+$100),20250811
+35,Short Line Railroad,railroad,200,4,3,0,2340,11.7,2140,auction_bid(+$100),20250811
+37,Park Place,darkblue,350,2,0,1,2216,6.3314,1866,auction_bid(+$100),20250811
+37,Park Place,darkblue,350,2,1,0,2499,7.14,2149,auction_bid(+$100),20250811
+39,Boardwalk,darkblue,400,2,0,1,2315,5.7875,1915,auction_bid(+$100),20250811
+39,Boardwalk,darkblue,400,2,1,0,2598,6.495,2198,auction_bid(+$100),20250811

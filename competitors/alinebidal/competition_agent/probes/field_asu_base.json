@@ -1,0 +1,11402 @@
+[
+ {
+  "arm": "run",
+  "seed": 960001,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 706,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 9,
+  "accepted": 1,
+  "declined": 8,
+  "seconds": 15.904858666937798
+ },
+ {
+  "arm": "run",
+  "seed": 960006,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 962,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 39,
+  "accepted": 0,
+  "declined": 39,
+  "seconds": 21.96349895792082
+ },
+ {
+  "arm": "run",
+  "seed": 960007,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 876,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 24.539202667074278
+ },
+ {
+  "arm": "run",
+  "seed": 960004,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 874,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 48,
+  "accepted": 4,
+  "declined": 37,
+  "seconds": 25.11763483309187
+ },
+ {
+  "arm": "run",
+  "seed": 960002,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 892,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 19,
+  "accepted": 1,
+  "declined": 17,
+  "seconds": 26.431261291960254
+ },
+ {
+  "arm": "run",
+  "seed": 960005,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1512,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 85,
+  "accepted": 3,
+  "declined": 37,
+  "seconds": 27.15132183302194
+ },
+ {
+  "arm": "run",
+  "seed": 960009,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 814,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 16,
+  "accepted": 0,
+  "declined": 2,
+  "seconds": 10.039680665824562
+ },
+ {
+  "arm": "run",
+  "seed": 960000,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1134,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 15,
+  "accepted": 1,
+  "declined": 6,
+  "seconds": 41.85444612498395
+ },
+ {
+  "arm": "run",
+  "seed": 960003,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1674,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 20,
+  "accepted": 5,
+  "declined": 3,
+  "seconds": 44.90359083400108
+ },
+ {
+  "arm": "run",
+  "seed": 960010,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1014,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 22,
+  "accepted": 1,
+  "declined": 19,
+  "seconds": 24.610459458082914
+ },
+ {
+  "arm": "run",
+  "seed": 960011,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 947,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 24.127425375161693
+ },
+ {
+  "arm": "run",
+  "seed": 960008,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1157,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 84,
+  "accepted": 2,
+  "declined": 11,
+  "seconds": 34.24397058296017
+ },
+ {
+  "arm": "run",
+  "seed": 960012,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 879,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 25.44320008298382
+ },
+ {
+  "arm": "run",
+  "seed": 960013,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 915,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 30,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 30.036765625001863
+ },
+ {
+  "arm": "run",
+  "seed": 960015,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1409,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 81,
+  "accepted": 0,
+  "declined": 74,
+  "seconds": 25.53480725013651
+ },
+ {
+  "arm": "run",
+  "seed": 960016,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 945,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 51,
+  "accepted": 2,
+  "declined": 47,
+  "seconds": 25.667380041908473
+ },
+ {
+  "arm": "run",
+  "seed": 960020,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1003,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 28,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 24.541643084026873
+ },
+ {
+  "arm": "run",
+  "seed": 960014,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1651,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 84,
+  "accepted": 1,
+  "declined": 6,
+  "seconds": 44.47894470812753
+ },
+ {
+  "arm": "run",
+  "seed": 960018,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1081,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 37,
+  "accepted": 0,
+  "declined": 13,
+  "seconds": 30.704071833984926
+ },
+ {
+  "arm": "run",
+  "seed": 960019,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 890,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 4,
+  "accepted": 1,
+  "declined": 2,
+  "seconds": 31.23823416698724
+ },
+ {
+  "arm": "run",
+  "seed": 960017,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1408,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 48,
+  "accepted": 1,
+  "declined": 14,
+  "seconds": 40.14509966620244
+ },
+ {
+  "arm": "run",
+  "seed": 960021,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1189,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 39,
+  "accepted": 0,
+  "declined": 38,
+  "seconds": 35.96439933311194
+ },
+ {
+  "arm": "run",
+  "seed": 960023,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1225,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 29,
+  "accepted": 2,
+  "declined": 27,
+  "seconds": 24.20276587503031
+ },
+ {
+  "arm": "run",
+  "seed": 960026,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1484,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 17,
+  "accepted": 1,
+  "declined": 7,
+  "seconds": 24.98550804099068
+ },
+ {
+  "arm": "run",
+  "seed": 960027,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1100,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 53,
+  "accepted": 1,
+  "declined": 51,
+  "seconds": 27.795294624986127
+ },
+ {
+  "arm": "run",
+  "seed": 960025,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1577,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 38,
+  "accepted": 1,
+  "declined": 24,
+  "seconds": 32.964992499910295
+ },
+ {
+  "arm": "run",
+  "seed": 960029,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1065,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 61,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 17.96317045809701
+ },
+ {
+  "arm": "run",
+  "seed": 960024,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1638,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 76,
+  "accepted": 1,
+  "declined": 10,
+  "seconds": 39.194592457963154
+ },
+ {
+  "arm": "run",
+  "seed": 960030,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1271,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 7,
+  "accepted": 1,
+  "declined": 4,
+  "seconds": 21.93267329200171
+ },
+ {
+  "arm": "run",
+  "seed": 960022,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1648,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 54,
+  "accepted": 3,
+  "declined": 1,
+  "seconds": 54.50695208297111
+ },
+ {
+  "arm": "run",
+  "seed": 960032,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 910,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 20.534501375164837
+ },
+ {
+  "arm": "run",
+  "seed": 960028,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1455,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 48,
+  "accepted": 7,
+  "declined": 1,
+  "seconds": 46.191635833121836
+ },
+ {
+  "arm": "run",
+  "seed": 960031,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1368,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 19,
+  "accepted": 1,
+  "declined": 18,
+  "seconds": 52.165347791975364
+ },
+ {
+  "arm": "run",
+  "seed": 960033,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1772,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 19,
+  "accepted": 0,
+  "declined": 18,
+  "seconds": 54.167490791063756
+ },
+ {
+  "arm": "run",
+  "seed": 960038,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1335,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 52,
+  "accepted": 2,
+  "declined": 28,
+  "seconds": 37.15059733414091
+ },
+ {
+  "arm": "run",
+  "seed": 960036,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1370,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 32,
+  "accepted": 2,
+  "declined": 23,
+  "seconds": 51.175972749944776
+ },
+ {
+  "arm": "run",
+  "seed": 960037,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1251,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 21,
+  "accepted": 0,
+  "declined": 10,
+  "seconds": 46.5544502499979
+ },
+ {
+  "arm": "run",
+  "seed": 960039,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1065,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 34.838032957864925
+ },
+ {
+  "arm": "run",
+  "seed": 960043,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 606,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 9,
+  "accepted": 0,
+  "declined": 9,
+  "seconds": 8.522519416874275
+ },
+ {
+  "arm": "run",
+  "seed": 960035,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1344,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 69,
+  "accepted": 1,
+  "declined": 5,
+  "seconds": 62.279091249918565
+ },
+ {
+  "arm": "run",
+  "seed": 960044,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 570,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 7,
+  "accepted": 1,
+  "declined": 6,
+  "seconds": 10.341815124964342
+ },
+ {
+  "arm": "run",
+  "seed": 960046,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 712,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 4,
+  "accepted": 1,
+  "declined": 3,
+  "seconds": 12.944184832973406
+ },
+ {
+  "arm": "run",
+  "seed": 960034,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1932,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 53,
+  "accepted": 3,
+  "declined": 2,
+  "seconds": 80.82087958301418
+ },
+ {
+  "arm": "run",
+  "seed": 960040,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1902,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 33,
+  "accepted": 1,
+  "declined": 32,
+  "seconds": 35.84727754094638
+ },
+ {
+  "arm": "run",
+  "seed": 960041,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1623,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 7,
+  "accepted": 2,
+  "declined": 5,
+  "seconds": 33.71319808298722
+ },
+ {
+  "arm": "run",
+  "seed": 960047,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1097,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 29,
+  "accepted": 2,
+  "declined": 3,
+  "seconds": 19.80115845799446
+ },
+ {
+  "arm": "run",
+  "seed": 960048,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1062,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 51,
+  "accepted": 2,
+  "declined": 1,
+  "seconds": 22.245349125005305
+ },
+ {
+  "arm": "run",
+  "seed": 960045,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1088,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 69,
+  "accepted": 2,
+  "declined": 5,
+  "seconds": 34.9399883330334
+ },
+ {
+  "arm": "run",
+  "seed": 960050,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 767,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 14.807360833045095
+ },
+ {
+  "arm": "run",
+  "seed": 960051,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1017,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 55,
+  "accepted": 0,
+  "declined": 35,
+  "seconds": 19.1533296671696
+ },
+ {
+  "arm": "run",
+  "seed": 960049,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 823,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 24.702993750106543
+ },
+ {
+  "arm": "run",
+  "seed": 960042,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1738,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 150,
+  "accepted": 3,
+  "declined": 77,
+  "seconds": 47.64888345799409
+ },
+ {
+  "arm": "run",
+  "seed": 960053,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1125,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 25,
+  "accepted": 2,
+  "declined": 22,
+  "seconds": 19.382169916993007
+ },
+ {
+  "arm": "run",
+  "seed": 960054,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1041,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 8,
+  "accepted": 0,
+  "declined": 8,
+  "seconds": 24.02793937479146
+ },
+ {
+  "arm": "run",
+  "seed": 960060,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 848,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 4,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 8.880536749958992
+ },
+ {
+  "arm": "run",
+  "seed": 960056,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 757,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 11,
+  "accepted": 1,
+  "declined": 10,
+  "seconds": 20.858408250147477
+ },
+ {
+  "arm": "run",
+  "seed": 960052,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1307,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 89,
+  "accepted": 4,
+  "declined": 1,
+  "seconds": 40.07367070810869
+ },
+ {
+  "arm": "run",
+  "seed": 960055,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1191,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 20,
+  "accepted": 0,
+  "declined": 20,
+  "seconds": 36.462038417113945
+ },
+ {
+  "arm": "run",
+  "seed": 960057,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1270,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 15,
+  "accepted": 2,
+  "declined": 2,
+  "seconds": 38.298182541970164
+ },
+ {
+  "arm": "run",
+  "seed": 960058,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1389,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 56,
+  "accepted": 2,
+  "declined": 38,
+  "seconds": 41.04828991717659
+ },
+ {
+  "arm": "run",
+  "seed": 960061,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1871,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 10,
+  "accepted": 2,
+  "declined": 6,
+  "seconds": 34.91948379180394
+ },
+ {
+  "arm": "run",
+  "seed": 960064,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1088,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 22,
+  "accepted": 4,
+  "declined": 1,
+  "seconds": 31.81821233406663
+ },
+ {
+  "arm": "run",
+  "seed": 960067,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 777,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 12,
+  "accepted": 0,
+  "declined": 2,
+  "seconds": 15.098205624846742
+ },
+ {
+  "arm": "run",
+  "seed": 960063,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1385,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 81,
+  "accepted": 4,
+  "declined": 24,
+  "seconds": 44.64594258298166
+ },
+ {
+  "arm": "run",
+  "seed": 960059,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1551,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 62,
+  "accepted": 3,
+  "declined": 31,
+  "seconds": 57.95878500002436
+ },
+ {
+  "arm": "run",
+  "seed": 960062,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1430,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 6,
+  "accepted": 0,
+  "declined": 6,
+  "seconds": 51.801606541033834
+ },
+ {
+  "arm": "run",
+  "seed": 960068,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1057,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 21,
+  "accepted": 4,
+  "declined": 1,
+  "seconds": 32.788875750033185
+ },
+ {
+  "arm": "run",
+  "seed": 960066,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1478,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 43,
+  "accepted": 3,
+  "declined": 24,
+  "seconds": 49.90131012513302
+ },
+ {
+  "arm": "run",
+  "seed": 960069,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1223,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 73,
+  "accepted": 3,
+  "declined": 35,
+  "seconds": 35.28711883304641
+ },
+ {
+  "arm": "run",
+  "seed": 960073,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1036,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 27.86315124994144
+ },
+ {
+  "arm": "run",
+  "seed": 960071,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1601,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 62,
+  "accepted": 4,
+  "declined": 0,
+  "seconds": 40.517654167022556
+ },
+ {
+  "arm": "run",
+  "seed": 960070,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1200,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 68,
+  "accepted": 3,
+  "declined": 52,
+  "seconds": 46.59747104207054
+ },
+ {
+  "arm": "run",
+  "seed": 960074,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 962,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 64,
+  "accepted": 0,
+  "declined": 54,
+  "seconds": 25.562757999869063
+ },
+ {
+  "arm": "run",
+  "seed": 960075,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1253,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 22.14896354195662
+ },
+ {
+  "arm": "run",
+  "seed": 960072,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 2364,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 239,
+  "accepted": 2,
+  "declined": 120,
+  "seconds": 50.2200005420018
+ },
+ {
+  "arm": "run",
+  "seed": 960078,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 828,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 17,
+  "accepted": 0,
+  "declined": 16,
+  "seconds": 13.19380358303897
+ },
+ {
+  "arm": "run",
+  "seed": 960065,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 2586,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 209,
+  "accepted": 5,
+  "declined": 83,
+  "seconds": 84.34221495804377
+ },
+ {
+  "arm": "run",
+  "seed": 960076,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1380,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 88,
+  "accepted": 4,
+  "declined": 4,
+  "seconds": 24.355321042006835
+ },
+ {
+  "arm": "run",
+  "seed": 960082,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1026,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 10,
+  "accepted": 2,
+  "declined": 6,
+  "seconds": 16.585997791960835
+ },
+ {
+  "arm": "run",
+  "seed": 960083,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 978,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 14,
+  "accepted": 0,
+  "declined": 13,
+  "seconds": 15.081848458852619
+ },
+ {
+  "arm": "run",
+  "seed": 960077,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1722,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 79,
+  "accepted": 2,
+  "declined": 11,
+  "seconds": 42.4916687910445
+ },
+ {
+  "arm": "run",
+  "seed": 960084,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1044,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 14,
+  "accepted": 0,
+  "declined": 13,
+  "seconds": 26.076618167106062
+ },
+ {
+  "arm": "run",
+  "seed": 960081,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 973,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 22,
+  "accepted": 4,
+  "declined": 0,
+  "seconds": 38.0043778331019
+ },
+ {
+  "arm": "run",
+  "seed": 960088,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1010,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 8,
+  "accepted": 0,
+  "declined": 8,
+  "seconds": 21.76977266697213
+ },
+ {
+  "arm": "run",
+  "seed": 960079,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 2441,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 170,
+  "accepted": 1,
+  "declined": 5,
+  "seconds": 53.64929741690867
+ },
+ {
+  "arm": "run",
+  "seed": 960087,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1333,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 3,
+  "accepted": 0,
+  "declined": 3,
+  "seconds": 34.22349804197438
+ },
+ {
+  "arm": "run",
+  "seed": 960086,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1184,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 52,
+  "accepted": 0,
+  "declined": 52,
+  "seconds": 36.17565112491138
+ },
+ {
+  "arm": "run",
+  "seed": 960080,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 2328,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 111,
+  "accepted": 4,
+  "declined": 34,
+  "seconds": 64.02429104107432
+ },
+ {
+  "arm": "run",
+  "seed": 960089,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1306,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 60,
+  "accepted": 2,
+  "declined": 5,
+  "seconds": 31.63030366692692
+ },
+ {
+  "arm": "run",
+  "seed": 960090,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1307,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 72,
+  "accepted": 3,
+  "declined": 5,
+  "seconds": 28.313162291888148
+ },
+ {
+  "arm": "run",
+  "seed": 960094,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1057,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 31,
+  "accepted": 0,
+  "declined": 10,
+  "seconds": 26.362105291802436
+ },
+ {
+  "arm": "run",
+  "seed": 960091,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1017,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 14,
+  "accepted": 0,
+  "declined": 14,
+  "seconds": 33.577325749909505
+ },
+ {
+  "arm": "run",
+  "seed": 960093,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1510,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 68,
+  "accepted": 2,
+  "declined": 44,
+  "seconds": 38.09040208393708
+ },
+ {
+  "arm": "run",
+  "seed": 960095,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1743,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 77,
+  "accepted": 1,
+  "declined": 58,
+  "seconds": 31.1520588749554
+ },
+ {
+  "arm": "run",
+  "seed": 960097,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1313,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 29,
+  "accepted": 0,
+  "declined": 15,
+  "seconds": 36.959246459184214
+ },
+ {
+  "arm": "run",
+  "seed": 960096,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1442,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 110,
+  "accepted": 8,
+  "declined": 25,
+  "seconds": 47.40548083395697
+ },
+ {
+  "arm": "run",
+  "seed": 960098,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1540,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 32,
+  "accepted": 0,
+  "declined": 25,
+  "seconds": 30.04097920912318
+ },
+ {
+  "arm": "run",
+  "seed": 960092,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1804,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 20,
+  "accepted": 3,
+  "declined": 0,
+  "seconds": 63.71729787508957
+ },
+ {
+  "arm": "run",
+  "seed": 960085,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 2580,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 198,
+  "accepted": 0,
+  "declined": 152,
+  "seconds": 106.38007845799439
+ },
+ {
+  "arm": "run",
+  "seed": 960099,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1175,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 61,
+  "accepted": 2,
+  "declined": 38,
+  "seconds": 32.28665858414024
+ },
+ {
+  "arm": "run",
+  "seed": 960100,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1047,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 33,
+  "accepted": 0,
+  "declined": 32,
+  "seconds": 30.876578291878104
+ },
+ {
+  "arm": "run",
+  "seed": 960101,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1218,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 39.59419362503104
+ },
+ {
+  "arm": "run",
+  "seed": 960102,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1053,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 10,
+  "accepted": 0,
+  "declined": 5,
+  "seconds": 37.565488749882206
+ },
+ {
+  "arm": "run",
+  "seed": 960106,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1279,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 26,
+  "accepted": 1,
+  "declined": 13,
+  "seconds": 30.008635458070785
+ },
+ {
+  "arm": "run",
+  "seed": 960107,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1019,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 16,
+  "accepted": 1,
+  "declined": 1,
+  "seconds": 29.60763725009747
+ },
+ {
+  "arm": "run",
+  "seed": 960104,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1424,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 118,
+  "accepted": 2,
+  "declined": 52,
+  "seconds": 33.50459491694346
+ },
+ {
+  "arm": "run",
+  "seed": 960105,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1414,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 104,
+  "accepted": 4,
+  "declined": 8,
+  "seconds": 39.63671520887874
+ },
+ {
+  "arm": "run",
+  "seed": 960103,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1388,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 95,
+  "accepted": 2,
+  "declined": 1,
+  "seconds": 42.82587237493135
+ },
+ {
+  "arm": "run",
+  "seed": 960110,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 871,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 33,
+  "accepted": 0,
+  "declined": 4,
+  "seconds": 10.744012583047152
+ },
+ {
+  "arm": "run",
+  "seed": 960109,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 788,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 2,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 21.54708525002934
+ },
+ {
+  "arm": "run",
+  "seed": 960112,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 813,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 45,
+  "accepted": 0,
+  "declined": 36,
+  "seconds": 20.40892850002274
+ },
+ {
+  "arm": "run",
+  "seed": 960114,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 695,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 4,
+  "accepted": 0,
+  "declined": 3,
+  "seconds": 16.280898459022865
+ },
+ {
+  "arm": "run",
+  "seed": 960108,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1172,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 31,
+  "accepted": 3,
+  "declined": 22,
+  "seconds": 46.465645499993116
+ },
+ {
+  "arm": "run",
+  "seed": 960116,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 821,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 13,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 18.146996333962306
+ },
+ {
+  "arm": "run",
+  "seed": 960121,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 872,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 8,
+  "accepted": 0,
+  "declined": 5,
+  "seconds": 12.26149387494661
+ },
+ {
+  "arm": "run",
+  "seed": 960111,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1121,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 21,
+  "accepted": 2,
+  "declined": 2,
+  "seconds": 41.16007854207419
+ },
+ {
+  "arm": "run",
+  "seed": 960119,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 872,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 9,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 23.610022459179163
+ },
+ {
+  "arm": "run",
+  "seed": 960118,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1100,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 7,
+  "accepted": 1,
+  "declined": 6,
+  "seconds": 28.64810391701758
+ },
+ {
+  "arm": "run",
+  "seed": 960115,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 2223,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 65,
+  "accepted": 5,
+  "declined": 36,
+  "seconds": 52.8497996670194
+ },
+ {
+  "arm": "run",
+  "seed": 960123,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1122,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 18,
+  "accepted": 0,
+  "declined": 18,
+  "seconds": 24.650136541109532
+ },
+ {
+  "arm": "run",
+  "seed": 960120,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1529,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 47.125810167053714
+ },
+ {
+  "arm": "run",
+  "seed": 960117,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 2269,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 69,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 68.48196808318608
+ },
+ {
+  "arm": "run",
+  "seed": 960122,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1228,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 11,
+  "accepted": 0,
+  "declined": 6,
+  "seconds": 41.73492216691375
+ },
+ {
+  "arm": "run",
+  "seed": 960127,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1061,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 21,
+  "accepted": 1,
+  "declined": 20,
+  "seconds": 16.804979040985927
+ },
+ {
+  "arm": "run",
+  "seed": 960125,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 900,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 38.83311975002289
+ },
+ {
+  "arm": "run",
+  "seed": 960130,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1200,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 22,
+  "accepted": 2,
+  "declined": 19,
+  "seconds": 21.626453584060073
+ },
+ {
+  "arm": "run",
+  "seed": 960126,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1440,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 108,
+  "accepted": 1,
+  "declined": 8,
+  "seconds": 42.212553458986804
+ },
+ {
+  "arm": "run",
+  "seed": 960124,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1636,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 99,
+  "accepted": 1,
+  "declined": 31,
+  "seconds": 56.6343726250343
+ },
+ {
+  "arm": "run",
+  "seed": 960128,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1503,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 43,
+  "accepted": 0,
+  "declined": 10,
+  "seconds": 32.869166917167604
+ },
+ {
+  "arm": "run",
+  "seed": 960129,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1115,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 58,
+  "accepted": 0,
+  "declined": 18,
+  "seconds": 30.634295999770984
+ },
+ {
+  "arm": "run",
+  "seed": 960131,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1278,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 33,
+  "accepted": 1,
+  "declined": 4,
+  "seconds": 31.734724167035893
+ },
+ {
+  "arm": "run",
+  "seed": 960132,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1069,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 15,
+  "accepted": 2,
+  "declined": 11,
+  "seconds": 30.04597599990666
+ },
+ {
+  "arm": "run",
+  "seed": 960113,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "any_bankrupt": false,
+  "proposed": 203,
+  "accepted": 2,
+  "declined": 194,
+  "seconds": 121.78201020904817
+ },
+ {
+  "arm": "run",
+  "seed": 960134,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1480,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 14,
+  "accepted": 2,
+  "declined": 2,
+  "seconds": 22.87197162490338
+ },
+ {
+  "arm": "run",
+  "seed": 960135,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 919,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 22.485708042047918
+ },
+ {
+  "arm": "run",
+  "seed": 960140,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 667,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 14,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 15.98929287493229
+ },
+ {
+  "arm": "run",
+  "seed": 960137,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 808,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 29.52744041592814
+ },
+ {
+  "arm": "run",
+  "seed": 960138,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1168,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 35,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 26.771682125050575
+ },
+ {
+  "arm": "run",
+  "seed": 960139,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 922,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 32,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 23.15726445801556
+ },
+ {
+  "arm": "run",
+  "seed": 960133,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1386,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 78,
+  "accepted": 1,
+  "declined": 76,
+  "seconds": 41.79912570910528
+ },
+ {
+  "arm": "run",
+  "seed": 960136,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1575,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 141,
+  "accepted": 0,
+  "declined": 62,
+  "seconds": 45.52696416596882
+ },
+ {
+  "arm": "run",
+  "seed": 960144,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 939,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 2,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 18.474785500206053
+ },
+ {
+  "arm": "run",
+  "seed": 960141,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1118,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 6,
+  "accepted": 0,
+  "declined": 5,
+  "seconds": 37.90266879205592
+ },
+ {
+  "arm": "run",
+  "seed": 960146,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1262,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 35,
+  "accepted": 1,
+  "declined": 34,
+  "seconds": 24.637522457865998
+ },
+ {
+  "arm": "run",
+  "seed": 960143,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 927,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 37,
+  "accepted": 2,
+  "declined": 15,
+  "seconds": 30.605461499886587
+ },
+ {
+  "arm": "run",
+  "seed": 960148,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1283,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 81,
+  "accepted": 0,
+  "declined": 61,
+  "seconds": 17.720695208059624
+ },
+ {
+  "arm": "run",
+  "seed": 960145,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1189,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 7,
+  "accepted": 0,
+  "declined": 7,
+  "seconds": 35.648299291031435
+ },
+ {
+  "arm": "run",
+  "seed": 960151,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1016,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 68,
+  "accepted": 1,
+  "declined": 34,
+  "seconds": 14.01872287504375
+ },
+ {
+  "arm": "run",
+  "seed": 960153,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1185,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 74,
+  "accepted": 1,
+  "declined": 11,
+  "seconds": 14.197110500186682
+ },
+ {
+  "arm": "run",
+  "seed": 960147,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 982,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 40.150700208032504
+ },
+ {
+  "arm": "run",
+  "seed": 960149,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1380,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 11,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 34.416479957988486
+ },
+ {
+  "arm": "run",
+  "seed": 960154,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1056,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 30,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 24.43506950000301
+ },
+ {
+  "arm": "run",
+  "seed": 960156,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1056,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 24,
+  "accepted": 0,
+  "declined": 10,
+  "seconds": 19.385712624993175
+ },
+ {
+  "arm": "run",
+  "seed": 960152,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1413,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 10,
+  "accepted": 1,
+  "declined": 9,
+  "seconds": 36.817598750116304
+ },
+ {
+  "arm": "run",
+  "seed": 960155,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1163,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 66,
+  "accepted": 0,
+  "declined": 2,
+  "seconds": 27.969849542016163
+ },
+ {
+  "arm": "run",
+  "seed": 960142,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1810,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 106,
+  "accepted": 0,
+  "declined": 80,
+  "seconds": 88.03360925009474
+ },
+ {
+  "arm": "run",
+  "seed": 960157,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1112,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 13,
+  "accepted": 0,
+  "declined": 2,
+  "seconds": 39.60550354188308
+ },
+ {
+  "arm": "run",
+  "seed": 960161,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 718,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 14,
+  "accepted": 0,
+  "declined": 9,
+  "seconds": 19.29095545806922
+ },
+ {
+  "arm": "run",
+  "seed": 960150,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1627,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 91,
+  "accepted": 2,
+  "declined": 6,
+  "seconds": 65.22106583300047
+ },
+ {
+  "arm": "run",
+  "seed": 960160,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1313,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 11,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 33.35680508404039
+ },
+ {
+  "arm": "run",
+  "seed": 960159,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1262,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 34.73073829198256
+ },
+ {
+  "arm": "run",
+  "seed": 960165,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 829,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 6,
+  "accepted": 1,
+  "declined": 1,
+  "seconds": 22.159681082936004
+ },
+ {
+  "arm": "run",
+  "seed": 960168,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 850,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 22,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 11.567963124951348
+ },
+ {
+  "arm": "run",
+  "seed": 960164,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1134,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 3,
+  "accepted": 1,
+  "declined": 2,
+  "seconds": 24.153820666950196
+ },
+ {
+  "arm": "run",
+  "seed": 960158,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1234,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 4,
+  "accepted": 1,
+  "declined": 3,
+  "seconds": 58.44927016599104
+ },
+ {
+  "arm": "run",
+  "seed": 960163,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1550,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 36.35068016592413
+ },
+ {
+  "arm": "run",
+  "seed": 960173,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 824,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 26.20928716706112
+ },
+ {
+  "arm": "run",
+  "seed": 960162,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1652,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 9,
+  "accepted": 1,
+  "declined": 1,
+  "seconds": 73.31934233405627
+ },
+ {
+  "arm": "run",
+  "seed": 960172,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1306,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 31.930963959079236
+ },
+ {
+  "arm": "run",
+  "seed": 960166,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1629,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 137,
+  "accepted": 0,
+  "declined": 49,
+  "seconds": 52.772976082982495
+ },
+ {
+  "arm": "run",
+  "seed": 960167,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1326,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 48.27634104108438
+ },
+ {
+  "arm": "run",
+  "seed": 960169,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1580,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 41,
+  "accepted": 2,
+  "declined": 39,
+  "seconds": 39.444958166917786
+ },
+ {
+  "arm": "run",
+  "seed": 960170,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1131,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 17,
+  "accepted": 0,
+  "declined": 7,
+  "seconds": 39.13236104208045
+ },
+ {
+  "arm": "run",
+  "seed": 960180,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 844,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 11,
+  "accepted": 1,
+  "declined": 10,
+  "seconds": 14.959557791939005
+ },
+ {
+  "arm": "run",
+  "seed": 960174,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1171,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 25.242369040846825
+ },
+ {
+  "arm": "run",
+  "seed": 960171,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1489,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 16,
+  "accepted": 1,
+  "declined": 14,
+  "seconds": 60.1486940830946
+ },
+ {
+  "arm": "run",
+  "seed": 960177,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1344,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 37,
+  "accepted": 1,
+  "declined": 18,
+  "seconds": 27.363914084155113
+ },
+ {
+  "arm": "run",
+  "seed": 960175,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1040,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 11,
+  "accepted": 1,
+  "declined": 6,
+  "seconds": 35.1981295410078
+ },
+ {
+  "arm": "run",
+  "seed": 960179,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 998,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 4,
+  "accepted": 1,
+  "declined": 3,
+  "seconds": 36.54980070795864
+ },
+ {
+  "arm": "run",
+  "seed": 960178,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1453,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 35,
+  "accepted": 0,
+  "declined": 15,
+  "seconds": 53.77312708296813
+ },
+ {
+  "arm": "run",
+  "seed": 960183,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1100,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 69,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 31.231370790861547
+ },
+ {
+  "arm": "run",
+  "seed": 960182,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1128,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 37.92094458313659
+ },
+ {
+  "arm": "run",
+  "seed": 960181,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1770,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 107,
+  "accepted": 1,
+  "declined": 81,
+  "seconds": 48.921808999963105
+ },
+ {
+  "arm": "run",
+  "seed": 960176,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 2344,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 180,
+  "accepted": 3,
+  "declined": 54,
+  "seconds": 74.79126162501052
+ },
+ {
+  "arm": "run",
+  "seed": 960189,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 883,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 4,
+  "accepted": 1,
+  "declined": 3,
+  "seconds": 16.055729125160724
+ },
+ {
+  "arm": "run",
+  "seed": 960184,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1410,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 94,
+  "accepted": 0,
+  "declined": 3,
+  "seconds": 51.72849812498316
+ },
+ {
+  "arm": "run",
+  "seed": 960185,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1209,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 9,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 51.44146024994552
+ },
+ {
+  "arm": "run",
+  "seed": 960187,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 989,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 31,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 33.330307708121836
+ },
+ {
+  "arm": "run",
+  "seed": 960192,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1070,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 5,
+  "accepted": 1,
+  "declined": 2,
+  "seconds": 16.358483250020072
+ },
+ {
+  "arm": "run",
+  "seed": 960186,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 2115,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 25,
+  "accepted": 4,
+  "declined": 3,
+  "seconds": 61.59141141595319
+ },
+ {
+  "arm": "run",
+  "seed": 960188,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 2351,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 141,
+  "accepted": 0,
+  "declined": 128,
+  "seconds": 51.122580291936174
+ },
+ {
+  "arm": "run",
+  "seed": 960190,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1498,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 15,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 42.60651241708547
+ },
+ {
+  "arm": "run",
+  "seed": 960191,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1881,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 126,
+  "accepted": 1,
+  "declined": 69,
+  "seconds": 38.3675507910084
+ },
+ {
+  "arm": "run",
+  "seed": 960194,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 998,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 10,
+  "accepted": 1,
+  "declined": 1,
+  "seconds": 32.722623917041346
+ },
+ {
+  "arm": "run",
+  "seed": 960195,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1042,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 68,
+  "accepted": 5,
+  "declined": 9,
+  "seconds": 35.59397254185751
+ },
+ {
+  "arm": "run",
+  "seed": 960200,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 638,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 4,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 13.296913209138438
+ },
+ {
+  "arm": "run",
+  "seed": 960197,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1321,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 35,
+  "accepted": 2,
+  "declined": 27,
+  "seconds": 27.595810582861304
+ },
+ {
+  "arm": "run",
+  "seed": 960201,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1187,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 19,
+  "accepted": 0,
+  "declined": 7,
+  "seconds": 13.333798041800037
+ },
+ {
+  "arm": "run",
+  "seed": 960193,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1143,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 11,
+  "accepted": 1,
+  "declined": 5,
+  "seconds": 52.787345916964114
+ },
+ {
+  "arm": "run",
+  "seed": 960199,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1518,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 21,
+  "accepted": 2,
+  "declined": 18,
+  "seconds": 32.94644912518561
+ },
+ {
+  "arm": "run",
+  "seed": 960196,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1291,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 2,
+  "accepted": 0,
+  "declined": 2,
+  "seconds": 57.8304162081331
+ },
+ {
+  "arm": "run",
+  "seed": 960203,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 942,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 16,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 35.23545637517236
+ },
+ {
+  "arm": "run",
+  "seed": 960205,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1148,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 18,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 29.976277417037636
+ },
+ {
+  "arm": "run",
+  "seed": 960206,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 832,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 34,
+  "accepted": 0,
+  "declined": 2,
+  "seconds": 30.925931832985952
+ },
+ {
+  "arm": "run",
+  "seed": 960209,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 707,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 17,
+  "accepted": 0,
+  "declined": 16,
+  "seconds": 10.908187458990142
+ },
+ {
+  "arm": "run",
+  "seed": 960202,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 2050,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 89,
+  "accepted": 4,
+  "declined": 1,
+  "seconds": 49.54298162506893
+ },
+ {
+  "arm": "run",
+  "seed": 960204,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1239,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 46.54360654205084
+ },
+ {
+  "arm": "run",
+  "seed": 960198,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1674,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 47,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 70.4061203750316
+ },
+ {
+  "arm": "run",
+  "seed": 960213,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1038,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 2,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 8.5494675419759
+ },
+ {
+  "arm": "run",
+  "seed": 960207,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1856,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 130,
+  "accepted": 2,
+  "declined": 88,
+  "seconds": 49.89465904212557
+ },
+ {
+  "arm": "run",
+  "seed": 960210,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1254,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 32.34791512507945
+ },
+ {
+  "arm": "run",
+  "seed": 960214,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1247,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 11,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 22.447673791786656
+ },
+ {
+  "arm": "run",
+  "seed": 960208,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1552,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 28,
+  "accepted": 2,
+  "declined": 25,
+  "seconds": 49.89274904085323
+ },
+ {
+  "arm": "run",
+  "seed": 960212,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1075,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 28,
+  "accepted": 1,
+  "declined": 27,
+  "seconds": 30.412138916086406
+ },
+ {
+  "arm": "run",
+  "seed": 960217,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1006,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 18,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 31.695247791940346
+ },
+ {
+  "arm": "run",
+  "seed": 960221,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1071,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 24.414108916185796
+ },
+ {
+  "arm": "run",
+  "seed": 960215,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1634,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 86,
+  "accepted": 1,
+  "declined": 72,
+  "seconds": 49.887001916067675
+ },
+ {
+  "arm": "run",
+  "seed": 960216,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1132,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 46.554329791106284
+ },
+ {
+  "arm": "run",
+  "seed": 960219,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 985,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 22,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 30.731507000047714
+ },
+ {
+  "arm": "run",
+  "seed": 960220,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1627,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 70,
+  "accepted": 2,
+  "declined": 6,
+  "seconds": 34.40066499984823
+ },
+ {
+  "arm": "run",
+  "seed": 960222,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 877,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 11,
+  "accepted": 0,
+  "declined": 3,
+  "seconds": 11.86418666713871
+ },
+ {
+  "arm": "run",
+  "seed": 960218,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 2183,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 107,
+  "accepted": 6,
+  "declined": 65,
+  "seconds": 45.62239779205993
+ },
+ {
+  "arm": "run",
+  "seed": 960223,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1628,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 104,
+  "accepted": 3,
+  "declined": 53,
+  "seconds": 24.445378709118813
+ },
+ {
+  "arm": "run",
+  "seed": 960225,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 746,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 23.775003584101796
+ },
+ {
+  "arm": "run",
+  "seed": 960229,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 896,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 25,
+  "accepted": 0,
+  "declined": 24,
+  "seconds": 18.992359834024683
+ },
+ {
+  "arm": "run",
+  "seed": 960226,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1211,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 21,
+  "accepted": 3,
+  "declined": 3,
+  "seconds": 29.175999792059883
+ },
+ {
+  "arm": "run",
+  "seed": 960228,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1188,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 49,
+  "accepted": 0,
+  "declined": 28,
+  "seconds": 22.68456312501803
+ },
+ {
+  "arm": "run",
+  "seed": 960227,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1293,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 72,
+  "accepted": 0,
+  "declined": 31,
+  "seconds": 28.868035041028634
+ },
+ {
+  "arm": "run",
+  "seed": 960234,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 533,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 6.432917499914765
+ },
+ {
+  "arm": "run",
+  "seed": 960211,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "any_bankrupt": false,
+  "proposed": 320,
+  "accepted": 0,
+  "declined": 128,
+  "seconds": 112.24099058378488
+ },
+ {
+  "arm": "run",
+  "seed": 960224,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1432,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 9,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 48.879280334105715
+ },
+ {
+  "arm": "run",
+  "seed": 960231,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1197,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 65,
+  "accepted": 1,
+  "declined": 47,
+  "seconds": 25.901729042176157
+ },
+ {
+  "arm": "run",
+  "seed": 960233,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1651,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 165,
+  "accepted": 4,
+  "declined": 66,
+  "seconds": 25.760993832955137
+ },
+ {
+  "arm": "run",
+  "seed": 960239,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 583,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 8,
+  "accepted": 0,
+  "declined": 7,
+  "seconds": 15.146327499998733
+ },
+ {
+  "arm": "run",
+  "seed": 960232,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1078,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 20,
+  "accepted": 0,
+  "declined": 19,
+  "seconds": 37.96383487503044
+ },
+ {
+  "arm": "run",
+  "seed": 960230,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1339,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 48,
+  "accepted": 2,
+  "declined": 33,
+  "seconds": 48.24915658403188
+ },
+ {
+  "arm": "run",
+  "seed": 960237,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1219,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 22,
+  "accepted": 2,
+  "declined": 3,
+  "seconds": 25.01251241704449
+ },
+ {
+  "arm": "run",
+  "seed": 960240,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 867,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 21.89635125012137
+ },
+ {
+  "arm": "run",
+  "seed": 960235,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1403,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 66,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 49.89792758296244
+ },
+ {
+  "arm": "run",
+  "seed": 960243,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 964,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 33,
+  "accepted": 2,
+  "declined": 19,
+  "seconds": 21.378303333884105
+ },
+ {
+  "arm": "run",
+  "seed": 960241,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1196,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 38,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 31.844769000075758
+ },
+ {
+  "arm": "run",
+  "seed": 960242,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1229,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 11,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 33.26576245902106
+ },
+ {
+  "arm": "run",
+  "seed": 960236,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 2286,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 62,
+  "accepted": 1,
+  "declined": 22,
+  "seconds": 70.71105504198931
+ },
+ {
+  "arm": "run",
+  "seed": 960238,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1556,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 15,
+  "accepted": 2,
+  "declined": 2,
+  "seconds": 59.81284470902756
+ },
+ {
+  "arm": "run",
+  "seed": 960248,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 690,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 10,
+  "accepted": 0,
+  "declined": 10,
+  "seconds": 12.393144167028368
+ },
+ {
+  "arm": "run",
+  "seed": 960245,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1867,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 84,
+  "accepted": 0,
+  "declined": 33,
+  "seconds": 34.98206170811318
+ },
+ {
+  "arm": "run",
+  "seed": 960244,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1254,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 45,
+  "accepted": 2,
+  "declined": 11,
+  "seconds": 49.36930500017479
+ },
+ {
+  "arm": "run",
+  "seed": 960249,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 948,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 59,
+  "accepted": 3,
+  "declined": 0,
+  "seconds": 32.577384957810864
+ },
+ {
+  "arm": "run",
+  "seed": 960252,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1831,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 150,
+  "accepted": 2,
+  "declined": 8,
+  "seconds": 25.289924875134602
+ },
+ {
+  "arm": "run",
+  "seed": 960253,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 703,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 3,
+  "accepted": 1,
+  "declined": 2,
+  "seconds": 22.731386583996937
+ },
+ {
+  "arm": "run",
+  "seed": 960254,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 794,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 17.943195832893252
+ },
+ {
+  "arm": "run",
+  "seed": 960246,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1254,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 56.00930308387615
+ },
+ {
+  "arm": "run",
+  "seed": 960251,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1646,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 120,
+  "accepted": 1,
+  "declined": 50,
+  "seconds": 31.283608875004575
+ },
+ {
+  "arm": "run",
+  "seed": 960247,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1293,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 23,
+  "accepted": 3,
+  "declined": 13,
+  "seconds": 49.769392624963075
+ },
+ {
+  "arm": "run",
+  "seed": 960250,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1447,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 29,
+  "accepted": 1,
+  "declined": 2,
+  "seconds": 39.706513334065676
+ },
+ {
+  "arm": "run",
+  "seed": 960256,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1673,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 70,
+  "accepted": 0,
+  "declined": 20,
+  "seconds": 17.33417687495239
+ },
+ {
+  "arm": "run",
+  "seed": 960261,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1227,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 46,
+  "accepted": 1,
+  "declined": 44,
+  "seconds": 23.69432787504047
+ },
+ {
+  "arm": "run",
+  "seed": 960255,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 894,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 15,
+  "accepted": 1,
+  "declined": 7,
+  "seconds": 35.64623191580176
+ },
+ {
+  "arm": "run",
+  "seed": 960259,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1345,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 16,
+  "accepted": 0,
+  "declined": 2,
+  "seconds": 38.23153016716242
+ },
+ {
+  "arm": "run",
+  "seed": 960257,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1114,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 5,
+  "accepted": 0,
+  "declined": 5,
+  "seconds": 42.95012762513943
+ },
+ {
+  "arm": "run",
+  "seed": 960260,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1128,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 27,
+  "accepted": 5,
+  "declined": 20,
+  "seconds": 40.53148862509988
+ },
+ {
+  "arm": "run",
+  "seed": 960262,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 916,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 9,
+  "accepted": 0,
+  "declined": 5,
+  "seconds": 40.17877820786089
+ },
+ {
+  "arm": "run",
+  "seed": 960258,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1533,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 106,
+  "accepted": 4,
+  "declined": 13,
+  "seconds": 52.235784499906
+ },
+ {
+  "arm": "run",
+  "seed": 960267,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 990,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 31,
+  "accepted": 3,
+  "declined": 0,
+  "seconds": 25.271841041045263
+ },
+ {
+  "arm": "run",
+  "seed": 960264,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1497,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 79,
+  "accepted": 3,
+  "declined": 35,
+  "seconds": 41.40017220797017
+ },
+ {
+  "arm": "run",
+  "seed": 960263,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 2165,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 70,
+  "accepted": 0,
+  "declined": 65,
+  "seconds": 56.975472833029926
+ },
+ {
+  "arm": "run",
+  "seed": 960265,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1191,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 8,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 47.915248750010505
+ },
+ {
+  "arm": "run",
+  "seed": 960268,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1752,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 103,
+  "accepted": 1,
+  "declined": 39,
+  "seconds": 40.670721291797236
+ },
+ {
+  "arm": "run",
+  "seed": 960270,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1058,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 58,
+  "accepted": 0,
+  "declined": 36,
+  "seconds": 31.50409625004977
+ },
+ {
+  "arm": "run",
+  "seed": 960271,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1096,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 17,
+  "accepted": 2,
+  "declined": 4,
+  "seconds": 28.56265379115939
+ },
+ {
+  "arm": "run",
+  "seed": 960266,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1336,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 57.99590545799583
+ },
+ {
+  "arm": "run",
+  "seed": 960274,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 700,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 9,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 22.135526665952057
+ },
+ {
+  "arm": "run",
+  "seed": 960276,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 836,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 24,
+  "accepted": 0,
+  "declined": 3,
+  "seconds": 20.165936667006463
+ },
+ {
+  "arm": "run",
+  "seed": 960275,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 971,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 10,
+  "accepted": 0,
+  "declined": 6,
+  "seconds": 26.399549207882956
+ },
+ {
+  "arm": "run",
+  "seed": 960273,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1053,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 23,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 39.839514792198315
+ },
+ {
+  "arm": "run",
+  "seed": 960269,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1481,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 15,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 64.61149754188955
+ },
+ {
+  "arm": "run",
+  "seed": 960277,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 860,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 6,
+  "accepted": 4,
+  "declined": 0,
+  "seconds": 23.79542287508957
+ },
+ {
+  "arm": "run",
+  "seed": 960272,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1252,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 14,
+  "accepted": 1,
+  "declined": 13,
+  "seconds": 49.467229624977335
+ },
+ {
+  "arm": "run",
+  "seed": 960278,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 899,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 8,
+  "accepted": 0,
+  "declined": 2,
+  "seconds": 21.41341433301568
+ },
+ {
+  "arm": "run",
+  "seed": 960279,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1158,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 21,
+  "accepted": 0,
+  "declined": 2,
+  "seconds": 25.128238291013986
+ },
+ {
+  "arm": "run",
+  "seed": 960280,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 2229,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 213,
+  "accepted": 0,
+  "declined": 87,
+  "seconds": 27.77710787509568
+ },
+ {
+  "arm": "run",
+  "seed": 960282,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 921,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 15,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 31.569091042038053
+ },
+ {
+  "arm": "run",
+  "seed": 960286,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 853,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 19,
+  "accepted": 1,
+  "declined": 8,
+  "seconds": 23.30351737490855
+ },
+ {
+  "arm": "run",
+  "seed": 960284,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1140,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 83,
+  "accepted": 1,
+  "declined": 41,
+  "seconds": 32.19828779087402
+ },
+ {
+  "arm": "run",
+  "seed": 960283,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1118,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 30,
+  "accepted": 0,
+  "declined": 27,
+  "seconds": 38.05461200000718
+ },
+ {
+  "arm": "run",
+  "seed": 960288,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1017,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 50,
+  "accepted": 1,
+  "declined": 34,
+  "seconds": 25.178156791022047
+ },
+ {
+  "arm": "run",
+  "seed": 960285,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1418,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 9,
+  "accepted": 1,
+  "declined": 7,
+  "seconds": 43.01715149986558
+ },
+ {
+  "arm": "run",
+  "seed": 960287,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1208,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 76,
+  "accepted": 1,
+  "declined": 33,
+  "seconds": 36.13270716601983
+ },
+ {
+  "arm": "run",
+  "seed": 960293,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 492,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 12,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 5.735442207893357
+ },
+ {
+  "arm": "run",
+  "seed": 960281,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1403,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 25,
+  "accepted": 3,
+  "declined": 13,
+  "seconds": 55.54900758294389
+ },
+ {
+  "arm": "run",
+  "seed": 960291,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1080,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 22.31760008307174
+ },
+ {
+  "arm": "run",
+  "seed": 960289,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1579,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 70,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 33.59739516605623
+ },
+ {
+  "arm": "run",
+  "seed": 960294,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 959,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 2,
+  "accepted": 0,
+  "declined": 2,
+  "seconds": 26.18968875007704
+ },
+ {
+  "arm": "run",
+  "seed": 960290,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1067,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 15,
+  "accepted": 0,
+  "declined": 2,
+  "seconds": 46.72510287491605
+ },
+ {
+  "arm": "run",
+  "seed": 960292,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1040,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 4,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 39.81690033315681
+ },
+ {
+  "arm": "run",
+  "seed": 960296,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1535,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 89,
+  "accepted": 1,
+  "declined": 3,
+  "seconds": 31.33136404189281
+ },
+ {
+  "arm": "run",
+  "seed": 960298,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 919,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 17,
+  "accepted": 1,
+  "declined": 16,
+  "seconds": 28.95672862487845
+ },
+ {
+  "arm": "run",
+  "seed": 960297,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1157,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 20,
+  "accepted": 2,
+  "declined": 1,
+  "seconds": 43.09926191694103
+ },
+ {
+  "arm": "run",
+  "seed": 960303,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1161,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 5,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 20.96026033302769
+ },
+ {
+  "arm": "run",
+  "seed": 960304,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 781,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 32,
+  "accepted": 0,
+  "declined": 25,
+  "seconds": 25.199857542058453
+ },
+ {
+  "arm": "run",
+  "seed": 960301,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1388,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 6,
+  "accepted": 0,
+  "declined": 5,
+  "seconds": 28.495306291850284
+ },
+ {
+  "arm": "run",
+  "seed": 960305,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1007,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 5,
+  "accepted": 1,
+  "declined": 2,
+  "seconds": 29.7166386670433
+ },
+ {
+  "arm": "run",
+  "seed": 960299,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1001,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 34,
+  "accepted": 3,
+  "declined": 1,
+  "seconds": 38.705491750035435
+ },
+ {
+  "arm": "run",
+  "seed": 960307,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1044,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 31.713474750053138
+ },
+ {
+  "arm": "run",
+  "seed": 960306,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1524,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 9,
+  "accepted": 0,
+  "declined": 8,
+  "seconds": 54.91209658398293
+ },
+ {
+  "arm": "run",
+  "seed": 960295,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1724,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 154,
+  "accepted": 1,
+  "declined": 105,
+  "seconds": 57.36198500008322
+ },
+ {
+  "arm": "run",
+  "seed": 960309,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1017,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 32.26433474989608
+ },
+ {
+  "arm": "run",
+  "seed": 960308,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1047,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 24,
+  "accepted": 1,
+  "declined": 11,
+  "seconds": 37.12669812492095
+ },
+ {
+  "arm": "run",
+  "seed": 960302,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1420,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 24,
+  "accepted": 2,
+  "declined": 2,
+  "seconds": 66.4766936248634
+ },
+ {
+  "arm": "run",
+  "seed": 960314,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 914,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 25,
+  "accepted": 1,
+  "declined": 12,
+  "seconds": 15.917639250168577
+ },
+ {
+  "arm": "run",
+  "seed": 960313,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1311,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 35,
+  "accepted": 0,
+  "declined": 29,
+  "seconds": 18.592784042004496
+ },
+ {
+  "arm": "run",
+  "seed": 960311,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1473,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 133,
+  "accepted": 0,
+  "declined": 65,
+  "seconds": 36.27353379200213
+ },
+ {
+  "arm": "run",
+  "seed": 960312,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1431,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 69,
+  "accepted": 1,
+  "declined": 58,
+  "seconds": 25.075472875032574
+ },
+ {
+  "arm": "run",
+  "seed": 960318,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1071,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 16,
+  "accepted": 0,
+  "declined": 16,
+  "seconds": 22.364822582807392
+ },
+ {
+  "arm": "run",
+  "seed": 960321,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1511,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 116,
+  "accepted": 1,
+  "declined": 41,
+  "seconds": 17.90450575016439
+ },
+ {
+  "arm": "run",
+  "seed": 960319,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 798,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 4,
+  "accepted": 0,
+  "declined": 4,
+  "seconds": 24.707780375145376
+ },
+ {
+  "arm": "run",
+  "seed": 960315,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1048,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 9,
+  "accepted": 0,
+  "declined": 9,
+  "seconds": 39.04623304097913
+ },
+ {
+  "arm": "run",
+  "seed": 960316,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1565,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 8,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 45.60902216704562
+ },
+ {
+  "arm": "run",
+  "seed": 960310,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1774,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 29,
+  "accepted": 0,
+  "declined": 21,
+  "seconds": 78.68713275017217
+ },
+ {
+  "arm": "run",
+  "seed": 960317,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1407,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 33,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 55.538700042059645
+ },
+ {
+  "arm": "run",
+  "seed": 960322,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1000,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 2,
+  "accepted": 1,
+  "declined": 1,
+  "seconds": 26.95484433299862
+ },
+ {
+  "arm": "run",
+  "seed": 960300,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 175,
+  "accepted": 4,
+  "declined": 1,
+  "seconds": 126.25950516597368
+ },
+ {
+  "arm": "run",
+  "seed": 960323,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1326,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 65,
+  "accepted": 5,
+  "declined": 6,
+  "seconds": 35.90242391591892
+ },
+ {
+  "arm": "run",
+  "seed": 960325,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1000,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 39.66157674998976
+ },
+ {
+  "arm": "run",
+  "seed": 960326,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1532,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 7,
+  "accepted": 0,
+  "declined": 6,
+  "seconds": 35.12546145892702
+ },
+ {
+  "arm": "run",
+  "seed": 960320,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1875,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 95,
+  "accepted": 1,
+  "declined": 9,
+  "seconds": 69.14627612498589
+ },
+ {
+  "arm": "run",
+  "seed": 960327,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1500,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 3,
+  "accepted": 1,
+  "declined": 2,
+  "seconds": 37.48757991590537
+ },
+ {
+  "arm": "run",
+  "seed": 960329,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1013,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 40,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 25.044478457886726
+ },
+ {
+  "arm": "run",
+  "seed": 960330,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1121,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 45,
+  "accepted": 0,
+  "declined": 16,
+  "seconds": 22.606905249878764
+ },
+ {
+  "arm": "run",
+  "seed": 960328,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 659,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 27.18673662492074
+ },
+ {
+  "arm": "run",
+  "seed": 960338,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 640,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 23,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 8.077325582969934
+ },
+ {
+  "arm": "run",
+  "seed": 960324,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 2212,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 180,
+  "accepted": 2,
+  "declined": 88,
+  "seconds": 61.66782654216513
+ },
+ {
+  "arm": "run",
+  "seed": 960332,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1117,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 66,
+  "accepted": 1,
+  "declined": 19,
+  "seconds": 21.583393167005852
+ },
+ {
+  "arm": "run",
+  "seed": 960334,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 976,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 63,
+  "accepted": 4,
+  "declined": 58,
+  "seconds": 24.6377598750405
+ },
+ {
+  "arm": "run",
+  "seed": 960337,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 922,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 15,
+  "accepted": 0,
+  "declined": 15,
+  "seconds": 22.56286087492481
+ },
+ {
+  "arm": "run",
+  "seed": 960333,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1367,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 26,
+  "accepted": 0,
+  "declined": 3,
+  "seconds": 35.411590041127056
+ },
+ {
+  "arm": "run",
+  "seed": 960339,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1217,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 34,
+  "accepted": 3,
+  "declined": 23,
+  "seconds": 21.332022875081748
+ },
+ {
+  "arm": "run",
+  "seed": 960335,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1165,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 43.68054979108274
+ },
+ {
+  "arm": "run",
+  "seed": 960340,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1391,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 24,
+  "accepted": 0,
+  "declined": 24,
+  "seconds": 35.06789379217662
+ },
+ {
+  "arm": "run",
+  "seed": 960342,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 794,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 16,
+  "accepted": 0,
+  "declined": 8,
+  "seconds": 29.899170208955184
+ },
+ {
+  "arm": "run",
+  "seed": 960336,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1826,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 103,
+  "accepted": 4,
+  "declined": 34,
+  "seconds": 54.98354050004855
+ },
+ {
+  "arm": "run",
+  "seed": 960331,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1847,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 33,
+  "accepted": 0,
+  "declined": 33,
+  "seconds": 74.09138033306226
+ },
+ {
+  "arm": "run",
+  "seed": 960347,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 932,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 26,
+  "accepted": 1,
+  "declined": 20,
+  "seconds": 11.798428709153086
+ },
+ {
+  "arm": "run",
+  "seed": 960344,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1180,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 37,
+  "accepted": 1,
+  "declined": 8,
+  "seconds": 34.102496249834076
+ },
+ {
+  "arm": "run",
+  "seed": 960351,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1130,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 19,
+  "accepted": 0,
+  "declined": 9,
+  "seconds": 8.640114417066798
+ },
+ {
+  "arm": "run",
+  "seed": 960349,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1067,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 24.593101042089984
+ },
+ {
+  "arm": "run",
+  "seed": 960350,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 979,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 58,
+  "accepted": 1,
+  "declined": 13,
+  "seconds": 22.79460133309476
+ },
+ {
+  "arm": "run",
+  "seed": 960341,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1413,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 14,
+  "accepted": 0,
+  "declined": 14,
+  "seconds": 67.8433308750391
+ },
+ {
+  "arm": "run",
+  "seed": 960353,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 981,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 4,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 19.497706333873793
+ },
+ {
+  "arm": "run",
+  "seed": 960343,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 2007,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 163,
+  "accepted": 4,
+  "declined": 79,
+  "seconds": 70.6303517499473
+ },
+ {
+  "arm": "run",
+  "seed": 960352,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1349,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 33,
+  "accepted": 1,
+  "declined": 28,
+  "seconds": 37.390169540885836
+ },
+ {
+  "arm": "run",
+  "seed": 960345,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1559,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 95,
+  "accepted": 6,
+  "declined": 26,
+  "seconds": 72.4097172091715
+ },
+ {
+  "arm": "run",
+  "seed": 960354,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1152,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 18,
+  "accepted": 0,
+  "declined": 18,
+  "seconds": 24.155713124899194
+ },
+ {
+  "arm": "run",
+  "seed": 960356,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 915,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 2,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 22.7623214579653
+ },
+ {
+  "arm": "run",
+  "seed": 960357,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 875,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 2,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 22.667697915807366
+ },
+ {
+  "arm": "run",
+  "seed": 960346,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 2064,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 84,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 73.85712241614237
+ },
+ {
+  "arm": "run",
+  "seed": 960348,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 2376,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 168,
+  "accepted": 2,
+  "declined": 110,
+  "seconds": 68.1654250419233
+ },
+ {
+  "arm": "run",
+  "seed": 960363,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 820,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 39,
+  "accepted": 0,
+  "declined": 38,
+  "seconds": 16.137678417144343
+ },
+ {
+  "arm": "run",
+  "seed": 960361,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 741,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 25,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 23.067034916952252
+ },
+ {
+  "arm": "run",
+  "seed": 960367,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 581,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 20,
+  "accepted": 0,
+  "declined": 18,
+  "seconds": 5.614945084089413
+ },
+ {
+  "arm": "run",
+  "seed": 960365,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 777,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 16.013173166196793
+ },
+ {
+  "arm": "run",
+  "seed": 960355,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1506,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 63,
+  "accepted": 1,
+  "declined": 9,
+  "seconds": 59.68459050008096
+ },
+ {
+  "arm": "run",
+  "seed": 960359,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1059,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 14,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 41.450303457910195
+ },
+ {
+  "arm": "run",
+  "seed": 960364,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1182,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 42,
+  "accepted": 0,
+  "declined": 42,
+  "seconds": 31.613872833084315
+ },
+ {
+  "arm": "run",
+  "seed": 960362,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1219,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 12,
+  "accepted": 0,
+  "declined": 12,
+  "seconds": 44.24803266604431
+ },
+ {
+  "arm": "run",
+  "seed": 960358,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1570,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 77,
+  "accepted": 0,
+  "declined": 22,
+  "seconds": 56.882859625155106
+ },
+ {
+  "arm": "run",
+  "seed": 960371,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 550,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 18,
+  "accepted": 1,
+  "declined": 5,
+  "seconds": 7.747622417053208
+ },
+ {
+  "arm": "run",
+  "seed": 960366,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 838,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 32.12035237508826
+ },
+ {
+  "arm": "run",
+  "seed": 960368,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1158,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 80,
+  "accepted": 1,
+  "declined": 3,
+  "seconds": 31.644321833038703
+ },
+ {
+  "arm": "run",
+  "seed": 960374,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1159,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 71,
+  "accepted": 0,
+  "declined": 41,
+  "seconds": 19.28981349989772
+ },
+ {
+  "arm": "run",
+  "seed": 960370,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1082,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 43,
+  "accepted": 4,
+  "declined": 1,
+  "seconds": 34.91711054206826
+ },
+ {
+  "arm": "run",
+  "seed": 960369,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1179,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 43,
+  "accepted": 2,
+  "declined": 37,
+  "seconds": 42.40470854216255
+ },
+ {
+  "arm": "run",
+  "seed": 960372,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1181,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 52,
+  "accepted": 0,
+  "declined": 10,
+  "seconds": 30.582045916002244
+ },
+ {
+  "arm": "run",
+  "seed": 960375,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1040,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 27,
+  "accepted": 0,
+  "declined": 22,
+  "seconds": 27.55565341701731
+ },
+ {
+  "arm": "run",
+  "seed": 960377,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1205,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 63,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 22.663851167075336
+ },
+ {
+  "arm": "run",
+  "seed": 960373,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1035,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 17,
+  "accepted": 3,
+  "declined": 0,
+  "seconds": 39.13205366698094
+ },
+ {
+  "arm": "run",
+  "seed": 960378,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1319,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 70,
+  "accepted": 0,
+  "declined": 7,
+  "seconds": 29.1083338749595
+ },
+ {
+  "arm": "run",
+  "seed": 960380,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1027,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 12,
+  "accepted": 0,
+  "declined": 4,
+  "seconds": 22.706380292074755
+ },
+ {
+  "arm": "run",
+  "seed": 960360,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1929,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 153,
+  "accepted": 9,
+  "declined": 6,
+  "seconds": 98.90916537493467
+ },
+ {
+  "arm": "run",
+  "seed": 960382,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 891,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 29.74083329201676
+ },
+ {
+  "arm": "run",
+  "seed": 960384,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1061,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 37,
+  "accepted": 0,
+  "declined": 3,
+  "seconds": 21.75862062489614
+ },
+ {
+  "arm": "run",
+  "seed": 960381,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1004,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 24,
+  "accepted": 4,
+  "declined": 0,
+  "seconds": 39.692100250162184
+ },
+ {
+  "arm": "run",
+  "seed": 960385,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1124,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 27.90580387483351
+ },
+ {
+  "arm": "run",
+  "seed": 960386,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1417,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 90,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 35.52254695794545
+ },
+ {
+  "arm": "run",
+  "seed": 960383,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1336,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 52.78461958281696
+ },
+ {
+  "arm": "run",
+  "seed": 960387,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1984,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 66,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 42.129178249975666
+ },
+ {
+  "arm": "run",
+  "seed": 960379,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1916,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 139,
+  "accepted": 4,
+  "declined": 11,
+  "seconds": 80.03311512502842
+ },
+ {
+  "arm": "run",
+  "seed": 960391,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 811,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 14,
+  "accepted": 0,
+  "declined": 7,
+  "seconds": 33.153590000001714
+ },
+ {
+  "arm": "run",
+  "seed": 960393,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1167,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 34,
+  "accepted": 1,
+  "declined": 14,
+  "seconds": 31.601414459059015
+ },
+ {
+  "arm": "run",
+  "seed": 960390,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1606,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 37,
+  "accepted": 1,
+  "declined": 36,
+  "seconds": 53.50677950005047
+ },
+ {
+  "arm": "run",
+  "seed": 960376,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 2700,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 160,
+  "accepted": 1,
+  "declined": 128,
+  "seconds": 117.2308143330738
+ },
+ {
+  "arm": "run",
+  "seed": 960388,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1594,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 53,
+  "accepted": 3,
+  "declined": 1,
+  "seconds": 71.73437050008215
+ },
+ {
+  "arm": "run",
+  "seed": 960396,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1156,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 88,
+  "accepted": 1,
+  "declined": 49,
+  "seconds": 20.86567141721025
+ },
+ {
+  "arm": "run",
+  "seed": 960398,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 785,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 15,
+  "accepted": 0,
+  "declined": 15,
+  "seconds": 11.477435916895047
+ },
+ {
+  "arm": "run",
+  "seed": 960395,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1038,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 18,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 29.69991225004196
+ },
+ {
+  "arm": "run",
+  "seed": 960397,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1164,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 10,
+  "accepted": 0,
+  "declined": 5,
+  "seconds": 15.71195433405228
+ },
+ {
+  "arm": "run",
+  "seed": 960392,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1602,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 37,
+  "accepted": 1,
+  "declined": 23,
+  "seconds": 53.683124584145844
+ },
+ {
+  "arm": "run",
+  "seed": 960394,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1424,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 34,
+  "accepted": 5,
+  "declined": 1,
+  "seconds": 46.87470837496221
+ },
+ {
+  "arm": "run",
+  "seed": 960389,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 2757,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 73,
+  "accepted": 0,
+  "declined": 72,
+  "seconds": 96.86580945900641
+ },
+ {
+  "arm": "run",
+  "seed": 960405,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 851,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 11,
+  "accepted": 1,
+  "declined": 10,
+  "seconds": 20.213842208031565
+ },
+ {
+  "arm": "run",
+  "seed": 960402,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1047,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 28.10226241708733
+ },
+ {
+  "arm": "run",
+  "seed": 960406,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 846,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 24,
+  "accepted": 0,
+  "declined": 21,
+  "seconds": 21.82068729097955
+ },
+ {
+  "arm": "run",
+  "seed": 960399,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1710,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 32,
+  "accepted": 1,
+  "declined": 2,
+  "seconds": 49.78809729102068
+ },
+ {
+  "arm": "run",
+  "seed": 960401,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1510,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 30,
+  "accepted": 2,
+  "declined": 5,
+  "seconds": 47.887458875076845
+ },
+ {
+  "arm": "run",
+  "seed": 960407,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1145,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 36,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 37.92844570800662
+ },
+ {
+  "arm": "run",
+  "seed": 960410,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1016,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 45,
+  "accepted": 1,
+  "declined": 44,
+  "seconds": 31.96094537503086
+ },
+ {
+  "arm": "run",
+  "seed": 960400,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1753,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 44,
+  "accepted": 2,
+  "declined": 34,
+  "seconds": 66.97318062488921
+ },
+ {
+  "arm": "run",
+  "seed": 960404,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1638,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 91,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 65.24680233304389
+ },
+ {
+  "arm": "run",
+  "seed": 960411,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 999,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 44,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 29.585970957996324
+ },
+ {
+  "arm": "run",
+  "seed": 960409,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1211,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 19,
+  "accepted": 0,
+  "declined": 10,
+  "seconds": 46.6917917910032
+ },
+ {
+  "arm": "run",
+  "seed": 960413,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 982,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 46,
+  "accepted": 1,
+  "declined": 39,
+  "seconds": 26.652370542054996
+ },
+ {
+  "arm": "run",
+  "seed": 960412,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1099,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 16,
+  "accepted": 2,
+  "declined": 5,
+  "seconds": 43.052791541907936
+ },
+ {
+  "arm": "run",
+  "seed": 960403,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 2024,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 90,
+  "accepted": 3,
+  "declined": 0,
+  "seconds": 88.43462779209949
+ },
+ {
+  "arm": "run",
+  "seed": 960416,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 895,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 14,
+  "accepted": 0,
+  "declined": 14,
+  "seconds": 24.13375341705978
+ },
+ {
+  "arm": "run",
+  "seed": 960408,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 2006,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 74,
+  "accepted": 5,
+  "declined": 11,
+  "seconds": 69.25864891591482
+ },
+ {
+  "arm": "run",
+  "seed": 960415,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 968,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 10,
+  "accepted": 0,
+  "declined": 3,
+  "seconds": 31.443665709113702
+ },
+ {
+  "arm": "run",
+  "seed": 960414,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1438,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 34,
+  "accepted": 2,
+  "declined": 13,
+  "seconds": 43.40817820793018
+ },
+ {
+  "arm": "run",
+  "seed": 960423,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 776,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 7,
+  "accepted": 0,
+  "declined": 7,
+  "seconds": 11.82140416605398
+ },
+ {
+  "arm": "run",
+  "seed": 960419,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1194,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 55,
+  "accepted": 1,
+  "declined": 10,
+  "seconds": 25.033595292130485
+ },
+ {
+  "arm": "run",
+  "seed": 960418,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1071,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 3,
+  "accepted": 0,
+  "declined": 2,
+  "seconds": 39.934608000097796
+ },
+ {
+  "arm": "run",
+  "seed": 960422,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1577,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 16,
+  "accepted": 0,
+  "declined": 10,
+  "seconds": 23.513302916893736
+ },
+ {
+  "arm": "run",
+  "seed": 960417,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1256,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 12,
+  "accepted": 1,
+  "declined": 10,
+  "seconds": 55.6003129160963
+ },
+ {
+  "arm": "run",
+  "seed": 960429,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 834,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 14,
+  "accepted": 1,
+  "declined": 6,
+  "seconds": 19.674275791971013
+ },
+ {
+  "arm": "run",
+  "seed": 960421,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1804,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 128,
+  "accepted": 2,
+  "declined": 11,
+  "seconds": 56.13651983300224
+ },
+ {
+  "arm": "run",
+  "seed": 960427,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1049,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 28,
+  "accepted": 2,
+  "declined": 18,
+  "seconds": 37.683353499975055
+ },
+ {
+  "arm": "run",
+  "seed": 960420,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1068,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 13,
+  "accepted": 0,
+  "declined": 4,
+  "seconds": 62.4684805420693
+ },
+ {
+  "arm": "run",
+  "seed": 960428,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1643,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 14,
+  "accepted": 0,
+  "declined": 13,
+  "seconds": 41.98109537502751
+ },
+ {
+  "arm": "run",
+  "seed": 960424,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1680,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 30,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 60.42689087498002
+ },
+ {
+  "arm": "run",
+  "seed": 960426,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1538,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 39,
+  "accepted": 1,
+  "declined": 11,
+  "seconds": 54.00680320919491
+ },
+ {
+  "arm": "run",
+  "seed": 960425,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1669,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 74,
+  "accepted": 0,
+  "declined": 48,
+  "seconds": 56.79038329189643
+ },
+ {
+  "arm": "run",
+  "seed": 960432,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1002,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 50,
+  "accepted": 2,
+  "declined": 9,
+  "seconds": 22.390714750159532
+ },
+ {
+  "arm": "run",
+  "seed": 960431,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1079,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 30,
+  "accepted": 1,
+  "declined": 19,
+  "seconds": 34.42270029196516
+ },
+ {
+  "arm": "run",
+  "seed": 960436,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 796,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 5,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 24.374495459022
+ },
+ {
+  "arm": "run",
+  "seed": 960440,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 715,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 10.26272508292459
+ },
+ {
+  "arm": "run",
+  "seed": 960439,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 616,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 3,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 15.554290875094011
+ },
+ {
+  "arm": "run",
+  "seed": 960430,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1693,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 133,
+  "accepted": 0,
+  "declined": 77,
+  "seconds": 59.27269899984822
+ },
+ {
+  "arm": "run",
+  "seed": 960433,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 778,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 3,
+  "accepted": 0,
+  "declined": 3,
+  "seconds": 36.57417716598138
+ },
+ {
+  "arm": "run",
+  "seed": 960435,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1133,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 8,
+  "accepted": 0,
+  "declined": 7,
+  "seconds": 37.46995566599071
+ },
+ {
+  "arm": "run",
+  "seed": 960434,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1618,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 37,
+  "accepted": 1,
+  "declined": 15,
+  "seconds": 46.72502249991521
+ },
+ {
+  "arm": "run",
+  "seed": 960441,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1012,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 3,
+  "accepted": 1,
+  "declined": 2,
+  "seconds": 29.187882874859497
+ },
+ {
+  "arm": "run",
+  "seed": 960437,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1141,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 19,
+  "accepted": 0,
+  "declined": 18,
+  "seconds": 51.888513875193894
+ },
+ {
+  "arm": "run",
+  "seed": 960446,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1076,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 17,
+  "accepted": 0,
+  "declined": 11,
+  "seconds": 26.744480166817084
+ },
+ {
+  "arm": "run",
+  "seed": 960443,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1576,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 17,
+  "accepted": 1,
+  "declined": 2,
+  "seconds": 37.094832374947146
+ },
+ {
+  "arm": "run",
+  "seed": 960445,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1337,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 56,
+  "accepted": 0,
+  "declined": 46,
+  "seconds": 35.28132270812057
+ },
+ {
+  "arm": "run",
+  "seed": 960442,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 906,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 12,
+  "accepted": 0,
+  "declined": 11,
+  "seconds": 44.92090274998918
+ },
+ {
+  "arm": "run",
+  "seed": 960444,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1096,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 90,
+  "accepted": 1,
+  "declined": 52,
+  "seconds": 40.15608516684733
+ },
+ {
+  "arm": "run",
+  "seed": 960447,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1286,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 18,
+  "accepted": 1,
+  "declined": 17,
+  "seconds": 38.08827562490478
+ },
+ {
+  "arm": "run",
+  "seed": 960438,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1570,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 49,
+  "accepted": 4,
+  "declined": 42,
+  "seconds": 74.85758237494156
+ },
+ {
+  "arm": "run",
+  "seed": 960448,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1368,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 49,
+  "accepted": 1,
+  "declined": 31,
+  "seconds": 30.858913250034675
+ },
+ {
+  "arm": "run",
+  "seed": 960452,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 902,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 21.705598625121638
+ },
+ {
+  "arm": "run",
+  "seed": 960449,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1103,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 14,
+  "accepted": 1,
+  "declined": 13,
+  "seconds": 30.685356458183378
+ },
+ {
+  "arm": "run",
+  "seed": 960453,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1259,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 25.672727582976222
+ },
+ {
+  "arm": "run",
+  "seed": 960458,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 680,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 17,
+  "accepted": 0,
+  "declined": 17,
+  "seconds": 9.821565750055015
+ },
+ {
+  "arm": "run",
+  "seed": 960455,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 634,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 9,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 20.101653958903626
+ },
+ {
+  "arm": "run",
+  "seed": 960454,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1271,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 29,
+  "accepted": 0,
+  "declined": 29,
+  "seconds": 31.823848207946867
+ },
+ {
+  "arm": "run",
+  "seed": 960450,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 915,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 9,
+  "accepted": 1,
+  "declined": 8,
+  "seconds": 38.82791845803149
+ },
+ {
+  "arm": "run",
+  "seed": 960451,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1214,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 30,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 44.7919038340915
+ },
+ {
+  "arm": "run",
+  "seed": 960457,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 798,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 5,
+  "accepted": 0,
+  "declined": 5,
+  "seconds": 28.808627209160477
+ },
+ {
+  "arm": "run",
+  "seed": 960465,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 906,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 12,
+  "accepted": 1,
+  "declined": 11,
+  "seconds": 16.45083308289759
+ },
+ {
+  "arm": "run",
+  "seed": 960463,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 728,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 5,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 25.258372665848583
+ },
+ {
+  "arm": "run",
+  "seed": 960460,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1021,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 4,
+  "accepted": 0,
+  "declined": 4,
+  "seconds": 40.239999416982755
+ },
+ {
+  "arm": "run",
+  "seed": 960459,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 2059,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 54,
+  "accepted": 1,
+  "declined": 20,
+  "seconds": 48.040233958978206
+ },
+ {
+  "arm": "run",
+  "seed": 960461,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1301,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 64,
+  "accepted": 5,
+  "declined": 10,
+  "seconds": 39.81123683298938
+ },
+ {
+  "arm": "run",
+  "seed": 960462,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1292,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 16,
+  "accepted": 3,
+  "declined": 1,
+  "seconds": 44.443497334141284
+ },
+ {
+  "arm": "run",
+  "seed": 960456,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1951,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 15,
+  "accepted": 0,
+  "declined": 15,
+  "seconds": 71.71091925003566
+ },
+ {
+  "arm": "run",
+  "seed": 960468,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1020,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 81,
+  "accepted": 2,
+  "declined": 46,
+  "seconds": 28.033015000168234
+ },
+ {
+  "arm": "run",
+  "seed": 960469,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1076,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 21,
+  "accepted": 1,
+  "declined": 20,
+  "seconds": 26.530934375012293
+ },
+ {
+  "arm": "run",
+  "seed": 960464,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1478,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 63,
+  "accepted": 5,
+  "declined": 35,
+  "seconds": 60.73353683296591
+ },
+ {
+  "arm": "run",
+  "seed": 960472,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1087,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 35,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 28.723045457853004
+ },
+ {
+  "arm": "run",
+  "seed": 960466,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1649,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 12,
+  "accepted": 0,
+  "declined": 12,
+  "seconds": 67.43397641601041
+ },
+ {
+  "arm": "run",
+  "seed": 960467,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1267,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 13,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 59.71244258293882
+ },
+ {
+  "arm": "run",
+  "seed": 960475,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1291,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 53,
+  "accepted": 1,
+  "declined": 29,
+  "seconds": 24.785450750030577
+ },
+ {
+  "arm": "run",
+  "seed": 960471,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 2103,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 49,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 50.49232291709632
+ },
+ {
+  "arm": "run",
+  "seed": 960476,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 912,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 17,
+  "accepted": 0,
+  "declined": 11,
+  "seconds": 26.815951625118032
+ },
+ {
+  "arm": "run",
+  "seed": 960473,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1180,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 66,
+  "accepted": 5,
+  "declined": 13,
+  "seconds": 39.184468917082995
+ },
+ {
+  "arm": "run",
+  "seed": 960474,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 892,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 15,
+  "accepted": 0,
+  "declined": 9,
+  "seconds": 44.20105116721243
+ },
+ {
+  "arm": "run",
+  "seed": 960470,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1404,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 46,
+  "accepted": 1,
+  "declined": 4,
+  "seconds": 65.78819733299315
+ },
+ {
+  "arm": "run",
+  "seed": 960482,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1314,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 39,
+  "accepted": 0,
+  "declined": 36,
+  "seconds": 23.977933292044327
+ },
+ {
+  "arm": "run",
+  "seed": 960477,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1044,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 51,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 43.7724838340655
+ },
+ {
+  "arm": "run",
+  "seed": 960480,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1119,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 78,
+  "accepted": 2,
+  "declined": 41,
+  "seconds": 32.286065082997084
+ },
+ {
+  "arm": "run",
+  "seed": 960483,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1519,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 60,
+  "accepted": 1,
+  "declined": 14,
+  "seconds": 34.932328540831804
+ },
+ {
+  "arm": "run",
+  "seed": 960484,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1157,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 17,
+  "accepted": 0,
+  "declined": 17,
+  "seconds": 29.795965416822582
+ },
+ {
+  "arm": "run",
+  "seed": 960486,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1165,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 37,
+  "accepted": 2,
+  "declined": 3,
+  "seconds": 26.411504375049844
+ },
+ {
+  "arm": "run",
+  "seed": 960481,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1506,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 56.94200974982232
+ },
+ {
+  "arm": "run",
+  "seed": 960479,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1394,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 59,
+  "accepted": 1,
+  "declined": 7,
+  "seconds": 60.24522575014271
+ },
+ {
+  "arm": "run",
+  "seed": 960478,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1426,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 67,
+  "accepted": 7,
+  "declined": 45,
+  "seconds": 69.16861095791683
+ },
+ {
+  "arm": "run",
+  "seed": 960488,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1400,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 79,
+  "accepted": 2,
+  "declined": 77,
+  "seconds": 31.545245416928083
+ },
+ {
+  "arm": "run",
+  "seed": 960490,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 909,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 12,
+  "accepted": 1,
+  "declined": 11,
+  "seconds": 23.322110666893423
+ },
+ {
+  "arm": "run",
+  "seed": 960489,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1587,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 111,
+  "accepted": 3,
+  "declined": 29,
+  "seconds": 45.82868249993771
+ },
+ {
+  "arm": "run",
+  "seed": 960495,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 775,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 17,
+  "accepted": 0,
+  "declined": 15,
+  "seconds": 23.330858249915764
+ },
+ {
+  "arm": "run",
+  "seed": 960487,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1637,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 72,
+  "accepted": 0,
+  "declined": 7,
+  "seconds": 58.07319758296944
+ },
+ {
+  "arm": "run",
+  "seed": 960493,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 925,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 39,
+  "accepted": 0,
+  "declined": 37,
+  "seconds": 30.248684250051156
+ },
+ {
+  "arm": "run",
+  "seed": 960492,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1240,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 8,
+  "accepted": 2,
+  "declined": 6,
+  "seconds": 33.35128412512131
+ },
+ {
+  "arm": "run",
+  "seed": 960491,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 851,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 50,
+  "accepted": 5,
+  "declined": 10,
+  "seconds": 39.71095258393325
+ },
+ {
+  "arm": "run",
+  "seed": 960496,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1067,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 22,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 40.9934624589514
+ },
+ {
+  "arm": "run",
+  "seed": 960501,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 994,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 19.094190874835476
+ },
+ {
+  "arm": "run",
+  "seed": 960498,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1217,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 14,
+  "accepted": 1,
+  "declined": 4,
+  "seconds": 32.77173629193567
+ },
+ {
+  "arm": "run",
+  "seed": 960485,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 2539,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 170,
+  "accepted": 1,
+  "declined": 127,
+  "seconds": 107.09050158411264
+ },
+ {
+  "arm": "run",
+  "seed": 960503,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 828,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 18,
+  "accepted": 0,
+  "declined": 8,
+  "seconds": 24.754794582957402
+ },
+ {
+  "arm": "run",
+  "seed": 960499,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1215,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 13,
+  "accepted": 1,
+  "declined": 12,
+  "seconds": 48.34692587517202
+ },
+ {
+  "arm": "run",
+  "seed": 960502,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1455,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 119,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 45.07406762498431
+ },
+ {
+  "arm": "run",
+  "seed": 960494,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1545,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 41,
+  "accepted": 0,
+  "declined": 41,
+  "seconds": 80.81971795787103
+ },
+ {
+  "arm": "run",
+  "seed": 960506,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 727,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 20,
+  "accepted": 2,
+  "declined": 4,
+  "seconds": 29.556528125191107
+ },
+ {
+  "arm": "run",
+  "seed": 960504,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1102,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 32,
+  "accepted": 0,
+  "declined": 7,
+  "seconds": 42.96098695904948
+ },
+ {
+  "arm": "run",
+  "seed": 960509,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 613,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 16,
+  "accepted": 1,
+  "declined": 10,
+  "seconds": 20.254492416977882
+ },
+ {
+  "arm": "run",
+  "seed": 960505,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1290,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 26,
+  "accepted": 3,
+  "declined": 19,
+  "seconds": 39.97107920888811
+ },
+ {
+  "arm": "run",
+  "seed": 960508,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1135,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 2,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 32.939891249872744
+ },
+ {
+  "arm": "run",
+  "seed": 960507,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1551,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 58,
+  "accepted": 1,
+  "declined": 4,
+  "seconds": 38.23808812489733
+ },
+ {
+  "arm": "run",
+  "seed": 960512,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1071,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 32,
+  "accepted": 3,
+  "declined": 16,
+  "seconds": 18.166513541014865
+ },
+ {
+  "arm": "run",
+  "seed": 960513,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 733,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 15.166455375030637
+ },
+ {
+  "arm": "run",
+  "seed": 960510,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1159,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 7,
+  "accepted": 1,
+  "declined": 5,
+  "seconds": 35.1107759589795
+ },
+ {
+  "arm": "run",
+  "seed": 960500,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1726,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 17,
+  "accepted": 0,
+  "declined": 17,
+  "seconds": 94.47753295791335
+ },
+ {
+  "arm": "run",
+  "seed": 960519,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 938,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 9,
+  "accepted": 1,
+  "declined": 2,
+  "seconds": 20.348876959178597
+ },
+ {
+  "arm": "run",
+  "seed": 960515,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1287,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 31,
+  "accepted": 0,
+  "declined": 30,
+  "seconds": 32.45966075011529
+ },
+ {
+  "arm": "run",
+  "seed": 960514,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1356,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 13,
+  "accepted": 1,
+  "declined": 12,
+  "seconds": 45.31621795799583
+ },
+ {
+  "arm": "run",
+  "seed": 960520,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 922,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 56,
+  "accepted": 1,
+  "declined": 12,
+  "seconds": 29.897910292027518
+ },
+ {
+  "arm": "run",
+  "seed": 960517,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1366,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 45.667540334165096
+ },
+ {
+  "arm": "run",
+  "seed": 960522,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 794,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 13,
+  "accepted": 1,
+  "declined": 11,
+  "seconds": 23.398420291021466
+ },
+ {
+  "arm": "run",
+  "seed": 960516,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1641,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 49,
+  "accepted": 1,
+  "declined": 26,
+  "seconds": 65.84750054217875
+ },
+ {
+  "arm": "run",
+  "seed": 960497,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": true,
+  "decisive_win": false,
+  "bankrupt": false,
+  "any_bankrupt": false,
+  "proposed": 244,
+  "accepted": 7,
+  "declined": 0,
+  "seconds": 155.65749758388847
+ },
+ {
+  "arm": "run",
+  "seed": 960523,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 953,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 8,
+  "accepted": 3,
+  "declined": 0,
+  "seconds": 39.739853458013386
+ },
+ {
+  "arm": "run",
+  "seed": 960518,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1623,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 78,
+  "accepted": 1,
+  "declined": 59,
+  "seconds": 73.13140525016934
+ },
+ {
+  "arm": "run",
+  "seed": 960524,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1106,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 55,
+  "accepted": 4,
+  "declined": 8,
+  "seconds": 35.66279949992895
+ },
+ {
+  "arm": "run",
+  "seed": 960521,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1270,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 24,
+  "accepted": 0,
+  "declined": 24,
+  "seconds": 54.65452108415775
+ },
+ {
+  "arm": "run",
+  "seed": 960526,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 871,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 44,
+  "accepted": 1,
+  "declined": 31,
+  "seconds": 31.730300249997526
+ },
+ {
+  "arm": "run",
+  "seed": 960511,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 2390,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 83,
+  "accepted": 6,
+  "declined": 41,
+  "seconds": 112.65215662494302
+ },
+ {
+  "arm": "run",
+  "seed": 960525,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1433,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 7,
+  "accepted": 0,
+  "declined": 7,
+  "seconds": 53.770293874898925
+ },
+ {
+  "arm": "run",
+  "seed": 960527,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1081,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 6,
+  "accepted": 1,
+  "declined": 5,
+  "seconds": 34.86851445795037
+ },
+ {
+  "arm": "run",
+  "seed": 960529,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1066,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 16,
+  "accepted": 0,
+  "declined": 16,
+  "seconds": 28.118707000045106
+ },
+ {
+  "arm": "run",
+  "seed": 960528,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1414,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 33,
+  "accepted": 0,
+  "declined": 31,
+  "seconds": 45.48688716604374
+ },
+ {
+  "arm": "run",
+  "seed": 960534,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1157,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 47,
+  "accepted": 2,
+  "declined": 45,
+  "seconds": 32.1436335418839
+ },
+ {
+  "arm": "run",
+  "seed": 960537,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1404,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 101,
+  "accepted": 2,
+  "declined": 16,
+  "seconds": 39.01985262497328
+ },
+ {
+  "arm": "run",
+  "seed": 960532,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1370,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 36,
+  "accepted": 0,
+  "declined": 21,
+  "seconds": 59.78750970819965
+ },
+ {
+  "arm": "run",
+  "seed": 960530,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 2713,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 230,
+  "accepted": 2,
+  "declined": 36,
+  "seconds": 75.99906112486497
+ },
+ {
+  "arm": "run",
+  "seed": 960535,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1378,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 72,
+  "accepted": 0,
+  "declined": 34,
+  "seconds": 54.82352058310062
+ },
+ {
+  "arm": "run",
+  "seed": 960533,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1593,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 53,
+  "accepted": 5,
+  "declined": 47,
+  "seconds": 69.17283433396369
+ },
+ {
+  "arm": "run",
+  "seed": 960536,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1385,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 59.32262362493202
+ },
+ {
+  "arm": "run",
+  "seed": 960531,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1783,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 80.33946616598405
+ },
+ {
+  "arm": "run",
+  "seed": 960545,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 530,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 11.806593375047669
+ },
+ {
+  "arm": "run",
+  "seed": 960539,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1657,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 34,
+  "accepted": 4,
+  "declined": 16,
+  "seconds": 53.357151167001575
+ },
+ {
+  "arm": "run",
+  "seed": 960544,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 636,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 27.172966124955565
+ },
+ {
+  "arm": "run",
+  "seed": 960542,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1074,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 25,
+  "accepted": 1,
+  "declined": 5,
+  "seconds": 36.66033250000328
+ },
+ {
+  "arm": "run",
+  "seed": 960543,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1439,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 104,
+  "accepted": 2,
+  "declined": 21,
+  "seconds": 38.979034500196576
+ },
+ {
+  "arm": "run",
+  "seed": 960538,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1575,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 82,
+  "accepted": 5,
+  "declined": 18,
+  "seconds": 82.2025059578009
+ },
+ {
+  "arm": "run",
+  "seed": 960540,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 934,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 3,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 59.196458166930825
+ },
+ {
+  "arm": "run",
+  "seed": 960541,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1424,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 27,
+  "accepted": 0,
+  "declined": 16,
+  "seconds": 58.13514166721143
+ },
+ {
+  "arm": "run",
+  "seed": 960554,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 608,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 2,
+  "accepted": 0,
+  "declined": 2,
+  "seconds": 9.608468333026394
+ },
+ {
+  "arm": "run",
+  "seed": 960546,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1215,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 54,
+  "accepted": 0,
+  "declined": 11,
+  "seconds": 52.90844833292067
+ },
+ {
+  "arm": "run",
+  "seed": 960548,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1321,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 3,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 36.487199999857694
+ },
+ {
+  "arm": "run",
+  "seed": 960553,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1270,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 35,
+  "accepted": 0,
+  "declined": 32,
+  "seconds": 19.4810390828643
+ },
+ {
+  "arm": "run",
+  "seed": 960549,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1430,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 18,
+  "accepted": 0,
+  "declined": 12,
+  "seconds": 39.37814704189077
+ },
+ {
+  "arm": "run",
+  "seed": 960547,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1642,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 0,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 57.63344904198311
+ },
+ {
+  "arm": "run",
+  "seed": 960557,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 768,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 2,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 13.851796000031754
+ },
+ {
+  "arm": "run",
+  "seed": 960551,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1406,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 9,
+  "accepted": 3,
+  "declined": 2,
+  "seconds": 44.53630158305168
+ },
+ {
+  "arm": "run",
+  "seed": 960550,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1261,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 17,
+  "accepted": 0,
+  "declined": 17,
+  "seconds": 53.49414704088122
+ },
+ {
+  "arm": "run",
+  "seed": 960555,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 834,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 0,
+  "declined": 1,
+  "seconds": 32.98889712500386
+ },
+ {
+  "arm": "run",
+  "seed": 960559,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 753,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 16,
+  "accepted": 2,
+  "declined": 14,
+  "seconds": 29.81017733295448
+ },
+ {
+  "arm": "run",
+  "seed": 960561,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1094,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 21,
+  "accepted": 2,
+  "declined": 5,
+  "seconds": 28.960356625029817
+ },
+ {
+  "arm": "run",
+  "seed": 960558,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1094,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 37,
+  "accepted": 2,
+  "declined": 3,
+  "seconds": 42.174541332991794
+ },
+ {
+  "arm": "run",
+  "seed": 960552,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1500,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 47,
+  "accepted": 3,
+  "declined": 0,
+  "seconds": 64.54509945795871
+ },
+ {
+  "arm": "run",
+  "seed": 960563,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1324,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 22,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 24.82043341686949
+ },
+ {
+  "arm": "run",
+  "seed": 960560,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1088,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 45,
+  "accepted": 2,
+  "declined": 14,
+  "seconds": 49.54377716593444
+ },
+ {
+  "arm": "run",
+  "seed": 960569,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1064,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 55,
+  "accepted": 2,
+  "declined": 8,
+  "seconds": 15.82633866602555
+ },
+ {
+  "arm": "run",
+  "seed": 960556,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1864,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 6,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 74.89657083409838
+ },
+ {
+  "arm": "run",
+  "seed": 960564,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 961,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 12,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 45.14971483312547
+ },
+ {
+  "arm": "run",
+  "seed": 960567,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1241,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 32,
+  "accepted": 3,
+  "declined": 11,
+  "seconds": 27.556146207964048
+ },
+ {
+  "arm": "run",
+  "seed": 960566,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1301,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 91,
+  "accepted": 0,
+  "declined": 4,
+  "seconds": 37.056637041969225
+ },
+ {
+  "arm": "run",
+  "seed": 960562,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1875,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 134,
+  "accepted": 3,
+  "declined": 7,
+  "seconds": 66.65155375003815
+ },
+ {
+  "arm": "run",
+  "seed": 960568,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1185,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 12,
+  "accepted": 1,
+  "declined": 11,
+  "seconds": 46.505245707929134
+ },
+ {
+  "arm": "run",
+  "seed": 960565,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1442,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 61,
+  "accepted": 2,
+  "declined": 0,
+  "seconds": 62.37776766694151
+ },
+ {
+  "arm": "run",
+  "seed": 960573,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 906,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 39,
+  "accepted": 3,
+  "declined": 36,
+  "seconds": 29.234872207976878
+ },
+ {
+  "arm": "run",
+  "seed": 960570,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1365,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 71,
+  "accepted": 0,
+  "declined": 5,
+  "seconds": 40.37434291699901
+ },
+ {
+  "arm": "run",
+  "seed": 960574,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1050,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 32,
+  "accepted": 3,
+  "declined": 1,
+  "seconds": 35.06137158279307
+ },
+ {
+  "arm": "run",
+  "seed": 960575,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1302,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 63,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 43.33253745897673
+ },
+ {
+  "arm": "run",
+  "seed": 960581,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 970,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 17,
+  "accepted": 0,
+  "declined": 3,
+  "seconds": 15.815218250034377
+ },
+ {
+  "arm": "run",
+  "seed": 960572,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1861,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 120,
+  "accepted": 1,
+  "declined": 111,
+  "seconds": 55.312538041966036
+ },
+ {
+  "arm": "run",
+  "seed": 960580,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 836,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 10,
+  "accepted": 0,
+  "declined": 10,
+  "seconds": 24.23378154099919
+ },
+ {
+  "arm": "run",
+  "seed": 960578,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1363,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 37,
+  "accepted": 1,
+  "declined": 30,
+  "seconds": 33.674795042024925
+ },
+ {
+  "arm": "run",
+  "seed": 960576,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1611,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 13,
+  "accepted": 3,
+  "declined": 0,
+  "seconds": 44.016657332889736
+ },
+ {
+  "arm": "run",
+  "seed": 960579,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 892,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 12,
+  "accepted": 1,
+  "declined": 11,
+  "seconds": 38.18927500001155
+ },
+ {
+  "arm": "run",
+  "seed": 960585,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 904,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 13,
+  "accepted": 1,
+  "declined": 11,
+  "seconds": 19.949614000041038
+ },
+ {
+  "arm": "run",
+  "seed": 960577,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1786,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 80,
+  "accepted": 2,
+  "declined": 61,
+  "seconds": 54.6785566250328
+ },
+ {
+  "arm": "run",
+  "seed": 960582,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1123,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 62,
+  "accepted": 0,
+  "declined": 2,
+  "seconds": 26.99604795803316
+ },
+ {
+  "arm": "run",
+  "seed": 960586,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 582,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 3,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 21.349469833076
+ },
+ {
+  "arm": "run",
+  "seed": 960584,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 719,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 1,
+  "accepted": 0,
+  "declined": 0,
+  "seconds": 27.358823999995366
+ },
+ {
+  "arm": "run",
+  "seed": 960583,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1097,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 10,
+  "accepted": 0,
+  "declined": 8,
+  "seconds": 38.79011824983172
+ },
+ {
+  "arm": "run",
+  "seed": 960571,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1843,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 62,
+  "accepted": 4,
+  "declined": 19,
+  "seconds": 96.38661804189906
+ },
+ {
+  "arm": "run",
+  "seed": 960590,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1084,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 44,
+  "accepted": 0,
+  "declined": 11,
+  "seconds": 30.64980904199183
+ },
+ {
+  "arm": "run",
+  "seed": 960591,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 901,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 23,
+  "accepted": 0,
+  "declined": 11,
+  "seconds": 30.00532962498255
+ },
+ {
+  "arm": "run",
+  "seed": 960587,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1168,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 10,
+  "accepted": 0,
+  "declined": 10,
+  "seconds": 48.11149900010787
+ },
+ {
+  "arm": "run",
+  "seed": 960594,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 936,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 20,
+  "accepted": 0,
+  "declined": 20,
+  "seconds": 18.009981834096834
+ },
+ {
+  "arm": "run",
+  "seed": 960588,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1757,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 24,
+  "accepted": 1,
+  "declined": 0,
+  "seconds": 49.944270458072424
+ },
+ {
+  "arm": "run",
+  "seed": 960595,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1088,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 21,
+  "accepted": 3,
+  "declined": 18,
+  "seconds": 29.89674925012514
+ },
+ {
+  "arm": "run",
+  "seed": 960598,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1013,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 38,
+  "accepted": 0,
+  "declined": 32,
+  "seconds": 19.11009412491694
+ },
+ {
+  "arm": "run",
+  "seed": 960593,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1206,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 15,
+  "accepted": 1,
+  "declined": 6,
+  "seconds": 47.58757545892149
+ },
+ {
+  "arm": "run",
+  "seed": 960596,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 984,
+  "decisive": true,
+  "leader_win": true,
+  "decisive_win": true,
+  "bankrupt": false,
+  "any_bankrupt": true,
+  "proposed": 18,
+  "accepted": 1,
+  "declined": 7,
+  "seconds": 24.018147625029087
+ },
+ {
+  "arm": "run",
+  "seed": 960599,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 1419,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 20,
+  "accepted": 1,
+  "declined": 19,
+  "seconds": 23.638621374964714
+ },
+ {
+  "arm": "run",
+  "seed": 960597,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 933,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 31,
+  "accepted": 2,
+  "declined": 2,
+  "seconds": 26.0781659160275
+ },
+ {
+  "arm": "run",
+  "seed": 960592,
+  "field": "asu",
+  "seats": [
+   0,
+   2
+  ],
+  "steps": 1517,
+  "decisive": true,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": true,
+  "any_bankrupt": true,
+  "proposed": 16,
+  "accepted": 0,
+  "declined": 16,
+  "seconds": 57.3472148750443
+ },
+ {
+  "arm": "run",
+  "seed": 960589,
+  "field": "asu",
+  "seats": [
+   1,
+   3
+  ],
+  "steps": 3000,
+  "decisive": false,
+  "leader_win": false,
+  "decisive_win": false,
+  "bankrupt": false,
+  "any_bankrupt": false,
+  "proposed": 68,
+  "accepted": 0,
+  "declined": 68,
+  "seconds": 101.09361437498592
+ }
+]

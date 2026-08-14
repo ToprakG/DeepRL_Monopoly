@@ -1,0 +1,81 @@
+spares,cash,completer_owner,n_legal,action,family,target_player,offered_sq,requested_sq,cash_level,requests_completer,seed
+none,300,1,46,END_TURN,END_TURN,,,,,False,20250811
+none,300,2,46,END_TURN,END_TURN,,,,,False,20250811
+none,300,3,46,END_TURN,END_TURN,,,,,False,20250811
+none,300,bank,31,END_TURN,END_TURN,,,,,False,20250811
+none,600,1,48,END_TURN,END_TURN,,,,,False,20250811
+none,600,2,48,END_TURN,END_TURN,,,,,False,20250811
+none,600,3,48,END_TURN,END_TURN,,,,,False,20250811
+none,600,bank,33,END_TURN,END_TURN,,,,,False,20250811
+none,1200,1,48,END_TURN,END_TURN,,,,,False,20250811
+none,1200,2,48,END_TURN,END_TURN,,,,,False,20250811
+none,1200,3,48,END_TURN,END_TURN,,,,,False,20250811
+none,1200,bank,33,END_TURN,END_TURN,,,,,False,20250811
+none,2500,1,48,END_TURN,END_TURN,,,,,False,20250811
+none,2500,2,48,END_TURN,END_TURN,,,,,False,20250811
+none,2500,3,48,END_TURN,END_TURN,,,,,False,20250811
+none,2500,bank,33,END_TURN,END_TURN,,,,,False,20250811
+5,300,1,62,END_TURN,END_TURN,,,,,False,20250811
+5,300,2,62,END_TURN,END_TURN,,,,,False,20250811
+5,300,3,62,END_TURN,END_TURN,,,,,False,20250811
+5,300,bank,44,END_TURN,END_TURN,,,,,False,20250811
+5,600,1,64,END_TURN,END_TURN,,,,,False,20250811
+5,600,2,64,END_TURN,END_TURN,,,,,False,20250811
+5,600,3,64,END_TURN,END_TURN,,,,,False,20250811
+5,600,bank,46,END_TURN,END_TURN,,,,,False,20250811
+5,1200,1,64,END_TURN,END_TURN,,,,,False,20250811
+5,1200,2,64,END_TURN,END_TURN,,,,,False,20250811
+5,1200,3,64,END_TURN,END_TURN,,,,,False,20250811
+5,1200,bank,46,END_TURN,END_TURN,,,,,False,20250811
+5,2500,1,64,END_TURN,END_TURN,,,,,False,20250811
+5,2500,2,64,END_TURN,END_TURN,,,,,False,20250811
+5,2500,3,64,END_TURN,END_TURN,,,,,False,20250811
+5,2500,bank,46,END_TURN,END_TURN,,,,,False,20250811
+5|25,300,1,78,"exch_trade(player=0, offer=25, req=19)",exch_trade,0,25,19,,True,20250811
+5|25,300,2,78,"exch_trade(player=1, offer=25, req=19)",exch_trade,1,25,19,,True,20250811
+5|25,300,3,78,"exch_trade(player=2, offer=25, req=19)",exch_trade,2,25,19,,True,20250811
+5|25,300,bank,57,END_TURN,END_TURN,,,,,False,20250811
+5|25,600,1,80,"exch_trade(player=0, offer=25, req=19)",exch_trade,0,25,19,,True,20250811
+5|25,600,2,80,"exch_trade(player=1, offer=25, req=19)",exch_trade,1,25,19,,True,20250811
+5|25,600,3,80,"exch_trade(player=2, offer=25, req=19)",exch_trade,2,25,19,,True,20250811
+5|25,600,bank,59,END_TURN,END_TURN,,,,,False,20250811
+5|25,1200,1,80,"exch_trade(player=0, offer=25, req=19)",exch_trade,0,25,19,,True,20250811
+5|25,1200,2,80,"exch_trade(player=1, offer=25, req=19)",exch_trade,1,25,19,,True,20250811
+5|25,1200,3,80,"exch_trade(player=2, offer=25, req=19)",exch_trade,2,25,19,,True,20250811
+5|25,1200,bank,59,END_TURN,END_TURN,,,,,False,20250811
+5|25,2500,1,80,"exch_trade(player=0, offer=25, req=19)",exch_trade,0,25,19,,True,20250811
+5|25,2500,2,80,"exch_trade(player=1, offer=25, req=19)",exch_trade,1,25,19,,True,20250811
+5|25,2500,3,80,"exch_trade(player=2, offer=25, req=19)",exch_trade,2,25,19,,True,20250811
+5|25,2500,bank,59,END_TURN,END_TURN,,,,,False,20250811
+5|25|37,300,1,94,"exch_trade(player=0, offer=25, req=19)",exch_trade,0,25,19,,True,20250811
+5|25|37,300,2,94,"exch_trade(player=1, offer=25, req=19)",exch_trade,1,25,19,,True,20250811
+5|25|37,300,3,94,"exch_trade(player=2, offer=25, req=19)",exch_trade,2,25,19,,True,20250811
+5|25|37,300,bank,70,END_TURN,END_TURN,,,,,False,20250811
+5|25|37,600,1,96,"exch_trade(player=0, offer=25, req=19)",exch_trade,0,25,19,,True,20250811
+5|25|37,600,2,96,"exch_trade(player=1, offer=25, req=19)",exch_trade,1,25,19,,True,20250811
+5|25|37,600,3,96,"exch_trade(player=2, offer=25, req=19)",exch_trade,2,25,19,,True,20250811
+5|25|37,600,bank,72,END_TURN,END_TURN,,,,,False,20250811
+5|25|37,1200,1,96,"exch_trade(player=0, offer=25, req=19)",exch_trade,0,25,19,,True,20250811
+5|25|37,1200,2,96,"exch_trade(player=1, offer=25, req=19)",exch_trade,1,25,19,,True,20250811
+5|25|37,1200,3,96,"exch_trade(player=2, offer=25, req=19)",exch_trade,2,25,19,,True,20250811
+5|25|37,1200,bank,72,END_TURN,END_TURN,,,,,False,20250811
+5|25|37,2500,1,96,"exch_trade(player=0, offer=25, req=19)",exch_trade,0,25,19,,True,20250811
+5|25|37,2500,2,96,"exch_trade(player=1, offer=25, req=19)",exch_trade,1,25,19,,True,20250811
+5|25|37,2500,3,96,"exch_trade(player=2, offer=25, req=19)",exch_trade,2,25,19,,True,20250811
+5|25|37,2500,bank,72,END_TURN,END_TURN,,,,,False,20250811
+37,300,1,62,"exch_trade(player=0, offer=37, req=19)",exch_trade,0,37,19,,True,20250811
+37,300,2,62,"exch_trade(player=1, offer=37, req=19)",exch_trade,1,37,19,,True,20250811
+37,300,3,62,"exch_trade(player=2, offer=37, req=19)",exch_trade,2,37,19,,True,20250811
+37,300,bank,44,END_TURN,END_TURN,,,,,False,20250811
+37,600,1,64,"exch_trade(player=0, offer=37, req=19)",exch_trade,0,37,19,,True,20250811
+37,600,2,64,"exch_trade(player=1, offer=37, req=19)",exch_trade,1,37,19,,True,20250811
+37,600,3,64,"exch_trade(player=2, offer=37, req=19)",exch_trade,2,37,19,,True,20250811
+37,600,bank,46,END_TURN,END_TURN,,,,,False,20250811
+37,1200,1,64,"exch_trade(player=0, offer=37, req=19)",exch_trade,0,37,19,,True,20250811
+37,1200,2,64,"exch_trade(player=1, offer=37, req=19)",exch_trade,1,37,19,,True,20250811
+37,1200,3,64,"exch_trade(player=2, offer=37, req=19)",exch_trade,2,37,19,,True,20250811
+37,1200,bank,46,END_TURN,END_TURN,,,,,False,20250811
+37,2500,1,64,"exch_trade(player=0, offer=37, req=19)",exch_trade,0,37,19,,True,20250811
+37,2500,2,64,"exch_trade(player=1, offer=37, req=19)",exch_trade,1,37,19,,True,20250811
+37,2500,3,64,"exch_trade(player=2, offer=37, req=19)",exch_trade,2,37,19,,True,20250811
+37,2500,bank,46,END_TURN,END_TURN,,,,,False,20250811
